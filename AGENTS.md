@@ -7,7 +7,7 @@ Read README.md, notes/dimension-six.md and results/ before editing claims.
 - Verify SAT witnesses against the original graph definition with the independent
   checker. An UNSAT report requires a checked proof and justified encoding.
 - Preserve fixed input identities and record reproducible commands.
-- This is a private collaboration repository. Keep correspondence, private
+- This is a public research repository. Keep correspondence, private
   contact records, credentials and unrelated projects outside it.
 - No release, publication or author email is implied by a commit or build.
 - Formal/NikandishClique.lean is an attributed upstream snapshot, not a standalone

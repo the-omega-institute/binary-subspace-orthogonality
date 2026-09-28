@@ -1,8 +1,10 @@
 # Provenance and rights
 
-This is a private joint research workspace. A unified public license for the
-joint manuscript and new research materials has not yet been selected by the
-collaborators. Repository access does not itself constitute public release.
+This is a public research workspace. A unified license for the joint manuscript
+and new research materials has not yet been selected by the collaborators.
+Public access allows inspection and reproduction; it does not itself grant a
+general reuse license. The upstream license identified below remains in force
+for the imported Lean module.
 
 The unchanged formal/NikandishClique.lean is from the Omega Institute's
 trureturing repository at the revision identified in formal/UPSTREAM.json.

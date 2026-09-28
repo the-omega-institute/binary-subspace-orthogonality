@@ -1,6 +1,6 @@
 # Binary subspace orthogonality graphs
 
-Private research workspace for Haobo Ma, Reza Nikandish and Wenlin Zhang.
+Public research workspace for Haobo Ma, Reza Nikandish and Wenlin Zhang.
 Working paper direction: *Clique and chromatic numbers of binary subspace
 orthogonality graphs*. Author order and the final manuscript are to be agreed.
 
@@ -77,4 +77,4 @@ The source problem is Reza Nikandish, *Annihilating-Ideal Graphs and Orthogonali
 Graphs over F_2*, [arXiv:2609.22769v1](https://arxiv.org/abs/2609.22769v1).
 His coordinate and isotropic constructions supply lower bounds; the new clique
 upper proof and finite coloring certificates are identified separately above.
-See [provenance and rights](RIGHTS.md). No DOI or public release is configured.
+See [provenance and rights](RIGHTS.md). No DOI or versioned release is configured.
