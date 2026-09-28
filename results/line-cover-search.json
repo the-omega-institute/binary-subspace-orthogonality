@@ -1,0 +1,16 @@
+{
+  "colors": 12,
+  "variables": 35840,
+  "clauses": 68951,
+  "catalog_sha256": "287a3c04ba55a7306333374ef4ac427e66bec211ec2eb0d8a3529006a9c7474c",
+  "cnf_sha256": "ef83d5ae8bcfe2821f5dfe19ae1fd8b3d6a62e5ad02985332b53925b09c101ec",
+  "script_sha256": "19b4f9c29c08c4c924a6416d2512376ad02b9696258c2572b88b6960c1f29997",
+  "elapsed_seconds": 91.31150491698645,
+  "stats": {
+    "restarts": 145,
+    "conflicts": 59992,
+    "decisions": 324138,
+    "propagations": 23444133
+  },
+  "status": "unknown_time_limit"
+}

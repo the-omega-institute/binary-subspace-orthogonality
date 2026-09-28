@@ -1,0 +1,102 @@
+[
+  {
+    "colors": 7,
+    "elapsed_seconds": 0.018817625008523464,
+    "cnf_sha256": "2693369ece66d7f3a6be3d89fba561cd3a86b7ca6d74f87f263ca502b2f87666",
+    "variables": 441,
+    "clauses": 8120,
+    "stats": {
+      "restarts": 1,
+      "conflicts": 215,
+      "decisions": 297,
+      "propagations": 6130
+    },
+    "status": "unsat_reported_unchecked",
+    "proof_sha256": "fdf77c6134cc72c65d686cfc6d38870ce5af1cb697346cce642b87b13db32e56"
+  },
+  {
+    "colors": 8,
+    "elapsed_seconds": 0.1346969169098884,
+    "cnf_sha256": "f0a2b947355c7b23be9aa40f16227cbbd402c0038daf4ca6ac77385b312039e1",
+    "variables": 504,
+    "clauses": 9522,
+    "stats": {
+      "restarts": 9,
+      "conflicts": 6217,
+      "decisions": 7955,
+      "propagations": 237161
+    },
+    "status": "unsat_reported_unchecked",
+    "proof_sha256": "ab65998585f8adb4d15e40fcab0053c6c7bb799101ebfb303d16de544f0a49fd"
+  },
+  {
+    "colors": 9,
+    "elapsed_seconds": 15.094549875007942,
+    "cnf_sha256": "cbe8a6cb24af553de9fc819c82cd2198bd56bd68f166a8c0c165bd7b87231674",
+    "variables": 567,
+    "clauses": 10987,
+    "stats": {
+      "restarts": 365,
+      "conflicts": 209930,
+      "decisions": 252065,
+      "propagations": 8605847
+    },
+    "status": "unknown_time_limit"
+  },
+  {
+    "colors": 10,
+    "elapsed_seconds": 16.514097291976213,
+    "cnf_sha256": "e2c7c90ec015c7f11c5e542a8a369b2c5268f9cc78acd0a8b8892389a91fb94f",
+    "variables": 630,
+    "clauses": 12515,
+    "stats": {
+      "restarts": 269,
+      "conflicts": 220800,
+      "decisions": 269298,
+      "propagations": 8569592
+    },
+    "status": "unknown_time_limit"
+  },
+  {
+    "colors": 11,
+    "elapsed_seconds": 15.328171791974455,
+    "cnf_sha256": "46b74ca68a0f263ca2373b4503d62cbc9bbee052afafa53ba34835708965f220",
+    "variables": 693,
+    "clauses": 14106,
+    "stats": {
+      "restarts": 708,
+      "conflicts": 221475,
+      "decisions": 306944,
+      "propagations": 8228729
+    },
+    "status": "unknown_time_limit"
+  },
+  {
+    "colors": 12,
+    "elapsed_seconds": 15.395143833942711,
+    "cnf_sha256": "6c4116c749f02fa1ac28e9211590477bcaaaa815d6f4afd599a0a9ef948a0683",
+    "variables": 756,
+    "clauses": 15760,
+    "stats": {
+      "restarts": 882,
+      "conflicts": 219552,
+      "decisions": 342758,
+      "propagations": 7520663
+    },
+    "status": "unknown_time_limit"
+  },
+  {
+    "colors": 13,
+    "elapsed_seconds": 0.11463216692209244,
+    "cnf_sha256": "afbd10206262d7e8375385be07d20134f1ac8e31a44886c286bcdfd2c2c5e181",
+    "variables": 819,
+    "clauses": 17477,
+    "stats": {
+      "restarts": 1,
+      "conflicts": 1697,
+      "decisions": 2403,
+      "propagations": 50564
+    },
+    "status": "sat_candidate"
+  }
+]

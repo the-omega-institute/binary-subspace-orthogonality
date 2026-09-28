@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "dimension_counts": [
+    63,
+    651,
+    1395,
+    651,
+    63,
+    1
+  ],
+  "line_vertices": 63,
+  "line_colors": 14,
+  "line_pairs_checked": 115,
+  "subspace_vertices": 2824,
+  "subspace_colors": 16,
+  "same_color_subspace_pairs_checked": 1225641,
+  "clique_size": 15,
+  "clique_pairs_checked": 105,
+  "certificate_sha256": "620d7ae4d66ed0b0ebb438080afc5f7c95914ab2ad3b9151b935e072708af9ca",
+  "checker_sha256": "6bda8e9269963c1644166b72f5d72016ae21623cf9cb2d4955a12e4c44322250",
+  "formalization": "Exact finite certificate check; not Lean formalized."
+}

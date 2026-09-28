@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "vertices": 63,
+  "colors": 13,
+  "class_sizes": [
+    6,
+    5,
+    5,
+    5,
+    5,
+    4,
+    5,
+    5,
+    4,
+    4,
+    5,
+    5,
+    5
+  ],
+  "certificate_sha256": "33642d18ac304dc3fda4f868e154f75e71db6b052f41a9f9eaeab7c193b94617",
+  "checker_sha256": "de787b4b8814098514f8f0e69ec4555225325150563aa0633f343e488c9ec9f9",
+  "scope": "Exact upper-bound certificate; no optimality or Lean claim."
+}

@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\Oc}{\mathcal O}
+\DeclareMathOperator{\rad}{rad}
+\title{Orthogonality cliques over $\F$:\\a radical quotient proof and a coloring separation}
+\author{Wenlin Zhang\thanks{National University of Singapore; The Omega Institute.}
+\and Haobo Ma\thanks{ChronoAI Pte Ltd; The Omega Institute.}}
+\date{Working note, 28 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We determine the clique number of the graph on all nonzero subspaces of
+$\F^n$, adjacent when they are mutually orthogonal for the standard dot
+form, answering Nikandish's Problem~4.2. Summing the radicals of a clique
+and passing to the resulting orthogonal quotient gives the sharp upper
+bound. We also give explicit coloring certificates in dimension six:
+the graph on lines has a $14$-coloring, whereas the full subspace graph
+has chromatic number between $15$ and $16$. Thus the two chromatic numbers
+already differ in this dimension.
+\end{abstract}
+
+\section{The clique number}
+
+Let $V=\F^n$ with $B(x,y)=\sum_i x_i y_i$. Following Nikandish~\cite{N},
+let $\Oc_n^*$ have all nonzero subspaces of $V$ as vertices. Distinct
+$U,W$ are adjacent if $B(U,W)=0$. Let $N(r)$ denote the number of nonzero
+subspaces of $\F^r$, with $N(0)=0$.
+
+\begin{theorem}\label{thm:clique}
+For every integer $n\ge1$,
+\[
+ \omega(\Oc_n^*)=\max\{n,\ N(\lfloor n/2\rfloor)+(n\bmod2)\}.
+\]
+\end{theorem}
+
+\begin{proof}
+Take a clique $\mathcal C$ and set
+\[
+ R=\sum_{U\in\mathcal C}\rad(U),\qquad
+ \rad(U)=U\cap U^\perp,\qquad r=\dim R.
+\]
+Each summand is orthogonal to its own member and, by the clique condition,
+to every other member. Consequently
+\[
+ U\subseteq R^\perp,\qquad R\subseteq R^\perp,\qquad
+ U\cap R=\rad(U)\quad(U\in\mathcal C).
+\]
+For the last equality, one inclusion follows from the definition of $R$;
+the other follows from $R\subseteq U^\perp$. Nondegeneracy of $B$ gives
+$2r\le n$ and $\dim(R^\perp/R)=n-2r$.
+
+The form descends to $Q=R^\perp/R$. Write $\overline U$ for the image of
+$U$ in $Q$. Its restricted form is nondegenerate: if $u\in U$ represents
+a vector annihilating $\overline U$, then $u\in\rad(U)\subseteq R$, so
+its image is zero. The spaces $\overline U$ are pairwise orthogonal.
+Their nonzero members form an indexed direct sum. Indeed, in a relation
+$\sum_U x_U=0$ with $x_U\in\overline U$, pairing with arbitrary vectors
+of one $\overline W$ and using its nondegeneracy gives $x_W=0$.
+Thus there are at most $n-2r$ nonzero images. This argument also applies
+when a restricted or quotient form is alternating.
+
+The members with zero image are precisely those contained in $R$, and
+there are at most $N(r)$ of them. Therefore
+\begin{equation}\label{eq:bound}
+ |\mathcal C|\le N(r)+n-2r.
+\end{equation}
+For $r=0$ this is $n$. For every $s\ge1$, embedding $\F^s$ as a hyperplane
+in $\F^{s+1}$ gives
+\[
+ N(s+1)\ge N(s)+2:
+\]
+an outside line and the whole ambient space are two distinct additional
+subspaces. Hence $N(s)-2s$ is nondecreasing for $s\ge1$. If $r\ge1$,
+putting $t=\lfloor n/2\rfloor$ in \eqref{eq:bound} gives
+\[
+ |\mathcal C|\le N(t)+n-2t=N(t)+(n\bmod2).
+\]
+These two cases prove the upper bound.
+
+The $n$ coordinate lines attain the first lower bound. For the second,
+let $t=\lfloor n/2\rfloor$ and take
+\[
+ T=\operatorname{span}\{e_1+e_2,e_3+e_4,\ldots,e_{2t-1}+e_{2t}\}.
+\]
+This is a totally isotropic $t$-space. All its nonzero subspaces are
+pairwise orthogonal and give a clique of size $N(t)$. When $n$ is odd,
+$\dim T^\perp=t+1$, so $T^\perp$ is a distinct additional vertex
+orthogonal to every subspace of $T$. This includes $n=1$, where $T=0$.
+The two constructions attain both terms of the maximum.
+\end{proof}
+
+Nikandish~\cite{N} gives the coordinate and isotropic lower constructions,
+including the extra perpendicular-space vertex at $n=7$. The argument
+above supplies the general upper bound. In particular, it treats
+overlapping and degenerate clique members without replacing them by lines.
+
+\section{A strict coloring separation in dimension six}
+
+Let $\Gamma_n$ be the graph on nonzero vectors of $\F^n$, adjacent when
+their dot product is zero. It identifies with the induced graph on lines
+in $\Oc_n^*$. The equalities of chromatic numbers at $n=4,5$ in~\cite{N}
+do not continue to $n=6$.
+
+\begin{proposition}\label{prop:color}
+There are explicit certificates for
+\[
+ \chi(\Gamma_6)\le14<15=\omega(\Oc_6^*)\le\chi(\Oc_6^*)\le16.
+\]
+\end{proposition}
+
+\begin{proof}
+Represent a vector by the integer whose six binary digits are its
+coordinates. The following fourteen sets partition $\{1,\ldots,63\}$.
+Every two distinct vectors within a row have dot product one, so each
+row is an independent set in $\Gamma_6$.
+\begin{center}
+\begin{tabular}{rl@{\qquad}rl}
+\toprule
+Color&Vectors&Color&Vectors\\
+\midrule
+1&$2,14,50,62,63$&8&$11,22,34,37,56$\\
+2&$8,28,41,43,61$&9&$4,5,52,54,60$\\
+3&$6,12,42,53,59$&10&$16,18,21,24$\\
+4&$19,38,46,55$&11&$1,9,23,39,51$\\
+5&$32,35,44,47,48$&12&$15,30,40,49$\\
+6&$7,31,33,36,58$&13&$25,27,29,57$\\
+7&$13,17,20,26,45$&14&$3,10$\\
+\bottomrule
+\end{tabular}
+\end{center}
+This proves $\chi(\Gamma_6)\le14$. The totally isotropic space
+$T=\operatorname{span}\{e_1+e_2,e_3+e_4,e_5+e_6\}$ has seven lines,
+seven planes and one three-dimensional subspace. These fifteen vertices
+form the clique already exhibited in~\cite{N}; Theorem~\ref{thm:clique}
+also gives its optimality.
+
+For the upper bound on the full graph, the accompanying file
+\path{coloring-certificate.json} assigns one of sixteen colors to each
+nonzero subspace, specified by a basis. The independent checker enumerates
+the span of each supplied basis and verifies independence and uniqueness.
+The numbers of distinct subspaces in dimensions $1$ through $6$ are
+\[
+ 63,\quad651,\quad1395,\quad651,\quad63,\quad1.
+\]
+These agree with the Gaussian subspace counts, so the list contains all
+$2824$ nonzero subspaces. For each pair of distinct subspaces assigned
+the same color, the checker finds a pair of basis vectors with dot
+product one. Bilinearity therefore excludes orthogonality of the two
+subspaces. This verifies a proper $16$-coloring of the complete graph.
+\end{proof}
+
+The exact values of $\chi(\Gamma_6)$ and $\chi(\Oc_6^*)$ are not inferred
+from these colorings. The immediate remaining question for the full graph
+is whether a $15$-coloring exists. A search can assign distinct fixed colors
+to the fifteen subspaces of $T$, eliminating color-permutation symmetry,
+and ask whether the precoloring extends to all remaining subspaces.
+If no extension exists, a checkable obstruction would establish the value
+$16$; an extension would establish $15$.
+
+\section{Proof files and reproduction}
+
+The complete Lean proof of Theorem~\ref{thm:clique} is supplied as
+\path{NikandishClique.lean}. The public
+\href{https://github.com/the-omega-institute/trureturing/blob/063bb60d1df414c93252023dbc5a5ae659566e58/D5/S3/Combinatorics/Orthogonality/NikandishClique.lean}{pinned source}
+is in the trureturing repository at revision
+\begin{center}\small\ttfamily
+063bb60d1df414c93252023dbc5a5ae659566e58.
+\end{center}
+Its imports use
+Lean~4.33.0 and the pinned Mathlib dependencies. The theorem is
+\path{D5.S3.Combinatorics.Orthogonality.NikandishClique.result}.
+The published formal verification records the standard axiom closure
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+
+The new colorings are finite certificates checked with exact integer
+arithmetic; they are not yet Lean formalized. From the accompanying package,
+run \texttt{python3 check\_certificate.py}. To regenerate the certificates,
+first run \texttt{python3 coloring\_certificate.py}. The checker does not
+import the search program. AI tools assisted the exposition, code development
+and computational exploration.
+
+\begin{thebibliography}{1}
+\raggedright
+\bibitem{N} R. Nikandish, \emph{Annihilating-Ideal Graphs and Orthogonality
+Graphs over $\mathbb F_2$}, arXiv:2609.22769v1 (2026).
+\end{thebibliography}
+\end{document}

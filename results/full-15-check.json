@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "vertices": 2824,
+  "all_pairs_checked": 3986076,
+  "edges_checked": 44968,
+  "colors_used": 15,
+  "dimension_counts": {
+    "1": 63,
+    "2": 651,
+    "3": 1395,
+    "4": 651,
+    "5": 63,
+    "6": 1
+  },
+  "clique_lower_bound": 15,
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "checker_sha256": "1e05f23ff1651385ba3d48a5791faac257e589a10e9112d78afa09dc2e4aa2f1",
+  "scope": "Exact exhaustive integer verification of all graph vertices and edges; not Lean formalized."
+}

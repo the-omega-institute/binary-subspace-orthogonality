@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/the-omega-institute/trureturing",
+  "commit": "063bb60d1df414c93252023dbc5a5ae659566e58",
+  "path": "D5/S3/Combinatorics/Orthogonality/NikandishClique.lean",
+  "sha256": "7c96c81d37c525e3f47e6bdaacb69ff263770cb058d16f36d7babe899e62816a",
+  "theorem": "D5.S3.Combinatorics.Orthogonality.NikandishClique.result",
+  "scope": "All-dimensional clique formula; no chromatic theorem in this module",
+  "toolchain": "Lean 4.33.0 with upstream pinned dependencies",
+  "recorded_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "fresh_lean_run_for_this_repository": false,
+  "license": "Apache-2.0; see LICENSE.upstream"
+}
