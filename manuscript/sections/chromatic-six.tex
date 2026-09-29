@@ -1,9 +1,12 @@
 \section{The full chromatic number in dimension six}
+\label{sec:chromatic}
 \begin{theorem}\label{thm:chromatic}
 $\chi(\OG_6^*)=15$.
 \end{theorem}
 \begin{proof}
-Let $T=\Span(3,12,48)$ in binary integer coordinates. The form vanishes on
+Let $T=\Span(3,12,48)$ in binary integer coordinates, with bit $i-1$
+representing the coefficient of $e_i$. Thus its generators are
+$e_1+e_2,e_3+e_4,e_5+e_6$. The form vanishes on
 $T$, so its seven lines, seven planes and $T$ itself form a $15$-clique.
 For the upper bound, the file \path{results/full-15-coloring.json} gives a basis and
 a color in $\{0,\ldots,14\}$ for every nonzero subspace. The independent
@@ -20,13 +23,21 @@ colors. This establishes the upper bound and therefore equality.
 \end{proof}
 
 To find the certificate, fix distinct colors on the $15$ nonzero subspaces
-$W$ of $T$. The forbidden colors for a vertex $U\not\subseteq T$ are exactly
-those $W\subseteq H(U)=U^\perp\cap T$. Since $T=T^\perp$, the possible
-dimensions of $H(U)$ are $0,1,2$, and the resulting list sizes are $15,14,11$.
+$W$ of $T$. Every $15$-coloring uses all colors on this clique, so relabeling
+colors makes this precoloring an equivalent instance. The forbidden colors
+for a vertex $U\not\subseteq T$ are exactly those $W\subseteq
+H(U)=U^\perp\cap T$. If $H(U)=T$, then $U\subseteq T^\perp=T$, a
+contradiction. Thus $\dim H(U)\in\{0,1,2\}$, giving lists of sizes
+$15-N(\dim H(U))\in\{15,14,11\}$.
 
 A vertex whose residual degree is smaller than its list size can be deleted
 and restored greedily after the remaining graph is colored. Repeated deletion
 removes $729$ uncolored vertices and leaves $2\,080$ vertices with $39\,400$
 edges. The list-coloring encoding has $28\,600$ variables and $627\,510$
 clauses. A satisfying assignment was extended in reverse deletion order to
-produce the full certificate checked above.
+produce the full certificate checked above. There is one Boolean variable
+for each allowed vertex--color pair. Each vertex has an at-least-one clause
+and pairwise at-most-one clauses; each edge forbids simultaneous use of any
+color common to its endpoints' lists. Hence satisfying assignments are
+exactly the proper list colorings of the residual graph. The final exhaustive
+check establishes the theorem independently of the search and preprocessing.

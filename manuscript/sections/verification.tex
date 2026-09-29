@@ -9,14 +9,38 @@ lines, are rejected. The line-coloring checker independently verifies its
 partition and all within-class pairs.
 
 The radical/quotient clique theorem has an existing Lean formalization.
-Its source is \path{formal/NikandishClique.lean}, with theorem
-\texttt{NikandishClique.result} in its documented namespace. The exact
-upstream revision, Lean version and dependencies are recorded in
-\path{formal/UPSTREAM.json}. The new chromatic certificate is connected to the
-kernel-checked theorem \texttt{chromatic\_number\_six} in
-\path{formal/Chromatic/Verify.lean}. The Mac Studio build, source hashes and
-axiom scope are recorded in \path{results/lean-verification.json}; the
-independent integer checker remains a separate verification of the JSON witness.
+Its source is \path{formal/NikandishClique.lean}. The theorem is
+\texttt{NikandishClique.result}, inside the namespace
+\begin{center}
+\texttt{D5.S3.Combinatorics.Orthogonality}.
+\end{center}
+The upstream revision and source hash are recorded in
+\path{formal/UPSTREAM.json}; dependencies must be obtained from that pinned
+upstream checkout.
+
+The six-dimensional development uses vectors in $\operatorname{Fin}(64)$,
+XOR addition, and the coordinate dot product modulo two. A vertex is a
+zero-containing, XOR-closed subset other than $\{0\}$, exactly the nonzero
+binary subspaces in this representation. The formal graph is simple and
+uses coordinate orthogonality between distinct such subsets. The catalogue
+contains $2\,825$ entries including zero and $180\,800$ adjoining-vector
+witnesses. The theorem \texttt{Catalogue.complete} derives coverage from
+the zero entry and closure under adjoining any vector; it does not assume
+the Gaussian enumeration counts. The theorem \texttt{Catalogue.colorable}
+transfers the checked catalogue coloring to this graph. A checked
+$15$-clique supplies the converse inequality in
+\texttt{BinaryOrthogonality.chromatic\_number\_six}.
+
+The archived Lean 4.33.0 development verifies four finite assertions with
+\texttt{native\_decide}. The final theorem depends on the standard axioms
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}, together
+with four native-evaluation axioms; its computational trust therefore includes
+native evaluation. The generic completeness and colorability lemmas depend
+only on the three standard axioms. The recovered original log corrects the
+incomplete historical summary; see \path{notes/formal-verification-audit.md}.
+The exhaustive integer certificate independently verifies the same coloring.
+The weighted line bound, geometric profile counts and dimension-seven reduction
+are not covered by this Lean theorem.
 
 The public package~\cite{Package} contains the literal witnesses, independent
 checkers, search records, and SHA-256 bindings. The new geometric profiler

@@ -1,27 +1,78 @@
 \section{Introduction and statements of the results}
-Let $V_n=\F^n$ with the standard bilinear form
-$\langle x,y\rangle=\sum_{i=1}^n x_i y_i$.
-The graph $\OG_n^*$ has the nonzero linear subspaces of $V_n$ as its vertices.
-Distinct vertices $U,W$ are adjacent when every vector of $U$ is orthogonal
-to every vector of $W$. Its induced subgraph on one-dimensional subspaces is
-denoted by $\Gamma_n$. Over $\F$, each line has a unique nonzero vector.
+\label{sec:intro}
 
-Nikandish~\cite{Nikandish} asks for the clique number in Problem~4.2 and the
-chromatic number for $n\geq6$ in Problem~4.3. Put
-$N(r)=\sum_{d=1}^r {r\brack d}_2$, where ${r\brack d}_2$ is the Gaussian
-binomial coefficient, and set $N(0)=0$. Our results are
+Let \(V_n=\F^n\) be equipped with the standard bilinear form
 \[
- \omega(\OG_n^*)=\max\{n,N(\lfloor n/2\rfloor)+(n\bmod2)\}\quad(n\geq1),
+\langle x,y\rangle=\sum_{i=1}^n x_i y_i .
 \]
+The \emph{orthogonality graph} \(\OG_n^*\) has as its vertices the
+nonzero linear subspaces of \(V_n\).  Two distinct vertices \(U,W\)
+are adjacent when every vector of \(U\) is orthogonal to every vector
+of \(W\).  Its induced subgraph on the one-dimensional subspaces is
+denoted by \(\Gamma_n\).  Over \(\F\), each line has a unique nonzero
+vector, so \(\Gamma_n\) can equivalently be described as the graph on
+the nonzero vectors of \(V_n\) with two distinct vectors adjacent when
+their dot product is zero.
+
+The graph \(\OG_n^*\) was introduced by Nikandish \cite{Nikandish}
+in connection with the annihilating-ideal graph of the ring
+\[
+R_n=\frac{\F[x_1,\dots,x_n,z]}{(z^2,zx_i,x_ix_j\,(i\ne j),x_i^2-z)} .
+\]
+Indeed, the annihilating-ideal graph \(\AG(R_n)\) is isomorphic to
+\(\OG_n\), the graph on all subspaces, including zero.  The zero
+subspace is a universal vertex, so deleting it gives \(\OG_n^*\) and
+reduces both the clique and chromatic numbers by one
+\cite[Theorem~2.4 and equations~(3)--(4)]{Nikandish}.  Nikandish \cite{Nikandish} posed the following
+problems.
+
+\begin{problem}[\cite{Nikandish}, Problem 4.2]\label{prob:clique}
+Determine the exact value of \(\omega(\OG_n^*)\) for every \(n\).
+\end{problem}
+
+\begin{problem}[\cite{Nikandish}, Problem 4.3]\label{prob:chromatic}
+Determine \(\chi(\OG_n^*)\) for \(n\ge6\) and investigate the relation
+between \(\chi(\OG_n^*)\) and \(\omega(\OG_n^*)\).
+\end{problem}
+
+\begin{problem}[\cite{Nikandish}, Problem 4.4]\label{prob:infinite}
+Determine whether there exist infinitely many \(n\ge1\) with
+\(\chi(\OG_n^*)>\omega(\OG_n^*)\).
+\end{problem}
+
+Put
+\[
+N(r)=\sum_{d=1}^{r} {r\brack d}_2 ,
+\]
+where \({r\brack d}_2\) is the Gaussian binomial coefficient, and set
+\(N(0)=0\).  Our results are
+\begin{equation}\label{eq:clique-formula}
+\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
+\qquad(n\ge1),
+\end{equation}
 and
-\[
- \chi(\OG_6^*)=15,\qquad 12\leq\chi(\Gamma_6)\leq13.
-\]
-The first formula answers Problem~4.2 in all dimensions. The second answers
-the dimension-six case of Problem~4.3 and quantifies the separation between
+\begin{equation}\label{eq:chromatic-six}
+\chi(\OG_6^*)=15,\qquad 12\le\chi(\Gamma_6)\le13 .
+\end{equation}
+The first formula answers Problem~\ref{prob:clique} in all
+dimensions.  The second answers the dimension-six case of
+Problem~\ref{prob:chromatic} and quantifies the separation between
 coloring the line graph and coloring the full subspace graph.
 
-The clique argument is algebraic. The full-graph chromatic upper bound uses
-an explicit finite certificate, while the line lower bound follows from the
-geometry of pairwise nonorthogonal vectors. The verification details and the
-scope of the Lean formalization are collected in Section~\ref{sec:verification}.
+The clique argument is algebraic: it sums the radicals of an arbitrary
+clique and passes to the resulting orthogonal quotient.  The
+full-graph chromatic upper bound uses an explicit finite certificate,
+while the line lower bound follows from the geometry of pairwise
+nonorthogonal vectors.  The verification details and the scope of the
+Lean formalization are collected in Section~\ref{sec:verification}.
+
+The paper is organized as follows.  Section~\ref{sec:clique} contains
+the proof of \eqref{eq:clique-formula}.
+Section~\ref{sec:line} treats the line graph \(\Gamma_6\) and
+establishes the bounds in \eqref{eq:chromatic-six}.
+Section~\ref{sec:chromatic} proves \(\chi(\OG_6^*)=15\).
+Section~\ref{sec:geometry} describes the geometry of the precoloring.
+Section~\ref{sec:higher} records the dimension reduction for \(n=7\)
+and states the remaining open problems.
+Section~\ref{sec:verification} collects the computational
+certificates and the Lean formalization.

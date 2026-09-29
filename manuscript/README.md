@@ -7,8 +7,8 @@ convention; the collaborators have not settled publication author order.
 
 | File | Contribution and handoff |
 | --- | --- |
-| `sections/introduction.tex` | Reza's planned introduction; current text supplies verified definitions and results to expand. |
-| `sections/clique.tex` | Reza's planned clique section; contains the theorem and radical/quotient synopsis, with the complete archived Lean proof in `formal/`. |
+| `sections/introduction.tex` | Reza's expanded introduction from `f34e58f`, integrated with source problem numbers and the zero-vertex convention. |
+| `sections/clique.tex` | Reza's full radical/quotient proof from `f34e58f`, including the endpoint argument and six-dimensional corollary. |
 | `sections/lines.tex` | Written weighted lower-bound proof and checked 13-color upper bound. |
 | `sections/chromatic-six.tex` | Complete certificate argument for chi(O_6*) = 15 and the precoloring reduction. |
 | `sections/geometry.tex` | Starting invariants and data for Reza's planned geometric analysis. |
@@ -20,10 +20,18 @@ twice. The checked convenience PDF is `paper.pdf`. A draft compilation is not
 coauthor approval or a submission. Coordinate substantive edits through GitHub
 commits or pull requests; no new branch-protection or CI policy is imposed.
 
-Next integration: Reza expands sections 1, 2 and 5; Wenlin and Haobo develop
-the chromatic proof and formal verification in sections 3, 4 and 7. Jointly
+The September 30 integration moves Reza's inline sections from `paper.tex`
+into the two section files and includes each exactly once. Edit those section
+files for subsequent revisions. The geometry section still contains the
+original handoff; no later geometry contribution was present at the reviewed
+remote revision `f34e58f46d4065e88cdfd209cbb17cff99aa89d8`.
+
+Next integration: Reza develops section 5; Wenlin and Haobo maintain the
+chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
 submission. The current draft does not attribute AI use to Reza. The
-six-dimensional coloring theorem is now kernel-checked in
-`formal/Chromatic/Verify.lean` on Mac Studio; see
-`results/lean-verification.json` for the exact build record.
+six-dimensional coloring theorem's historical report omitted four native
+axioms, as confirmed by the recovered original log; see
+`notes/formal-verification-audit.md`. The finite coloring certificates have
+been independently rechecked. No author-order or AI-disclosure agreement is
+implied by this integration.

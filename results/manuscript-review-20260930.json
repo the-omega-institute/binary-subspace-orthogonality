@@ -1,0 +1,98 @@
+{
+  "reviewed_at": "2026-09-30",
+  "remote_source_commit": "f34e58f46d4065e88cdfd209cbb17cff99aa89d8",
+  "scope": "First manuscript integration, fixed-certificate review, and historical Lean axiom-log reconciliation; no new solver search. Kernel-only repair attempts were stopped after the user selected manuscript delivery first.",
+  "python_version": "3.14.4",
+  "validation": [
+    {
+      "command": "python3 develop/check_full_coloring.py results/full-15-coloring.json",
+      "status": "passed",
+      "vertices": 2824,
+      "pairs": 3986076,
+      "edges": 44968,
+      "colors": 15
+    },
+    {
+      "command": "python3 develop/check_line_coloring.py",
+      "status": "passed",
+      "vertices": 63,
+      "colors": 13
+    },
+    {
+      "command": "python3 develop/check_checker_controls.py",
+      "status": "passed",
+      "rejected": [
+        "missing_subspace",
+        "duplicate_subspace",
+        "monochromatic_coordinate_edge"
+      ]
+    },
+    {
+      "command": "python3 develop/analyze_geometry.py",
+      "status": "passed",
+      "profiles": 240,
+      "multicolor_profiles": 139
+    },
+    {
+      "command": "python3 develop/export_lean_coloring.py",
+      "status": "passed_byte_identical_to_archived_data_and_export_report",
+      "catalogue_entries_including_zero": 2825,
+      "extension_witnesses": 180800
+    },
+    {
+      "command": "cd manuscript && pdflatex -interaction=nonstopmode -halt-on-error paper.tex (two passes)",
+      "status": "passed",
+      "pages": 6,
+      "undefined_references_or_citations": false,
+      "overfull_or_underfull_boxes": false,
+      "remaining_warning": "amsmath legacy Gaussian-binomial atopwithdelims syntax warning"
+    },
+    {
+      "command": "pdftoppm -scale-to 1300 -png manuscript/paper.pdf /tmp/nikandish-reviewed-page",
+      "status": "all_six_rendered_pages_visually_reviewed"
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "literature_review": {
+    "source": "https://arxiv.org/html/2609.22769v1",
+    "html_sha256": "978dd7d37c380f3c2e135ac7a3574db85fdcdf54a0a024f8d4d4b2b57e2f54f9",
+    "checked": [
+      "Definition 2.3",
+      "Theorem 2.4 and equations (3)-(4)",
+      "Section 4 constructions",
+      "Problems 4.2-4.4"
+    ]
+  },
+  "formal_verification": {
+    "fresh_lean_run": false,
+    "recorded_hashes_match": true,
+    "historical_log_recovered": true,
+    "axiom_scope": "original_final_theorem_used_three_standard_axioms_plus_four_native_evaluation_axioms",
+    "kernel_repair": "attempted_on_mac_studio_then_stopped_for_manuscript_delivery; no kernel_only_theorem_claim",
+    "audit": "notes/formal-verification-audit.md"
+  },
+  "dimension_seven": {
+    "new_computation": false,
+    "new_coloring_or_nonexistence_certificate": false,
+    "status": "open"
+  },
+  "reviewed_file_sha256": {
+    "README.md": "36e903ae95c8e63e13014d05d919b2c26fcee6a89e53fb8c172605765c0fe0cd",
+    "manuscript/README.md": "ab66244fe9a96dcadf37e1ead7f31d3b026fcd4d744b2e7903f8e17cff9b9066",
+    "manuscript/paper.pdf": "2dab0593f1873aa0be6aab05e6c8a8c552e9215f783b13fbe8109a8c24e8bc90",
+    "manuscript/paper.tex": "bc2df36a08dad4448fab6abda3439f31feb2b7779d191311a5cf8ddc0dce48f2",
+    "manuscript/sections/chromatic-six.tex": "c3f3e42f474459e02014dd4c5a6eec4248dd4d68c124370d0bfec6f917a377d4",
+    "manuscript/sections/clique.tex": "efa2f9c53e452b4b84534101fd11262ca0e26b605fe46df1ca2a9e5baaea4430",
+    "manuscript/sections/geometry.tex": "fe3ade5b69ad922105df7f5887fda2ed1846b9c89452a370f8fc07e579cd0b69",
+    "manuscript/sections/higher-dimensions.tex": "52e053e3983b21d9b3a04fc5eaafae1cfbbc5e39a1d7603c1390cf31f86aa6c0",
+    "manuscript/sections/introduction.tex": "f94464f990232d10f74d0ffd7fff0d9257141cde9309bc5fdb027a863032d821",
+    "manuscript/sections/lines.tex": "a4d50e0cef263e958e35af07899550419460dcbda99e5dd7001a10a5052df20d",
+    "manuscript/sections/verification.tex": "bf7938e73464cd52410564a7ef64c2c7a5d84a2c913173fb41438cb1c5fceffb",
+    "notes/dimension-six.md": "c36596e4dcd628f570e041523fe0c3dbd909c8a6d6bc6ef7320ad7c57d4bb559",
+    "notes/formal-verification-audit.md": "98f17d0f7573077f5db7f12437b7441336579369155cdff54814a06cbaa9389d",
+    "results/README.md": "548a1d7d6646db1761020674e0b20a7256b08d409b50ab4dc27a17a77c0839fc"
+  }
+}

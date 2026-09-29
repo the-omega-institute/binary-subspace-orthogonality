@@ -23,9 +23,13 @@ graph on one-dimensional subspaces, identified with the nonzero vectors.
   [the proof](notes/line-coloring.md) and [the certificate](results/line-coloring.json).
   The line-versus-full-subspace separation is therefore at least two colors.
 
-The dimension-six coloring is now also connected to a kernel-checked Lean
-theorem in `formal/Chromatic/Verify.lean`; the build record is
-`results/lean-verification.json`. Problem 4.3 for arbitrary n >= 7 remains open here.
+The dimension-six coloring also has a Lean development in
+`formal/Chromatic/Verify.lean`. The recovered historical log confirms that the
+build report omitted four native-evaluation axioms from the final theorem;
+see the [correction and repair](notes/formal-verification-audit.md).
+The independent finite
+certificate establishes the exact chromatic equality. Problem 4.3 for arbitrary
+n >= 7 remains open here.
 
 ## Check the new result
 
@@ -78,7 +82,7 @@ then measures the remaining 14,589-vertex, 953,057-edge core.
 Reza has proposed drafting the introduction and clique section and developing
 geometric arguments. Wenlin develops written arguments and computational
 exploration; Haobo leads formal verification. The next shared task is to explain
-the dimension-six coloring structurally and complete its formal verification
+the dimension-six coloring structurally and reconcile its formal verification
 alongside the joint paper. The manuscript directory separates the proposed
 contributions so the introduction, clique proof and geometry can develop
 alongside the certificate work. Larger dimensions and other parameters can

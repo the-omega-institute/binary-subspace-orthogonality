@@ -1,4 +1,5 @@
 \section{The line graph in dimension six}
+\label{sec:line}
 \begin{lemma}\label{lem:weighted}
 An independent set in $\Gamma_6$ containing $t$ even-weight vectors and $o$
 odd-weight vectors satisfies $3t+4o\leq19$. Its cardinality is at most six;
@@ -33,6 +34,22 @@ $i$ is its $i$th binary digit. The certificate \texttt{results/line-coloring.jso
 partitions the $63$ nonzero vectors into $13$ classes. The independent checker
 verifies that every pair of distinct vectors in each class has dot product one.
 \end{proof}
+
+For completeness, the thirteen color classes, in the same binary integer
+coordinates, are displayed below. They partition $\{1,\ldots,63\}$, and
+their within-class dot products can be checked directly.
+\[
+\begin{gathered}
+\{3,29,45,53,57,62\},\quad \{12,20,39,56,59\},\quad
+\{15,18,43,52,61\},\\
+\{23,24,44,47,48\},\quad \{16,50,51,54,58\},\quad
+\{32,46,55,60\},\\
+\{13,22,42,49,63\},\quad \{5,19,28,38,41\},\quad
+\{8,10,25,40\},\\
+\{2,26,30,35\},\quad \{1,7,9,17,33\},\quad
+\{6,11,27,34,37\},\quad \{4,14,21,31,36\}.
+\end{gathered}
+\]
 
 Any hypothetical $12$-coloring has a class of size six. By the lemma it
 consists of an odd vector $a$ and five even vectors $e$. The vectors $a$ and

@@ -1,5 +1,13 @@
 # Certificate and search records
 
+The historical `lean-verification.json` is preserved as reported. Its source
+hashes match, but the recovered original log contains four native-evaluation
+axioms omitted from the summary. The correction is
+`lean-verification-audit-20260930.json`; see
+[the audit](../notes/formal-verification-audit.md) for exact scope and repair.
+This does not affect the independently checked
+positive coloring certificates below.
+
 The current full-graph theorem is supported by full-15-coloring.json and
 full-15-check.json. The latter identifies the exact certificate and independent
 checker hashes. checker-controls.json records rejection of three deliberately

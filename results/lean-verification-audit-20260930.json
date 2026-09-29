@@ -1,0 +1,36 @@
+{
+  "audited_on": "2026-09-30",
+  "status": "historical_summary_incorrect",
+  "historical_report": "results/lean-verification.json",
+  "historical_report_commit": "9db3c662d5bd9e4fd8ac705f512b41ee6556125a",
+  "recovered_original_exit_code": 0,
+  "recovered_original_axiom_reports": {
+    "BinaryOrthogonality.Catalogue.complete": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryOrthogonality.Catalogue.colorable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BinaryOrthogonality.chromatic_number_six": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "catalogue_covers._native.native_decide.ax_1_1",
+      "catalogue_proper._native.native_decide.ax_1_1",
+      "clique_adjacent._native.native_decide.ax_1_1",
+      "clique_valid._native.native_decide.ax_1_1"
+    ]
+  },
+  "source_sha256": {
+    "Certificate.lean": "dd19f0ea5d3bc15b7ad48e2558bb2964ed9f4cc5e23b70b42641b2390c3a6b35",
+    "Data.lean": "83837b0157268a5356d3b4265f0669da21878581aca348f07fc6f8b9384644db",
+    "Verify.lean": "28938d5d5385397442720d9d5c8a4b15287a162bce100c65b97f42d3e34d9401"
+  },
+  "original_log_sha256": "c1af4a33c6e4ae20ffe12edda86c0d6a9295b1e242b77e589bd51d60e1faa3cb",
+  "finding": "The original run succeeded, but the final chromatic theorem depended on four native evaluation axioms in addition to the three standard axioms. The summary omitted the four native axioms. The generic completeness and colorability theorems had only the three standard axioms.",
+  "scope": "Corrects the historical axiom report. The independent finite coloring certificate and written chromatic proof are unaffected."
+}
