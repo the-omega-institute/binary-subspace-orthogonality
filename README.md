@@ -59,6 +59,8 @@ are retained. A different satisfying coloring is valid if it passes the checker.
 
 ## Files and collaboration
 
+- `manuscript/`: editable joint paper in Reza's proposed seven-section structure;
+  see [the handoff](manuscript/README.md) and [current PDF](manuscript/paper.pdf).
 - `develop/`: exact search, preprocessing and independent verification programs;
   includes the archived earlier 14/16-color witnesses and their checker.
 - `results/`: current certificates and execution records.
@@ -66,12 +68,20 @@ are retained. A different satisfying coloring is valid if it passes the checker.
   reports the earlier interval {15,16}; it is preserved as a dated starting point.
 - `formal/`: the exact upstream clique proof, source pin and original license.
 
+The new [geometric handoff](notes/geometry-handoff.md) profiles the complete
+coloring by H(U), U intersect T and dimension. The
+[dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
+of dimension at least four can be deleted from the fixed 16-color instance,
+then measures the remaining 14,589-vertex, 953,057-edge core.
+
 Reza has proposed drafting the introduction and clique section and developing
 geometric arguments. Wenlin develops written arguments and computational
 exploration; Haobo leads formal verification. The next shared task is to explain
-the dimension-six coloring structurally, integrate the result into the joint
-paper, and select a formalization target. Larger dimensions and other parameters
-can be developed alongside that work.
+the dimension-six coloring structurally and complete its formal verification
+alongside the joint paper. The manuscript directory separates the proposed
+contributions so the introduction, clique proof and geometry can develop
+alongside the certificate work. Larger dimensions and other parameters can
+be developed alongside that work.
 
 The source problem is Reza Nikandish, *Annihilating-Ideal Graphs and Orthogonality
 Graphs over F_2*, [arXiv:2609.22769v1](https://arxiv.org/abs/2609.22769v1).

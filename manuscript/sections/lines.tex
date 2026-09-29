@@ -1,0 +1,41 @@
+\section{The line graph in dimension six}
+\begin{lemma}\label{lem:weighted}
+An independent set in $\Gamma_6$ containing $t$ even-weight vectors and $o$
+odd-weight vectors satisfies $3t+4o\leq19$. Its cardinality is at most six;
+cardinality six requires $(t,o)=(5,1)$.
+\end{lemma}
+\begin{proof}
+Write $j=(1,1,1,1,1,1)$. The even-weight vectors lie in $j^\perp$, whose
+restricted form has radical $\Span(j)$ and rank four. If $o=0$, the Gram
+matrix of the selected vectors is $J_t+I_t$, of rank $t$ for even $t$ and
+$t-1$ for odd $t$. Thus $t\leq5$.
+
+If $o>0$, fix an odd selected vector $a$. For each even selected vector $e$,
+the vector $z_e=e+a$ belongs to $a^\perp$. These vectors are orthonormal and
+span a nondegenerate $t$-space $A$. The ambient space $a^\perp$ is
+nondegenerate of dimension five. The span $D$ of the vectors $u+a$, over odd
+selected vectors $u$, is totally isotropic and orthogonal to $A$ inside
+$a^\perp$. Hence $2\dim D\leq5-t$. The odd selected vectors are distinct
+members of $a+D$, so $o\leq2^{\dim D}$. Consequently $o\leq4$ for $t=0,1$,
+$o\leq2$ for $t=2,3$, and $o\leq1$ for $t=4,5$. These bounds prove both claims.
+\end{proof}
+
+\begin{theorem}\label{thm:lines}
+$12\leq\chi(\Gamma_6)\leq13$.
+\end{theorem}
+\begin{proof}
+There are $31$ nonzero even-weight and $32$ odd-weight vectors. Their total
+weight, using weights three and four respectively, is $221$. By
+Lemma~\ref{lem:weighted}, every color class has weight at most $19$, giving
+$\chi(\Gamma_6)\geq\lceil221/19\rceil=12$.
+For the upper bound, interpret an integer $x$ as the vector whose coordinate
+$i$ is its $i$th binary digit. The certificate \texttt{results/line-coloring.json}
+partitions the $63$ nonzero vectors into $13$ classes. The independent checker
+verifies that every pair of distinct vectors in each class has dot product one.
+\end{proof}
+
+Any hypothetical $12$-coloring has a class of size six. By the lemma it
+consists of an odd vector $a$ and five even vectors $e$. The vectors $a$ and
+$e+a$ form an orthonormal basis. An isometry therefore maps this class to
+$\{1,3,5,9,17,33\}$. Fixing this class reduces the remaining question to an
+$11$-coloring of the induced graph on the other $57$ vectors.

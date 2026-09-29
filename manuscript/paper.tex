@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\OG}{\mathcal O}
+\newcommand{\Span}{\operatorname{span}}
+\title{Clique and chromatic numbers of binary subspace orthogonality graphs}
+\author{Haobo Ma \and Reza Nikandish \and Wenlin Zhang}
+\date{Working draft, 29 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We determine the clique number of the orthogonality graph on the nonzero
+subspaces of $\F^n$ and establish that its chromatic number in dimension six
+is $15$. The clique upper bound follows from a radical and quotient argument.
+The chromatic upper bound is certified by a complete coloring of all $2\,824$
+nonzero subspaces and an independent check against coordinate orthogonality.
+For the induced graph on lines, we prove a weighted independent-set bound and
+construct a $13$-coloring, giving $12\leq\chi(\Gamma_6)\leq13$.
+Thus the full subspace graph requires at least two more colors than its line
+subgraph. We describe the geometry of the fixed-clique color lists and a
+dimension reduction for extending the search to dimension seven.
+\end{abstract}
+\input{sections/introduction}
+\input{sections/clique}
+\input{sections/lines}
+\input{sections/chromatic-six}
+\input{sections/geometry}
+\input{sections/higher-dimensions}
+\input{sections/verification}
+\begin{thebibliography}{9}
+\bibitem{Nikandish}
+R. Nikandish, \emph{Annihilating-Ideal Graphs and Orthogonality Graphs over
+$\mathbb F_2$}, arXiv:2609.22769v1, 2026.
+\bibitem{Package}
+H. Ma, R. Nikandish and W. Zhang, \emph{Binary subspace orthogonality graphs:
+research and reproducibility workspace},
+\url{https://github.com/the-omega-institute/binary-subspace-orthogonality}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,67 @@
+{
+  "status": "reduction_measured_no_solver_run",
+  "dimension": 6,
+  "target_colors": 15,
+  "all_subspace_dimension_counts": {
+    "1": 63,
+    "2": 651,
+    "3": 1395,
+    "4": 651,
+    "5": 63,
+    "6": 1
+  },
+  "all_vertices": 2824,
+  "high_dimension_vertices_deleted_by_degree_bound": 715,
+  "enumerated_dimensions": [
+    1,
+    2,
+    3
+  ],
+  "enumerated_vertices": 2109,
+  "enumerated_edges": 42301,
+  "additional_low_dimension_deletions": 14,
+  "core_vertices": 2080,
+  "core_edges": 39400,
+  "core_dimension_counts": {
+    "1": 56,
+    "2": 644,
+    "3": 1380
+  },
+  "initial_palette_types": [
+    {
+      "dimension": 1,
+      "list_size": 11,
+      "vertices": 56
+    },
+    {
+      "dimension": 2,
+      "list_size": 11,
+      "vertices": 196
+    },
+    {
+      "dimension": 2,
+      "list_size": 14,
+      "vertices": 448
+    },
+    {
+      "dimension": 3,
+      "list_size": 11,
+      "vertices": 98
+    },
+    {
+      "dimension": 3,
+      "list_size": 14,
+      "vertices": 784
+    },
+    {
+      "dimension": 3,
+      "list_size": 15,
+      "vertices": 512
+    }
+  ],
+  "pairwise_encoding_variables": 28600,
+  "pairwise_encoding_clauses": 627510,
+  "script_sha256": "6e0b908f76ff6421a7699ce69ecc67e09cf459ec205e999c3e53a945f01cc01a",
+  "elapsed_seconds": 0.1406132080592215,
+  "scope": "Exact reduced-instance size. Dimensions at least four can be deleted because N(n-d) < target_colors. No new coloring or nonexistence result."
+}

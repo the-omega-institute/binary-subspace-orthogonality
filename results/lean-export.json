@@ -1,0 +1,25 @@
+{
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "generator_sha256": "bd2ac662a27c339e16d9b82f6d830b5bfb552433a0b4279b142cfee24c278885",
+  "lean_data_sha256": "83837b0157268a5356d3b4265f0669da21878581aca348f07fc6f8b9384644db",
+  "catalogue_entries_including_zero": 2825,
+  "extension_witnesses": 180800,
+  "clique_indices": [
+    2,
+    8,
+    26,
+    32,
+    50,
+    56,
+    62,
+    337,
+    349,
+    433,
+    445,
+    529,
+    535,
+    701,
+    1844
+  ],
+  "scope": "Deterministic data export; Lean checks are recorded separately."
+}

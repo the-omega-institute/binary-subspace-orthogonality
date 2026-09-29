@@ -1,0 +1,108 @@
+{
+  "status": "reduction_measured_no_solver_run",
+  "dimension": 7,
+  "target_colors": 16,
+  "all_subspace_dimension_counts": {
+    "1": 127,
+    "2": 2667,
+    "3": 11811,
+    "4": 11811,
+    "5": 2667,
+    "6": 127,
+    "7": 1
+  },
+  "all_vertices": 29211,
+  "high_dimension_vertices_deleted_by_degree_bound": 14606,
+  "enumerated_dimensions": [
+    1,
+    2,
+    3
+  ],
+  "enumerated_vertices": 14605,
+  "enumerated_edges": 972246,
+  "additional_low_dimension_deletions": 0,
+  "core_vertices": 14589,
+  "core_edges": 953057,
+  "core_dimension_counts": {
+    "1": 119,
+    "2": 2660,
+    "3": 11810
+  },
+  "initial_palette_types": [
+    {
+      "dimension": 1,
+      "list_size": 1,
+      "vertices": 7
+    },
+    {
+      "dimension": 1,
+      "list_size": 11,
+      "vertices": 56
+    },
+    {
+      "dimension": 1,
+      "list_size": 12,
+      "vertices": 56
+    },
+    {
+      "dimension": 2,
+      "list_size": 1,
+      "vertices": 28
+    },
+    {
+      "dimension": 2,
+      "list_size": 11,
+      "vertices": 196
+    },
+    {
+      "dimension": 2,
+      "list_size": 12,
+      "vertices": 644
+    },
+    {
+      "dimension": 2,
+      "list_size": 14,
+      "vertices": 448
+    },
+    {
+      "dimension": 2,
+      "list_size": 15,
+      "vertices": 1344
+    },
+    {
+      "dimension": 3,
+      "list_size": 1,
+      "vertices": 14
+    },
+    {
+      "dimension": 3,
+      "list_size": 11,
+      "vertices": 98
+    },
+    {
+      "dimension": 3,
+      "list_size": 12,
+      "vertices": 882
+    },
+    {
+      "dimension": 3,
+      "list_size": 14,
+      "vertices": 784
+    },
+    {
+      "dimension": 3,
+      "list_size": 15,
+      "vertices": 6448
+    },
+    {
+      "dimension": 3,
+      "list_size": 16,
+      "vertices": 3584
+    }
+  ],
+  "pairwise_encoding_variables": 214355,
+  "pairwise_encoding_clauses": 12984679,
+  "script_sha256": "6e0b908f76ff6421a7699ce69ecc67e09cf459ec205e999c3e53a945f01cc01a",
+  "elapsed_seconds": 3.6202751251403242,
+  "scope": "Exact reduced-instance size. Dimensions at least four can be deleted because N(n-d) < target_colors. No new coloring or nonexistence result."
+}

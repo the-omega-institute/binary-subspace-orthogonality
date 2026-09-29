@@ -1,0 +1,27 @@
+\section{Higher dimensions and open problems}
+\begin{proposition}\label{prop:dimension-deletion}
+Let $K$ be a fixed $k$-clique in $\OG_n^*$. If $N(n-d)<k$, every uncolored
+$d$-dimensional vertex can be deleted by the degree-versus-list rule.
+Consequently, $k$-colorability of the residual instance after such deletions
+is equivalent to $k$-colorability of the full graph.
+\end{proposition}
+\begin{proof}
+For a $d$-space $U$, the orthogonal complement has dimension $n-d$.
+Every neighbor of $U$ is a nonzero subspace of $U^\perp$, so
+$\deg U\leq N(n-d)$. If $f$ fixed clique vertices are adjacent to $U$,
+then its residual degree is at most $N(n-d)-f$, while its list size is $k-f$.
+The stated inequality therefore guarantees an available color on restoring
+$U$. Apply this argument in reverse deletion order.
+\end{proof}
+
+For $n=7$, the nonzero subspaces of $T=\Span(3,12,48)$ together with
+$\Span(64)$ give a $16$-clique. Since $N(3)=15<16$, Proposition~\ref{prop:dimension-deletion}
+removes all $14\,606$ vertices of dimension at least four from the
+$29\,211$-vertex graph. The remaining uncolored instance has $14\,589$
+vertices and $953\,057$ edges. The direct pairwise list-color encoding would
+have $214\,355$ variables and $12\,984\,679$ clauses. These exact instance
+sizes guide further geometric reduction and resource-bounded search.
+
+Problem~4.3 remains open for $n\geq7$, as does Problem~4.4 of~\cite{Nikandish}.
+Within dimension six, the exact value of $\chi(\Gamma_6)$ and a structural
+description of an optimal full-subspace coloring are the immediate questions.

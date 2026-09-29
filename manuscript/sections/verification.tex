@@ -1,0 +1,23 @@
+\section{Computational certificates and formal verification}\label{sec:verification}
+The positive coloring certificates are checked using integer arithmetic and
+the coordinate definition of orthogonality. The full checker imports neither
+the search program nor a SAT solver. It establishes enumeration completeness
+from distinctness and Gaussian counts, then checks every pair of vertices.
+Three deliberately invalid certificates, respectively omitting a vertex,
+duplicating a subspace, and identifying the colors of adjacent coordinate
+lines, are rejected. The line-coloring checker independently verifies its
+partition and all within-class pairs.
+
+The radical/quotient clique theorem has an existing Lean formalization.
+Its source is \path{formal/NikandishClique.lean}, with theorem
+\texttt{NikandishClique.result} in its documented namespace. The exact
+upstream revision, Lean version and dependencies are recorded in
+\texttt{formal/UPSTREAM.json}. The new chromatic certificate is currently
+verified by the independent integer checker; its Lean verification is being
+developed separately from the archived clique theorem.
+
+The public package~\cite{Package} contains the literal witnesses, independent
+checkers, search records, and SHA-256 bindings. The new geometric profiler
+checks every assigned color against its $H(U)$-determined list. The
+dimension-seven reduction is also replayed in dimension six, where it
+reproduces the established core size and Boolean encoding counts.

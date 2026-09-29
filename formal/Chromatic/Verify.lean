@@ -1,0 +1,42 @@
+import Data
+
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+namespace BinaryOrthogonality
+
+theorem catalogue_covers : dimensionSix.Covers := by native_decide
+
+theorem catalogue_proper : dimensionSix.Proper := by native_decide
+
+theorem fifteen_colorable : graph.Colorable 15 :=
+  dimensionSix.colorable catalogue_covers catalogue_proper
+
+def cliqueIndex (i : Fin 15) : Fin dimensionSix.count :=
+  ⟨cliqueIndices[i.val]! % dimensionSix.count, Nat.mod_lt _ dimensionSix.positive⟩
+
+instance (U : Finset Vector) : Decidable (IsSpace U) :=
+  inferInstanceAs (Decidable (_ ∧ _))
+
+theorem clique_valid : ∀ i : Fin 15,
+    IsSpace (dimensionSix.space (cliqueIndex i)) ∧
+    dimensionSix.space (cliqueIndex i) ≠ {0} := by native_decide
+
+def cliqueVertex (i : Fin 15) : Vertex :=
+  ⟨dimensionSix.space (cliqueIndex i), clique_valid i⟩
+
+instance : DecidableRel graph.Adj := fun _ _ => inferInstanceAs (Decidable (_ ∧ _))
+
+theorem clique_adjacent : Pairwise fun i j : Fin 15 =>
+    graph.Adj (cliqueVertex i) (cliqueVertex j) := by native_decide
+
+/-- The full graph on all nonzero binary subspaces in six coordinates. -/
+theorem chromatic_number_six : graph.chromaticNumber = 15 := by
+  apply le_antisymm fifteen_colorable.chromaticNumber_le
+  exact SimpleGraph.le_chromaticNumber_of_pairwise_adj (by simp) cliqueVertex clique_adjacent
+
+#print axioms Catalogue.complete
+#print axioms Catalogue.colorable
+#print axioms chromatic_number_six
+
+end BinaryOrthogonality
