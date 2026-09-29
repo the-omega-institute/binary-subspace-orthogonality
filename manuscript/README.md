@@ -23,4 +23,7 @@ commits or pull requests; no new branch-protection or CI policy is imposed.
 Next integration: Reza expands sections 1, 2 and 5; Wenlin and Haobo develop
 the chromatic proof and formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
-submission. The current draft does not attribute AI use to Reza.
+submission. The current draft does not attribute AI use to Reza. The
+six-dimensional coloring theorem is now kernel-checked in
+`formal/Chromatic/Verify.lean` on Mac Studio; see
+`results/lean-verification.json` for the exact build record.

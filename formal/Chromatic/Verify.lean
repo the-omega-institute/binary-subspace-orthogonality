@@ -27,13 +27,14 @@ def cliqueVertex (i : Fin 15) : Vertex :=
 
 instance : DecidableRel graph.Adj := fun _ _ => inferInstanceAs (Decidable (_ ∧ _))
 
-theorem clique_adjacent : Pairwise fun i j : Fin 15 =>
+theorem clique_adjacent : ∀ i j : Fin 15, i ≠ j →
     graph.Adj (cliqueVertex i) (cliqueVertex j) := by native_decide
 
 /-- The full graph on all nonzero binary subspaces in six coordinates. -/
 theorem chromatic_number_six : graph.chromaticNumber = 15 := by
   apply le_antisymm fifteen_colorable.chromaticNumber_le
-  exact SimpleGraph.le_chromaticNumber_of_pairwise_adj (by simp) cliqueVertex clique_adjacent
+  exact SimpleGraph.le_chromaticNumber_of_pairwise_adj (by simp) cliqueVertex
+    (fun i j h => clique_adjacent i j h)
 
 #print axioms Catalogue.complete
 #print axioms Catalogue.colorable

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "machine": "Mac Studio",
+  "machine_memory_bytes": 103079215104,
+  "lean": "Lean 4.33.0",
+  "module": "formal/Chromatic/Verify.lean",
+  "theorem": "BinaryOrthogonality.chromatic_number_six",
+  "source_sha256": {
+    "Certificate.lean": "dd19f0ea5d3bc15b7ad48e2558bb2964ed9f4cc5e23b70b42641b2390c3a6b35",
+    "Data.lean": "83837b0157268a5356d3b4265f0669da21878581aca348f07fc6f8b9384644db",
+    "Verify.lean": "28938d5d5385397442720d9d5c8a4b15287a162bce100c65b97f42d3e34d9401"
+  },
+  "elapsed_seconds": 452.28,
+  "maximum_resident_set_bytes": 3038838784,
+  "swap_bytes": 0,
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "checked_claim": "The finite catalogue is complete, the supplied assignment is a proper 15-coloring, and the fixed 15-clique supplies the lower bound, so chromatic_number_six equals 15.",
+  "scope": "Kernel-checked Lean theorem for the six-dimensional encoded binary-subspace graph; the Python certificate remains the independent bridge from the JSON witness to the encoded catalogue."
+}

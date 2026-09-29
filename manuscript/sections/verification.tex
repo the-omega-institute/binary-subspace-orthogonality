@@ -12,9 +12,11 @@ The radical/quotient clique theorem has an existing Lean formalization.
 Its source is \path{formal/NikandishClique.lean}, with theorem
 \texttt{NikandishClique.result} in its documented namespace. The exact
 upstream revision, Lean version and dependencies are recorded in
-\texttt{formal/UPSTREAM.json}. The new chromatic certificate is currently
-verified by the independent integer checker; its Lean verification is being
-developed separately from the archived clique theorem.
+\path{formal/UPSTREAM.json}. The new chromatic certificate is connected to the
+kernel-checked theorem \texttt{chromatic\_number\_six} in
+\path{formal/Chromatic/Verify.lean}. The Mac Studio build, source hashes and
+axiom scope are recorded in \path{results/lean-verification.json}; the
+independent integer checker remains a separate verification of the JSON witness.
 
 The public package~\cite{Package} contains the literal witnesses, independent
 checkers, search records, and SHA-256 bindings. The new geometric profiler

@@ -47,8 +47,11 @@ bind the checker and the supplied certificate.
 ## Scope and next questions
 
 The all-dimensional clique formula already has a Lean proof in the upstream
-project. This new chromatic equality is currently supported by a complete finite
-coloring and exhaustive integer verification, not a new Lean theorem.
+project. The new chromatic equality is additionally connected to the
+kernel-checked theorem `BinaryOrthogonality.chromatic_number_six` in
+`formal/Chromatic/Verify.lean`. Its Mac Studio build and axiom scope are
+recorded in `results/lean-verification.json`; the exhaustive integer checker
+remains an independent verification of the JSON witness.
 
 The new line-graph bounds in line-coloring.md give 12<=chi(Gamma_6)<=13<15,
 so the chromatic separation is at least two. Determining the exact line-graph

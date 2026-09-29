@@ -23,8 +23,9 @@ graph on one-dimensional subspaces, identified with the nonzero vectors.
   [the proof](notes/line-coloring.md) and [the certificate](results/line-coloring.json).
   The line-versus-full-subspace separation is therefore at least two colors.
 
-The dimension-six coloring is an exact finite certificate result; it has not
-yet been formalized in Lean. Problem 4.3 for arbitrary n >= 7 remains open here.
+The dimension-six coloring is now also connected to a kernel-checked Lean
+theorem in `formal/Chromatic/Verify.lean`; the build record is
+`results/lean-verification.json`. Problem 4.3 for arbitrary n >= 7 remains open here.
 
 ## Check the new result
 
