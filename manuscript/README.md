@@ -49,6 +49,14 @@ symmetry. The profile proof and finite statistics have their
 the corollary and final PDF have a separate
 [follow-up validation record](../results/stabilizer-obstruction-review-20260930.json).
 
+Reza's October 1 subsection on auxiliary choices from `785e778` is retained.
+It uses S=span(e1,e3,e5) to distinguish the adjacent coordinate lines by
+intersection dimension. The integrated text states the precise obstruction
+scope and separates this example from an explanation of the full archived
+coloring. The actual diagnostic path is `develop/file_separator.py`.
+The [auxiliary-subsection review record](../results/auxiliary-choice-review-20261001.json)
+records the coordinate checks and rebuilt PDF.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

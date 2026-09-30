@@ -135,17 +135,22 @@ Equivariance would give these lines the same color, a contradiction.
 \label{subsec:auxiliary}
 
 Proposition~\ref{prop:profile-obstruction} and
-Corollary~\ref{cor:equivariance-obstruction} show that the coloring
-cannot depend only on the intrinsic geometric invariants, nor be
-equivariant under the full stabilizer of \(T\).  A structural
-description therefore requires an auxiliary choice.
+Corollary~\ref{cor:equivariance-obstruction} show that a proper
+coloring cannot depend solely on the specified exact profile and
+quotient isometry type, and that a proper \(15\)-coloring cannot be
+equivariant under the full stabilizer of \(T\) with its induced
+clique-label action.  A structural description must distinguish
+vertices identified by these data and break the obstructing symmetry.
+Choosing auxiliary data is one way to do so.
 
 A concrete example is a complement \(S\) to \(T\) in \(V_6\), so that
 \(V_6 = T \oplus S\).  The choice
 \[
 S = \Span\{e_1, e_3, e_5\}
 \]
-distinguishes the adjacent lines \(\Span(e_1)\) and \(\Span(e_2)\),
+is a complement because the generators of \(T\) together with those
+of \(S\) form a basis of \(V_6\).  It distinguishes the adjacent
+lines \(\Span(e_1)\) and \(\Span(e_2)\),
 since
 \[
 \dim(\Span(e_1) \cap S) = 1
@@ -157,13 +162,15 @@ responsible for Corollary~\ref{cor:equivariance-obstruction}.
 
 A direct check on the certificate shows that the two adjacent lines
 receive distinct colors, \(10\) for \(\Span(e_1)\) and \(9\) for
-\(\Span(e_2)\), while every intrinsic geometric quantity printed by
-the diagnostic \(\path{develop/find_separator.py}\) is identical.
-The separation is therefore carried by the auxiliary choice \(S\),
-not by the intrinsic profile.
+\(\Span(e_2)\), while every geometric quantity printed by
+the diagnostic \path{develop/file_separator.py} is identical.
+The output and the complement check are recorded in
+\path{results/adjacent-line-diagnostic.json}.  The auxiliary datum
+\(\dim(U\cap S)\) separates this pair; whether it explains further
+color choices in the certificate is a separate question.
 
 Whether such complement-based data support a complete structural
-\(15\)-coloring remains open.  We record this as
+\(15\)-coloring remains open, as a possible approach to
 Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
 
 Two further directions remain for a structural description.
@@ -189,7 +196,3 @@ example by choosing auxiliary coordinate data such as the complement
 \(S\) above, or restricting to a smaller subgroup.  No such
 construction is asserted here.
 \end{enumerate}
-
-A complete structural proof that \(\chi(\OG_6^*)=15\), avoiding the
-finite computation, remains open.  We record this as
-Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
