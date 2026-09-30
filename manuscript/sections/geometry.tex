@@ -131,17 +131,51 @@ It exchanges the adjacent lines \(\Span(e_1)\) and \(\Span(e_2)\).
 Equivariance would give these lines the same color, a contradiction.
 \end{proof}
 
-Two directions appear promising for a structural description.
+\subsection{Auxiliary choices and symmetry breaking}
+\label{subsec:auxiliary}
+
+Proposition~\ref{prop:profile-obstruction} and
+Corollary~\ref{cor:equivariance-obstruction} show that the coloring
+cannot depend only on the intrinsic geometric invariants, nor be
+equivariant under the full stabilizer of \(T\).  A structural
+description therefore requires an auxiliary choice.
+
+A concrete example is a complement \(S\) to \(T\) in \(V_6\), so that
+\(V_6 = T \oplus S\).  The choice
+\[
+S = \Span\{e_1, e_3, e_5\}
+\]
+distinguishes the adjacent lines \(\Span(e_1)\) and \(\Span(e_2)\),
+since
+\[
+\dim(\Span(e_1) \cap S) = 1
+\qquad\text{while}\qquad
+\dim(\Span(e_2) \cap S) = 0.
+\]
+Thus this fixed auxiliary choice breaks the coordinate swap
+responsible for Corollary~\ref{cor:equivariance-obstruction}.
+
+A direct check on the certificate shows that the two adjacent lines
+receive distinct colors, \(10\) for \(\Span(e_1)\) and \(9\) for
+\(\Span(e_2)\), while every intrinsic geometric quantity printed by
+the diagnostic \(\path{develop/find_separator.py}\) is identical.
+The separation is therefore carried by the auxiliary choice \(S\),
+not by the intrinsic profile.
+
+Whether such complement-based data support a complete structural
+\(15\)-coloring remains open.  We record this as
+Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
+
+Two further directions remain for a structural description.
 
 \begin{enumerate}
 \item \emph{Enrichment of the invariants.}  To recover the current
 coloring, an additional invariant must distinguish vertices within
-the multi-color exact profiles.  This requires further data about
-\(U\), beyond its dimension and the two intersection subspaces.
-Proposition~\ref{prop:profile-obstruction} shows that the isometry type
-of the nondegenerate quotient is still insufficient when combined
-with the exact profile.  A finer rule must distinguish the placement
-of vertices such as the two lines in that proof.
+the multi-color exact profiles.  Proposition~\ref{prop:profile-obstruction}
+shows that the isometry type of the nondegenerate quotient is still
+insufficient when combined with the exact profile.  A finer rule must
+distinguish the placement of vertices such as the two lines in that
+proof.
 The subspaces \(H(U)\) and \(K(U)\) have a relative position in
 \(T\), but neither is assumed to contain the other.  For example,
 in binary coordinates \(U=\Span(1,3)\) gives
@@ -151,8 +185,9 @@ in binary coordinates \(U=\Span(1,3)\) gives
 Corollary~\ref{cor:equivariance-obstruction} rules out equivariance
 under the full stabilizer, even when clique color labels are permuted.
 A structural construction must break some of this symmetry, for
-example by choosing auxiliary coordinate data or restricting to a
-smaller subgroup.  No such construction is asserted here.
+example by choosing auxiliary coordinate data such as the complement
+\(S\) above, or restricting to a smaller subgroup.  No such
+construction is asserted here.
 \end{enumerate}
 
 A complete structural proof that \(\chi(\OG_6^*)=15\), avoiding the
