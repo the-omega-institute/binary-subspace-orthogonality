@@ -17,6 +17,12 @@ not a nonexistence theorem for a profile-based construction. A useful next
 question is whether recoloring within the allowed lists can make some or all
 of those profiles monochromatic while preserving the edges between profiles.
 
+The [profile audit](geometry-profile-audit.md) now gives a written obstruction
+to making every exact profile monochromatic: adjacent lines span(1) and span(2)
+have identical exact profiles and isometric quotients. Numerical dimension
+partitions must not be compared directly to the 240 exact profiles. The audit
+report supplies correctly refined groups and their members for further analysis.
+
 Reproduce with `python3 develop/analyze_geometry.py`. The analyzer independently
 reconstructs spans and verifies each assigned color against its geometric list.
 The full graph check remains `python3 develop/check_full_coloring.py

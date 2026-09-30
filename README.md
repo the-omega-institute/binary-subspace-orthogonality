@@ -75,6 +75,12 @@ are retained. A different satisfying coloring is valid if it passes the checker.
 
 The new [geometric handoff](notes/geometry-handoff.md) profiles the complete
 coloring by H(U), U intersect T and dimension. The
+[profile audit and short obstruction proof](notes/geometry-profile-audit.md)
+compare Reza's two numerical scripts with the exact profiles: the numerical
+30-group partition is not a refinement of the exact 240-group partition.
+Adjacent coordinate lines show that even the exact profile together with the
+quotient-form isometry type cannot determine a proper coloring. The current
+paper includes this proposition; a structural 15-coloring remains open. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

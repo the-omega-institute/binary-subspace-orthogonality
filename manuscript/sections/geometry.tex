@@ -91,8 +91,32 @@ more than one color and the remaining \(101\) receive a single color.
 Thus even the exact profile does not determine the color in this
 fixed certificate.  These statistics are recorded in
 \path{results/coloring-geometry.json} and reproduced by
-\path{develop/analyze_geometry.py}.  They do not rule out a different
-proper coloring determined by the exact profiles.
+\path{develop/analyze_geometry.py}.  The statistics alone do not
+settle whether a different proper coloring could depend on these
+profiles.  The following obstruction rules out such a rule even
+with the quotient-form isometry type added.
+
+\begin{proposition}\label{prop:profile-obstruction}
+No proper coloring of \(\OG_6^*\) depends solely on
+\((\dim U,H(U),K(U))\) and the isometry type of the restricted
+nondegenerate bilinear form on \(U/(U\cap U^\perp)\).
+\end{proposition}
+\begin{proof}
+The distinct lines \(U=\Span(e_1)\) and \(V=\Span(e_2)\) are adjacent.
+Both have dimension one,
+\(H(U)=H(V)=\Span(e_3+e_4,e_5+e_6)\), and
+\(K(U)=K(V)=\{0\}\).  Their restricted forms have Gram matrix \([1]\),
+so their radicals are zero and their quotients are isometric.
+A rule depending only on the stated data assigns equal colors to
+these adjacent vertices, a contradiction.
+\end{proof}
+
+The computation in \path{results/geometry-profile-audit.json}
+retains the exact subspaces: adding quotient dimension gives \(263\)
+profiles, \(160\) multicolored; adding alternating status makes no
+further split.  None of the original \(139\) multicolored profiles
+is completely resolved.  These are finite statistics of the fixed
+witness, distinct from Proposition~\ref{prop:profile-obstruction}.
 
 Two directions appear promising for a structural description.
 
@@ -101,8 +125,10 @@ Two directions appear promising for a structural description.
 coloring, an additional invariant must distinguish vertices within
 the multi-color exact profiles.  This requires further data about
 \(U\), beyond its dimension and the two intersection subspaces.
-One possible datum to investigate is the isometry type of the
-nondegenerate quotient \(U/(U\cap U^\perp)\).
+Proposition~\ref{prop:profile-obstruction} shows that the isometry type
+of the nondegenerate quotient is still insufficient when combined
+with the exact profile.  A finer rule must distinguish the placement
+of vertices such as the two lines in that proof.
 The subspaces \(H(U)\) and \(K(U)\) have a relative position in
 \(T\), but neither is assumed to contain the other.  For example,
 in binary coordinates \(U=\Span(1,3)\) gives

@@ -1,6 +1,8 @@
 """
-Test whether the full isometry type of U / (U ∩ U^⊥), including the
-Arf invariant, separates the remaining multi-color profiles.
+Compute the parity of the number of self-orthogonal vectors outside the
+radical. This is a bilinear count, not an Arf invariant of a quadratic form.
+The numerical partition omits the actual subspaces H and K; use
+audit_geometry_profiles.py for a comparison retaining the exact baseline.
 """
 import json
 from collections import defaultdict
@@ -26,12 +28,9 @@ def dim(U):
 
 def arf_invariant(U):
     """
-    Compute a coarse isometry type of U / (U ∩ U^⊥).
-
-    For a nondegenerate quadratic space over F_2 of even dimension 2m,
-    the isometry type is determined by the Arf invariant. We use a
-    simple computational invariant: the number of isotropic vectors
-    modulo 2^(dim).
+    Return quotient dimension and self-orthogonal-count parity.
+    The historical function name is retained for compatibility; no quadratic
+    refinement is specified here, so this value is not an Arf invariant.
     """
     rad = frozenset(u for u in U if all(dot(u, v) == 0 for v in U))
     d_rad = dim(rad) if rad else 0

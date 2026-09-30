@@ -8,10 +8,12 @@ Invariants computed for each vertex U outside the clique:
   - dim(K(U)), where K(U) = U ∩ T
   - dim(U ∩ H(U))
   - dim(K(U) ∩ H(U))
-  - the isometry type of U / (U ∩ U^⊥)
+  - the dimension of U / (U ∩ U^⊥)
 
-This script checks whether these invariants reduce the number of
-multi-color profiles below 139.
+This script groups by numerical invariants. It does not retain the actual
+subspaces H and K, so its output is not a refinement of the 240 exact profiles
+in coloring-geometry.json. Use audit_geometry_profiles.py to compare partitions
+on the same baseline.
 """
 import json
 from collections import Counter, defaultdict
@@ -36,7 +38,7 @@ def dim(U):
 
 
 def isometry_type_quotient(U):
-    """Return a coarse invariant of U / (U ∩ U^⊥)."""
+    """Return quotient dimension, not a full isometry classification."""
     rad = frozenset(u for u in U if all(dot(u, v) == 0 for v in U))
     d_rad = dim(rad) if rad else 0
     d_U = dim(U)
