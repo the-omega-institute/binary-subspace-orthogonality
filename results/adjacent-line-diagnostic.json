@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "source_commit": "2ecd83fb983ce83f49bd66ec447e35ce7f6827e4",
+  "command": "python3 develop/file_separator.py",
+  "filename_note": "The committed filename is file_separator.py; Reza's comment refers to find_separator.py.",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "lines": [
+    {
+      "basis": [1], "color": 10, "dimension": 1,
+      "H_vectors": [0, 12, 48, 60], "K_vectors": [0],
+      "U_intersect_H_vectors": [0], "orthogonal_complement_cardinality": 32,
+      "adjacent_clique_colors": [4, 5, 6, 13]
+    },
+    {
+      "basis": [2], "color": 9, "dimension": 1,
+      "H_vectors": [0, 12, 48, 60], "K_vectors": [0],
+      "U_intersect_H_vectors": [0], "orthogonal_complement_cardinality": 32,
+      "adjacent_clique_colors": [4, 5, 6, 13]
+    }
+  ],
+  "conclusion": "The witness assigns distinct colors as required by adjacency; none of the geometric quantities printed by this script distinguishes the two lines.",
+  "auxiliary_complement_example": {
+    "S_basis": [1, 4, 16],
+    "S_intersect_T_vectors": [0],
+    "S_plus_T_cardinality": 64,
+    "first_line_intersection_dimension": 1,
+    "second_line_intersection_dimension": 0,
+    "scope": "The chosen complement S=span(e1,e3,e5) supplies placement data that distinguish this pair and break the obstructing coordinate swap. No claim that this datum gives a proper 15-coloring."
+  },
+  "validation_scope": "Ran Reza's script, independently checked both lines against the existing audit and replayed the fixed-complement example. No new certificate, solver search, Lean run or shared CI change; n7 remains open."
+}
