@@ -83,6 +83,9 @@ quotient-form isometry type cannot determine a proper coloring. The current
 paper includes this proposition and a corollary ruling out full-stabilizer
 equivariance with the induced action on the 15 clique labels. A structural
 15-coloring using finer placement data or auxiliary choices remains open. The
+[complement-projection argument](notes/complement-projection.md) proves that
+the pair (U intersect T, projection onto S) retains exactly the old profile,
+and identifies the additional lift map it forgets. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

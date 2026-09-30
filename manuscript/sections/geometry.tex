@@ -173,6 +173,35 @@ Whether such complement-based data support a complete structural
 \(15\)-coloring remains open, as a possible approach to
 Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
 
+Intersection with \(S\) must be distinguished from projection onto \(S\).
+Let \(\pi_S\) be projection along \(T\), for any complement \(S\).
+\begin{proposition}\label{prop:projection-profile}
+The pair \((U\cap T,\pi_S(U))\) and the exact profile
+\((\dim U,H(U),K(U))\) determine each other.  No proper coloring
+of \(\OG_6^*\) depends solely on this pair.
+\end{proposition}
+\begin{proof}
+Write \(P=\pi_S(U)\) and \(K=U\cap T\).  Since the form vanishes
+on \(T\), \(H(U)\) is the annihilator of \(P\) in \(T\).
+The pairing between \(T\) and \(S\) is perfect: a vector of \(T\)
+orthogonal to \(S\) is orthogonal to all of \(V_6=T\oplus S\),
+hence zero, and both summands have dimension three.  Thus \(P\) is
+the annihilator of \(H(U)\) in \(S\).  Rank--nullity gives
+\(\dim U=\dim K+\dim P\), proving the equivalence.  The coloring
+obstruction follows from Proposition~\ref{prop:profile-obstruction}.
+\end{proof}
+
+For the displayed complement, \(\pi_S(e_1)=\pi_S(e_2)=e_1\),
+so the projection pair fails to distinguish those adjacent lines.
+The computation in \path{results/complement-projection.json} gives the
+same \(240\) exact groups, \(139\) multicolored, as before;
+Proposition~\ref{prop:projection-profile} explains this identity.
+For fixed \(K\) and \(P\), the remaining placement is encoded by a
+linear map \(f:P\to T/K\): if \(t+s\in U\), set \(f(s)=t+K\).
+Then \(U=\{t+s:s\in P,\ t+K=f(s)\}\) and
+\(U\cap S=\ker f\).  Extracting a structural \(15\)-color rule
+from these lift data remains open.
+
 Two further directions remain for a structural description.
 
 \begin{enumerate}

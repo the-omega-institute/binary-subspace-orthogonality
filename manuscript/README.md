@@ -57,6 +57,18 @@ coloring. The actual diagnostic path is `develop/file_separator.py`.
 The [auxiliary-subsection review record](../results/auxiliary-choice-review-20261001.json)
 records the coordinate checks and rebuilt PDF.
 
+Reza's next projection diagnostic from `b913143` is preserved at its actual
+path `develop/Complement_projection.py`. Its output remains 240 groups,
+101 single-color and 139 multicolored. Proposition 5.4 proves that these are
+the identical exact-profile groups: the projection image and H are mutual
+annihilators under the perfect T--S pairing. The new
+[readable argument and missing lift datum](../notes/complement-projection.md)
+and [independent check](../results/complement-projection-check.json) explain
+why projection alone adds no information, while intersection with S can.
+The current nine-page PDF builds in two passes without warnings and all pages
+are visually reviewed; see the
+[projection review record](../results/complement-projection-review-20261001.json).
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
