@@ -1,8 +1,8 @@
 \section{Geometry of the precoloring}
 \label{sec:geometry}
 
-In this section we describe the \(15\)-coloring of \(\OG_6^*\)
-constructed in Section~\ref{sec:chromatic} in geometric terms.  Keep
+In this section we describe the geometric color lists and profiles of the
+\(15\)-coloring constructed in Section~\ref{sec:chromatic}.  Keep
 the notation of that section: \(T\) is the totally isotropic
 \(3\)-space
 \[
@@ -45,10 +45,8 @@ By definition, \(U\) is adjacent to \(W\) if and only if
 this gives \(15\), \(14\), and \(11\) in the three cases.
 \end{proof}
 
-The distribution of the \(2809=2824-15\) vertices outside
-\(\mathcal C\), grouped by the triple
-\((\dim U,\dim H(U),\dim K(U))\), is recorded in
-Table~\ref{tab:profiles}.
+Table~\ref{tab:profiles} groups the \(2809=2824-15\) vertices outside
+\(\mathcal C\) by the dimensions of \(U\), \(H(U)\), and \(K(U)\).
 
 \begin{table}[htbp]
 \centering
@@ -76,39 +74,52 @@ Table~\ref{tab:profiles}.
 \label{tab:profiles}
 \end{table}
 
-The \(357\) vertices with \(\dim H(U)=2\) are the most constrained,
-having only \(11\) allowed colors.  A direct analysis of the
-incidence structure between these vertices and the \(15\) clique
-colors shows that the precoloring extends; this is the content of
-the certificate described in Section~\ref{sec:chromatic}.
+The table has \(12\) dimension profiles.  Its \(357\) vertices with
+\(\dim H(U)=2\) are the most constrained, having \(11\) allowed colors.
+These lists describe the constraints imposed by the clique.  The full
+certificate in Section~\ref{sec:chromatic} establishes that the precoloring
+extends by checking every orthogonality edge, including those between
+vertices outside the clique.
 
 \subsection{Towards a structural description}
 
-The invariants \((\dim U,\dim H(U),\dim K(U))\) do not by themselves
-determine the color in the certificate.  Grouping the archived
-coloring by this triple produces \(240\) distinct profiles outside
-the clique; among these, \(139\) receive more than one color.  The
-remaining \(101\) profiles receive a single color.  This is the
-precise sense in which the present coloring depends on finer data
-than the basic geometric invariants.
+Retaining the actual subspaces \(H(U)\) and \(K(U)\), rather than
+their dimensions alone, gives the exact profiles
+\((\dim U,H(U),K(U))\).  Grouping the archived coloring by this
+triple produces \(240\) profiles outside the clique; \(139\) receive
+more than one color and the remaining \(101\) receive a single color.
+Thus even the exact profile does not determine the color in this
+fixed certificate.  These statistics are recorded in
+\path{results/coloring-geometry.json} and reproduced by
+\path{develop/analyze_geometry.py}.  They do not rule out a different
+proper coloring determined by the exact profiles.
 
 Two directions appear promising for a structural description.
 
 \begin{enumerate}
-\item \emph{Enrichment of the invariants.}  The profiles that receive
-a single color suggest that the triple
-\((\dim U,\dim H(U),\dim K(U))\) captures part of the coloring rule.
-One may look for an additional invariant, such as the position of
-\(K(U)\) inside \(H(U)\) or the structure of the quotient
-\(U/(U\cap H(U))\), that separates the multi-color profiles.
+\item \emph{Enrichment of the invariants.}  To recover the current
+coloring, an additional invariant must distinguish vertices within
+the multi-color exact profiles.  This requires further data about
+\(U\), beyond its dimension and the two intersection subspaces.
+One possible datum to investigate is the isometry type of the
+nondegenerate quotient \(U/(U\cap U^\perp)\).
+The subspaces \(H(U)\) and \(K(U)\) have a relative position in
+\(T\), but neither is assumed to contain the other.  For example,
+in binary coordinates \(U=\Span(1,3)\) gives
+\(K(U)=\Span(3)\) and \(H(U)=\Span(12,48)\).
 
-\item \emph{The stabilizer of \(T\).}  The orthogonal group of
-\(V_6\) acts on \(\OG_6^*\) and permutes the \(15\) clique colors.
-A coloring invariant under the stabilizer of \(T\) in this group
-would reduce the problem to a finite group-theoretic computation.
-This direction has not been pursued in the present certificate.
+\item \emph{The stabilizer of \(T\).}  Let \(G\) be the stabilizer
+of \(T\) in the orthogonal group of \(V_6\).  It acts on the graph
+and on the color labels by \(g\cdot c_W=c_{gW}\).  A possible
+structural construction would seek a proper coloring satisfying
+\(c(gU)=g\cdot c(U)\) for every \(g\in G\), with the prescribed
+clique colors.  Such an equivariant coloring is an open question
+here.  Invariance with fixed color labels, \(c(gU)=c(U)\), is
+impossible: exchanging the coordinate pairs \((1,2)\) and \((3,4)\)
+preserves \(T\) but exchanges its distinct clique lines
+\(\Span(3)\) and \(\Span(12)\), which must have different colors.
 \end{enumerate}
 
 A complete structural proof that \(\chi(\OG_6^*)=15\), avoiding the
 finite computation, remains open.  We record this as
-Problem~\ref{prob:structural} in Section~\ref{sec:open}.
+Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
