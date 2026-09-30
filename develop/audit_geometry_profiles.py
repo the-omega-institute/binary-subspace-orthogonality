@@ -26,6 +26,11 @@ def binary_rank(rows):
     return len(pivots)
 
 
+def swap_first_coordinates(vector):
+    return ((vector & ~3) | ((vector & 1) << 1) |
+            ((vector & 2) >> 1))
+
+
 def summarize(groups):
     counts = [Counter(record['color'] for record in records)
               for records in groups.values()]
@@ -127,6 +132,11 @@ def analyze(certificate):
     assert first_line != second_line
     assert all(dot(first, second) == 0 for first in first_line for second in second_line)
     assert first_record['color'] != second_record['color']
+    assert all(swap_first_coordinates(vector) == vector
+               for vector in isotropic_space)
+    assert all(dot(swap_first_coordinates(first), swap_first_coordinates(second))
+               == dot(first, second) for first in range(64) for second in range(64))
+    assert swap_first_coordinates(1) == 2 and swap_first_coordinates(2) == 1
     multicolor_profiles = [
         {'dimension': key[0], 'H_vectors': list(key[1]), 'K_vectors': list(key[2]),
          'quotient_dimension': key[3], 'alternating': key[4],
@@ -152,6 +162,12 @@ def analyze(certificate):
             'quotient_dimension': 1, 'alternating': False,
             'conclusion': 'No proper coloring can depend only on this exact profile and these quotient invariants.'},
         'remaining_exact_multicolor_profiles': multicolor_profiles,
+        'full_stabilizer_equivariance_obstruction': {
+            'coordinate_transposition': [1, 2],
+            'dot_product_pairs_checked': 4096,
+            'T_vectors_fixed_pointwise': 8,
+            'adjacent_lines_exchanged': [[1], [2]],
+            'conclusion': 'No proper precolored 15-coloring is equivariant under the full orthogonal stabilizer of T with its induced clique-label action.'},
         'scope': 'Finite partition statistics for the fixed witness, plus a coordinate obstruction. '
                  'Minimum disagreements ignore edges and are not feasible recoloring counts. '
                  'The parity is not an Arf invariant; n=7 remains open.'}

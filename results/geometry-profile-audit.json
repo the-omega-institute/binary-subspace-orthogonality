@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
-  "audit_script_sha256": "30a0e6717d55deb54f4f9c2761f770c5fe0b3b8024049eb43714d7e7803338c7",
+  "audit_script_sha256": "adddafa6b3994695047f49dc01f85a9900e5270a8bf2afefd37d1974549700d5",
   "partitions": {
     "dimension_only": {
       "profiles": 12,
@@ -21698,5 +21698,22 @@
       ]
     }
   ],
+  "full_stabilizer_equivariance_obstruction": {
+    "coordinate_transposition": [
+      1,
+      2
+    ],
+    "dot_product_pairs_checked": 4096,
+    "T_vectors_fixed_pointwise": 8,
+    "adjacent_lines_exchanged": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "conclusion": "No proper precolored 15-coloring is equivariant under the full orthogonal stabilizer of T with its induced clique-label action."
+  },
   "scope": "Finite partition statistics for the fixed witness, plus a coordinate obstruction. Minimum disagreements ignore edges and are not feasible recoloring counts. The parity is not an Arf invariant; n=7 remains open."
 }

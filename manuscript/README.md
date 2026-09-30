@@ -25,8 +25,9 @@ into the two section files and includes each exactly once. Edit those section
 files for subsequent revisions. Reza's geometry contribution from `ad269bf`
 and open problems from `144ce04` are now integrated. The follow-up distinguishes
 the 12 dimension profiles from the 240 exact profiles, gives the full-edge
-certificate its precise role, and formulates the stabilizer question with
-simultaneous permutation of color labels. The current fixed coloring does not
+certificate its precise role, and initially formulated the stabilizer question
+with simultaneous permutation of color labels. Corollary 5.3 below settles
+that question negatively for the full stabilizer. The current fixed coloring does not
 determine a color from an exact profile alone.
 
 The [geometry-integration check record](../results/manuscript-geometry-review-20260930.json)
@@ -40,8 +41,13 @@ the comparison of 139 exact multicolored groups with 29 numerical multicolored
 groups: the scripts omit the actual H and K, so these are different partitions.
 A genuine refinement gives 263 groups, 160 multicolored, and resolves none of
 the original 139 multicolored groups completely. Proposition 5.2 supplies a
-written obstruction independent of this witness. Its proof and the finite
-statistics are distinguished in the [new validation record](../results/geometry-profile-review-20260930.json).
+written obstruction independent of this witness. Corollary 5.3 also rules out
+full-stabilizer equivariance: swapping coordinates 1 and 2 fixes every clique
+label while exchanging two adjacent lines. A structural rule must break that
+symmetry. The profile proof and finite statistics have their
+[validation record](../results/geometry-profile-review-20260930.json);
+the corollary and final PDF have a separate
+[follow-up validation record](../results/stabilizer-obstruction-review-20260930.json).
 
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly

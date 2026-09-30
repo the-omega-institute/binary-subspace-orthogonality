@@ -118,6 +118,19 @@ further split.  None of the original \(139\) multicolored profiles
 is completely resolved.  These are finite statistics of the fixed
 witness, distinct from Proposition~\ref{prop:profile-obstruction}.
 
+Let \(G\) be the stabilizer of \(T\) in the orthogonal group of
+\(V_6\), acting on clique color labels by \(g\cdot c_W=c_{gW}\).
+\begin{corollary}\label{cor:equivariance-obstruction}
+No proper \(15\)-coloring with the prescribed clique colors satisfies
+\(c(gU)=g\cdot c(U)\) for every \(g\in G\).
+\end{corollary}
+\begin{proof}
+The coordinate transposition \((1,2)\) is orthogonal and fixes every
+vector of \(T\), hence every clique subspace and every color label.
+It exchanges the adjacent lines \(\Span(e_1)\) and \(\Span(e_2)\).
+Equivariance would give these lines the same color, a contradiction.
+\end{proof}
+
 Two directions appear promising for a structural description.
 
 \begin{enumerate}
@@ -134,16 +147,12 @@ The subspaces \(H(U)\) and \(K(U)\) have a relative position in
 in binary coordinates \(U=\Span(1,3)\) gives
 \(K(U)=\Span(3)\) and \(H(U)=\Span(12,48)\).
 
-\item \emph{The stabilizer of \(T\).}  Let \(G\) be the stabilizer
-of \(T\) in the orthogonal group of \(V_6\).  It acts on the graph
-and on the color labels by \(g\cdot c_W=c_{gW}\).  A possible
-structural construction would seek a proper coloring satisfying
-\(c(gU)=g\cdot c(U)\) for every \(g\in G\), with the prescribed
-clique colors.  Such an equivariant coloring is an open question
-here.  Invariance with fixed color labels, \(c(gU)=c(U)\), is
-impossible: exchanging the coordinate pairs \((1,2)\) and \((3,4)\)
-preserves \(T\) but exchanges its distinct clique lines
-\(\Span(3)\) and \(\Span(12)\), which must have different colors.
+\item \emph{Restricted symmetry or auxiliary choices.}
+Corollary~\ref{cor:equivariance-obstruction} rules out equivariance
+under the full stabilizer, even when clique color labels are permuted.
+A structural construction must break some of this symmetry, for
+example by choosing auxiliary coordinate data or restricting to a
+smaller subgroup.  No such construction is asserted here.
 \end{enumerate}
 
 A complete structural proof that \(\chi(\OG_6^*)=15\), avoiding the

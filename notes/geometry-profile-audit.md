@@ -65,7 +65,22 @@ A rule depending only on these data assigns equal colors to adjacent vertices.
 This contradiction is independent of the fixed certificate and color count.
 The audit also replays the coordinate witness. **QED.**
 
-Rules using further information about U's placement, including equivariant
-color-label actions, are separate questions. These statistics and the written
-obstruction do not solve structural 15-coloring or n=7. No Lean verification
-is claimed for the new proposition.
+## Full-stabilizer equivariance is also impossible
+
+Let G be the orthogonal stabilizer of T, acting on the 15 clique labels by
+g.c_W=c_(gW). No proper 15-coloring with the prescribed clique colors can
+satisfy c(gU)=g.c(U) for every g in G. The coordinate transposition (1,2)
+preserves the dot product and fixes T pointwise, so it fixes every clique
+subspace and all 15 color labels. It exchanges the adjacent lines span(e1)
+and span(e2); equivariance forces equal colors, a contradiction.
+
+This is Corollary 5.3 in the paper. It supersedes the earlier suggestion
+that full-stabilizer equivariance with permuted clique labels was open.
+It is specific to the 15 labels determined by the precolored clique.
+The audit checks the transposition on all 4096 vector pairs and all eight
+vectors in T as a coordinate replay of the written proof.
+
+Rules using further information about U's placement, auxiliary choices, or
+a smaller symmetry group remain possible directions. The statistics and
+these written obstructions do not solve structural 15-coloring or n=7.
+No Lean verification is claimed for the proposition or corollary.

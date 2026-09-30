@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-09-30T15:09:00Z",
+  "base_commit": "e89b4cb6b45c9ce28c6fd50a9ee2063a45c131ed",
+  "scope": "Add written Corollary 5.3 ruling out full-stabilizer equivariance of a proper 15-coloring with the induced clique-label action; replace the earlier open-question suggestion.",
+  "proof": "Swapping coordinates 1 and 2 is orthogonal and fixes T pointwise, hence all 15 clique color labels. It exchanges the adjacent lines span(e1), span(e2). Equivariance would give equal colors to adjacent vertices.",
+  "validation": {
+    "audit_command": "python3 develop/audit_geometry_profiles.py",
+    "audit_status": "passed",
+    "coordinate_replay": "Transposition preserves dot products on all 4096 vector pairs and fixes all eight T vectors; it exchanges the two adjacent coordinate lines.",
+    "profile_statistics": "All previously reported corrected partition counts unchanged.",
+    "latex_command": "cd manuscript && pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+    "latex_passes": 2,
+    "pages": 8,
+    "final_log_warnings": false,
+    "undefined_references_or_citations": false,
+    "overfull_or_underfull_boxes": false,
+    "all_eight_rendered_pages_visually_reviewed": true,
+    "render_command": "pdftoppm -scale-to 1200 -png manuscript/paper.pdf /private/tmp/nikandish-stabilizer-page",
+    "new_Lean_run": false,
+    "new_solver_search": false,
+    "certificate_changes": false,
+    "shared_CI_changes": false
+  },
+  "limits": "This is a written proof and coordinate replay, not a Lean theorem. It concerns the full orthogonal stabilizer and the 15 labels fixed by the clique. Structural rules with auxiliary choices or smaller symmetry groups are not excluded. Structural 15-coloring and n7 remain open.",
+  "sha256": {
+    "manuscript/paper.pdf": "0851eb54d9c2535e127cd6779f55efce79a3a78cbfb268e334f340a327aae7cb",
+    "manuscript/sections/geometry.tex": "6327afdc992271259b01f71cdc191a829dad4eafd8d3712e51ab9e85d6dcc7fb",
+    "develop/audit_geometry_profiles.py": "adddafa6b3994695047f49dc01f85a9900e5270a8bf2afefd37d1974549700d5",
+    "results/geometry-profile-audit.json": "9353551a616b9ebacf641f6e791649bf7577c05503083e278520a7f2f7a09943",
+    "results/full-15-coloring.json": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268"
+  }
+}
