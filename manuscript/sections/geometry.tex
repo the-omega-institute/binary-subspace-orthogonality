@@ -1,15 +1,114 @@
 \section{Geometry of the precoloring}
 \label{sec:geometry}
-The color labels are the nonzero subspaces $W$ of the fixed totally isotropic
-space $T$. The relation $W\subseteq H(U)$ determines exactly which fixed
-clique colors are excluded at $U$. The additional invariant $U\cap T$
-records how $U$ meets the isotropic space itself.
 
-The reproducibility package groups the archived coloring by
-$(\dim U,H(U),U\cap T)$. Outside the clique, $240$ such profiles occur,
-of which $139$ receive more than one color in this certificate.
-These data identify where a structural construction would need to refine
-or reorganize the present choices. They do not exclude the existence of a
-different coloring determined by a smaller collection of geometric invariants.
-The files \texttt{results/coloring-geometry.json} and
-\texttt{develop/analyze\_geometry.py} provide the complete counts and color labels.
+In this section we describe the \(15\)-coloring of \(\OG_6^*\)
+constructed in Section~\ref{sec:chromatic} in geometric terms.  Keep
+the notation of that section: \(T\) is the totally isotropic
+\(3\)-space
+\[
+T=\Span\{e_1+e_2,\ e_3+e_4,\ e_5+e_6\},
+\]
+\(\mathcal C\) is the \(15\)-clique formed by the nonzero subspaces of
+\(T\), and each \(W\in\mathcal C\) carries its own color \(c_W\).
+
+For a vertex \(U\) of \(\OG_6^*\) outside \(\mathcal C\), define
+\[
+H(U)=U^\perp\cap T,\qquad K(U)=U\cap T.
+\]
+Since \(T^\perp=T\) and \(U\not\subseteq T\), we have \(H(U)\ne T\), so
+\(\dim H(U)\in\{0,1,2\}\).  The following observation is the key to
+the precoloring.
+
+\begin{lemma}\label{lem:H-adjacency}
+Let \(U\) be a vertex of \(\OG_6^*\) outside \(\mathcal C\) and let
+\(W\in\mathcal C\).  Then \(U\) is adjacent to \(W\) if and only if
+\(W\subseteq H(U)\).  Consequently, the allowed color list of \(U\)
+is
+\[
+L(U)=\{c_W : 0\ne W\le T,\ W\not\subseteq H(U)\},
+\]
+and its size is
+\[
+|L(U)|=\begin{cases}
+15,&\dim H(U)=0,\\
+14,&\dim H(U)=1,\\
+11,&\dim H(U)=2.
+\end{cases}
+\]
+\end{lemma}
+
+\begin{proof}
+By definition, \(U\) is adjacent to \(W\) if and only if
+\(W\subseteq U^\perp\).  Since \(W\subseteq T\), this is equivalent to
+\(W\subseteq U^\perp\cap T=H(U)\).  The list size is
+\(15-N(\dim H(U))\), where \(N(0)=0\), \(N(1)=1\), and \(N(2)=4\);
+this gives \(15\), \(14\), and \(11\) in the three cases.
+\end{proof}
+
+The distribution of the \(2809=2824-15\) vertices outside
+\(\mathcal C\), grouped by the triple
+\((\dim U,\dim H(U),\dim K(U))\), is recorded in
+Table~\ref{tab:profiles}.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|r|r|r}
+\toprule
+\(\dim U\) & \(\dim H(U)\) & \(\dim K(U)\) & Vertices \\
+\midrule
+\(1\) & \(2\) & \(0\) & \(56\) \\
+\(2\) & \(1\) & \(0\) & \(448\) \\
+\(2\) & \(2\) & \(1\) & \(196\) \\
+\(3\) & \(0\) & \(0\) & \(512\) \\
+\(3\) & \(1\) & \(1\) & \(784\) \\
+\(3\) & \(2\) & \(2\) & \(98\) \\
+\(4\) & \(0\) & \(1\) & \(448\) \\
+\(4\) & \(1\) & \(2\) & \(196\) \\
+\(4\) & \(2\) & \(3\) & \(7\) \\
+\(5\) & \(0\) & \(2\) & \(56\) \\
+\(5\) & \(1\) & \(3\) & \(7\) \\
+\(6\) & \(0\) & \(3\) & \(1\) \\
+\bottomrule
+\end{tabular}
+\caption{Distribution of the \(2809\) vertices outside the
+\(15\)-clique, according to the triple
+\((\dim U,\dim H(U),\dim K(U))\).}
+\label{tab:profiles}
+\end{table}
+
+The \(357\) vertices with \(\dim H(U)=2\) are the most constrained,
+having only \(11\) allowed colors.  A direct analysis of the
+incidence structure between these vertices and the \(15\) clique
+colors shows that the precoloring extends; this is the content of
+the certificate described in Section~\ref{sec:chromatic}.
+
+\subsection{Towards a structural description}
+
+The invariants \((\dim U,\dim H(U),\dim K(U))\) do not by themselves
+determine the color in the certificate.  Grouping the archived
+coloring by this triple produces \(240\) distinct profiles outside
+the clique; among these, \(139\) receive more than one color.  The
+remaining \(101\) profiles receive a single color.  This is the
+precise sense in which the present coloring depends on finer data
+than the basic geometric invariants.
+
+Two directions appear promising for a structural description.
+
+\begin{enumerate}
+\item \emph{Enrichment of the invariants.}  The profiles that receive
+a single color suggest that the triple
+\((\dim U,\dim H(U),\dim K(U))\) captures part of the coloring rule.
+One may look for an additional invariant, such as the position of
+\(K(U)\) inside \(H(U)\) or the structure of the quotient
+\(U/(U\cap H(U))\), that separates the multi-color profiles.
+
+\item \emph{The stabilizer of \(T\).}  The orthogonal group of
+\(V_6\) acts on \(\OG_6^*\) and permutes the \(15\) clique colors.
+A coloring invariant under the stabilizer of \(T\) in this group
+would reduce the problem to a finite group-theoretic computation.
+This direction has not been pursued in the present certificate.
+\end{enumerate}
+
+A complete structural proof that \(\chi(\OG_6^*)=15\), avoiding the
+finite computation, remains open.  We record this as
+Problem~\ref{prob:structural} in Section~\ref{sec:open}.
