@@ -54,8 +54,6 @@ def lift_map_pattern(U, T, S):
     K = U & T
     P_to_f = {}
     for u in U:
-        if u == 0:
-            continue
         for s in S:
             if (u ^ s) in T:
                 t = u ^ s

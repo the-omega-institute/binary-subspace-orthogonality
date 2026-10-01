@@ -80,6 +80,18 @@ criterion in lift coordinates. See the
 [independent record](../results/lift-map-matrix-check.json) and
 [current build review](../results/lift-map-matrix-review-20261001.json).
 
+Reza's next script from `d150bb5` is actually `develop/lift_map_value.py`
+(singular). Its zero-vector skip is corrected. The requested value list gives
+836 groups, 196 multicolored, omitting the exact K and domain basis. Retaining
+exact K,P and all basis values gives 2809 singleton vertices, with an explicit
+reconstruction proof now in section 5. The
+[value-pattern note](../notes/lift-map-values.md) explains why singleton
+encodings are a complete vertex representation, not a 15-color rule. The
+[independent check](../results/lift-map-values-check.json) reproduces every
+pattern and reconstructs every vertex; the
+[current build review](../results/lift-map-values-review-20261001.json) records
+the final PDF and precise scope.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

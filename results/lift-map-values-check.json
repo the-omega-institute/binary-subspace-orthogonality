@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "method": "Independent coefficient-tuple spans, coordinate projection and quotient cosets; canonical basis replayed by exhaustive minimum over the preceding span rather than the author elimination algorithm.",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "requested_output_sha256": "38a44e70145a99f7af1e42c770e8c9d764b562dd6b873c009662d50ac2bf5ae2",
+  "checked_vertices_outside_clique": 2809,
+  "each_author_value_pattern_verified": true,
+  "entire_requested_JSON_reproduced": true,
+  "requested_pattern_partition": {
+    "profiles": 836,
+    "single_color_profiles": 640,
+    "multi_color_profiles": 196,
+    "vertices_in_multi_color_profiles": 2012,
+    "minimum_disagreements_with_fixed_witness": 1007
+  },
+  "requested_patterns_mixing_exact_K_P": 267,
+  "previous_exact_K_P_plus_rank_image_kernel": {
+    "profiles": 1662,
+    "single_color_profiles": 1502,
+    "multi_color_profiles": 160,
+    "vertices_in_multi_color_profiles": 1122,
+    "minimum_disagreements_with_fixed_witness": 492
+  },
+  "exact_K_P_plus_basis_values": {
+    "profiles": 2809,
+    "single_color_profiles": 2809,
+    "multi_color_profiles": 0,
+    "vertices_in_multi_color_profiles": 0,
+    "minimum_disagreements_with_fixed_witness": 0
+  },
+  "all_vertices_reconstructed_from_K_and_basis_lifts": true,
+  "all_160_previous_mixed_feature_groups_resolve_to_singletons": true,
+  "original_exact_K_P_profiles": 240,
+  "omitted_domain_counterexample": {
+    "first_line": {
+      "basis": [
+        1
+      ],
+      "pattern": [
+        0,
+        1,
+        [
+          0
+        ]
+      ],
+      "color": 10
+    },
+    "second_line": {
+      "basis": [
+        4
+      ],
+      "pattern": [
+        0,
+        1,
+        [
+          0
+        ]
+      ],
+      "color": 4
+    },
+    "cross_dot_product": 0,
+    "conclusion": "The value lists agree but their domain bases differ; the literal pattern alone cannot support a proper coloring."
+  },
+  "scope": "Full K,P and basis values encode U itself; singleton profiles do not constitute a structural 15-color construction. No finer description is needed to reconstruct U, but a proved 15-label assignment is still needed.",
+  "validation_limits": "Targeted geometry replay only; no full/line edge-checker rerun, solver search or Lean run. Original final n6 Lean theorem retains four native-evaluation axioms. Structural15-coloring, exact line chromatic number and n7 remain open."
+}

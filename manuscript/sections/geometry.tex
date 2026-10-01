@@ -225,6 +225,20 @@ while \(52\) remain unresolved; the exact comparison is recorded in
 the fixed witness; Proposition~\ref{prop:lift-features} excludes every
 proper coloring solely from the stated data.
 
+For fixed \(K,P\), the complete values of \(f\) on a basis
+\(s_1,\ldots,s_p\) determine \(U\).  Choose representatives
+\(t_i\in T\) of \(f(s_i)\); then
+\(U=K+\Span(t_1+s_1,\ldots,t_p+s_p)\), since subtracting a lift
+of the projection of any \(u\in U\) leaves an element of \(K\).
+Changing representatives by elements of \(K\) does not change this span.
+The check in \path{results/lift-map-values-check.json} reconstructs all
+\(2809\) non-clique vertices from these data, giving singleton profiles.
+Value lists without their domain and quotient data do not suffice:
+\(\Span(e_1)\) and \(\Span(e_3)\) are adjacent and both have the
+one-entry zero list, but different projection domains.
+The full representation thus recovers vertices; a structural assignment
+of \(15\) colors remains to be found.
+
 Two further directions remain for a structural description.
 
 \begin{enumerate}
