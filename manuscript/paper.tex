@@ -18,7 +18,7 @@
 \newcommand{\Span}{\operatorname{span}}
 \title{Clique and chromatic numbers of binary subspace orthogonality graphs}
 \author{Haobo Ma \and Reza Nikandish \and Wenlin Zhang}
-\date{Working draft, 30 September 2026}
+\date{Working draft, 1 October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -28,8 +28,8 @@ is $15$. The clique upper bound follows from a radical and quotient argument.
 The chromatic upper bound is certified by a complete coloring of all $2\,824$
 nonzero subspaces and an independent check against coordinate orthogonality.
 For the induced graph on lines, we prove a weighted independent-set bound and
-construct a $13$-coloring, giving $12\leq\chi(\Gamma_6)\leq13$.
-Thus the full subspace graph requires at least two more colors than its line
+construct a checked $12$-coloring, giving $\chi(\Gamma_6)=12$.
+Thus the full subspace graph requires exactly three more colors than its line
 subgraph. We describe the geometry of the fixed-clique color lists and a
 dimension reduction for extending the search to dimension seven.
 \end{abstract}
@@ -40,6 +40,7 @@ dimension reduction for extending the search to dimension seven.
 \input{sections/geometry}
 \input{sections/higher-dimensions}
 \input{sections/verification}
+\begin{samepage}
 \begin{thebibliography}{9}
 \raggedright
 \bibitem{Nikandish}
@@ -50,4 +51,5 @@ H. Ma, R. Nikandish and W. Zhang, \emph{Binary subspace orthogonality graphs:
 research and reproducibility workspace},
 \url{https://github.com/the-omega-institute/binary-subspace-orthogonality}.
 \end{thebibliography}
+\end{samepage}
 \end{document}

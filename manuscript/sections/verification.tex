@@ -6,7 +6,12 @@ from distinctness and Gaussian counts, then checks every pair of vertices.
 Three deliberately invalid certificates, respectively omitting a vertex,
 duplicating a subspace, and identifying the colors of adjacent coordinate
 lines, are rejected. The line-coloring checker independently verifies its
-partition and all within-class pairs.
+partition and all within-class pairs. For the twelve-color certificate,
+\path{develop/check_line_chromatic_exact.py} checks all $1953$ distinct
+vertex pairs, including all $961$ edges. It independently reproduces every
+clause of the normalized search encoding and its SHA-256 digest, verifies
+the assignment against those clauses, and rejects duplicate-vertex,
+zero-vector and monochromatic-edge controls.
 
 The radical/quotient clique theorem has an existing Lean formalization.
 Its source is \path{formal/NikandishClique.lean}. The theorem is
@@ -39,7 +44,8 @@ native evaluation. The generic completeness and colorability lemmas depend
 only on the three standard axioms. The recovered original log corrects the
 incomplete historical summary; see \path{notes/formal-verification-audit.md}.
 The exhaustive integer certificate independently verifies the same coloring.
-The weighted line bound, geometric profile counts and dimension-seven reduction
+The weighted line bound, twelve-color line certificate, geometric profile
+counts and dimension-seven reduction
 are not covered by this Lean theorem.
 
 The public package~\cite{Package} contains the literal witnesses, independent

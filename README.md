@@ -18,10 +18,11 @@ graph on one-dimensional subspaces, identified with the nonzero vectors.
   15-clique. The independent checker verifies all 3,986,076 vertex pairs,
   including all 44,968 orthogonality edges. See [the result](notes/dimension-six.md),
   [certificate](results/full-15-coloring.json) and [check record](results/full-15-check.json).
-- **12 <= chi(Gamma_6) <= 13 < 15.** A weighted independent-set argument gives
-  the lower bound, and a new checked 13-coloring gives the upper bound. See
-  [the proof](notes/line-coloring.md) and [the certificate](results/line-coloring.json).
-  The line-versus-full-subspace separation is therefore at least two colors.
+- **chi(Gamma_6) = 12 < 15.** A weighted independent-set argument gives
+  the lower bound, and a checked 12-coloring gives equality. See
+  [the proof](notes/line-coloring.md), [the certificate](results/line-coloring-12.json)
+  and [the independent check](results/line-coloring-12-check.json).
+  The line-versus-full-subspace separation is exactly three colors.
 
 The dimension-six coloring also has a Lean development in
 `formal/Chromatic/Verify.lean`. The recovered historical log confirms that the
@@ -38,6 +39,7 @@ The independent checker needs only Python 3.10 or later and its standard library
 ```sh
 python3 develop/check_full_coloring.py results/full-15-coloring.json
 python3 develop/check_line_coloring.py
+python3 develop/check_line_chromatic_exact.py
 python3 develop/check_checker_controls.py
 ```
 

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "dimension": 6,
+  "colors": 12,
+  "vertices": 63,
+  "all_distinct_vertex_pairs_checked": 1953,
+  "orthogonality_edges_checked": 961,
+  "class_sizes": [
+    5,
+    5,
+    5,
+    6,
+    5,
+    5,
+    5,
+    6,
+    5,
+    5,
+    5,
+    6
+  ],
+  "normalized_remaining_vertices": 57,
+  "normalized_edges": 780,
+  "cnf_variables": 627,
+  "cnf_clauses": 11772,
+  "every_clause_reproduced_by_coordinate_method": true,
+  "certificate_satisfies_every_CNF_clause": true,
+  "invalid_controls_rejected": [
+    "duplicate_vertex",
+    "zero_vector",
+    "monochromatic_edge"
+  ],
+  "certificate_sha256": "cf3c5fb05cbb8a715a7195954fe0016512dc18659cbc4b60b2824281f1034bb3",
+  "cnf_sha256": "ecbf068e617ab8b77eb5c21723ee0ba277e5533bcaa5867c52086d1b26c2a908",
+  "checker_sha256": "90395c40cb732ae547fd6085d3dbd4f765c63af307953454b28358dab2375599",
+  "conclusion": "Checked upper bound 12 combines with the existing written weighted lower bound 12 to prove chi(Gamma_6)=12.",
+  "scope": "Standard-library finite coloring and encoding check, not a Lean theorem or new result for n7."
+}

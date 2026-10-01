@@ -67,4 +67,6 @@ Refining a complete representation further cannot advance that question.
 The original certificate is unchanged. This round checks value encodings and
 reconstruction, not all graph edges. No solver or Lean execution is involved;
 the original final n6 Lean theorem retains four native-evaluation axioms.
-Structural 15-coloring, the exact line chromatic number and n7 remain open.
+At this diagnostic's delivery, the exact line chromatic number was open;
+the subsequent [12-color certificate](line-coloring.md) settles it.
+Structural 15-coloring and n7 remain open.

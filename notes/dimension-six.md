@@ -55,10 +55,9 @@ omits four native-evaluation axioms found in the recovered original log; the
 repair. The exhaustive integer checker independently establishes the
 JSON witness and the chromatic equality.
 
-The new line-graph bounds in line-coloring.md give 12<=chi(Gamma_6)<=13<15,
-so the chromatic separation is at least two. Determining the exact line-graph
-number and extracting a geometric description of the
-15-coloring are useful follow-ups. In the latter direction, group color classes
+The line-graph proof in line-coloring.md now gives chi(Gamma_6)=12<15,
+so the chromatic separation is exactly three. Extracting a geometric description
+of the 15-coloring remains a useful follow-up. In that direction, group color classes
 by H(U), U intersect T and dimension, then ask which choices are essential and
 which can be replaced by a uniform construction. Higher-dimensional cases need
 new arguments or certificates; no general chromatic formula is claimed.

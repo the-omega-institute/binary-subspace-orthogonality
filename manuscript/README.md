@@ -9,7 +9,7 @@ convention; the collaborators have not settled publication author order.
 | --- | --- |
 | `sections/introduction.tex` | Reza's expanded introduction from `f34e58f`, integrated with source problem numbers and the zero-vertex convention. |
 | `sections/clique.tex` | Reza's full radical/quotient proof from `f34e58f`, including the endpoint argument and six-dimensional corollary. |
-| `sections/lines.tex` | Written weighted lower-bound proof and checked 13-color upper bound. |
+| `sections/lines.tex` | Written weighted lower-bound proof and independently checked 12-color certificate proving chi(Gamma_6)=12. |
 | `sections/chromatic-six.tex` | Complete certificate argument for chi(O_6*) = 15 and the precoloring reduction. |
 | `sections/geometry.tex` | Reza's geometric color-list lemma and profile table, exact-profile statistics, and the adjacent-line obstruction to a coloring based solely on the exact profile and quotient isometry type. |
 | `sections/higher-dimensions.tex` | Dimension-deletion proposition, n=7 measured instance, and remaining questions. |
@@ -91,6 +91,18 @@ encodings are a complete vertex representation, not a 15-color rule. The
 pattern and reconstructs every vertex; the
 [current build review](../results/lift-map-values-review-20261001.json) records
 the final PDF and precise scope.
+
+Reza's exact line-graph script from `72dc173` returns SAT. The exported
+[12-color certificate](../results/line-coloring-12.json) is independently
+checked on all 63 vertices, 1953 pairs and 961 edges; every clause of the
+627-variable, 11772-clause encoding is reproduced, with three invalid controls
+rejected. The existing weighted lower bound therefore proves chi(Gamma_6)=12,
+closing the former Problem 6.3. The abstract, introduction, section 3 and
+remaining questions are updated together; the historical 13-color witness is
+retained. See the [proof and commands](../notes/line-coloring.md),
+[independent check](../results/line-coloring-12-check.json) and
+[current review](../results/line-chromatic-exact-review-20261001.json).
+The new line result is not covered by the archived Lean theorem.
 
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
