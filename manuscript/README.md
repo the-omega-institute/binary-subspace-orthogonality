@@ -69,6 +69,17 @@ The current nine-page PDF builds in two passes without warnings and all pages
 are visually reviewed; see the
 [projection review record](../results/complement-projection-review-20261001.json).
 
+The [lift-feature review](../notes/lift-map-features.md) runs Reza's script
+from `409f379`, with zero-vector inclusion and JSON serialization corrected.
+Its requested tuple produces 878 groups, 300 multicolored; adding the features
+to the exact (K,P) baseline gives 1662 groups, 160 multicolored and completely
+resolves 87 of the original 139 multicolored groups. Proposition 5.5 gives
+adjacent planes with identical K,P,rank,image,kernel, proving those features
+insufficient for any proper coloring. The note gives a written orthogonality
+criterion in lift coordinates. See the
+[independent record](../results/lift-map-matrix-check.json) and
+[current build review](../results/lift-map-matrix-review-20261001.json).
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

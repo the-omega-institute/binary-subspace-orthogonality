@@ -47,17 +47,12 @@ def lift_map_features(U, T, S):
     # Collect (s, coset of f(s)) pairs
     P_to_f = {}
     for u in U:
-        if u == 0:
-            continue
         for s in S:
             if (u ^ s) in T:
                 t = u ^ s
                 if s not in P_to_f:
                     P_to_f[s] = coset(t, K)
                 break
-
-    if not P_to_f:
-        return (0, 0, 0, frozenset(), frozenset())
 
     P = frozenset(P_to_f.keys())
     image = frozenset(P_to_f.values())
@@ -96,7 +91,8 @@ def analyze(certificate_path):
         'multi_color_profiles': len(multi),
         'first_multi_color_examples': [
             {'dim_K': inv[0], 'dim_P': inv[1], 'rank_f': inv[2],
-             'image': sorted(inv[3]), 'kernel': sorted(inv[4]),
+             'image': sorted(sorted(coset_vectors) for coset_vectors in inv[3]),
+             'kernel': sorted(inv[4]),
              'colors': sorted(cs)}
             for inv, cs in list(multi.items())[:10]
         ],

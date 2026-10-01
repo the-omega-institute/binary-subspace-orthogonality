@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "method": "Independent coordinate projection and coefficient-tuple spans; quotient values include zero, with consistency, linearity and rank-nullity checked for every non-clique vertex. Compared every feature tuple to the corrected author function.",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "diagnostic_sha256": "85e45e1c185b20b31ffe01449d9544a7c83c2cb301767119108b8b5e69105491",
+  "checked_vertices_outside_clique": 2809,
+  "entire_requested_output_reproduced": true,
+  "original_projection_partition": {
+    "profiles": 240,
+    "single_color_profiles": 101,
+    "multi_color_profiles": 139,
+    "vertices_in_multi_color_profiles": 2288,
+    "minimum_disagreements_with_fixed_witness": 1133
+  },
+  "requested_feature_partition": {
+    "profiles": 878,
+    "single_color_profiles": 578,
+    "multi_color_profiles": 300,
+    "vertices_in_multi_color_profiles": 1967,
+    "minimum_disagreements_with_fixed_witness": 993
+  },
+  "requested_groups_spanning_multiple_original_groups": 294,
+  "exact_profile_plus_features": {
+    "profiles": 1662,
+    "single_color_profiles": 1502,
+    "multi_color_profiles": 160,
+    "vertices_in_multi_color_profiles": 1122,
+    "minimum_disagreements_with_fixed_witness": 492
+  },
+  "original_multi_color_profiles_completely_resolved": 87,
+  "original_multi_color_profiles_still_unresolved": 52,
+  "full_lift_map_profiles": 2809,
+  "full_lift_map_scope": "All 2809 maps with K and P distinguish vertices; this is the proved full representation, not a compression or 15-color construction.",
+  "adjacent_equal_feature_planes": {
+    "first_basis": [
+      13,
+      6
+    ],
+    "second_basis": [
+      9,
+      14
+    ],
+    "first_vectors": [
+      0,
+      6,
+      11,
+      13
+    ],
+    "second_vectors": [
+      0,
+      7,
+      9,
+      14
+    ],
+    "K_vectors": [
+      0
+    ],
+    "P_vectors": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "rank": 2,
+    "image_cosets": [
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        12
+      ],
+      [
+        15
+      ]
+    ],
+    "kernel_vectors": [
+      0
+    ],
+    "first_map": {
+      "0": [
+        0
+      ],
+      "1": [
+        12
+      ],
+      "4": [
+        15
+      ],
+      "5": [
+        3
+      ]
+    },
+    "second_map": {
+      "0": [
+        0
+      ],
+      "1": [
+        15
+      ],
+      "4": [
+        3
+      ],
+      "5": [
+        12
+      ]
+    },
+    "cross_gram": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "conclusion": "No proper coloring solely from K,P,rank,image,kernel; written obstruction independent of witness color choices."
+  },
+  "validation_limits": "Targeted finite geometry checks and written obstruction only; no full/line coloring-checker rerun, solver or Lean execution. Structural 15-coloring, exact line chromatic number and n7 remain open."
+}

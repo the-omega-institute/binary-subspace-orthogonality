@@ -202,6 +202,29 @@ Then \(U=\{t+s:s\in P,\ t+K=f(s)\}\) and
 \(U\cap S=\ker f\).  Extracting a structural \(15\)-color rule
 from these lift data remains open.
 
+\begin{proposition}\label{prop:lift-features}
+For the displayed \(T\) and \(S\), no proper coloring of \(\OG_6^*\)
+depends solely on \(K\), \(P\), and the rank, image and kernel of \(f\).
+\end{proposition}
+\begin{proof}
+In binary integer coordinates take \(U=\Span(13,6)\) and
+\(W=\Span(9,14)\).  Their distinct spans are
+\(\{0,6,11,13\}\) and \(\{0,7,9,14\}\); all four cross dot
+products of the given bases are zero.  Both planes have
+\(K=\{0\}\), \(P=\Span(1,4)\), rank two, image \(\Span(3,12)\)
+and kernel zero.  On the basis \((1,4)\) their lift-map values are
+respectively \((12,15)\) and \((15,3)\).  A rule using only the
+common data assigns equal colors to these adjacent planes.
+\end{proof}
+
+The finite refinement retaining \(K,P\) and these features gives
+\(1662\) groups, \(160\) multicolored.  Of the original \(139\)
+multicolored groups, \(87\) split entirely into single-color groups,
+while \(52\) remain unresolved; the exact comparison is recorded in
+\path{results/lift-map-matrix-check.json}.  These statistics describe
+the fixed witness; Proposition~\ref{prop:lift-features} excludes every
+proper coloring solely from the stated data.
+
 Two further directions remain for a structural description.
 
 \begin{enumerate}
