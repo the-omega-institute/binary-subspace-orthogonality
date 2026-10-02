@@ -100,6 +100,9 @@ colors; a certificate lookup still does not supply a structural label formula. T
 [subspace-label criterion](notes/subspace-label-criterion.md) gives the exact
 palette and three-matrix conditions for any proposed fifteen-label function,
 and records the independent replay of the latest color analysis. The
+[first-candidate diagnosis](notes/color-candidate-obstruction.md) gives a
+two-line counterexample and reproduces 25,496 monochromatic edges; a rule
+based only on the first available label from P fails separation. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

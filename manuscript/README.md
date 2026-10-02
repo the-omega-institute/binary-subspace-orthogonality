@@ -125,6 +125,13 @@ palette choices and 710841 same-label non-clique pairs of the existing witness.
 This equivalence is preparation for a candidate, not a structural construction;
 the manuscript TeX and PDF remain unchanged.
 
+The first candidate from `53428f6` is preserved and
+[diagnosed](../notes/color-candidate-obstruction.md): span(1) and span(2)
+are orthogonal but receive the same label span(3). Independent coordinate
+checks reproduce all 25,496 monochromatic edges in its three label fibers.
+The rule passes availability and fails separation; the next candidate must
+use lift values. This failed exploratory rule changes no theorem or PDF.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
