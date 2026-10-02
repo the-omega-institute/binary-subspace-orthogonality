@@ -109,6 +109,9 @@ every rule restricted to seven line labels is therefore impossible. The
 [third-candidate diagnosis](notes/color-candidate-v3-obstruction.md)
 reproduces 3,507 violations, verifies a fifteen-label inventory repair,
 and gives a zero-lift counterexample that survives that repair. The
+[fourth-candidate diagnosis](notes/color-candidate-v4-obstruction.md)
+checks 2,873 violations and proves an affine-residue obstruction on a common
+eleven-label palette; changing the seed or multiplier cannot fix that family. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

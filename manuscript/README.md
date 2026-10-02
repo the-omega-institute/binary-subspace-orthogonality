@@ -149,6 +149,15 @@ lines span(5),span(21) receive span(3) in both variants; label selection must
 use projection geometry beyond availability. Inventory, fourteen-clique and
 zero-lift screens are documented for future proposals. TeX/PDF are unchanged.
 
+The fourth candidate from `22aee3d` has the correct fifteen-label inventory
+and separates span(5),span(21), but still has 2,873 monochromatic edges and
+only eight labels on the fourteen-clique. The
+[new diagnosis](../notes/color-candidate-v4-obstruction.md) gives adjacent
+span(11),span(52) with equal K,P and lift values15/48 congruent modulo the
+common palette size11. This proves every fixed common-palette affine-residue
+selection fails, while leaving nonlinear or geometric constructions open.
+The author source, manuscript TeX and PDF remain unchanged.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

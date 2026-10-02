@@ -1,0 +1,35 @@
+{
+  "review_date": "2026-10-02",
+  "author_base_commit": "22aee3de1c2e7460ae00a5c5fbe26be5e3d3dfcc",
+  "actual_script_path": "develop/color_function_candidate_v4",
+  "author_source_preserved": true,
+  "commands": [
+    "python3 develop/color_function_candidate_v4",
+    "python3 develop/check_color_candidate_v4.py",
+    "git diff --check"
+  ],
+  "original_stdout": "Vertices outside the clique: 2809\nDistinct labels used: 15\nCondition 1 violations: 0\nCondition 2 violations: 2873\nDistinct labels on the fourteen-clique: 8\nLabel of span(5):  [0, 12]\nLabel of span(21): [0, 48]\n\nLabel distribution:\n  Label size  4: 415 vertices\n  Label size  2: 405 vertices\n  Label size  2: 290 vertices\n  Label size  4: 268 vertices\n  Label size  4: 240 vertices\n  Label size  4: 153 vertices\n  Label size  4: 150 vertices\n  Label size  4: 134 vertices\n  Label size  2: 126 vertices\n  Label size  2: 114 vertices\n  Label size  4: 109 vertices\n  Label size  8: 108 vertices\n  Label size  2: 103 vertices\n  Label size  2: 102 vertices\n  Label size  2: 92 vertices\n",
+  "independent_check_record": "results/color-candidate-v4-check.json",
+  "result_summary": {
+    "vertices": 2809,
+    "labels": 15,
+    "palette_violations": 0,
+    "same_label_pairs_checked": 346362,
+    "monochromatic_edges": 2873,
+    "fourteen_clique_labels": 8,
+    "fourteen_clique_edges": 7,
+    "old_zero_lift_pair_separated": true
+  },
+  "written_result": "Adjacent span11/span52 share K0/Pspan4, with lifts15/48. Common palette size11; keys271/304 have same remainder7 and labelspan12,51. Any common-order palette rule with index(c(K,P)*t+b(K,P))mod11 also fails, since48-15=33. This rejects that affine family in fixed coordinates, not nonlinear or f-dependent geometric selection.",
+  "elapsed_seconds": 0.48224129201844335,
+  "source_sha256": "45cff8efa5932c833bc2846fe38e62fc698b5a67fcef888869fe87b19a7050fd",
+  "checker_sha256": "d3dbb8b037487ecc30a0781933cec608e3be92b3308f19f5399e5e9f2099cbfa",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "manuscript": {
+    "TeX_and_PDF_changed": false,
+    "PDF_pages": 10,
+    "pdf_sha256": "4e6018c8030181e0da9e6a424fb72a4ba658ea3394ba2279e1f8f690d837c4f8",
+    "new_build_or_visual_review": false
+  },
+  "scope": "Independent original-coordinate checks of this requested candidate and written affine-residue obstruction. No solver/Lean/n7 computation; author source/manuscript/certificates unchanged. Structural15/n7 open; historical full n6 theorem retains four native-evaluation axioms."
+}
