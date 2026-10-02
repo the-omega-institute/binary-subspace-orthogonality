@@ -22,16 +22,35 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We determine the clique number of the orthogonality graph on the nonzero
-subspaces of $\F^n$ and establish that its chromatic number in dimension six
-is $15$. The clique upper bound follows from a radical and quotient argument.
-The chromatic upper bound is certified by a complete coloring of all $2\,824$
-nonzero subspaces and an independent check against coordinate orthogonality.
-For the induced graph on lines, we prove a weighted independent-set bound and
-construct a checked $12$-coloring, giving $\chi(\Gamma_6)=12$.
-Thus the full subspace graph requires exactly three more colors than its line
-subgraph. We describe the geometry of the fixed-clique color lists and a
-dimension reduction for extending the search to dimension seven.
+We determine the clique number of the orthogonality graph on the
+nonzero subspaces of \(\F^n\) for every \(n\), and we determine the
+chromatic number in dimension six.  Let \(\OG_n^*\) be the graph
+whose vertices are the nonzero subspaces of \(\F^n\), with two
+distinct vertices adjacent when every vector of one is orthogonal to
+every vector of the other, and let \(\Gamma_n\) be its induced
+subgraph on the one-dimensional subspaces.  We prove
+\[
+\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
+\qquad(n\ge1),
+\]
+where \(N(r)=\sum_{d=1}^{r}{r\brack d}_2\) and \({r\brack d}_2\) is
+the Gaussian binomial coefficient.  The proof is algebraic: it sums
+the radicals of an arbitrary clique and passes to the resulting
+orthogonal quotient.  In dimension six we establish
+\[
+\chi(\OG_6^*)=15,\qquad \chi(\Gamma_6)=12 .
+\]
+The chromatic upper bound is certified by a complete coloring of all
+\(2824\) nonzero subspaces and verified by an independent checker
+against coordinate orthogonality; the line-graph equality follows
+from a weighted independent-set bound and a checked \(12\)-coloring.
+Thus in dimension six the full subspace graph requires exactly three
+more colors than its line subgraph.  We describe the geometry of the
+fixed-clique color lists and record several obstructions to a purely
+structural \(15\)-coloring, including a symmetry argument that rules
+out every coloring invariant under the stabilizer of the fixed
+totally isotropic space.  A dimension reduction for extending the
+search to dimension seven is also given.
 \end{abstract}
 \input{sections/introduction}
 \input{sections/clique}
