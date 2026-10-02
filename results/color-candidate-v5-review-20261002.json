@@ -1,0 +1,34 @@
+{
+  "review_date": "2026-10-02",
+  "author_base_commit": "3e9f649dcf8107fe86f2d330b1553b558300c8c7",
+  "actual_script_path": "color_function_candidate_v5.py",
+  "source_change": "Only ROOT: parents[1] -> parent. Original source fails looking for certificate one directory above repository; mathematical selection preserved.",
+  "author_original_sha256": "44cb8a8fadd5e09907792ab09f434b93737254161a2820ee9ffa568ae00f939f",
+  "commands": [
+    "python3 color_function_candidate_v5.py",
+    "python3 develop/check_color_candidate_v5.py",
+    "git diff --check"
+  ],
+  "script_stdout": "Vertices outside the clique: 2809\nDistinct labels used: 15\nCondition 1 violations: 0\nCondition 2 violations: 2636\nDistinct labels on the fourteen-clique: 7\nLabel of span[11]: [0, 15]\nLabel of span[52]: [0, 12, 48, 60]\nLabel of span[5]: [0, 3, 48, 51]\nLabel of span[21]: [0, 3, 12, 15, 48, 51, 60, 63]\n\nLabel distribution:\n  Label size  8: 1045 vertices\n  Label size  4: 225 vertices\n  Label size  4: 219 vertices\n  Label size  4: 218 vertices\n  Label size  4: 206 vertices\n  Label size  4: 204 vertices\n  Label size  4: 202 vertices\n  Label size  4: 201 vertices\n  Label size  2: 43 vertices\n  Label size  2: 43 vertices\n  Label size  2: 41 vertices\n  Label size  2: 41 vertices\n  Label size  2: 41 vertices\n  Label size  2: 40 vertices\n  Label size  2: 40 vertices\n",
+  "independent_check_record": "results/color-candidate-v5-check.json",
+  "result_summary": {
+    "vertices": 2809,
+    "labels": 15,
+    "palette_violations": 0,
+    "same_label_pairs_checked": 706262,
+    "monochromatic_edges": 2636,
+    "fourteen_clique_labels": 7,
+    "fourteen_clique_monochromatic_edges": 17
+  },
+  "written_result": "A0=pi_T(U), independent of basis and representative choices. Existing manuscript Proposition5.5 planes span13,6 and span9,14 have identical P,R, are adjacent and immediately receive common available labelspan3,12. This excludes every projection-only rule, not full-map geometric choices.",
+  "source_sha256": "1cef634153cc819c05b021d5828b7ec7566d07a44580593a9de860e86e453212",
+  "checker_sha256": "f6a003470794f6841749d6c4bd9ffff35382a727ed331bf4d9f2b8ab97389b7c",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "manuscript": {
+    "TeX_and_PDF_changed": false,
+    "PDF_pages": 10,
+    "pdf_sha256": "4e6018c8030181e0da9e6a424fb72a4ba658ea3394ba2279e1f8f690d837c4f8",
+    "new_build_or_visual_review": false
+  },
+  "scope": "Requested finite diagnostic and written application of existing Proposition5.5. No solver/Lean/n7 computation. Exact fullchi15/linechi12 retained; structural15/n7 open. Historical full n6 Lean theorem retains three standard plus four native-evaluation axioms."
+}

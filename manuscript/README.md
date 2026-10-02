@@ -158,6 +158,13 @@ common palette size11. This proves every fixed common-palette affine-residue
 selection fails, while leaving nonlinear or geometric constructions open.
 The author source, manuscript TeX and PDF remain unchanged.
 
+The [fifth-candidate diagnosis](../notes/color-candidate-v5-obstruction.md)
+reproduces 2636 violations on 706262 independently checked same-label pairs.
+Its A0 is exactly the T-projection, so the existing Proposition 5.5 planes
+receive the same available label span(3,12). The fourteen-clique receives
+seven labels. The author rule is preserved with a repository-root path repair;
+TeX, PDF and established certificates are unchanged.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

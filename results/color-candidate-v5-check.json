@@ -1,0 +1,382 @@
+{
+  "status": "diagnostic_passed_candidate_v5_rejected",
+  "author_commit": "3e9f649dcf8107fe86f2d330b1553b558300c8c7",
+  "actual_source_path": "color_function_candidate_v5.py",
+  "source_repair": "ROOT changed from parents[1] to parent because author committed file at repository root. Mathematical selection unchanged.",
+  "vertices_outside_clique": 2809,
+  "distinct_inventory_labels": 15,
+  "labels_used": 15,
+  "condition_1_violations": 0,
+  "same_label_pairs_checked": 706262,
+  "condition_2_violations": 2636,
+  "label_distribution": [
+    {
+      "label_basis": [
+        3
+      ],
+      "vertices": 40,
+      "monochromatic_edges": 25
+    },
+    {
+      "label_basis": [
+        12
+      ],
+      "vertices": 43,
+      "monochromatic_edges": 31
+    },
+    {
+      "label_basis": [
+        15
+      ],
+      "vertices": 41,
+      "monochromatic_edges": 54
+    },
+    {
+      "label_basis": [
+        48
+      ],
+      "vertices": 41,
+      "monochromatic_edges": 28
+    },
+    {
+      "label_basis": [
+        51
+      ],
+      "vertices": 40,
+      "monochromatic_edges": 46
+    },
+    {
+      "label_basis": [
+        60
+      ],
+      "vertices": 43,
+      "monochromatic_edges": 48
+    },
+    {
+      "label_basis": [
+        63
+      ],
+      "vertices": 41,
+      "monochromatic_edges": 30
+    },
+    {
+      "label_basis": [
+        15,
+        3
+      ],
+      "vertices": 225,
+      "monochromatic_edges": 368
+    },
+    {
+      "label_basis": [
+        51,
+        3
+      ],
+      "vertices": 219,
+      "monochromatic_edges": 312
+    },
+    {
+      "label_basis": [
+        60,
+        12
+      ],
+      "vertices": 206,
+      "monochromatic_edges": 177
+    },
+    {
+      "label_basis": [
+        60,
+        15
+      ],
+      "vertices": 201,
+      "monochromatic_edges": 136
+    },
+    {
+      "label_basis": [
+        63,
+        3
+      ],
+      "vertices": 218,
+      "monochromatic_edges": 503
+    },
+    {
+      "label_basis": [
+        63,
+        12
+      ],
+      "vertices": 204,
+      "monochromatic_edges": 286
+    },
+    {
+      "label_basis": [
+        63,
+        15
+      ],
+      "vertices": 202,
+      "monochromatic_edges": 253
+    },
+    {
+      "label_basis": [
+        63,
+        12,
+        3
+      ],
+      "vertices": 1045,
+      "monochromatic_edges": 339
+    }
+  ],
+  "requested_line_labels": [
+    {
+      "basis": [
+        11
+      ],
+      "label_vectors": [
+        0,
+        15
+      ],
+      "label_basis": [
+        15
+      ]
+    },
+    {
+      "basis": [
+        52
+      ],
+      "label_vectors": [
+        0,
+        12,
+        48,
+        60
+      ],
+      "label_basis": [
+        60,
+        12
+      ]
+    },
+    {
+      "basis": [
+        5
+      ],
+      "label_vectors": [
+        0,
+        3,
+        48,
+        51
+      ],
+      "label_basis": [
+        51,
+        3
+      ]
+    },
+    {
+      "basis": [
+        21
+      ],
+      "label_vectors": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "label_basis": [
+        63,
+        12,
+        3
+      ]
+    }
+  ],
+  "fourteen_clique": {
+    "vertices": 14,
+    "pairs_checked": 91,
+    "distinct_labels": 7,
+    "monochromatic_edges": 17,
+    "vertex_labels": [
+      {
+        "basis": [
+          5
+        ],
+        "label_basis": [
+          51,
+          3
+        ]
+      },
+      {
+        "basis": [
+          23
+        ],
+        "label_basis": [
+          15,
+          3
+        ]
+      },
+      {
+        "basis": [
+          45
+        ],
+        "label_basis": [
+          60
+        ]
+      },
+      {
+        "basis": [
+          18
+        ],
+        "label_basis": [
+          3
+        ]
+      },
+      {
+        "basis": [
+          58
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          40
+        ],
+        "label_basis": [
+          60,
+          12
+        ]
+      },
+      {
+        "basis": [
+          5,
+          18
+        ],
+        "label_basis": [
+          3
+        ]
+      },
+      {
+        "basis": [
+          45,
+          18
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          5,
+          58
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          45,
+          58
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          5,
+          40
+        ],
+        "label_basis": [
+          60
+        ]
+      },
+      {
+        "basis": [
+          23,
+          40
+        ],
+        "label_basis": [
+          63,
+          12,
+          3
+        ]
+      },
+      {
+        "basis": [
+          18,
+          40
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          5,
+          18,
+          40
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      }
+    ]
+  },
+  "projection_obstruction": {
+    "first_basis": [
+      13,
+      6
+    ],
+    "second_basis": [
+      9,
+      14
+    ],
+    "kernel_basis": [],
+    "S_projection_basis": [
+      1,
+      4
+    ],
+    "T_projection_basis": [
+      3,
+      12
+    ],
+    "first_lifts_on_1_4": [
+      12,
+      15
+    ],
+    "second_lifts_on_1_4": [
+      15,
+      3
+    ],
+    "common_label_basis": [
+      3,
+      12
+    ],
+    "cross_gram": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "scope": "Application of manuscript Proposition5.5: no coloring based solely on the two coordinate projections P,R is proper. A0=R for every vertex; changing a tie order or fallback cannot separate this pair."
+  },
+  "A0_equals_T_projection_checked_vertices": 2809,
+  "zero_missing_from_original_projection_count": 1016,
+  "normalizing_projection_zero_changes_no_labels": true,
+  "source_sha256": "1cef634153cc819c05b021d5828b7ec7566d07a44580593a9de860e86e453212",
+  "checker_sha256": "f6a003470794f6841749d6c4bd9ffff35382a727ed331bf4d9f2b8ab97389b7c",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "elapsed_seconds": 0.5061589169781655,
+  "scope": "Requested finite v5 diagnostic and written projection obstruction; no solver, Lean or n7 computation. TeX/PDF/certificates unchanged. Structural15/n7 open; historical full n6 Lean theorem retains three standard plus four native-evaluation axioms."
+}

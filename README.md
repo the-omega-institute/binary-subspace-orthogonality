@@ -112,6 +112,9 @@ and gives a zero-lift counterexample that survives that repair. The
 [fourth-candidate diagnosis](notes/color-candidate-v4-obstruction.md)
 checks 2,873 violations and proves an affine-residue obstruction on a common
 eleven-label palette; changing the seed or multiplier cannot fix that family. The
+[fifth-candidate diagnosis](notes/color-candidate-v5-obstruction.md)
+checks 2,636 violations and explains that A0 is exactly the T-projection;
+the existing Proposition 5.5 rejects any rule using only the two projections. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.
