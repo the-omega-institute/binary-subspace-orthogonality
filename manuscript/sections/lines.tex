@@ -1,5 +1,17 @@
 \section{The line graph in dimension six}
 \label{sec:line}
+This section determines the chromatic number of the line graph
+\(\Gamma_6\), whose vertices are the \(63\) nonzero vectors of
+\(\F^6\) with two distinct vectors adjacent when their dot product
+vanishes.  We proceed in two steps.  First, we bound the size of any
+independent set in \(\Gamma_6\) by a weighted count on even- and
+odd-weight vectors; this yields the lower bound
+\(\chi(\Gamma_6)\ge 12\).  Second, we exhibit an explicit
+\(12\)-coloring of the \(63\) nonzero vectors, verified by an
+independent checker, which gives the matching upper bound.  Together
+these prove \(\chi(\Gamma_6)=12\).  The lower bound is the
+substantial combinatorial input; the upper bound is a finite
+certificate recorded in Section~\ref{sec:computational}.
 \begin{lemma}\label{lem:weighted}
 An independent set in $\Gamma_6$ containing $t$ even-weight vectors and $o$
 odd-weight vectors satisfies $3t+4o\leq19$. Its cardinality is at most six;
