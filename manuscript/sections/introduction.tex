@@ -22,7 +22,7 @@ from finite classical polar spaces.  Its line subgraph \(\Gamma_n\) is
 a finite-field analogue of the Kneser graph: two lines are adjacent
 when their representative vectors are orthogonal, rather than when
 their supports are disjoint.  The chromatic number of the Kneser
-graph was determined by Lov\'asz \cite{Lovasz1979} using topological
+graph was determined by Lov\'asz \cite{Lovasz1978} using topological
 methods; the clique and chromatic numbers of polarity graphs and
 their relatives have been studied extensively in finite geometry and
 algebraic graph theory
@@ -79,9 +79,9 @@ Determine whether there exist infinitely many \(n\ge1\) with
 
 Put
 \[
-N(r)=\sum_{d=1}^{r}{r\brack d}_2,
+N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2,
 \]
-where \({r\brack d}_2\) is the Gaussian binomial coefficient, and set
+where \(\genfrac{[}{]}{0pt}{}{r}{d}_2\) is the Gaussian binomial coefficient, and set
 \(N(0)=0\).  Our results are
 \begin{equation}\label{eq:clique-formula}
 \omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
@@ -104,7 +104,7 @@ full-graph chromatic upper bound uses an explicit finite certificate,
 while the line-graph equality follows from a weighted independent-set
 bound and a checked \(12\)-coloring.  The verification details and the
 scope of the Lean formalization are collected in
-Section~\ref{sec:computational}.
+Section~\ref{sec:verification}.
 
 For small \(n\), the exact values of \(\omega\) and \(\chi\) are known
 and are recorded in Table~\ref{tab:small-values} below.  They show
@@ -145,5 +145,5 @@ Section~\ref{sec:geometry} describes the geometry of the precoloring
 and records the obstructions to a structural formula.
 Section~\ref{sec:higher} states the remaining open problems and a
 dimension reduction for \(n=7\).
-Section~\ref{sec:computational} collects the computational
+Section~\ref{sec:verification} collects the computational
 certificates and the Lean formalization.
