@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-02",
+  "preserved_author_commit": "f1544ce58c4e71495759b11b52840ae854459e11",
+  "author_branch": "main",
+  "previous_PR_head": "6696170d84c5c4cb31be31920e9cb273a9384a02",
+  "original_script_sha256": "cd6f3bf1fa2920a821d2de25aacf10863651ee204eec04c6377da7923e2969dd",
+  "original_stdout": "Total groups: 836\nMulti-color groups: 196\nFull-data groups: 2809\nFull-data multi-color groups: 0\nOrthogonal pairs in sample: 87\nMonochromatic orthogonal pairs in sample: 0",
+  "changes": [
+    "Include zero in P so projected data are actual subspaces; printed output unchanged.",
+    "Export original sample identities and counts as JSON.",
+    "Clarify original twenty-vertex sample and use of existing colors.",
+    "Add exhaustive comparison of the author's unchanged pair test against coordinate orthogonality."
+  ],
+  "commands": [
+    "python3 develop/lift_relations.py",
+    "python3 develop/check_lift_relations.py"
+  ],
+  "independent_check": {
+    "status": "passed",
+    "vertices": 2824,
+    "vertices_outside_clique": 2809,
+    "all_lift_data_and_extensions_checked": true,
+    "all_vertices_reconstructed": true,
+    "author_output_reproduced": {
+      "total_groups": 836,
+      "multi_color_groups": 196,
+      "full_data_groups": 2809,
+      "full_data_multi_color_groups": 0,
+      "sample_vertices": [
+        [
+          1
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ],
+        [
+          11
+        ],
+        [
+          13
+        ],
+        [
+          17
+        ],
+        [
+          19
+        ],
+        [
+          21
+        ],
+        [
+          23
+        ],
+        [
+          25
+        ],
+        [
+          27
+        ],
+        [
+          29
+        ],
+        [
+          31
+        ],
+        [
+          33
+        ],
+        [
+          35
+        ],
+        [
+          37
+        ],
+        [
+          39
+        ],
+        [
+          41
+        ],
+        [
+          43
+        ]
+      ],
+      "sample_pairs": 190,
+      "orthogonal_pairs_in_sample": 87,
+      "monochromatic_orthogonal_pairs_in_sample": 0,
+      "scope": "First twenty non-clique vertices only; existing certificate colors, not a structural label construction."
+    },
+    "all_distinct_pairs_checked": 3986076,
+    "orthogonality_edges_checked": 44968,
+    "non_clique_pairs_checked": 3943836,
+    "non_clique_edges_checked": 42000,
+    "criterion_disagreements": 0,
+    "monochromatic_orthogonal_pairs": 0,
+    "method": "Author lift_data, basis and extensions compared to independently enumerated spans, coordinate projection and quotient cosets. Every author are_orthogonal result compared to coordinate-defined orthogonal-complement masks for distinct pairs of all2824 vertices, including the clique.",
+    "optimization": "Memoize only deterministic author basis_of and extend_lift functions; the author pair test itself is unchanged.",
+    "elapsed_seconds": 7.177155541954562,
+    "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "author_script_sha256": "e4fabf1a50684a2b697258a3b89f84f8a73592a64cb1bab0831d9c8a86936987",
+    "author_output_sha256": "847e03684d5b83a49284f05eac45b818c7ec42804021058b5d2bc44e5af90bb5",
+    "checker_sha256": "a421aa6ea4eecd2e6771b73a8078c846e003ac227a5bb9bb1756e1ef1ba4c1f3",
+    "scope": "Exhaustive replay of lift-coordinate adjacency and existing certificate colors, not a new certificate or structural15-label construction. Exact line chi12 remains proved; n7 and structural15-coloring remain open. No solver or Lean run; historical full-subspace n6 theorem retains four native-evaluation axioms."
+  },
+  "written_addition": "Bilinearity permits basis-only cross-kernel and lift-expression tests. Representative-independence follows from cross-kernel orthogonality. The S-S term and cross-kernel conditions cannot be omitted.",
+  "manuscript": {
+    "source_and_PDF_changed": false,
+    "reason": "Existing text already states full reconstruction and the structural question; add supporting note/check rather than a new theorem.",
+    "PDF_pages": 10,
+    "pdf_sha256": "4e6018c8030181e0da9e6a424fb72a4ba658ea3394ba2279e1f8f690d837c4f8",
+    "previous_validation": "results/line-chromatic-exact-review-20261001.json",
+    "new_PDF_build_or_visual_review": false
+  },
+  "scope": "Targeted exhaustive adjacency/certificate replay. Colors are read from the unchanged certificate, not independently assigned by a structural formula. Exact line chi12 remains proved. No solver, Lean or n7 computation; no shared CI changes. Historical full-subspace n6 Lean theorem retains three standard plus four native-evaluation axioms. Structural15-coloring and n7 remain open."
+}

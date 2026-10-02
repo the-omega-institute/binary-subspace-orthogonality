@@ -87,4 +87,7 @@ selected lift-map values. Such a rule must separate the displayed planes
 and all other orthogonal pairs. The full maps always reconstruct the vertices;
 a compression into 15 colors remains open. No new solver or Lean run was
 performed. The existing final six-dimensional Lean theorem retains its four
-native-evaluation axioms; the exact line chromatic number and n7 remain open.
+native-evaluation axioms. The subsequent [line certificate](line-coloring.md)
+settles chi(Gamma_6)=12; structural15-coloring and n7 remain open. The
+[lift-relations replay](lift-relations.md) subsequently validates this criterion
+against all original graph pairs.

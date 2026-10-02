@@ -1,0 +1,72 @@
+{
+  "total_groups": 836,
+  "multi_color_groups": 196,
+  "full_data_groups": 2809,
+  "full_data_multi_color_groups": 0,
+  "sample_vertices": [
+    [
+      1
+    ],
+    [
+      5
+    ],
+    [
+      7
+    ],
+    [
+      9
+    ],
+    [
+      11
+    ],
+    [
+      13
+    ],
+    [
+      17
+    ],
+    [
+      19
+    ],
+    [
+      21
+    ],
+    [
+      23
+    ],
+    [
+      25
+    ],
+    [
+      27
+    ],
+    [
+      29
+    ],
+    [
+      31
+    ],
+    [
+      33
+    ],
+    [
+      35
+    ],
+    [
+      37
+    ],
+    [
+      39
+    ],
+    [
+      41
+    ],
+    [
+      43
+    ]
+  ],
+  "sample_pairs": 190,
+  "orthogonal_pairs_in_sample": 87,
+  "monochromatic_orthogonal_pairs_in_sample": 0,
+  "scope": "First twenty non-clique vertices only; existing certificate colors, not a structural label construction."
+}

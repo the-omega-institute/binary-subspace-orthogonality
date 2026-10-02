@@ -104,6 +104,16 @@ retained. See the [proof and commands](../notes/line-coloring.md),
 [current review](../results/line-chromatic-exact-review-20261001.json).
 The new line result is not covered by the archived Lean theorem.
 
+The October 2 [lift-relations diagnostic](../notes/lift-relations.md) preserves
+Reza's `f1544ce` from main. Its original twenty-vertex sample has 87 orthogonal
+pairs and no monochromatic pair. Zero inclusion is corrected, and the
+[exhaustive comparison](../results/lift-relations-check.json) verifies every
+lift extension and reconstruction, compares the author's criterion with all
+3986076 original graph pairs, and checks all 44968 edges with no disagreement.
+The note proves that cross-kernel and lift-expression tests suffice on bases.
+This is a replay of existing certificate colors, not a structural label formula;
+no theorem statement or manuscript PDF changes in this diagnostic round.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
