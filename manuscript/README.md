@@ -132,6 +132,14 @@ checks reproduce all 25,496 monochromatic edges in its three label fibers.
 The rule passes availability and fails separation; the next candidate must
 use lift values. This failed exploratory rule changes no theorem or PDF.
 
+The second candidate from `04d03c6` is also preserved and
+[diagnosed](../notes/color-candidate-v2-obstruction.md): its tie-breaker uses
+only whether the first lift value is zero, and it has 13,945 monochromatic
+edges. A written fourteen-clique outside T proves every line-label-only rule
+impossible, regardless of its lift data. A future candidate must use higher
+dimensional labels and more lift information. This is a lower bound for the
+induced graph, not an exact new chromatic result; TeX and PDF remain unchanged.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

@@ -103,6 +103,9 @@ and records the independent replay of the latest color analysis. The
 [first-candidate diagnosis](notes/color-candidate-obstruction.md) gives a
 two-line counterexample and reproduces 25,496 monochromatic edges; a rule
 based only on the first available label from P fails separation. The
+[second-candidate diagnosis](notes/color-candidate-v2-obstruction.md)
+reproduces 13,945 monochromatic edges and proves a fourteen-clique outside T;
+every rule restricted to seven line labels is therefore impossible. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.
