@@ -165,6 +165,13 @@ receive the same available label span(3,12). The fourteen-clique receives
 seven labels. The author rule is preserved with a repository-root path repair;
 TeX, PDF and established certificates are unchanged.
 
+The [sixth-candidate screen](../notes/color-candidate-v6-stabilizer-and-screen.md)
+checks Reza's requested Stab(T) orbit claim and v6. The orbit claim is true
+with \(B(1)=3,B(4)=12,B(16)=0\), giving \(g_B(13)=14,g_B(6)=9\); the proposed
+equation \(g_B(13)=7\) is incompatible with the fixed S-projection. V6 separates
+the pair but uses only seven labels on the fourteen-clique, so the second screen
+fails and a full replay is skipped.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

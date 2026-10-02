@@ -115,6 +115,10 @@ eleven-label palette; changing the seed or multiplier cannot fix that family. Th
 [fifth-candidate diagnosis](notes/color-candidate-v5-obstruction.md)
 checks 2,636 violations and explains that A0 is exactly the T-projection;
 the existing Proposition 5.5 rejects any rule using only the two projections. The
+[sixth-candidate screen](notes/color-candidate-v6-stabilizer-and-screen.md)
+verifies the Stab(T) orbit obstruction with a corrected shear witness, but v6
+uses only 7 labels on the fourteen-clique, so its requested second screen fails
+and no full replay is warranted. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

@@ -1,0 +1,40 @@
+{
+  "status": "passed_screens_v6_rejected",
+  "author_commit": "9a96fad30b00c3c7e22ec52f5a31239fd5649658",
+  "vertices_checked": 2809,
+  "pair_separated": true,
+  "pair_label_bases": [
+    [
+      63,
+      12,
+      3
+    ],
+    [
+      15,
+      3
+    ]
+  ],
+  "fourteen_clique_distinct_labels": 7,
+  "fourteen_clique_expected": 14,
+  "full_replay_run": false,
+  "reason_full_replay_skipped": "Screen 2 failed: v6 uses only seven labels on the fourteen-clique.",
+  "stabilizer_witness": {
+    "B_on_S_basis_(1,4,16)": [
+      3,
+      12,
+      0
+    ],
+    "mapped_plane_basis": [
+      14,
+      9
+    ],
+    "target_plane_basis": [
+      9,
+      14
+    ],
+    "self_adjoint_checked": true,
+    "isometry_witness_checked": true,
+    "correction_to_author_equations": "g_B(13)=14, not 7; g_B(6)=9. The asserted g_B(13)=7 is impossible because g_B fixes the S projection and 13 and 7 have different S projections."
+  },
+  "scope": "Independent finite screens and explicit written stabilizer witness. No full replay, solver, Lean or n7 computation. Structural15 and n7 remain open; historical full n6 Lean theorem retains four native-evaluation axioms."
+}
