@@ -172,6 +172,13 @@ equation \(g_B(13)=7\) is incompatible with the fixed S-projection. V6 separates
 the pair but uses only seven labels on the fourteen-clique, so the second screen
 fails and a full replay is skipped.
 
+Reza's subsequent commits `262b1de` and `925470c` integrate the stabilizer
+orbit proposition and refine the structural open problem. The two-pass build
+at the new PR head produces a ten-page PDF without warnings; pages 5--10 were
+rendered and visually inspected. See the [build review](../results/manuscript-v7-review-20261003.json).
+The PDF is a built manuscript artifact, not evidence that the structural
+15-coloring or the n=7 problem is solved.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
