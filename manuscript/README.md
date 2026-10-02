@@ -114,6 +114,17 @@ The note proves that cross-kernel and lift-expression tests suffice on bases.
 This is a replay of existing certificate colors, not a structural label formula;
 no theorem statement or manuscript PDF changes in this diagnostic round.
 
+The follow-up color analysis from `7d7fe67` is preserved at its actual path
+`develop/analyze_color_function` (no extension). It reproduces the 240/139
+K,P groups and 2809 full-data singletons. The
+[subspace-label proposition](../notes/subspace-label-criterion.md) states
+necessary and sufficient palette and three-matrix conditions for a rule
+using the fifteen nonzero subspaces of T as labels. Its written proof is
+supported by [checks](../results/color-function-check.json) on all 2809
+palette choices and 710841 same-label non-clique pairs of the existing witness.
+This equivalence is preparation for a candidate, not a structural construction;
+the manuscript TeX and PDF remain unchanged.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "vertices_outside_clique": 2809,
+  "author_output_reproduced": {
+    "distinct_K_P_pairs": 240,
+    "multi_color_K_P_pairs": 139,
+    "distinct_full_tuples": 2809,
+    "multi_color_full_tuples": 0,
+    "color_K_P_diversity": {
+      "0": 78,
+      "1": 35,
+      "2": 21,
+      "3": 96,
+      "4": 39,
+      "5": 70,
+      "6": 90,
+      "7": 6,
+      "8": 5,
+      "9": 38,
+      "10": 37,
+      "11": 8,
+      "12": 20,
+      "13": 14,
+      "14": 9
+    },
+    "scope": "Statistics of the fixed certificate; full lift tuples identify vertices, not a new structural color formula."
+  },
+  "label_subspaces": [
+    {
+      "color": 0,
+      "basis": [
+        3
+      ]
+    },
+    {
+      "color": 1,
+      "basis": [
+        15
+      ]
+    },
+    {
+      "color": 2,
+      "basis": [
+        51
+      ]
+    },
+    {
+      "color": 3,
+      "basis": [
+        63
+      ]
+    },
+    {
+      "color": 4,
+      "basis": [
+        12
+      ]
+    },
+    {
+      "color": 5,
+      "basis": [
+        60
+      ]
+    },
+    {
+      "color": 6,
+      "basis": [
+        48
+      ]
+    },
+    {
+      "color": 7,
+      "basis": [
+        15,
+        3
+      ]
+    },
+    {
+      "color": 8,
+      "basis": [
+        63,
+        12
+      ]
+    },
+    {
+      "color": 9,
+      "basis": [
+        63,
+        3
+      ]
+    },
+    {
+      "color": 10,
+      "basis": [
+        60,
+        15
+      ]
+    },
+    {
+      "color": 11,
+      "basis": [
+        51,
+        3
+      ]
+    },
+    {
+      "color": 12,
+      "basis": [
+        63,
+        15
+      ]
+    },
+    {
+      "color": 13,
+      "basis": [
+        60,
+        12
+      ]
+    },
+    {
+      "color": 14,
+      "basis": [
+        63,
+        12,
+        3
+      ]
+    }
+  ],
+  "palette_sizes": {
+    "11": 357,
+    "14": 1435,
+    "15": 1017
+  },
+  "every_fixed_color_passes_label_projection_matrix_condition": true,
+  "same_label_non_clique_pairs_checked": 710841,
+  "every_same_label_pair_has_a_nonzero_cross_kernel_or_lift_block": true,
+  "coordinate_examples_checked": [
+    "adjacent_zero_lift_lines",
+    "essential_S_S_term",
+    "essential_cross_kernel_condition"
+  ],
+  "elapsed_seconds": 0.9058593329973519,
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "author_script_sha256": "2b77205f264fc30d4770b830d32a426c10700539846f2cbdbb51747bbe476048",
+  "author_output_sha256": "599306e8514b2fea5d92a56a40845490180e772381c2a90e11c23eb5555186bd",
+  "checker_sha256": "63d3fb28866a26fb324d651dec4ccaef346ed0c08a88128bb9f6aba219c4a378",
+  "scope": "Independent exact-statistics and label/fiber checks on the existing certificate. The matrix criterion is a written equivalence, not a new label formula. No solver or Lean run; n7 and structural15-coloring remain open; historical n6 full theorem retains four native-evaluation axioms."
+}

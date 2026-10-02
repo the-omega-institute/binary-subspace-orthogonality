@@ -97,6 +97,9 @@ on this complete representation. The
 [lift-relations check](notes/lift-relations.md) compares the author's criterion
 with all 3,986,076 graph pairs and verifies all 44,968 edges against the existing
 colors; a certificate lookup still does not supply a structural label formula. The
+[subspace-label criterion](notes/subspace-label-criterion.md) gives the exact
+palette and three-matrix conditions for any proposed fifteen-label function,
+and records the independent replay of the latest color analysis. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.

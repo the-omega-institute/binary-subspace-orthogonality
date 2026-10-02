@@ -54,8 +54,6 @@ def lift_data(U, T, S):
     K = U & T
     P_to_f = {}
     for u in U:
-        if u == 0:
-            continue
         t, s = decompose(u, T, S)
         if s not in P_to_f:
             P_to_f[s] = canonical_representative(t, K)
@@ -119,6 +117,13 @@ def main():
     print("Colors and their (K,P) diversity:")
     for c in sorted(by_color):
         print(f"  Color {c}: {len(by_color[c])} distinct (K,P) pairs")
+    report = {
+        'distinct_K_P_pairs': len(by_KP), 'multi_color_K_P_pairs': len(multi),
+        'distinct_full_tuples': len(by_full), 'multi_color_full_tuples': len(multi_full),
+        'color_K_P_diversity': {str(color): len(pairs) for color, pairs in sorted(by_color.items())},
+        'scope': 'Statistics of the fixed certificate; full lift tuples identify vertices, not a new structural color formula.'
+    }
+    (ROOT / 'results/color-function-analysis.json').write_text(json.dumps(report, indent=2) + '\n')
 
 
 if __name__ == '__main__':
