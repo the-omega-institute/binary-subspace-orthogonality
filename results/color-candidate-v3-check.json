@@ -1,0 +1,370 @@
+{
+  "status": "diagnostic_passed_literal_and_inventory_repaired_v3_rejected",
+  "author_commit": "eed4b180f583d3510b9260e581f7b10adb3de094",
+  "actual_source_path": "develop/color_function_candidate_v3",
+  "vertices_outside_clique": 2809,
+  "literal_candidate": {
+    "inventory_entries": 15,
+    "distinct_inventory_labels": 13,
+    "labels_used": 13,
+    "condition_1_violations": 0,
+    "same_label_pairs_checked": 411508,
+    "condition_2_violations": 3507,
+    "label_distribution": [
+      {
+        "label_basis": [
+          3
+        ],
+        "vertices": 480,
+        "same_label_pairs": 114960,
+        "monochromatic_edges": 509
+      },
+      {
+        "label_basis": [
+          12
+        ],
+        "vertices": 150,
+        "same_label_pairs": 11175,
+        "monochromatic_edges": 341
+      },
+      {
+        "label_basis": [
+          15
+        ],
+        "vertices": 345,
+        "same_label_pairs": 59340,
+        "monochromatic_edges": 206
+      },
+      {
+        "label_basis": [
+          48
+        ],
+        "vertices": 96,
+        "same_label_pairs": 4560,
+        "monochromatic_edges": 127
+      },
+      {
+        "label_basis": [
+          51
+        ],
+        "vertices": 109,
+        "same_label_pairs": 5886,
+        "monochromatic_edges": 210
+      },
+      {
+        "label_basis": [
+          60
+        ],
+        "vertices": 83,
+        "same_label_pairs": 3403,
+        "monochromatic_edges": 113
+      },
+      {
+        "label_basis": [
+          63
+        ],
+        "vertices": 266,
+        "same_label_pairs": 35245,
+        "monochromatic_edges": 387
+      },
+      {
+        "label_basis": [
+          15,
+          3
+        ],
+        "vertices": 246,
+        "same_label_pairs": 30135,
+        "monochromatic_edges": 726
+      },
+      {
+        "label_basis": [
+          51,
+          3
+        ],
+        "vertices": 44,
+        "same_label_pairs": 946,
+        "monochromatic_edges": 61
+      },
+      {
+        "label_basis": [
+          60,
+          12
+        ],
+        "vertices": 401,
+        "same_label_pairs": 80200,
+        "monochromatic_edges": 480
+      },
+      {
+        "label_basis": [
+          63,
+          12
+        ],
+        "vertices": 165,
+        "same_label_pairs": 13530,
+        "monochromatic_edges": 89
+      },
+      {
+        "label_basis": [
+          63,
+          15
+        ],
+        "vertices": 298,
+        "same_label_pairs": 44253,
+        "monochromatic_edges": 221
+      },
+      {
+        "label_basis": [
+          63,
+          12,
+          3
+        ],
+        "vertices": 126,
+        "same_label_pairs": 7875,
+        "monochromatic_edges": 37
+      }
+    ],
+    "fourteen_clique_distinct_labels": 8,
+    "fourteen_clique_monochromatic_edges": 8
+  },
+  "specified_inventory_repair": {
+    "change": "Replace plane(3,15) with plane(3,60) and plane(12,60) with plane(15,51), keeping the other ordered entries.",
+    "ordered_label_bases": [
+      [
+        3
+      ],
+      [
+        12
+      ],
+      [
+        48
+      ],
+      [
+        15
+      ],
+      [
+        51
+      ],
+      [
+        60
+      ],
+      [
+        63
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        51,
+        3
+      ],
+      [
+        60,
+        12
+      ],
+      [
+        63,
+        3
+      ],
+      [
+        63,
+        12
+      ],
+      [
+        63,
+        15
+      ],
+      [
+        60,
+        15
+      ],
+      [
+        63,
+        12,
+        3
+      ]
+    ],
+    "result": {
+      "inventory_entries": 15,
+      "distinct_inventory_labels": 15,
+      "labels_used": 15,
+      "condition_1_violations": 0,
+      "same_label_pairs_checked": 351950,
+      "condition_2_violations": 2967,
+      "label_distribution": [
+        {
+          "label_basis": [
+            3
+          ],
+          "vertices": 463,
+          "same_label_pairs": 106953,
+          "monochromatic_edges": 288
+        },
+        {
+          "label_basis": [
+            12
+          ],
+          "vertices": 143,
+          "same_label_pairs": 10153,
+          "monochromatic_edges": 265
+        },
+        {
+          "label_basis": [
+            15
+          ],
+          "vertices": 350,
+          "same_label_pairs": 61075,
+          "monochromatic_edges": 199
+        },
+        {
+          "label_basis": [
+            48
+          ],
+          "vertices": 102,
+          "same_label_pairs": 5151,
+          "monochromatic_edges": 160
+        },
+        {
+          "label_basis": [
+            51
+          ],
+          "vertices": 97,
+          "same_label_pairs": 4656,
+          "monochromatic_edges": 102
+        },
+        {
+          "label_basis": [
+            60
+          ],
+          "vertices": 75,
+          "same_label_pairs": 2775,
+          "monochromatic_edges": 73
+        },
+        {
+          "label_basis": [
+            63
+          ],
+          "vertices": 255,
+          "same_label_pairs": 32385,
+          "monochromatic_edges": 209
+        },
+        {
+          "label_basis": [
+            15,
+            3
+          ],
+          "vertices": 179,
+          "same_label_pairs": 15931,
+          "monochromatic_edges": 598
+        },
+        {
+          "label_basis": [
+            51,
+            3
+          ],
+          "vertices": 55,
+          "same_label_pairs": 1485,
+          "monochromatic_edges": 144
+        },
+        {
+          "label_basis": [
+            60,
+            12
+          ],
+          "vertices": 232,
+          "same_label_pairs": 26796,
+          "monochromatic_edges": 165
+        },
+        {
+          "label_basis": [
+            60,
+            15
+          ],
+          "vertices": 161,
+          "same_label_pairs": 12880,
+          "monochromatic_edges": 62
+        },
+        {
+          "label_basis": [
+            63,
+            3
+          ],
+          "vertices": 100,
+          "same_label_pairs": 4950,
+          "monochromatic_edges": 161
+        },
+        {
+          "label_basis": [
+            63,
+            12
+          ],
+          "vertices": 175,
+          "same_label_pairs": 15225,
+          "monochromatic_edges": 213
+        },
+        {
+          "label_basis": [
+            63,
+            15
+          ],
+          "vertices": 296,
+          "same_label_pairs": 43660,
+          "monochromatic_edges": 291
+        },
+        {
+          "label_basis": [
+            63,
+            12,
+            3
+          ],
+          "vertices": 126,
+          "same_label_pairs": 7875,
+          "monochromatic_edges": 37
+        }
+      ],
+      "fourteen_clique_distinct_labels": 7,
+      "fourteen_clique_monochromatic_edges": 9
+    },
+    "author_source_modified": false,
+    "scope": "Diagnostic of this specific repaired ordering, not all orderings."
+  },
+  "counterexample_for_both_inventories": {
+    "first_basis": [
+      5
+    ],
+    "second_basis": [
+      21
+    ],
+    "kernel_basis": [],
+    "first_projection_basis": [
+      5
+    ],
+    "second_projection_basis": [
+      21
+    ],
+    "first_lift_values": [
+      0
+    ],
+    "second_lift_values": [
+      0
+    ],
+    "common_label_basis": [
+      3
+    ],
+    "coordinate_dot": 0,
+    "X": [],
+    "Y": [],
+    "Z": [
+      [
+        0
+      ]
+    ]
+  },
+  "zero_missing_from_original_projection_count": 1016,
+  "normalizing_projection_zero_changes_no_labels": true,
+  "source_sha256": "512326510b1da7d568dbbd8ecf487f42bc485d0dec1a5ff06aa124c8db3a2721",
+  "checker_sha256": "8244d8c5dc8c6e38b69e1dc6cab16863edede36ed6afe4f912e592c1291526b0",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "elapsed_seconds": 0.6474690001923591,
+  "scope": "Targeted literal v3 replay and one precisely specified inventory repair. Written zero-lift counterexample; fourteen-clique used as a regression fixture. No solver/Lean/n7 computation; manuscript/certificates/author source unchanged. Structural15/n7 open; historical full n6 theorem retains four native-evaluation axioms."
+}

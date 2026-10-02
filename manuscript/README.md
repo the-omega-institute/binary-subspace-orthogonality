@@ -140,6 +140,15 @@ impossible, regardless of its lift data. A future candidate must use higher
 dimensional labels and more lift information. This is a lower bound for the
 induced graph, not an exact new chromatic result; TeX and PDF remain unchanged.
 
+The third candidate from `eed4b18` is preserved at its extensionless path
+`develop/color_function_candidate_v3`. Its
+[diagnosis](../notes/color-candidate-v3-obstruction.md) finds that the inventory
+still has thirteen distinct labels and reproduces 3,507 violations. A precise
+repair gives fifteen labels but still 2,967 violations. Orthogonal zero-lift
+lines span(5),span(21) receive span(3) in both variants; label selection must
+use projection geometry beyond availability. Inventory, fourteen-clique and
+zero-lift screens are documented for future proposals. TeX/PDF are unchanged.
+
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before

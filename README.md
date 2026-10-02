@@ -106,6 +106,9 @@ based only on the first available label from P fails separation. The
 [second-candidate diagnosis](notes/color-candidate-v2-obstruction.md)
 reproduces 13,945 monochromatic edges and proves a fourteen-clique outside T;
 every rule restricted to seven line labels is therefore impossible. The
+[third-candidate diagnosis](notes/color-candidate-v3-obstruction.md)
+reproduces 3,507 violations, verifies a fifteen-label inventory repair,
+and gives a zero-lift counterexample that survives that repair. The
 [dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
 of dimension at least four can be deleted from the fixed 16-color instance,
 then measures the remaining 14,589-vertex, 953,057-edge core.
