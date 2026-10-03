@@ -2,7 +2,9 @@
 
 Public research workspace for Haobo Ma, Reza Nikandish and Wenlin Zhang.
 Working paper direction: *Clique and chromatic numbers of binary subspace
-orthogonality graphs*. Author order and the final manuscript are to be agreed.
+orthogonality graphs*. The surname-alphabetical order works for us, and
+Reza Nikandish is designated corresponding author in the working manuscript.
+The final text remains available for coauthor review.
 
 For the standard dot form on F_2^n, O_n* has all nonzero subspaces as vertices;
 distinct subspaces are adjacent when they are orthogonal. Gamma_n is its induced

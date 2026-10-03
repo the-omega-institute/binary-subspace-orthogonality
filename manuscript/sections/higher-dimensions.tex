@@ -1,16 +1,17 @@
 \section{Higher dimensions and open problems}
 \label{sec:higher}
-The methods of Sections~\ref{sec:clique}--\ref{sec:geometry} are
-specific to dimension six.  This section records what can be said
-in higher dimensions.  We first give a degree-versus-list deletion
+The clique formula of Section~\ref{sec:clique} holds in all dimensions,
+while the exact chromatic results of Sections~\ref{sec:line} and
+\ref{sec:chromatic} concern dimension six. This section records a
+reduction for higher-dimensional coloring problems. We first give a degree-versus-list deletion
 rule that reduces a \(k\)-coloring problem in dimension \(n\) to a
 smaller residual instance, without changing \(k\)-colorability.
 We then apply it to \(n=7\), where a \(16\)-clique is available and
 the rule removes all vertices of dimension at least four, leaving a
 residual instance of \(14\,589\) vertices and \(953\,057\) edges.
 Finally, we state the open problems that remain: the exact
-chromatic number for \(n\ge7\), the question of whether the gap
-\(\chi-\omega\) persists in higher dimensions, and the structural
+chromatic number for \(n\ge7\), the question of whether
+\(\chi>\omega\) holds in infinitely many dimensions, and the structural
 question of whether an optimal \(15\)-coloring in dimension six
 can be described without finite computation.
 \begin{proposition}\label{prop:dimension-deletion}
@@ -48,27 +49,26 @@ of an optimal full-subspace coloring remains an immediate question.
 
 The negative results of Section~\ref{sec:geometry} --- in particular
 Proposition~\ref{prop:lift-features} and
-Proposition~\ref{prop:stabT-orbit} --- show that no coloring
-depending on the natural invariants of the coordinate splitting
-\(V_6=T\oplus S\), and no coloring invariant under the stabilizer
-of \(T\), can be proper.  A structural proof of
+Proposition~\ref{prop:stabT-orbit} --- rule out colorings depending
+only on the exact profiles or the specified lift features, as well as
+colorings invariant under the stabilizer of \(T\).
+A structural proof of
 \(\chi(\OG_6^*)=15\) must therefore use auxiliary data that break
-this symmetry, while retaining enough of the full lift
-correspondence to assign fourteen distinct labels to the
-fourteen-clique.
+this symmetry and retain enough placement information to separate
+adjacent vertices.
 
 \begin{problem}\label{prob:structural}
-Is there a proper \(15\)-coloring of \(\OG_6^*\) determined by
-invariants natural under some proper subgroup
-\(H<\operatorname{Stab}_{O_6(\F)}(T)\), or is every optimal
-coloring inherently non-natural?
+Can one specify auxiliary geometric data and a nontrivial proper subgroup
+\(H<\operatorname{Stab}_{O_6(\F)}(T)\), and construct an explicit proper
+\(15\)-coloring \(c\) from those data such that
+\(c(hU)=h\cdot c(U)\) for \(h\in H\), where the color labels are the
+nonzero subspaces of \(T\) with their induced \(H\)-action?
 
-A positive answer would give a conceptual proof of
-\(\chi(\OG_6^*)=15\), replacing the finite certificate of
-Section~\ref{sec:chromatic}.  A negative answer would establish a
-genuine structural gap between the line graph \(\Gamma_6\), whose
-\(12\)-coloring is equivariant under the full orthogonal group,
-and the full subspace graph \(\OG_6^*\).
+The construction should prove availability and separation without
+looking up the archived coloring certificate. Such a construction would
+give a conceptual proof of \(\chi(\OG_6^*)=15\).
+The checked \(12\)-coloring of \(\Gamma_6\) establishes its chromatic number;
+equivariance under the full orthogonal group is not established here.
 \end{problem}
 
 \begin{remark}\label{prob:gamma-six}

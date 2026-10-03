@@ -239,10 +239,9 @@ one-entry zero list, but different projection domains.
 The full representation thus recovers vertices; a structural assignment
 of \(15\) colors remains to be found.
 
-The following obstruction is the strongest of this section: it rules
-out \emph{every} coloring invariant under the stabilizer of \(T\),
-not merely those depending on the specific invariants considered
-above.  It is a direct consequence of the geometry of the coordinate
+The following obstruction gives an explicit pair of adjacent planes
+in one orbit of the stabilizer of \(T\), ruling out every coloring
+invariant under that stabilizer. It uses the geometry of the coordinate
 splitting \(V_6=T\oplus S\) with \(S=\Span\{e_1,e_3,e_5\}\).
 
 \begin{proposition}[\(\operatorname{Stab}(T)\)-orbit obstruction]
@@ -256,8 +255,13 @@ prescribed clique colors is \(G\)-equivariant.
 \begin{proof}
 With \(T=\Span(3,12,48)\) and \(S=\Span(1,4,16)\), the self-adjoint
 map \(B:S\to T\) given by \(B(1)=3\), \(B(4)=12\), \(B(16)=0\)
-defines the shear \(g_B(t+s)=t+B(s)+s\), which fixes \(T\)
-pointwise and is therefore in \(G\).  Direct computation gives
+has the symmetric matrix \(\operatorname{diag}(1,1,0)\) in the
+paired bases \((1,4,16)\) and \((3,12,48)\). Since \(T\) is totally
+isotropic and \(\langle Bs,s'\rangle=\langle s,Bs'\rangle\),
+the two cross terms cancel in characteristic two. Thus the shear
+\(g_B(t+s)=t+B(s)+s\) preserves the bilinear form. It is an
+involution fixing \(T\) pointwise, so it belongs to \(G\).
+Direct computation gives
 \[
 g_B(13)=14,\qquad g_B(6)=9,
 \]
@@ -265,15 +269,13 @@ so \(g_B(U)=\Span(14,9)=\Span(9,14)=W\).  Since \(U\) and \(W\) are
 distinct and orthogonal, the claim follows.
 \end{proof}
 
-Proposition~\ref{prop:stabT-orbit} strictly strengthens
-Corollary~\ref{cor:equivariance-obstruction}: it excludes not only
-equivariance under the full stabilizer with clique-label action, but
-\emph{any} coloring invariant under \(G\), regardless of the choice
-of invariant.  The two lines of
-Corollary~\ref{cor:equivariance-obstruction} are the simplest
-instance of this obstruction; the two planes above are the instance
-relevant to the lift-map analysis of
-Proposition~\ref{prop:lift-features}.
+The shear fixes every clique label, so
+Proposition~\ref{prop:stabT-orbit} supplies a plane witness for the
+equivariance obstruction of Corollary~\ref{cor:equivariance-obstruction}.
+It also rules out invariant colorings with any number of labels:
+vertices in one \(G\)-orbit would receive the same color. The two
+planes connect this orbit obstruction directly to the lift-map
+analysis of Proposition~\ref{prop:lift-features}.
 
 Two further directions remain for a structural description.
 

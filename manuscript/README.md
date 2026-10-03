@@ -2,8 +2,10 @@
 
 This is the editable joint paper, following the seven-section structure
 proposed by Reza. The dated two-author note in `notes/` remains historical.
-The current author display is alphabetical by surname as a temporary editing
-convention; the collaborators have not settled publication author order.
+The author display follows surname alphabetical order:
+Haobo Ma, Reza Nikandish, Wenlin Zhang. Wenlin has confirmed that this
+order works for us and that Reza may serve as corresponding author.
+Final submission still requires the collaborators' confirmation.
 
 | File | Contribution and handoff |
 | --- | --- |
@@ -182,9 +184,11 @@ The PDF is a built manuscript artifact, not evidence that the structural
 Next integration: Reza develops the structural questions in section 5; Wenlin and Haobo maintain the
 chromatic proof and reconcile formal verification in sections 3, 4 and 7. Jointly
 agree the introduction, author order, affiliations and AI disclosure before
-submission. The current draft does not attribute AI use to Reza. The
+submission. The draft now includes a generative-AI declaration covering
+Reza's reported DeepSeek use and OpenAI Codex assistance in our work. The
 six-dimensional coloring theorem's historical report omitted four native
 axioms, as confirmed by the recovered original log; see
 `notes/formal-verification-audit.md`. The finite coloring certificates have
-been independently rechecked. No author-order or AI-disclosure agreement is
-implied by this integration.
+been independently rechecked. Wenlin's October 3 instruction approves the
+alphabetical order, Reza as corresponding author, and adding our AI disclosure;
+the declaration remains available for coauthor review.
