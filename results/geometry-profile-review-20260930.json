@@ -1,0 +1,50 @@
+{
+  "reviewed_at": "2026-09-30T14:47:37Z",
+  "base_commit": "0a239c89896570e4355f3464bfc1893fc06480ea",
+  "scope": "Run Reza's second script; correct incomparable partition counts and the parity interpretation; integrate a written adjacent-line obstruction into the joint manuscript.",
+  "preserved_contributions": [
+    "076b518af8252ca4efa92c0b0da429acb672f5fe: first numerical script, arithmetic unchanged",
+    "0a239c89896570e4355f3464bfc1893fc06480ea: second numerical script, arithmetic unchanged"
+  ],
+  "validation": {
+    "commands": [
+      "python3 develop/refine_geometry__arf.py",
+      "python3 develop/audit_geometry_profiles.py",
+      "cd manuscript && pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+      "pdftoppm -scale-to 1200 -png manuscript/paper.pdf /private/tmp/nikandish-profile-audit-page",
+      "git diff --check"
+    ],
+    "audit_assertions": "Passed on all 2809 vertices outside the clique: radical enumeration agrees with independent binary Gram rank; intersection identity and self-pairing count formula hold; both original script counts match; parity makes no additional split; adjacent same-profile lines replayed.",
+    "report_roundtrip": "Fresh in-memory analysis equals the archived JSON; all 160 exported multicolored groups contain 2288 vertices in total.",
+    "latex": {
+      "passes": 2,
+      "status": "passed",
+      "pages": 8,
+      "final_log_warnings": false,
+      "undefined_references_or_citations": false,
+      "overfull_or_underfull_boxes": false,
+      "all_rendered_pages_visually_reviewed": true
+    },
+    "full_and_line_certificate_checks": "Certificate bytes unchanged; previous independent full and line checks retained, not rerun for this profile review.",
+    "fresh_lean_run": false,
+    "new_solver_search": false,
+    "shared_CI_changes": false
+  },
+  "mathematical_scope": {
+    "correction": "139 to 29 was an incorrect comparison of different partitions, not a refinement result.",
+    "finite_statistics": "Exact profiles: 240 total, 139 multicolored. Exact plus quotient dimension: 263 total, 160 multicolored; alternating status makes no further split. No original multicolored group is completely resolved.",
+    "new_written_proof": "No proper coloring can depend solely on exact (dim U,H,K) and quotient bilinear isometry type: span(e1) and span(e2) are adjacent and share those data. Not Lean formalized.",
+    "parity": "Self-orthogonal-vector count parity, not an Arf invariant of a specified quadratic form.",
+    "structural_15_coloring": "open",
+    "dimension_seven": "open",
+    "formal_chromatic_theorem": "Existing theorem retains three standard and four native-evaluation axioms; kernel-only optimization deferred."
+  },
+  "sha256": {
+    "manuscript/paper.pdf": "4c6f13dc9a8c743c3612f61c4df795283d5d0450fe63757753a41c9fa8641d79",
+    "manuscript/sections/geometry.tex": "a30447c219781f7e8a4b6bbe09ea7a8545d434113872159350b9d54847bb5902",
+    "develop/audit_geometry_profiles.py": "30a0e6717d55deb54f4f9c2761f770c5fe0b3b8024049eb43714d7e7803338c7",
+    "results/geometry-profile-audit.json": "896a7686a34a6d0db650852d03181a3ca13cae10ba575b4a861107bb552ee192",
+    "results/refined-geometry-arf.json": "fba7575ab668af834ae44a2c7a75c0faba073f437415a41015b4bdcc8232d7f6",
+    "results/full-15-coloring.json": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268"
+  }
+}

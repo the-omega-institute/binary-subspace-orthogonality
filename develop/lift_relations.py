@@ -13,7 +13,10 @@ The script verifies:
      the color in the fixed certificate.
   2. The orthogonality criterion between two vertices can be tested
      directly from (K, P, f) and (L, Q, g).
-  3. Relations among lift values that force distinct colors.
+  3. The fixed certificate has distinct colors on orthogonal sample pairs.
+
+The sample contains the first 20 non-clique vertices. This diagnostic reads
+the existing colors; it does not construct a structural 15-label assignment.
 """
 import json
 from collections import defaultdict
@@ -74,8 +77,6 @@ def lift_data(U, T, S):
     K = U & T
     P_to_f = {}
     for u in U:
-        if u == 0:
-            continue
         t, s = decompose(u, T, S)
         if s not in P_to_f:
             P_to_f[s] = canonical_representative(t, K)
@@ -195,6 +196,17 @@ def main():
                 if data[U][0] == data[W][0]:
                     bad += 1
     print(f"Monochromatic orthogonal pairs in sample: {bad}")
+    report = {
+        'total_groups': len(groups), 'multi_color_groups': len(multi),
+        'full_data_groups': len(full_groups),
+        'full_data_multi_color_groups': len(multi_full),
+        'sample_vertices': [list(basis_of(space)) for space in sample],
+        'sample_pairs': len(sample) * (len(sample) - 1) // 2,
+        'orthogonal_pairs_in_sample': count_orth,
+        'monochromatic_orthogonal_pairs_in_sample': bad,
+        'scope': 'First twenty non-clique vertices only; existing certificate colors, not a structural label construction.'
+    }
+    (ROOT / 'results/lift-relations.json').write_text(json.dumps(report, indent=2) + '\n')
 
 
 if __name__ == '__main__':

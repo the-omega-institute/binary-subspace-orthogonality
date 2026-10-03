@@ -1,0 +1,46 @@
+{
+  "reviewed_on": "2026-10-03",
+  "author_commit": "a7e49e10d651d52707270463eccf2088efe1fb63",
+  "previous_reviewed_commit": "f3f6c9f000893769745055a7582f51635473b98f",
+  "author_changes": "Compact object-first abstract, formal verification keyword replacing weakly perfect graph, MSC68V20 addition; only paper.tex changed.",
+  "integration_changes": [
+    "Preserve the new abstract structure and metadata.",
+    "State native evaluation for the finite checks in the six-dimensional Lean coloring formalization; full axiom scope remains in Section7.",
+    "Explicitly state n7 chromatic number remains open.",
+    "Use the manuscript's existing amsmath genfrac notation for Gaussian coefficients."
+  ],
+  "MSC_review": {
+    "code": "68V20",
+    "description": "Formalization of mathematics in connection with theorem provers",
+    "source": "https://mathscinet.ams.org/mathscinet/msc/pdfs/classifications2020.pdf",
+    "source_sha256": "532d86f87b042b1fbc30b72be174c98db8d2fb8e28b4150733956998363bcbe7",
+    "assessment": "Appropriate for the existing Lean component."
+  },
+  "validation": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+    "final_passes": 2,
+    "exit_code": 0,
+    "warnings_or_undefined_references": false,
+    "overfull_or_underfull_boxes": false,
+    "pdf_pages": 13,
+    "pdf_sha256": "e07d7bd0ded77e2400c3076600ce712c80c1350dda0703ed561f2be523bf3346",
+    "visual_pages": [
+      1,
+      12,
+      13
+    ],
+    "new_certificate_solver_or_Lean_run": false,
+    "diff_check": "pass"
+  },
+  "scope": {
+    "main_theorem_sections": "unchanged",
+    "AI_declaration": "unchanged",
+    "certificates_and_Lean_sources": "unchanged",
+    "n7_chromatic_number": "open",
+    "conceptual_fifteen_coloring": "open",
+    "historical_native_evaluation_axioms": 4,
+    "submission_or_publication": false,
+    "shared_ci_change": false
+  },
+  "next_action": "Author-provided affiliation/email entries and joint final manuscript/journal confirmation are still pending; separate preprint invitation awaits user interest decision."
+}

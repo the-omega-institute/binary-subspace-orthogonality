@@ -1,0 +1,130 @@
+"""
+Analyze the color assignment in the fixed 15-coloring as a function
+of (K, P, f).  For each vertex U outside the clique, record the
+values of K, P, f on a canonical basis of P, and the assigned color.
+
+The goal is to find a pattern that determines the color from (K, P, f).
+"""
+import json
+from collections import defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def dot(u, v):
+    return (u & v).bit_count() % 2
+
+
+def span(rows):
+    result = {0}
+    for r in rows:
+        result |= {x ^ r for x in list(result)}
+    return frozenset(result)
+
+
+def dim(U):
+    return len(U).bit_length() - 1
+
+
+def basis_of(U):
+    basis = []
+    for v in sorted(U, reverse=True):
+        x = v
+        for b in basis:
+            x = min(x, x ^ b)
+        if x:
+            basis.append(x)
+            basis.sort(reverse=True)
+    return tuple(basis)
+
+
+def canonical_representative(t, K):
+    return min(t ^ k for k in K)
+
+
+def decompose(u, T, S):
+    for s in S:
+        if (u ^ s) in T:
+            return (u ^ s, s)
+    raise ValueError(f"Cannot decompose {u} in T ⊕ S")
+
+
+def lift_data(U, T, S):
+    K = U & T
+    P_to_f = {}
+    for u in U:
+        t, s = decompose(u, T, S)
+        if s not in P_to_f:
+            P_to_f[s] = canonical_representative(t, K)
+    if not P_to_f:
+        return K, frozenset(), ()
+    P = frozenset(P_to_f.keys())
+    P_basis = basis_of(P)
+    f_values = tuple(P_to_f[s] for s in P_basis)
+    return K, P, f_values
+
+
+def main():
+    cert = json.loads((ROOT / 'results/full-15-coloring.json').read_text())
+    records = cert['subspace_colors']
+    spaces = [span(r['basis']) for r in records]
+    T = span([3, 12, 48])
+    S = span([1, 4, 16])
+
+    # Collect data
+    data = []
+    for r, U in zip(records, spaces):
+        if U <= T:
+            continue
+        K, P, f_values = lift_data(U, T, S)
+        data.append({
+            'U': sorted(U),
+            'color': r['color'],
+            'K': sorted(K),
+            'P': sorted(P),
+            'f_values': list(f_values),
+            'dim_K': dim(K),
+            'dim_P': dim(P) if P else 0,
+        })
+
+    # Group by (K, P) and count colors
+    by_KP = defaultdict(set)
+    for d in data:
+        by_KP[(tuple(d['K']), tuple(d['P']))].add(d['color'])
+
+    multi = {k: v for k, v in by_KP.items() if len(v) > 1}
+    print(f"Distinct (K,P) pairs: {len(by_KP)}")
+    print(f"Multi-color (K,P) pairs: {len(multi)}")
+    print()
+
+    # Group by (K, P, f_values) and count colors
+    by_full = defaultdict(set)
+    for d in data:
+        by_full[(tuple(d['K']), tuple(d['P']),
+                 tuple(d['f_values']))].add(d['color'])
+
+    multi_full = {k: v for k, v in by_full.items() if len(v) > 1}
+    print(f"Distinct (K,P,f) tuples: {len(by_full)}")
+    print(f"Multi-color (K,P,f) tuples: {len(multi_full)}")
+    print()
+
+    # For each color, count how many distinct (K, P) pairs it contains
+    by_color = defaultdict(set)
+    for d in data:
+        by_color[d['color']].add((tuple(d['K']), tuple(d['P'])))
+
+    print("Colors and their (K,P) diversity:")
+    for c in sorted(by_color):
+        print(f"  Color {c}: {len(by_color[c])} distinct (K,P) pairs")
+    report = {
+        'distinct_K_P_pairs': len(by_KP), 'multi_color_K_P_pairs': len(multi),
+        'distinct_full_tuples': len(by_full), 'multi_color_full_tuples': len(multi_full),
+        'color_K_P_diversity': {str(color): len(pairs) for color, pairs in sorted(by_color.items())},
+        'scope': 'Statistics of the fixed certificate; full lift tuples identify vertices, not a new structural color formula.'
+    }
+    (ROOT / 'results/color-function-analysis.json').write_text(json.dumps(report, indent=2) + '\n')
+
+
+if __name__ == '__main__':
+    main()

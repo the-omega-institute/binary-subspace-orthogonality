@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-10-02",
+  "author_base_commit": "eed4b180f583d3510b9260e581f7b10adb3de094",
+  "actual_script_path": "develop/color_function_candidate_v3",
+  "author_source_preserved": true,
+  "commands": [
+    "python3 develop/color_function_candidate_v3",
+    "python3 develop/check_color_candidate_v3.py",
+    "git diff --check"
+  ],
+  "original_stdout": "Vertices outside the clique: 2809\nDistinct labels used: 13\nCondition 1 violations: 0\nCondition 2 violations: 3507\n\nLabel distribution:\n  Label size  2: 480 vertices\n  Label size  4: 401 vertices\n  Label size  2: 345 vertices\n  Label size  4: 298 vertices\n  Label size  2: 266 vertices\n  Label size  4: 246 vertices\n  Label size  4: 165 vertices\n  Label size  2: 150 vertices\n  Label size  8: 126 vertices\n  Label size  2: 109 vertices\n  Label size  2: 96 vertices\n  Label size  2: 83 vertices\n  Label size  4: 44 vertices\n",
+  "independent_check_record": "results/color-candidate-v3-check.json",
+  "literal_summary": {
+    "labels_used": 13,
+    "palette_violations": 0,
+    "pairs_checked": 411508,
+    "monochromatic_edges": 3507
+  },
+  "specified_repair_summary": {
+    "labels_used": 15,
+    "palette_violations": 0,
+    "pairs_checked": 351950,
+    "monochromatic_edges": 2967,
+    "scope": "Diagnostic of this specific repaired ordering, not all orderings."
+  },
+  "written_result": "Zero-lift U=span5 and W=span21 have dot0 and different P,Q but both keys0 and first available labelspan3, before and after the specified inventory repair. Projection geometry must affect selection beyond availability. This rejects these specific rules, not every full-lift formula.",
+  "fourteen_clique_fixture": {
+    "literal_labels": 8,
+    "literal_monochromatic_edges": 8,
+    "repaired_labels": 7,
+    "repaired_monochromatic_edges": 9
+  },
+  "elapsed_seconds": 0.6474690001923591,
+  "source_sha256": "512326510b1da7d568dbbd8ecf487f42bc485d0dec1a5ff06aa124c8db3a2721",
+  "checker_sha256": "8244d8c5dc8c6e38b69e1dc6cab16863edede36ed6afe4f912e592c1291526b0",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "manuscript": {
+    "TeX_and_PDF_changed": false,
+    "PDF_pages": 10,
+    "pdf_sha256": "4e6018c8030181e0da9e6a424fb72a4ba658ea3394ba2279e1f8f690d837c4f8",
+    "new_build_or_visual_review": false
+  },
+  "scope": "Targeted literal v3 replay and one precisely specified inventory repair. Written zero-lift counterexample; fourteen-clique used as a regression fixture. No solver/Lean/n7 computation; manuscript/certificates/author source unchanged. Structural15/n7 open; historical full n6 theorem retains four native-evaluation axioms."
+}

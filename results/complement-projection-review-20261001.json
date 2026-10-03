@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-01",
+  "preserved_author_commit": "b9131435a10e54cce754de406d84c3a168c7e93d",
+  "integration_base_commit": "14577cb",
+  "author_script_unchanged": true,
+  "commands": [
+    "python3 develop/Complement_projection.py",
+    "python3 develop/check_complement_projection.py",
+    "cd manuscript && pdflatex -interaction=nonstopmode -halt-on-error paper.tex && pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+    "pdftoppm -scale-to 1200 -png manuscript/paper.pdf /private/tmp/nikandish-projection-final"
+  ],
+  "filename_note": "The actual committed script has a capital C: develop/Complement_projection.py.",
+  "finite_check": {
+    "vertices_outside_clique": 2809,
+    "profiles": 240,
+    "single_color_profiles": 101,
+    "multi_color_profiles": 139,
+    "entire_requested_output_reproduced": true,
+    "bidirectional_partition_identity_checked": true,
+    "all_240_lift_fiber_cardinalities_checked": true,
+    "check_record": "results/complement-projection-check.json"
+  },
+  "written_results": {
+    "proposition": "For any fixed complement S of T, (U intersect T, pi_S(U)) and (dim U,H,K) determine each other because T--S pairing is perfect; rank-nullity gives dimension. This excludes a proper coloring solely from this pair.",
+    "adjacent_pair": "For the selected S, span(e1) and span(e2) have the same K=0 and projection image span(e1), while adjacent and assigned certificate colors 10 and 9.",
+    "missing_datum": "For fixed K and P, U is encoded by a well-defined linear lift map f:P -> T/K, with U intersect S=ker f. This is a complete placement representation, not a 15-color rule.",
+    "formalized_this_round": false
+  },
+  "manuscript_build": {
+    "successful_passes": 2,
+    "pages": 9,
+    "bytes": 325445,
+    "warnings": [],
+    "visual_review": "All nine final rendered pages inspected; no clipping or overlap, references complete together on the final page.",
+    "invocation_correction": "An initial invocation from the repository root could not resolve relative section paths; the final successful build ran from manuscript as documented.",
+    "pdf_sha256": "2b3028ce37a2992bc37c273e2489cd96e905498748c0e39e213ad6fdf6ca2a42"
+  },
+  "sha256": {
+    "certificate": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "author_script": "009db3bd0b594ac9fb92e3d4507ac4e134175372e0cd6767f10d4da4bca77bfe",
+    "independent_checker": "bd4aa0e7a74fc9b7296099bfdbb78152fba7d3f8bd361beee38aa565260bbc93",
+    "requested_output": "942a8f3069f19211ef5ac6afb9cfb80f6545649255629d8e165fc2505af93976",
+    "independent_check_record": "033cb1f1aeb44bca2e8e8227880b83690f39e93726b4a3cf154dc2592f0b6cfa"
+  },
+  "validation_limits": "Targeted geometry check only: full and line edge/coloring checkers not rerun, certificate unchanged. No solver or Lean run, shared CI change, merge, release or email. The original final six-dimensional Lean theorem retains three standard and four native-evaluation axioms. Structural 15-coloring, exact line chromatic number and n7 remain open."
+}

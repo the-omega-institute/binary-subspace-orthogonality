@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-01",
+  "author_base_commit": "409f379d5a9a45d824f560167784d13c34985490",
+  "author_script_changes": [
+    "Include the zero vector so P and image f contain zero; previously dimensions and ranks could be evaluated from non-power-of-two cardinalities when K=0.",
+    "Serialize image cosets as sorted lists of vectors; initial script run failed with frozenset is not JSON serializable."
+  ],
+  "commands": [
+    "python3 develop/lift_map_matrix.py",
+    "python3 develop/check_lift_map_features.py",
+    "cd manuscript && pdflatex -interaction=nonstopmode -halt-on-error paper.tex && pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+    "pdftoppm -scale-to 1200 -png manuscript/paper.pdf /private/tmp/nikandish-lift-final"
+  ],
+  "finite_check": {
+    "checked_vertices_outside_clique": 2809,
+    "entire_requested_JSON_reproduced": true,
+    "each_feature_tuple_compared_to_independent_coordinate_method": true,
+    "map_consistency_linearity_and_rank_nullity_checked": true,
+    "requested_profiles": 878,
+    "requested_single_color_profiles": 578,
+    "requested_multi_color_profiles": 300,
+    "requested_groups_mixing_original_profiles": 294,
+    "true_refinement_retaining_K_P": {"profiles": 1662, "single_color": 1502, "multi_color": 160},
+    "original_139_mixed_profiles_fully_resolved": 87,
+    "original_139_mixed_profiles_still_unresolved": 52,
+    "full_map_representations": 2809,
+    "scope": "Full maps represent vertices, not a compressed 15-color rule; mixed-group counts alone do not measure monotone refinement progress."
+  },
+  "written_results": [
+    "Proposition5.5: U=span(13,6) and W=span(9,14) are distinct orthogonal planes with equal K=0,P=span(1,4),rank2,image=span(3,12),kernel0. No proper coloring depends solely on these features.",
+    "The note proves a lift-coordinate orthogonality criterion by expanding pairings and checking representative-independence under the cross-kernel conditions."
+  ],
+  "manuscript_build": {
+    "successful_passes": 2,
+    "pages": 9,
+    "bytes": 327232,
+    "warnings": [],
+    "visual_review": "All nine final rendered pages inspected; no clipping or overlap and references remain together.",
+    "pdf_sha256": "2a51d54c7e2b2a75d6f978e32f22e063ba22cfe69b9b0aaf963950ff73d27636"
+  },
+  "sha256": {
+    "certificate_unchanged": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "corrected_author_script": "b161971f25bad5e687ef17917e27ef41fb936df96cbf95db424aa85856c674d9",
+    "independent_checker": "24a6841172079392280930bd6a1e2094f0149dbbcc7ca81f72e75d0060062426",
+    "requested_output": "85e45e1c185b20b31ffe01449d9544a7c83c2cb301767119108b8b5e69105491",
+    "independent_check_record": "a6810b8478cc2bc2faef12f8a41afaaa831d97ae91b959e83d4be80e6b5a5d17"
+  },
+  "validation_limits": "Targeted geometry checks on existing certificate and short written proofs. No full/line coloring checker rerun, solver search, Lean execution, shared CI change, merge or release. New results not Lean formalized. Historical final n6 Lean theorem retains three standard and four native-evaluation axioms. Structural15-coloring, exact line chromatic number and n7 remain open."
+}

@@ -1,32 +1,70 @@
 \section{The full chromatic number in dimension six}
+\label{sec:chromatic}
+This section establishes the main chromatic result of the paper,
+\(\chi(\OG_6^*)=15\).  The lower bound is immediate: the fifteen
+nonzero subspaces of the fixed totally isotropic \(3\)-space
+\(T=\Span\{e_1+e_2,\ e_3+e_4,\ e_5+e_6\}\) are pairwise orthogonal
+and form a \(15\)-clique, so \(\chi(\OG_6^*)\ge 15\).  The upper
+bound is the substantial direction: we produce an explicit
+\(15\)-coloring of all \(2824\) nonzero subspaces and verify it
+against every orthogonality edge.  The certificate is recorded in
+the accompanying data file and checked independently by the checker
+of Section~\ref{sec:verification}.  The closing part of this
+section records the list-size structure that guides both the search
+for the certificate and the geometric analysis of
+Section~\ref{sec:geometry}.
 \begin{theorem}\label{thm:chromatic}
-$\chi(\OG_6^*)=15$.
+\(\chi(\OG_6^*)=15\).
 \end{theorem}
+
 \begin{proof}
-Let $T=\Span(3,12,48)$ in binary integer coordinates. The form vanishes on
-$T$, so its seven lines, seven planes and $T$ itself form a $15$-clique.
-For the upper bound, the file \path{results/full-15-coloring.json} gives a basis and
-a color in $\{0,\ldots,14\}$ for every nonzero subspace. The independent
-checker reconstructs each span and verifies basis independence, distinctness,
-and the dimension counts
+Let \(T=\Span(3,12,48)\) in binary integer coordinates, with bit
+\(i-1\) representing the coefficient of \(e_i\).  Thus its generators
+are \(e_1+e_2,\ e_3+e_4,\ e_5+e_6\).  The form vanishes on \(T\), so
+its seven lines, seven planes and \(T\) itself form a \(15\)-clique.
+Hence \(\chi(\OG_6^*)\ge15\).
+
+For the upper bound, the file
+\path{results/full-15-coloring.json} gives a basis and a color in
+\(\{0,\ldots,14\}\) for every nonzero subspace.  The independent
+checker reconstructs each span and verifies basis independence,
+distinctness, and the dimension counts
 \[
-63,\quad651,\quad1395,\quad651,\quad63,\quad1.
+63,\ 651,\ 1395,\ 651,\ 63,\ 1 .
 \]
-These equal ${6\brack d}_2$ for $1\leq d\leq6$, proving completeness of the
-catalogue. For all $3\,986\,076$ pairs of distinct entries it tests
-orthogonality on their basis vectors. Bilinearity identifies this test with
-graph adjacency. All $44\,968$ orthogonality edges have distinct endpoint
-colors. This establishes the upper bound and therefore equality.
+These equal the Gaussian binomial coefficients for \(d=1,\dots,6\),
+which proves completeness of the catalogue.  For all \(3\,986\,076\)
+pairs of distinct entries the checker tests orthogonality on the
+basis vectors.  Bilinearity identifies this test with graph
+adjacency.  All \(44\,968\) orthogonality edges have distinct
+endpoint colors.  This establishes the upper bound
+\(\chi(\OG_6^*)\le15\), and therefore equality.
 \end{proof}
 
-To find the certificate, fix distinct colors on the $15$ nonzero subspaces
-$W$ of $T$. The forbidden colors for a vertex $U\not\subseteq T$ are exactly
-those $W\subseteq H(U)=U^\perp\cap T$. Since $T=T^\perp$, the possible
-dimensions of $H(U)$ are $0,1,2$, and the resulting list sizes are $15,14,11$.
+\begin{remark}\label{rem:precoloring}
+To find the certificate, fix distinct colors on the \(15\) nonzero
+subspaces \(W\) of \(T\).  Every \(15\)-coloring uses all colors on
+this clique, so relabeling colors makes this precoloring an
+equivalent instance.  The forbidden colors for a vertex
+\(U\not\subseteq T\) are exactly those \(W\subseteq H(U)=U^\perp\cap
+T\).  If \(H(U)=T\), then \(U\subseteq T^\perp=T\), a contradiction.
+Thus \(\dim H(U)\in\{0,1,2\}\), giving lists of sizes
+\[
+15-N(\dim H(U))\in\{15,14,11\} .
+\]
+\end{remark}
 
-A vertex whose residual degree is smaller than its list size can be deleted
-and restored greedily after the remaining graph is colored. Repeated deletion
-removes $729$ uncolored vertices and leaves $2\,080$ vertices with $39\,400$
-edges. The list-coloring encoding has $28\,600$ variables and $627\,510$
-clauses. A satisfying assignment was extended in reverse deletion order to
-produce the full certificate checked above.
+\begin{remark}\label{rem:degree-deletion}
+A vertex whose residual degree is smaller than its list size can be
+deleted and restored greedily after the remaining graph is colored.
+Repeated deletion removes \(729\) uncolored vertices and leaves
+\(2\,080\) vertices with \(39\,400\) edges.  The list-coloring
+encoding has \(28\,600\) variables and \(627\,510\) clauses.  There
+is one Boolean variable for each allowed vertex--color pair.  Each
+vertex has an at-least-one clause and pairwise at-most-one clauses;
+each edge forbids simultaneous use of any color common to its
+endpoints' lists.  Hence satisfying assignments are exactly the
+proper list colorings of the residual graph.  A satisfying
+assignment was extended in reverse deletion order to produce the
+full certificate checked above.
+\end{remark}

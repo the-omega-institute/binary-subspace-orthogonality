@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "method": "Coefficient-tuple span enumeration and coordinate parity projection; independently recovered each image as the annihilator of H inside S.",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "diagnostic_sha256": "942a8f3069f19211ef5ac6afb9cfb80f6545649255629d8e165fc2505af93976",
+  "checked_vertices_outside_clique": 2809,
+  "reproduced_entire_diagnostic_json": true,
+  "total_profiles": 240,
+  "single_color_profiles": 101,
+  "multi_color_profiles": 139,
+  "partition_identity": "Every exact (dim U,H,K) group maps to exactly one projection group and conversely; the partitions are identical, not just their counts.",
+  "all_240_fiber_cardinalities_checked": "For K dimension k and nonzero P dimension p, the number of lifts is 2^(p*(3-k)).",
+  "adjacent_lines": {
+    "1": {
+      "profile": [
+        1,
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "color": 10
+    },
+    "2": {
+      "profile": [
+        1,
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "color": 9
+    }
+  },
+  "validation_limits": "No full edge/coloring check, solver search or Lean run. Projection equivalence and impossibility of a projection-pair coloring are written proofs; a structural 15-coloring and n7 remain open."
+}

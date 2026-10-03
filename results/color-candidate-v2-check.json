@@ -1,0 +1,161 @@
+{
+  "status": "diagnostic_passed_candidate_v2_rejected",
+  "author_commit": "04d03c6ba8af23b1409f43801e1a8efda12c38b0",
+  "vertices_outside_clique": 2809,
+  "distinct_labels_used": 5,
+  "condition_1_violations": 0,
+  "same_label_pairs_checked": 1749701,
+  "condition_2_violations": 13945,
+  "label_distribution": [
+    {
+      "label_basis": [
+        3
+      ],
+      "vertices": 575,
+      "same_label_pairs": 165025,
+      "monochromatic_edges": 638
+    },
+    {
+      "label_basis": [
+        12
+      ],
+      "vertices": 1735,
+      "same_label_pairs": 1504245,
+      "monochromatic_edges": 10936
+    },
+    {
+      "label_basis": [
+        15
+      ],
+      "vertices": 70,
+      "same_label_pairs": 2415,
+      "monochromatic_edges": 289
+    },
+    {
+      "label_basis": [
+        48
+      ],
+      "vertices": 394,
+      "same_label_pairs": 77421,
+      "monochromatic_edges": 2016
+    },
+    {
+      "label_basis": [
+        51
+      ],
+      "vertices": 35,
+      "same_label_pairs": 595,
+      "monochromatic_edges": 66
+    }
+  ],
+  "actual_tie_breaker": "Only zero/nonzero of the first canonical lift value, not its full value.",
+  "counterexample": {
+    "first_basis": [
+      2
+    ],
+    "second_basis": [
+      13
+    ],
+    "kernel_basis": [],
+    "projection_basis": [
+      1
+    ],
+    "first_lift_values": [
+      3
+    ],
+    "second_lift_values": [
+      12
+    ],
+    "common_label_basis": [
+      15
+    ],
+    "original_coordinate_dot": 0,
+    "X": [],
+    "Y": [],
+    "Z": [
+      [
+        0
+      ]
+    ],
+    "label_projection_pairing": [
+      [
+        1
+      ]
+    ]
+  },
+  "previous_span1_span2_counterexample_separated": true,
+  "outside_clique_obstruction": {
+    "other_isotropic_basis": [
+      5,
+      18,
+      40
+    ],
+    "intersection_with_T_basis": [
+      63
+    ],
+    "vertex_bases": [
+      [
+        5
+      ],
+      [
+        23
+      ],
+      [
+        45
+      ],
+      [
+        18
+      ],
+      [
+        58
+      ],
+      [
+        40
+      ],
+      [
+        5,
+        18
+      ],
+      [
+        45,
+        18
+      ],
+      [
+        5,
+        58
+      ],
+      [
+        45,
+        58
+      ],
+      [
+        5,
+        40
+      ],
+      [
+        23,
+        40
+      ],
+      [
+        18,
+        40
+      ],
+      [
+        5,
+        18,
+        40
+      ]
+    ],
+    "vertices": 14,
+    "pairs_checked": 91,
+    "proved_lower_bound_on_distinct_labels_required_outside_T": 14
+  },
+  "zero_missing_from_original_projection_count": 1016,
+  "normalizing_projection_zero_changes_no_labels": true,
+  "distinct_declared_planes": 5,
+  "source_sha256": "e5da81149f1b262d5395f2070bae921f74f03098cedcdbde408f57d10bfb3909",
+  "checker_sha256": "7a964ad682438e14e1d75131e341505ef74e4f28b2e2f4ed97b1ec9672662e11",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "elapsed_seconds": 0.6942287909332663,
+  "scope": "Independent coordinate checks of all same-label pairs and a written fourteen-clique obstruction. No new coloring, solver, Lean or n7 computation. Author source/certificates unchanged; structural15/n7 open; historical full n6 theorem retains four native-evaluation axioms."
+}

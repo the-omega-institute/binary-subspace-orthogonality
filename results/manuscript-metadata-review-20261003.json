@@ -1,0 +1,44 @@
+{
+  "reviewed_on": "2026-10-03",
+  "author_commit": "6a7fd77949bf364ba52a532107524e9eccb8105b",
+  "previous_reviewed_commit": "ea3e623d97156ecf389ce331f70b40fde597ff83",
+  "change_scope": "Only manuscript/paper.tex changed in the author commit: author footnotes, October 2026 date, MSC2020 and keywords. Main sections, declaration, certificates and Lean sources are unchanged.",
+  "metadata_review": {
+    "msc_source": "https://mathscinet.ams.org/mathscinet/msc/pdfs/classifications2020.pdf",
+    "msc_source_sha256": "532d86f87b042b1fbc30b72be174c98db8d2fb8e28b4150733956998363bcbe7",
+    "msc_entries": {
+      "05C15": "Coloring of graphs and hypergraphs",
+      "05C25": "Graphs and abstract algebra (groups, rings, fields, etc.)",
+      "05C69": "Vertex subsets with special properties (dominating sets, independent sets, cliques, etc.)",
+      "13A15": "Ideals and multiplicative ideal theory in commutative rings"
+    },
+    "msc_assessment": "All four entries are relevant to the manuscript.",
+    "weakly_perfect_keyword": "Consistent with chi = omega = 15 for the six-dimensional full graph; no hereditary perfection or all-dimensional equality is asserted.",
+    "author_footnotes": "Reza affiliation and corresponding email preserved; Haobo and Wenlin affiliation placeholders remain pending each author's preferred wording."
+  },
+  "validation": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error paper.tex",
+    "final_passes": 2,
+    "exit_code": 0,
+    "warnings_or_undefined_references": false,
+    "overfull_or_underfull_boxes": false,
+    "pdf_pages": 13,
+    "pdf_sha256": "a6ede5ac521f58ff6e57443721ac9baf8ad295276c9a28870b7e373b93bfdca3",
+    "visual_pages": [
+      1,
+      3,
+      12,
+      13
+    ],
+    "mathematical_checks": "No certificate, solver or Lean rerun; mathematical sources and previous claims are unchanged.",
+    "diff_check": "pass"
+  },
+  "scope": {
+    "n7_chromatic_number": "open",
+    "conceptual_fifteen_coloring": "open",
+    "historical_native_evaluation_axioms": 4,
+    "submission_or_publication": false,
+    "shared_ci_change": false
+  },
+  "next_action": "Fill author-approved affiliations and emails, then obtain joint final-manuscript and journal confirmation before submission."
+}

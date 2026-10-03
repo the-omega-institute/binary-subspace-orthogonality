@@ -1,0 +1,337 @@
+{
+  "status": "diagnostic_passed_candidate_v4_rejected",
+  "author_commit": "22aee3de1c2e7460ae00a5c5fbe26be5e3d3dfcc",
+  "actual_source_path": "develop/color_function_candidate_v4",
+  "vertices_outside_clique": 2809,
+  "distinct_inventory_labels": 15,
+  "labels_used": 15,
+  "condition_1_violations": 0,
+  "same_label_pairs_checked": 346362,
+  "condition_2_violations": 2873,
+  "label_distribution": [
+    {
+      "label_basis": [
+        3
+      ],
+      "vertices": 102,
+      "same_label_pairs": 5151,
+      "monochromatic_edges": 47
+    },
+    {
+      "label_basis": [
+        12
+      ],
+      "vertices": 290,
+      "same_label_pairs": 41905,
+      "monochromatic_edges": 205
+    },
+    {
+      "label_basis": [
+        15
+      ],
+      "vertices": 114,
+      "same_label_pairs": 6441,
+      "monochromatic_edges": 79
+    },
+    {
+      "label_basis": [
+        48
+      ],
+      "vertices": 92,
+      "same_label_pairs": 4186,
+      "monochromatic_edges": 77
+    },
+    {
+      "label_basis": [
+        51
+      ],
+      "vertices": 405,
+      "same_label_pairs": 81810,
+      "monochromatic_edges": 304
+    },
+    {
+      "label_basis": [
+        60
+      ],
+      "vertices": 126,
+      "same_label_pairs": 7875,
+      "monochromatic_edges": 105
+    },
+    {
+      "label_basis": [
+        63
+      ],
+      "vertices": 103,
+      "same_label_pairs": 5253,
+      "monochromatic_edges": 128
+    },
+    {
+      "label_basis": [
+        15,
+        3
+      ],
+      "vertices": 415,
+      "same_label_pairs": 85905,
+      "monochromatic_edges": 399
+    },
+    {
+      "label_basis": [
+        51,
+        3
+      ],
+      "vertices": 153,
+      "same_label_pairs": 11628,
+      "monochromatic_edges": 254
+    },
+    {
+      "label_basis": [
+        60,
+        12
+      ],
+      "vertices": 268,
+      "same_label_pairs": 35778,
+      "monochromatic_edges": 264
+    },
+    {
+      "label_basis": [
+        60,
+        15
+      ],
+      "vertices": 240,
+      "same_label_pairs": 28680,
+      "monochromatic_edges": 233
+    },
+    {
+      "label_basis": [
+        63,
+        3
+      ],
+      "vertices": 150,
+      "same_label_pairs": 11175,
+      "monochromatic_edges": 256
+    },
+    {
+      "label_basis": [
+        63,
+        12
+      ],
+      "vertices": 134,
+      "same_label_pairs": 8911,
+      "monochromatic_edges": 200
+    },
+    {
+      "label_basis": [
+        63,
+        15
+      ],
+      "vertices": 109,
+      "same_label_pairs": 5886,
+      "monochromatic_edges": 150
+    },
+    {
+      "label_basis": [
+        63,
+        12,
+        3
+      ],
+      "vertices": 108,
+      "same_label_pairs": 5778,
+      "monochromatic_edges": 172
+    }
+  ],
+  "fourteen_clique": {
+    "vertices": 14,
+    "pairs_checked": 91,
+    "distinct_labels": 8,
+    "monochromatic_edges": 7,
+    "vertex_labels": [
+      {
+        "basis": [
+          5
+        ],
+        "label_basis": [
+          12
+        ]
+      },
+      {
+        "basis": [
+          23
+        ],
+        "label_basis": [
+          63,
+          12
+        ]
+      },
+      {
+        "basis": [
+          45
+        ],
+        "label_basis": [
+          15,
+          3
+        ]
+      },
+      {
+        "basis": [
+          18
+        ],
+        "label_basis": [
+          15
+        ]
+      },
+      {
+        "basis": [
+          58
+        ],
+        "label_basis": [
+          60,
+          15
+        ]
+      },
+      {
+        "basis": [
+          40
+        ],
+        "label_basis": [
+          60,
+          15
+        ]
+      },
+      {
+        "basis": [
+          5,
+          18
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "basis": [
+          45,
+          18
+        ],
+        "label_basis": [
+          15
+        ]
+      },
+      {
+        "basis": [
+          5,
+          58
+        ],
+        "label_basis": [
+          12
+        ]
+      },
+      {
+        "basis": [
+          45,
+          58
+        ],
+        "label_basis": [
+          12
+        ]
+      },
+      {
+        "basis": [
+          5,
+          40
+        ],
+        "label_basis": [
+          48
+        ]
+      },
+      {
+        "basis": [
+          23,
+          40
+        ],
+        "label_basis": [
+          63,
+          12
+        ]
+      },
+      {
+        "basis": [
+          18,
+          40
+        ],
+        "label_basis": [
+          60,
+          12
+        ]
+      },
+      {
+        "basis": [
+          5,
+          18,
+          40
+        ],
+        "label_basis": [
+          63,
+          3
+        ]
+      }
+    ]
+  },
+  "previous_zero_lift_pair": {
+    "first_basis": [
+      5
+    ],
+    "first_label_basis": [
+      12
+    ],
+    "second_basis": [
+      21
+    ],
+    "second_label_basis": [
+      48
+    ],
+    "separated": true
+  },
+  "residue_counterexample": {
+    "first_basis": [
+      11
+    ],
+    "second_basis": [
+      52
+    ],
+    "kernel_basis": [],
+    "projection_basis": [
+      4
+    ],
+    "first_lift_values": [
+      15
+    ],
+    "second_lift_values": [
+      48
+    ],
+    "available_label_count": 11,
+    "first_key": 271,
+    "second_key": 304,
+    "common_index": 7,
+    "common_label_basis": [
+      12,
+      51
+    ],
+    "coordinate_dot": 0,
+    "X": [],
+    "Y": [],
+    "Z": [
+      [
+        0
+      ]
+    ],
+    "lift_value_difference": 33,
+    "obstruction_scope": "Every fixed common-palette ordering with index (integer_multiplier*t + common_K_P_offset) modulo11 identifies these two values. Does not exclude nonlinear or f-dependent geometric selection."
+  },
+  "zero_missing_from_original_projection_count": 1016,
+  "normalizing_projection_zero_changes_no_labels": true,
+  "source_sha256": "45cff8efa5932c833bc2846fe38e62fc698b5a67fcef888869fe87b19a7050fd",
+  "checker_sha256": "d3dbb8b037487ecc30a0781933cec608e3be92b3308f19f5399e5e9f2099cbfa",
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "elapsed_seconds": 0.48224129201844335,
+  "scope": "Independent original-coordinate checks of this requested candidate and written affine-residue obstruction. No solver/Lean/n7 computation; author source/manuscript/certificates unchanged. Structural15/n7 open; historical full n6 theorem retains four native-evaluation axioms."
+}

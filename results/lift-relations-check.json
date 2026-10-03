@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "vertices": 2824,
+  "vertices_outside_clique": 2809,
+  "all_lift_data_and_extensions_checked": true,
+  "all_vertices_reconstructed": true,
+  "author_output_reproduced": {
+    "total_groups": 836,
+    "multi_color_groups": 196,
+    "full_data_groups": 2809,
+    "full_data_multi_color_groups": 0,
+    "sample_vertices": [
+      [
+        1
+      ],
+      [
+        5
+      ],
+      [
+        7
+      ],
+      [
+        9
+      ],
+      [
+        11
+      ],
+      [
+        13
+      ],
+      [
+        17
+      ],
+      [
+        19
+      ],
+      [
+        21
+      ],
+      [
+        23
+      ],
+      [
+        25
+      ],
+      [
+        27
+      ],
+      [
+        29
+      ],
+      [
+        31
+      ],
+      [
+        33
+      ],
+      [
+        35
+      ],
+      [
+        37
+      ],
+      [
+        39
+      ],
+      [
+        41
+      ],
+      [
+        43
+      ]
+    ],
+    "sample_pairs": 190,
+    "orthogonal_pairs_in_sample": 87,
+    "monochromatic_orthogonal_pairs_in_sample": 0,
+    "scope": "First twenty non-clique vertices only; existing certificate colors, not a structural label construction."
+  },
+  "all_distinct_pairs_checked": 3986076,
+  "orthogonality_edges_checked": 44968,
+  "non_clique_pairs_checked": 3943836,
+  "non_clique_edges_checked": 42000,
+  "criterion_disagreements": 0,
+  "monochromatic_orthogonal_pairs": 0,
+  "method": "Author lift_data, basis and extensions compared to independently enumerated spans, coordinate projection and quotient cosets. Every author are_orthogonal result compared to coordinate-defined orthogonal-complement masks for distinct pairs of all2824 vertices, including the clique.",
+  "optimization": "Memoize only deterministic author basis_of and extend_lift functions; the author pair test itself is unchanged.",
+  "elapsed_seconds": 7.177155541954562,
+  "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+  "author_script_sha256": "e4fabf1a50684a2b697258a3b89f84f8a73592a64cb1bab0831d9c8a86936987",
+  "author_output_sha256": "847e03684d5b83a49284f05eac45b818c7ec42804021058b5d2bc44e5af90bb5",
+  "checker_sha256": "a421aa6ea4eecd2e6771b73a8078c846e003ac227a5bb9bb1756e1ef1ba4c1f3",
+  "scope": "Exhaustive replay of lift-coordinate adjacency and existing certificate colors, not a new certificate or structural15-label construction. Exact line chi12 remains proved; n7 and structural15-coloring remain open. No solver or Lean run; historical full-subspace n6 theorem retains four native-evaluation axioms."
+}

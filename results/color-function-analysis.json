@@ -1,0 +1,24 @@
+{
+  "distinct_K_P_pairs": 240,
+  "multi_color_K_P_pairs": 139,
+  "distinct_full_tuples": 2809,
+  "multi_color_full_tuples": 0,
+  "color_K_P_diversity": {
+    "0": 78,
+    "1": 35,
+    "2": 21,
+    "3": 96,
+    "4": 39,
+    "5": 70,
+    "6": 90,
+    "7": 6,
+    "8": 5,
+    "9": 38,
+    "10": 37,
+    "11": 8,
+    "12": 20,
+    "13": 14,
+    "14": 9
+  },
+  "scope": "Statistics of the fixed certificate; full lift tuples identify vertices, not a new structural color formula."
+}

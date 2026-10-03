@@ -1,0 +1,30 @@
+{
+  "dimension": 6,
+  "fixed_class": [
+    1,
+    3,
+    5,
+    9,
+    17,
+    33
+  ],
+  "remaining_colors": 11,
+  "vertices": 57,
+  "variables": 627,
+  "clauses": 11772,
+  "edges_in_remaining_graph": 780,
+  "solver": "glucose4",
+  "seconds_limit": 60.0,
+  "cnf_sha256": "ecbf068e617ab8b77eb5c21723ee0ba277e5533bcaa5867c52086d1b26c2a908",
+  "script_sha256": "fe4bb294c50df1334f052d5075d41a6011bb2c8338143b3203bbcfc5ee1d2530",
+  "elapsed_seconds": 6.190487666986883,
+  "stats": {
+    "restarts": 174,
+    "conflicts": 108037,
+    "decisions": 148937,
+    "propagations": 3838382
+  },
+  "status": "sat_candidate",
+  "certificate": "results/line-coloring-12.json",
+  "certificate_sha256": "cf3c5fb05cbb8a715a7195954fe0016512dc18659cbc4b60b2824281f1034bb3"
+}

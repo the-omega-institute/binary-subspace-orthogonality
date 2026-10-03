@@ -1,14 +1,302 @@
 \section{Geometry of the precoloring}
-The color labels are the nonzero subspaces $W$ of the fixed totally isotropic
-space $T$. The relation $W\subseteq H(U)$ determines exactly which fixed
-clique colors are excluded at $U$. The additional invariant $U\cap T$
-records how $U$ meets the isotropic space itself.
+\label{sec:geometry}
 
-The reproducibility package groups the archived coloring by
-$(\dim U,H(U),U\cap T)$. Outside the clique, $240$ such profiles occur,
-of which $139$ receive more than one color in this certificate.
-These data identify where a structural construction would need to refine
-or reorganize the present choices. They do not exclude the existence of a
-different coloring determined by a smaller collection of geometric invariants.
-The files \texttt{results/coloring-geometry.json} and
-\texttt{develop/analyze\_geometry.py} provide the complete counts and color labels.
+In this section we describe the geometric color lists and profiles of the
+\(15\)-coloring constructed in Section~\ref{sec:chromatic}.  Keep
+the notation of that section: \(T\) is the totally isotropic
+\(3\)-space
+\[
+T=\Span\{e_1+e_2,\ e_3+e_4,\ e_5+e_6\},
+\]
+\(\mathcal C\) is the \(15\)-clique formed by the nonzero subspaces of
+\(T\), and each \(W\in\mathcal C\) carries its own color \(c_W\).
+
+For a vertex \(U\) of \(\OG_6^*\) outside \(\mathcal C\), define
+\[
+H(U)=U^\perp\cap T,\qquad K(U)=U\cap T.
+\]
+Since \(T^\perp=T\) and \(U\not\subseteq T\), we have \(H(U)\ne T\), so
+\(\dim H(U)\in\{0,1,2\}\).  The following observation is the key to
+the precoloring.
+
+\begin{lemma}\label{lem:H-adjacency}
+Let \(U\) be a vertex of \(\OG_6^*\) outside \(\mathcal C\) and let
+\(W\in\mathcal C\).  Then \(U\) is adjacent to \(W\) if and only if
+\(W\subseteq H(U)\).  Consequently, the allowed color list of \(U\)
+is
+\[
+L(U)=\{c_W : 0\ne W\le T,\ W\not\subseteq H(U)\},
+\]
+and its size is
+\[
+|L(U)|=\begin{cases}
+15,&\dim H(U)=0,\\
+14,&\dim H(U)=1,\\
+11,&\dim H(U)=2.
+\end{cases}
+\]
+\end{lemma}
+
+\begin{proof}
+By definition, \(U\) is adjacent to \(W\) if and only if
+\(W\subseteq U^\perp\).  Since \(W\subseteq T\), this is equivalent to
+\(W\subseteq U^\perp\cap T=H(U)\).  The list size is
+\(15-N(\dim H(U))\), where \(N(0)=0\), \(N(1)=1\), and \(N(2)=4\);
+this gives \(15\), \(14\), and \(11\) in the three cases.
+\end{proof}
+
+Table~\ref{tab:profiles} groups the \(2809=2824-15\) vertices outside
+\(\mathcal C\) by the dimensions of \(U\), \(H(U)\), and \(K(U)\).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|r|r|r}
+\toprule
+\(\dim U\) & \(\dim H(U)\) & \(\dim K(U)\) & Vertices \\
+\midrule
+\(1\) & \(2\) & \(0\) & \(56\) \\
+\(2\) & \(1\) & \(0\) & \(448\) \\
+\(2\) & \(2\) & \(1\) & \(196\) \\
+\(3\) & \(0\) & \(0\) & \(512\) \\
+\(3\) & \(1\) & \(1\) & \(784\) \\
+\(3\) & \(2\) & \(2\) & \(98\) \\
+\(4\) & \(0\) & \(1\) & \(448\) \\
+\(4\) & \(1\) & \(2\) & \(196\) \\
+\(4\) & \(2\) & \(3\) & \(7\) \\
+\(5\) & \(0\) & \(2\) & \(56\) \\
+\(5\) & \(1\) & \(3\) & \(7\) \\
+\(6\) & \(0\) & \(3\) & \(1\) \\
+\bottomrule
+\end{tabular}
+\caption{Distribution of the \(2809\) vertices outside the
+\(15\)-clique, according to the triple
+\((\dim U,\dim H(U),\dim K(U))\).}
+\label{tab:profiles}
+\end{table}
+
+The table has \(12\) dimension profiles.  Its \(357\) vertices with
+\(\dim H(U)=2\) are the most constrained, having \(11\) allowed colors.
+These lists describe the constraints imposed by the clique.  The full
+certificate in Section~\ref{sec:chromatic} establishes that the precoloring
+extends by checking every orthogonality edge, including those between
+vertices outside the clique.
+
+\subsection{Towards a structural description}
+
+Retaining the actual subspaces \(H(U)\) and \(K(U)\), rather than
+their dimensions alone, gives the exact profiles
+\((\dim U,H(U),K(U))\).  Grouping the archived coloring by this
+triple produces \(240\) profiles outside the clique; \(139\) receive
+more than one color and the remaining \(101\) receive a single color.
+Thus even the exact profile does not determine the color in this
+fixed certificate.  These statistics are recorded in
+\path{results/coloring-geometry.json} and reproduced by
+\path{develop/analyze_geometry.py}.  The statistics alone do not
+settle whether a different proper coloring could depend on these
+profiles.  The following obstruction rules out such a rule even
+with the quotient-form isometry type added.
+
+\begin{proposition}\label{prop:profile-obstruction}
+No proper coloring of \(\OG_6^*\) depends solely on
+\((\dim U,H(U),K(U))\) and the isometry type of the restricted
+nondegenerate bilinear form on \(U/(U\cap U^\perp)\).
+\end{proposition}
+\begin{proof}
+The distinct lines \(U=\Span(e_1)\) and \(V=\Span(e_2)\) are adjacent.
+Both have dimension one,
+\(H(U)=H(V)=\Span(e_3+e_4,e_5+e_6)\), and
+\(K(U)=K(V)=\{0\}\).  Their restricted forms have Gram matrix \([1]\),
+so their radicals are zero and their quotients are isometric.
+A rule depending only on the stated data assigns equal colors to
+these adjacent vertices, a contradiction.
+\end{proof}
+
+The computation in \path{results/geometry-profile-audit.json}
+retains the exact subspaces: adding quotient dimension gives \(263\)
+profiles, \(160\) multicolored; adding alternating status makes no
+further split.  None of the original \(139\) multicolored profiles
+is completely resolved.  These are finite statistics of the fixed
+witness, distinct from Proposition~\ref{prop:profile-obstruction}.
+
+Let \(G\) be the stabilizer of \(T\) in the orthogonal group of
+\(V_6\), acting on clique color labels by \(g\cdot c_W=c_{gW}\).
+\begin{corollary}\label{cor:equivariance-obstruction}
+No proper \(15\)-coloring with the prescribed clique colors satisfies
+\(c(gU)=g\cdot c(U)\) for every \(g\in G\).
+\end{corollary}
+\begin{proof}
+The coordinate transposition \((1,2)\) is orthogonal and fixes every
+vector of \(T\), hence every clique subspace and every color label.
+It exchanges the adjacent lines \(\Span(e_1)\) and \(\Span(e_2)\).
+Equivariance would give these lines the same color, a contradiction.
+\end{proof}
+
+\subsection{Auxiliary choices and symmetry breaking}
+\label{subsec:auxiliary}
+
+Proposition~\ref{prop:profile-obstruction} and
+Corollary~\ref{cor:equivariance-obstruction} show that a proper
+coloring cannot depend solely on the specified exact profile and
+quotient isometry type, and that a proper \(15\)-coloring cannot be
+equivariant under the full stabilizer of \(T\) with its induced
+clique-label action.  A structural description must distinguish
+vertices identified by these data and break the obstructing symmetry.
+Choosing auxiliary data is one way to do so.
+
+A concrete example is a complement \(S\) to \(T\) in \(V_6\), so that
+\(V_6 = T \oplus S\).  The choice
+\[
+S = \Span\{e_1, e_3, e_5\}
+\]
+is a complement because the generators of \(T\) together with those
+of \(S\) form a basis of \(V_6\).  It distinguishes the adjacent
+lines \(\Span(e_1)\) and \(\Span(e_2)\),
+since
+\[
+\dim(\Span(e_1) \cap S) = 1
+\qquad\text{while}\qquad
+\dim(\Span(e_2) \cap S) = 0.
+\]
+Thus this fixed auxiliary choice breaks the coordinate swap
+responsible for Corollary~\ref{cor:equivariance-obstruction}.
+
+A direct check on the certificate shows that the two adjacent lines
+receive distinct colors, \(10\) for \(\Span(e_1)\) and \(9\) for
+\(\Span(e_2)\), while every geometric quantity printed by
+the diagnostic \path{develop/file_separator.py} is identical.
+The output and the complement check are recorded in
+\path{results/adjacent-line-diagnostic.json}.  The auxiliary datum
+\(\dim(U\cap S)\) separates this pair; whether it explains further
+color choices in the certificate is a separate question.
+
+Whether such complement-based data support a complete structural
+\(15\)-coloring remains open, as a possible approach to
+Problem~\ref{prob:structural} in Section~\ref{sec:higher}.
+
+Intersection with \(S\) must be distinguished from projection onto \(S\).
+Let \(\pi_S\) be projection along \(T\), for any complement \(S\).
+\begin{proposition}\label{prop:projection-profile}
+The pair \((U\cap T,\pi_S(U))\) and the exact profile
+\((\dim U,H(U),K(U))\) determine each other.  No proper coloring
+of \(\OG_6^*\) depends solely on this pair.
+\end{proposition}
+\begin{proof}
+Write \(P=\pi_S(U)\) and \(K=U\cap T\).  Since the form vanishes
+on \(T\), \(H(U)\) is the annihilator of \(P\) in \(T\).
+The pairing between \(T\) and \(S\) is perfect: a vector of \(T\)
+orthogonal to \(S\) is orthogonal to all of \(V_6=T\oplus S\),
+hence zero, and both summands have dimension three.  Thus \(P\) is
+the annihilator of \(H(U)\) in \(S\).  Rank--nullity gives
+\(\dim U=\dim K+\dim P\), proving the equivalence.  The coloring
+obstruction follows from Proposition~\ref{prop:profile-obstruction}.
+\end{proof}
+
+For the displayed complement, \(\pi_S(e_1)=\pi_S(e_2)=e_1\),
+so the projection pair fails to distinguish those adjacent lines.
+The computation in \path{results/complement-projection.json} gives the
+same \(240\) exact groups, \(139\) multicolored, as before;
+Proposition~\ref{prop:projection-profile} explains this identity.
+For fixed \(K\) and \(P\), the remaining placement is encoded by a
+linear map \(f:P\to T/K\): if \(t+s\in U\), set \(f(s)=t+K\).
+Then \(U=\{t+s:s\in P,\ t+K=f(s)\}\) and
+\(U\cap S=\ker f\).  Extracting a structural \(15\)-color rule
+from these lift data remains open.
+
+\begin{proposition}\label{prop:lift-features}
+For the displayed \(T\) and \(S\), no proper coloring of \(\OG_6^*\)
+depends solely on \(K\), \(P\), and the rank, image and kernel of \(f\).
+\end{proposition}
+\begin{proof}
+In binary integer coordinates take \(U=\Span(13,6)\) and
+\(W=\Span(9,14)\).  Their distinct spans are
+\(\{0,6,11,13\}\) and \(\{0,7,9,14\}\); all four cross dot
+products of the given bases are zero.  Both planes have
+\(K=\{0\}\), \(P=\Span(1,4)\), rank two, image \(\Span(3,12)\)
+and kernel zero.  On the basis \((1,4)\) their lift-map values are
+respectively \((12,15)\) and \((15,3)\).  A rule using only the
+common data assigns equal colors to these adjacent planes.
+\end{proof}
+
+The finite refinement retaining \(K,P\) and these features gives
+\(1662\) groups, \(160\) multicolored.  Of the original \(139\)
+multicolored groups, \(87\) split entirely into single-color groups,
+while \(52\) remain unresolved; the exact comparison is recorded in
+\path{results/lift-map-matrix-check.json}.  These statistics describe
+the fixed witness; Proposition~\ref{prop:lift-features} excludes every
+proper coloring solely from the stated data.
+
+For fixed \(K,P\), the complete values of \(f\) on a basis
+\(s_1,\ldots,s_p\) determine \(U\).  Choose representatives
+\(t_i\in T\) of \(f(s_i)\); then
+\(U=K+\Span(t_1+s_1,\ldots,t_p+s_p)\), since subtracting a lift
+of the projection of any \(u\in U\) leaves an element of \(K\).
+Changing representatives by elements of \(K\) does not change this span.
+The check in \path{results/lift-map-values-check.json} reconstructs all
+\(2809\) non-clique vertices from these data, giving singleton profiles.
+Value lists without their domain and quotient data do not suffice:
+\(\Span(e_1)\) and \(\Span(e_3)\) are adjacent and both have the
+one-entry zero list, but different projection domains.
+The full representation thus recovers vertices; a structural assignment
+of \(15\) colors remains to be found.
+
+The following obstruction gives an explicit pair of adjacent planes
+in one orbit of the stabilizer of \(T\), ruling out every coloring
+invariant under that stabilizer. It uses the geometry of the coordinate
+splitting \(V_6=T\oplus S\) with \(S=\Span\{e_1,e_3,e_5\}\).
+
+\begin{proposition}[\(\operatorname{Stab}(T)\)-orbit obstruction]
+\label{prop:stabT-orbit}
+Let \(G=\operatorname{Stab}_{O_6(\F)}(T)\) be the stabilizer of
+\(T\) in the orthogonal group.  The distinct orthogonal planes
+\(U=\Span(13,6)\) and \(W=\Span(9,14)\) lie in the same \(G\)-orbit.
+Consequently, no proper \(15\)-coloring of \(\OG_6^*\) with the
+prescribed clique colors is \(G\)-equivariant.
+\end{proposition}
+\begin{proof}
+With \(T=\Span(3,12,48)\) and \(S=\Span(1,4,16)\), the self-adjoint
+map \(B:S\to T\) given by \(B(1)=3\), \(B(4)=12\), \(B(16)=0\)
+has the symmetric matrix \(\operatorname{diag}(1,1,0)\) in the
+paired bases \((1,4,16)\) and \((3,12,48)\). Since \(T\) is totally
+isotropic and \(\langle Bs,s'\rangle=\langle s,Bs'\rangle\),
+the two cross terms cancel in characteristic two. Thus the shear
+\(g_B(t+s)=t+B(s)+s\) preserves the bilinear form. It is an
+involution fixing \(T\) pointwise, so it belongs to \(G\).
+Direct computation gives
+\[
+g_B(13)=14,\qquad g_B(6)=9,
+\]
+so \(g_B(U)=\Span(14,9)=\Span(9,14)=W\).  Since \(U\) and \(W\) are
+distinct and orthogonal, the claim follows.
+\end{proof}
+
+The shear fixes every clique label, so
+Proposition~\ref{prop:stabT-orbit} supplies a plane witness for the
+equivariance obstruction of Corollary~\ref{cor:equivariance-obstruction}.
+It also rules out invariant colorings with any number of labels:
+vertices in one \(G\)-orbit would receive the same color. The two
+planes connect this orbit obstruction directly to the lift-map
+analysis of Proposition~\ref{prop:lift-features}.
+
+Two further directions remain for a structural description.
+
+\begin{enumerate}
+\item \emph{Enrichment of the invariants.}  To recover the current
+coloring, an additional invariant must distinguish vertices within
+the multi-color exact profiles.  Proposition~\ref{prop:profile-obstruction}
+shows that the isometry type of the nondegenerate quotient is still
+insufficient when combined with the exact profile.  A finer rule must
+distinguish the placement of vertices such as the two lines in that
+proof.
+The subspaces \(H(U)\) and \(K(U)\) have a relative position in
+\(T\), but neither is assumed to contain the other.  For example,
+in binary coordinates \(U=\Span(1,3)\) gives
+\(K(U)=\Span(3)\) and \(H(U)=\Span(12,48)\).
+
+\item \emph{Restricted symmetry or auxiliary choices.}
+Corollary~\ref{cor:equivariance-obstruction} rules out equivariance
+under the full stabilizer, even when clique color labels are permuted.
+A structural construction must break some of this symmetry, for
+example by choosing auxiliary coordinate data such as the complement
+\(S\) above, or restricting to a smaller subgroup.  No such
+construction is asserted here.
+\end{enumerate}

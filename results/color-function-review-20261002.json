@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-02",
+  "author_base_commit": "7d7fe67abac05191db6f0d104e9931c7a455f85e",
+  "actual_script_path": "develop/analyze_color_function",
+  "original_author_script_sha256": "64fd34705b68329b52f0f5b80547bdc9da9a634cd9ef115cb4c2776d95214b39",
+  "original_stdout": "Distinct (K,P) pairs: 240\nMulti-color (K,P) pairs: 139\n\nDistinct (K,P,f) tuples: 2809\nMulti-color (K,P,f) tuples: 0\n\nColors and their (K,P) diversity:\n  Color 0: 78 distinct (K,P) pairs\n  Color 1: 35 distinct (K,P) pairs\n  Color 2: 21 distinct (K,P) pairs\n  Color 3: 96 distinct (K,P) pairs\n  Color 4: 39 distinct (K,P) pairs\n  Color 5: 70 distinct (K,P) pairs\n  Color 6: 90 distinct (K,P) pairs\n  Color 7: 6 distinct (K,P) pairs\n  Color 8: 5 distinct (K,P) pairs\n  Color 9: 38 distinct (K,P) pairs\n  Color 10: 37 distinct (K,P) pairs\n  Color 11: 8 distinct (K,P) pairs\n  Color 12: 20 distinct (K,P) pairs\n  Color 13: 14 distinct (K,P) pairs\n  Color 14: 9 distinct (K,P) pairs",
+  "changes": [
+    "Remove zero-vector skip so each P is an actual subspace; statistics unchanged.",
+    "Export requested statistics without renaming the extensionless author file.",
+    "Add independent tuple, dimension, reconstruction, palette and same-label matrix checks."
+  ],
+  "commands": [
+    "python3 develop/analyze_color_function",
+    "python3 develop/check_color_function.py"
+  ],
+  "independent_check": {
+    "status": "passed",
+    "vertices_outside_clique": 2809,
+    "author_output_reproduced": {
+      "distinct_K_P_pairs": 240,
+      "multi_color_K_P_pairs": 139,
+      "distinct_full_tuples": 2809,
+      "multi_color_full_tuples": 0,
+      "color_K_P_diversity": {
+        "0": 78,
+        "1": 35,
+        "2": 21,
+        "3": 96,
+        "4": 39,
+        "5": 70,
+        "6": 90,
+        "7": 6,
+        "8": 5,
+        "9": 38,
+        "10": 37,
+        "11": 8,
+        "12": 20,
+        "13": 14,
+        "14": 9
+      },
+      "scope": "Statistics of the fixed certificate; full lift tuples identify vertices, not a new structural color formula."
+    },
+    "label_subspaces": [
+      {
+        "color": 0,
+        "basis": [
+          3
+        ]
+      },
+      {
+        "color": 1,
+        "basis": [
+          15
+        ]
+      },
+      {
+        "color": 2,
+        "basis": [
+          51
+        ]
+      },
+      {
+        "color": 3,
+        "basis": [
+          63
+        ]
+      },
+      {
+        "color": 4,
+        "basis": [
+          12
+        ]
+      },
+      {
+        "color": 5,
+        "basis": [
+          60
+        ]
+      },
+      {
+        "color": 6,
+        "basis": [
+          48
+        ]
+      },
+      {
+        "color": 7,
+        "basis": [
+          15,
+          3
+        ]
+      },
+      {
+        "color": 8,
+        "basis": [
+          63,
+          12
+        ]
+      },
+      {
+        "color": 9,
+        "basis": [
+          63,
+          3
+        ]
+      },
+      {
+        "color": 10,
+        "basis": [
+          60,
+          15
+        ]
+      },
+      {
+        "color": 11,
+        "basis": [
+          51,
+          3
+        ]
+      },
+      {
+        "color": 12,
+        "basis": [
+          63,
+          15
+        ]
+      },
+      {
+        "color": 13,
+        "basis": [
+          60,
+          12
+        ]
+      },
+      {
+        "color": 14,
+        "basis": [
+          63,
+          12,
+          3
+        ]
+      }
+    ],
+    "palette_sizes": {
+      "11": 357,
+      "14": 1435,
+      "15": 1017
+    },
+    "every_fixed_color_passes_label_projection_matrix_condition": true,
+    "same_label_non_clique_pairs_checked": 710841,
+    "every_same_label_pair_has_a_nonzero_cross_kernel_or_lift_block": true,
+    "coordinate_examples_checked": [
+      "adjacent_zero_lift_lines",
+      "essential_S_S_term",
+      "essential_cross_kernel_condition"
+    ],
+    "elapsed_seconds": 0.9058593329973519,
+    "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "author_script_sha256": "2b77205f264fc30d4770b830d32a426c10700539846f2cbdbb51747bbe476048",
+    "author_output_sha256": "599306e8514b2fea5d92a56a40845490180e772381c2a90e11c23eb5555186bd",
+    "checker_sha256": "63d3fb28866a26fb324d651dec4ccaef346ed0c08a88128bb9f6aba219c4a378",
+    "scope": "Independent exact-statistics and label/fiber checks on the existing certificate. The matrix criterion is a written equivalence, not a new label formula. No solver or Lean run; n7 and structural15-coloring remain open; historical n6 full theorem retains four native-evaluation axioms."
+  },
+  "written_result": "A precolored fifteen-subspace-label rule is proper exactly when every label/P pairing matrix is nonzero and no distinct same-label non-clique pair has all three cross-kernel/lift matrices zero. Proof uses the existing lift criterion and splits clique/non-clique edges; representative and basis choices do not change the test.",
+  "construction_status": "No new structural label function; the proposition is an exact verification contract. Existing witness need not be reproduced by a future formula.",
+  "manuscript": {
+    "TeX_and_PDF_changed": false,
+    "PDF_pages": 10,
+    "pdf_sha256": "4e6018c8030181e0da9e6a424fb72a4ba658ea3394ba2279e1f8f690d837c4f8",
+    "new_build_or_visual_review": false
+  },
+  "scope": "Written equivalence and independently checked finite statistics on the unchanged certificate. No solver, Lean, n7 search or repeated all-pair run. Structural15-coloring and n7 remain open; exact line chi12 remains proved. Historical full-subspace n6 Lean theorem retains three standard plus four native-evaluation axioms."
+}

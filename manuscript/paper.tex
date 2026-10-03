@@ -6,207 +6,149 @@
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{problem}[theorem]{Problem}
+\DeclareMathOperator{\rad}{rad}
 \newcommand{\F}{\mathbb F_2}
 \newcommand{\OG}{\mathcal O}
+\newcommand{\AG}{\mathbb{AG}}
 \newcommand{\Span}{\operatorname{span}}
 \title{Clique and chromatic numbers of binary subspace orthogonality graphs}
-\author{Haobo Ma \and Reza Nikandish \and Wenlin Zhang}
-\date{Working draft, 29 September 2026}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd; The Omega Institute.
+  \href{mailto:auric@aelf.io}{auric@aelf.io}.}
+  \and
+  Reza Nikandish\thanks{Department of Mathematics,
+  Jundi-Shapur University of Technology, Dezful, Iran.
+  \href{mailto:r.nikandish@ipm.ir}{r.nikandish@ipm.ir}
+  (corresponding author).}
+  \and
+  Wenlin Zhang\thanks{National University of Singapore; The Omega Institute.
+  \href{mailto:e1327962@u.nus.edu}{e1327962@u.nus.edu}.}}
+\date{October 2026}
 \begin{document}
 \maketitle
+
 \begin{abstract}
-We determine the clique number of the orthogonality graph on the nonzero
-subspaces of $\F^n$ and establish that its chromatic number in dimension six
-is $15$. The clique upper bound follows from a radical and quotient argument.
-The chromatic upper bound is certified by a complete coloring of all $2\,824$
-nonzero subspaces and an independent check against coordinate orthogonality.
-For the induced graph on lines, we prove a weighted independent-set bound and
-construct a $13$-coloring, giving $12\leq\chi(\Gamma_6)\leq13$.
-Thus the full subspace graph requires at least two more colors than its line
-subgraph. We describe the geometry of the fixed-clique color lists and a
-dimension reduction for extending the search to dimension seven.
+Let $\OG_n^*$ be the graph whose vertices are the nonzero subspaces of
+$\F^n$, with two distinct vertices adjacent when every vector of one is
+orthogonal to every vector of the other, and let $\Gamma_n$ be its
+induced subgraph on the one-dimensional subspaces. We prove
+\[
+  \omega(\OG_n^*)=\max\bigl\{\,n,\; N(\lfloor n/2\rfloor)+(n \bmod 2)\,\bigr\}
+  \qquad (n\ge 1),
+\]
+where $N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2$ is the number of nonzero
+subspaces of $\F^r$. The proof is algebraic: it sums the radicals of an
+arbitrary clique and passes to the resulting orthogonal quotient. In
+dimension six we show, with computer-assisted certificates, that
+$\chi(\OG_6^*)=15$ and $\chi(\Gamma_6)=12$, so the full subspace graph
+needs exactly three more colors than its line subgraph. The lower bound
+for $\Gamma_6$ comes from a weighted independent-set bound; both upper
+bounds are explicit colorings verified by independent checkers, and the
+clique theorem and the $15$-coloring are also formalized in Lean,
+with native evaluation for the finite checks in the latter. We
+further show that no proper coloring of $\OG_6^*$ with the prescribed
+clique colors is invariant under the stabilizer of the fixed totally
+isotropic $3$-space, and we record a dimension reduction for $n=7$,
+whose chromatic number remains open.
 \end{abstract}
-\section{Introduction and statements of the results}
-\label{sec:intro}
 
-Let \(V_n=\F^n\) be equipped with the standard bilinear form
-\[
-\langle x,y\rangle=\sum_{i=1}^n x_i y_i .
-\]
-The \emph{orthogonality graph} \(\OG_n^*\) has as its vertices the
-nonzero linear subspaces of \(V_n\).  Two distinct vertices \(U,W\)
-are adjacent when every vector of \(U\) is orthogonal to every vector
-of \(W\).  Its induced subgraph on the one-dimensional subspaces is
-denoted by \(\Gamma_n\).  Over \(\F\), each line has a unique nonzero
-vector, so \(\Gamma_n\) can equivalently be described as the graph on
-the nonzero vectors of \(V_n\) with two distinct vectors adjacent when
-their dot product is zero.
+\medskip
+\noindent\textbf{2020 Mathematics Subject Classification:}
+05C15, 05C25, 05C69, 13A15, 68V20
 
-The graph \(\OG_n^*\) was introduced by Nikandish \cite{Nikandish2026}
-in connection with the annihilating-ideal graph of the ring
-\[
-R_n=\frac{\F[x_1,\dots,x_n,z]}{(z^2,zx_i,x_ix_j\,(i\ne j),x_i^2-z)} .
-\]
-Indeed, the annihilating-ideal graph \(\AG(R_n)\) is isomorphic to
-\(\OG_n\).  Nikandish \cite{Nikandish2026} posed the following
-problems.
+\medskip
+\noindent\textbf{Key Words:}
+Orthogonality graph, binary subspace, clique number,
+chromatic number, formal verification.
 
-\begin{problem}\label{prob:clique}
-Determine the exact value of \(\omega(\OG_n^*)\) for every \(n\).
-\end{problem}
-
-\begin{problem}\label{prob:chromatic}
-Determine \(\chi(\OG_n^*)\) for \(n\ge6\) and investigate the relation
-between \(\chi(\OG_n^*)\) and \(\omega(\OG_n^*)\).
-\end{problem}
-
-\begin{problem}\label{prob:infinite}
-Determine whether there exist infinitely many \(n\ge1\) with
-\(\chi(\OG_n^*)>\omega(\OG_n^*)\).
-\end{problem}
-
-Put
-\[
-N(r)=\sum_{d=1}^{r} {r\brack d}_2 ,
-\]
-where \({r\brack d}_2\) is the Gaussian binomial coefficient, and set
-\(N(0)=0\).  Our results are
-\begin{equation}\label{eq:clique-formula}
-\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
-\qquad(n\ge1),
-\end{equation}
-and
-\begin{equation}\label{eq:chromatic-six}
-\chi(\OG_6^*)=15,\qquad 12\le\chi(\Gamma_6)\le13 .
-\end{equation}
-The first formula answers Problem~\ref{prob:clique} in all
-dimensions.  The second answers the dimension-six case of
-Problem~\ref{prob:chromatic} and quantifies the separation between
-coloring the line graph and coloring the full subspace graph.
-
-The clique argument is algebraic: it sums the radicals of an arbitrary
-clique and passes to the resulting orthogonal quotient.  The
-full-graph chromatic upper bound uses an explicit finite certificate,
-while the line lower bound follows from the geometry of pairwise
-nonorthogonal vectors.  The verification details and the scope of the
-Lean formalization are collected in Section~\ref{sec:computational}.
-
-The paper is organized as follows.  Section~\ref{sec:clique} contains
-the proof of \eqref{eq:clique-formula}.
-Section~\ref{sec:line} treats the line graph \(\Gamma_6\) and
-establishes the bounds in \eqref{eq:chromatic-six}.
-Section~\ref{sec:chromatic} proves \(\chi(\OG_6^*)=15\).
-Section~\ref{sec:geometry} describes the geometry of the precoloring.
-Section~\ref{sec:higher} records the dimension reduction for \(n=7\)
-and states the remaining open problems.
-Section~\ref{sec:computational} collects the computational
-certificates and the Lean formalization.
-
-\section{The exact clique number}
-\label{sec:clique}
-
-Let \(N(r)\) denote the number of nonzero subspaces of \(\F^r\), with
-\(N(0)=0\).  Equivalently, \(N(r)=\sum_{d=1}^r {r\brack d}_2\).
-
-\begin{theorem}\label{thm:clique}
-For every positive integer \(n\),
-\[
-\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\} .
-\]
-\end{theorem}
-
-\begin{proof}
-We prove the upper and lower bounds separately.
-
-\emph{Lower bound.}  The \(n\) coordinate lines
-\(\langle e_1\rangle,\dots,\langle e_n\rangle\) are pairwise
-orthogonal and form a clique of size \(n\).  For the second term, let
-\(r=\lfloor n/2\rfloor\) and take
-\[
-T=\Span\{e_1+e_2,\ e_3+e_4,\ \dots,\ e_{2r-1}+e_{2r}\} .
-\]
-The form \(\langle\cdot,\cdot\rangle\) vanishes on \(T\), so every
-nonzero subspace of \(T\) is orthogonal to every other one.  Hence the
-nonzero subspaces of \(T\) form a clique of size \(N(r)\).  When \(n\)
-is odd, \(\dim T^\perp=r+1\), so \(T^\perp\) is a distinct additional
-vertex orthogonal to every subspace of \(T\).  These two
-constructions attain both terms of the maximum.
-
-\emph{Upper bound.}  Let \(\mathcal C\) be a clique in \(\OG_n^*\).
-For each \(U\in\mathcal C\) put
-\[
-\rad(U)=U\cap U^\perp ,
-\]
-and define
-\[
-R=\sum_{U\in\mathcal C}\rad(U),\qquad r=\dim R .
-\]
-By construction, \(R\subseteq U^\perp\) for every \(U\in\mathcal C\),
-and the summands are pairwise orthogonal.  Hence \(R\subseteq R^\perp\),
-so \(R\) is totally isotropic and \(2r\le n\).  Moreover,
-\[
-U\subseteq R^\perp,\qquad R\subseteq R^\perp,\qquad
-U\cap R=\rad(U)\qquad(U\in\mathcal C).
-\]
-For the last equality, one inclusion is the definition of \(R\); the
-other follows from \(R\subseteq U^\perp\).
-
-Since \(B\) is nondegenerate, \(\dim(R^\perp/R)=n-2r\).  The form
-descends to the quotient \(Q=R^\perp/R\).  Write \(\overline U\) for
-the image of \(U\) in \(Q\).  We claim that the restricted form on
-\(\overline U\) is nondegenerate.  Indeed, if \(u\in U\) represents a
-vector annihilating \(\overline U\), then \(u\in\rad(U)\subseteq R\),
-so its image in \(Q\) is zero.
-
-The spaces \(\overline U\) are pairwise orthogonal in \(Q\).  Their
-nonzero members form an indexed direct sum: in any relation
-\(\sum_U x_U=0\) with \(x_U\in\overline U\), pairing with arbitrary
-vectors of one \(\overline W\) and using the nondegeneracy of the
-restriction to \(\overline W\) gives \(x_W=0\).  Hence there are at
-most \(\dim Q=n-2r\) nonzero images.
-
-The members of \(\mathcal C\) with zero image are precisely those
-contained in \(R\), and there are at most \(N(r)\) of them.  Therefore
-\begin{equation}\label{eq:bound}
-|\mathcal C|\le N(r)+n-2r .
-\end{equation}
-For \(r=0\), this gives \(|\mathcal C|\le n\).  For every \(s\ge1\),
-embedding \(\F^s\) as a hyperplane in \(\F^{s+1}\) gives
-\[
-N(s+1)\ge N(s)+2 ,
-\]
-because an outside line and the whole ambient space are two distinct
-additional subspaces.  Hence \(N(s)-2s\) is nondecreasing for
-\(s\ge1\).  If \(r\ge1\), putting \(t=\lfloor n/2\rfloor\) in
-\eqref{eq:bound} gives
-\[
-|\mathcal C|\le N(t)+n-2t=N(t)+(n\bmod 2).
-\]
-This completes the proof of the upper bound and hence of the
-theorem.
-\end{proof}
-
-\begin{corollary}\label{cor:15clique}
-For \(n=6\),
-\[
-\omega(\OG_6^*)=N(3)=15 .
-\]
-An explicit clique of size \(15\) is given by the nonzero subspaces
-of \(T=\Span\{e_1+e_2,\ e_3+e_4,\ e_5+e_6\}\), which is a totally
-isotropic \(3\)-space.
-\end{corollary}
+\input{sections/introduction}
+\input{sections/clique}
 \input{sections/lines}
 \input{sections/chromatic-six}
 \input{sections/geometry}
 \input{sections/higher-dimensions}
 \input{sections/verification}
-\begin{thebibliography}{9}
-\bibitem{Nikandish}
-R. Nikandish, \emph{Annihilating-Ideal Graphs and Orthogonality Graphs over
-$\mathbb F_2$}, arXiv:2609.22769v1, 2026.
+\section*{Declaration of generative AI use}
+During preparation of this manuscript, DeepSeek (through deepseek.com and
+its mobile application) was used for code generation, diagnostic analysis,
+and language editing. OpenAI's Codex was used for mathematical exploration
+and proof development, code generation, formalization support, verification
+diagnostics, and manuscript editing. Mathematical arguments and computational
+certificates are supported by the proofs and checks described in this paper;
+the scope of formal verification, including native evaluation, is stated in
+Section~\ref{sec:verification}. AI-generated material requires author review.
+The authors take full responsibility for the mathematical claims, code,
+certificates, and final text. These tools are not authors and bear no
+responsibility for the content.
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{AndersonNaseer1993}
+D.~D.~Anderson and M.~Naseer,
+\emph{Beck's coloring of a commutative ring},
+J.\ Algebra \textbf{159} (1993), 500--514.
+
+\bibitem{AndersonLivingston1999}
+D.~F.~Anderson and P.~S.~Livingston,
+\emph{The zero-divisor graph of a commutative ring},
+J.\ Algebra \textbf{217} (1999), 434--447.
+
+\bibitem{Beck1988}
+I.~Beck,
+\emph{Coloring of commutative rings},
+J.\ Algebra \textbf{116} (1988), 208--226.
+
+\bibitem{BehboodiRakeei2011a}
+M.~Behboodi and Z.~Rakeei,
+\emph{The annihilating-ideal graph of commutative rings I},
+J.\ Algebra Appl.\ \textbf{10} (2011), 727--739.
+
+\bibitem{BehboodiRakeei2011b}
+M.~Behboodi and Z.~Rakeei,
+\emph{The annihilating-ideal graph of commutative rings II},
+J.\ Algebra Appl.\ \textbf{10} (2011), 741--753.
+
+\bibitem{BrouwerCohenNeumaier1989}
+A.~E.~Brouwer, A.~M.~Cohen and A.~Neumaier,
+\emph{Distance-Regular Graphs}, Springer, 1989.
+
+\bibitem{BrouwerHaemers2012}
+A.~E.~Brouwer and W.~H.~Haemers,
+\emph{Spectra of Graphs}, Springer Universitext, 2012.
+
+\bibitem{Cameron1991}
+P.~J.~Cameron,
+\emph{Projective and Polar Spaces}, QMW Maths Notes \textbf{13},
+Queen Mary and Westfield College, 1991.
+
+\bibitem{GodsilRoyle2001}
+C.~Godsil and G.~Royle,
+\emph{Algebraic Graph Theory}, Springer GTM \textbf{207}, 2001.
+
+\bibitem{Lovasz1978}
+L.~Lov\'asz,
+``Kneser's conjecture, chromatic number, and homotopy,''
+J.\ Combin.\ Theory Ser.\ A \textbf{25} (1978), no.~3, 319--324.
+
 \bibitem{Package}
-H. Ma, R. Nikandish and W. Zhang, \emph{Binary subspace orthogonality graphs:
-research and reproducibility workspace},
+H.~Ma, R.~Nikandish and W.~Zhang,
+\emph{Binary subspace orthogonality graphs: research and
+reproducibility workspace},
 \url{https://github.com/the-omega-institute/binary-subspace-orthogonality}.
+
+\bibitem{MacWilliamsSloane1977}
+F.~J.~MacWilliams and N.~J.~A.~Sloane,
+\emph{The Theory of Error-Correcting Codes}, North-Holland, 1977.
+
+\bibitem{Nikandish2026}
+R.~Nikandish,
+\emph{Annihilating-Ideal Graphs and Orthogonality Graphs over
+\(\mathbb F_2\)}, arXiv:2609.22769v1, 2026.
+
 \end{thebibliography}
+
 \end{document}
