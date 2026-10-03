@@ -28,47 +28,38 @@
 \date{October 2026}
 \begin{document}
 \maketitle
+
 \begin{abstract}
-We determine the clique number of the orthogonality graph on the
-nonzero subspaces of \(\F^n\) for every \(n\), and we determine the
-chromatic number in dimension six.  Let \(\OG_n^*\) be the graph
-whose vertices are the nonzero subspaces of \(\F^n\), with two
-distinct vertices adjacent when every vector of one is orthogonal to
-every vector of the other, and let \(\Gamma_n\) be its induced
-subgraph on the one-dimensional subspaces.  We prove
+Let $\OG_n^*$ be the graph whose vertices are the nonzero subspaces of
+$\F^n$, with two distinct vertices adjacent when every vector of one is
+orthogonal to every vector of the other, and let $\Gamma_n$ be its
+induced subgraph on the one-dimensional subspaces. We prove
 \[
-\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
-\qquad(n\ge1),
+  \omega(\OG_n^*)=\max\bigl\{\,n,\; N(\lfloor n/2\rfloor)+(n \bmod 2)\,\bigr\}
+  \qquad (n\ge 1),
 \]
-where \(N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2\) and
-\(\genfrac{[}{]}{0pt}{}{r}{d}_2\) is the Gaussian binomial coefficient.
-The proof is algebraic: it sums
-the radicals of an arbitrary clique and passes to the resulting
-orthogonal quotient.  In dimension six we establish
-\[
-\chi(\OG_6^*)=15,\qquad \chi(\Gamma_6)=12 .
-\]
-The chromatic upper bound is certified by a complete coloring of all
-\(2824\) nonzero subspaces and verified by an independent checker
-against coordinate orthogonality; the line-graph equality follows
-from a weighted independent-set bound and a checked \(12\)-coloring.
-Thus in dimension six the full subspace graph requires exactly three
-more colors than its line subgraph.  We describe the geometry of the
-fixed-clique color lists and record several obstructions to a purely
-structural \(15\)-coloring, including a symmetry argument that rules
-out every coloring invariant under the stabilizer of the fixed
-totally isotropic space.  A dimension reduction for extending the
-search to dimension seven is also given.
+where $N(r)=\sum_{d=1}^{r}{r\brack d}_2$ is the number of nonzero
+subspaces of $\F^r$. The proof is algebraic: it sums the radicals of an
+arbitrary clique and passes to the resulting orthogonal quotient. In
+dimension six we show, with computer-assisted certificates, that
+$\chi(\OG_6^*)=15$ and $\chi(\Gamma_6)=12$, so the full subspace graph
+needs exactly three more colors than its line subgraph. The lower bound
+for $\Gamma_6$ comes from a weighted independent-set bound; both upper
+bounds are explicit colorings verified by independent checkers, and the
+clique theorem and the $15$-coloring are also formalized in Lean. We
+further show that no proper coloring of $\OG_6^*$ with the prescribed
+clique colors is invariant under the stabilizer of the fixed totally
+isotropic $3$-space, and we record a dimension reduction for $n=7$.
 \end{abstract}
 
 \medskip
 \noindent\textbf{2020 Mathematics Subject Classification:}
-05C15, 05C25, 05C69, 13A15
+05C15, 05C25, 05C69, 13A15, 68V20
 
 \medskip
 \noindent\textbf{Key Words:}
 Orthogonality graph, binary subspace, clique number,
-chromatic number, weakly perfect graph.
+chromatic number, formal verification.
 
 \input{sections/introduction}
 \input{sections/clique}
