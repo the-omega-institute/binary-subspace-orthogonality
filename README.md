@@ -1,91 +1,73 @@
-# Binary subspace orthogonality graphs
+# Clique and chromatic numbers of binary subspace orthogonality graphs
 
-Public research workspace for Haobo Ma, Reza Nikandish and Wenlin Zhang.
-Working paper direction: *Clique and chromatic numbers of binary subspace
-orthogonality graphs*. Author order and the final manuscript are to be agreed.
+**Haobo Ma · Reza Nikandish · Wenlin Zhang**
 
-For the standard dot form on F_2^n, O_n* has all nonzero subspaces as vertices;
-distinct subspaces are adjacent when they are orthogonal. Gamma_n is its induced
-graph on one-dimensional subspaces, identified with the nonzero vectors.
+This is the public paper and reproducibility workspace for our work on
+orthogonality graphs over the binary field. For the standard dot product on
+`F_2^n`, the full graph has all nonzero subspaces as vertices; two distinct
+subspaces are adjacent if every vector of one is orthogonal to every vector
+of the other. Its line subgraph has only the one-dimensional subspaces.
 
-## Current results
+## Start here
 
-- The all-dimensional clique formula is
-  `omega(O_n*) = max(n, N(floor(n/2)) + (n mod 2))`, where N(r) counts nonzero
-  subspaces of F_2^r. The radical/quotient proof solves Nikandish's Problem 4.2
-  and has an existing Lean formalization.
-- **chi(O_6*) = 15.** A new 15-coloring of all 2,824 subspaces matches the known
-  15-clique. The independent checker verifies all 3,986,076 vertex pairs,
-  including all 44,968 orthogonality edges. See [the result](notes/dimension-six.md),
-  [certificate](results/full-15-coloring.json) and [check record](results/full-15-check.json).
-- **12 <= chi(Gamma_6) <= 13 < 15.** A weighted independent-set argument gives
-  the lower bound, and a new checked 13-coloring gives the upper bound. See
-  [the proof](notes/line-coloring.md) and [the certificate](results/line-coloring.json).
-  The line-versus-full-subspace separation is therefore at least two colors.
+| What you want | Where to go |
+| --- | --- |
+| Read the complete paper | [Paper PDF](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.pdf) |
+| Read or edit the manuscript source | [LaTeX source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex) · [current collaboration PR](https://github.com/the-omega-institute/binary-subspace-orthogonality/pull/1) |
+| Understand the main results and their evidence | The results table below |
+| Reproduce the finite checks | [Reproduction guide](docs/REPRODUCING.md) |
+| Explore the geometric arguments | [Geometry section](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
+| Follow our next collaboration | [Ideal-intersection Laplacian project](https://github.com/the-omega-institute/ideal-intersection-laplacian) |
 
-The dimension-six coloring is now also connected to a kernel-checked Lean
-theorem in `formal/Chromatic/Verify.lean`; the build record is
-`results/lean-verification.json`. Problem 4.3 for arbitrary n >= 7 remains open here.
+The paper links identify the submitted source revision, `28e27a8`.
+PR #1 remains open for collaboration; the default branch provides this navigation
+page and retains its earlier research snapshot. Use the linked revision for the
+complete paper and current certificates.
 
-## Check the new result
+## Results and verification
 
-The independent checker needs only Python 3.10 or later and its standard library:
+Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 
-```sh
-python3 develop/check_full_coloring.py results/full-15-coloring.json
-python3 develop/check_line_coloring.py
-python3 develop/check_checker_controls.py
-```
+| Result | Evidence |
+| --- | --- |
+| For every `n >= 1`, `omega(O_n*) = max(n, N(floor(n/2)) + (n mod 2))` | [Radical/quotient proof](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/clique.tex) · [attributed Lean source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/NikandishClique.lean) |
+| The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
+| The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
+| Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
-It reconstructs all subspaces from their bases, checks their distinctness and
-Gaussian dimension counts, tests orthogonality for every vertex pair directly
-from coordinates, and checks the known 15-clique. It imports neither the search
-program nor a SAT library. A satisfying solver assignment is not trusted as a
-substitute for these checks.
+The six-dimensional [chromatic Lean development](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/Chromatic/Verify.lean)
+has a successful historical build. Its final theorem uses the three standard
+axioms (`propext`, `Classical.choice`, `Quot.sound`) **and four native-evaluation
+axioms**. See the [verification audit](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/formal-verification-audit.md)
+for the exact dependencies. A completed pure-kernel replacement is not claimed.
+The independent finite checks and the written mathematical proofs have their
+own stated scopes.
 
-To replay preprocessing and regenerate the search:
+**The dimension-seven chromatic number remains open.** A complete structural
+15-color rule also remains open. Failed exploratory candidates are retained as
+research history; they are not proofs of upper bounds.
 
-```sh
-python3 develop/precoloring_reduction.py
-uv venv .venv --python 3.12
-uv pip install --python .venv/bin/python -r requirements-search.txt
-.venv/bin/python develop/search_coloring.py --seconds 120
-python3 develop/check_full_coloring.py results/full-15-coloring.json
-```
+## Paper status
 
-The search uses the fixed 15-clique, geometric color lists, and reversible degree
-deletion. It encodes the 2,080-vertex core in 28,600 Boolean variables and 627,510
-clauses. Generated CNF files are ignored; their hashes and exact reconstruction
-are retained. A different satisfying coloring is valid if it passes the checker.
+The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
+Reza has also submitted it to arXiv; a permanent arXiv identifier and announcement
+are pending. Submission is not acceptance. Reza is the corresponding author.
 
-## Files and collaboration
+The originating problem is Reza Nikandish, *Annihilating-Ideal Graphs and
+Orthogonality Graphs over F_2*,
+[arXiv:2609.22769v1](https://arxiv.org/abs/2609.22769v1).
+The joint paper distinguishes those prior constructions from its new proofs
+and certificates.
 
-- `manuscript/`: editable joint paper in Reza's proposed seven-section structure;
-  see [the handoff](manuscript/README.md) and [current PDF](manuscript/paper.pdf).
-- `develop/`: exact search, preprocessing and independent verification programs;
-  includes the archived earlier 14/16-color witnesses and their checker.
-- `results/`: current certificates and execution records.
-- `notes/`: current mathematics and the historical September 28 note. The latter
-  reports the earlier interval {15,16}; it is preserved as a dated starting point.
-- `formal/`: the exact upstream clique proof, source pin and original license.
+## Repository map
 
-The new [geometric handoff](notes/geometry-handoff.md) profiles the complete
-coloring by H(U), U intersect T and dimension. The
-[dimension-seven analysis](notes/dimension-seven.md) proves that every vertex
-of dimension at least four can be deleted from the fixed 16-color instance,
-then measures the remaining 14,589-vertex, 953,057-edge core.
+- [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
+- [Proof notes](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/dimension-six.md): readable arguments and dated exploration.
+- [Certificates](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-coloring.json): explicit witnesses and check records.
+- [Checkers](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/develop/check_full_coloring.py): independent Python verification.
+- [Formal sources](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/Chromatic/Verify.lean): attributed clique source and chromatic development.
+- [Rights and provenance](RIGHTS.md): source attribution and applicable license information.
 
-Reza has proposed drafting the introduction and clique section and developing
-geometric arguments. Wenlin develops written arguments and computational
-exploration; Haobo leads formal verification. The next shared task is to explain
-the dimension-six coloring structurally and complete its formal verification
-alongside the joint paper. The manuscript directory separates the proposed
-contributions so the introduction, clique proof and geometry can develop
-alongside the certificate work. Larger dimensions and other parameters can
-be developed alongside that work.
-
-The source problem is Reza Nikandish, *Annihilating-Ideal Graphs and Orthogonality
-Graphs over F_2*, [arXiv:2609.22769v1](https://arxiv.org/abs/2609.22769v1).
-His coordinate and isotropic constructions supply lower bounds; the new clique
-upper proof and finite coloring certificates are identified separately above.
-See [provenance and rights](RIGHTS.md). No DOI or versioned release is configured.
+For follow-up discussion, use [PR #1](https://github.com/the-omega-institute/binary-subspace-orthogonality/pull/1)
+for this paper and the [new repository](https://github.com/the-omega-institute/ideal-intersection-laplacian)
+for the Laplacian project.
