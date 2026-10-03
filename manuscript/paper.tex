@@ -38,7 +38,7 @@ induced subgraph on the one-dimensional subspaces. We prove
   \omega(\OG_n^*)=\max\bigl\{\,n,\; N(\lfloor n/2\rfloor)+(n \bmod 2)\,\bigr\}
   \qquad (n\ge 1),
 \]
-where $N(r)=\sum_{d=1}^{r}{r\brack d}_2$ is the number of nonzero
+where $N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2$ is the number of nonzero
 subspaces of $\F^r$. The proof is algebraic: it sums the radicals of an
 arbitrary clique and passes to the resulting orthogonal quotient. In
 dimension six we show, with computer-assisted certificates, that
@@ -46,10 +46,12 @@ $\chi(\OG_6^*)=15$ and $\chi(\Gamma_6)=12$, so the full subspace graph
 needs exactly three more colors than its line subgraph. The lower bound
 for $\Gamma_6$ comes from a weighted independent-set bound; both upper
 bounds are explicit colorings verified by independent checkers, and the
-clique theorem and the $15$-coloring are also formalized in Lean. We
+clique theorem and the $15$-coloring are also formalized in Lean,
+with native evaluation for the finite checks in the latter. We
 further show that no proper coloring of $\OG_6^*$ with the prescribed
 clique colors is invariant under the stabilizer of the fixed totally
-isotropic $3$-space, and we record a dimension reduction for $n=7$.
+isotropic $3$-space, and we record a dimension reduction for $n=7$,
+whose chromatic number remains open.
 \end{abstract}
 
 \medskip
