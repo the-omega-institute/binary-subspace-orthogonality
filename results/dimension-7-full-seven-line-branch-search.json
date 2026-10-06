@@ -1,0 +1,53 @@
+{
+  "dimension": 7,
+  "target_colors": 17,
+  "pattern_mask": 127,
+  "variables": 6286,
+  "clauses": 196350,
+  "cnf_sha256": "a19efd1880f1a9125ffca89280d290054599b5b6d3d7e8ab191cd1abf91c65d9",
+  "audit_report_sha256": "c1218454600203902511e4f9efb32c744658eb38ac932e9328ea9d8980ea1612",
+  "audit_checker_sha256": "25cdad223b83f03e21140b9f585e86a2d4bffd3c25bd7124bcbb4a08d4a97b31",
+  "branch_checker_sha256": "8074763c6c490068332bb0f6a0a7a3b99cf552df10b8def373367277800423f3",
+  "branch_report_sha256": "6dd10533b54be05b56193ab703ae45b9380f55abad3be5a8cd74fde6db290478",
+  "retraction_sha256": "61835f2527cfd959aee6880dcd43cd536f052750c553a4aef2fa0afb7d3bd8f4",
+  "search_sha256": "33d087bef051b7eb7a86414fb807980f39a7c5eba51f26fd5957b3bebf903d5f",
+  "construction": {
+    "dimension": 7,
+    "target_colors": 17,
+    "pattern_mask": 127,
+    "retained_vertices": 577,
+    "fixed_clique_vertices": 16,
+    "independent_color16_class_size": 71,
+    "fixed_vertices": 87,
+    "core_vertices": 490,
+    "core_edges": 15386,
+    "variables": 6286,
+    "clauses": 196350,
+    "vertex_clauses": 38136,
+    "edge_clauses": 158214,
+    "palette_sizes": {
+      "11": 154,
+      "12": 56,
+      "14": 280
+    },
+    "builder_sha256": "3a9b3d150fa71ec4b64b6e2f7314980a21a1214cbb1f63f15b81f3b915c55924",
+    "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+    "branch_note_sha256": "5070812745911c94e93952cdb9632171e2b821c265a1580196ae5078fb74d8d7",
+    "solver_run": false,
+    "lean_run": false
+  },
+  "python_sat_version": "1.8.dev24",
+  "solver": "Glucose4",
+  "time_limit_seconds": 120.0,
+  "solver_run": true,
+  "lean_run": false,
+  "solver_seconds": 120.14867037499789,
+  "stats": {
+    "restarts": 8010,
+    "conflicts": 2347843,
+    "decisions": 3314404,
+    "propagations": 204387072
+  },
+  "status": "unknown_time_limit",
+  "scope": "One bounded attempt on the audited mask127 saturated branch only. Other nine orbits remain. SAT candidates need independent original-graph verification; UNSAT reports need checked proofs and exclude only this branch. Unknown gives no bound. No Lean."
+}

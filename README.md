@@ -92,7 +92,9 @@ orthogonal lifts and clique-color renormalization. Its 118 additional
 CNF clauses are checked. Its bounded search returns unknown, with no
 coloring or chromatic conclusion. Within the full seven-line pattern
 only, a [further saturation proof](notes/full-seven-line-branch.md)
-leaves 490 uncolored vertices; the other nine patterns remain required.
+leaves 490 uncolored vertices. Its deterministic CNF has 6,286 variables
+and 196,350 clauses, each independently audited from geometric lists and
+full-span orthogonality. The other nine patterns remain required.
 
 ## Paper status
 

@@ -37,6 +37,27 @@ def check():
     geometric_transverse = {vertex for vertex, space in spaces.items() if len(rows[vertex]) == 3
                             and space & isotropic == {0}}
     assert transverse == geometric_transverse and len(transverse) == 64
+    generators = (3, 12, 48)
+    complement = (65, 71, 95)
+    assert all(dot(left, right) == int(first == second)
+               for first, left in enumerate(generators) for second, right in enumerate(complement))
+    assert all(dot(left, right) == 0 for left in complement for right in complement)
+    assert len(set(span(generators + complement))) == 64
+    matrix_graphs = set()
+    for mask in range(64):
+        matrix = [[0] * 3 for index in range(3)]
+        for index, (first, second) in enumerate(combinations(range(3), 2)):
+            matrix[first][second] = matrix[second][first] = (mask >> index) & 1
+        for index in range(3):
+            matrix[index][index] = (mask >> (index + 3)) & 1
+        graph_rows = []
+        for column, vector in enumerate(complement):
+            for index, generator in enumerate(generators):
+                if matrix[index][column]:
+                    vector ^= generator
+            graph_rows.append(vector)
+        matrix_graphs.add(frozenset(span(graph_rows)))
+    assert matrix_graphs == {spaces[vertex] for vertex in transverse}
     color_class = special | transverse
     assert len(color_class) == 71 and not any(adjacency[vertex] & color_class for vertex in color_class)
     assert all(len(rows[vertex]) == 3 for vertex in transverse)
@@ -68,12 +89,15 @@ def check():
             'vertex_clauses': vertex_clauses, 'edge_clauses': edge_clauses,
             'palette_sizes': dict(sorted(Counter(map(len, palettes.values())).items())),
             'all490lists_checked_against_geometric_formula': True,
+            'symplectic_complement': list(complement), 'all64_symmetric_matrix_graphs_checked': True,
+            'dimension_palette_counts': {str(dimension): dict(sorted(Counter(len(palettes[vertex]) for vertex in core
+                                        if len(rows[vertex]) == dimension).items())) for dimension in (1, 2, 3)},
             'retained_pairs_directly_tested': len(spaces) * (len(spaces) - 1) // 2,
             'checker_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             'shared_basis_helper_sha256': hashlib.sha256(Path(__file__).with_name('dimension_seven_feasibility.py').read_bytes()).hexdigest(),
             'CNF_emitted': False, 'solver_run': False, 'lean_run': False,
             'full_n7_chromatic_number': 'open_lower_bound17',
-            'scope': 'Onlyfullpatternmask127. Allremainingverticesallowing16are exactly64transverseLagrangiantriples; togetherwithsevenoddlines theyareindependent, so saturating16losesnocoloringwithinthisbranch. Counts/geometriclistschecked only; othernineorbitsremain, nobranchCNF/solve/upperbound/Lean.'}
+            'scope': 'Only mask127 on the retained graph. Remaining retained vertices allowing16 are exactly64 transverse Lagrangian triples; their union with seven odd lines is independent. Saturation preserves this branch. Counts/geometric lists/matrix graphs checked here; branch CNF and search have separate reports. Other nine orbits remain; no upper bound or Lean.'}
 
 
 if __name__ == '__main__':
