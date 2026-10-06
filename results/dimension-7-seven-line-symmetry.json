@@ -1,0 +1,332 @@
+{
+  "status": "orthogonal_lifts_normalized_palette_action_and_all_pattern_orbits_checked",
+  "dimension": 7,
+  "isotropic_basis": [
+    3,
+    12,
+    48
+  ],
+  "dual_basis": [
+    65,
+    71,
+    95
+  ],
+  "characteristic_vector": 127,
+  "linear_group_order": 168,
+  "isometry_vector_pairs_checked": 2752512,
+  "retained_vertex_images_checked": 96936,
+  "retained_edge_images_checked": 3282552,
+  "palette_images_checked": 94248,
+  "special_line_generators_in_coordinate_order": [
+    124,
+    115,
+    112,
+    79,
+    76,
+    67,
+    64
+  ],
+  "pattern_assignments": 128,
+  "pattern_orbits": [
+    {
+      "representative_mask": 0,
+      "color16_coordinates": [],
+      "subset_size": 0,
+      "orbit_size": 1,
+      "members": [
+        0
+      ]
+    },
+    {
+      "representative_mask": 1,
+      "color16_coordinates": [
+        1
+      ],
+      "subset_size": 1,
+      "orbit_size": 7,
+      "members": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    {
+      "representative_mask": 3,
+      "color16_coordinates": [
+        1,
+        2
+      ],
+      "subset_size": 2,
+      "orbit_size": 21,
+      "members": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        17,
+        18,
+        20,
+        24,
+        33,
+        34,
+        36,
+        40,
+        48,
+        65,
+        66,
+        68,
+        72,
+        80,
+        96
+      ]
+    },
+    {
+      "representative_mask": 7,
+      "color16_coordinates": [
+        1,
+        2,
+        3
+      ],
+      "subset_size": 3,
+      "orbit_size": 7,
+      "members": [
+        7,
+        25,
+        42,
+        52,
+        76,
+        82,
+        97
+      ]
+    },
+    {
+      "representative_mask": 11,
+      "color16_coordinates": [
+        1,
+        2,
+        4
+      ],
+      "subset_size": 3,
+      "orbit_size": 28,
+      "members": [
+        11,
+        13,
+        14,
+        19,
+        21,
+        22,
+        26,
+        28,
+        35,
+        37,
+        38,
+        41,
+        44,
+        49,
+        50,
+        56,
+        67,
+        69,
+        70,
+        73,
+        74,
+        81,
+        84,
+        88,
+        98,
+        100,
+        104,
+        112
+      ]
+    },
+    {
+      "representative_mask": 15,
+      "color16_coordinates": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "subset_size": 4,
+      "orbit_size": 28,
+      "members": [
+        15,
+        23,
+        27,
+        29,
+        39,
+        43,
+        46,
+        53,
+        54,
+        57,
+        58,
+        60,
+        71,
+        77,
+        78,
+        83,
+        86,
+        89,
+        90,
+        92,
+        99,
+        101,
+        105,
+        106,
+        108,
+        113,
+        114,
+        116
+      ]
+    },
+    {
+      "representative_mask": 30,
+      "color16_coordinates": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "subset_size": 4,
+      "orbit_size": 7,
+      "members": [
+        30,
+        45,
+        51,
+        75,
+        85,
+        102,
+        120
+      ]
+    },
+    {
+      "representative_mask": 31,
+      "color16_coordinates": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "subset_size": 5,
+      "orbit_size": 21,
+      "members": [
+        31,
+        47,
+        55,
+        59,
+        61,
+        62,
+        79,
+        87,
+        91,
+        93,
+        94,
+        103,
+        107,
+        109,
+        110,
+        115,
+        117,
+        118,
+        121,
+        122,
+        124
+      ]
+    },
+    {
+      "representative_mask": 63,
+      "color16_coordinates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "subset_size": 6,
+      "orbit_size": 7,
+      "members": [
+        63,
+        95,
+        111,
+        119,
+        123,
+        125,
+        126
+      ]
+    },
+    {
+      "representative_mask": 127,
+      "color16_coordinates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subset_size": 7,
+      "orbit_size": 1,
+      "members": [
+        127
+      ]
+    }
+  ],
+  "allowed_representative_patterns": 10,
+  "forbidden_patterns": 118,
+  "added_seven_literal_clauses": 118,
+  "checker_sha256": "1cb26db4d4611beeb77ac2e283f609e5c944e6174cc7aaf1311f58a58fd7c630",
+  "shared_basis_helper_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "solver_run": false,
+  "lean_run": false,
+  "full_n7_chromatic_number": "open_lower_bound17",
+  "scope": "Written extension of everyGL(3,2) action by inverse transpose on a symplectic dual basis, fixingz. All168maps verified on everyvectorpair, retainedvertex/edge and normalizedpalette. All128seven-linepatterns partitioned; tenrepresentatives lose no normalized17colorability. NoSAT/UNSAT/fullcoloring/Lean.",
+  "encoding": {
+    "base_clause_audit": {
+      "status": "every_dimacs_clause_exactly_matches_geometric_encoding",
+      "dimension": 7,
+      "fixed_last_line_basis": [
+        127
+      ],
+      "target_colors": 17,
+      "core_vertices": 561,
+      "core_edges": 17696,
+      "variables": 7814,
+      "clauses": 244442,
+      "vertex_clauses": 52180,
+      "edge_clauses": 192262,
+      "extra_preassigned_vertices": 0,
+      "former_forced_lines_keep_both15and16": true,
+      "cnf_sha256": "e22cc8925d3450f064626fdf5ed33b7d61d021351fbf7d9bf85644c5a888512f",
+      "checker_sha256": "6731253c1c4fe269adf4d2405bf1436e2bfb2b83bd0d50e1979d28d5b5541276",
+      "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+      "scope": "Every clause reconstructed from geometric lists and direct dot products without the search builder or its adjacency. Shared canonical basis enumerator/span helper only. No coloring, SAT, UNSAT or Lean conclusion."
+    },
+    "base_CNF_sha256": "e22cc8925d3450f064626fdf5ed33b7d61d021351fbf7d9bf85644c5a888512f",
+    "symmetry_CNF_sha256": "a86c7508a86162e00e8527d6a0c808d79a94bc41016a97895262cc0e8c2a32c7",
+    "variables": 7814,
+    "clauses": 244560,
+    "added_clause_truth_table_assignments_checked": 128,
+    "added_clauses": 118,
+    "base_clause_body_byte_identical": true,
+    "color16_variables_in_coordinate_order": [
+      1260,
+      644,
+      1387,
+      430,
+      1196,
+      366,
+      1414
+    ],
+    "symmetry_clause_audit": "Eachnonrepresentativeassignmentexcludedbyexactlyoneclause; allrepresentativesaccepted. Emittedsuffixcheckedonreadback; basebodyrecoveredbyteidentically and everybaseclause independentlyaudited."
+  }
+}

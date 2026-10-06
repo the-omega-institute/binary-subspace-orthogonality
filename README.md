@@ -86,6 +86,11 @@ clique encoding has 7,814 variables and 244,442 clauses, now independently
 audited clause by clause. Its separate 120-second attempt also returns
 unknown. Neither attempt supplies a coloring or a new chromatic bound.
 
+The [seven-line symmetry proof](notes/seven-line-symmetry.md) further
+restricts the 128 two-color patterns to ten representatives using
+orthogonal lifts and clique-color renormalization. Its 118 additional
+CNF clauses are checked; no solver result on this restriction is claimed.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

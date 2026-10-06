@@ -14,7 +14,7 @@
   "extra_preassigned_vertices": 0,
   "former_forced_lines_keep_both15and16": true,
   "cnf_sha256": "e22cc8925d3450f064626fdf5ed33b7d61d021351fbf7d9bf85644c5a888512f",
-  "checker_sha256": "8ae6c76a6847bd6bd47629b1978baefaced0374d01070a9c4be7d915b763b27e",
+  "checker_sha256": "6731253c1c4fe269adf4d2405bf1436e2bfb2b83bd0d50e1979d28d5b5541276",
   "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
   "scope": "Every clause reconstructed from geometric lists and direct dot products without the search builder or its adjacency. Shared canonical basis enumerator/span helper only. No coloring, SAT, UNSAT or Lean conclusion."
 }

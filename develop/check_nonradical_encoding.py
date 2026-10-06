@@ -13,6 +13,8 @@ def dot(left, right):
 
 
 def check(path, dimension, last_line=64):
+    if not __debug__:
+        raise RuntimeError('Run this auditor without -O or PYTHONOPTIMIZE.')
     assert last_line in (64, 127) and (dimension == 7 or last_line == 64)
     rows = bases(dimension, 3)
     spaces = {vertex: frozenset(span(basis)) for vertex, basis in enumerate(rows)

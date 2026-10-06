@@ -144,6 +144,21 @@ This was the only solver attempt in this continuation; the earlier
 line-64 attempt remains historical. Neither timeout gives a chromatic
 bound or a reliable comparison of solver performance.
 
+The subsequent [seven-line symmetry proof](seven-line-symmetry.md)
+reduces the 128 two-color patterns to ten GL(3,2) representatives
+without losing seventeen-colorability. Its 118 added clauses have
+been emitted and checked, with no further solver run.
+
+The geometric auditor now refuses `python -O` and `PYTHONOPTIMIZE`,
+since its acceptance checks require assertions. A header-only file
+is rejected in normal execution, and optimized execution is refused
+for both malformed and valid inputs. The current clause reports
+were refreshed against this guarded source; their CNF bytes remain
+unchanged. Historical source-hash reports retain their pinned revisions.
+In the characteristic search report the legacy `nonradical_report_sha256`
+field hashes `results/dimension-7-characteristic-clique.json`; the
+`retraction_sha256` field separately identifies the retraction source.
+
 ## Reproduction
 
 Use the task-specific environment with the repository's pinned search
