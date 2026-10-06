@@ -1,0 +1,38 @@
+{
+  "dimension": 6,
+  "target_colors": 15,
+  "retained_vertices": 233,
+  "retained_edges": 4211,
+  "fixed_clique_vertices": 15,
+  "extra_forced_vertices": 0,
+  "core": {
+    "vertices": 218,
+    "edges": 3450,
+    "variables": 2614,
+    "clauses": 47414
+  },
+  "palette_sizes": {
+    "11": 146,
+    "14": 72
+  },
+  "direct_basis_adjacency": true,
+  "geometric_lists_checked": 218,
+  "previous_counts_match": true,
+  "n6_control": {
+    "status": "existing_n6_witness_satisfies_every_retracted_clause",
+    "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "full_graph_rerun": false
+  },
+  "retraction_report_sha256": "5888016ba09a092f54f69ab89d6615dfe1aa41d469b3ff09c62ec360ebaa2a53",
+  "search_sha256": "1497d4dd2ef88652fa57f96cf02dd73c96ca3b125840a5c84ba4b69d300e8677",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "retraction_sha256": "ec765cbb68728d871ae964a14f72ad4a30f0f3c79fda5c548c591cc29aad39e0",
+  "cnf_sha256": "6ecc7c77dfea4ed4b7ce86e62b6ad4b118924b2da25edcdd34494ac1efb30911",
+  "encoding_seconds": 0.16804749999937485,
+  "python_sat_version": "1.8.dev24",
+  "solver_run": false,
+  "lean_run": false,
+  "status": "encoding_checked_no_solver_run",
+  "total_seconds": 0.1695262499997625,
+  "scope": "Exact list encoding and bounded solver attempt. A timeout proves nothing; SAT requires an independent original-graph check; UNSAT requires a checked proof. No Lean run."
+}

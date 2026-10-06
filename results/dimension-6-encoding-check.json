@@ -1,0 +1,14 @@
+{
+  "status": "every_dimacs_clause_exactly_matches_geometric_encoding",
+  "dimension": 6,
+  "core_vertices": 218,
+  "core_edges": 3450,
+  "variables": 2614,
+  "clauses": 47414,
+  "vertex_clauses": 14800,
+  "edge_clauses": 32614,
+  "cnf_sha256": "6ecc7c77dfea4ed4b7ce86e62b6ad4b118924b2da25edcdd34494ac1efb30911",
+  "checker_sha256": "c00be053d4f1e1c2db99057fe9582d9ced203092f928be2ee355e24891d32ee2",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "scope": "Independent clause construction from geometric lists and direct basis adjacency, sharing only the canonical basis enumerator. No SAT, UNSAT or Lean conclusion."
+}

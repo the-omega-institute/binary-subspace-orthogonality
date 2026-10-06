@@ -58,6 +58,11 @@ vertices. Fixing the clique and forced lines leaves an equivalent list
 instance with **890 vertices, 33,978 edges and 426,406 pairwise clauses**.
 The dimension-seven chromatic number remains open.
 
+The [retracted SAT encoding](notes/retracted-sat-encoding.md) now has an
+independent audit of every generated clause and a positive control using
+the existing six-dimensional certificate. One 120-second Glucose4 attempt
+returned unknown; no seven-dimensional coloring or UNSAT result was obtained.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
