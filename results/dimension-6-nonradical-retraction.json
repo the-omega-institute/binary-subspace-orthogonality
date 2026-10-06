@@ -51,10 +51,12 @@
   ],
   "n6_existing_witness_control": {
     "status": "historical_witness_restricted_to_retained_graph_passed",
+    "distinct_colors": 15,
+    "palette_bound_checked": 15,
     "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
     "old_full_graph_coloring_rerun": false
   },
-  "checker_sha256": "16220e9e944adb9587f2f3fc65c3cfa035245ddd76bef37855d6eba8c28be35d",
+  "checker_sha256": "61835f2527cfd959aee6880dcd43cd536f052750c553a4aef2fa0afb7d3bd8f4",
   "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
   "solver_run": false,
   "lean_run": false,

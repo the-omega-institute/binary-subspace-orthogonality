@@ -1,0 +1,18 @@
+{
+  "status": "every_dimacs_clause_exactly_matches_geometric_encoding",
+  "dimension": 6,
+  "fixed_last_line_basis": null,
+  "target_colors": 15,
+  "core_vertices": 138,
+  "core_edges": 2074,
+  "variables": 1638,
+  "clauses": 29014,
+  "vertex_clauses": 9168,
+  "edge_clauses": 19846,
+  "extra_preassigned_vertices": 0,
+  "former_forced_lines_keep_both15and16": false,
+  "cnf_sha256": "71f746f5860085f61f5f99a789b958df2355e727f8abf9c63a13f494f657ec8f",
+  "checker_sha256": "8ae6c76a6847bd6bd47629b1978baefaced0374d01070a9c4be7d915b763b27e",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "scope": "Every clause reconstructed from geometric lists and direct dot products without the search builder or its adjacency. Shared canonical basis enumerator/span helper only. No coloring, SAT, UNSAT or Lean conclusion."
+}

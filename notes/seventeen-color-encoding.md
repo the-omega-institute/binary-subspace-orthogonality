@@ -58,7 +58,7 @@ instance. It returned unknown after 120.018 seconds, recording
 or UNSAT result was obtained. These statistics are diagnostics;
 the timeout adds no chromatic bound.
 
-The run used the existing task-specific Python 3.12 environment on a
+The historical run used the existing task-specific Python 3.12 environment on a
 16 GiB Mac after a current resource and Lean/Lake process check. No
 Lean or shared CI change occurred. The [solver report](../results/dimension-7-17-nonradical-search.json)
 and [clause audit](../results/dimension-7-17-encoding-check.json) bind
@@ -102,10 +102,47 @@ parity formula. It yields
 | Pairwise clauses | 257,402 | 244,442 |
 
 The [comparison report](../results/dimension-7-characteristic-clique.json)
-records the palette distribution and source hashes. This is a smaller
-encoding count, not evidence of better solver performance. No alternative
-DIMACS file or second solver run was made. Emitting and independently
-auditing this characteristic-clique instance is a concrete next step.
+records the palette distribution and source hashes at the preceding
+comparison step. The smaller count alone does not establish better solver
+performance.
+
+## Auditing the characteristic-clique instance
+
+The builder now accepts `--last-line 127`, while its default remains the
+original line 64. The auditor separately constructs the alternative lists
+using coordinate parity for color fifteen. All 244,442 emitted clauses
+match exactly once: 52,180 vertex clauses and 192,262 edge clauses.
+Deleted-clause, repeated-clause and wrong-clique controls are rejected.
+A fresh characteristic-clique CNF is byte-identical, with SHA256
+
+```text
+e22cc8925d3450f064626fdf5ed33b7d61d021351fbf7d9bf85644c5a888512f
+```
+
+The [current audit](../results/dimension-7-characteristic-encoding-check.json)
+binds the CNF and current auditor source. Replaying the default line-64
+builder yields the same CNF bytes as the historical run. The historical
+search and clause reports retain their original source hashes and can be
+reproduced at revision `fe35c9d`; they are not current-source audits.
+
+The six-dimensional retraction control now explicitly checks that its
+retained witness uses at most fifteen labels, in addition to checking
+every retained edge. It uses exactly fifteen. Both retraction reports
+were regenerated against the repaired source, rechecking every original
+edge in dimensions six and seven. This is an audit repair, with no change
+to the historical witness or theorem. The current six-dimensional
+[encoding control](../results/dimension-6-palette-bound-encoding.json)
+and [clause audit](../results/dimension-6-palette-bound-encoding-check.json)
+also pass; the historical full-graph coloring is not rerun.
+
+One Glucose4 attempt on the audited characteristic-clique CNF returned
+unknown after 120.047 seconds under a 120-second interrupt limit. It
+recorded 1,298,217 conflicts and 3,035,516 decisions. No SAT candidate or
+UNSAT result was obtained. The [characteristic-clique search report](../results/dimension-7-characteristic-search.json)
+binds this separate attempt to its CNF and current source hashes.
+This was the only solver attempt in this continuation; the earlier
+line-64 attempt remains historical. Neither timeout gives a chromatic
+bound or a reliable comparison of solver performance.
 
 ## Reproduction
 
@@ -121,6 +158,9 @@ python3 develop/check_nonradical_encoding.py /tmp/nikandish17-output/dimension-6
 python3 develop/check_nonradical_encoding.py /tmp/nikandish17-output/dimension-7-17-nonradical.cnf --dimension 7
 /tmp/nikandish17-env/bin/python develop/search_nonradical_coloring.py --dimension 7 --seconds 120 --output-dir /tmp/nikandish17-output
 /tmp/nikandish17-env/bin/python develop/compare_clique_precolorings.py
+/tmp/nikandish17-env/bin/python develop/search_nonradical_coloring.py --dimension 7 --last-line 127 --encode-only --output-dir /tmp/nikandish17-output
+python3 develop/check_nonradical_encoding.py /tmp/nikandish17-output/dimension-7-17-nonradical-characteristic.cnf --dimension 7 --last-line 127
+/tmp/nikandish17-env/bin/python develop/search_nonradical_coloring.py --dimension 7 --last-line 127 --seconds 120 --output-dir /tmp/nikandish17-output
 ```
 
 A future satisfying witness must be lifted and independently checked

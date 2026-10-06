@@ -12,7 +12,8 @@ def dot(left, right):
     return (left & right).bit_count() % 2
 
 
-def check(path, dimension):
+def check(path, dimension, last_line=64):
+    assert last_line in (64, 127) and (dimension == 7 or last_line == 64)
     rows = bases(dimension, 3)
     spaces = {vertex: frozenset(span(basis)) for vertex, basis in enumerate(rows)
               if len(basis) == 1 or all(dot(left, right) == 0 for left in span(basis) for right in span(basis))}
@@ -20,14 +21,16 @@ def check(path, dimension):
     clique = [vertex for vertex, space in spaces.items() if space <= isotropic]
     fixed = set(clique)
     if dimension == 7:
-        fixed.add(next(vertex for vertex, space in spaces.items() if space == {0, 64}))
+        fixed.add(next(vertex for vertex, space in spaces.items() if space == {0, last_line}))
     core = sorted(spaces.keys() - fixed)
     palettes = {}
     for vertex in core:
         intersection = {vector for vector in isotropic if all(dot(vector, row) == 0 for row in rows[vertex])}
         palette = [color for color, neighbor in enumerate(clique) if not spaces[neighbor] <= intersection]
         if dimension == 7:
-            if any(dot(64, vector) for vector in spaces[vertex]):
+            allows_fifteen = (any(vector.bit_count() % 2 for vector in spaces[vertex]) if last_line == 127
+                              else any(dot(64, vector) for vector in spaces[vertex]))
+            if allows_fifteen:
                 palette.append(15)
             palette.append(16)
         palettes[vertex] = palette
@@ -72,6 +75,7 @@ def check(path, dimension):
         actual += 1
     assert header is not None and not expected and actual == total
     return {'status': 'every_dimacs_clause_exactly_matches_geometric_encoding', 'dimension': dimension,
+            'fixed_last_line_basis': [last_line] if dimension == 7 else None,
             'target_colors': 15 if dimension == 6 else 17, 'core_vertices': len(core), 'core_edges': edges,
             'variables': len(variables), 'clauses': total, 'vertex_clauses': vertex_clauses, 'edge_clauses': total - vertex_clauses,
             'extra_preassigned_vertices': 0, 'former_forced_lines_keep_both15and16': dimension == 7,
@@ -85,9 +89,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('cnf', type=Path)
     parser.add_argument('--dimension', type=int, choices=(6, 7), default=7)
+    parser.add_argument('--last-line', type=int, choices=(64, 127), default=64)
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
-    report = check(args.cnf, args.dimension)
+    if args.dimension == 6 and args.last_line != 64:
+        parser.error('--last-line 127 applies only to dimension seven')
+    report = check(args.cnf, args.dimension, args.last_line)
     if args.report:
         args.report.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2))

@@ -161,9 +161,12 @@ def check(dimension):
         path = ROOT / 'results/full-15-coloring.json'
         previous = {frozenset(span(record['basis'])): record['color']
                     for record in json.loads(path.read_text())['subspace_colors']}
+        distinct_colors = len({previous[spaces[vertex]] for vertex in retained})
+        assert distinct_colors <= 15
         assert all(previous[spaces[vertex]] != previous[spaces[neighbor]]
                    for vertex in retained for neighbor in adjacency[vertex])
         control = {'status': 'historical_witness_restricted_to_retained_graph_passed',
+                   'distinct_colors': distinct_colors, 'palette_bound_checked': 15,
                    'certificate_sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
                    'old_full_graph_coloring_rerun': False}
     assert all(dot(3, row) == 0 for row in (3, 4))

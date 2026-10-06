@@ -81,9 +81,10 @@ have two allowed colors; the old sixteen-color propagation is not reused.
 
 The [seventeen-color encoding](notes/seventeen-color-encoding.md) is now
 emitted and audited clause by clause. One 120-second search returns
-unknown. Choosing the characteristic-vector line in the fixed clique
-gives an equivalent normalization with 7,814 variables and 244,442
-clauses; its lists and counts are checked, with no second solver run.
+unknown on the original normalization. The equivalent characteristic-vector
+clique encoding has 7,814 variables and 244,442 clauses, now independently
+audited clause by clause. Its separate 120-second attempt also returns
+unknown. Neither attempt supplies a coloring or a new chromatic bound.
 
 ## Paper status
 

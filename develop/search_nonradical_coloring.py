@@ -23,7 +23,8 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def build_encoding(dimension):
+def build_encoding(dimension, last_line=64):
+    assert last_line in (64, 127) and (dimension == 7 or last_line == 64)
     colors = 15 if dimension == 6 else 17
     rows = bases(dimension, 3)
     retained = [vertex for vertex, basis in enumerate(rows) if len(basis) == 1 or totally_isotropic(basis)]
@@ -31,7 +32,7 @@ def build_encoding(dimension):
     isotropic = frozenset(span((3, 12, 48)))
     clique = [vertex for vertex in retained if spaces[vertex] <= isotropic]
     if dimension == 7:
-        clique.append(next(vertex for vertex in retained if rows[vertex] == (64,)))
+        clique.append(next(vertex for vertex in retained if rows[vertex] == (last_line,)))
     fixed = {vertex: color for color, vertex in enumerate(clique)}
     adjacency = {vertex: set() for vertex in retained}
     for vertex, neighbor in combinations(retained, 2):
@@ -60,11 +61,18 @@ def build_encoding(dimension):
                 edges += 1
                 clauses.extend([-variables[vertex, color], -variables[neighbor, color]]
                                for color in sorted(palettes[vertex] & palettes[neighbor]))
-    reference_path = ROOT / f'results/dimension-{dimension}-nonradical-retraction.json'
-    reference = json.loads(reference_path.read_text())['coloring_instances'][-1]
-    assert reference['target_colors'] == colors
-    assert (len(core), edges, len(variables), len(clauses)) == (
-        reference['uncolored_vertices'], reference['uncolored_edges'], reference['variables'], reference['pairwise_clauses'])
+    if last_line == 127:
+        reference_path = ROOT / 'results/dimension-7-characteristic-clique.json'
+        reference = json.loads(reference_path.read_text())
+        counts = reference['alternative_instance']
+        assert (len(core), edges, len(variables), len(clauses)) == (
+            counts['vertices'], counts['edges'], counts['variables'], counts['clauses'])
+    else:
+        reference_path = ROOT / f'results/dimension-{dimension}-nonradical-retraction.json'
+        reference = json.loads(reference_path.read_text())['coloring_instances'][-1]
+        assert reference['target_colors'] == colors
+        assert (len(core), edges, len(variables), len(clauses)) == (
+            reference['uncolored_vertices'], reference['uncolored_edges'], reference['variables'], reference['pairwise_clauses'])
     assert dict(Counter(len(palette) for palette in palettes.values())) == {
         int(size): count for size, count in reference['palette_sizes'].items()}
     control = None
@@ -79,6 +87,7 @@ def build_encoding(dimension):
         control = {'status': 'existing_n6_witness_satisfies_all_nonradical_encoding_clauses',
                    'certificate_sha256': digest(source), 'old_full_graph_coloring_rerun': False}
     report = {'dimension': dimension, 'target_colors': colors, 'retained_vertices': len(retained),
+              'fixed_last_line_basis': [last_line] if dimension == 7 else None,
               'fixed_clique_vertices': len(clique), 'extra_preassigned_vertices': 0,
               'core_vertices': len(core), 'core_edges': edges, 'variables': len(variables), 'clauses': len(clauses),
               'palette_sizes': reference['palette_sizes'], 'n6_control': control,
@@ -91,15 +100,20 @@ def build_encoding(dimension):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dimension', type=int, choices=(6, 7), default=7)
+    parser.add_argument('--last-line', type=int, choices=(64, 127), default=64)
     parser.add_argument('--seconds', type=float, default=120)
     parser.add_argument('--encode-only', action='store_true')
     parser.add_argument('--output-dir', type=Path, required=True)
     args = parser.parse_args()
+    if args.dimension == 6 and args.last_line != 64:
+        parser.error('--last-line 127 applies only to dimension seven')
     assert args.seconds > 0
     args.output_dir.mkdir(parents=True, exist_ok=True)
     started = time.monotonic()
-    rows, spaces, adjacency, fixed, palettes, variables, cnf, report = build_encoding(args.dimension)
+    rows, spaces, adjacency, fixed, palettes, variables, cnf, report = build_encoding(args.dimension, args.last_line)
     stem = f'dimension-{args.dimension}-{report["target_colors"]}-nonradical'
+    if args.last_line == 127:
+        stem += '-characteristic'
     cnf_path = args.output_dir / (stem + '.cnf')
     cnf.to_file(str(cnf_path))
     report.update(cnf_sha256=digest(cnf_path), encoding_seconds=time.monotonic() - started,
