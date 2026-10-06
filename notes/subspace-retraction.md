@@ -5,6 +5,11 @@ proves chi(O_7*) >= 17 and makes the sixteen-color instance below
 uncolorable. Its exact chromatic number remains open. The search question
 recorded in this reduction note preceded that obstruction.
 
+The stronger [nonradical-line retraction](nonradical-line-retraction.md)
+now retains only 577 vertices and is checked on every original edge.
+Its seventeen-color instance has 561 uncolored vertices; the old
+sixteen-color forced assignments below do not apply to that target.
+
 For the standard dot product on F_2^n, let O_n* have all nonzero
 subspaces as vertices, with distinct vertices adjacent when they are
 orthogonal. A subspace is totally isotropic when the dot product
@@ -98,8 +103,9 @@ on span(e). The [forced-color theorem](dimension-seven-propagation.md)
 fixes color fifteen on every subspace of T-perp not contained in T.
 Among the retained vertices, these are precisely the eight lines
 span(e+t), t in T; one is already in the clique. The other forced
-planes and three-dimensional subspaces contain odd vectors and
-are mapped to these lines by the retraction.
+planes, three-dimensional subspaces and the unique four-dimensional
+subspace T-perp contain odd vectors and are mapped to these lines
+by the retraction.
 
 After removing the sixteen fixed clique vertices and seven extra
 forced lines, there remain 913-16-7=890 vertices: 112 lines,
@@ -121,13 +127,19 @@ of this 890-vertex list instance suffices for a sixteen-coloring
 of the full graph. The original sixteen-clique then gives equality.
 It does not follow that the list instance is colorable.
 
+Conversely, every sixteen-coloring restricts to the retained graph and
+can be relabeled on the fixed clique, so the specified list instance
+and the original sixteen-color problem are equivalent for existence.
+
 ## Exact checks and the next question
 
 The [checker](../develop/check_subspace_retraction.py) verifies every
 vertex image in dimensions six and seven by exact containment and
 tests the retraction against every edge between vertices of
 dimensions one through three. It checks distinct images and their
-orthogonality directly from basis-vector dot products. The written
+orthogonality directly from basis-vector dot products. These are image
+checks on edges supplied by the construction, not a second independent
+enumeration of the original edge set. The written
 containment argument covers edges incident to higher-dimensional
 vertices; those edges are not enumerated in this check.
 
@@ -145,9 +157,11 @@ python3 develop/check_subspace_retraction.py --dimension 6
 python3 develop/check_subspace_retraction.py --dimension 7
 ```
 
-The next concrete problem is this 890-vertex list instance. A
-successful coloring must be lifted through the stated retraction
-and verified on the original graph. No SAT or Lean result is
-claimed here. The dimension-seven chromatic number remains open;
-the original dimension-six formal theorem retains its four
+This 890-vertex sixteen-color list instance is now uncolorable by
+the written obstruction. The current upper-bound target is the
+561-vertex seventeen-color instance from the stronger retraction.
+Any successful coloring must be lifted and independently verified
+on the original graph. No SAT or Lean result is claimed here.
+The exact dimension-seven chromatic number remains open; the
+original dimension-six formal theorem retains its four
 native-evaluation axioms.

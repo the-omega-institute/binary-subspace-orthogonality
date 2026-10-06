@@ -72,6 +72,13 @@ returned unknown; no seven-dimensional coloring or UNSAT result was obtained.
 The subsequent written obstruction settles sixteen-color nonexistence
 independently of that solver attempt.
 
+The stronger [nonradical-line retraction](notes/nonradical-line-retraction.md)
+now retains only lines and totally isotropic subspaces: 577 vertices in
+dimension seven. Its checker covers every original vertex and all
+1,160,206 original edges. The correct seventeen-color list problem has
+561 uncolored vertices and 18,056 edges. Its former forced lines now
+have two allowed colors; the old sixteen-color propagation is not reused.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

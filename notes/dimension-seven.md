@@ -5,6 +5,11 @@ proved by a two-clique forcing obstruction on 29 vertices. The exact
 chromatic number remains open. The sixteen-color reductions below are
 historical steps; their nonexistence question is now settled by written proof.
 
+The [nonradical-line retraction](nonradical-line-retraction.md) now retains
+577 vertices and checks every original edge. Its correct seventeen-color
+list problem has 561 uncolored vertices; the former forced-color
+restrictions are specific to the now-impossible sixteen-color target.
+
 The subsequent [subspace retraction](subspace-retraction.md) now reduces
 the full graph to 913 vertices with the same chromatic number. Its
 fixed-clique list instance has 890 vertices and 33,978 edges. The

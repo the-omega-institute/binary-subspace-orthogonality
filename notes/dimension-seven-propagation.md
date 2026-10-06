@@ -1,5 +1,10 @@
 # Forced colors and a smaller dimension-seven instance
 
+**Subsequent result:** the [written obstruction](dimension-seven-obstruction.md)
+rules out sixteen colors. These reductions and forced assignments
+remain valid for that target. The [seventeen-color problem](nonradical-line-retraction.md)
+has different lists and does not reuse these singleton assignments.
+
 Let O_7* have all nonzero subspaces of F_2^7 as vertices, with distinct
 vertices adjacent when they are orthogonal for the standard dot product.
 Put T=span(3,12,48) and e=64 in binary coordinates. Fix distinct colors
@@ -40,7 +45,10 @@ ways to lift e modulo it. The counts in dimensions one through four
 are respectively 8,28,14,1. The fixed line span(e) accounts for one of
 the eight lines. Hence the low-dimensional uncolored instance has
 exactly 7+28+14=49 singleton lists, all with color 15. Propagation
-introduces no further singleton lists in the computed instance.
+introduces no further singleton lists. Indeed, if U is not contained
+in T-perp, then dim(T intersect U-perp)<=2. At most N(2)=4 of the
+fifteen T-colors are forbidden, leaving at least eleven. Propagating
+color 15 removes none of those colors, so no other singleton can arise.
 
 ## The remaining color 15 condition
 
@@ -100,7 +108,7 @@ reproduces the established core of 2,080 vertices, 39,400 edges,
 The [checker](../develop/propagate_dimension_seven.py) constructs the
 original low-dimensional graph by exact orthogonal-complement
 enumeration. It verifies the forced class and the geometric list
-formula for every remaining vertex, and records the result in
+formula for every remaining vertex, and prints the JSON result archived in
 [the exact report](../results/dimension-7-propagation.json).
 
 ```sh
@@ -108,8 +116,13 @@ python3 develop/propagate_dimension_seven.py --dimension 6
 python3 develop/propagate_dimension_seven.py --dimension 7
 ```
 
-The result gives a smaller exact search problem and an explicit
-description of its remaining lists. A complete coloring must still
-be found and checked against every original vertex and edge. No SAT
-or Lean run is part of this reduction, and the dimension-seven
-chromatic number remains open.
+To save a regenerated seven-dimensional report rather than printing it:
+
+```sh
+python3 develop/propagate_dimension_seven.py --dimension 7 > results/dimension-7-propagation.json
+```
+
+The reduction supplies an explicit description of the remaining lists.
+The subsequent written obstruction now settles their uncolorability
+for sixteen colors. No SAT or Lean run is part of this reduction, and
+the exact dimension-seven chromatic number remains open.

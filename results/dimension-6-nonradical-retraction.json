@@ -1,0 +1,63 @@
+{
+  "status": "every_vertex_and_full_graph_edge_retraction_checked",
+  "dimension": 6,
+  "all_vertices": 2824,
+  "all_dimension_counts": {
+    "1": 63,
+    "2": 651,
+    "3": 1395,
+    "4": 651,
+    "5": 63,
+    "6": 1
+  },
+  "retained_vertices": 153,
+  "retained_dimension_counts": {
+    "1": 63,
+    "2": 75,
+    "3": 15
+  },
+  "retained_pairs_directly_tested": 11628,
+  "retained_edges": 2611,
+  "all_original_edges_checked": 44968,
+  "low_dimension_edges_checked": 42301,
+  "edges_incident_to_high_dimensions_checked": 2667,
+  "directed_degree_sum": 89936,
+  "edge_count_independent_gaussian_degree_formula_matches": true,
+  "self_loops_excluded": true,
+  "edge_images_distinct": true,
+  "radical_line_collapse_negative_control": "The edge between span(3) and span(3,4) would collapse under a radical-line choice; the implemented rule selects span(4).",
+  "coloring_instances": [
+    {
+      "target_colors": 15,
+      "fixed_clique_vertices": 15,
+      "extra_singleton_vertices": 0,
+      "uncolored_vertices": 138,
+      "uncolored_edges": 2074,
+      "variables": 1638,
+      "pairwise_clauses": 29014,
+      "dimension_counts": {
+        "1": 56,
+        "2": 68,
+        "3": 14
+      },
+      "palette_sizes": {
+        "11": 98,
+        "14": 40
+      },
+      "geometric_lists_checked": 138,
+      "status": "encoding_counts_only_no_coloring_or_solver",
+      "fixed_color_rule": "Original fixed clique and justified singleton assignments only."
+    }
+  ],
+  "n6_existing_witness_control": {
+    "status": "historical_witness_restricted_to_retained_graph_passed",
+    "certificate_sha256": "d879b23d1ed1c915d764fa044368148a1c60a4dbcf2f1e0f79bdde1d23a03268",
+    "old_full_graph_coloring_rerun": false
+  },
+  "checker_sha256": "16220e9e944adb9587f2f3fc65c3cfa035245ddd76bef37855d6eba8c28be35d",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "solver_run": false,
+  "lean_run": false,
+  "n7_exact_chromatic_number": "open",
+  "scope": "Every vertex image and every original graph edge enumerated through exact orthogonal complements; retained adjacency tested directly on all pairs. Shared canonical RREF basis enumerator and span helper, new adjacency construction and product-formula counts. Written retraction establishes chromatic equivalence in every dimension. No new full coloring, emitted CNF, SAT, UNSAT solver or Lean result."
+}
