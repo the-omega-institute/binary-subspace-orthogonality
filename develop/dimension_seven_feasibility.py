@@ -51,8 +51,7 @@ def gaussian(n, k):
     return gaussian(n - 1, k) + 2 ** (n - k) * gaussian(n - 1, k - 1)
 
 
-def analyze(n):
-    start = time.monotonic()
+def build_instance(n):
     k = 15 + n % 2
     rows = bases(n, 3)
     spaces = [frozenset(span(b)) for b in rows]
@@ -83,6 +82,14 @@ def analyze(n):
     remaining = set(range(len(rows))) - set(clique)
     palettes = {i: set(range(k)) - {c for c, j in enumerate(clique) if j in adj[i]}
                 for i in remaining}
+    return rows, adj, clique, palettes
+
+
+def analyze(n):
+    start = time.monotonic()
+    k = 15 + n % 2
+    rows, adj, clique, palettes = build_instance(n)
+    remaining = set(palettes)
     initial_types = Counter((len(rows[i]), len(palettes[i])) for i in remaining)
     degree = {i: len(adj[i] & remaining) for i in remaining}
     queue = deque(i for i in sorted(remaining) if degree[i] < len(palettes[i]))

@@ -47,11 +47,20 @@ own stated scopes.
 15-color rule also remains open. Failed exploratory candidates are retained as
 research history; they are not proofs of upper bounds.
 
+The [dimension-seven forced-color reduction](notes/dimension-seven-propagation.md)
+now gives an equivalent list instance with 14,540 vertices and 928,571 edges.
+Its geometric color-list formula and exact counts are checked; a coloring
+or nonexistence proof remains to be found.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
-Reza has also submitted it to arXiv; a permanent arXiv identifier and announcement
-are pending. Submission is not acceptance. Reza is the corresponding author.
+Reza also submitted it to arXiv, which declined it at moderation; no permanent
+arXiv identifier or announcement was issued. Posting the current submitted
+version on Zenodo is authorized, with Reza handling the upload; its DOI is
+awaiting confirmation. Any arXiv appeal
+must follow the rejection letter's journal-acceptance condition. Submission
+is not acceptance. Reza is the corresponding author.
 
 The originating problem is Reza Nikandish, *Annihilating-Ideal Graphs and
 Orthogonality Graphs over F_2*,

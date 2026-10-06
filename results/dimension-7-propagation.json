@@ -1,0 +1,490 @@
+{
+  "status": "equivalent_reduction_no_coloring_or_nonexistence_result",
+  "dimension": 7,
+  "target_colors": 16,
+  "initial_low_dimension_instance": {
+    "vertices": 14589,
+    "edges": 953057,
+    "variables": 214355,
+    "clauses": 12984679
+  },
+  "initial_singleton_lists": 49,
+  "forced_assignments_count": 49,
+  "forced_dimension_counts": {
+    "1": 7,
+    "2": 28,
+    "3": 14
+  },
+  "forced_assignments": [
+    {
+      "vertex_index": 33,
+      "basis": [
+        67
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 39,
+      "basis": [
+        79
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 57,
+      "basis": [
+        115
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 63,
+      "basis": [
+        127
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 105,
+      "basis": [
+        76
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 111,
+      "basis": [
+        124
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 123,
+      "basis": [
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1200,
+      "basis": [
+        67,
+        12
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1212,
+      "basis": [
+        115,
+        12
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1392,
+      "basis": [
+        67,
+        60
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1404,
+      "basis": [
+        115,
+        60
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1440,
+      "basis": [
+        3,
+        76
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1452,
+      "basis": [
+        51,
+        76
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1456,
+      "basis": [
+        67,
+        76
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1468,
+      "basis": [
+        115,
+        76
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1632,
+      "basis": [
+        3,
+        124
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1644,
+      "basis": [
+        51,
+        124
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1648,
+      "basis": [
+        67,
+        124
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1660,
+      "basis": [
+        115,
+        124
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1968,
+      "basis": [
+        67,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 1974,
+      "basis": [
+        79,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2016,
+      "basis": [
+        3,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2022,
+      "basis": [
+        15,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2032,
+      "basis": [
+        67,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2038,
+      "basis": [
+        79,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2112,
+      "basis": [
+        3,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2118,
+      "basis": [
+        15,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2136,
+      "basis": [
+        51,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2142,
+      "basis": [
+        63,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2716,
+      "basis": [
+        76,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2728,
+      "basis": [
+        12,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2732,
+      "basis": [
+        76,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2752,
+      "basis": [
+        12,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2758,
+      "basis": [
+        60,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 2792,
+      "basis": [
+        48,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 11907,
+      "basis": [
+        67,
+        12,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 11963,
+      "basis": [
+        3,
+        76,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 11971,
+      "basis": [
+        67,
+        76,
+        48
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12155,
+      "basis": [
+        3,
+        12,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12163,
+      "basis": [
+        67,
+        12,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12219,
+      "basis": [
+        3,
+        76,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12227,
+      "basis": [
+        67,
+        76,
+        112
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12539,
+      "basis": [
+        3,
+        12,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12551,
+      "basis": [
+        51,
+        12,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12635,
+      "basis": [
+        3,
+        60,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 12647,
+      "basis": [
+        51,
+        60,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 13179,
+      "basis": [
+        3,
+        48,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 13185,
+      "basis": [
+        15,
+        48,
+        64
+      ],
+      "color": 15
+    },
+    {
+      "vertex_index": 14583,
+      "basis": [
+        12,
+        48,
+        64
+      ],
+      "color": 15
+    }
+  ],
+  "neighbor_color_removals": 7630,
+  "after_forcing": {
+    "vertices": 14540,
+    "edges": 928571,
+    "variables": 206676,
+    "clauses": 12306141
+  },
+  "reversible_degree_deletions": 0,
+  "deletion_order": [],
+  "final_core": {
+    "vertices": 14540,
+    "edges": 928571,
+    "variables": 206676,
+    "clauses": 12306141
+  },
+  "final_core_dimension_counts": {
+    "1": 112,
+    "2": 2632,
+    "3": 11796
+  },
+  "final_palette_types": [
+    {
+      "dimension": 1,
+      "list_size": 11,
+      "vertices": 112
+    },
+    {
+      "dimension": 2,
+      "list_size": 11,
+      "vertices": 392
+    },
+    {
+      "dimension": 2,
+      "list_size": 12,
+      "vertices": 448
+    },
+    {
+      "dimension": 2,
+      "list_size": 14,
+      "vertices": 1792
+    },
+    {
+      "dimension": 3,
+      "list_size": 11,
+      "vertices": 196
+    },
+    {
+      "dimension": 3,
+      "list_size": 12,
+      "vertices": 784
+    },
+    {
+      "dimension": 3,
+      "list_size": 14,
+      "vertices": 3136
+    },
+    {
+      "dimension": 3,
+      "list_size": 15,
+      "vertices": 7680
+    }
+  ],
+  "connected_component_sizes": [
+    14540
+  ],
+  "geometric_forced_set_and_palette_identity_checked": true,
+  "checker_sha256": "a7cef457bc933878a112f05a7c0a2fc97916b17606bf001123f7b3e7be83b6f4",
+  "construction_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "Exact list propagation and reversible degree deletion on the fixed-clique low-dimensional graph. No coloring, UNSAT, time-to-solution or new chromatic equality is claimed."
+}

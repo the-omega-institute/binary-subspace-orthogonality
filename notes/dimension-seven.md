@@ -1,5 +1,11 @@
 # Dimension seven: an exact reduction before search
 
+The [forced-color reduction](dimension-seven-propagation.md) now propagates
+the 49 singleton lists and gives an exact geometric condition for retaining
+color 15. Its remaining connected instance has 14,540 vertices and 928,571
+edges; sixteen-colorability is still open. The original counts below are
+retained as the baseline before propagation.
+
 The known clique lower bound is 16. Let T = span(3,12,48) inside F_2^7.
 Its 15 nonzero subspaces, together with the line span(64), form a 16-clique.
 Fix its colors. This note gives an equivalent search reduction, not a new
