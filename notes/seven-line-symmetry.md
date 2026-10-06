@@ -132,3 +132,34 @@ chromatic number remains open with the written lower bound seventeen.
 ```sh
 python3 develop/check_seven_line_symmetry.py --cnf /tmp/nikandish17-output/dimension-7-17-nonradical-characteristic.cnf --output-cnf /tmp/nikandish17-output/dimension-7-symmetry.cnf --report /tmp/dimension-7-seven-line-symmetry.json
 ```
+
+## Review and bounded continuation
+
+An independent review approved the orthogonal lift, normalized-color
+action, ten orbits and satisfiability-preserving clause restriction.
+It found a reporting defect in the initial replay check: text-mode
+reading could normalize CRLF input while still reporting byte identity.
+The current emitter and replay use raw bytes, preserve every original
+clause record, restore the exact original header, and compare against
+the original source bytes. Full-size LF, CRLF, CR and unterminated-final-line
+fixtures pass independent raw-byte replay checks. The actual historical
+LF symmetry CNF remains byte-identical; the defect concerned the claim
+for other accepted input encodings.
+
+One Glucose4 attempt on the audited 244,560-clause symmetry CNF used a
+120-second interrupt setting and returned unknown after 122.068 seconds
+of measured solve time. It recorded 1,707,571 conflicts and 2,793,953
+decisions, without a SAT candidate or UNSAT result. The
+[search report](../results/dimension-7-seven-line-symmetry-search.json)
+binds the CNF, current symmetry checker/report, search runner and base
+construction. This is the only solver attempt in this continuation;
+the timeout gives no new chromatic bound.
+
+```sh
+/tmp/nikandish17-env/bin/python develop/search_seven_line_symmetry.py /tmp/nikandish17-output/dimension-7-symmetry.cnf --seconds 120 --output-dir /tmp/nikandish17-output
+```
+
+The [full-pattern branch proof](full-seven-line-branch.md) gives a further
+conditional reduction only for mask 127. Its seven fixed odd lines and
+64 transverse isotropic triples can all receive color sixteen, leaving
+490 uncolored vertices. The other nine pattern branches remain required.

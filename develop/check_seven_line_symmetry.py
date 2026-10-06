@@ -144,16 +144,23 @@ def emit_and_audit(source, target, report):
         truth = {variable: bool(mask >> index & 1) for index, variable in enumerate(variables)}
         failed_clauses = sum(not any(truth[abs(literal)] == (literal > 0) for literal in clause) for clause in clauses)
         assert failed_clauses == int(mask not in representatives)
-    lines = source.read_text().splitlines()
-    header = next(index for index, line in enumerate(lines) if line.startswith('p'))
-    lines[header] = f'p cnf {base_audit["variables"]} {base_audit["clauses"] + len(clauses)}'
-    lines += [' '.join(map(str, clause)) + ' 0' for clause in clauses]
-    target.write_text('\n'.join(lines) + '\n')
-    replay = target.read_text().splitlines()
-    assert replay[-118:] == lines[-118:]
-    replay = replay[:-118]
-    replay[header] = source.read_text().splitlines()[header]
-    assert '\n'.join(replay) + '\n' == source.read_text()
+    source_bytes = source.read_bytes()
+    records = source_bytes.splitlines(keepends=True)
+    header = next(index for index, record in enumerate(records) if record.startswith(b'p'))
+    original_header = records[header]
+    newline = original_header[len(original_header.rstrip(b'\r\n')):]
+    assert newline in (b'\n', b'\r\n', b'\r')
+    records[header] = f'p cnf {base_audit["variables"]} {base_audit["clauses"] + len(clauses)}'.encode('ascii') + newline
+    base_bytes = b''.join(records)
+    separator = b'' if base_bytes.endswith((b'\n', b'\r')) else newline
+    suffix = b''.join((' '.join(map(str, clause)) + ' 0').encode('ascii') + newline for clause in clauses)
+    target.write_bytes(base_bytes + separator + suffix)
+    emitted = target.read_bytes()
+    assert emitted.endswith(suffix)
+    assert emitted[:-len(suffix)] == base_bytes + separator
+    replay = emitted[:len(base_bytes)].splitlines(keepends=True)
+    replay[header] = original_header
+    assert b''.join(replay) == source_bytes
     return {'base_clause_audit': base_audit, 'base_CNF_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
             'symmetry_CNF_sha256': hashlib.sha256(target.read_bytes()).hexdigest(),
             'variables': base_audit['variables'], 'clauses': base_audit['clauses'] + 118,

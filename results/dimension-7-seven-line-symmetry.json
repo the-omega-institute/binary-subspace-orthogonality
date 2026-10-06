@@ -284,7 +284,7 @@
   "allowed_representative_patterns": 10,
   "forbidden_patterns": 118,
   "added_seven_literal_clauses": 118,
-  "checker_sha256": "1cb26db4d4611beeb77ac2e283f609e5c944e6174cc7aaf1311f58a58fd7c630",
+  "checker_sha256": "0a8420bb80b32936a3eaa1d51823c9edd5f72c5297cc9be8a52ef7b0eac0e9f1",
   "shared_basis_helper_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
   "solver_run": false,
   "lean_run": false,

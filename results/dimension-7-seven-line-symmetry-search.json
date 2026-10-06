@@ -1,0 +1,55 @@
+{
+  "dimension": 7,
+  "target_colors": 17,
+  "fixed_last_line_basis": [
+    127
+  ],
+  "variables": 7814,
+  "clauses": 244560,
+  "added_symmetry_clauses": 118,
+  "representative_patterns": 10,
+  "cnf_sha256": "a86c7508a86162e00e8527d6a0c808d79a94bc41016a97895262cc0e8c2a32c7",
+  "symmetry_report_sha256": "12b55c2223704a74406d7b3c65da1363615c5804839a00e069f9a24acab00ea7",
+  "symmetry_checker_sha256": "0a8420bb80b32936a3eaa1d51823c9edd5f72c5297cc9be8a52ef7b0eac0e9f1",
+  "search_sha256": "1df0d2915e103005b1a84385e016bb8f7048318f10aa91b675a4f2ae25b2c4c9",
+  "construction": {
+    "dimension": 7,
+    "target_colors": 17,
+    "retained_vertices": 577,
+    "fixed_last_line_basis": [
+      127
+    ],
+    "fixed_clique_vertices": 16,
+    "extra_preassigned_vertices": 0,
+    "core_vertices": 561,
+    "core_edges": 17696,
+    "variables": 7814,
+    "clauses": 244442,
+    "palette_sizes": {
+      "2": 7,
+      "12": 154,
+      "13": 56,
+      "15": 280,
+      "16": 64
+    },
+    "n6_control": null,
+    "nonradical_report_sha256": "7fc3296edfa432b4d8bf2d1a0a201785a032b897adfe68d69bf1b4d7bcc738c9",
+    "search_sha256": "9cc121696616cd1f4bf152c5a70a40421e85c1490cbeb00cfd8626026829b173",
+    "retraction_sha256": "61835f2527cfd959aee6880dcd43cd536f052750c553a4aef2fa0afb7d3bd8f4",
+    "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2"
+  },
+  "python_sat_version": "1.8.dev24",
+  "solver": "Glucose4",
+  "time_limit_seconds": 120.0,
+  "solver_run": true,
+  "lean_run": false,
+  "solver_seconds": 122.06785133400263,
+  "stats": {
+    "restarts": 5507,
+    "conflicts": 1707571,
+    "decisions": 2793953,
+    "propagations": 225167351
+  },
+  "status": "unknown_time_limit",
+  "scope": "One bounded attempt on hash-bound audited symmetryCNF, all10patterns retained. SATcandidate needs independentoriginalgraphcheck; UNSATreport needs checkedproof; unknown gives nobound. NoLean."
+}

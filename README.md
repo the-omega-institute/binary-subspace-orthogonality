@@ -89,7 +89,10 @@ unknown. Neither attempt supplies a coloring or a new chromatic bound.
 The [seven-line symmetry proof](notes/seven-line-symmetry.md) further
 restricts the 128 two-color patterns to ten representatives using
 orthogonal lifts and clique-color renormalization. Its 118 additional
-CNF clauses are checked; no solver result on this restriction is claimed.
+CNF clauses are checked. Its bounded search returns unknown, with no
+coloring or chromatic conclusion. Within the full seven-line pattern
+only, a [further saturation proof](notes/full-seven-line-branch.md)
+leaves 490 uncolored vertices; the other nine patterns remain required.
 
 ## Paper status
 
