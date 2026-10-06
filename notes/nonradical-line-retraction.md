@@ -18,6 +18,11 @@ seven it reduces the graph from 29,211 vertices to 577 vertices. The
 known lower bound chi(O_7*) >= 17 remains valid; the exact chromatic
 number remains open.
 
+The subsequent [seventeen-color encoding audit](seventeen-color-encoding.md)
+records one bounded unknown solver attempt and an equally complete
+characteristic-clique normalization with fewer encoding variables.
+The counts in this reduction note describe its original fixed-line choice.
+
 ## The nonradical-line choice
 
 Put rad(U)=U intersect U-perp. Keep every vertex of S_n fixed. For any

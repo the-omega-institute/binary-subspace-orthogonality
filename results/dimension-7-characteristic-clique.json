@@ -1,0 +1,42 @@
+{
+  "status": "alternative_clique_lists_and_counts_checked",
+  "dimension": 7,
+  "target_colors": 17,
+  "fixed_clique_vertices": 16,
+  "extra_preassigned_vertices": 0,
+  "fixed_last_line_basis": [
+    127
+  ],
+  "old_last_line_basis": [
+    64
+  ],
+  "old_last_line_retained_degree": 153,
+  "characteristic_line_retained_degree": 513,
+  "original_instance": {
+    "core_vertices": 561,
+    "core_edges": 18056,
+    "variables": 8174,
+    "clauses": 257402
+  },
+  "alternative_instance": {
+    "vertices": 561,
+    "edges": 17696,
+    "variables": 7814,
+    "clauses": 244442
+  },
+  "palette_sizes": {
+    "2": 7,
+    "12": 154,
+    "13": 56,
+    "15": 280,
+    "16": 64
+  },
+  "geometric_lists_checked": 561,
+  "former_forced_lines_keep_both15and16": true,
+  "script_sha256": "255d2b9ade8a6734fc730ba412e88a78378562cbb629b9df8d103be37d1dea27",
+  "construction_sha256": "5abedd44463e17241c06d232464cc4ff505605514085399ec6eebde9f96fa81a",
+  "CNF_emitted_for_alternative": false,
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "Exact comparison using the shared retained graph; geometric palettes separately checked. Any17coloring can be relabeled on either16clique. No assignments beyond its clique, no alternative CNF or second solver run, no chromatic conclusion."
+}

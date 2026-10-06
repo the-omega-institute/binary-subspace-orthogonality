@@ -1,0 +1,41 @@
+{
+  "dimension": 7,
+  "target_colors": 17,
+  "retained_vertices": 577,
+  "fixed_clique_vertices": 16,
+  "extra_preassigned_vertices": 0,
+  "core_vertices": 561,
+  "core_edges": 18056,
+  "variables": 8174,
+  "clauses": 257402,
+  "palette_sizes": {
+    "2": 7,
+    "12": 98,
+    "13": 112,
+    "15": 40,
+    "16": 240,
+    "17": 64
+  },
+  "n6_control": null,
+  "nonradical_report_sha256": "e319d988e96215fe6be18d02b05f37661093405929b62dd4fa22815244601936",
+  "search_sha256": "5abedd44463e17241c06d232464cc4ff505605514085399ec6eebde9f96fa81a",
+  "retraction_sha256": "16220e9e944adb9587f2f3fc65c3cfa035245ddd76bef37855d6eba8c28be35d",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "cnf_sha256": "f346ce031264a3c9e089745a71cf2e576cea2556b7193d82aecc82ec44ccfa18",
+  "encoding_seconds": 0.7484091660007834,
+  "python_sat_version": "1.8.dev24",
+  "solver_run": true,
+  "lean_run": false,
+  "solver": "Glucose4",
+  "time_limit_seconds": 120.0,
+  "solver_seconds": 120.01821145799477,
+  "stats": {
+    "restarts": 6350,
+    "conflicts": 1367021,
+    "decisions": 2910199,
+    "propagations": 254941571
+  },
+  "status": "unknown_time_limit",
+  "total_seconds": 120.84855966600298,
+  "scope": "Fixed-clique encoding with no additional preassignment. SAT candidates require independent original-graph validation; UNSAT solver reports require checked proofs; timeout proves nothing. No Lean."
+}

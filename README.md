@@ -79,6 +79,12 @@ dimension seven. Its checker covers every original vertex and all
 561 uncolored vertices and 18,056 edges. Its former forced lines now
 have two allowed colors; the old sixteen-color propagation is not reused.
 
+The [seventeen-color encoding](notes/seventeen-color-encoding.md) is now
+emitted and audited clause by clause. One 120-second search returns
+unknown. Choosing the characteristic-vector line in the fixed clique
+gives an equivalent normalization with 7,814 variables and 244,442
+clauses; its lists and counts are checked, with no second solver run.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
