@@ -5,6 +5,12 @@ of the full dimension-seven graph into a list-coloring problem on 890
 vertices. This note records a reproducible encoding and one bounded search,
 not a new chromatic-number result.
 
+**Subsequent result:** the [two-clique obstruction](dimension-seven-obstruction.md)
+proves chi(O_7*) >= 17 and gives a twelve-clique with only eleven available
+colors inside this encoding. This written proof establishes uncolorability
+independently of the unknown solver outcome recorded here. The exact
+full-graph chromatic number remains open.
+
 The search script constructs adjacency directly from basis dot products,
 independently of the orthogonal-complement enumeration used in the earlier
 retraction report. It reproduces all 38,355 edges on the 913 retained

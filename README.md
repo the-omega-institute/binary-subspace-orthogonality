@@ -33,6 +33,7 @@ Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 | For every `n >= 1`, `omega(O_n*) = max(n, N(floor(n/2)) + (n mod 2))` | [Radical/quotient proof](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/clique.tex) · [attributed Lean source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/NikandishClique.lean) |
 | The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
 | The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
+| The full dimension-seven graph requires **at least 17 colors**, exceeding its clique number 16 | [Two-clique forcing proof](notes/dimension-seven-obstruction.md) and [29-vertex certificate](results/dimension-7-obstruction.json); exact full-graph chromatic number remains open |
 | Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
 The six-dimensional [chromatic Lean development](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/Chromatic/Verify.lean)
@@ -47,10 +48,16 @@ own stated scopes.
 15-color rule also remains open. Failed exploratory candidates are retained as
 research history; they are not proofs of upper bounds.
 
+The [new 29-vertex obstruction](notes/dimension-seven-obstruction.md) proves
+that sixteen colors are impossible in dimension seven. Its lower bound is
+a written argument checked by exact integer computation, with no Lean or
+UNSAT-solver dependence. The obstruction itself has chromatic number 17;
+no seventeen-coloring of the full graph is claimed.
+
 The [dimension-seven forced-color reduction](notes/dimension-seven-propagation.md)
 now gives an equivalent list instance with 14,540 vertices and 928,571 edges.
-Its geometric color-list formula and exact counts are checked; a coloring
-or nonexistence proof remains to be found.
+Its geometric color-list formula and exact counts are checked. The new
+obstruction now proves that this sixteen-color list instance is uncolorable.
 
 The subsequent [subspace retraction](notes/subspace-retraction.md) preserves
 the chromatic number and reduces the full dimension-seven graph to 913
@@ -62,6 +69,8 @@ The [retracted SAT encoding](notes/retracted-sat-encoding.md) now has an
 independent audit of every generated clause and a positive control using
 the existing six-dimensional certificate. One 120-second Glucose4 attempt
 returned unknown; no seven-dimensional coloring or UNSAT result was obtained.
+The subsequent written obstruction settles sixteen-color nonexistence
+independently of that solver attempt.
 
 ## Paper status
 

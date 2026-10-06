@@ -1,5 +1,10 @@
 # Dimension seven: an exact reduction before search
 
+**Current lower bound:** [chi(O_7*) >= 17](dimension-seven-obstruction.md),
+proved by a two-clique forcing obstruction on 29 vertices. The exact
+chromatic number remains open. The sixteen-color reductions below are
+historical steps; their nonexistence question is now settled by written proof.
+
 The subsequent [subspace retraction](subspace-retraction.md) now reduces
 the full graph to 913 vertices with the same chromatic number. Its
 fixed-clique list instance has 890 vertices and 33,978 edges. The

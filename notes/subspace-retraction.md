@@ -1,5 +1,10 @@
 # A smaller induced graph with the same chromatic number
 
+**Subsequent result:** the [29-vertex obstruction](dimension-seven-obstruction.md)
+proves chi(O_7*) >= 17 and makes the sixteen-color instance below
+uncolorable. Its exact chromatic number remains open. The search question
+recorded in this reduction note preceded that obstruction.
+
 For the standard dot product on F_2^n, let O_n* have all nonzero
 subspaces as vertices, with distinct vertices adjacent when they are
 orthogonal. A subspace is totally isotropic when the dot product
