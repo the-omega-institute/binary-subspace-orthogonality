@@ -1,0 +1,47 @@
+{
+  "status": "retraction_checked_no_new_coloring_or_unsat",
+  "dimension": 7,
+  "all_vertices": 29211,
+  "all_dimension_counts": {
+    "1": 127,
+    "2": 2667,
+    "3": 11811,
+    "4": 11811,
+    "5": 2667,
+    "6": 127,
+    "7": 1
+  },
+  "retained_vertices": 913,
+  "retained_dimension_counts": {
+    "1": 127,
+    "2": 651,
+    "3": 135
+  },
+  "retained_edges": 38355,
+  "low_dimension_edges_independently_checked": 972246,
+  "high_dimension_images_checked": 14606,
+  "fixed_clique_vertices": 16,
+  "extra_forced_vertices": 7,
+  "uncolored_core": {
+    "vertices": 890,
+    "edges": 33978,
+    "variables": 11558,
+    "clauses": 426406
+  },
+  "core_dimension_counts": {
+    "1": 112,
+    "2": 644,
+    "3": 134
+  },
+  "core_palette_sizes": {
+    "11": 322,
+    "14": 504,
+    "15": 64
+  },
+  "color15_absent_from_n7_core": true,
+  "checker_sha256": "ec765cbb68728d871ae964a14f72ad4a30f0f3c79fda5c548c591cc29aad39e0",
+  "construction_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "The written retraction proves equality of chromatic numbers in every dimension. Exact n6/n7 checks cover every vertex image and every edge among dimensions1to3. High-dimensional edges follow from containment and nonisotropic images in the written proof. No new coloring or nonexistence conclusion."
+}

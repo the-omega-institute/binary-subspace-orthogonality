@@ -1,5 +1,10 @@
 # Dimension seven: an exact reduction before search
 
+The subsequent [subspace retraction](subspace-retraction.md) now reduces
+the full graph to 913 vertices with the same chromatic number. Its
+fixed-clique list instance has 890 vertices and 33,978 edges. The
+larger instances below remain the earlier reduction baselines.
+
 The [forced-color reduction](dimension-seven-propagation.md) now propagates
 the 49 singleton lists and gives an exact geometric condition for retaining
 color 15. Its remaining connected instance has 14,540 vertices and 928,571

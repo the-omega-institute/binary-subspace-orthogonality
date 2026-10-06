@@ -52,6 +52,12 @@ now gives an equivalent list instance with 14,540 vertices and 928,571 edges.
 Its geometric color-list formula and exact counts are checked; a coloring
 or nonexistence proof remains to be found.
 
+The subsequent [subspace retraction](notes/subspace-retraction.md) preserves
+the chromatic number and reduces the full dimension-seven graph to 913
+vertices. Fixing the clique and forced lines leaves an equivalent list
+instance with **890 vertices, 33,978 edges and 426,406 pairwise clauses**.
+The dimension-seven chromatic number remains open.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
