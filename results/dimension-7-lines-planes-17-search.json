@@ -1,0 +1,233 @@
+{
+  "dimension": 7,
+  "target_colors": 17,
+  "retained_vertices": 442,
+  "variables": 5789,
+  "clauses": 197344,
+  "cnf_sha256": "f3c9d0d2df5217baad87c93ca6a3e8dcd33d53182c5aa5249962f2187a89d116",
+  "audit": {
+    "status": "every_lines_planes_clause_matches_independent_geometric_encoding",
+    "dimension": 7,
+    "target_colors": 17,
+    "retained_vertices": 442,
+    "fixed_clique_vertices": 15,
+    "core_vertices": 427,
+    "core_edges": 14994,
+    "variables": 5789,
+    "clauses": 197344,
+    "vertex_clauses": 37576,
+    "edge_clauses": 159768,
+    "palette_sizes": {
+      "3": 7,
+      "12": 140,
+      "13": 56,
+      "15": 224
+    },
+    "cnf_sha256": "f3c9d0d2df5217baad87c93ca6a3e8dcd33d53182c5aa5249962f2187a89d116",
+    "checker_sha256": "4cc21a18b856c4dd0436b14829a3817f941ad010bdf8ae41623442b980356958",
+    "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+    "negative_controls": {},
+    "solver_run": false,
+    "lean_run": false,
+    "scope": "Every clause checked exactly once from geometric lists and full-span dot products. Shares only canonical RREF/span helpers. This is a sufficient eighteen-color construction, not an equivalent restriction. No coloring or chromatic bound from this audit."
+  },
+  "construction": {
+    "dimension": 7,
+    "target_colors": 17,
+    "construction": "separate_eighteenth_color_for_all_isotropic_three_spaces",
+    "retained_vertices": 442,
+    "retained_edges": 16569,
+    "fixed_clique_vertices": 15,
+    "fixed_clique": [
+      {
+        "basis": [
+          3
+        ],
+        "color": 0
+      },
+      {
+        "basis": [
+          15
+        ],
+        "color": 1
+      },
+      {
+        "basis": [
+          51
+        ],
+        "color": 2
+      },
+      {
+        "basis": [
+          63
+        ],
+        "color": 3
+      },
+      {
+        "basis": [
+          12
+        ],
+        "color": 4
+      },
+      {
+        "basis": [
+          60
+        ],
+        "color": 5
+      },
+      {
+        "basis": [
+          48
+        ],
+        "color": 6
+      },
+      {
+        "basis": [
+          3,
+          12
+        ],
+        "color": 7
+      },
+      {
+        "basis": [
+          51,
+          12
+        ],
+        "color": 8
+      },
+      {
+        "basis": [
+          3,
+          60
+        ],
+        "color": 9
+      },
+      {
+        "basis": [
+          51,
+          60
+        ],
+        "color": 10
+      },
+      {
+        "basis": [
+          3,
+          48
+        ],
+        "color": 11
+      },
+      {
+        "basis": [
+          15,
+          48
+        ],
+        "color": 12
+      },
+      {
+        "basis": [
+          12,
+          48
+        ],
+        "color": 13
+      },
+      {
+        "basis": [
+          127
+        ],
+        "color": 14
+      }
+    ],
+    "core_vertices": 427,
+    "core_edges": 14994,
+    "variables": 5789,
+    "clauses": 197344,
+    "vertex_clauses": 37576,
+    "edge_clauses": 159768,
+    "palette_sizes": {
+      "3": 7,
+      "12": 140,
+      "13": 56,
+      "15": 224
+    },
+    "special_line_lists": [
+      {
+        "generator": 67,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 79,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 115,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 76,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 124,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 112,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 64,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "both_extra_colors_available_everywhere": true,
+    "old_full_graph_seventeen_color_forcing_used": false,
+    "builder_sha256": "8066c8d413effd593ae519ed6a36ca7244e09c5b3f946ea1f4d070f9b17738fb",
+    "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+    "solver_run": false,
+    "lean_run": false,
+    "scope": "Exact seventeen-color encoding of the 442-vertex lines/planes graph. SAT would give a sufficient eighteen-color construction after adding the independent three-spaces and validating the original lift. UNSAT only rejects this route, not full eighteen-colorability."
+  },
+  "search_sha256": "ae0a22e54bb93d6336d30260b7bb9b85570d2407cc5c243f082f8752299b78c0",
+  "python_sat_version": "1.8.dev24",
+  "solver": "Glucose4",
+  "time_limit_seconds": 120.0,
+  "solver_run": true,
+  "lean_run": false,
+  "solver_seconds": 120.00487925000198,
+  "stats": {
+    "restarts": 5920,
+    "conflicts": 1280765,
+    "decisions": 2800032,
+    "propagations": 222810893
+  },
+  "status": "unknown_time_limit",
+  "scope": "One bounded solve on the audited 442-vertex sufficient construction. SAT candidates require independent coloring, three-space extension and original-graph lift checks. UNSAT only rejects this sufficient construction and requires a checked proof; it cannot exclude all eighteen-colorings. Unknown supplies no bound. No Lean."
+}

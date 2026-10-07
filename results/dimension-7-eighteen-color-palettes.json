@@ -68,7 +68,7 @@
     "edges": 16569,
     "target_colors": 17,
     "coloring_supplied": false,
-    "scope": "A17coloring here plus one separate color for all135triples would give18colors on the retained graph. Sufficient construction only, not an equivalent restriction."
+    "scope": "A seventeen-coloring here plus one separate color for all 135 Lagrangian three-spaces would give eighteen colors on the retained graph. Sufficient construction only, not an equivalent restriction."
   },
   "point_records": [
     {
@@ -460,10 +460,10 @@
     "missing_incident_lagrangian": "rejected",
     "wrong_odd_adjacency_parity": "rejected"
   },
-  "checker_sha256": "fcc955cc19f5d95e3cf1d0ccf231d05725f69db6ff6208a66fab3102a577e53a",
+  "checker_sha256": "34977b4bd591b54d9068a0e664895846339385d6fde0b0295974bc4e521d2d6a",
   "written_criterion": "Given a proper coloring of the513even vertices with17non15colors, odd line[z+e] has list{15} union the intersection of the two omitted colors over all Lagrangians containing e. Extending on the63nonzeroe nonorthogonality graph is necessary and sufficient.",
-  "written_necessary_condition": "Vectors whose omitted-pair intersection is empty are pairwise symplectically orthogonal, hence their span is totally isotropic and there are at most7nonzero such vectors. At least56nonzero points have a nonempty intersection.",
-  "written_clique_condition": "For every nonempty odd clique C, the union of its omitted-pair intersections must have at least|C|-1colors. All26895cliques enumerated. Its2640maximal cliques have sizes3,5,7 and vector sum0. These are necessary constraints, not a sufficient global list-coloring test.",
+  "written_necessary_condition": "If the given even coloring admits an eighteen-color extension, then the nonzero vectors whose omitted-pair intersection is empty are pairwise symplectically orthogonal. Their span is totally isotropic, so at most seven such vectors occur and at least fifty-six nonzero points have a nonempty intersection.",
+  "written_clique_condition": "If the given even coloring admits an eighteen-color extension, then for every nonempty odd clique C the union of its omitted-pair intersections has at least |C|-1 colors. All 26,895 cliques of the 63-vertex graph enumerated. Its 2,640 maximal cliques have sizes 3,5,7 and vector sum zero. These are necessary constraints, not a sufficient global list-coloring test.",
   "even_coloring_supplied": false,
   "odd_list_coloring_supplied": false,
   "new_chromatic_bound": false,

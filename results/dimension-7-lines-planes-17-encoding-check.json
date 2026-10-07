@@ -1,0 +1,33 @@
+{
+  "status": "every_lines_planes_clause_matches_independent_geometric_encoding",
+  "dimension": 7,
+  "target_colors": 17,
+  "retained_vertices": 442,
+  "fixed_clique_vertices": 15,
+  "core_vertices": 427,
+  "core_edges": 14994,
+  "variables": 5789,
+  "clauses": 197344,
+  "vertex_clauses": 37576,
+  "edge_clauses": 159768,
+  "palette_sizes": {
+    "3": 7,
+    "12": 140,
+    "13": 56,
+    "15": 224
+  },
+  "cnf_sha256": "f3c9d0d2df5217baad87c93ca6a3e8dcd33d53182c5aa5249962f2187a89d116",
+  "checker_sha256": "4cc21a18b856c4dd0436b14829a3817f941ad010bdf8ae41623442b980356958",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "negative_controls": {
+    "missing_clause": "rejected",
+    "duplicate_replaces_last_clause": "rejected",
+    "wrong_construction_marker": "rejected",
+    "illegal_variable": "rejected",
+    "incomplete_positive_choice": "rejected",
+    "interior_zero": "rejected"
+  },
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "Every clause checked exactly once from geometric lists and full-span dot products. Shares only canonical RREF/span helpers. This is a sufficient eighteen-color construction, not an equivalent restriction. No coloring or chromatic bound from this audit."
+}

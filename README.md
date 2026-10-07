@@ -130,6 +130,13 @@ planes with seventeen colors and reserve the eighteenth for all 135
 independent triples. Neither a coloring for this construction nor a
 full-graph eighteen-color upper bound is supplied.
 
+The [442-vertex construction encoding](notes/lines-planes-seventeen-encoding.md)
+is now emitted and audited: 427 residual vertices, 14,994 edges, 5,789
+variables and 197,344 clauses. Its seven special lines retain three
+color choices. One 120-second Glucose4 attempt returns unknown, with no
+coloring or UNSAT proof. This is a sufficient upper-bound route; a
+negative result here would not exclude general eighteen-colorability.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

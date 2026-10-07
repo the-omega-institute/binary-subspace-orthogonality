@@ -76,7 +76,9 @@ def check():
     for vector in sorted(even_vectors):
         incident, neighbors = verify_cover(vector, lagrangians, even_vertices)
         assert len(incident) == (135 if vector == 0 else 15)
-        assert all(all(dot(characteristic ^ vector, member) == 0 for member in space) for space in neighbors)
+        odd_neighbors = {space for space in even_vertices
+                         if all(dot(characteristic ^ vector, member) == 0 for member in space)}
+        assert neighbors == odd_neighbors and len(neighbors) == (513 if vector == 0 else 121)
         rows.append({'even_vector': vector, 'odd_line_generator': characteristic ^ vector,
                      'incident_lagrangians': len(incident), 'even_neighbors': len(neighbors)})
     assert all(dot(characteristic ^ first, characteristic ^ second) == 1 ^ dot(first, second)
@@ -123,12 +125,12 @@ def check():
             'triple_independence_pairs_checked': 9045, 'triple_independence_edges': 0,
             'lines_and_planes_sufficient_construction': {'vertices': 442, 'pairs_checked': 97461, 'edges': reduced_edges,
                                                         'target_colors': 17, 'coloring_supplied': False,
-                                                        'scope': 'A17coloring here plus one separate color for all135triples would give18colors on the retained graph. Sufficient construction only, not an equivalent restriction.'},
+                                                        'scope': 'A seventeen-coloring here plus one separate color for all 135 Lagrangian three-spaces would give eighteen colors on the retained graph. Sufficient construction only, not an equivalent restriction.'},
             'point_records': rows, 'negative_controls': controls,
             'checker_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             'written_criterion': 'Given a proper coloring of the513even vertices with17non15colors, odd line[z+e] has list{15} union the intersection of the two omitted colors over all Lagrangians containing e. Extending on the63nonzeroe nonorthogonality graph is necessary and sufficient.',
-            'written_necessary_condition': 'Vectors whose omitted-pair intersection is empty are pairwise symplectically orthogonal, hence their span is totally isotropic and there are at most7nonzero such vectors. At least56nonzero points have a nonempty intersection.',
-            'written_clique_condition': 'For every nonempty odd clique C, the union of its omitted-pair intersections must have at least|C|-1colors. All26895cliques enumerated. Its2640maximal cliques have sizes3,5,7 and vector sum0. These are necessary constraints, not a sufficient global list-coloring test.',
+            'written_necessary_condition': 'If the given even coloring admits an eighteen-color extension, then the nonzero vectors whose omitted-pair intersection is empty are pairwise symplectically orthogonal. Their span is totally isotropic, so at most seven such vectors occur and at least fifty-six nonzero points have a nonempty intersection.',
+            'written_clique_condition': 'If the given even coloring admits an eighteen-color extension, then for every nonempty odd clique C the union of its omitted-pair intersections has at least |C|-1 colors. All 26,895 cliques of the 63-vertex graph enumerated. Its 2,640 maximal cliques have sizes 3,5,7 and vector sum zero. These are necessary constraints, not a sufficient global list-coloring test.',
             'even_coloring_supplied': False, 'odd_list_coloring_supplied': False,
             'new_chromatic_bound': False, 'solver_run': False, 'lean_run': False,
             'scope': 'Written conditional extension theorem with exhaustive incidence/neighbor geometry checks. No actual17color even coloring,18color full witness or new lower bound. Exact full n7chromatic number remains open>=18. No seventeen-color anchor assignments imposed on eighteen colors.'}

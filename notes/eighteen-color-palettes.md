@@ -79,16 +79,19 @@ Applying this to every subclique gives the Hall conditions for coloring
 each clique. These local conditions are necessary; the extension
 criterion still requires a proper list coloring on the entire odd graph.
 
-The maximal odd cliques have sizes 3,5,7 and vector sum zero. To see this,
+In the 63-vertex graph on E minus {0}, the maximal cliques have sizes
+3,5,7 and vector sum zero. To see this,
 the Gram matrix of a k-clique has zero diagonal and ones off the diagonal.
 For even k it is nonsingular; for odd k its kernel is the span of the
-all-ones vector. A dependent clique must therefore have odd size and sum
+all-ones vector. A linearly dependent clique must therefore have odd size and sum
 zero; such a clique cannot be extended, since a common neighbor would
-pair to one with that zero sum. An independent clique of size below six
+pair to one with that zero sum. A linearly independent clique of size below six
 has a common neighbor by nondegeneracy and independent linear constraints.
-An independent six-clique extends by the sum of its six vectors. The
+A linearly independent six-clique extends by the sum of its six vectors. The
 Gram rank bounds every clique by seven. Thus the maximal cliques are
-exactly the dependent odd cliques described above.
+exactly the linearly dependent odd cliques described above. The isolated
+characteristic line is outside this 63-vertex domain; among all 64 odd
+lines it contributes an additional maximal singleton.
 
 The exact enumeration gives 336 maximal triangles, 2,016 maximal
 five-cliques and 288 maximal seven-cliques. In particular, for every one
