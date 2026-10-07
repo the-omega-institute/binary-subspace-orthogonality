@@ -1,0 +1,380 @@
+{
+  "status": "size_four_five_plus_six_odd_split3plus1_profile_excluded_by_partition_charge",
+  "dimension": 7,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "newly_excluded_profile": [
+    2,
+    5,
+    8,
+    0,
+    8
+  ],
+  "profile_columns": [
+    "k5",
+    "k6",
+    "A",
+    "B",
+    "C"
+  ],
+  "five_six_initial_raw_profiles": 46,
+  "five_six_total_excluded_profiles": 3,
+  "five_six_remaining_unexcluded_count": 43,
+  "five_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      0,
+      2,
+      7,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      4,
+      7
+    ],
+    [
+      0,
+      5,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      0,
+      2,
+      8,
+      6
+    ],
+    [
+      1,
+      0,
+      8,
+      1,
+      7
+    ],
+    [
+      1,
+      2,
+      0,
+      10,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      3,
+      7
+    ],
+    [
+      1,
+      4,
+      4,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      6,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      0,
+      1,
+      9,
+      6
+    ],
+    [
+      2,
+      0,
+      7,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      3,
+      6,
+      7
+    ],
+    [
+      2,
+      5,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      1,
+      8,
+      7
+    ],
+    [
+      2,
+      6,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      0,
+      0,
+      10,
+      6
+    ],
+    [
+      3,
+      0,
+      6,
+      3,
+      7
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      3,
+      4,
+      2,
+      7,
+      7
+    ],
+    [
+      3,
+      4,
+      8,
+      0,
+      8
+    ],
+    [
+      3,
+      5,
+      1,
+      8,
+      7
+    ],
+    [
+      3,
+      5,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      6,
+      0,
+      9,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      0,
+      5,
+      4,
+      7
+    ],
+    [
+      4,
+      2,
+      3,
+      6,
+      7
+    ],
+    [
+      4,
+      4,
+      1,
+      8,
+      7
+    ],
+    [
+      4,
+      4,
+      7,
+      1,
+      8
+    ],
+    [
+      4,
+      5,
+      0,
+      9,
+      7
+    ],
+    [
+      4,
+      5,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      6,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      0,
+      4,
+      5,
+      7
+    ],
+    [
+      5,
+      2,
+      2,
+      7,
+      7
+    ],
+    [
+      5,
+      4,
+      0,
+      9,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      2,
+      8
+    ],
+    [
+      5,
+      5,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      6,
+      4,
+      4,
+      8
+    ]
+  ],
+  "remaining_profiles_feasibility": "untested_no_coloring_or_exclusion_claim",
+  "three_six_raw_count_profiles": 48,
+  "three_six_feasibility": "untested",
+  "nonzero_functional_pair_controls": 21,
+  "common_value_one_points_per_distinct_pair": 2,
+  "five_point_local_defects": 448,
+  "conditional_partition_charge_controls": 1792,
+  "characteristic_charge_histogram": {
+    "nonzero": 1344,
+    "zero": 448
+  },
+  "six_point_local_defects": 1344,
+  "six_point_local_defects_per_odd_projection": 192,
+  "six_point_distinct_charges_per_odd_projection": {
+    "3": 32,
+    "12": 32,
+    "15": 32,
+    "48": 32,
+    "51": 32,
+    "60": 32,
+    "63": 32
+  },
+  "all_conditional_charge_joins_empty": true,
+  "array_and_bitmask_defect_catalogs_equal": true,
+  "five_configuration_sha256": "5d92e7e0fb4d1d1044d3e3c78273e4cb80e27efa47454cf3abb68d26c3c37b44",
+  "conditional_join_sha256": "ee2a74545265d6d3c024358ec9a4be78f912a350b6c405acd69e24eccfe03eea",
+  "six_configuration_sha256": "99b78ac2bcbab84ab8dd2bbfd0fe4f6abc28cec07672039a0ba92163928619f8",
+  "written_eight_spread_completion_used": true,
+  "new_proof_uses_finite_cover_or_spread_completion_enumeration": false,
+  "prior_spread_enumeration_rerun": false,
+  "all_small_classes_reenumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_and_Zenodo_PDF_changed": false,
+  "dependency_sha256": {
+    "results/dimension-7-five-six-affine.json": "d04efd6a42ccd217ebbaaf993fca1b4d4dd9c0b236b6bf3ccaa1430094ce415d",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252"
+  },
+  "checker_sha256": "405af93aed539a70e90b5661374e4774ad3ee195f57b908c0f8e5ece8b678ca2",
+  "proof_note_sha256": "f63f255bce2de6b34c260af0274b81ac7a7a257ef379edc2a664e7fc2f3d8685",
+  "scope": "Universal written equal-functional and partition-charge proof excludes only(2,5;8,0,8),without assuming h=0.448fixed-hole D5classes,1792conditional charge joins,and1344D6classes checked locally;not full colorings.43other5+6and48three-sixrawprofiles untested;size4..8andexactn7open>=19."
+}
