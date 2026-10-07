@@ -154,6 +154,12 @@ an exact omitted-pair list criterion on its 56 odd lines. Its 193900-clause
 formula is checked against direct substitution in the base encoding.
 The branch remains open and all other 31 ternary orbits remain available.
 
+The [odd-extension proof](notes/all14-odd-extension.md) determines the
+56-vertex odd graph exactly: independence number seven and chromatic
+number eight, with an explicit trace-field spread certificate. For a
+fixed proper even coloring, its exact omitted-pair lists give a 2-SAT
+extension test with at most 56 variables. The full branch remains open.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

@@ -226,3 +226,18 @@ input. Real-timer startup interruption tests and six collision controls
 verify these paths without native solver calls or deleting historical files.
 The recorded 120-second unknown report retains its original source hashes;
 there is no evidence that these exceptional-path defects affected it.
+
+A further Pro review approved the all14 mathematics and complete branch
+formula, while identifying two narrower gaps. A real SIGINT during an
+active callback's join could still interrupt cleanup before disposal,
+and dangling output symlinks bypassed the existence guard. Both were
+reproduced locally in both runners with real timer threads/OS signals
+and solver doubles. The shared lifetime context now defers SIGINT
+exceptions until callback cleanup and solver disposal finish, restoring
+the prior handler before delivering the interruption. During solving,
+SIGINT requests cooperative solver interruption. The output guard uses
+lexists, so dangling links occupy names too. Six regular-file and six
+dangling-link controls reject before input reads and preserve evidence.
+This establishes the sequential output-name contract; it does not
+reserve outputs against concurrent writers. No native solve was repeated
+and historical search reports retain their original source hashes.

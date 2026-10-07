@@ -5,6 +5,7 @@ from threading import TIMEOUT_MAX, Timer
 import argparse
 import hashlib
 import json
+import os
 import time
 
 from pysat.formula import CNF
@@ -12,6 +13,7 @@ from pysat.solvers import Solver
 
 from check_lines_planes_encoding import check_contents
 from encode_lines_planes_seventeen import build_encoding, encode_bytes
+from solver_lifetime import deferred_interrupt
 
 
 def digest(path):
@@ -29,7 +31,7 @@ def main():
     if not 0 < args.seconds <= TIMEOUT_MAX:
         parser.error('--seconds must be positive and at most threading.TIMEOUT_MAX')
     stem = 'dimension-7-lines-planes-17'
-    if any((args.output_dir / (stem + suffix)).exists() for suffix in ('-search.json', '-candidate.json', '.drat')):
+    if any(os.path.lexists(args.output_dir / (stem + suffix)) for suffix in ('-search.json', '-candidate.json', '.drat')):
         parser.error('output directory contains a previous same-stem attempt; use a fresh directory')
     contents = args.cnf.read_bytes()
     audit = check_contents(contents)
@@ -41,16 +43,21 @@ def main():
     report = {'dimension': 7, 'target_colors': 17, 'retained_vertices': 442,
               'variables': cnf.nv, 'clauses': len(cnf.clauses), 'cnf_sha256': hashlib.sha256(contents).hexdigest(),
               'audit': audit, 'construction': construction, 'search_sha256': digest(Path(__file__)),
+              'solver_lifetime_sha256': digest(Path(__file__).with_name('solver_lifetime.py')),
               'python_sat_version': version('python-sat'), 'solver': 'Glucose4',
               'time_limit_seconds': args.seconds, 'solver_run': True, 'lean_run': False}
     print(json.dumps({'event': 'audited_sufficient_construction_loaded', 'variables': cnf.nv, 'clauses': len(cnf.clauses)}), flush=True)
-    with Solver(name='g4', bootstrap_with=cnf.clauses, with_proof=True) as solver:
+    with deferred_interrupt() as interruption, Solver(name='g4', bootstrap_with=cnf.clauses, with_proof=True) as solver:
         started = time.monotonic()
         timer = Timer(args.seconds, solver.interrupt)
+        interruption['callback'] = solver.interrupt
         try:
+            if interruption['pending']:
+                raise KeyboardInterrupt
             timer.start()
             solved = solver.solve_limited(expect_interrupt=True)
         finally:
+            interruption['callback'] = None
             timer.cancel()
             if timer.ident is not None:
                 timer.join()

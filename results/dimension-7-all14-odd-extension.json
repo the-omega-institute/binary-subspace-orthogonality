@@ -1,0 +1,543 @@
+{
+  "status": "odd_graph_exact_eight_colors_and_conditional_two_list_encoding_checked",
+  "dimension": 7,
+  "isotropic_basis": [
+    3,
+    12,
+    48
+  ],
+  "dual_isotropic_basis": [
+    65,
+    71,
+    95
+  ],
+  "odd_graph_vertices": 56,
+  "odd_graph_edges": 784,
+  "odd_graph_degree": 28,
+  "all_1540_pair_adjacencies_checked": true,
+  "written_independence_upper_bound": "A graph-independent set spans a totally isotropic subspace of the nondegenerate alternating six-space E, of dimension at most three, hence contains at most seven nonzero vectors.",
+  "independence_number": 7,
+  "odd_graph_chromatic_number": 8,
+  "field_polynomial": "a^3+a+1",
+  "field_trace_values": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "trace_matrices": [
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ]
+  ],
+  "eight_color_classes_even_points": [
+    [
+      65,
+      71,
+      6,
+      95,
+      30,
+      24,
+      89
+    ],
+    [
+      66,
+      119,
+      53,
+      83,
+      17,
+      36,
+      102
+    ],
+    [
+      113,
+      75,
+      58,
+      108,
+      29,
+      39,
+      86
+    ],
+    [
+      114,
+      123,
+      9,
+      96,
+      18,
+      27,
+      105
+    ],
+    [
+      77,
+      116,
+      57,
+      99,
+      46,
+      23,
+      90
+    ],
+    [
+      78,
+      68,
+      10,
+      111,
+      33,
+      43,
+      101
+    ],
+    [
+      125,
+      120,
+      5,
+      80,
+      45,
+      40,
+      85
+    ],
+    [
+      126,
+      72,
+      54,
+      92,
+      34,
+      20,
+      106
+    ]
+  ],
+  "odd_line_color_certificate": [
+    {
+      "odd_generator": 122,
+      "even_point": 5,
+      "color": 6
+    },
+    {
+      "odd_generator": 121,
+      "even_point": 6,
+      "color": 0
+    },
+    {
+      "odd_generator": 118,
+      "even_point": 9,
+      "color": 3
+    },
+    {
+      "odd_generator": 117,
+      "even_point": 10,
+      "color": 5
+    },
+    {
+      "odd_generator": 110,
+      "even_point": 17,
+      "color": 1
+    },
+    {
+      "odd_generator": 109,
+      "even_point": 18,
+      "color": 3
+    },
+    {
+      "odd_generator": 107,
+      "even_point": 20,
+      "color": 7
+    },
+    {
+      "odd_generator": 104,
+      "even_point": 23,
+      "color": 4
+    },
+    {
+      "odd_generator": 103,
+      "even_point": 24,
+      "color": 0
+    },
+    {
+      "odd_generator": 100,
+      "even_point": 27,
+      "color": 3
+    },
+    {
+      "odd_generator": 98,
+      "even_point": 29,
+      "color": 2
+    },
+    {
+      "odd_generator": 97,
+      "even_point": 30,
+      "color": 0
+    },
+    {
+      "odd_generator": 94,
+      "even_point": 33,
+      "color": 5
+    },
+    {
+      "odd_generator": 93,
+      "even_point": 34,
+      "color": 7
+    },
+    {
+      "odd_generator": 91,
+      "even_point": 36,
+      "color": 1
+    },
+    {
+      "odd_generator": 88,
+      "even_point": 39,
+      "color": 2
+    },
+    {
+      "odd_generator": 87,
+      "even_point": 40,
+      "color": 6
+    },
+    {
+      "odd_generator": 84,
+      "even_point": 43,
+      "color": 5
+    },
+    {
+      "odd_generator": 82,
+      "even_point": 45,
+      "color": 6
+    },
+    {
+      "odd_generator": 81,
+      "even_point": 46,
+      "color": 4
+    },
+    {
+      "odd_generator": 74,
+      "even_point": 53,
+      "color": 1
+    },
+    {
+      "odd_generator": 73,
+      "even_point": 54,
+      "color": 7
+    },
+    {
+      "odd_generator": 70,
+      "even_point": 57,
+      "color": 4
+    },
+    {
+      "odd_generator": 69,
+      "even_point": 58,
+      "color": 2
+    },
+    {
+      "odd_generator": 62,
+      "even_point": 65,
+      "color": 0
+    },
+    {
+      "odd_generator": 61,
+      "even_point": 66,
+      "color": 1
+    },
+    {
+      "odd_generator": 59,
+      "even_point": 68,
+      "color": 5
+    },
+    {
+      "odd_generator": 56,
+      "even_point": 71,
+      "color": 0
+    },
+    {
+      "odd_generator": 55,
+      "even_point": 72,
+      "color": 7
+    },
+    {
+      "odd_generator": 52,
+      "even_point": 75,
+      "color": 2
+    },
+    {
+      "odd_generator": 50,
+      "even_point": 77,
+      "color": 4
+    },
+    {
+      "odd_generator": 49,
+      "even_point": 78,
+      "color": 5
+    },
+    {
+      "odd_generator": 47,
+      "even_point": 80,
+      "color": 6
+    },
+    {
+      "odd_generator": 44,
+      "even_point": 83,
+      "color": 1
+    },
+    {
+      "odd_generator": 42,
+      "even_point": 85,
+      "color": 6
+    },
+    {
+      "odd_generator": 41,
+      "even_point": 86,
+      "color": 2
+    },
+    {
+      "odd_generator": 38,
+      "even_point": 89,
+      "color": 0
+    },
+    {
+      "odd_generator": 37,
+      "even_point": 90,
+      "color": 4
+    },
+    {
+      "odd_generator": 35,
+      "even_point": 92,
+      "color": 7
+    },
+    {
+      "odd_generator": 32,
+      "even_point": 95,
+      "color": 0
+    },
+    {
+      "odd_generator": 31,
+      "even_point": 96,
+      "color": 3
+    },
+    {
+      "odd_generator": 28,
+      "even_point": 99,
+      "color": 4
+    },
+    {
+      "odd_generator": 26,
+      "even_point": 101,
+      "color": 5
+    },
+    {
+      "odd_generator": 25,
+      "even_point": 102,
+      "color": 1
+    },
+    {
+      "odd_generator": 22,
+      "even_point": 105,
+      "color": 3
+    },
+    {
+      "odd_generator": 21,
+      "even_point": 106,
+      "color": 7
+    },
+    {
+      "odd_generator": 19,
+      "even_point": 108,
+      "color": 2
+    },
+    {
+      "odd_generator": 16,
+      "even_point": 111,
+      "color": 5
+    },
+    {
+      "odd_generator": 14,
+      "even_point": 113,
+      "color": 2
+    },
+    {
+      "odd_generator": 13,
+      "even_point": 114,
+      "color": 3
+    },
+    {
+      "odd_generator": 11,
+      "even_point": 116,
+      "color": 4
+    },
+    {
+      "odd_generator": 8,
+      "even_point": 119,
+      "color": 1
+    },
+    {
+      "odd_generator": 7,
+      "even_point": 120,
+      "color": 6
+    },
+    {
+      "odd_generator": 4,
+      "even_point": 123,
+      "color": 3
+    },
+    {
+      "odd_generator": 2,
+      "even_point": 125,
+      "color": 6
+    },
+    {
+      "odd_generator": 1,
+      "even_point": 126,
+      "color": 7
+    }
+  ],
+  "conditional_capacity_bound": "For any subset R of the 56 odd points, |union I(e) over R| >= ceil(|R|/7) is necessary; in particular the global union has at least eight labels.",
+  "two_list_hypothesis": "I(e) must be the exact intersection of fifteen omitted pairs from one common proper sixteen-coloring of all 378 even vertices. This checker does not supply that even coloring or assert realizability of synthetic lists.",
+  "two_list_variables_maximum": 56,
+  "two_list_clauses_maximum": 1624,
+  "local_encoding_instances": 1728,
+  "local_boolean_assignments": 13824,
+  "SCC_feasibility_matches_local_exhaustion": true,
+  "empty_list_control": "immediate_empty_clause",
+  "oversized_list_rejected": true,
+  "checker_sha256": "8526e6b20b9fd801541336725bea9b18a5dd346cba979603a00a5d34a7dc6121",
+  "proof_note_sha256": "e10ee30c98f528d7cbbf7a333d00ffa89225df3448813d41e2ec0b275db132d9",
+  "native_solver_run": false,
+  "lean_run": false,
+  "even_coloring_supplied": false,
+  "branch_solved": false,
+  "full_n7_chromatic_number": "open_lower_bound18",
+  "scope": "Written odd-subgraph chi=8 and conditional exact2SAT criterion; finite GF8 spread witness/all odd adjacencies and exhaustive small synthetic encoding/SCC tests. No434vertex16coloring, branch exclusion, full18coloring or new full-graph bound."
+}

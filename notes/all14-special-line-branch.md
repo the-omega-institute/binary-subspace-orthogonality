@@ -73,6 +73,11 @@ the union of I(e), e in Q, must have at least |Q| labels. These are
 necessary conditions; nonempty lists and the clique inequalities alone
 are not asserted sufficient for a global extension.
 
+The [odd-extension analysis](all14-odd-extension.md) proves that this
+56-vertex graph has independence number seven and chromatic number
+eight, and gives an exact 2-SAT diagnostic for lists derived from a
+fixed proper even coloring. Neither result supplies that even coloring.
+
 The checker verifies all 135 fourteen-cliques, fifteen containing
 Lagrangians at each outside point, and all 5936 even/odd neighbor
 memberships, with exactly 106 even neighbors per odd line. This is
