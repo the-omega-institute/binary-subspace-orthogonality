@@ -1,0 +1,3907 @@
+{
+  "status": "complete_necessary_two_six_six_roots_and_marked_orbit_reduction",
+  "dimension": 7,
+  "profile": [
+    2,
+    6,
+    6,
+    7,
+    0,
+    8
+  ],
+  "characteristic_class_size": 4,
+  "catalog_counts": [
+    32,
+    22,
+    288
+  ],
+  "disjoint_ordered_defect_pairs": 384,
+  "ordered_roots": 384,
+  "distinct_49_point_sets": 384,
+  "every_remaining_set_has_unique_ordered_defect_pair": true,
+  "roots_by_ordered_hole_counts": [
+    {
+      "hole_counts": [
+        0,
+        0
+      ],
+      "roots": 16
+    },
+    {
+      "hole_counts": [
+        0,
+        1
+      ],
+      "roots": 88
+    },
+    {
+      "hole_counts": [
+        1,
+        0
+      ],
+      "roots": 64
+    },
+    {
+      "hole_counts": [
+        1,
+        1
+      ],
+      "roots": 216
+    }
+  ],
+  "full_marked_stabilizer_order": 8,
+  "remaining_set_orbits": 75,
+  "orbit_size_histogram": {
+    "2": 12,
+    "4": 36,
+    "8": 27
+  },
+  "orbits_by_ordered_hole_counts": [
+    {
+      "hole_counts": [
+        0,
+        0
+      ],
+      "orbits": 2
+    },
+    {
+      "hole_counts": [
+        0,
+        1
+      ],
+      "orbits": 11
+    },
+    {
+      "hole_counts": [
+        1,
+        0
+      ],
+      "orbits": 8
+    },
+    {
+      "hole_counts": [
+        1,
+        1
+      ],
+      "orbits": 54
+    }
+  ],
+  "eligible_heptad_count_histogram_over_representatives": {
+    "46": 3,
+    "52": 10,
+    "53": 7,
+    "55": 3,
+    "57": 7,
+    "58": 3,
+    "61": 7,
+    "62": 28,
+    "63": 7
+  },
+  "all_even_heptads": 288,
+  "anchored_heptads": 224,
+  "heptads_avoiding_M": 64,
+  "orbit_representatives": [
+    {
+      "remaining": "53844532396472435572698117884488193600",
+      "pure_six_q1": [
+        15,
+        17,
+        33,
+        114,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53844572328075641375151901522953245768",
+      "pure_six_q1": [
+        15,
+        17,
+        33,
+        114,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        15,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53864977060401156216333587291085116992",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53865016992004362018787370929550169160",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "53865342149344752132399759214165235296",
+      "pure_six_q1": [
+        3,
+        29,
+        45,
+        53,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 45,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "53865342149344752132406541002288010824",
+      "pure_six_q1": [
+        5,
+        27,
+        43,
+        51,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        51,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 44,
+      "eligible_heptads_avoiding_M": 18
+    },
+    {
+      "remaining": "53865342149344752132552916777814725696",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "53927528015332637864416252554233943616",
+      "pure_six_q1": [
+        63,
+        68,
+        90,
+        106,
+        114,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 45,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "53927566045430929104848427448010183776",
+      "pure_six_q1": [
+        63,
+        68,
+        90,
+        106,
+        114,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        9,
+        53,
+        85,
+        101,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53927567946935843666870036192698995784",
+      "pure_six_q1": [
+        63,
+        68,
+        90,
+        106,
+        114,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53927649711647169842734353797710353472",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        20,
+        36,
+        68,
+        114,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 39,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53947972685451059091860248866038649920",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        0,
+        3
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 51,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "53948378333643131747101431924453185120",
+      "pure_six_q1": [
+        3,
+        29,
+        45,
+        53,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 43,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53948378333643131747108213712575960648",
+      "pure_six_q1": [
+        5,
+        27,
+        43,
+        51,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        51,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 43,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53948378333643131747243329947860112488",
+      "pure_six_q1": [
+        9,
+        23,
+        39,
+        51,
+        53,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        51,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53948378333643131747254544966471652968",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        15,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          51
+        ],
+        [
+          15,
+          63
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 17
+    },
+    {
+      "remaining": "53948378333643131747254589488102675520",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 38,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53948378333643131756333845795707426368",
+      "pure_six_q1": [
+        15,
+        23,
+        39,
+        66,
+        68,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 38,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "53948416363741422996766020689483666528",
+      "pure_six_q1": [
+        15,
+        23,
+        39,
+        66,
+        68,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        9,
+        53,
+        85,
+        101,
+        126
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 37,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "53948418265246337558787629434172478536",
+      "pure_six_q1": [
+        15,
+        23,
+        39,
+        66,
+        68,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        15,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 39,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55256790873356298970512894748146439232",
+      "pure_six_q1": [
+        3,
+        29,
+        33,
+        102,
+        106,
+        114
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        3,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          51
+        ],
+        [
+          15,
+          63
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 47,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "55256877073597109463376688238462014528",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        63,
+        68,
+        72,
+        83,
+        99,
+        114
+      ],
+      "actual_defect_holes": [
+        3,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 40,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277195610632062885348559624781338176",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 51,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277235542235268687802343263246390344",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 53,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "55277281810873180571836908999953258048",
+      "pure_six_q1": [
+        23,
+        27,
+        51,
+        66,
+        80,
+        108
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        51,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 47,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277525199788424170514312082610361920",
+      "pure_six_q1": [
+        23,
+        29,
+        53,
+        68,
+        80,
+        106
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        0,
+        3
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 49,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277565131391629972968095721075414088",
+      "pure_six_q1": [
+        23,
+        29,
+        53,
+        68,
+        80,
+        106
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        0,
+        51
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          51
+        ],
+        [
+          0,
+          63
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 51,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "55277603794745817487567185114853447232",
+      "pure_six_q1": [
+        5,
+        27,
+        43,
+        51,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        51,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "55277603794745817487713516368749139552",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "55277603794745817487713560889700783712",
+      "pure_six_q1": [
+        15,
+        23,
+        27,
+        29,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277605696221717608543576635731252800",
+      "pure_six_q1": [
+        3,
+        29,
+        45,
+        53,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        3,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277605696221717608685474659138180168",
+      "pure_six_q1": [
+        9,
+        23,
+        39,
+        51,
+        53,
+        126
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        51,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          0
+        ],
+        [
+          63,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277605696221717608696689677749720648",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        15,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277605696221717608696734198701364808",
+      "pure_six_q1": [
+        15,
+        23,
+        27,
+        29,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        15,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 49,
+      "eligible_heptads_avoiding_M": 13
+    },
+    {
+      "remaining": "55277606250198671457563846276533360192",
+      "pure_six_q1": [
+        63,
+        66,
+        68,
+        72,
+        80,
+        96
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        57,
+        89,
+        105,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 42,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "55277646181801877260017629914998412360",
+      "pure_six_q1": [
+        63,
+        66,
+        68,
+        72,
+        80,
+        96
+      ],
+      "pure_six_q2": [
+        5,
+        9,
+        51,
+        83,
+        99,
+        126
+      ],
+      "actual_defect_holes": [
+        63,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 4
+    },
+    {
+      "remaining": "55277646894865923089692056501675497056",
+      "pure_six_q1": [
+        3,
+        29,
+        45,
+        53,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        20,
+        24,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277646894865923089692117507945535072",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        3,
+        18,
+        34,
+        53,
+        57,
+        78
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 47,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277646894865923089698838289798272584",
+      "pure_six_q1": [
+        5,
+        27,
+        43,
+        51,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        20,
+        24,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        51,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277646894865923089698872855846196808",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        5,
+        20,
+        36,
+        51,
+        57,
+        78
+      ],
+      "actual_defect_holes": [
+        15,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 13
+    },
+    {
+      "remaining": "55277646894865923089845169542638343232",
+      "pure_six_q1": [
+        15,
+        17,
+        39,
+        43,
+        45,
+        126
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        9,
+        30,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 55,
+      "eligible_anchored_heptads": 43,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277646894865923089845214065324987456",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        20,
+        24,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 58,
+      "eligible_anchored_heptads": 44,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277646894866220229845595814077273696",
+      "pure_six_q1": [
+        3,
+        29,
+        45,
+        53,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 40,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "55277646894866220229852377602200049224",
+      "pure_six_q1": [
+        5,
+        27,
+        43,
+        51,
+        57,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        51,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 38,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "55277646894866220229998753377726764096",
+      "pure_six_q1": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        126
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 46,
+      "eligible_anchored_heptads": 34,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "138935523160783382885572593389185144424",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        63,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 45,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "138935525696047404150711763674405966952",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        72,
+        85,
+        101,
+        116
+      ],
+      "actual_defect_holes": [
+        0,
+        63
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          51
+        ],
+        [
+          0,
+          63
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 61,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 13
+    },
+    {
+      "remaining": "138935568157429441692701438477054940744",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        63,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          0
+        ],
+        [
+          63,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "138935609356073647173696866307250755168",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        18,
+        34,
+        53,
+        57,
+        78
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 57,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "138935609356073647173703621655151416904",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        20,
+        36,
+        51,
+        57,
+        78
+      ],
+      "actual_defect_holes": [
+        63,
+        51
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "138935609356073647173849918341943563328",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        9,
+        30,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 36,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "138935609356073647173849918342999185000",
+      "pure_six_q1": [
+        63,
+        66,
+        92,
+        108,
+        116,
+        120
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        20,
+        24,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        63,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "138935609356073647183071108931622409288",
+      "pure_six_q1": [
+        5,
+        9,
+        51,
+        78,
+        92,
+        108
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        51,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "138935852748702711120965581723894158432",
+      "pure_six_q1": [
+        3,
+        9,
+        53,
+        78,
+        90,
+        106
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 36,
+      "eligible_heptads_avoiding_M": 16
+    },
+    {
+      "remaining": "138935852749939744170738345847014168168",
+      "pure_six_q1": [
+        23,
+        29,
+        53,
+        68,
+        80,
+        106
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        34,
+        66,
+        116,
+        120
+      ],
+      "actual_defect_holes": [
+        0,
+        15
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 49,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "139018561881003444447244926743007892576",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        0,
+        3
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "139018563782479344568228100052008473672",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        0,
+        0
+      ],
+      "ordered_hole_counts": [
+        0,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 52,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "139018604980466196561174149009385886816",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        18,
+        46,
+        66,
+        85,
+        89
+      ],
+      "actual_defect_holes": [
+        0,
+        3
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 47,
+      "eligible_heptads_avoiding_M": 15
+    },
+    {
+      "remaining": "139018604980495210559483971225063429192",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        20,
+        46,
+        68,
+        83,
+        89
+      ],
+      "actual_defect_holes": [
+        0,
+        0
+      ],
+      "ordered_hole_counts": [
+        0,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 52,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "139018604981123550049230283230104949832",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        5,
+        20,
+        36,
+        51,
+        57,
+        78
+      ],
+      "actual_defect_holes": [
+        0,
+        51
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          51
+        ],
+        [
+          0,
+          63
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 63,
+      "eligible_anchored_heptads": 52,
+      "eligible_heptads_avoiding_M": 11
+    },
+    {
+      "remaining": "139018604981123550049376579917952717928",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        15,
+        18,
+        20,
+        24,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        0,
+        15
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 51,
+      "eligible_heptads_avoiding_M": 11
+    },
+    {
+      "remaining": "139018604981123550049376649100230268008",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        34,
+        36,
+        40,
+        78
+      ],
+      "actual_defect_holes": [
+        0,
+        15
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "139018604981123847189530119230354494568",
+      "pure_six_q1": [
+        9,
+        23,
+        33,
+        106,
+        108,
+        120
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        0,
+        15
+      ],
+      "ordered_hole_counts": [
+        0,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 55,
+      "eligible_anchored_heptads": 44,
+      "eligible_heptads_avoiding_M": 11
+    },
+    {
+      "remaining": "139018645540372026797772781641910359112",
+      "pure_six_q1": [
+        5,
+        9,
+        51,
+        78,
+        92,
+        108
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        51,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          63
+        ],
+        [
+          63,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 43,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "139018888933001090735667254434182108256",
+      "pure_six_q1": [
+        3,
+        9,
+        53,
+        78,
+        90,
+        106
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 53,
+      "eligible_anchored_heptads": 41,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "139018964993197673216126280255271245376",
+      "pure_six_q1": [
+        3,
+        5,
+        57,
+        78,
+        86,
+        102
+      ],
+      "pure_six_q2": [
+        63,
+        66,
+        68,
+        89,
+        105,
+        120
+      ],
+      "actual_defect_holes": [
+        3,
+        63
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          63
+        ],
+        [
+          15,
+          51
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 52,
+      "eligible_anchored_heptads": 42,
+      "eligible_heptads_avoiding_M": 10
+    },
+    {
+      "remaining": "139019007460189419652365163161688872040",
+      "pure_six_q1": [
+        15,
+        23,
+        39,
+        66,
+        68,
+        120
+      ],
+      "pure_six_q2": [
+        9,
+        30,
+        40,
+        72,
+        99,
+        101
+      ],
+      "actual_defect_holes": [
+        15,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 58,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "139019010629315622713850176846565872704",
+      "pure_six_q1": [
+        15,
+        23,
+        39,
+        66,
+        68,
+        120
+      ],
+      "pure_six_q2": [
+        3,
+        5,
+        9,
+        30,
+        46,
+        78
+      ],
+      "actual_defect_holes": [
+        15,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          3,
+          15
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        48,
+        51,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 46,
+      "eligible_anchored_heptads": 32,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "140347784806184448240733237501750580832",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 48,
+      "eligible_heptads_avoiding_M": 14
+    },
+    {
+      "remaining": "140347786707660348361716410810751161928",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        5,
+        30,
+        36,
+        68,
+        99,
+        105
+      ],
+      "actual_defect_holes": [
+        63,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          0
+        ],
+        [
+          63,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "140347827905647200354662459768128575072",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        3,
+        18,
+        46,
+        66,
+        85,
+        89
+      ],
+      "actual_defect_holes": [
+        63,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 50,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "140347827905676214352972281983806117448",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        5,
+        20,
+        46,
+        68,
+        83,
+        89
+      ],
+      "actual_defect_holes": [
+        63,
+        0
+      ],
+      "ordered_hole_counts": [
+        1,
+        0
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          0
+        ],
+        [
+          63,
+          0
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 8,
+      "remaining_set_stabilizer_order": 1,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 62,
+      "eligible_anchored_heptads": 55,
+      "eligible_heptads_avoiding_M": 7
+    },
+    {
+      "remaining": "140347827906304850983018429989097182824",
+      "pure_six_q1": [
+        63,
+        78,
+        80,
+        102,
+        106,
+        108
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        63,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        51,
+        60
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 55,
+      "eligible_anchored_heptads": 43,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "140347871001474712538231753044187845696",
+      "pure_six_q1": [
+        5,
+        9,
+        51,
+        78,
+        92,
+        108
+      ],
+      "pure_six_q2": [
+        3,
+        30,
+        34,
+        66,
+        101,
+        105
+      ],
+      "actual_defect_holes": [
+        51,
+        3
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          3
+        ],
+        [
+          63,
+          15
+        ]
+      ],
+      "remaining_holes": [
+        12,
+        15,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 4,
+      "remaining_set_stabilizer_order": 2,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 58,
+      "eligible_anchored_heptads": 46,
+      "eligible_heptads_avoiding_M": 12
+    },
+    {
+      "remaining": "140347914101595115280516945531534447688",
+      "pure_six_q1": [
+        5,
+        9,
+        51,
+        78,
+        92,
+        108
+      ],
+      "pure_six_q2": [
+        15,
+        30,
+        46,
+        66,
+        68,
+        72
+      ],
+      "actual_defect_holes": [
+        51,
+        15
+      ],
+      "ordered_hole_counts": [
+        1,
+        1
+      ],
+      "marked_hole_orbit": [
+        [
+          51,
+          15
+        ],
+        [
+          63,
+          3
+        ]
+      ],
+      "remaining_holes": [
+        3,
+        12,
+        48,
+        60,
+        63
+      ],
+      "orbit_size": 2,
+      "remaining_set_stabilizer_order": 4,
+      "ordered_root_multiplicity": 1,
+      "eligible_heptads": 46,
+      "eligible_anchored_heptads": 38,
+      "eligible_heptads_avoiding_M": 8
+    }
+  ],
+  "root_multiset_sha256": "69ae8eacd009ba8734709890a47794af14bade6637b79d22b490078de365fe5a",
+  "root_group_actions_checked": 3072,
+  "symplectic_dot_checks": 131072,
+  "composition_point_checks": 8192,
+  "array_and_bitmask_catalogs_complete_roots_and_witnesses_equal": true,
+  "all_catalog_actions_and_intrinsic_defect_roles_checked": true,
+  "all_actual_defect_holes_transported_and_retained": true,
+  "orbit_stabilizer_identities_checked": true,
+  "complete_necessary_roots_constructed": true,
+  "new_cover_search": false,
+  "new_finite_cover_certificate": false,
+  "target_profile_excluded": false,
+  "nineteen_color_witness": false,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 39
+  },
+  "remaining_profile_lists_unchanged": true,
+  "exact_n7": "open_lower_bound19",
+  "inside_M_exclusion_inherits_prior_finite_cover": true,
+  "historical_cover_audit_rerun": false,
+  "new_cover_certificate_used_for_outside_case": false,
+  "prior_spread_enumeration_rerun": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_PDFs_changed": false,
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "checker_sha256": "88756825e0ac45b5fc373d42db217318e7107e2547160ba53321999c30f433a4",
+  "proof_note_sha256": "a0066c84150c9295832f029ffa65b9bc92998c67fcfba68d2eaecf8c107fcb9e",
+  "dependency_sha256": {
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+    "develop/check_dimension_seven_three_six_charge.py": "c16fa55aee66de38348124dac37a663186d478116d2f29439d0752bb86f7234e",
+    "develop/check_dimension_seven_two_six_six_charge.py": "f56d98adef33571282f97ad614ac3d8749c6cd01c1ee099977832fe3002d0d02",
+    "notes/dimension-seven-two-six-six-charge.md": "afe39d2c650632f94dcffc6049e91320bcf8630d33a7168578db6dfa83bb5e4d",
+    "results/dimension-7-two-six-six-charge.json": "45f4f02b072a1e33839bbd15d78687fa483d8aa7525dc633e248691139fa3cd9"
+  },
+  "scope": "Complete necessary 49-point sets and order-eight marked orbits; actual defect holes retained and all 288 heptads allowed. No covering search, exclusion or full coloring; 25/39 totals unchanged, exact n7 open >=19."
+}

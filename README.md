@@ -543,9 +543,22 @@ The [checker](develop/check_dimension_seven_two_six_six_charge.py) and
 1,344 fixed-M normalization controls and 384 disjoint defect pairs.
 The pure defects can contain zero, one or two holes in total; all four
 ordered allocations are retained. A later seven-heptad cover must allow
-all 288 even heptads. No full root/orbit family or cover search is performed;
+all 288 even heptads. That charge audit constructs no full root/orbit family;
 the target and 25/39 totals stay open, exact n7 remains open >=19,
 and both PDFs are preserved.
+
+The [complete two-six-six roots](notes/dimension-seven-two-six-six-roots.md)
+now construct all 384 distinct necessary 49-point remaining sets for
+`(2,6,6;7,0,8)`. Each set has a unique ordered pure-defect pair.
+Under the proved order-eight marked group they form 75 orbits,
+with size histogram 2/4/8:12/36/27. The
+[checker](develop/check_dimension_seven_two_six_six_roots.py) and
+[representative report](results/dimension-7-two-six-six-roots.json)
+retain the actual defect holes and all four ordered hole allocations,
+with 2/11/8/54 orbits. Each representative records the actual sextets,
+hole orbit and eligible rows from all 288 even heptads. Two independent
+complete constructions agree; no cover search or exclusion is performed.
+The 25/39 totals and exact n7 remain open >=19; both PDFs are preserved.
 
 ## Repository map
 
