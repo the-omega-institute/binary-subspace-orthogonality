@@ -259,6 +259,20 @@ only the two six-pure-odd-heptad count candidates above. Their common
 coloring realizability remains open. No six-Lagrangian completion,
 entire size-three branch exclusion or numerical-bound improvement is claimed.
 
+The subsequent [six-Lagrangian completion and recoloring theorem](notes/dimension-seven-six-holes.md)
+excludes the last two candidates and the entire characteristic-size-three
+branch. Independent original-vector/RREF Lagrangian catalogs and
+bitmask/array enumerations check all 3,584 six-member partial spreads
+containing a fixed member. Each leaves exactly three disjoint hole
+Lagrangians, uniquely. A pure odd six-point defect lies in one of them;
+moving its missing odd point into the defect yields a previously excluded
+characteristic-size-two, C=7 two-six, or one-five configuration.
+The [finite report](results/dimension-7-six-holes.json) binds the proof
+and dependencies. Any nineteen-coloring must now give the characteristic
+vector a class of size **four through eight**. Those sizes and the exact
+dimension-seven chromatic numbers remain open; the numerical lower bound
+stays nineteen. The preceding entries record the earlier intermediate bounds.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

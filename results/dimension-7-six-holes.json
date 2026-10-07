@@ -1,0 +1,398 @@
+{
+  "status": "six_lagrangians_complete_uniquely_and_characteristic_size_three_excluded",
+  "dimension": 7,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "size_three_entire_branch_excluded": true,
+  "one_five_branch_excluded": true,
+  "two_six_branch": "excluded",
+  "remaining_two_six_profiles": [],
+  "excluded_final_two_six_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ]
+  ],
+  "lagrangians": 135,
+  "rref_three_subspaces": 1395,
+  "independent_lagrangian_sets_equal": true,
+  "anchored_six_partial_spreads": 3584,
+  "independent_six_partial_spread_sets_equal": true,
+  "fixed_lagrangian": [
+    3,
+    12,
+    15,
+    48,
+    51,
+    60,
+    63
+  ],
+  "hole_points_per_partial_spread": 21,
+  "hole_lagrangians_per_partial_spread": 3,
+  "completion_unique": true,
+  "completion_histogram": {
+    "3": 3584
+  },
+  "lagrangian_set_sha256": "281052c907083241fb6bef8c268a488a599af58ffb6aa0d53bef221acb8ee7cb",
+  "rref_lagrangian_set_sha256": "281052c907083241fb6bef8c268a488a599af58ffb6aa0d53bef221acb8ee7cb",
+  "bitmask_partial_spread_set_sha256": "04349dd59ab8e0557ea37e2aea92841be034249dd8574b27b28cc15d3ee1795c",
+  "array_partial_spread_set_sha256": "04349dd59ab8e0557ea37e2aea92841be034249dd8574b27b28cc15d3ee1795c",
+  "completion_set_sha256": "e23afdd720e83fef50e60c15bc450f5b554227a6072af087b376d108b9e8b9aa",
+  "near_complete_six_point_hole_lagrangians": 0,
+  "hyperplane_hole_counts_checked": 225792,
+  "hyperplane_hole_count_histogram": {
+    "9": 150528,
+    "13": 75264
+  },
+  "pure_odd_six_local_controls": [
+    {
+      "projections": [
+        33,
+        53,
+        66,
+        86,
+        99,
+        119
+      ],
+      "completion": 20
+    },
+    {
+      "projections": [
+        20,
+        53,
+        66,
+        86,
+        99,
+        119
+      ],
+      "completion": 33
+    },
+    {
+      "projections": [
+        20,
+        33,
+        66,
+        86,
+        99,
+        119
+      ],
+      "completion": 53
+    },
+    {
+      "projections": [
+        20,
+        33,
+        53,
+        86,
+        99,
+        119
+      ],
+      "completion": 66
+    },
+    {
+      "projections": [
+        20,
+        33,
+        53,
+        66,
+        99,
+        119
+      ],
+      "completion": 86
+    },
+    {
+      "projections": [
+        20,
+        33,
+        53,
+        66,
+        86,
+        119
+      ],
+      "completion": 99
+    },
+    {
+      "projections": [
+        20,
+        33,
+        53,
+        66,
+        86,
+        99
+      ],
+      "completion": 119
+    },
+    {
+      "projections": [
+        45,
+        54,
+        71,
+        92,
+        106,
+        113
+      ],
+      "completion": 27
+    },
+    {
+      "projections": [
+        27,
+        54,
+        71,
+        92,
+        106,
+        113
+      ],
+      "completion": 45
+    },
+    {
+      "projections": [
+        27,
+        45,
+        71,
+        92,
+        106,
+        113
+      ],
+      "completion": 54
+    },
+    {
+      "projections": [
+        27,
+        45,
+        54,
+        92,
+        106,
+        113
+      ],
+      "completion": 71
+    },
+    {
+      "projections": [
+        27,
+        45,
+        54,
+        71,
+        106,
+        113
+      ],
+      "completion": 92
+    },
+    {
+      "projections": [
+        27,
+        45,
+        54,
+        71,
+        92,
+        113
+      ],
+      "completion": 106
+    },
+    {
+      "projections": [
+        27,
+        45,
+        54,
+        71,
+        92,
+        106
+      ],
+      "completion": 113
+    },
+    {
+      "projections": [
+        39,
+        58,
+        78,
+        83,
+        105,
+        116
+      ],
+      "completion": 29
+    },
+    {
+      "projections": [
+        29,
+        58,
+        78,
+        83,
+        105,
+        116
+      ],
+      "completion": 39
+    },
+    {
+      "projections": [
+        29,
+        39,
+        78,
+        83,
+        105,
+        116
+      ],
+      "completion": 58
+    },
+    {
+      "projections": [
+        29,
+        39,
+        58,
+        83,
+        105,
+        116
+      ],
+      "completion": 78
+    },
+    {
+      "projections": [
+        29,
+        39,
+        58,
+        78,
+        105,
+        116
+      ],
+      "completion": 83
+    },
+    {
+      "projections": [
+        29,
+        39,
+        58,
+        78,
+        83,
+        116
+      ],
+      "completion": 105
+    },
+    {
+      "projections": [
+        29,
+        39,
+        58,
+        78,
+        83,
+        105
+      ],
+      "completion": 116
+    }
+  ],
+  "pure_odd_six_completion_controls_checked": 21,
+  "characteristic_size_two_local_transfer_controls": 126,
+  "mixed_to_pure_even_six_local_transfer_controls": 672,
+  "other_six_to_five_local_transfer_controls": 288,
+  "transfer_targets": [
+    {
+      "source_profile": [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      "source_class": "characteristic",
+      "target_characteristic_size": 2,
+      "excluded_by": "characteristic_size_at_least_three"
+    },
+    {
+      "source_profile": [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      "source_class": "mixed",
+      "target_two_six_profile": [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      "excluded_by": "previous_C7_two_six_exclusion"
+    },
+    {
+      "source_profile": [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      "source_class": "characteristic",
+      "target_characteristic_size": 2,
+      "excluded_by": "characteristic_size_at_least_three"
+    },
+    {
+      "source_profile": [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      "source_class": "mixed",
+      "target_two_six_profile": [
+        2,
+        6,
+        1,
+        8,
+        7
+      ],
+      "excluded_by": "previous_C7_two_six_exclusion"
+    },
+    {
+      "source_profile": [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      "source_class": "other_defect",
+      "target_one_five_profile": [
+        2,
+        3,
+        1,
+        9,
+        7
+      ],
+      "excluded_by": "previous_entire_one_five_exclusion"
+    }
+  ],
+  "seven_or_nine_partial_spread_enumeration_rerun": false,
+  "all_six_point_classes_reenumerated": false,
+  "new_exact_cover_search": false,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "prior_report_sha256": {
+    "dimension-7-characteristic-three.json": "ec80548a5e199be6b242a5f43a011ebf2c4048eaf241c4b2f20f444de1430b91",
+    "dimension-7-one-five-exclusion.json": "88d24335c41f525a34ca4df2447fe76618d315dc199d5202b2d754b78c009c68",
+    "dimension-7-two-six-profiles.json": "77384d6b27fa78c4665848df2895871b58d6c73fd7f938659e9da9ce0540db5b",
+    "dimension-7-four-four-hole-cover.json": "e1a43630408e1ece5c8efbf9a084e8ca67746082a5d8f1e02327f2c58c056a7a"
+  },
+  "checker_sha256": "912a78d37a84aec4c0ab01474bf709e3654ede413202ea95a9ed307bcad0177f",
+  "proof_note_sha256": "28aefe0934c33673d1454929b9c5bc9a706fcdec9012042ce935cb70e0b7a5a8",
+  "scope": "Finite universal six-Lagrangian unique completion after a written fixed-member symplectic reduction, checked by independent original-vector/RREF catalogs and bitmask/array six-spread enumerations. Written span/intersection and conditional recoloring arguments exclude both remaining C6profiles and the entire characteristic-size-three branch. Earlier finite C8cover and other prior dependencies retained. Sizes4through8 and exactn7 remain open; lowerbound19 unchanged."
+}
