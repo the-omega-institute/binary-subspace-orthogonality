@@ -443,8 +443,18 @@ catalog constructions give 129,280 ordered roots and 127,984 distinct
 order 64 reduces the latter to 2,306 orbit representatives. The
 [checker](develop/check_dimension_seven_five_four_G_roots.py) and
 [report](results/dimension-7-five-four-G-roots.json) verify all maps,
-catalog invariance and the complete orbit partition. No covering search
-or G exclusion is claimed; Z/G and the raw profile remain open.
+catalog invariance and the complete orbit partition. That preparatory
+report supplies no covering exclusion; the subsequent proof is below.
+
+The subsequent [G-form covering theorem](notes/dimension-seven-five-four-G-cover.md)
+excludes all 2,306 representatives with a new independently audited
+[certificate](results/dimension-7-five-four-G-cover-proof.json).
+The [auditor](develop/check_dimension_seven_five_four_G_cover.py) checks
+3,351 reachable failed states, all 1,045 branches and 2,401 leaves;
+three invalid controls are rejected. Thus D/H/G are excluded and only
+the zero-five-even-sum form Z remains for this raw profile. The profile
+and 27/39 count totals remain open. This new finite proof is integrated
+into the extended working draft; exact n7 remains open >=19.
 
 The [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
