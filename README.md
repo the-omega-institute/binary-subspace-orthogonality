@@ -312,6 +312,15 @@ The size-four patterns 5+6 and 6+6+6 remain open with 46 and 48 raw
 count profiles; characteristic sizes four through eight and exact n=7
 remain open, with lower bound nineteen and no nineteen-color witness.
 
+The [four-odd affine-plane argument](notes/dimension-seven-five-six-affine.md)
+now excludes two size-four 5+6 profiles, (k5,k6;A,B,C)=(5,2;8,0,8)
+and (1,6;8,0,8). Their characteristic charge must be zero, contradicting
+the required quadratic charge product one. The [report](results/dimension-7-five-six-affine.json)
+checks 168 local partial classes. The other 44 raw 5+6 profiles and
+all 48 raw 6+6+6 profiles remain untested for joint feasibility.
+Characteristic sizes four through eight and exact n=7 remain open,
+with numerical lower bound nineteen.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

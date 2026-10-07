@@ -1,0 +1,480 @@
+{
+  "status": "two_size_four_five_plus_six_profiles_excluded_by_affine_plane_and_quadratic_charge",
+  "dimension": 7,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "five_six_initial_raw_profiles": 46,
+  "five_six_newly_excluded_profiles": [
+    {
+      "defect_even_counts": [
+        1,
+        6
+      ],
+      "defect_odd_counts": [
+        4,
+        0
+      ],
+      "saturated_counts": [
+        8,
+        0,
+        8
+      ],
+      "defect_quadratic_taus": [
+        0,
+        1
+      ],
+      "forced_characteristic_charge": 0,
+      "required_charge_product": 1,
+      "actual_equal_charge_product": 0,
+      "status": "excluded_by_four_odd_affine_plane_and_quadratic_charge"
+    },
+    {
+      "defect_even_counts": [
+        5,
+        2
+      ],
+      "defect_odd_counts": [
+        0,
+        4
+      ],
+      "saturated_counts": [
+        8,
+        0,
+        8
+      ],
+      "defect_quadratic_taus": [
+        0,
+        1
+      ],
+      "forced_characteristic_charge": 0,
+      "required_charge_product": 1,
+      "actual_equal_charge_product": 0,
+      "status": "excluded_by_four_odd_affine_plane_and_quadratic_charge"
+    }
+  ],
+  "five_six_remaining_unexcluded_count": 44,
+  "remaining_profile_columns": [
+    "k5",
+    "k6",
+    "A",
+    "B",
+    "C"
+  ],
+  "five_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      0,
+      2,
+      7,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      4,
+      7
+    ],
+    [
+      0,
+      5,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      0,
+      2,
+      8,
+      6
+    ],
+    [
+      1,
+      0,
+      8,
+      1,
+      7
+    ],
+    [
+      1,
+      2,
+      0,
+      10,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      3,
+      7
+    ],
+    [
+      1,
+      4,
+      4,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      6,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      0,
+      1,
+      9,
+      6
+    ],
+    [
+      2,
+      0,
+      7,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      3,
+      6,
+      7
+    ],
+    [
+      2,
+      5,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      5,
+      8,
+      0,
+      8
+    ],
+    [
+      2,
+      6,
+      1,
+      8,
+      7
+    ],
+    [
+      2,
+      6,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      0,
+      0,
+      10,
+      6
+    ],
+    [
+      3,
+      0,
+      6,
+      3,
+      7
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      3,
+      4,
+      2,
+      7,
+      7
+    ],
+    [
+      3,
+      4,
+      8,
+      0,
+      8
+    ],
+    [
+      3,
+      5,
+      1,
+      8,
+      7
+    ],
+    [
+      3,
+      5,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      6,
+      0,
+      9,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      0,
+      5,
+      4,
+      7
+    ],
+    [
+      4,
+      2,
+      3,
+      6,
+      7
+    ],
+    [
+      4,
+      4,
+      1,
+      8,
+      7
+    ],
+    [
+      4,
+      4,
+      7,
+      1,
+      8
+    ],
+    [
+      4,
+      5,
+      0,
+      9,
+      7
+    ],
+    [
+      4,
+      5,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      6,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      0,
+      4,
+      5,
+      7
+    ],
+    [
+      5,
+      2,
+      2,
+      7,
+      7
+    ],
+    [
+      5,
+      4,
+      0,
+      9,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      2,
+      8
+    ],
+    [
+      5,
+      5,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      6,
+      4,
+      4,
+      8
+    ]
+  ],
+  "remaining_profiles_feasibility": "untested_no_coloring_or_exclusion_claim",
+  "three_six_raw_count_profiles": 48,
+  "three_six_feasibility": "untested",
+  "functional_and_subset_plane_catalogs_equal": true,
+  "affine_planes": 7,
+  "even_lifts_per_functional": 8,
+  "five_point_local_defects": 56,
+  "six_point_local_defects": 112,
+  "local_array_and_bitmask_even_pair_catalogs_equal": true,
+  "all_local_complementary_characteristic_charges_zero": true,
+  "local_charge_histograms": {
+    "5": {
+      "5": 1,
+      "6": 1,
+      "9": 1,
+      "10": 1,
+      "17": 1,
+      "18": 1,
+      "20": 1,
+      "23": 1,
+      "24": 1,
+      "27": 1,
+      "29": 1,
+      "30": 1,
+      "33": 1,
+      "34": 1,
+      "36": 1,
+      "39": 1,
+      "40": 1,
+      "43": 1,
+      "45": 1,
+      "46": 1,
+      "53": 1,
+      "54": 1,
+      "57": 1,
+      "58": 1,
+      "65": 1,
+      "66": 1,
+      "68": 1,
+      "71": 1,
+      "72": 1,
+      "75": 1,
+      "77": 1,
+      "78": 1,
+      "80": 1,
+      "83": 1,
+      "85": 1,
+      "86": 1,
+      "89": 1,
+      "90": 1,
+      "92": 1,
+      "95": 1,
+      "96": 1,
+      "99": 1,
+      "101": 1,
+      "102": 1,
+      "105": 1,
+      "106": 1,
+      "108": 1,
+      "111": 1,
+      "113": 1,
+      "114": 1,
+      "116": 1,
+      "119": 1,
+      "120": 1,
+      "123": 1,
+      "125": 1,
+      "126": 1
+    },
+    "6": {
+      "3": 16,
+      "12": 16,
+      "15": 16,
+      "48": 16,
+      "51": 16,
+      "60": 16,
+      "63": 16
+    }
+  },
+  "local_configuration_sha256": "27300bcbaa83b192b1b3722afedb59a2eafc430c28a316ee714084538902e2c7",
+  "quadratic_pair_controls": 4096,
+  "written_eight_spread_completion_used": true,
+  "new_proof_uses_finite_cover_or_spread_completion_enumeration": false,
+  "prior_spread_enumeration_rerun": false,
+  "all_small_classes_reenumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "dependency_sha256": {
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252"
+  },
+  "checker_sha256": "da4f81763e28fab5ba13db035c68b50a514d0ee13491eb5c14aad535365853a3",
+  "proof_note_sha256": "d0bc165a582304184ebf68879e83ea37e97ebeb7438323984e34cd50ff8b6ab1",
+  "scope": "Universal written four-odd affine-plane geometry forces h=0; two-defect quadratic charge parity1 contradicts equal alternating charges. Excludes only(5,2;8,0,8)and(1,6;8,0,8).168fixed-hole partial defect controls,not full colorings.44other5+6and48three-sixraw profiles untested;size4..8andexactn7open>=19."
+}
