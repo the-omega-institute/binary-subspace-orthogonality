@@ -92,9 +92,9 @@ proof of Theorem~\ref{thm:seven-lower}.
 For $s=4$, the outside deficit is three, giving patterns $4$,
 $5+6$ and $6+6+6$. Their parity-count catalogs contain $9$, $46$
 and $48$ rows. The accompanying further analysis excludes the
-single-four pattern, twenty-one five-plus-six rows and ten three-six
-rows, leaving $25$ and $38$ count candidates. They are necessary
-profiles, not realized partitions. Of the remaining $63$, $61$
+single-four pattern, twenty-one five-plus-six rows and eleven three-six
+rows, leaving $25$ and $37$ count candidates. They are necessary
+profiles, not realized partitions. Of the remaining $62$, $60$
 have $C\in\{6,7,8\}$ and already satisfy
 \eqref{eq:seven-hole-capacity}; two have $C=5$. The profile
 $(m_5,m_6;A,B,C)=(5,4;6,2,8)$ is excluded: its four exhaustive
@@ -149,13 +149,34 @@ allocations retain $2,11,8,54$ representatives, and the cover
 catalog therefore includes all $288$ even heptads: $224$ anchored
 in $M$ and $64$ avoiding $M$. A new independently checked finite
 certificate excludes every representative's seven-heptad cover.
-Four three-six rows with $C=8$ remain. This is a partial case analysis.
+
+The profile $(4,4,6;7,0,8)$ admits a direct recoloring reduction.
+Let $D_1,D_2$ be its four-even/two-odd six-defects and $P$ its
+pure even sextet. Their four odd projections lie in the hole
+Lagrangian $M$. The charge-member lemma in the package names
+them $a,b$ and $c,d$ so that the defect charges are $b,d$,
+and their even sums are $a,c$. The characteristic projections
+are the three unused points of $M\setminus\{0\}$, giving
+$h=a+b+c+d$. If $q$ is the sum of $P$,
+\eqref{eq:seven-charge} forces $q=a+c\in M\setminus\{0\}$.
+The nonsingular sextet Gram matrix gives $p\cdot q=1$ for every
+$p\in P$, so $z+q$ can be moved into $P$ to form a mixed heptad.
+Its projection is a hole, so $z+q$ comes from the characteristic
+class or a mixed defect. In the first case the characteristic
+size becomes three, with two four-even six-defects and saturated
+counts $(7,1,8)$, excluded by the package's size-three two-six
+theorem. In the second case $q$ differs from $a,c$, so it is
+$b$ or $d$; removing that odd member gives the size-four
+five-plus-six profile $(4,4;7,1,8)$, excluded by the four-even-pair
+theorem. These exact-profile transfers inherit the two theorems'
+finite covering premises and require no new covering search.
+Three three-six rows with $C=8$ remain. This is a partial case analysis.
 The package records its written reductions and finite dependencies;
 it supplies no uniform exclusion of all remaining profiles.
 
 The further analysis also excludes $s<4$. Characteristic sizes
 $4$ through $8$ remain open, and larger $s$ introduce outside
-deficits $4$ through $7$. Closing the $63$ remaining size-four count candidates
+deficits $4$ through $7$. Closing the $62$ remaining size-four count candidates
 would therefore not finish the nineteen-color problem. Excluding
 every nineteen-color line coloring would improve the lower bound
 to twenty, without establishing a matching upper bound. Conversely,

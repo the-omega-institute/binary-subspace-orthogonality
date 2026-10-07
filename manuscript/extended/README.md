@@ -82,3 +82,21 @@ This removes exactly one three-six row, leaving 25/38 candidates,
 including four three-six C=8 rows. Reproduce the new builder and auditor
 with the commands in its proof note. The extended draft includes this
 result; exact n7 remains open >=19. The submitted snapshot is preserved.
+
+The [transferable pure-six sum](../../notes/dimension-seven-four-four-six-charge.md)
+also excludes `(4,4,6;7,0,8)`. Charge forces the pure sextet's sum
+q=a+c into the hole Lagrangian M. Moving z+q into that sextet
+produces either the previously excluded size-three two-six branch
+or the size-four five-plus-six profile `(4,4;7,1,8)`.
+The written reduction inherits both theorems' historical finite
+cover premises. Its new local auditor checks 840 odd-role assignments,
+672 mixed-six classes, 224 completions and 2,429,952 compatible
+disjoint local triples, plus source and certificate hash bindings.
+It runs no new cover search and does not rerun historical audits.
+Exactly one further three-six row is removed: the current totals
+are 25/37, with three three-six C=8 rows, 60 candidates with C=6..8
+and two with C=5. Exact n7 remains open >=19. Reproduce from the root:
+
+```sh
+python3 develop/check_dimension_seven_four_four_six_charge.py --report /tmp/n7-four-four-six-charge.json
+```

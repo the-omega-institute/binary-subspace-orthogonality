@@ -574,6 +574,19 @@ this three-six row, leaving 25 five-plus-six and 38 three-six candidates.
 Four three-six C=8 rows remain. The extended working draft incorporates
 the result; the submitted snapshot is preserved and exact n7 stays open >=19.
 
+The [transferable pure-six sum](notes/dimension-seven-four-four-six-charge.md)
+excludes `(4,4,6;7,0,8)` by a written recoloring into two precisely
+matched earlier exclusions. Charge forces q=a+c into M; moving z+q
+to the pure sextet gives either the size-three two-six branch or
+the size-four five-plus-six profile `(4,4;7,1,8)`. Both historical
+finite cover premises are retained. The
+[local auditor](develop/check_dimension_seven_four_four_six_charge.py) and
+[report](results/dimension-7-four-four-six-charge.json) check 840 role
+assignments and all 2,429,952 compatible disjoint local triples,
+plus inherited hash bindings, without a new cover search or rerunning
+old audits. The extended draft includes the result; current totals
+are 25 five-plus-six and 37 three-six candidates. Exact n7 stays open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
