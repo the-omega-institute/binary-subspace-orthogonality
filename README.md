@@ -533,6 +533,20 @@ Its archived 27/39 totals predate the Z exclusion; the new Z covering
 report retains its updated complete lists with totals 26/39; the new
 three-even/pure-six covering report records the subsequent 25/39 lists.
 
+The [two-even/four-odd three-six charge reduction](notes/dimension-seven-two-six-six-charge.md)
+reduces `(2,6,6;7,0,8)` to one necessary outside-M marked form.
+Recoloring excludes the inside-M sums using the earlier `(2,6;7,1,8)`
+theorem and its historical finite cover input. The remaining pure-six
+sums normalize to 65 and 113 with full marked stabilizer order eight.
+The [checker](develop/check_dimension_seven_two_six_six_charge.py) and
+[local report](results/dimension-7-two-six-six-charge.json) verify all
+1,344 fixed-M normalization controls and 384 disjoint defect pairs.
+The pure defects can contain zero, one or two holes in total; all four
+ordered allocations are retained. A later seven-heptad cover must allow
+all 288 even heptads. No full root/orbit family or cover search is performed;
+the target and 25/39 totals stay open, exact n7 remains open >=19,
+and both PDFs are preserved.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
