@@ -506,6 +506,19 @@ verify two independent catalog/root constructions, all group actions
 and every orbit. No cover search or exclusion is performed; the
 26/39 count totals and exact n7 remain open >=19. Both PDFs are preserved.
 
+The [three-even/pure-six covering theorem](notes/dimension-seven-three-six-cover.md)
+excludes all three marked forms of `(3,6;6,2,8)` with a new
+[certificate](results/dimension-7-three-six-cover-proof.json).
+The [auditor](develop/check_dimension_seven_three_six_cover.py) reconstructs
+the complete roots and orbit partitions, then verifies all 248/474/557
+representatives, 1,949 reachable failed states, 676 branches and 1,332
+leaves. Three invalid controls are rejected. The
+[report](results/dimension-7-three-six-cover-check.json) removes exactly
+this raw row from the preceding lists, leaving 25 five-plus-six and
+39 three-six candidates. No five-plus-six C=8 row remains; five
+three-six C=8 rows remain. The extended draft incorporates this
+partial result; exact n7 remains open >=19.
+
 The earlier [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
@@ -517,7 +530,8 @@ Sizes five through eight require additional branches. No uniform
 exclusion of the remaining family or completion-time estimate is
 established; the completed lower bound 19 is independent of this work.
 Its archived 27/39 totals predate the Z exclusion; the new Z covering
-report retains the updated complete remaining lists with totals 26/39.
+report retains its updated complete lists with totals 26/39; the new
+three-even/pure-six covering report records the subsequent 25/39 lists.
 
 ## Repository map
 

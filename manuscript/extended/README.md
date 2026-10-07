@@ -49,7 +49,7 @@ separate spread-completion or covering enumerations. See
 `notes/dimension-seven-profile-scope.md` for their written arguments,
 reproduction commands, and precise dependencies.
 
-The latest [Z exclusion](../../notes/dimension-seven-five-four-Z-cover.md)
+The [Z exclusion](../../notes/dimension-seven-five-four-Z-cover.md)
 uses the proved 128-element marked stabilizer and a newly audited finite
 covering certificate. Together with the separate D/H/G exclusions, it
 closes exactly the specified raw profile, leaving 26 five-plus-six and
@@ -58,3 +58,14 @@ with the commands in the Z proof note. The scope auditor above retains
 its earlier snapshot of 27/39 candidates; the Z covering auditor
 independently reconstructs the count catalogs and records the one-row
 update. The exact dimension-seven chromatic numbers remain open >=19.
+
+The subsequent [three-even/pure-six exclusion](../../notes/dimension-seven-three-six-cover.md)
+closes `(3,6;6,2,8)` using its own three-form geometry, full marked
+groups and complete necessary roots. The new auditor checks all
+248/474/557 representatives and 1,949 reachable failed states,
+including every one of 676 branches and 1,332 leaves. This leaves
+25 five-plus-six and 39 three-six candidates, of which 62 have six
+through eight pure odd heptads and two have five. Reproduce the
+new builder and auditor using the commands in its proof note;
+earlier covering certificates are not proof inputs. The extended
+draft includes this result, with exact n7 still open >=19.

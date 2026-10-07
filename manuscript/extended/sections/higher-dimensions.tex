@@ -92,9 +92,9 @@ proof of Theorem~\ref{thm:seven-lower}.
 For $s=4$, the outside deficit is three, giving patterns $4$,
 $5+6$ and $6+6+6$. Their parity-count catalogs contain $9$, $46$
 and $48$ rows. The accompanying further analysis excludes the
-single-four pattern, twenty five-plus-six rows and nine three-six
-rows, leaving $26$ and $39$ count candidates. They are necessary
-profiles, not realized partitions. Of the remaining $65$, $63$
+single-four pattern, twenty-one five-plus-six rows and nine three-six
+rows, leaving $25$ and $39$ count candidates. They are necessary
+profiles, not realized partitions. Of the remaining $64$, $62$
 have $C\in\{6,7,8\}$ and already satisfy
 \eqref{eq:seven-hole-capacity}; two have $C=5$. The profile
 $(m_5,m_6;A,B,C)=(5,4;6,2,8)$ is excluded: its four exhaustive
@@ -104,13 +104,32 @@ of order $128$, including exchange of the two mixed classes, reduces
 $1\,271\,424$ necessary remaining sets to $10\,837$ representatives.
 A finite failed-state proof excludes every representative and hence
 closes this raw profile. The other three forms retain their separate
-certificates. This is a partial case analysis.
+certificates.
+
+The profile $(m_5,m_6;A,B,C)=(3,6;6,2,8)$ is also excluded.
+Let $r$ be the sum of the five-class's three even members,
+$q$ the pure-six sum, $a,d$ its five-class odd projections,
+and $b,c$ the mixed projections in the hole Lagrangian $M$.
+Equations~\eqref{eq:seven-charge} and
+\eqref{eq:seven-quadratic-charge} give
+$q+r=b+c$ and $r\cdot(b+c)=0$, while
+$r\cdot a=r\cdot d=1$ puts $r$ outside $M$.
+The nonzero functional $\ell(x)=r\cdot x$ therefore gives three
+exhaustive role patterns: either $\ell(b)=\ell(c)=1$ and
+$a+d=b+c$, or both values are zero and $a+d$ is $b+c$ or
+one of $b,c$. The pure-six defect has one actual hole with
+$\ell(t)=1$. Their full marked stabilizers have orders $32,32,16$;
+they retain both mixed roles and transport the actual hole.
+Complete necessary-root catalogs reduce to $248,474,557$
+representatives. A new independently audited failed-state
+certificate excludes every six-heptad cover, closing the only
+remaining five-plus-six row with $C=8$. This is a partial case analysis.
 The package records its written reductions and finite dependencies;
 it supplies no uniform exclusion of all remaining profiles.
 
 The further analysis also excludes $s<4$. Characteristic sizes
 $4$ through $8$ remain open, and larger $s$ introduce outside
-deficits $4$ through $7$. Closing the $65$ remaining size-four count candidates
+deficits $4$ through $7$. Closing the $64$ remaining size-four count candidates
 would therefore not finish the nineteen-color problem. Excluding
 every nineteen-color line coloring would improve the lower bound
 to twenty, without establishing a matching upper bound. Conversely,
