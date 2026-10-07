@@ -344,11 +344,24 @@ require A+P>=7 when C=8, while fourteen require 2A+B+2P+R>=14 when C=7.
 The C=8 exclusions use written eight-spread completion; the C=7 exclusions
 retain the existing finite seven-spread completion dependency.
 The [report](results/dimension-7-hole-capacity.json) preserves all remaining
-rows: fifteen of 46 raw 5+6 profiles and nine of 48 raw 6+6+6 profiles
-are excluded; the other 31 and 39 remain unexcluded with joint feasibility
-untested. This is a written capacity theorem with small coordinate and count
+rows: at that stage fifteen of 46 raw 5+6 profiles and nine of 48 raw 6+6+6
+profiles were excluded. This is a written capacity theorem with small coordinate and count
 controls, without a new spread enumeration or covering search.
 Characteristic sizes four through eight and exact n7 remain open >=19.
+
+The [common-even-sum analysis](notes/dimension-seven-five-six-cover.md)
+now excludes (2,6;7,1,8) by reducing it to the existing checked 384-root
+hole-cover certificate. Its pure even six-point defect has completion
+charge r+b in M, so it contains no even hole points; seven anchored heptads
+and the two forced six-clique sums normalize to the certificate's data.
+Both six-class role assignments and zero/nonzero characteristic charge
+are retained. The same note gives a uniform written parity test closing
+all four C=8,B=0 raw rows, newly excluding (3,4;8,0,8).
+The [report](results/dimension-7-five-six-cover.json) rechecks the existing
+cover without a new search and records both proof scopes. Seventeen of
+46 raw 5+6 and nine of 48 raw 6+6+6 profiles are now excluded; the other
+29 and 39 remain unexcluded with joint feasibility untested. Characteristic
+sizes four through eight and exact n7 remain open >=19, with no new Lean claim.
 Characteristic sizes four through eight and exact n=7 remain open,
 with numerical lower bound nineteen.
 
