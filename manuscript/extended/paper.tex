@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{problem}[theorem]{Problem}
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\F}{\mathbb F_2}
+\newcommand{\OG}{\mathcal O}
+\newcommand{\AG}{\mathbb{AG}}
+\newcommand{\Span}{\operatorname{span}}
+\title{Clique and chromatic numbers of binary subspace orthogonality graphs}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd; The Omega Institute.
+  \href{mailto:auric@aelf.io}{auric@aelf.io}.}
+  \and
+  Reza Nikandish\thanks{Department of Mathematics,
+  Jundi-Shapur University of Technology, Dezful, Iran.
+  \href{mailto:r.nikandish@ipm.ir}{r.nikandish@ipm.ir}
+  (corresponding author).}
+  \and
+  Wenlin Zhang\thanks{National University of Singapore; The Omega Institute.
+  \href{mailto:e1327962@u.nus.edu}{e1327962@u.nus.edu}.}}
+\date{October 8, 2026\\[0.5ex]\small Extended working draft}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $\OG_n^*$ be the graph whose vertices are the nonzero subspaces of
+$\F^n$, with two distinct vertices adjacent when every vector of one is
+orthogonal to every vector of the other, and let $\Gamma_n$ be its
+induced subgraph on the one-dimensional subspaces. We prove
+\[
+  \omega(\OG_n^*)=\max\bigl\{\,n,\; N(\lfloor n/2\rfloor)+(n \bmod 2)\,\bigr\}
+  \qquad (n\ge 1),
+\]
+where $N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2$ is the number of nonzero
+subspaces of $\F^r$. The proof is algebraic: it sums the radicals of an
+arbitrary clique and passes to the resulting orthogonal quotient. In
+dimension six we show, with computer-assisted certificates, that
+$\chi(\OG_6^*)=15$ and $\chi(\Gamma_6)=12$, so the full subspace graph
+needs exactly three more colors than its line subgraph. The lower bound
+for $\Gamma_6$ comes from a weighted independent-set bound; both upper
+bounds are explicit colorings verified by independent checkers, and the
+clique theorem and the $15$-coloring are also formalized in Lean,
+with native evaluation for the finite checks in the latter. We
+further show that no proper coloring of $\OG_6^*$ with the prescribed
+clique colors is invariant under the stabilizer of the fixed totally
+isotropic $3$-space, and we prove $\chi(\Gamma_7)\geq19$ and hence
+$\chi(\OG_7^*)\geq19$, exceeding the clique number $16$.
+The dimension-seven obstruction combines quadratic parity with a
+universal completion theorem for eight disjoint Lagrangians.
+We also derive common count and charge constraints for a possible
+nineteen-coloring. The exact dimension-seven chromatic numbers remain open.
+\end{abstract}
+
+\medskip
+\noindent\textbf{2020 Mathematics Subject Classification:}
+05C15, 05C25, 05C69, 13A15, 68V20
+
+\medskip
+\noindent\textbf{Key Words:}
+Orthogonality graph, binary subspace, clique number,
+chromatic number, formal verification.
+
+\input{sections/introduction}
+\input{../sections/clique}
+\input{../sections/lines}
+\input{../sections/chromatic-six}
+\input{../sections/geometry}
+\input{sections/dimension-seven}
+\input{sections/higher-dimensions}
+\input{sections/verification}
+\section*{Declaration of generative AI use}
+During preparation of this manuscript, DeepSeek (through deepseek.com and
+its mobile application) was used for code generation, diagnostic analysis,
+and language editing. OpenAI's Codex was used for mathematical exploration
+and proof development, code generation, formalization support, verification
+diagnostics, and manuscript editing. Mathematical arguments and computational
+certificates are supported by the proofs and checks described in this paper;
+the scope of formal verification, including native evaluation, is stated in
+Section~\ref{sec:verification}. AI-generated material requires author review.
+The authors take full responsibility for the mathematical claims, code,
+certificates, and final text. These tools are not authors and bear no
+responsibility for the content.
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{AndersonNaseer1993}
+D.~D.~Anderson and M.~Naseer,
+\emph{Beck's coloring of a commutative ring},
+J.\ Algebra \textbf{159} (1993), 500--514.
+
+\bibitem{AndersonLivingston1999}
+D.~F.~Anderson and P.~S.~Livingston,
+\emph{The zero-divisor graph of a commutative ring},
+J.\ Algebra \textbf{217} (1999), 434--447.
+
+\bibitem{Beck1988}
+I.~Beck,
+\emph{Coloring of commutative rings},
+J.\ Algebra \textbf{116} (1988), 208--226.
+
+\bibitem{BehboodiRakeei2011a}
+M.~Behboodi and Z.~Rakeei,
+\emph{The annihilating-ideal graph of commutative rings I},
+J.\ Algebra Appl.\ \textbf{10} (2011), 727--739.
+
+\bibitem{BehboodiRakeei2011b}
+M.~Behboodi and Z.~Rakeei,
+\emph{The annihilating-ideal graph of commutative rings II},
+J.\ Algebra Appl.\ \textbf{10} (2011), 741--753.
+
+\bibitem{BrouwerCohenNeumaier1989}
+A.~E.~Brouwer, A.~M.~Cohen and A.~Neumaier,
+\emph{Distance-Regular Graphs}, Springer, 1989.
+
+\bibitem{BrouwerHaemers2012}
+A.~E.~Brouwer and W.~H.~Haemers,
+\emph{Spectra of Graphs}, Springer Universitext, 2012.
+
+\bibitem{Cameron1991}
+P.~J.~Cameron,
+\emph{Projective and Polar Spaces}, QMW Maths Notes \textbf{13},
+Queen Mary and Westfield College, 1991.
+
+\bibitem{GodsilRoyle2001}
+C.~Godsil and G.~Royle,
+\emph{Algebraic Graph Theory}, Springer GTM \textbf{207}, 2001.
+
+\bibitem{Lovasz1978}
+L.~Lov\'asz,
+``Kneser's conjecture, chromatic number, and homotopy,''
+J.\ Combin.\ Theory Ser.\ A \textbf{25} (1978), no.~3, 319--324.
+
+\bibitem{Package}
+H.~Ma, R.~Nikandish and W.~Zhang,
+\emph{Binary subspace orthogonality graphs: research and
+reproducibility workspace},
+\url{https://github.com/the-omega-institute/binary-subspace-orthogonality}.
+
+\bibitem{MacWilliamsSloane1977}
+F.~J.~MacWilliams and N.~J.~A.~Sloane,
+\emph{The Theory of Error-Correcting Codes}, North-Holland, 1977.
+
+\bibitem{Nikandish2026}
+R.~Nikandish,
+\emph{Annihilating-Ideal Graphs and Orthogonality Graphs over
+\(\mathbb F_2\)}, arXiv:2609.22769v1, 2026.
+
+\end{thebibliography}
+
+\end{document}

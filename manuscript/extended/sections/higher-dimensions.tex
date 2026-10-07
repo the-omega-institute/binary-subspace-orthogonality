@@ -1,0 +1,158 @@
+\section{Nineteen-color constraints and higher-dimensional questions}
+\label{sec:higher}
+
+Theorem~\ref{thm:seven-lower} proves a numerical lower bound;
+deciding whether nineteen colors suffice is a separate problem.
+We give common necessary conditions for a hypothetical
+nineteen-color line coloring and a general reduction for the
+full-subspace problem.
+
+\subsection{Deficits, projected charges and hole capacity}
+
+Let $C_z$ be the class containing $z$, and put $s=|C_z|$.
+Every other member of $C_z$ is odd, and Lemma~\ref{lem:seven-capacity}
+gives $s\leq8$. The other eighteen classes have capacity seven
+and contain $127-s$ vertices. If $D_1,\ldots,D_r$ are the
+undersized classes, with sizes $k_i$, then
+\begin{equation}\label{eq:seven-deficit}
+\sum_{i=1}^r(7-k_i)=s-1.
+\end{equation}
+Write $m_i,o_i$ for their even and odd counts, $m=\sum_i m_i$,
+and let $A,B,C$ count the saturated pure even, mixed and pure
+odd heptads. Counting both parities gives
+\[
+7A+6B+m=63,\qquad
+B+7C+\sum_i o_i+s=64,\qquad A+B+C=18-r.
+\]
+Using $\sum_i k_i=7r-(s-1)$, these equations become
+\begin{equation}\label{eq:seven-counts}
+B=m+7t,\qquad A=9-m-6t,\qquad C=9-r-t
+\end{equation}
+for an integer $t$ with nonnegative counts. The same formulas
+apply to every characteristic size; $s$ determines the defect
+patterns through \eqref{eq:seven-deficit}.
+
+Let $\pi(v)=v+(v\cdot z)z$, $h=\sum_{v\in C_z}\pi(v)$, and
+$w_i=\sum_{v\in D_i}\pi(v)$. Every saturated class has projected
+sum zero. For a pure even heptad this was proved in
+Theorem~\ref{thm:seven-lower}; for a pure odd heptad it follows
+by summing a Lagrangian's nonzero points. In a mixed class the
+six even vectors form a basis of $E$, since $J_6+I_6$ is invertible.
+Their sum and the odd member's projection both pair to one with
+each basis member and are therefore equal. The full projected
+sum is zero, so
+\begin{equation}\label{eq:seven-charge}
+\sum_i w_i=h.
+\end{equation}
+
+For a quadratic refinement $q$ of $E$, an independent class with
+$k$ members and $o$ odd members satisfies
+\[
+\sum_v q(\pi(v))
+ =q\Bigl(\sum_v\pi(v)\Bigr)+\binom{k}{2}+\binom{o}{2}
+ \quad\text{in }\F.
+\]
+The characteristic projections are pairwise orthogonal, and
+contribute $q(h)$. A pure even or mixed heptad contributes one;
+a pure odd heptad contributes zero. Summing over the partition
+and polarizing \eqref{eq:seven-charge} gives
+\begin{equation}\label{eq:seven-quadratic-charge}
+\sum_{i<j} w_i\cdot w_j
+ =A+B+\sum_i\left(\binom{k_i}{2}+\binom{o_i}{2}\right)
+ \quad\text{in }\F.
+\end{equation}
+These identities allow $h=0$ and do not assume that individual
+defect charges lie in a hole Lagrangian.
+
+There is a common capacity inequality whenever the $C$ pure
+odd heptads leave $d=9-C$ disjoint hole Lagrangians. Every
+pure even heptad meets each isotropic side at most once. A mixed
+class's odd projection forbids one whole side, so its even members
+occupy at most $d-1$ holes. A pure odd defect contributes no even
+hole point; a pure even defect contributes at most $d$; a defect
+with both parities contributes at most $d-1$. Thus
+\begin{equation}\label{eq:seven-hole-capacity}
+7d\leq dA+(d-1)B+\sum_i b_d(k_i,m_i),\qquad
+b_d(k,m)=
+\begin{cases}
+0,&m=0,\\
+d,&m=k,\\
+d-1,&0<m<k.
+\end{cases}
+\end{equation}
+For $C=8$ the required completion is
+Lemma~\ref{lem:eight-completion}. For $C=6,7$ it uses the finite
+completion results in the accompanying package~\cite{Package}:
+six or seven disjoint Lagrangians leave respectively three or two
+uniquely determined hole Lagrangians. Their proof consists of
+a written symplectic normalization and two independent exhaustive
+enumerations; these finite premises are separate from the written
+proof of Theorem~\ref{thm:seven-lower}.
+
+For $s=4$, the outside deficit is three, giving patterns $4$,
+$5+6$ and $6+6+6$. Their parity-count catalogs contain $9$, $46$
+and $48$ rows. The accompanying further analysis excludes the
+single-four pattern, nineteen five-plus-six rows and nine three-six
+rows, leaving $27$ and $39$ count candidates. They are necessary
+profiles, not realized partitions. Of the remaining $66$, $64$
+have $C\in\{6,7,8\}$ and already satisfy
+\eqref{eq:seven-hole-capacity}; two have $C=5$. The profile
+$(m_5,m_6;A,B,C)=(5,4;6,2,8)$ has four necessary marked forms;
+two are excluded by their own independently checked covering
+certificates, while two remain open. This is a partial case analysis.
+The package records its written reductions and finite dependencies;
+it supplies no uniform exclusion of all remaining profiles.
+
+The further analysis also excludes $s<4$. Characteristic sizes
+$4$ through $8$ remain open, and larger $s$ introduce outside
+deficits $4$ through $7$. Closing the $66$ size-four count candidates
+would therefore not finish the nineteen-color problem. Excluding
+every nineteen-color line coloring would improve the lower bound
+to twenty, without establishing a matching upper bound. Conversely,
+a nineteen-color line witness would still require an extension
+check before it proved a full-subspace upper bound.
+
+\subsection{A dimension reduction}
+
+\begin{proposition}\label{prop:dimension-deletion}
+Let $K$ be a fixed clique in $\OG_n^*$ of size at most $k$,
+precolored with distinct labels from $k$ colors. If $N(n-d)<k$,
+every uncolored $d$-dimensional vertex can be deleted by the
+degree-versus-list rule. The residual instance is $k$-colorable
+if and only if the full graph is $k$-colorable.
+\end{proposition}
+\begin{proof}
+Every neighbor of a $d$-space $U$ is a nonzero subspace of
+$U^\perp$, so $\deg U\leq N(n-d)$. If $f$ fixed clique vertices
+are adjacent to $U$, its residual degree is at most $N(n-d)-f$
+and its list has size $k-f$. A color is therefore available when
+$U$ is restored. Apply this argument in reverse deletion order.
+\end{proof}
+
+For $n=7$, the nonzero subspaces of $T=\Span(3,12,48)$ together
+with $\Span(64)$ give a $16$-clique. Since $N(3)=15$, vertices
+of dimension at least four can be deleted in any coloring problem
+with at least sixteen labels and these fixed clique colors.
+The lower bound in Section~\ref{sec:seven} rules out sixteen,
+seventeen and eighteen colors; the reduction remains available
+for the nineteen-color extension problem.
+
+The exact chromatic numbers for $n\geq7$ and the question of
+infinitely many dimensions with $\chi>\omega$ remain open.
+Within dimension six, a geometric construction of an optimal
+full-subspace coloring is a separate problem. The negative
+results in Section~\ref{sec:geometry} show that such a construction
+must use enough placement information to break the stated symmetry.
+
+\begin{problem}\label{prob:structural}
+Can one specify auxiliary geometric data and a nontrivial proper
+subgroup $H<\operatorname{Stab}_{O_6(\F)}(T)$, and construct a
+proper $15$-coloring $c$ from those data with $c(hU)=h\cdot c(U)$
+for $h\in H$, where labels are the nonzero subspaces of $T$?
+The construction should prove availability and separation without
+looking up the archived coloring certificate.
+\end{problem}
+
+The checked twelve-coloring already determines $\chi(\Gamma_6)$;
+passing to all nonzero subspaces increases the chromatic number
+by exactly three.

@@ -1,0 +1,79 @@
+\section{Computational certificates and formal verification}\label{sec:verification}
+The positive coloring certificates are checked using integer arithmetic and
+the coordinate definition of orthogonality. The full checker imports neither
+the search program nor a SAT solver. It establishes enumeration completeness
+from distinctness and Gaussian counts, then checks every pair of vertices.
+Three deliberately invalid certificates, respectively omitting a vertex,
+duplicating a subspace, and identifying the colors of adjacent coordinate
+lines, are rejected. The line-coloring checker independently verifies its
+partition and all within-class pairs. For the twelve-color certificate,
+\path{develop/check_line_chromatic_exact.py} checks all $1953$ distinct
+vertex pairs, including all $961$ edges. It independently reproduces every
+clause of the normalized search encoding and its SHA-256 digest, verifies
+the assignment against those clauses, and rejects duplicate-vertex,
+zero-vector and monochromatic-edge controls.
+
+The radical/quotient clique theorem has an existing Lean formalization.
+Its source is \path{formal/NikandishClique.lean}. The theorem is
+\texttt{NikandishClique.result}, inside the namespace
+\begin{center}
+\texttt{D5.S3.Combinatorics.Orthogonality}.
+\end{center}
+The upstream revision and source hash are recorded in
+\path{formal/UPSTREAM.json}; dependencies must be obtained from that pinned
+upstream checkout.
+
+The six-dimensional development uses vectors in $\operatorname{Fin}(64)$,
+XOR addition, and the coordinate dot product modulo two. A vertex is a
+zero-containing, XOR-closed subset other than $\{0\}$, exactly the nonzero
+binary subspaces in this representation. The formal graph is simple and
+uses coordinate orthogonality between distinct such subsets. The catalogue
+contains $2\,825$ entries including zero and $180\,800$ adjoining-vector
+witnesses. The theorem \texttt{Catalogue.complete} derives coverage from
+the zero entry and closure under adjoining any vector; it does not assume
+the Gaussian enumeration counts. The theorem \texttt{Catalogue.colorable}
+transfers the checked catalogue coloring to this graph. A checked
+$15$-clique supplies the converse inequality in
+\texttt{BinaryOrthogonality.chromatic\_number\_six}.
+
+The archived Lean 4.33.0 development verifies four finite assertions with
+\texttt{native\_decide}. The final theorem depends on the standard axioms
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}, together
+with four native-evaluation axioms; its computational trust therefore includes
+native evaluation. The generic completeness and colorability lemmas depend
+only on the three standard axioms. The recovered original log corrects the
+incomplete historical summary; see \path{notes/formal-verification-audit.md}.
+The exhaustive integer certificate independently verifies the same coloring.
+The weighted line bound, twelve-color line certificate, geometric profile
+counts and dimension-seven reduction
+are not covered by this Lean theorem.
+
+The public package~\cite{Package} contains the literal witnesses, independent
+checkers, search records, and SHA-256 bindings. The new geometric profiler
+checks every assigned color against its $H(U)$-determined list. The
+dimension-seven reduction is also replayed in dimension six, where it
+reproduces the established core size and Boolean encoding counts.
+
+The dimension-seven lower bound in Section~\ref{sec:seven} has a
+written proof. The checker
+\path{develop/check_dimension_seven_nineteen_obstruction.py}
+independently verifies its coordinate ingredients: all $4096$ quadratic
+polarization pairs, the $36/28$ quadratic value counts, all $288$ even
+heptads and $2016$ six-point cliques with their unique heptad completions,
+and all $8505$ point--hyperplane intersections with the $135$ Lagrangians.
+Nine explicit spread controls check the hole-clique obstruction.
+These controls do not enumerate all eight-member partial spreads;
+Lemma~\ref{lem:eight-completion} proves their completion uniformly.
+
+The additional nineteen-color constraints in Section~\ref{sec:higher}
+have their own evidence. The six- and seven-member partial-spread
+completion lemmas use written normalization and exhaustive finite
+enumerations. The two marked-form exclusions use independently checked
+covering certificates. Their proof notes, checkers and hash-bound reports
+are recorded separately in the public package. The small accounting
+auditor \path{develop/check_dimension_seven_profile_scope.py}
+reconstructs the parity-count catalogs and checks the scope of the
+remaining cases, including the $64$ rows to which the common hole
+capacity applies. It establishes no new profile exclusion.
+None of these dimension-seven results is covered by the archived
+six-dimensional Lean theorem.
