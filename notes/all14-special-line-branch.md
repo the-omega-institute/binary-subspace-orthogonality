@@ -3,8 +3,10 @@
 The ternary orbit with all seven special lines colored 14 is equivalent
 to sixteen-colorability of a specific 434-vertex induced graph. Its
 odd-line extension has an exact omitted-pair criterion with no fallback
-color. These reductions isolate one of the 32 retained orbits; they do
-not solve this branch or exclude the other 31.
+color. These reductions isolate one of the 32 retained orbits; they
+initially did not solve this branch or exclude the other 31. The later
+[line-capacity theorem](dimension-seven-line-capacity.md) excludes the
+entire auxiliary seventeen-color construction, including all 32 orbits.
 
 Let G be the auxiliary graph on all 127 lines and 315 totally isotropic
 planes in F_2^7. Put T=span(3,12,48), z=127 and
@@ -115,11 +117,12 @@ the geometric construction shares the canonical RREF/span helpers.
 The [finite certificate](../results/dimension-7-all14-branch.json)
 binds the checker, helpers and emitted CNF. The CNF SHA256 is
 `0b0c2b774da091c77f86ec80eac3f390333e9160d09ea1f4d2bf205ca0b63506`.
-No solver or Lean was run on this branch. The 434-vertex sixteen-color
-question remains open; the full n=7 chromatic number remains open
-with written lower bound eighteen. A branch coloring would still need
-the independent auxiliary check, fresh color on all 135 three-spaces,
-and original full-graph lift verification before an upper bound.
+No solver or Lean was run on this branch. The later written
+[line-capacity obstruction](dimension-seven-line-capacity.md) proves
+that its 119 remaining lines already need seventeen colors, excluding
+the 434-vertex sixteen-color branch. The finite certificate here records
+the original reduction and formula; it is not an UNSAT solver report.
+The full n=7 chromatic number remains open with lower bound eighteen.
 
 ```sh
 python3 develop/check_all14_branch.py --report /tmp/all14-branch.json --output-cnf /tmp/all14-branch.cnf

@@ -125,17 +125,17 @@ color pairs of its fifteen incident Lagrangian cliques. Any extendible
 even coloring has at most seven nonzero points with empty intersections,
 and its intersections satisfy explicit odd-clique color constraints.
 The finite check covers all 32,832 even/odd neighbor memberships. A
-separate sufficient construction is to color the 442 lines and isotropic
-planes with seventeen colors and reserve the eighteenth for all 135
-independent triples. Neither a coloring for this construction nor a
-full-graph eighteen-color upper bound is supplied.
+separate sufficient construction sought seventeen colors on the 442
+lines and isotropic planes, reserving the eighteenth for all 135
+independent triples. The line-capacity theorem below excludes that
+construction; the general eighteen-color extension criterion remains valid.
 
 The [442-vertex construction encoding](notes/lines-planes-seventeen-encoding.md)
 is now emitted and audited: 427 residual vertices, 14,994 edges, 5,789
 variables and 197,344 clauses. Its seven special lines retain three
 color choices. One 120-second Glucose4 attempt returns unknown, with no
-coloring or UNSAT proof. This is a sufficient upper-bound route; a
-negative result here would not exclude general eighteen-colorability.
+coloring or UNSAT proof. The subsequent written line obstruction excludes
+this sufficient route, while general eighteen-colorability remains open.
 
 The [ternary special-line symmetry proof](notes/ternary-line-symmetry.md)
 reduces all 2,187 three-color assignments to 32 representatives under
@@ -152,13 +152,24 @@ an independent dominating class of eight lines. That single orbit is
 equivalent to sixteen-colorability of a 434-vertex induced graph, with
 an exact omitted-pair list criterion on its 56 odd lines. Its 193900-clause
 formula is checked against direct substitution in the base encoding.
-The branch remains open and all other 31 ternary orbits remain available.
+The subsequent line-capacity obstruction excludes this branch and all
+other 31 ternary orbits of the auxiliary seventeen-color construction.
 
 The [odd-extension proof](notes/all14-odd-extension.md) determines the
 56-vertex odd graph exactly: independence number seven and chromatic
 number eight, with an explicit trace-field spread certificate. For a
 fixed proper even coloring, its exact omitted-pair lists give a 2-SAT
-extension test with at most 56 variables. The full branch remains open.
+extension test with at most 56 variables. These conditional statements
+remain valid; the line obstruction excludes the full branch.
+
+The [dimension-seven line-capacity proof](notes/dimension-seven-line-capacity.md)
+now gives the lower bound eighteen already on the line graph. Every
+independent line set avoiding the characteristic vector has at most
+seven vertices, so the 126 lines with that vector deleted need at least
+eighteen colors. A coordinate-only exhaustive check verifies the capacity
+over all 26896 even color classes and 135 Lagrangians. This closes the
+entire auxiliary seventeen-color route without a SAT/UNSAT or Lean run.
+The full n=7 chromatic number remains open with the same lower bound 18.
 
 ## Paper status
 

@@ -1,0 +1,342 @@
+{
+  "status": "written_line_lower_bound18_and_entire_auxiliary17_route_exclusion_finitely_checked",
+  "dimension": 7,
+  "characteristic_vector": 127,
+  "line_graph_vertices": 127,
+  "line_graph_edges": 3969,
+  "deleted_characteristic_vertices": 126,
+  "deleted_characteristic_edges": 3906,
+  "deleted_characteristic_maximum_independent_class": 7,
+  "line_graph_lower_bound": 18,
+  "all14_line_vertices": 119,
+  "all14_line_edges": 3465,
+  "all14_line_lower_bound": 17,
+  "isotropic_basis": [
+    3,
+    12,
+    48
+  ],
+  "removed_line_generators": [
+    64,
+    67,
+    76,
+    79,
+    112,
+    115,
+    124,
+    127
+  ],
+  "lagrangians": 135,
+  "isotropic_independent_triples": 3780,
+  "even_color_classes_checked": 26896,
+  "even_color_class_counts_by_size": {
+    "0": 1,
+    "1": 63,
+    "2": 1008,
+    "3": 5376,
+    "4": 10080,
+    "5": 8064,
+    "6": 2016,
+    "7": 288
+  },
+  "exact_affine_availability_histograms": {
+    "0": {
+      "64": 1
+    },
+    "1": {
+      "32": 63
+    },
+    "2": {
+      "16": 1008
+    },
+    "3": {
+      "0": 336,
+      "8": 5040
+    },
+    "4": {
+      "4": 10080
+    },
+    "5": {
+      "0": 2016,
+      "2": 6048
+    },
+    "6": {
+      "1": 2016
+    },
+    "7": {
+      "0": 288
+    }
+  },
+  "exact_odd_capacity_histograms_deleted_characteristic": {
+    "0": {
+      "7": 1
+    },
+    "1": {
+      "4": 63
+    },
+    "2": {
+      "4": 1008
+    },
+    "3": {
+      "0": 336,
+      "2": 5040
+    },
+    "4": {
+      "2": 10080
+    },
+    "5": {
+      "0": 2016,
+      "1": 6048
+    },
+    "6": {
+      "1": 2016
+    },
+    "7": {
+      "0": 288
+    }
+  },
+  "exact_odd_capacity_histograms_all14": {
+    "0": {
+      "7": 1
+    },
+    "1": {
+      "4": 63
+    },
+    "2": {
+      "4": 896,
+      "3": 112
+    },
+    "3": {
+      "0": 336,
+      "2": 5040
+    },
+    "4": {
+      "2": 8960,
+      "1": 1120
+    },
+    "5": {
+      "0": 2016,
+      "1": 6048
+    },
+    "6": {
+      "1": 1792,
+      "0": 224
+    },
+    "7": {
+      "0": 288
+    }
+  },
+  "maximum_odd_capacity_by_even_count": {
+    "0": 7,
+    "1": 4,
+    "2": 4,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "7": 0
+  },
+  "maximum_all14_odd_capacity_by_even_count": {
+    "0": 7,
+    "1": 4,
+    "2": 4,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "7": 0
+  },
+  "maximum_total_class_size": 7,
+  "capacity_witnesses": {
+    "0": {
+      "even_generators": [],
+      "odd_even_points": [
+        12,
+        18,
+        30,
+        33,
+        45,
+        51,
+        63
+      ],
+      "odd_generators": [
+        115,
+        109,
+        97,
+        94,
+        82,
+        76,
+        64
+      ],
+      "odd_count": 7,
+      "total_count": 7
+    },
+    "1": {
+      "even_generators": [
+        3
+      ],
+      "odd_even_points": [
+        18,
+        30,
+        33,
+        45
+      ],
+      "odd_generators": [
+        109,
+        97,
+        94,
+        82
+      ],
+      "odd_count": 4,
+      "total_count": 5
+    },
+    "2": {
+      "even_generators": [
+        3,
+        5
+      ],
+      "odd_even_points": [
+        6,
+        30,
+        33,
+        57
+      ],
+      "odd_generators": [
+        121,
+        97,
+        94,
+        70
+      ],
+      "odd_count": 4,
+      "total_count": 6
+    },
+    "3": {
+      "even_generators": [
+        3,
+        5,
+        9
+      ],
+      "odd_even_points": [
+        30,
+        33
+      ],
+      "odd_generators": [
+        97,
+        94
+      ],
+      "odd_count": 2,
+      "total_count": 5
+    },
+    "4": {
+      "even_generators": [
+        3,
+        5,
+        9,
+        17
+      ],
+      "odd_even_points": [
+        30,
+        33
+      ],
+      "odd_generators": [
+        97,
+        94
+      ],
+      "odd_count": 2,
+      "total_count": 6
+    },
+    "5": {
+      "even_generators": [
+        3,
+        5,
+        9,
+        17,
+        33
+      ],
+      "odd_even_points": [
+        65
+      ],
+      "odd_generators": [
+        62
+      ],
+      "odd_count": 1,
+      "total_count": 6
+    },
+    "6": {
+      "even_generators": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        65
+      ],
+      "odd_even_points": [
+        126
+      ],
+      "odd_generators": [
+        1
+      ],
+      "odd_count": 1,
+      "total_count": 7
+    },
+    "7": {
+      "even_generators": [
+        3,
+        5,
+        9,
+        17,
+        33,
+        65,
+        126
+      ],
+      "odd_even_points": [],
+      "odd_generators": [],
+      "odd_count": 0,
+      "total_count": 7
+    }
+  },
+  "all135_intersections_per_domain_per_even_class_checked": true,
+  "capacity_budget_diagnostics": {
+    "all14_sixteen_colors": {
+      "vertices": 119,
+      "colors": 16,
+      "available_capacity": 112,
+      "deficit": 7
+    },
+    "deleted_characteristic_seventeen_colors": {
+      "vertices": 126,
+      "colors": 17,
+      "available_capacity": 119,
+      "deficit": 7
+    }
+  },
+  "necessary_saturated_line18_partition_types": [
+    {
+      "seven_even_classes": 3,
+      "six_even_one_odd_classes": 7,
+      "seven_odd_classes": 7
+    },
+    {
+      "seven_even_classes": 9,
+      "six_even_one_odd_classes": 0,
+      "seven_odd_classes": 8
+    }
+  ],
+  "saturated_partitions_realized": false,
+  "auxiliary442_graph_seventeen_coloring_possible": false,
+  "all32_ternary_orbits_excluded_by_written_line_obstruction": true,
+  "all14_branch_excluded_by_written_line_obstruction": true,
+  "CNF_UNSAT_solver_run": false,
+  "DRAT_proof_checked": false,
+  "native_solver_run": false,
+  "lean_run": false,
+  "full_n7_chromatic_number": "open_lower_bound18",
+  "new_fullgraph_lower_bound": false,
+  "full18color_witness": false,
+  "line18color_witness": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "2904361caeea14cc6d21e5f8901240683e737b133d48f1bd0f8803122569145d",
+  "proof_note_sha256": "e0424225645634f98f85a31ed3176af071cf3f5c0cc5ee6ff64af5da77606b4b",
+  "scope": "Written capacity proof excludes17colors already onall127lines and excludes16colors on119all14lines; exhaustive coordinate-only capacity validation over26896evenclasses and135Lagrangians. No CNF solver/proof, new fullgraph bound, eighteen-color witness or Lean. Historical unknown reports retained."
+}

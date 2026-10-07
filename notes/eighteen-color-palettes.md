@@ -116,6 +116,12 @@ seventeen-coloring of it would suffice for a full eighteen-coloring
 after the retraction. This is a sufficient construction, not a restriction
 that every eighteen-coloring must satisfy. No such witness is supplied.
 
+The later [line-capacity theorem](dimension-seven-line-capacity.md)
+rules out this separate construction: its line graph alone needs
+eighteen colors. The general conditional extension theorem above,
+which allows the three-spaces to share colors with other vertices,
+is unaffected by that obstruction.
+
 ## Verification and reproduction
 
 The standard-library [checker](../develop/check_eighteen_color_palettes.py)

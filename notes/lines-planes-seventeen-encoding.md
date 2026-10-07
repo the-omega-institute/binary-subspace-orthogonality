@@ -8,6 +8,11 @@ A successful coloring could be extended with one fresh color on the
 nonradical retraction. Failure here would exclude this construction
 alone, leaving general eighteen-colorability open.
 
+Current status: the later [line-capacity proof](dimension-seven-line-capacity.md)
+excludes this entire seventeen-color construction already on its
+line vertices. The encoding and earlier unknown solver reports are
+retained as history; no UNSAT solver or checked DRAT proof is claimed.
+
 ## Normalization and exact palettes
 
 Put T=span(3,12,48), z=127. The fourteen nonzero proper subspaces of T

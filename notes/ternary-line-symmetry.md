@@ -6,6 +6,12 @@ The restriction preserves seventeen-colorability of this 442-vertex graph.
 It supplies no coloring: the full dimension-seven chromatic number remains
 open with the written lower bound eighteen.
 
+Current status: the subsequent [line-capacity theorem](dimension-seven-line-capacity.md)
+excludes seventeen colors on all the line vertices, hence rules out
+all 32 auxiliary orbits. The orbit reduction and formula checks below
+remain valid historical results; the exclusion is a written graph proof,
+not a solver UNSAT report.
+
 ## Orthogonal lifts and normalized colors
 
 Put T=span(3,12,48), z=127 and D=span(65,71,95). In the ordered basis

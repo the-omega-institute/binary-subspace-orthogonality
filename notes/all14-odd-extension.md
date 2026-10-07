@@ -1,5 +1,11 @@
 # Eight colors and an exact Boolean test for the all14 odd extension
 
+Current branch status: the subsequent
+[line-capacity proof](dimension-seven-line-capacity.md) excludes all14
+and the entire auxiliary seventeen-color route. This note records
+the preceding conditional odd-extension analysis at
+[716ab70](https://github.com/the-omega-institute/binary-subspace-orthogonality/commit/716ab709f022c11ec2d4c3def79b369a07aab710).
+
 The 56-vertex odd graph left by the all14 branch has independence number
 seven and chromatic number eight. Given a proper sixteen-coloring of
 the 378 even vertices, its exact odd extension can be decided by a
@@ -60,7 +66,7 @@ The [checker](../develop/check_all14_odd_extension.py) constructs the
 field arithmetic without geometry helpers, verifies the dual Gram
 matrix, all eight trace matrices and their differences, and checks
 the resulting certificate against every one of the 1540 original
-odd-line pairs. The [report](../results/dimension-7-all14-odd-extension.json)
+odd-line pairs. The [original report](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/716ab709f022c11ec2d4c3def79b369a07aab710/results/dimension-7-all14-odd-extension.json)
 includes all 56 color assignments. This is an odd-subgraph witness.
 
 ## Capacity conditions on the exact lists
@@ -140,9 +146,12 @@ this question.
 python3 develop/check_all14_odd_extension.py --report /tmp/all14-odd-extension.json
 ```
 
-The all14 branch remains open, the other 31 ternary orbits remain
-retained, and the full n=7 chromatic number remains open with lower
-bound eighteen. No native solver or Lean was run for this result.
+At the recorded revision, all14 and the other 31 orbits were open.
+The subsequent written line obstruction now excludes all of them.
+The full n=7 chromatic number remains open with lower bound eighteen.
+The original finite report retains its source/note hashes at 716ab70;
+checkout that revision to reproduce the exact report bytes.
+No native solver or Lean was run for this result.
 The submitted manuscript at 28e27a8 is unchanged; the historical
 dimension-six Lean theorem retains three standard and four
 native-evaluation axioms.
