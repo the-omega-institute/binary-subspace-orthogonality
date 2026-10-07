@@ -1,7 +1,7 @@
 """Run one bounded solve of the sufficient lines/planes seventeen-color encoding."""
 from importlib.metadata import version
 from pathlib import Path
-from threading import Timer
+from threading import TIMEOUT_MAX, Timer
 import argparse
 import hashlib
 import json
@@ -10,7 +10,7 @@ import time
 from pysat.formula import CNF
 from pysat.solvers import Solver
 
-from check_lines_planes_encoding import check
+from check_lines_planes_encoding import check_contents
 from encode_lines_planes_seventeen import build_encoding, encode_bytes
 
 
@@ -26,16 +26,18 @@ def main():
     parser.add_argument('--seconds', type=float, default=120)
     parser.add_argument('--output-dir', type=Path, required=True)
     args = parser.parse_args()
-    assert 0 < args.seconds < float('inf')
-    audit = check(args.cnf)
+    if not 0 < args.seconds <= TIMEOUT_MAX:
+        parser.error('--seconds must be positive and at most threading.TIMEOUT_MAX')
+    contents = args.cnf.read_bytes()
+    audit = check_contents(contents)
     rows, spaces, adjacency, fixed, palettes, variables, clauses, construction = build_encoding()
-    assert args.cnf.read_bytes() == encode_bytes(variables, clauses)
-    cnf = CNF(from_file=str(args.cnf))
+    assert contents == encode_bytes(variables, clauses)
+    cnf = CNF(from_string=contents.decode('ascii'))
     assert cnf.nv == 5789 and cnf.clauses == clauses
     args.output_dir.mkdir(parents=True, exist_ok=True)
     stem = 'dimension-7-lines-planes-17'
     report = {'dimension': 7, 'target_colors': 17, 'retained_vertices': 442,
-              'variables': cnf.nv, 'clauses': len(cnf.clauses), 'cnf_sha256': digest(args.cnf),
+              'variables': cnf.nv, 'clauses': len(cnf.clauses), 'cnf_sha256': hashlib.sha256(contents).hexdigest(),
               'audit': audit, 'construction': construction, 'search_sha256': digest(Path(__file__)),
               'python_sat_version': version('python-sat'), 'solver': 'Glucose4',
               'time_limit_seconds': args.seconds, 'solver_run': True, 'lean_run': False}

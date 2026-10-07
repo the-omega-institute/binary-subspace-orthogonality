@@ -88,3 +88,11 @@ exclude only this sufficient route. Exact full n=7 chromatic number
 remains open with lower bound eighteen. No Lean run is part of this step;
 the original dimension-six formal theorem retains three standard and
 four native-evaluation axioms. The submitted manuscript remains at 28e27a8.
+
+The [ternary symmetry reduction](ternary-line-symmetry.md) now preserves
+all auxiliary seventeen-color solutions while retaining one of 32
+special-line patterns. It audits 2155 added clauses, giving 199499 total;
+no additional solve has been run. The same continuation repairs the
+search wrapper to use one immutable CNF snapshot and a supported timer
+range. Historical encoding and search reports retain their original
+source hashes; the new symmetry report binds the current clause auditor.

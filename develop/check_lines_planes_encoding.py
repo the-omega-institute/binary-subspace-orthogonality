@@ -73,11 +73,10 @@ def audit_bytes(contents, variable_count, expected):
     assert not remaining, ('missing clauses', len(remaining))
 
 
-def check(path, controls=False):
+def check_contents(contents, controls=False):
     if not __debug__:
         raise RuntimeError('Run this auditor without -O or PYTHONOPTIMIZE.')
     variables, expected, counts = geometric_encoding()
-    contents = path.read_bytes()
     audit_bytes(contents, len(variables), expected)
     control_results = {}
     if controls:
@@ -102,6 +101,10 @@ def check(path, controls=False):
             'basis_enumerator_sha256': hashlib.sha256(Path(__file__).with_name('dimension_seven_feasibility.py').read_bytes()).hexdigest(),
             'negative_controls': control_results, 'solver_run': False, 'lean_run': False,
             'scope': 'Every clause checked exactly once from geometric lists and full-span dot products. Shares only canonical RREF/span helpers. This is a sufficient eighteen-color construction, not an equivalent restriction. No coloring or chromatic bound from this audit.'}
+
+
+def check(path, controls=False):
+    return check_contents(path.read_bytes(), controls)
 
 
 if __name__ == '__main__':

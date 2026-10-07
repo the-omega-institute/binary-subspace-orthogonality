@@ -137,6 +137,13 @@ color choices. One 120-second Glucose4 attempt returns unknown, with no
 coloring or UNSAT proof. This is a sufficient upper-bound route; a
 negative result here would not exclude general eighteen-colorability.
 
+The [ternary special-line symmetry proof](notes/ternary-line-symmetry.md)
+reduces all 2,187 three-color assignments to 32 representatives under
+orthogonal lifts and the interchange of the two extra colors. Every
+orbit is retained and every added clause audited, giving 199,499 clauses.
+The reduction preserves auxiliary seventeen-colorability. No new solver
+run, coloring or full-graph upper bound is reported.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
