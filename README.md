@@ -13,13 +13,14 @@ of the other. Its line subgraph has only the one-dimensional subspaces.
 | What you want | Where to go |
 | --- | --- |
 | Read the complete paper | [Paper PDF](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.pdf) |
+| Cite the public preprint | [Zenodo record: 10.5281/zenodo.23210092](https://doi.org/10.5281/zenodo.23210092) |
 | Read or edit the manuscript source | [LaTeX source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex) · [current collaboration PR](https://github.com/the-omega-institute/binary-subspace-orthogonality/pull/1) |
 | Understand the main results and their evidence | The results table below |
 | Reproduce the finite checks | [Reproduction guide](docs/REPRODUCING.md) |
 | Explore the geometric arguments | [Geometry section](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 | Follow our next collaboration | [Ideal-intersection Laplacian project](https://github.com/the-omega-institute/ideal-intersection-laplacian) |
 
-The paper links identify the submitted source revision, `28e27a8`.
+The repository paper links identify manuscript snapshot `28e27a8`.
 PR #1 remains open for collaboration; the default branch provides this navigation
 page and retains its earlier research snapshot. Use the linked revision for the
 complete paper and current certificates.
@@ -291,8 +292,15 @@ and exact n=7 values remain open with numerical lower bound nineteen.
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
 Reza also submitted it to arXiv, which declined it at moderation; no permanent
 arXiv identifier or announcement was issued. Posting the current submitted
-version on Zenodo is authorized, with Reza handling the upload; its DOI is
-awaiting confirmation. Any arXiv appeal
+version on Zenodo was completed by Reza on October 7, 2026:
+[10.5281/zenodo.23210092](https://doi.org/10.5281/zenodo.23210092).
+The public record lists Haobo Ma, Reza Nikandish and Wenlin Zhang.
+Its PDF has a revised abstract and additional declarations relative to
+repository snapshot `28e27a8`; the matching submission source is awaiting
+synchronization. The extracted text of Sections 1–7 agrees after accounting
+for whitespace, page breaks and PDF glyph extraction differences.
+This preprint does not include the subsequent dimension-seven research notes.
+Any arXiv appeal
 must follow the rejection letter's journal-acceptance condition. Submission
 is not acceptance. Reza is the corresponding author.
 
