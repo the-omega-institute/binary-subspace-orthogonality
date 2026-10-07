@@ -479,6 +479,20 @@ reconstructs the parity-count catalogs and removes exactly this row,
 leaving 26 five-plus-six and 39 three-six count candidates. The extended
 working draft includes the result; exact n7 remains open >=19.
 
+The [three-even/pure-six charge reduction](notes/dimension-seven-three-six-charge.md)
+derives three exhaustive marked forms for `(3,6;6,2,8)`, the only
+remaining five-plus-six count row with eight pure odd heptads. The
+five-defect even sum lies outside the hole Lagrangian; the pure-six
+defect contains exactly one actual hole. The full marked stabilizers
+have orders 32,32,16 and retain two distinct hole orbits in each form.
+The [checker](develop/check_dimension_seven_three_six_charge.py) and
+[local audit report](results/dimension-7-three-six-charge.json) verify
+1,344 explicit normalizations and all catalog/group actions. Each
+form has four even triples, 24 pure-six blocks and 32 mixed sextets
+per role; disjoint defect-pair counts are 96,96,72. No complete root
+family or cover search is performed: this row, 26/39 count totals and
+exact n7 remain open >=19. Both manuscript PDFs are preserved.
+
 The earlier [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
