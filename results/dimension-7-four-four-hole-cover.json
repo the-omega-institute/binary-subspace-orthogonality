@@ -1,0 +1,147 @@
+{
+  "status": "C8_four_four_two_six_profile_excluded_by_checked_exact_cover_certificate",
+  "dimension": 7,
+  "excluded_profile": [
+    4,
+    4,
+    7,
+    1,
+    8
+  ],
+  "remaining_two_six_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ]
+  ],
+  "initial_two_six_count_profiles": 21,
+  "excluded_two_six_count_profiles": 19,
+  "all_C7_and_C8_two_six_profiles_excluded": true,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "size_three_entire_branch_excluded": false,
+  "six_Lagrangian_completion_claimed": false,
+  "configurations": [
+    {
+      "configuration": [
+        15,
+        51,
+        60
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 3456
+    },
+    {
+      "configuration": [
+        15,
+        60,
+        51
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 3456
+    },
+    {
+      "configuration": [
+        51,
+        15,
+        60
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 3456
+    },
+    {
+      "configuration": [
+        51,
+        60,
+        15
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 1792
+    },
+    {
+      "configuration": [
+        60,
+        15,
+        51
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 3456
+    },
+    {
+      "configuration": [
+        60,
+        51,
+        15
+      ],
+      "class_catalog_sizes": [
+        16,
+        16,
+        32
+      ],
+      "disjoint_partial_triples": 1792
+    }
+  ],
+  "even_heptads": 288,
+  "eligible_heptad_rows": 224,
+  "eligible_ordered_roots": 17408,
+  "distinct_root_states": 17408,
+  "failed_states_checked": 85720,
+  "branches_checked": 70672,
+  "leaf_states": 45480,
+  "state_sizes": {
+    "28": 368,
+    "35": 23352,
+    "42": 44592,
+    "49": 17408
+  },
+  "all_states_reachable": true,
+  "normalization_frames": 168,
+  "normalization_basis_dot_pairs_checked": 6048,
+  "ordered_projection_configurations_checked": 1008,
+  "row_catalog_sha256": "1e357bc5f9be9b23b3af006646f98689c0ceb8e9983d4d856820914f281aab1f",
+  "certificate_sha256": "c7aed3fd19858d289270585ccb63551a5101877a229286f47944bb1bcca01704",
+  "auditor_sha256": "e5f17a08106b19b418c15604c0183f3cc485b28440d1cb98696ea21eec7e86b3",
+  "builder_sha256": "e1449e3229eb304395de263f41243b284bc7d66fb563b6b8c21d4a7a21b9b295",
+  "proof_note_sha256": "6b7ab892b9a4d64be48bd9a12d8c548776ed9a877c0b0fb888f248d848c124ab",
+  "prior_two_six_report_sha256": "77384d6b27fa78c4665848df2895871b58d6c73fd7f938659e9da9ce0540db5b",
+  "checked_exact_cover_certificate": true,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "scope": "Written eight-spread completion and charge-member normalization reduce this C8 profile to six fixed-hole configurations. Every disjoint partial triple and every finite failed-state branch is independently reconstructed and checked. Only two C6 count candidates remain; their common-coloring realizability and the entire s3 branch stay open."
+}

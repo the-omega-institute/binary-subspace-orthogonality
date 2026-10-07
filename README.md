@@ -247,6 +247,18 @@ checks the count formulas and local charge/conditional-transfer controls.
 Their joint realizability, larger characteristic classes, and exact n=7
 values remain open; the lower bound is still nineteen.
 
+The subsequent [four-four completed-hole exclusion](notes/dimension-seven-four-four-hole-cover.md)
+rules out the final eight-pure-odd-heptad profile by a written symplectic
+normalization and an independently audited finite exact-cover certificate.
+All six normalized odd-projection configurations and 17,408 disjoint
+partial triples are covered; 85,720 failed states and 70,672 outgoing
+branches are checked from independently reconstructed class catalogs.
+The [certificate](results/dimension-7-four-four-hole-cover-certificate.json)
+and [audit report](results/dimension-7-four-four-hole-cover.json) leave
+only the two six-pure-odd-heptad count candidates above. Their common
+coloring realizability remains open. No six-Lagrangian completion,
+entire size-three branch exclusion or numerical-bound improvement is claimed.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
