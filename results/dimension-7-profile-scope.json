@@ -1,0 +1,885 @@
+{
+  "status": "uniform_count_and_capacity_scope_audited_no_new_exclusion",
+  "characteristic_size_of_66_count_candidates": 4,
+  "written_deficit_formula": "sum(7-k_i)=s-1",
+  "written_count_formulas": [
+    "B=m+7t",
+    "A=9-m-6t",
+    "C=9-r-t"
+  ],
+  "original_raw_profile_counts": {
+    "4": 9,
+    "5+6": 46,
+    "6+6+6": 48
+  },
+  "raw_profiles_failing_applicable_hole_capacity": {
+    "4": 6,
+    "5+6": 12,
+    "6+6+6": 9
+  },
+  "remaining_raw_profiles": {
+    "five_six": 27,
+    "three_six": 39
+  },
+  "remaining_counts_by_pure_odd_heptads": {
+    "5+6": {
+      "6": 6,
+      "7": 19,
+      "8": 2
+    },
+    "6+6+6": {
+      "5": 2,
+      "6": 14,
+      "7": 18,
+      "8": 5
+    }
+  },
+  "applicable_remaining_capacity_controls": [
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      "upper_capacity": 23,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      "upper_capacity": 18,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      "upper_capacity": 23,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      "upper_capacity": 18,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      "upper_capacity": 23,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      "upper_capacity": 16,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      "upper_capacity": 22,
+      "required_holes": 21
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      "upper_capacity": 16,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        3,
+        6,
+        6,
+        2,
+        8
+      ],
+      "upper_capacity": 7,
+      "required_holes": 7
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        5,
+        2,
+        2,
+        7,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "5+6",
+      "profile": [
+        5,
+        4,
+        6,
+        2,
+        8
+      ],
+      "upper_capacity": 7,
+      "required_holes": 7
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      "upper_capacity": 27,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      "upper_capacity": 27,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      "upper_capacity": 25,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      "upper_capacity": 27,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      "upper_capacity": 25,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      "upper_capacity": 18,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      "upper_capacity": 18,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      "upper_capacity": 23,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      "upper_capacity": 22,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      "upper_capacity": 16,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      "upper_capacity": 16,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      "upper_capacity": 27,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      "upper_capacity": 25,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      "upper_capacity": 18,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      "upper_capacity": 24,
+      "required_holes": 21
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      "upper_capacity": 17,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      "upper_capacity": 16,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      "upper_capacity": 15,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        2,
+        6,
+        6,
+        7,
+        0,
+        8
+      ],
+      "upper_capacity": 9,
+      "required_holes": 7
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ],
+      "upper_capacity": 14,
+      "required_holes": 14
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        4,
+        4,
+        6,
+        7,
+        0,
+        8
+      ],
+      "upper_capacity": 8,
+      "required_holes": 7
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        4,
+        5,
+        5,
+        7,
+        0,
+        8
+      ],
+      "upper_capacity": 7,
+      "required_holes": 7
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        4,
+        5,
+        6,
+        6,
+        1,
+        8
+      ],
+      "upper_capacity": 7,
+      "required_holes": 7
+    },
+    {
+      "family": "6+6+6",
+      "profile": [
+        4,
+        6,
+        6,
+        5,
+        2,
+        8
+      ],
+      "upper_capacity": 7,
+      "required_holes": 7
+    }
+  ],
+  "remaining_C6_through_C8_count": 64,
+  "remaining_C5_count": 2,
+  "new_raw_profile_exclusions": 0,
+  "remaining_normal_forms_of_five_four_profile": [
+    "Z",
+    "G"
+  ],
+  "characteristic_sizes_still_open": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "all_nineteen_color_branches_excluded": false,
+  "line_lower_bound": 19,
+  "full_subspace_lower_bound": 19,
+  "exact_n7": "open",
+  "uniform_exclusion_of_remaining_family_established": false,
+  "completion_time_estimate": null,
+  "written_generalization_of_existing_bookkeeping": true,
+  "finite_scope": "Count rows and existing-report metadata only; no graph or coloring enumeration.",
+  "new_cover_search": false,
+  "new_cover_certificate": false,
+  "new_Lean": false,
+  "new_Pro_review": false,
+  "stopping_point_decided": false,
+  "checker_sha256": "3d7fdfd5c9975c591999e65330479393d453bf24ddb40e86e03a410f1276cfff",
+  "note_sha256": "f10234cb89611e3fba74e2f4e0e841aa1ebe03a266c6592f3fd9a975bc09729d",
+  "dependency_sha256": {
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "notes/dimension-seven-two-six-profiles.md": "f44c9c7494354c462d89919e3863186a720715994f4921046352e0110dea5399",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252",
+    "notes/dimension-seven-seven-holes.md": "6fcdbf4463b9394bded17a3fefac882f73d80afc6d40738ba19e9146737a1939",
+    "results/dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "notes/dimension-seven-six-holes.md": "28aefe0934c33673d1454929b9c5bc9a706fcdec9012042ce935cb70e0b7a5a8",
+    "results/dimension-7-six-holes.json": "2c9e5d08ead02dde0d4e96efe8f691e2e51f65071f4fc58775ef96c15dfe2026",
+    "results/dimension-7-four-even-pairs-check.json": "b11138267957b322b82058363c8e6b5d7e650bbd9e7c9692f95658cc109dc472",
+    "results/dimension-7-five-four-H-cover-check.json": "85d2d73ce268ed4a8e3fcb8dff93a9f023405569c71790d94ed2671eeb80fd3f"
+  }
+}

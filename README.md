@@ -435,6 +435,17 @@ proof inputs to H. D and H are excluded; Z and G remain open, so
 the raw profile and totals of 27/39 unexcluded profiles remain unchanged.
 Exact n7 remains open >=19; no new Lean or numerical bound is claimed.
 
+The [profile-scope analysis](notes/dimension-seven-profile-scope.md)
+gives common deficit, count, charge and hole-capacity formulas across
+characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
+and [report](results/dimension-7-profile-scope.json) verify that the
+27/39 remaining count candidates all have characteristic size four.
+All 64 candidates with six through eight pure odd heptads already
+satisfy the applicable uniform hole-capacity bound; two have five.
+Sizes five through eight require additional branches. No uniform
+exclusion of the remaining family or completion-time estimate is
+established; the completed lower bound 19 is independent of this work.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
