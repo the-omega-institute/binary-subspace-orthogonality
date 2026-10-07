@@ -141,8 +141,11 @@ The [ternary special-line symmetry proof](notes/ternary-line-symmetry.md)
 reduces all 2,187 three-color assignments to 32 representatives under
 orthogonal lifts and the interchange of the two extra colors. Every
 orbit is retained and every added clause audited, giving 199,499 clauses.
-The reduction preserves auxiliary seventeen-colorability. No new solver
-run, coloring or full-graph upper bound is reported.
+The reduction preserves auxiliary seventeen-colorability. A dedicated
+[runner](develop/search_ternary_line_symmetry.py) now audits the entire
+restricted formula before solving. One new 120-second Glucose4 attempt
+returns [unknown](results/dimension-7-ternary-line-symmetry-search.json),
+with no coloring, UNSAT proof or full-graph upper bound.
 
 ## Paper status
 

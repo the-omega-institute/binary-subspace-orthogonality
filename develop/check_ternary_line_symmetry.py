@@ -1,5 +1,5 @@
 """Verify the 32 ternary special-line orbits and a sufficient-route CNF restriction."""
-from collections import Counter
+from collections import Counter, deque
 from itertools import combinations, product
 from pathlib import Path
 import argparse
@@ -111,9 +111,9 @@ def check():
     generators = [tuple(combine(coordinate, columns) for coordinate in range(8))
                   for columns in ((2, 4, 1), (1, 3, 4))]
     generated = {identity}
-    frontier = [identity]
+    frontier = deque([identity])
     while frontier:
-        current = frontier.pop()
+        current = frontier.popleft()
         for generator in generators:
             following = tuple(generator[current[coordinate]] for coordinate in range(8))
             if following not in generated:
@@ -133,9 +133,9 @@ def check():
         for pattern in orbit:
             linear_orbits.add(min(act(pattern, permutation) for permutation in permutations))
         reached = {representative}
-        frontier = [representative]
+        frontier = deque([representative])
         while frontier:
-            current = frontier.pop()
+            current = frontier.popleft()
             neighbors = [act(current, generator) for generator in generators] + [act(current, identity, True)]
             for following in neighbors:
                 if following not in reached:

@@ -1,0 +1,705 @@
+{
+  "dimension": 7,
+  "target_colors": 17,
+  "retained_vertices": 442,
+  "variables": 5789,
+  "clauses": 199499,
+  "added_symmetry_clauses": 2155,
+  "cnf_sha256": "515031623b1f90f1d26f28a499dc088d0bb27cf4217bd66d1bd4bda892c36ea6",
+  "base_cnf_sha256": "f3c9d0d2df5217baad87c93ca6a3e8dcd33d53182c5aa5249962f2187a89d116",
+  "base_clause_audit": {
+    "core_vertices": 427,
+    "core_edges": 14994,
+    "variables": 5789,
+    "clauses": 197344,
+    "vertex_clauses": 37576,
+    "edge_clauses": 159768,
+    "palette_sizes": {
+      "3": 7,
+      "12": 140,
+      "13": 56,
+      "15": 224
+    }
+  },
+  "symmetry": {
+    "status": "orthogonal_lifts_renormalization_32_ternary_orbits_checked",
+    "dimension": 7,
+    "isotropic_basis": [
+      3,
+      12,
+      48
+    ],
+    "dual_basis": [
+      65,
+      71,
+      95
+    ],
+    "characteristic_vector": 127,
+    "fixed_clique_size": 15,
+    "special_line_generators_in_coordinate_order": [
+      124,
+      115,
+      112,
+      79,
+      76,
+      67,
+      64
+    ],
+    "special_line_colors": [
+      14,
+      15,
+      16
+    ],
+    "linear_group_order": 168,
+    "group_with_extra_swap_order": 336,
+    "isometry_vector_pairs_checked": 2752512,
+    "vertex_images_checked": 74256,
+    "edge_images_checked": 2783592,
+    "palette_images_checked": 143472,
+    "assignments": 2187,
+    "linear_orbits": 60,
+    "orbits_with_extra_swap": 32,
+    "burnside_fixed_point_sums": {
+      "without_swap": 10080,
+      "with_swap": 672
+    },
+    "orbit_size_histogram": {
+      "1": 1,
+      "2": 1,
+      "14": 6,
+      "42": 8,
+      "56": 6,
+      "84": 3,
+      "168": 7
+    },
+    "orbits": [
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          14
+        ],
+        "orbit_size": 1,
+        "stabilizer_order": 336
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          14,
+          15
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          15,
+          15
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          15,
+          16
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          14,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          15,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          15,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          14,
+          14,
+          14,
+          15,
+          15,
+          16,
+          16
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          15,
+          14
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          16,
+          14
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          16,
+          15
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          14,
+          15,
+          16,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          15,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          15,
+          15,
+          16,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          15,
+          16,
+          16,
+          15
+        ],
+        "orbit_size": 84,
+        "stabilizer_order": 4
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          15,
+          16,
+          16,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          14,
+          15,
+          16,
+          16,
+          16,
+          16
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      },
+      {
+        "representative": [
+          14,
+          15,
+          15,
+          15,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 84,
+        "stabilizer_order": 4
+      },
+      {
+        "representative": [
+          14,
+          15,
+          15,
+          15,
+          15,
+          16,
+          16
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          14,
+          15,
+          15,
+          15,
+          16,
+          15,
+          16
+        ],
+        "orbit_size": 168,
+        "stabilizer_order": 2
+      },
+      {
+        "representative": [
+          14,
+          15,
+          15,
+          15,
+          16,
+          16,
+          16
+        ],
+        "orbit_size": 84,
+        "stabilizer_order": 4
+      },
+      {
+        "representative": [
+          14,
+          15,
+          16,
+          15,
+          16,
+          15,
+          16
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "orbit_size": 2,
+        "stabilizer_order": 168
+      },
+      {
+        "representative": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          16
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      },
+      {
+        "representative": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          16,
+          16
+        ],
+        "orbit_size": 42,
+        "stabilizer_order": 8
+      },
+      {
+        "representative": [
+          15,
+          15,
+          15,
+          15,
+          16,
+          16,
+          16
+        ],
+        "orbit_size": 56,
+        "stabilizer_order": 6
+      },
+      {
+        "representative": [
+          15,
+          15,
+          15,
+          16,
+          16,
+          16,
+          16
+        ],
+        "orbit_size": 14,
+        "stabilizer_order": 24
+      }
+    ],
+    "independent_generator_closure_and_orbit_BFS": true,
+    "invalid_arbitrary_point_transposition": "rejected_as_nonlinear",
+    "invalid_color14_extra_swap": "rejected_by_palette_counterexample",
+    "checker_sha256": "5c63be59461b451151e2ccdeb041bc7271a45f30e2a43845e7ca9f7f72612872",
+    "shared_RREF_span_helper_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+    "solver_run": false,
+    "lean_run": false,
+    "full_n7_chromatic_number": "open_lower_bound18",
+    "scope": "Only the auxiliary442vertex seventeen-color sufficient route. T itself absent; label14 fixed, only extras15/16 interchangeable. Every ternary orbit retained. No old full17color forcing, coloring or new bound."
+  },
+  "construction": {
+    "dimension": 7,
+    "target_colors": 17,
+    "construction": "separate_eighteenth_color_for_all_isotropic_three_spaces",
+    "retained_vertices": 442,
+    "retained_edges": 16569,
+    "fixed_clique_vertices": 15,
+    "fixed_clique": [
+      {
+        "basis": [
+          3
+        ],
+        "color": 0
+      },
+      {
+        "basis": [
+          15
+        ],
+        "color": 1
+      },
+      {
+        "basis": [
+          51
+        ],
+        "color": 2
+      },
+      {
+        "basis": [
+          63
+        ],
+        "color": 3
+      },
+      {
+        "basis": [
+          12
+        ],
+        "color": 4
+      },
+      {
+        "basis": [
+          60
+        ],
+        "color": 5
+      },
+      {
+        "basis": [
+          48
+        ],
+        "color": 6
+      },
+      {
+        "basis": [
+          3,
+          12
+        ],
+        "color": 7
+      },
+      {
+        "basis": [
+          51,
+          12
+        ],
+        "color": 8
+      },
+      {
+        "basis": [
+          3,
+          60
+        ],
+        "color": 9
+      },
+      {
+        "basis": [
+          51,
+          60
+        ],
+        "color": 10
+      },
+      {
+        "basis": [
+          3,
+          48
+        ],
+        "color": 11
+      },
+      {
+        "basis": [
+          15,
+          48
+        ],
+        "color": 12
+      },
+      {
+        "basis": [
+          12,
+          48
+        ],
+        "color": 13
+      },
+      {
+        "basis": [
+          127
+        ],
+        "color": 14
+      }
+    ],
+    "core_vertices": 427,
+    "core_edges": 14994,
+    "variables": 5789,
+    "clauses": 197344,
+    "vertex_clauses": 37576,
+    "edge_clauses": 159768,
+    "palette_sizes": {
+      "3": 7,
+      "12": 140,
+      "13": 56,
+      "15": 224
+    },
+    "special_line_lists": [
+      {
+        "generator": 67,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 79,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 115,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 76,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 124,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 112,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "generator": 64,
+        "colors": [
+          14,
+          15,
+          16
+        ]
+      }
+    ],
+    "both_extra_colors_available_everywhere": true,
+    "old_full_graph_seventeen_color_forcing_used": false,
+    "builder_sha256": "8066c8d413effd593ae519ed6a36ca7244e09c5b3f946ea1f4d070f9b17738fb",
+    "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+    "solver_run": false,
+    "lean_run": false,
+    "scope": "Exact seventeen-color encoding of the 442-vertex lines/planes graph. SAT would give a sufficient eighteen-color construction after adding the independent three-spaces and validating the original lift. UNSAT only rejects this route, not full eighteen-colorability."
+  },
+  "search_sha256": "d171c416d51db79f6b30cdc33590c9d0a23076ceb20602392714e796a789997f",
+  "clause_auditor_sha256": "91c68455e8fd2b9dd9b30f4465424f25dfec5ac46e9eedcde520dd5d1733a833",
+  "python_sat_version": "1.8.dev24",
+  "solver": "Glucose4",
+  "time_limit_seconds": 120.0,
+  "timeout_scope": "cooperative_solver_call_only",
+  "timer_joined_before_solver_teardown": true,
+  "solver_run": true,
+  "lean_run": false,
+  "solver_seconds": 120.01907758400193,
+  "stats": {
+    "restarts": 6262,
+    "conflicts": 1235097,
+    "decisions": 2833661,
+    "propagations": 212816856
+  },
+  "status": "unknown_time_limit",
+  "scope": "One bounded solve on the fully audited auxiliary442vertex symmetry formula, preserving everyternaryorbit. SAT requires independent442coloring,135tripleextension and original29211vertex/all1160206edge lift verification. CheckedUNSAT excludes onlythissufficientroute, notfull18colorability. Unknown gives nobound; exactn7open>=18. No Lean."
+}

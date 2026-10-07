@@ -141,8 +141,9 @@ python3 develop/encode_lines_planes_seventeen.py --output-dir /tmp/lines-planes
 python3 develop/check_ternary_line_symmetry.py --cnf /tmp/lines-planes/dimension-7-lines-planes-17.cnf --output-cnf /tmp/lines-planes/dimension-7-ternary-symmetry.cnf --report /tmp/ternary-symmetry.json
 ```
 
-No solver or Lean runs form part of this result. A future bounded solve
-requires a runner that audits this extended formula. A SAT candidate
+No solver or Lean runs form part of the orbit proof itself. The dedicated
+[symmetry runner](../develop/search_ternary_line_symmetry.py) now audits this
+extended formula from one immutable input snapshot before solving. A SAT candidate
 still needs independent auxiliary coloring verification, a fresh color
 on all 135 independent three-spaces, and a checked lift to every original
 vertex and edge. Even checked auxiliary UNSAT would only reject this
@@ -168,3 +169,44 @@ or independently witness the historical execution. Reviewer reconstruction
 claims are recorded separately from the local checks. The submitted paper
 remains at 28e27a8; the dimension-six formal theorem retains its three
 standard and four native-evaluation axioms.
+
+The next independent Pro review approved the proof, all 32 representatives
+and the complete CNF restriction. It identified two further implementation
+points: the reported breadth-first loops actually used stacks, and cancelling
+a timer did not wait for an interrupt callback already in progress. The
+traversals now use deque.popleft(); the orbit partition and both CNF byte
+streams remain unchanged. Both search runners cancel and join their timer
+inside the solver context. A local test with a real timer and a deliberately
+delayed solver double reproduced the callback surviving an unjoined context
+and verified completion before teardown with the join. This is a lifecycle
+test, not evidence of a historical native-solver failure.
+
+The dedicated runner separately audits every base clause and decodes the
+complete symmetry suffix, checks canonical bytes, parses the same snapshot
+with PySAT and compares all 199499 parsed clauses. Local controls reject
+missing, duplicate, representative-excluding and changed-base clauses.
+A semantically valid permutation of base clauses passes the geometric audit
+and is rejected by the runner's canonical identity check. A path replacement
+after real parsing does not change its recorded CNF hashes. The low-level
+loader and CLI also reject optimized Python. Its timeout covers the solver
+call cooperatively; it is not an end-to-end deadline for auditing and output.
+
+```sh
+python develop/search_ternary_line_symmetry.py /tmp/lines-planes/dimension-7-ternary-symmetry.cnf --seconds 120 --output-dir /tmp/lines-planes
+```
+
+One Glucose4 attempt on the fully audited 199499-clause formula returned
+**unknown** after 120.01907758400193 seconds of measured solver time.
+It recorded 6262 restarts, 1235097 conflicts, 2833661 decisions and
+212816856 propagations, without a coloring or UNSAT proof. The
+[search report](../results/dimension-7-ternary-line-symmetry-search.json)
+binds the exact unchanged symmetry CNF, current checker/runner/auditor,
+construction and python-sat 1.8.dev24. The local 16 GiB machine had 74%
+available memory before the attempt; observed process RSS at 110 seconds
+was 247168 KiB. No Lean/Lake process or Lean run was involved.
+
+This is one new bounded attempt on a structurally changed formula; the
+earlier base-formula unknown report is preserved. It supplies no upper
+bound or evidence of nonexistence. Further continuation should extract a
+specific branch restriction or resolve an independent review finding,
+rather than repeat this unchanged solve.

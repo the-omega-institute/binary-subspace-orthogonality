@@ -1,5 +1,6 @@
-"""Run one bounded solve of the sufficient lines/planes seventeen-color encoding."""
+"""Run one bounded solve after auditing the complete ternary symmetry formula."""
 from importlib.metadata import version
+from itertools import product
 from pathlib import Path
 from threading import TIMEOUT_MAX, Timer
 import argparse
@@ -10,12 +11,31 @@ import time
 from pysat.formula import CNF
 from pysat.solvers import Solver
 
-from check_lines_planes_encoding import check_contents
+from check_ternary_line_symmetry import COLORS, audit_restriction, check
 from encode_lines_planes_seventeen import build_encoding, encode_bytes
 
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def load_instance(contents):
+    if not __debug__:
+        raise RuntimeError('Run this loader without -O or PYTHONOPTIMIZE.')
+    symmetry = check()
+    rows, spaces, adjacency, fixed, palettes, variables, base_clauses, construction = build_encoding()
+    identifiers = [{color: variables[next(vertex for vertex, row in enumerate(rows) if row == (generator,)), color]
+                    for color in COLORS} for generator in symmetry['special_line_generators_in_coordinate_order']]
+    representatives = {tuple(orbit['representative']) for orbit in symmetry['orbits']}
+    suffix = [[-identifiers[index][color] for index, color in enumerate(pattern)]
+              for pattern in product(COLORS, repeat=7) if pattern not in representatives]
+    clauses = base_clauses + suffix
+    audit = audit_restriction(contents, representatives, identifiers)
+    assert len(suffix) == 2155 and len(clauses) == 199499
+    assert contents == encode_bytes(variables, clauses)
+    cnf = CNF(from_string=contents.decode('ascii'))
+    assert cnf.nv == 5789 and cnf.clauses == clauses
+    return cnf, rows, adjacency, fixed, palettes, variables, construction, symmetry, audit
 
 
 def main():
@@ -29,19 +49,20 @@ def main():
     if not 0 < args.seconds <= TIMEOUT_MAX:
         parser.error('--seconds must be positive and at most threading.TIMEOUT_MAX')
     contents = args.cnf.read_bytes()
-    audit = check_contents(contents)
-    rows, spaces, adjacency, fixed, palettes, variables, clauses, construction = build_encoding()
-    assert contents == encode_bytes(variables, clauses)
-    cnf = CNF(from_string=contents.decode('ascii'))
-    assert cnf.nv == 5789 and cnf.clauses == clauses
+    cnf, rows, adjacency, fixed, palettes, variables, construction, symmetry, audit = load_instance(contents)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    stem = 'dimension-7-lines-planes-17'
+    stem = 'dimension-7-ternary-line-symmetry'
     report = {'dimension': 7, 'target_colors': 17, 'retained_vertices': 442,
-              'variables': cnf.nv, 'clauses': len(cnf.clauses), 'cnf_sha256': hashlib.sha256(contents).hexdigest(),
-              'audit': audit, 'construction': construction, 'search_sha256': digest(Path(__file__)),
+              'variables': cnf.nv, 'clauses': len(cnf.clauses), 'added_symmetry_clauses': 2155,
+              'cnf_sha256': hashlib.sha256(contents).hexdigest(),
+              'base_cnf_sha256': hashlib.sha256(encode_bytes(variables, cnf.clauses[:-2155])).hexdigest(),
+              'base_clause_audit': audit, 'symmetry': symmetry, 'construction': construction,
+              'search_sha256': digest(Path(__file__)),
+              'clause_auditor_sha256': digest(Path(__file__).with_name('check_lines_planes_encoding.py')),
               'python_sat_version': version('python-sat'), 'solver': 'Glucose4',
-              'time_limit_seconds': args.seconds, 'solver_run': True, 'lean_run': False}
-    print(json.dumps({'event': 'audited_sufficient_construction_loaded', 'variables': cnf.nv, 'clauses': len(cnf.clauses)}), flush=True)
+              'time_limit_seconds': args.seconds, 'timeout_scope': 'cooperative_solver_call_only',
+              'timer_joined_before_solver_teardown': True, 'solver_run': True, 'lean_run': False}
+    print(json.dumps({'event': 'complete_ternary_formula_audited', 'variables': cnf.nv, 'clauses': len(cnf.clauses)}), flush=True)
     with Solver(name='g4', bootstrap_with=cnf.clauses, with_proof=True) as solver:
         started = time.monotonic()
         timer = Timer(args.seconds, solver.interrupt)
@@ -54,7 +75,8 @@ def main():
         report.update(solver_seconds=time.monotonic() - started, stats=solver.accum_stats())
         if solved is True:
             model = {literal for literal in solver.get_model() if literal > 0}
-            assert all(any(literal in model if literal > 0 else -literal not in model for literal in clause) for clause in cnf.clauses)
+            assert all(any(literal in model if literal > 0 else -literal not in model for literal in clause)
+                       for clause in cnf.clauses)
             coloring = dict(fixed)
             for vertex, palette in palettes.items():
                 chosen = [color for color in palette if variables[vertex, color] in model]
@@ -75,7 +97,7 @@ def main():
             report.update(status='unsat_sufficient_construction_reported_proof_not_checked', proof_sha256=digest(path), proof_lines=len(proof))
         else:
             report['status'] = 'unknown_time_limit'
-    report['scope'] = 'One bounded solve on the audited 442-vertex sufficient construction. SAT candidates require independent coloring, three-space extension and original-graph lift checks. UNSAT only rejects this sufficient construction and requires a checked proof; it cannot exclude all eighteen-colorings. Unknown supplies no bound. No Lean.'
+    report['scope'] = 'One bounded solve on the fully audited auxiliary442vertex symmetry formula, preserving everyternaryorbit. SAT requires independent442coloring,135tripleextension and original29211vertex/all1160206edge lift verification. CheckedUNSAT excludes onlythissufficientroute, notfull18colorability. Unknown gives nobound; exactn7open>=18. No Lean.'
     (args.output_dir / (stem + '-search.json')).write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2), flush=True)
 
