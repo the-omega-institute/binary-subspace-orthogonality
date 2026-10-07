@@ -93,7 +93,7 @@ cover premises. Its new local auditor checks 840 odd-role assignments,
 672 mixed-six classes, 224 completions and 2,429,952 compatible
 disjoint local triples, plus source and certificate hash bindings.
 It runs no new cover search and does not rerun historical audits.
-Exactly one further three-six row is removed: the current totals
+Exactly one further three-six row is removed at that step: the totals
 are 25/37, with three three-six C=8 rows, 60 candidates with C=6..8
 and two with C=5. Exact n7 remains open >=19. Reproduce from the root:
 
@@ -103,7 +103,7 @@ python3 develop/check_dimension_seven_four_four_six_charge.py --report /tmp/n7-f
 
 The [two-charge recoloring reduction](../../notes/dimension-seven-four-five-five-charge.md)
 shows that every hypothetical `(4,5,5;7,0,8)` coloring can be moved
-to the open `(4,6,6;5,2,8)` branch with two distinct actual defect
+to the `(4,6,6;5,2,8)` subbranch with two distinct actual defect
 holes and both pure-six sums outside M. The unique even completions
 of the two `(5,1)` six-defects must come from distinct pure even
 heptads: other defect sources and a common heptad source yield
@@ -112,7 +112,8 @@ premises are retained, including all D/H/G/Z marked forms.
 New finite controls check 1,344 unique completions, 5,376 markings,
 1,214,976 disjoint defect triples and separate source-heptad transfers.
 These controls construct no complete covering roots or new cover proof.
-The original and resulting raw rows remain open; totals stay 25/37.
+This reduction alone excludes neither raw row; the new covering
+proof below closes the source row using its transferred subbranch.
 Reproduce from the root:
 
 ```sh
@@ -136,13 +137,26 @@ paired roles and actual holes. Each root has five residual holes,
 so the five residual pure even heptads must come from the 224
 anchored heptads. The bitmask builder and independent array auditor
 agree on all roots and orbits; four invalid-artifact controls are
-rejected. The next step is a bounded cover test on these 357
-representatives. No cover search or new raw exclusion is claimed;
-this analysis covers the transferred two-hole subbranch, with
-25/37 candidates and exact n7 still open >=19.
+rejected. The subsequent
+[five-heptad covering proof](../../notes/dimension-seven-four-six-six-cover.md)
+now excludes all 357 representatives. Its independent auditor
+reconstructs all complete roots and orbits, verifies 359 reachable
+failed states, both branches and 357 leaves, and rejects four
+invalid-certificate controls. This excludes the transferred
+two-hole subbranch and the original raw `(4,5,5;7,0,8)` row.
+The exact source transfer retains its three earlier exclusions
+and their historical finite premises; those covering audits and
+the older normalization/recoloring audits are not rerun.
+Exactly one raw row is removed, giving current totals 25/36.
+The whole raw `(4,6,6;5,2,8)` row remains open, as does
+`(4,5,6;6,1,8)`; these are the two remaining three-six C8 rows.
+Of 61 candidates, 59 have C=6..8 and two have C=5.
+Exact n7 remains open >=19; no new Lean result is claimed.
 
 ```sh
 python3 develop/check_dimension_seven_four_six_six_two_hole.py --report /tmp/n7-four-six-six-two-hole.json
 python3 develop/build_dimension_seven_four_six_six_roots.py --roots /tmp/n7-four-six-six-roots.json
 python3 develop/check_dimension_seven_four_six_six_roots.py --roots /tmp/n7-four-six-six-roots.json --report /tmp/n7-four-six-six-roots-check.json
+python3 develop/build_dimension_seven_four_six_six_cover.py --certificate /tmp/n7-four-six-six-cover-proof.json --max-states 20000 --max-visits 80000 --seconds 20
+python3 develop/check_dimension_seven_four_six_six_cover.py --certificate /tmp/n7-four-six-six-cover-proof.json --report /tmp/n7-four-six-six-cover-check.json
 ```

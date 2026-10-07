@@ -597,8 +597,9 @@ The [local auditor](develop/check_dimension_seven_four_five_five_charge.py)
 and [report](results/dimension-7-four-five-five-charge.json) verify the
 modular local controls and historical source/certificate bindings,
 retaining all inherited finite covering premises. No raw row is
-excluded by this reduction: 25/37 candidates and exact n7 >=19 remain
-open. The extended draft includes the argument and its verification scope.
+excluded by this reduction alone. The subsequent complete-root
+covering proof below excludes the source row. The extended draft
+includes the argument and its verification scope.
 
 The [transferred two-hole geometry](notes/dimension-seven-four-six-six-two-hole.md)
 has three exhaustive marked forms with full group orders 8,16,16.
@@ -619,9 +620,27 @@ orbits number 224,112,21. The
 and [report](results/dimension-7-four-six-six-roots-check.json)
 verify every family, group orbit and actual-hole transport.
 The 357 representatives specify a complete necessary five-anchored-
-heptad covering problem. No cover search runs in this step.
-The extended draft includes both reductions; the transferred
-subbranch, all 25/37 candidates and exact n7 >=19 remain open.
+heptad covering problem.
+
+The subsequent [finite covering proof](notes/dimension-seven-four-six-six-cover.md)
+excludes every representative, closing this transferred subbranch
+and hence the source raw row `(4,5,5;7,0,8)`.
+The [bounded builder](develop/build_dimension_seven_four_six_six_cover.py),
+[independent auditor](develop/check_dimension_seven_four_six_six_cover.py),
+[certificate](results/dimension-7-four-six-six-cover-proof.json)
+and [report](results/dimension-7-four-six-six-cover-check.json)
+verify 359 reachable failed states, both required branches and
+357 leaves. All pivots and admissible successors are checked;
+four invalid-certificate controls are rejected. The auditor
+independently reconstructs the complete roots and legal orbits.
+Exactly one raw three-six row is removed, preserving the entire
+five-plus-six list. Current totals are **25/36**, with two three-six
+C=8 rows: `(4,5,6;6,1,8)` and `(4,6,6;5,2,8)`.
+The entire latter raw profile remains open. The source-row
+exclusion retains the earlier exact-profile covering premises
+used in the forced transfer; those historical audits are not rerun.
+The extended draft integrates this partial exclusion. Exact n7
+remains open with lower bound 19, and no new Lean result is claimed.
 
 ## Repository map
 

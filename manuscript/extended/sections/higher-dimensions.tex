@@ -92,9 +92,9 @@ proof of Theorem~\ref{thm:seven-lower}.
 For $s=4$, the outside deficit is three, giving patterns $4$,
 $5+6$ and $6+6+6$. Their parity-count catalogs contain $9$, $46$
 and $48$ rows. The accompanying further analysis excludes the
-single-four pattern, twenty-one five-plus-six rows and eleven three-six
-rows, leaving $25$ and $37$ count candidates. They are necessary
-profiles, not realized partitions. Of the remaining $62$, $60$
+single-four pattern, twenty-one five-plus-six rows and twelve three-six
+rows, leaving $25$ and $36$ count candidates. They are necessary
+profiles, not realized partitions. Of the remaining $61$, $59$
 have $C\in\{6,7,8\}$ and already satisfy
 \eqref{eq:seven-hole-capacity}; two have $C=5$. The profile
 $(m_5,m_6;A,B,C)=(5,4;6,2,8)$ is excluded: its four exhaustive
@@ -190,8 +190,8 @@ heptads. If they shared one heptad, moving both would give the
 excluded profile $(5,4;6,2,8)$. Their sources are consequently
 distinct. Moving both produces $(4,6,6;5,2,8)$ with two pure
 sextets whose sums are $t_1,t_2$ outside $M$ and which retain
-distinct actual holes. This is a reduction to an open two-hole
-branch; neither raw row is excluded. It retains the three earlier
+distinct actual holes. This reduces the original row to a two-hole
+subbranch; the transfer alone excludes neither raw row. It retains the three earlier
 theorems' historical finite premises.
 
 This transferred two-hole branch has three exhaustive marked forms.
@@ -223,14 +223,25 @@ partition such a remaining set into five pure even heptads.
 Since a heptad meets $M$ at most once, all five must be anchored
 at the remaining holes. The $357$ representatives therefore
 specify a complete necessary covering problem using the $224$
-anchored heptads. No cover search is performed in this step.
-Three three-six rows with $C=8$ remain. This is a partial case analysis.
+anchored heptads. An independently checked failed-state certificate
+excludes every representative's five-heptad cover. It has $359$
+reachable states, two required branches and $357$ leaves. Each
+nonempty state records a pivot, and the auditor checks every
+anchored heptad contained in that state and covering its pivot.
+All successors have seven fewer points and are certified failures;
+the empty set is never marked failed. Induction on the remaining
+size proves that no representative has a cover. This excludes
+the transferred subbranch and, through the exact recoloring above,
+the entire source row $(4,5,5;7,0,8)$.
+The raw $(4,6,6;5,2,8)$ row retains other branches. It and
+$(4,5,6;6,1,8)$ are the two remaining three-six rows with $C=8$.
+This is a partial case analysis.
 The package records its written reductions and finite dependencies;
 it supplies no uniform exclusion of all remaining profiles.
 
 The further analysis also excludes $s<4$. Characteristic sizes
 $4$ through $8$ remain open, and larger $s$ introduce outside
-deficits $4$ through $7$. Closing the $62$ remaining size-four count candidates
+deficits $4$ through $7$. Closing the $61$ remaining size-four count candidates
 would therefore not finish the nineteen-color problem. Excluding
 every nineteen-color line coloring would improve the lower bound
 to twenty, without establishing a matching upper bound. Conversely,

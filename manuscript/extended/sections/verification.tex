@@ -130,7 +130,7 @@ two-six and size-four four-even-pair theorems, retaining their
 historical finite covering premises. The checker verifies their
 source, certificate and dependency hash bindings without rerunning
 those audits. It removes exactly this row and preserves the
-five-plus-six list, giving current totals $25$ and $37$: $60$
+five-plus-six list, giving totals $25$ and $37$ at that step: $60$
 have six through eight pure odd heptads and two have five.
 The $(4,5,5;7,0,8)$ reduction has separate local controls in
 \path{develop/check_dimension_seven_four_five_five_charge.py}.
@@ -142,8 +142,8 @@ and $48\,384$ disjoint distinct-source pairs. These modular
 controls are not complete covering roots. Hash bindings retain
 the three-plus-five, four-even-pair and all D/H/G/Z covering
 premises, including the inherited size-three two-six theorem;
-historical audits are not rerun. No row is removed by this
-reduction, and its resulting two-hole branch remains open.
+historical audits are not rerun. This reduction alone removes
+no row; its two-hole target is treated by the new certificate below.
 The marked two-hole auditor
 \path{develop/check_dimension_seven_four_six_six_two_hole.py}
 checks all $5376$ ordered markings with eight image controls each.
@@ -162,6 +162,24 @@ actual holes; orbit--stabilizer identities are checked without
 a free-action assumption. Original-graph component checks,
 reversed source-heptad completions and four rejected invalid-root
 controls are recorded with every root and orbit member.
-No covering search or raw-row exclusion is claimed.
+The five-heptad auditor
+\path{develop/check_dimension_seven_four_six_six_cover.py}
+reconstructs the complete roots and orbit partition, then independently
+enumerates the full $288$-heptad catalog and selects the $224$
+anchored rows justified by hole capacity. It checks all $357$
+representatives, $359$ reachable failed states, both required
+successor branches and $357$ leaves. State sizes $35$ and $28$
+occur $357$ and two times. Every pivot and admissible successor
+is checked; strict size decrease gives the finite covering proof.
+Four invalid controls are rejected. The transferred subbranch
+is excluded without invoking historical covering certificates as
+new failed-state premises. The source-row conclusion retains
+the three exact prior exclusions used by the written transfer.
+Their source, certificate and dependency bindings are checked
+without rerunning their audits or the older normalization/recoloring
+controls. The raw count audit removes exactly $(4,5,5;7,0,8)$,
+preserving the five-plus-six list and giving current totals $25$
+and $36$: $59$ candidates have $C=6,7,8$ and two have $C=5$.
+The whole $(4,6,6;5,2,8)$ raw row remains open.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.
