@@ -1,0 +1,1994 @@
+{
+  "status": "uniform_hole_capacity_excludes_twenty_one_further_size_four_profiles",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "single_four_entire_branch_previously_excluded": true,
+  "raw_profile_counts": {
+    "4": 9,
+    "5+6": 46,
+    "6+6+6": 48
+  },
+  "direct_and_formula_profile_sets_equal": true,
+  "capacity_controls": {
+    "4": [
+      {
+        "profile": [
+          0,
+          3,
+          7,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 0,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          0,
+          9,
+          0,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 0,
+        "hole_points": 7,
+        "capacity": 9,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          2,
+          8,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          1,
+          8,
+          1,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 8,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          1,
+          9,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          2,
+          7,
+          2,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          0,
+          10,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 11,
+        "excluded": true
+      },
+      {
+        "profile": [
+          3,
+          6,
+          3,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          5,
+          4,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 0,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      }
+    ],
+    "5+6": [
+      {
+        "profile": [
+          0,
+          0,
+          9,
+          0,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 0,
+        "hole_points": 14,
+        "capacity": 18,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          2,
+          7,
+          2,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          4,
+          5,
+          4,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          5,
+          4,
+          5,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          6,
+          3,
+          6,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 0,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          0,
+          8,
+          1,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 18,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          2,
+          6,
+          3,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          4,
+          4,
+          5,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          5,
+          3,
+          6,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          6,
+          2,
+          7,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          1,
+          6,
+          8,
+          0,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 9,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          0,
+          7,
+          2,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          2,
+          5,
+          4,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 16,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          4,
+          3,
+          6,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          5,
+          2,
+          7,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          2,
+          5,
+          8,
+          0,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 8,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          6,
+          1,
+          8,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          2,
+          6,
+          7,
+          1,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 8,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          0,
+          6,
+          3,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 16,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          2,
+          4,
+          5,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          4,
+          2,
+          7,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          3,
+          4,
+          8,
+          0,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 8,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          5,
+          1,
+          8,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          3,
+          5,
+          7,
+          1,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          3,
+          6,
+          0,
+          9,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          3,
+          6,
+          6,
+          2,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          0,
+          5,
+          4,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          2,
+          3,
+          6,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          4,
+          1,
+          8,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          4,
+          7,
+          1,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          5,
+          0,
+          9,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 11,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          5,
+          6,
+          2,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          6,
+          5,
+          3,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          0,
+          4,
+          5,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 0,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          5,
+          2,
+          2,
+          7,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          5,
+          2,
+          8,
+          0,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 9,
+        "excluded": false
+      },
+      {
+        "profile": [
+          5,
+          4,
+          0,
+          9,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          4,
+          6,
+          2,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          5,
+          5,
+          5,
+          3,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          6,
+          4,
+          4,
+          8
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 0,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      }
+    ],
+    "6+6+6": [
+      {
+        "profile": [
+          0,
+          2,
+          5,
+          8,
+          0,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 18,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          2,
+          6,
+          7,
+          1,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 18,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          4,
+          4,
+          7,
+          1,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          4,
+          5,
+          6,
+          2,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 16,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          4,
+          6,
+          5,
+          3,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 16,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          5,
+          5,
+          5,
+          3,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          5,
+          6,
+          4,
+          4,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          0,
+          6,
+          6,
+          3,
+          5,
+          7
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 0,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          2,
+          4,
+          7,
+          1,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 18,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          2,
+          5,
+          6,
+          2,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          2,
+          6,
+          5,
+          3,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 17,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          4,
+          4,
+          5,
+          3,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 16,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          4,
+          5,
+          4,
+          4,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          4,
+          6,
+          3,
+          5,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 15,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          5,
+          5,
+          3,
+          5,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          5,
+          6,
+          2,
+          6,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          6,
+          6,
+          1,
+          7,
+          7
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 1,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          2,
+          6,
+          6,
+          7,
+          0,
+          8
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 9,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          4,
+          4,
+          3,
+          5,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 14,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          4,
+          5,
+          2,
+          6,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          4,
+          6,
+          1,
+          7,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 13,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          4,
+          6,
+          7,
+          0,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 8,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          5,
+          5,
+          1,
+          7,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          5,
+          5,
+          7,
+          0,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          5,
+          6,
+          0,
+          8,
+          7
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 14,
+        "capacity": 12,
+        "excluded": true
+      },
+      {
+        "profile": [
+          4,
+          5,
+          6,
+          6,
+          1,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          4,
+          6,
+          6,
+          5,
+          2,
+          8
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 7,
+        "excluded": false
+      },
+      {
+        "profile": [
+          5,
+          5,
+          5,
+          0,
+          8,
+          7
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 14,
+        "capacity": 11,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          5,
+          5,
+          6,
+          1,
+          8
+        ],
+        "pure_even_defects": 0,
+        "mixed_defects": 3,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          5,
+          6,
+          5,
+          2,
+          8
+        ],
+        "pure_even_defects": 1,
+        "mixed_defects": 2,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          5,
+          6,
+          6,
+          4,
+          3,
+          8
+        ],
+        "pure_even_defects": 2,
+        "mixed_defects": 1,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      },
+      {
+        "profile": [
+          6,
+          6,
+          6,
+          3,
+          4,
+          8
+        ],
+        "pure_even_defects": 3,
+        "mixed_defects": 0,
+        "hole_points": 7,
+        "capacity": 6,
+        "excluded": true
+      }
+    ]
+  },
+  "newly_excluded_five_six_profiles": [
+    [
+      2,
+      5,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      1,
+      8,
+      7
+    ],
+    [
+      3,
+      4,
+      2,
+      7,
+      7
+    ],
+    [
+      3,
+      5,
+      1,
+      8,
+      7
+    ],
+    [
+      3,
+      6,
+      0,
+      9,
+      7
+    ],
+    [
+      4,
+      4,
+      1,
+      8,
+      7
+    ],
+    [
+      4,
+      5,
+      0,
+      9,
+      7
+    ],
+    [
+      4,
+      5,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      6,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      4,
+      0,
+      9,
+      7
+    ],
+    [
+      5,
+      5,
+      5,
+      3,
+      8
+    ],
+    [
+      5,
+      6,
+      4,
+      4,
+      8
+    ]
+  ],
+  "newly_excluded_three_six_profiles": [
+    [
+      4,
+      4,
+      5,
+      2,
+      6,
+      7
+    ],
+    [
+      4,
+      4,
+      6,
+      1,
+      7,
+      7
+    ],
+    [
+      4,
+      5,
+      5,
+      1,
+      7,
+      7
+    ],
+    [
+      4,
+      5,
+      6,
+      0,
+      8,
+      7
+    ],
+    [
+      5,
+      5,
+      5,
+      0,
+      8,
+      7
+    ],
+    [
+      5,
+      5,
+      5,
+      6,
+      1,
+      8
+    ],
+    [
+      5,
+      5,
+      6,
+      5,
+      2,
+      8
+    ],
+    [
+      5,
+      6,
+      6,
+      4,
+      3,
+      8
+    ],
+    [
+      6,
+      6,
+      6,
+      3,
+      4,
+      8
+    ]
+  ],
+  "redundant_single_four_capacity_exclusions": [
+    [
+      0,
+      3,
+      7,
+      7
+    ],
+    [
+      1,
+      2,
+      8,
+      7
+    ],
+    [
+      2,
+      1,
+      9,
+      7
+    ],
+    [
+      3,
+      0,
+      10,
+      7
+    ],
+    [
+      3,
+      6,
+      3,
+      8
+    ],
+    [
+      4,
+      5,
+      4,
+      8
+    ]
+  ],
+  "prior_five_six_charge_exclusions": [
+    [
+      1,
+      6,
+      8,
+      0,
+      8
+    ],
+    [
+      2,
+      5,
+      8,
+      0,
+      8
+    ],
+    [
+      5,
+      2,
+      8,
+      0,
+      8
+    ]
+  ],
+  "five_six_total_excluded_profiles": 15,
+  "five_six_remaining_unexcluded_count": 31,
+  "five_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      0,
+      2,
+      7,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      4,
+      7
+    ],
+    [
+      0,
+      5,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      0,
+      2,
+      8,
+      6
+    ],
+    [
+      1,
+      0,
+      8,
+      1,
+      7
+    ],
+    [
+      1,
+      2,
+      0,
+      10,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      3,
+      7
+    ],
+    [
+      1,
+      4,
+      4,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      6,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      0,
+      1,
+      9,
+      6
+    ],
+    [
+      2,
+      0,
+      7,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      3,
+      6,
+      7
+    ],
+    [
+      2,
+      6,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      0,
+      0,
+      10,
+      6
+    ],
+    [
+      3,
+      0,
+      6,
+      3,
+      7
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      3,
+      4,
+      8,
+      0,
+      8
+    ],
+    [
+      3,
+      5,
+      7,
+      1,
+      8
+    ],
+    [
+      3,
+      6,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      0,
+      5,
+      4,
+      7
+    ],
+    [
+      4,
+      2,
+      3,
+      6,
+      7
+    ],
+    [
+      4,
+      4,
+      7,
+      1,
+      8
+    ],
+    [
+      5,
+      0,
+      4,
+      5,
+      7
+    ],
+    [
+      5,
+      2,
+      2,
+      7,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      2,
+      8
+    ]
+  ],
+  "three_six_total_excluded_profiles": 9,
+  "three_six_remaining_unexcluded_count": 39,
+  "three_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      0,
+      3,
+      7,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      9,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      2,
+      1,
+      9,
+      5
+    ],
+    [
+      0,
+      0,
+      2,
+      7,
+      2,
+      6
+    ],
+    [
+      0,
+      0,
+      4,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      0,
+      5,
+      4,
+      5,
+      6
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      2,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      2,
+      4,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      2,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      8,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      6,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      2,
+      6,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      4,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      0,
+      4,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      5,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      6,
+      4,
+      4,
+      7
+    ],
+    [
+      0,
+      6,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      2,
+      2,
+      3,
+      6,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      2,
+      2,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      4,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      5,
+      4,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      5,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      6,
+      2,
+      6,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      1,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      4,
+      4,
+      3,
+      5,
+      7
+    ],
+    [
+      4,
+      4,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      5,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      6,
+      6,
+      1,
+      8
+    ],
+    [
+      4,
+      6,
+      6,
+      5,
+      2,
+      8
+    ]
+  ],
+  "remaining_profiles_feasibility": "untested_no_coloring_or_exclusion_claim",
+  "local_capacity_controls": {
+    "1": {
+      "hole_points": 7,
+      "pair_tests": 21,
+      "compatible_even_pairs": 0,
+      "triple_tests": 35,
+      "compatible_even_triples": 0,
+      "odd_projection_tests": 7,
+      "odd_even_pair_tests": 49,
+      "mixed_compatible_hole_points_per_odd": 0,
+      "pure_even_hole_capacity": 1,
+      "mixed_hole_capacity": 0,
+      "odd_control_sha256": "f69f81bece17e870fdcb0392e1461cecd08ce7f4fe4c3a2653d4105c2e32c4cc"
+    },
+    "2": {
+      "hole_points": 14,
+      "pair_tests": 91,
+      "compatible_even_pairs": 28,
+      "triple_tests": 364,
+      "compatible_even_triples": 0,
+      "odd_projection_tests": 14,
+      "odd_even_pair_tests": 196,
+      "mixed_compatible_hole_points_per_odd": 4,
+      "pure_even_hole_capacity": 2,
+      "mixed_hole_capacity": 1,
+      "odd_control_sha256": "dc46f8eac3d8a242b9fec7c176be38baf07506bebe381d33cbc09f0554866fa4"
+    }
+  },
+  "new_exclusions_by_completion_input": {
+    "written_eight_spread": 8,
+    "prior_finite_seven_spread": 13
+  },
+  "prior_spread_enumeration_rerun": false,
+  "all_small_classes_reenumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_and_Zenodo_PDF_changed": false,
+  "dependency_sha256": {
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-five-six-split31.json": "5f5bd9cf5d2dde307e7f1524494c1b021f046bd4bbc33467f55d2607689c1299",
+    "results/dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "results/dimension-7-nineteen-obstruction.json": "06edca5f0686921305ed543c38c30050bc87291e81be2e5b6e58742c9fe8ecfc"
+  },
+  "checker_sha256": "c607a4d2a5ad79c33be3bb94c03574be148ff54b2c2488f1b0d2f26875505e11",
+  "proof_note_sha256": "991925c660490a5d500692cdc4c76fbb40c7fd80ddefe738a3c5ab3bc65dd238",
+  "scope": "Written isotropic-hole capacity theorem with fixed-coordinate controls and all raw count rows checked. C7 uses the existing finite completion lemma; C8 uses written completion. No full coloring enumeration. 31five-six and39three-six rows unexcluded; sizes4..8andexactn7open>=19."
+}

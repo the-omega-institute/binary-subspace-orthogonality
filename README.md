@@ -335,8 +335,20 @@ charge lies in the completed hole Lagrangian; the common partition
 would force the six-point charge there too, contradicting its pairing
 with its odd member. The [report](results/dimension-7-five-six-split31.json)
 checks the local defect catalogs and all 1,792 conditional charge joins.
-Three of the 46 raw 5+6 profiles are now excluded; the other 43 and
-all 48 raw 6+6+6 profiles remain untested for joint feasibility.
+At that stage three of the 46 raw 5+6 profiles were excluded.
+
+The [uniform hole-capacity theorem](notes/dimension-seven-hole-capacity.md)
+now excludes twelve further 5+6 and nine 6+6+6 profiles in one argument.
+If P counts pure even defects and R counts mixed defects, seven hole points
+require A+P>=7 when C=8, while fourteen require 2A+B+2P+R>=14 when C=7.
+The C=8 exclusions use written eight-spread completion; the C=7 exclusions
+retain the existing finite seven-spread completion dependency.
+The [report](results/dimension-7-hole-capacity.json) preserves all remaining
+rows: fifteen of 46 raw 5+6 profiles and nine of 48 raw 6+6+6 profiles
+are excluded; the other 31 and 39 remain unexcluded with joint feasibility
+untested. This is a written capacity theorem with small coordinate and count
+controls, without a new spread enumeration or covering search.
+Characteristic sizes four through eight and exact n7 remain open >=19.
 Characteristic sizes four through eight and exact n=7 remain open,
 with numerical lower bound nineteen.
 
