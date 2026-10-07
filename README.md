@@ -358,10 +358,22 @@ Both six-class role assignments and zero/nonzero characteristic charge
 are retained. The same note gives a uniform written parity test closing
 all four C=8,B=0 raw rows, newly excluding (3,4;8,0,8).
 The [report](results/dimension-7-five-six-cover.json) rechecks the existing
-cover without a new search and records both proof scopes. Seventeen of
-46 raw 5+6 and nine of 48 raw 6+6+6 profiles are now excluded; the other
-29 and 39 remain unexcluded with joint feasibility untested. Characteristic
+cover without a new search and records both proof scopes. At that stage
+seventeen of 46 raw 5+6 and nine of 48 raw 6+6+6 profiles were excluded. Characteristic
 sizes four through eight and exact n7 remain open >=19, with no new Lean claim.
+
+The [three-plus-five even-cover theorem](notes/dimension-seven-three-five-cover.md)
+now excludes (3,5;7,1,8). Charge parity forces the four remaining odd
+projections into an affine plane, so h=0 follows. A written symplectic basis
+normalizes their class roles and the two even sums to 95 and 96. The necessary
+cover has 400 roots, each requiring seven heptads anchored in the hole space.
+A new bounded search produces a [failed-state certificate](results/dimension-7-three-five-cover-proof.json),
+and its [independent audit](results/dimension-7-three-five-cover-check.json)
+checks every root and branch of all 2,004 states. This is a written reduction
+plus a checked finite cover proof, with no Lean claim. Eighteen of 46 raw 5+6
+and nine of 48 raw 6+6+6 profiles are excluded; the other 28 and 39 remain
+unexcluded with joint feasibility untested. Sizes four through eight and
+exact n7 remain open, with lower bound nineteen.
 Characteristic sizes four through eight and exact n=7 remain open,
 with numerical lower bound nineteen.
 

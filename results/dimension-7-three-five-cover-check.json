@@ -1,0 +1,597 @@
+{
+  "status": "size_four_three_even_five_even_defect_profile_excluded_by_normalized_cover_certificate",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "newly_excluded_profile": [
+    3,
+    5,
+    7,
+    1,
+    8
+  ],
+  "profile_columns": [
+    "k5",
+    "k6",
+    "A",
+    "B",
+    "C"
+  ],
+  "five_six_initial_raw_profiles": 46,
+  "five_six_total_excluded_profiles": 18,
+  "five_six_remaining_unexcluded_count": 28,
+  "five_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      0,
+      2,
+      7,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      4,
+      7
+    ],
+    [
+      0,
+      5,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      0,
+      2,
+      8,
+      6
+    ],
+    [
+      1,
+      0,
+      8,
+      1,
+      7
+    ],
+    [
+      1,
+      2,
+      0,
+      10,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      3,
+      7
+    ],
+    [
+      1,
+      4,
+      4,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      6,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      0,
+      1,
+      9,
+      6
+    ],
+    [
+      2,
+      0,
+      7,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      3,
+      6,
+      7
+    ],
+    [
+      3,
+      0,
+      0,
+      10,
+      6
+    ],
+    [
+      3,
+      0,
+      6,
+      3,
+      7
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      0,
+      5,
+      4,
+      7
+    ],
+    [
+      4,
+      2,
+      3,
+      6,
+      7
+    ],
+    [
+      4,
+      4,
+      7,
+      1,
+      8
+    ],
+    [
+      5,
+      0,
+      4,
+      5,
+      7
+    ],
+    [
+      5,
+      2,
+      2,
+      7,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      2,
+      8
+    ]
+  ],
+  "three_six_initial_raw_profiles": 48,
+  "three_six_total_excluded_profiles": 9,
+  "three_six_remaining_unexcluded_count": 39,
+  "three_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      0,
+      3,
+      7,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      9,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      2,
+      1,
+      9,
+      5
+    ],
+    [
+      0,
+      0,
+      2,
+      7,
+      2,
+      6
+    ],
+    [
+      0,
+      0,
+      4,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      0,
+      5,
+      4,
+      5,
+      6
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      2,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      2,
+      4,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      2,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      8,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      6,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      2,
+      6,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      4,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      0,
+      4,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      5,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      6,
+      4,
+      4,
+      7
+    ],
+    [
+      0,
+      6,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      2,
+      2,
+      3,
+      6,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      2,
+      2,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      4,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      5,
+      4,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      5,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      6,
+      2,
+      6,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      1,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      4,
+      4,
+      3,
+      5,
+      7
+    ],
+    [
+      4,
+      4,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      5,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      6,
+      6,
+      1,
+      8
+    ],
+    [
+      4,
+      6,
+      6,
+      5,
+      2,
+      8
+    ]
+  ],
+  "remaining_profiles_feasibility": "untested_no_coloring_or_exclusion_claim",
+  "characteristic_charge_forced_zero": true,
+  "fixed_hole_affine_planes": 7,
+  "normalization_local_controls": 672,
+  "normalization_Gram_entries_checked": 32928,
+  "inverse_source_defect_class_controls": 6720,
+  "local_control_sha256": "d605b9228204c86f41e360cbbd5dbbb9f9fe670e40e00c1cf38d65925b9f3136",
+  "five_even_candidate_points": 8,
+  "six_even_candidate_points": 16,
+  "five_defect_even_triples": 4,
+  "six_defect_even_quintuples": 6,
+  "mixed_even_sextets": 32,
+  "independent_array_and_bitmask_defect_catalogs_equal": true,
+  "even_six_cliques": 2016,
+  "even_heptads": 288,
+  "eligible_heptad_rows": 224,
+  "eligible_ordered_roots": 400,
+  "distinct_root_states": 400,
+  "failed_states_checked": 2004,
+  "branches_checked": 1604,
+  "leaf_states": 1056,
+  "state_sizes": {
+    "28": 12,
+    "35": 576,
+    "42": 1016,
+    "49": 400
+  },
+  "all_states_reachable": true,
+  "written_eight_spread_completion_used": true,
+  "new_checked_finite_cover_certificate": true,
+  "new_exact_cover_search": true,
+  "search_scope": "Only400roots in the universally normalized specified profile; builder defaults50000states,500000visits,60seconds.",
+  "prior_cover_certificate_reused_for_this_exclusion": false,
+  "prior_spread_enumeration_rerun": false,
+  "all_small_classes_reenumerated": false,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_and_Zenodo_PDF_changed": false,
+  "certificate_sha256": "6f5054171402a5ea29a4233423c4df41cb764e5207716f18de70efffeefb846d",
+  "builder_sha256": "3221aa80307f25e002ec0d60d6dab317476bbdb99bccf3b38bc1dcf527c48e45",
+  "dependency_sha256": {
+    "results/dimension-7-five-six-cover.json": "1603983ca576bbc9c9a5faadd808e3e7c2b0ed650d6237b94e79087f84763aad",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252"
+  },
+  "checker_sha256": "ecd8959894f122bea461dd04a580b934d80cd7ab3f7ae1515b45ff9cb7c9ca5e",
+  "proof_note_sha256": "e58b365168d774449231c4493bdfe523b1f3c5e13ccde2925c183552b3632a04",
+  "scope": "Written charge parity forces h=0 and an affine odd plane; universal symplectic normalization reduces the specified profile to400roots. Independent auditor verifies every root and every failed-state branch of the new finite certificate.28five-six/39three-six raw rows unexcluded;size4..8andexactn7open>=19. No Lean or new numerical bound."
+}
