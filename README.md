@@ -94,7 +94,18 @@ coloring or chromatic conclusion. Within the full seven-line pattern
 only, a [further saturation proof](notes/full-seven-line-branch.md)
 leaves 490 uncolored vertices. Its deterministic CNF has 6,286 variables
 and 196,350 clauses, each independently audited from geometric lists and
-full-span orthogonality. The other nine patterns remain required.
+full-span orthogonality.
+
+The new [clique-triangle forcing proof](notes/forced-seven-line-color.md)
+now shows that all seven special lines must receive color fifteen in
+every normalized seventeen-coloring. Thus mask0 is the only possible
+pattern; the other nine, including the previously audited mask127 branch,
+are excluded by a written graph argument. Seven 42-vertex certificates
+check the forcing mechanism. The equivalent residual problem has
+554 vertices, 16,730 edges, 7,744 variables and 241,782 prospective clauses.
+Color sixteen remains available at every residual vertex, so this is
+a seventeen-color problem. Its colorability and the exact full n=7
+chromatic number remain open.
 
 ## Paper status
 

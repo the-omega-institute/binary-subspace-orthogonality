@@ -1,0 +1,274 @@
+{
+  "status": "seven_color15_forcing_clique_triangle_certificates_and_mask0_lists_checked",
+  "dimension": 7,
+  "target_colors": 17,
+  "fixed_last_line_basis": [
+    127
+  ],
+  "forced_special_line_color": 15,
+  "only_remaining_pattern": 0,
+  "excluded_symmetry_representatives": [
+    1,
+    3,
+    7,
+    11,
+    15,
+    30,
+    31,
+    63,
+    127
+  ],
+  "written_proof_scope": "Every normalized17coloring of the retained graph has all seven special lines15. This follows from conditional clique-triangle contradictions, not a solver UNSAT report.",
+  "witnesses": [
+    {
+      "assumed_color16_special_generator": 124,
+      "t": 3,
+      "d": 12,
+      "e": 71,
+      "f": 75,
+      "first_lagrangian_basis": [
+        3,
+        48,
+        71
+      ],
+      "second_lagrangian_basis": [
+        3,
+        48,
+        75
+      ],
+      "triangle_generators": [
+        56,
+        52,
+        115
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 115,
+      "t": 12,
+      "d": 3,
+      "e": 65,
+      "f": 66,
+      "first_lagrangian_basis": [
+        12,
+        48,
+        65
+      ],
+      "second_lagrangian_basis": [
+        12,
+        48,
+        66
+      ],
+      "triangle_generators": [
+        62,
+        61,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 112,
+      "t": 15,
+      "d": 3,
+      "e": 6,
+      "f": 5,
+      "first_lagrangian_basis": [
+        15,
+        48,
+        6
+      ],
+      "second_lagrangian_basis": [
+        15,
+        48,
+        5
+      ],
+      "triangle_generators": [
+        121,
+        122,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 79,
+      "t": 48,
+      "d": 3,
+      "e": 65,
+      "f": 66,
+      "first_lagrangian_basis": [
+        48,
+        12,
+        65
+      ],
+      "second_lagrangian_basis": [
+        48,
+        12,
+        66
+      ],
+      "triangle_generators": [
+        62,
+        61,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 76,
+      "t": 51,
+      "d": 3,
+      "e": 30,
+      "f": 29,
+      "first_lagrangian_basis": [
+        51,
+        12,
+        30
+      ],
+      "second_lagrangian_basis": [
+        51,
+        12,
+        29
+      ],
+      "triangle_generators": [
+        97,
+        98,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 67,
+      "t": 60,
+      "d": 3,
+      "e": 65,
+      "f": 66,
+      "first_lagrangian_basis": [
+        60,
+        12,
+        65
+      ],
+      "second_lagrangian_basis": [
+        60,
+        12,
+        66
+      ],
+      "triangle_generators": [
+        62,
+        61,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    },
+    {
+      "assumed_color16_special_generator": 64,
+      "t": 63,
+      "d": 3,
+      "e": 6,
+      "f": 5,
+      "first_lagrangian_basis": [
+        63,
+        15,
+        6
+      ],
+      "second_lagrangian_basis": [
+        63,
+        15,
+        5
+      ],
+      "triangle_generators": [
+        121,
+        122,
+        124
+      ],
+      "verification": {
+        "vertices": 42,
+        "pairs_checked": 861,
+        "edges": 425,
+        "three_cliques_size15_checked": true,
+        "triangle_size3_checked": true,
+        "triangle_lists_forced_inside15and16": true,
+        "contradiction": "The two Lagrangian cliques use all0..14 after excluding15and16. Each triangle vertex excludes0..14 via its clique. A triangle cannot use only15and16."
+      }
+    }
+  ],
+  "negative_controls": {
+    "repeated_triangle_vertex": "rejected",
+    "nonisotropic_lagrangian": "rejected"
+  },
+  "retained_vertices": 577,
+  "retained_pairs_checked": 166176,
+  "fixed_T_clique_vertices": 15,
+  "fixed_color15_class": 8,
+  "uncolored_vertices": 554,
+  "uncolored_edges": 16730,
+  "uncolored_dimension_counts": {
+    "1": 112,
+    "2": 308,
+    "3": 134
+  },
+  "palette_sizes": {
+    "12": 210,
+    "15": 280,
+    "16": 64
+  },
+  "variables": 7744,
+  "vertex_clauses": 51494,
+  "edge_clauses": 190288,
+  "clauses": 241782,
+  "all554_geometric_lists_checked": true,
+  "every_residual_vertex_allows16_and_forbids15": true,
+  "checker_sha256": "bdd1fb911426bfc4d8758b279c2f26ae6600306c34ae00f8bd9ea5176cf76127",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "new_CNF_emitted": false,
+  "solver_run": false,
+  "lean_run": false,
+  "full_n7_chromatic_number": "open_lower_bound17",
+  "scope": "Written color-forcing proof with seven42vertex finite certificates and exact residual-list counts. Mask127 ruled out by graph proof, not solver/DRAT. Mask0 colorability and exact fulln7chi remain open. Color16 remains allowed throughout the residual17color problem; old16color uncolorability does not settle it."
+}

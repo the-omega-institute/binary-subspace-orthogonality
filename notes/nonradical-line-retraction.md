@@ -126,10 +126,13 @@ geometric formula. The palette-size counts are
 | 17 | 64 |
 
 The seven lines that were forced to color fifteen in the sixteen-color
-problem now have the two-color list {15,16}. They must not be
-preassigned, and the former propagation that eliminated color fifteen
-from every remaining list must not be reused. No singleton assignment
-is made in this seventeen-color instance. Its pairwise encoding would
+problem have the two-color list {15,16} in this original seventeen-color
+encoding. The old propagation alone does not justify preassigning them.
+The subsequent [clique-triangle proof](forced-seven-line-color.md)
+separately forces color fifteen in the characteristic-vector normalization,
+while preserving the extra color sixteen in every residual list.
+No singleton assignment is made in the original instance recorded here.
+Its pairwise encoding would
 have 8,174 variables and 257,402 clauses. These are exact counts for
 the described encoding; no DIMACS file or solver run is claimed here.
 

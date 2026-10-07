@@ -5,6 +5,11 @@ restriction to ten patterns on its seven two-color lines. This restriction
 preserves seventeen-colorability; it does not give a coloring or determine
 the full seven-dimensional chromatic number.
 
+The subsequent [clique-triangle forcing theorem](forced-seven-line-color.md)
+excludes every nonzero pattern: all seven special lines must receive
+color fifteen. The ten-orbit classification below remains correct, but
+mask0 is now the only candidate for a normalized seventeen-coloring.
+
 Let T=span(3,12,48) and z=127. The fixed sixteen-clique consists of the
 fifteen nonzero subspaces of T, assigned colors zero through fourteen,
 and span(z), assigned color fifteen. Every other color list contains
