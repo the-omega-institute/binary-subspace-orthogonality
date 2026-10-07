@@ -1,0 +1,136 @@
+{
+  "status": "written_characteristic_class_size_at_least_three_in_any_nineteen_line_coloring",
+  "dimension": 7,
+  "characteristic_vector": 127,
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "line_graph_lower_bound": 19,
+  "deleted_line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "nineteen_color_witness": false,
+  "new_numerical_lower_bound": false,
+  "projection_linearity_pairs_checked": 16384,
+  "even_independent_classes_by_size": {
+    "0": 1,
+    "1": 63,
+    "2": 1008,
+    "3": 5376,
+    "4": 10080,
+    "5": 8064,
+    "6": 2016,
+    "7": 288
+  },
+  "lagrangians": 135,
+  "independent_six_classes": 60417,
+  "independent_seven_classes": 2439,
+  "class_counts_by_size_and_odd_count": {
+    "6": {
+      "0": 2016,
+      "1": 12096,
+      "2": 30240,
+      "4": 15120,
+      "6": 945
+    },
+    "7": {
+      "0": 288,
+      "1": 2016,
+      "7": 135
+    }
+  },
+  "independent_class_set_sha256": {
+    "6": "f2aed19b4d59ee923a7dd9f2a174edf4686ed006cf1a9e7d6b512faf42145ac3",
+    "7": "b58e3bb1708b9a0e1266761d79e010bcefd6ca3e2030ce2c524f1c1fb946c804"
+  },
+  "zero_projected_seven_class_sums_checked": 2439,
+  "transfer_controls": {
+    "proposed_companion_already_in_class": 45360,
+    "pairings_checked": 289926,
+    "proper_seven_point_completion": 2961
+  },
+  "odd_parity_nontransfer_controls": 12096,
+  "historical_size_two_profiles_now_all_excluded": [
+    {
+      "defective_even": 0,
+      "defective_odd": 6,
+      "pure_even_heptads": 3,
+      "mixed_saturated": 7,
+      "pure_odd_heptads": 7,
+      "status": "necessary_profile_only_realizability_open",
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    },
+    {
+      "defective_even": 0,
+      "defective_odd": 6,
+      "pure_even_heptads": 9,
+      "mixed_saturated": 0,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_quadratic_parity",
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 4,
+      "pure_even_heptads": 1,
+      "mixed_saturated": 9,
+      "pure_odd_heptads": 7,
+      "status": "necessary_profile_only_realizability_open",
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 4,
+      "pure_even_heptads": 7,
+      "mixed_saturated": 2,
+      "pure_odd_heptads": 8,
+      "status": "necessary_profile_only_realizability_open",
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    },
+    {
+      "defective_even": 4,
+      "defective_odd": 2,
+      "pure_even_heptads": 5,
+      "mixed_saturated": 4,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 5,
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    },
+    {
+      "defective_even": 5,
+      "defective_odd": 1,
+      "pure_even_heptads": 4,
+      "mixed_saturated": 5,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 4,
+      "current_exclusion": "prior_completed_hole_clique_four_labels_for_seven_points"
+    },
+    {
+      "defective_even": 6,
+      "defective_odd": 0,
+      "pure_even_heptads": 3,
+      "mixed_saturated": 6,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 4,
+      "current_exclusion": "projected_sum_and_companion_transfer_or_disjointness_contradiction"
+    }
+  ],
+  "remaining_size_two_profiles": [],
+  "next_size_three_defect_types": [
+    "one five-point class",
+    "two six-point classes"
+  ],
+  "native_SAT": false,
+  "checked_UNSAT_proof": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "5ab25caa0533d7fe961dc0fead3067e4b25a8f6183de4d15e57d53ac49d1c432",
+  "proof_note_sha256": "462cf45cfb867337945cf8ef871b02e7a1a0a1f065a2c585184a667826bf8b87",
+  "prior_deficit_report_sha256": "af0d115301d8a3f20840454e35b84a3abb7c888d0051b4f23a75bd4d4dedceb5",
+  "scope": "Written projection/recoloring proof and exhaustive six/seven independent-class coordinate checks, not complete coloring enumeration or a numerical bound beyond19."
+}
