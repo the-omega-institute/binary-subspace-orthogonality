@@ -587,6 +587,19 @@ plus inherited hash bindings, without a new cover search or rerunning
 old audits. The extended draft includes the result; current totals
 are 25 five-plus-six and 37 three-six candidates. Exact n7 stays open >=19.
 
+The [two-charge recoloring reduction](notes/dimension-seven-four-five-five-charge.md)
+maps every hypothetical `(4,5,5;7,0,8)` coloring to the open
+`(4,6,6;5,2,8)` two-hole branch. Each `(5,1)` six-defect has a unique
+even completion outside M; three exact earlier exclusions force the
+two completion vectors into distinct pure even heptads. Transferring
+both preserves the coloring and the distinct actual defect holes.
+The [local auditor](develop/check_dimension_seven_four_five_five_charge.py)
+and [report](results/dimension-7-four-five-five-charge.json) verify the
+modular local controls and historical source/certificate bindings,
+retaining all inherited finite covering premises. No raw row is
+excluded by this reduction: 25/37 candidates and exact n7 >=19 remain
+open. The extended draft includes the argument and its verification scope.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

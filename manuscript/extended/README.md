@@ -100,3 +100,21 @@ and two with C=5. Exact n7 remains open >=19. Reproduce from the root:
 ```sh
 python3 develop/check_dimension_seven_four_four_six_charge.py --report /tmp/n7-four-four-six-charge.json
 ```
+
+The [two-charge recoloring reduction](../../notes/dimension-seven-four-five-five-charge.md)
+shows that every hypothetical `(4,5,5;7,0,8)` coloring can be moved
+to the open `(4,6,6;5,2,8)` branch with two distinct actual defect
+holes and both pure-six sums outside M. The unique even completions
+of the two `(5,1)` six-defects must come from distinct pure even
+heptads: other defect sources and a common heptad source yield
+three precisely matched earlier exclusions. Their historical finite
+premises are retained, including all D/H/G/Z marked forms.
+New finite controls check 1,344 unique completions, 5,376 markings,
+1,214,976 disjoint defect triples and separate source-heptad transfers.
+These controls construct no complete covering roots or new cover proof.
+The original and resulting raw rows remain open; totals stay 25/37.
+Reproduce from the root:
+
+```sh
+python3 develop/check_dimension_seven_four_five_five_charge.py --report /tmp/n7-four-five-five-charge.json
+```
