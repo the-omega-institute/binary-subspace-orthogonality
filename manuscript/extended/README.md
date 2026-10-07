@@ -127,11 +127,22 @@ even sextets in each role; the 216 disjoint pure-defect pairs have
 72,38,38 local orbits. Those actions are not free. All 5,376 ordered
 markings have eight explicit normalization controls, and catalog
 actions, group closure and actual-hole transport are checked.
-Joint compatibility of all five even blocks and a complete necessary
-remaining-set family are the next step. No cover search or new raw
-exclusion is claimed; this normalization covers the transferred
-two-hole subbranch, with 25/37 candidates and exact n7 still open >=19.
+The [joint-family construction](../../notes/dimension-seven-four-six-six-roots.md)
+now completes the necessary five-component families: 1,708,1,648,304
+distinct 35-point remaining sets, with unique component decompositions
+within each marked form. The complete group orbits number 224,112,21,
+with stabilizers of order one or two. All 44,896 root actions retain
+paired roles and actual holes. Each root has five residual holes,
+so the five residual pure even heptads must come from the 224
+anchored heptads. The bitmask builder and independent array auditor
+agree on all roots and orbits; four invalid-artifact controls are
+rejected. The next step is a bounded cover test on these 357
+representatives. No cover search or new raw exclusion is claimed;
+this analysis covers the transferred two-hole subbranch, with
+25/37 candidates and exact n7 still open >=19.
 
 ```sh
 python3 develop/check_dimension_seven_four_six_six_two_hole.py --report /tmp/n7-four-six-six-two-hole.json
+python3 develop/build_dimension_seven_four_six_six_roots.py --roots /tmp/n7-four-six-six-roots.json
+python3 develop/check_dimension_seven_four_six_six_roots.py --roots /tmp/n7-four-six-six-roots.json --report /tmp/n7-four-six-six-roots-check.json
 ```

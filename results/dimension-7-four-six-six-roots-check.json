@@ -1,0 +1,884 @@
+{
+  "status": "complete_transferred_two_hole_five_component_roots_independently_checked",
+  "dimension": 7,
+  "profile": [
+    4,
+    6,
+    6,
+    5,
+    2,
+    8
+  ],
+  "source_profile": [
+    4,
+    5,
+    5,
+    7,
+    0,
+    8
+  ],
+  "scope": "Transferred two-hole subbranch only; paired pure/mixed roles and actual holes retained.",
+  "forms": [
+    {
+      "b": 3,
+      "complete_joint_families": 1708,
+      "distinct_35_point_remaining_sets": 1708,
+      "decompositions_per_remaining_set": 1,
+      "full_marked_group_order": 8,
+      "remaining_set_orbits": 224,
+      "orbit_size_counts": {
+        "4": 21,
+        "8": 203
+      },
+      "root_stabilizer_size_counts": {
+        "1": 1624,
+        "2": 84
+      },
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 176
+        },
+        {
+          "holes": [
+            60,
+            48
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            60,
+            51
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "families": 432
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            63,
+            51
+          ],
+          "families": 476
+        }
+      ],
+      "representatives_by_unordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "representatives": 12
+        },
+        {
+          "holes": [
+            48,
+            60
+          ],
+          "representatives": 10
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "representatives": 42
+        },
+        {
+          "holes": [
+            51,
+            60
+          ],
+          "representatives": 36
+        },
+        {
+          "holes": [
+            51,
+            63
+          ],
+          "representatives": 70
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "representatives": 54
+        }
+      ]
+    },
+    {
+      "b": 15,
+      "complete_joint_families": 1648,
+      "distinct_35_point_remaining_sets": 1648,
+      "decompositions_per_remaining_set": 1,
+      "full_marked_group_order": 16,
+      "remaining_set_orbits": 112,
+      "orbit_size_counts": {
+        "8": 18,
+        "16": 94
+      },
+      "root_stabilizer_size_counts": {
+        "1": 1504,
+        "2": 144
+      },
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 240
+        },
+        {
+          "holes": [
+            60,
+            48
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            60,
+            51
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "families": 480
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 240
+        },
+        {
+          "holes": [
+            63,
+            51
+          ],
+          "families": 480
+        }
+      ],
+      "representatives_by_unordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "representatives": 2
+        },
+        {
+          "holes": [
+            48,
+            60
+          ],
+          "representatives": 5
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "representatives": 30
+        },
+        {
+          "holes": [
+            51,
+            60
+          ],
+          "representatives": 6
+        },
+        {
+          "holes": [
+            51,
+            63
+          ],
+          "representatives": 18
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "representatives": 51
+        }
+      ]
+    },
+    {
+      "b": 63,
+      "complete_joint_families": 304,
+      "distinct_35_point_remaining_sets": 304,
+      "decompositions_per_remaining_set": 1,
+      "full_marked_group_order": 16,
+      "remaining_set_orbits": 21,
+      "orbit_size_counts": {
+        "8": 4,
+        "16": 17
+      },
+      "root_stabilizer_size_counts": {
+        "1": 272,
+        "2": 32
+      },
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 24
+        },
+        {
+          "holes": [
+            60,
+            48
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            60,
+            51
+          ],
+          "families": 64
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 24
+        },
+        {
+          "holes": [
+            63,
+            51
+          ],
+          "families": 80
+        }
+      ],
+      "representatives_by_unordered_actual_holes": [
+        {
+          "holes": [
+            48,
+            51
+          ],
+          "representatives": 2
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "representatives": 3
+        },
+        {
+          "holes": [
+            51,
+            60
+          ],
+          "representatives": 4
+        },
+        {
+          "holes": [
+            51,
+            63
+          ],
+          "representatives": 4
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "representatives": 8
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "original_graph_component_pair_checks": 318420,
+    "reversed_pure_source_heptads": 7320,
+    "full_dot_product_checks": 655360,
+    "composition_point_checks": 73728,
+    "root_actions_with_all_roles_and_actual_holes": 44896
+  },
+  "all_five_component_families_complete": true,
+  "remaining_set_decomposition_unique": true,
+  "paired_roles_and_actual_holes_transported": true,
+  "free_group_action_assumed": false,
+  "array_reconstruction_matches_bitmask_builder": true,
+  "rejected_invalid_controls": [
+    "missing_root",
+    "changed_component",
+    "wrong_actual_holes",
+    "missing_orbit_member"
+  ],
+  "residual_points": 35,
+  "residual_holes": 5,
+  "residual_pure_heptads_required": 5,
+  "all_even_heptads": 288,
+  "anchored_heptads": 224,
+  "cover_search_run": false,
+  "new_cover_certificate": false,
+  "new_raw_profile_exclusions": 0,
+  "target_raw_profile_excluded": false,
+  "source_raw_profile_excluded": false,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 37
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ],
+      [
+        4,
+        5,
+        5,
+        7,
+        0,
+        8
+      ],
+      [
+        4,
+        5,
+        6,
+        6,
+        1,
+        8
+      ],
+      [
+        4,
+        6,
+        6,
+        5,
+        2,
+        8
+      ]
+    ]
+  },
+  "remaining_three_six_C8_count": 3,
+  "exact_n7": "open_lower_bound19",
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "historical_cover_audits_rerun": false,
+  "previous_local_control_audit_rerun": false,
+  "inherited_theorem_report_sha256": {
+    "results/dimension-7-three-five-cover-check.json": "379ddfc87540b2e8ea3c8d6d7809c0dbea49fe45d856e7c3e14564b15af4ba9d",
+    "results/dimension-7-four-even-pairs-check.json": "b11138267957b322b82058363c8e6b5d7e650bbd9e7c9692f95658cc109dc472",
+    "results/dimension-7-five-four-D-cover-check.json": "efa32490cb34f681212125a4ab67b926ae1cb5ae89ae9ffaed94ee15e09eee42",
+    "results/dimension-7-five-four-H-cover-check.json": "85d2d73ce268ed4a8e3fcb8dff93a9f023405569c71790d94ed2671eeb80fd3f",
+    "results/dimension-7-five-four-G-cover-check.json": "d7756f5c9502bd4c70191a5adb08f54890a37fe8b0d9d3e4b74e9a1a15817e48",
+    "results/dimension-7-five-four-Z-cover-check.json": "85930da140bf64f2b875e3d4c2809be92f275c57e7765a96df30e588a6d92908",
+    "results/dimension-7-four-four-hole-cover.json": "e1a43630408e1ece5c8efbf9a084e8ca67746082a5d8f1e02327f2c58c056a7a"
+  },
+  "inherited_geometry_report_sha256": "201fffaeed43de730a56dbc2bd31cf84202ad1ae4a643e2a3c13ff9f9ab72046",
+  "roots_sha256": "a8115f59a74db4ceb0cc248522d1f7eb550232c8bfecf4d3ad80a1e9abe5f85b",
+  "checker_sha256": "0dec19a3cc3932b31e545960a889e378fc36cc3f6b0bf8ec75009029c9e7a5bf",
+  "proof_note_sha256": "3279c2e1be433acc7d3353210942ebdd3d90a6b1d9e431c2082549ce34ed43d0",
+  "dependency_sha256": {
+    "develop/build_dimension_seven_four_six_six_roots.py": "a3f0d1c7c0ba149d96277c21e654d64a2c96a78ec6a4b52a559a00ed2f111b26",
+    "develop/check_dimension_seven_four_six_six_two_hole.py": "90f13e4e11bbc74be807d9642207993ee13efb0012d6c8cfe7a1bb812c12482b",
+    "notes/dimension-seven-four-six-six-two-hole.md": "44a69371195262cf334e5acf685e297c6ac6a40c2502c748bcc7c421b6246822",
+    "results/dimension-7-four-six-six-two-hole.json": "201fffaeed43de730a56dbc2bd31cf84202ad1ae4a643e2a3c13ff9f9ab72046"
+  }
+}

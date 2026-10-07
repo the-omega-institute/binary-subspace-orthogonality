@@ -607,9 +607,20 @@ and [report](results/dimension-7-four-six-six-two-hole.json) verify
 all 5,376 ordered markings, group and component-catalog actions,
 and actual-hole transport. The 216 disjoint pure-defect pairs give
 72,38,38 local orbits; actual ordered hole pairs give 12,7,7 orbits.
-These actions are not free. Complete jointly compatible five-block
-remaining sets and their covering problem are not yet constructed.
-The extended draft includes this geometric reduction; the transferred
+These actions are not free. The subsequent
+[joint-family construction](notes/dimension-seven-four-six-six-roots.md)
+retains all five even components and their actual holes. The three
+forms have 1,708,1,648,304 distinct necessary 35-point remaining sets,
+each with a unique component decomposition. Their complete group
+orbits number 224,112,21. The
+[bitmask builder](develop/build_dimension_seven_four_six_six_roots.py),
+[independent array auditor](develop/check_dimension_seven_four_six_six_roots.py),
+[complete root artifact](results/dimension-7-four-six-six-roots.json)
+and [report](results/dimension-7-four-six-six-roots-check.json)
+verify every family, group orbit and actual-hole transport.
+The 357 representatives specify a complete necessary five-anchored-
+heptad covering problem. No cover search runs in this step.
+The extended draft includes both reductions; the transferred
 subbranch, all 25/37 candidates and exact n7 >=19 remain open.
 
 ## Repository map
