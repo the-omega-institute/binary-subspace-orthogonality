@@ -467,7 +467,19 @@ reconstruct the catalogs and root multiset and verify the full orbit
 partition. No representative is solved in this step; Z, the raw profile
 and exact n7 remain open >=19. Both manuscript PDFs are preserved.
 
-The [profile-scope analysis](notes/dimension-seven-profile-scope.md)
+The subsequent [Z covering theorem](notes/dimension-seven-five-four-Z-cover.md)
+excludes all 10,837 representatives with a new independently audited
+[certificate](results/dimension-7-five-four-Z-cover-proof.json). The
+[auditor](develop/check_dimension_seven_five_four_Z_cover.py) verifies
+14,337 reachable failed states, all 3,517 branches and 10,995 leaves;
+three invalid controls are rejected. Together with the exhaustive
+four-form reduction and separate D/H/G exclusions, this closes the raw
+profile `(5,4;6,2,8)`. The [report](results/dimension-7-five-four-Z-cover-check.json)
+reconstructs the parity-count catalogs and removes exactly this row,
+leaving 26 five-plus-six and 39 three-six count candidates. The extended
+working draft includes the result; exact n7 remains open >=19.
+
+The earlier [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
 and [report](results/dimension-7-profile-scope.json) verify that the
@@ -477,6 +489,8 @@ satisfy the applicable uniform hole-capacity bound; two have five.
 Sizes five through eight require additional branches. No uniform
 exclusion of the remaining family or completion-time estimate is
 established; the completed lower bound 19 is independent of this work.
+Its archived 27/39 totals predate the Z exclusion; the new Z covering
+report retains the updated complete remaining lists with totals 26/39.
 
 ## Repository map
 

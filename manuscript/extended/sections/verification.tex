@@ -68,21 +68,26 @@ Lemma~\ref{lem:eight-completion} proves their completion uniformly.
 The additional nineteen-color constraints in Section~\ref{sec:higher}
 have their own evidence. The six- and seven-member partial-spread
 completion lemmas use written normalization and exhaustive finite
-enumerations. The three marked-form exclusions use independently checked
-covering certificates. For the mixed characteristic-charge form,
-\path{develop/check_dimension_seven_five_four_G_cover.py}
+enumerations. The four marked-form exclusions use independently checked
+covering certificates. For the zero-five-even-sum form,
+\path{develop/check_dimension_seven_five_four_Z_cover.py}
 reconstructs the complete necessary-root family and orbit partition.
-It then verifies $3351$ reachable failed states, all $1045$ branches
-and $2401$ leaves, using all $224$ anchored heptads. Every branch
+It then verifies $14\,337$ reachable failed states, all $3517$ branches
+and $10\,995$ leaves, using all $224$ anchored heptads. Every branch
 removes seven points, leaves admit no row, and the empty set is never
 declared failed; induction proves the exclusion. Three invalid
 certificates are rejected. The proof notes, checkers and hash-bound reports
 are recorded separately in the public package. The small accounting
 auditor \path{develop/check_dimension_seven_profile_scope.py}
 reconstructs the parity-count catalogs and checks the scope of the
-remaining count candidates, including the $64$ rows to which the common
-hole capacity applies. Its archived marked-form scope predates the
-latest G exclusion; the G covering auditor verifies that update separately.
-Neither check excludes the remaining zero-five-even-sum form.
+earlier count candidates, including the $64$ rows to which the common
+hole capacity applied. Its archived scope predates the completed
+four-form exclusion. The Z covering auditor independently reconstructs
+the raw count catalogs and checks the removal of exactly the row
+$(5,4;6,2,8)$ from the earlier remaining list. There are now $26$
+five-plus-six and $39$ three-six candidates, of which $63$ have six
+through eight pure odd heptads and two have five. The separate
+earlier covering results are hash-bound inputs to this combined profile
+conclusion; their proofs are not rerun or used in the Z covering proof.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.

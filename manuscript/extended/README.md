@@ -18,7 +18,8 @@ dimension-seven chromatic numbers remain open.
 Section 7 derives common deficit, parity-count, projected-charge and hole
 capacity constraints for nineteen colors, and states the precise scope of
 the partial case analysis. Its six/seven-Lagrangian completion premises and
-three marked-form covering exclusions retain their separate finite dependencies;
+four marked-form covering exclusions close the specified profile
+`(5,4;6,2,8)` and retain their separate finite dependencies;
 they are not needed for the written lower bound 19. The original
 six-dimensional Lean theorem still uses three standard axioms and four
 native-evaluation axioms. No dimension-seven Lean formalization is claimed.
@@ -48,10 +49,12 @@ separate spread-completion or covering enumerations. See
 `notes/dimension-seven-profile-scope.md` for their written arguments,
 reproduction commands, and precise dependencies.
 
-The latest [G exclusion](../../notes/dimension-seven-five-four-G-cover.md)
-uses the proved 64-element pointwise-hole stabilizer and a newly audited
-finite covering certificate, leaving Z open in the specified raw profile.
-Reproduce its bounded builder and auditor with the commands in the G proof
-note. The scope auditor above retains its earlier marked-form snapshot;
-its count-candidate totals remain valid, and the G covering report records
-the new exclusion.
+The latest [Z exclusion](../../notes/dimension-seven-five-four-Z-cover.md)
+uses the proved 128-element marked stabilizer and a newly audited finite
+covering certificate. Together with the separate D/H/G exclusions, it
+closes exactly the specified raw profile, leaving 26 five-plus-six and
+39 three-six count candidates. Reproduce its bounded builder and auditor
+with the commands in the Z proof note. The scope auditor above retains
+its earlier snapshot of 27/39 candidates; the Z covering auditor
+independently reconstructs the count catalogs and records the one-row
+update. The exact dimension-seven chromatic numbers remain open >=19.
