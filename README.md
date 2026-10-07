@@ -436,6 +436,16 @@ proof inputs to H. D and H are excluded; Z and G remain open, so
 the raw profile and totals of 27/39 unexcluded profiles remain unchanged.
 Exact n7 remains open >=19; no new Lean or numerical bound is claimed.
 
+The [G-form root and stabilizer reduction](notes/dimension-seven-five-four-G-roots.md)
+retains the actual pure-five hole and both mixed classes. Two independent
+catalog constructions give 129,280 ordered roots and 127,984 distinct
+42-point remaining sets. A written pointwise-hole symplectic group of
+order 64 reduces the latter to 2,306 orbit representatives. The
+[checker](develop/check_dimension_seven_five_four_G_roots.py) and
+[report](results/dimension-7-five-four-G-roots.json) verify all maps,
+catalog invariance and the complete orbit partition. No covering search
+or G exclusion is claimed; Z/G and the raw profile remain open.
+
 The [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
