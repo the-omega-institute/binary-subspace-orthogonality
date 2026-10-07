@@ -98,7 +98,23 @@ seven points, and three invalid controls are rejected. No earlier
 covering certificate is a premise of this new finite proof.
 The same auditor reconstructs the raw count catalogs and removes
 exactly $(3,6;6,2,8)$ from the preceding $26$-row list. There are
-now $25$ five-plus-six and $39$ three-six candidates: $62$ have
+then $25$ five-plus-six and $39$ three-six candidates: $62$ have
 six through eight pure odd heptads and two have five.
+For $(2,6,6;7,0,8)$,
+\path{develop/check_dimension_seven_two_six_six_cover.py}
+reconstructs all $384$ necessary sets and their $75$ marked orbits,
+retaining both actual defect holes and intrinsic pure-six roles.
+It checks the full $288$-row even-heptad catalog, including rows
+avoiding $M$. The new certificate has $368$ reachable failed states,
+$293$ branches and $225$ leaves; all pivot successors are checked,
+and four invalid controls are rejected. Induction on the remaining
+cardinality proves the outside-$M$ obstruction. The inside-$M$
+recoloring exclusion invokes the earlier $(2,6;7,1,8)$ theorem and
+its historical finite cover input, recorded in
+\path{notes/dimension-seven-five-six-cover.md}; that certificate is
+not a premise of the new outside-$M$ proof and is not rerun here.
+The new auditor removes exactly this three-six row, preserving
+the five-plus-six list. The current totals are $25$ and $38$:
+$61$ have six through eight pure odd heptads and two have five.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.

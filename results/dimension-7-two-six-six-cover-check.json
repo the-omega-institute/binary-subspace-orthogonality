@@ -1,0 +1,592 @@
+{
+  "status": "two_six_six_raw_profile_excluded_by_recoloring_and_audited_full_heptad_cover",
+  "dimension": 7,
+  "profile": [
+    2,
+    6,
+    6,
+    7,
+    0,
+    8
+  ],
+  "characteristic_class_size": 4,
+  "target_raw_profile_excluded": true,
+  "inside_M_excluded_by_prior_recoloring_theorem_and_historical_cover_input": true,
+  "outside_M_excluded_by_new_finite_cover_certificate": true,
+  "ordered_necessary_roots": 384,
+  "distinct_necessary_root_sets": 384,
+  "full_marked_stabilizer_order": 8,
+  "orbit_representatives_checked": 75,
+  "all_actual_defect_holes_and_intrinsic_pure_six_roles_retained": true,
+  "all_even_heptads_used": 288,
+  "anchored_heptads": 224,
+  "heptads_avoiding_M": 64,
+  "reachable_failed_states": 368,
+  "checked_branches": 293,
+  "leaves_without_any_admissible_heptad": 225,
+  "state_size_histogram": {
+    "28": 4,
+    "35": 103,
+    "42": 186,
+    "49": 75
+  },
+  "rejected_invalid_controls": [
+    "missing_required_representative",
+    "pivot_not_in_even_remaining_set",
+    "empty_set_falsely_marked_failed",
+    "required_pivot_successor_omitted"
+  ],
+  "root_catalogs_and_complete_orbit_partitions_reconstructed_and_matched": true,
+  "newly_excluded_raw_profile": [
+    2,
+    6,
+    6,
+    7,
+    0,
+    8
+  ],
+  "new_raw_profile_exclusions": 1,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 38
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ],
+      [
+        4,
+        4,
+        6,
+        7,
+        0,
+        8
+      ],
+      [
+        4,
+        5,
+        5,
+        7,
+        0,
+        8
+      ],
+      [
+        4,
+        5,
+        6,
+        6,
+        1,
+        8
+      ],
+      [
+        4,
+        6,
+        6,
+        5,
+        2,
+        8
+      ]
+    ]
+  },
+  "remaining_counts_by_pure_odd_heptads": {
+    "five_six": {
+      "6": 6,
+      "7": 19
+    },
+    "three_six": {
+      "5": 2,
+      "6": 14,
+      "7": 18,
+      "8": 4
+    }
+  },
+  "total_excluded_profiles": {
+    "five_six": 21,
+    "three_six": 10
+  },
+  "remaining_C6_through_C8_count": 61,
+  "remaining_C5_count": 2,
+  "prior_cover_certificates_used_as_outside_M_finite_proof_inputs": false,
+  "prior_cover_audits_rerun": false,
+  "all_nineteen_color_branches_excluded": false,
+  "characteristic_sizes_still_open": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "exact_n7": "open_lower_bound19",
+  "nineteen_color_witness": false,
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "search_limits": {
+    "max_states": 20000,
+    "max_visits": 80000,
+    "seconds": 20
+  },
+  "certificate_sha256": "de236d56156acc6f13aa82d8e5cc8651f6899265df6869fb2a6f80588fcdeb08",
+  "builder_sha256": "4bf7c6d2ebed2ed1bc849dfeb4d703ebee81103bc940bd2a7e29bdc37aa77be2",
+  "checker_sha256": "50846faa182198ac7605688c0993ffc1e69b619330238ab15e7fe1216f438583",
+  "proof_note_sha256": "499d675006d6190b0d4eadd6f053732acceb5b57ff7eaac752b14f6e4666c4c3",
+  "dependency_sha256": {
+    "notes/dimension-seven-two-six-six-charge.md": "afe39d2c650632f94dcffc6049e91320bcf8630d33a7168578db6dfa83bb5e4d",
+    "notes/dimension-seven-two-six-six-roots.md": "a0066c84150c9295832f029ffa65b9bc92998c67fcfba68d2eaecf8c107fcb9e",
+    "develop/check_dimension_seven_two_six_six_roots.py": "88756825e0ac45b5fc373d42db217318e7107e2547160ba53321999c30f433a4",
+    "develop/check_dimension_seven_two_six_six_charge.py": "f56d98adef33571282f97ad614ac3d8749c6cd01c1ee099977832fe3002d0d02",
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+    "results/dimension-7-two-six-six-roots.json": "ed3cd79ee45204abbcf2a73a6bd9bd35d0b84bef49d6e694e89a06cd7f29b9ce",
+    "results/dimension-7-two-six-six-charge.json": "45f4f02b072a1e33839bbd15d78687fa483d8aa7525dc633e248691139fa3cd9",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-five-four-Z-cover-check.json": "85930da140bf64f2b875e3d4c2809be92f275c57e7765a96df30e588a6d92908"
+  },
+  "scope": "Inside-M sums excluded by the prior recoloring theorem with inherited historical finite cover input; all 75 outside-M representatives excluded by a new independently audited proof using every even heptad. Exactly the specified three-six row is removed; 25/38 count candidates, characteristic sizes 4..8 and exact n7 remain open."
+}

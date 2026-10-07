@@ -69,3 +69,16 @@ through eight pure odd heptads and two have five. Reproduce the
 new builder and auditor using the commands in its proof note;
 earlier covering certificates are not proof inputs. The extended
 draft includes this result, with exact n7 still open >=19.
+
+The [two-even/four-odd three-six exclusion](../../notes/dimension-seven-two-six-six-cover.md)
+closes `(2,6,6;7,0,8)`. Recoloring excludes inside-M sums using
+the earlier `(2,6;7,1,8)` theorem and its historical finite cover input.
+For outside-M sums, the full order-eight marked group reduces all 384
+distinct necessary 49-point sets to 75 representatives. The new finite
+proof uses all 288 even heptads, including the 64 avoiding M, and retains
+both actual defect holes. Its independent auditor checks 368 reachable
+failed states, 293 branches and 225 leaves; four invalid controls fail.
+This removes exactly one three-six row, leaving 25/38 candidates,
+including four three-six C=8 rows. Reproduce the new builder and auditor
+with the commands in its proof note. The extended draft includes this
+result; exact n7 remains open >=19. The submitted snapshot is preserved.

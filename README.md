@@ -560,6 +560,20 @@ hole orbit and eligible rows from all 288 even heptads. Two independent
 complete constructions agree; no cover search or exclusion is performed.
 The 25/39 totals and exact n7 remain open >=19; both PDFs are preserved.
 
+The [two-six-six covering theorem](notes/dimension-seven-two-six-six-cover.md)
+excludes `(2,6,6;7,0,8)`. The inside-M branch inherits the prior
+recoloring theorem's finite cover input; the outside-M branch uses a new
+[certificate](results/dimension-7-two-six-six-cover-proof.json).
+Its [independent auditor](develop/check_dimension_seven_two_six_six_cover.py)
+reconstructs all 384 roots and 75 marked orbits, then checks 368 failed
+states, 293 branches and 225 leaves against all 288 even heptads.
+Both actual defect holes and the intrinsic pure-six roles are retained.
+Four invalid controls are rejected. The
+[report](results/dimension-7-two-six-six-cover-check.json) removes exactly
+this three-six row, leaving 25 five-plus-six and 38 three-six candidates.
+Four three-six C=8 rows remain. The extended working draft incorporates
+the result; the submitted snapshot is preserved and exact n7 stays open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
