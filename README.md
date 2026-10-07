@@ -408,6 +408,19 @@ new profile exclusion is claimed. The totals remain 19/46 five-plus-six
 and 9/48 three-six profiles excluded, with 27/39 unexcluded and exact
 n7 open >=19.
 
+The subsequent [D-form covering theorem](notes/dimension-seven-five-four-D-cover.md)
+excludes the nonzero six-defect characteristic-charge normal form of
+(5,4;6,2,8). Adding both mixed sextets gives 62,976 ordered roots,
+with 54,448 distinct 42-point sets, retaining the actual pure-five
+hole in every root. The [bounded builder](develop/build_dimension_seven_five_four_D_cover.py)
+and [independent auditor](develop/check_dimension_seven_five_four_D_cover.py)
+produce and check a new [six-heptad certificate](results/dimension-7-five-four-D-cover-proof.json).
+Its [report](results/dimension-7-five-four-D-cover-check.json) verifies
+72,576 reachable failed states and every branch. The earlier seven-heptad
+certificates are not inputs. D is excluded; Z,H,G remain open, so the
+raw profile and the 27/39 unexcluded-profile totals remain unchanged.
+Exact n7 stays open >=19, with no new Lean or numerical bound claim.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
