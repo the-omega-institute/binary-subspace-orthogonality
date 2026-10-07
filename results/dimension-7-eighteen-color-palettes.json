@@ -1,0 +1,473 @@
+{
+  "status": "all_even_odd_neighbor_sets_equal_incident_Lagrangian_clique_unions",
+  "dimension": 7,
+  "target_palette_size": 18,
+  "even_vertices": 513,
+  "even_vertex_dimensions": {
+    "1": 63,
+    "2": 315,
+    "3": 135
+  },
+  "lagrangians": 135,
+  "nonzero_points": 63,
+  "lagrangians_per_nonzero_point": 15,
+  "nonzero_point_lagrangian_incidences": 945,
+  "all_vector_lagrangian_memberships_checked": 8640,
+  "even_odd_neighbor_memberships_checked": 32832,
+  "even_odd_edges": 8136,
+  "even_neighbor_histogram_nonzero_vectors": {
+    "121": 63
+  },
+  "odd_noncharacteristic_vertices": 63,
+  "odd_pairs_checked": 1953,
+  "odd_edges": 1008,
+  "odd_degree": 32,
+  "characteristic_line_odd_degree": 0,
+  "odd_cliques_by_size": {
+    "1": 63,
+    "2": 1008,
+    "3": 5376,
+    "4": 10080,
+    "5": 8064,
+    "6": 2016,
+    "7": 288
+  },
+  "odd_maximal_cliques_by_size": {
+    "3": 336,
+    "5": 2016,
+    "7": 288
+  },
+  "odd_maximal_clique_examples": {
+    "3": [
+      3,
+      5,
+      6
+    ],
+    "5": [
+      3,
+      5,
+      9,
+      17,
+      30
+    ],
+    "7": [
+      3,
+      5,
+      9,
+      17,
+      33,
+      65,
+      126
+    ]
+  },
+  "triple_independence_pairs_checked": 9045,
+  "triple_independence_edges": 0,
+  "lines_and_planes_sufficient_construction": {
+    "vertices": 442,
+    "pairs_checked": 97461,
+    "edges": 16569,
+    "target_colors": 17,
+    "coloring_supplied": false,
+    "scope": "A17coloring here plus one separate color for all135triples would give18colors on the retained graph. Sufficient construction only, not an equivalent restriction."
+  },
+  "point_records": [
+    {
+      "even_vector": 0,
+      "odd_line_generator": 127,
+      "incident_lagrangians": 135,
+      "even_neighbors": 513
+    },
+    {
+      "even_vector": 3,
+      "odd_line_generator": 124,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 5,
+      "odd_line_generator": 122,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 6,
+      "odd_line_generator": 121,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 9,
+      "odd_line_generator": 118,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 10,
+      "odd_line_generator": 117,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 12,
+      "odd_line_generator": 115,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 15,
+      "odd_line_generator": 112,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 17,
+      "odd_line_generator": 110,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 18,
+      "odd_line_generator": 109,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 20,
+      "odd_line_generator": 107,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 23,
+      "odd_line_generator": 104,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 24,
+      "odd_line_generator": 103,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 27,
+      "odd_line_generator": 100,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 29,
+      "odd_line_generator": 98,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 30,
+      "odd_line_generator": 97,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 33,
+      "odd_line_generator": 94,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 34,
+      "odd_line_generator": 93,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 36,
+      "odd_line_generator": 91,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 39,
+      "odd_line_generator": 88,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 40,
+      "odd_line_generator": 87,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 43,
+      "odd_line_generator": 84,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 45,
+      "odd_line_generator": 82,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 46,
+      "odd_line_generator": 81,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 48,
+      "odd_line_generator": 79,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 51,
+      "odd_line_generator": 76,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 53,
+      "odd_line_generator": 74,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 54,
+      "odd_line_generator": 73,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 57,
+      "odd_line_generator": 70,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 58,
+      "odd_line_generator": 69,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 60,
+      "odd_line_generator": 67,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 63,
+      "odd_line_generator": 64,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 65,
+      "odd_line_generator": 62,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 66,
+      "odd_line_generator": 61,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 68,
+      "odd_line_generator": 59,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 71,
+      "odd_line_generator": 56,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 72,
+      "odd_line_generator": 55,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 75,
+      "odd_line_generator": 52,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 77,
+      "odd_line_generator": 50,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 78,
+      "odd_line_generator": 49,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 80,
+      "odd_line_generator": 47,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 83,
+      "odd_line_generator": 44,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 85,
+      "odd_line_generator": 42,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 86,
+      "odd_line_generator": 41,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 89,
+      "odd_line_generator": 38,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 90,
+      "odd_line_generator": 37,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 92,
+      "odd_line_generator": 35,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 95,
+      "odd_line_generator": 32,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 96,
+      "odd_line_generator": 31,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 99,
+      "odd_line_generator": 28,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 101,
+      "odd_line_generator": 26,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 102,
+      "odd_line_generator": 25,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 105,
+      "odd_line_generator": 22,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 106,
+      "odd_line_generator": 21,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 108,
+      "odd_line_generator": 19,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 111,
+      "odd_line_generator": 16,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 113,
+      "odd_line_generator": 14,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 114,
+      "odd_line_generator": 13,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 116,
+      "odd_line_generator": 11,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 119,
+      "odd_line_generator": 8,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 120,
+      "odd_line_generator": 7,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 123,
+      "odd_line_generator": 4,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 125,
+      "odd_line_generator": 2,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    },
+    {
+      "even_vector": 126,
+      "odd_line_generator": 1,
+      "incident_lagrangians": 15,
+      "even_neighbors": 121
+    }
+  ],
+  "negative_controls": {
+    "missing_incident_lagrangian": "rejected",
+    "wrong_odd_adjacency_parity": "rejected"
+  },
+  "checker_sha256": "fcc955cc19f5d95e3cf1d0ccf231d05725f69db6ff6208a66fab3102a577e53a",
+  "written_criterion": "Given a proper coloring of the513even vertices with17non15colors, odd line[z+e] has list{15} union the intersection of the two omitted colors over all Lagrangians containing e. Extending on the63nonzeroe nonorthogonality graph is necessary and sufficient.",
+  "written_necessary_condition": "Vectors whose omitted-pair intersection is empty are pairwise symplectically orthogonal, hence their span is totally isotropic and there are at most7nonzero such vectors. At least56nonzero points have a nonempty intersection.",
+  "written_clique_condition": "For every nonempty odd clique C, the union of its omitted-pair intersections must have at least|C|-1colors. All26895cliques enumerated. Its2640maximal cliques have sizes3,5,7 and vector sum0. These are necessary constraints, not a sufficient global list-coloring test.",
+  "even_coloring_supplied": false,
+  "odd_list_coloring_supplied": false,
+  "new_chromatic_bound": false,
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "Written conditional extension theorem with exhaustive incidence/neighbor geometry checks. No actual17color even coloring,18color full witness or new lower bound. Exact full n7chromatic number remains open>=18. No seventeen-color anchor assignments imposed on eighteen colors."
+}

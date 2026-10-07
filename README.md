@@ -119,6 +119,17 @@ submitted manuscript remains at its linked revision for coauthor review
 of this extension; no full-graph eighteen-coloring or chromatic equality
 is claimed.
 
+The [eighteen-color extension criterion](notes/eighteen-color-palettes.md)
+now determines every odd-line list from the intersection of the omitted
+color pairs of its fifteen incident Lagrangian cliques. Any extendible
+even coloring has at most seven nonzero points with empty intersections,
+and its intersections satisfy explicit odd-clique color constraints.
+The finite check covers all 32,832 even/odd neighbor memberships. A
+separate sufficient construction is to color the 442 lines and isotropic
+planes with seventeen colors and reserve the eighteenth for all 135
+independent triples. Neither a coloring for this construction nor a
+full-graph eighteen-color upper bound is supplied.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

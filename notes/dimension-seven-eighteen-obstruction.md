@@ -81,7 +81,7 @@ The standard-library [checker](../develop/check_dimension_seven_eighteen_obstruc
 constructs S(T) and the six additional displayed fifteen-cliques, the two
 anchor certificates and the omitted-color configuration. The combined
 [certificate](../results/dimension-7-eighteen-obstruction.json) has 82
-distinct vertices. It records the complete graph on these vertices,
+distinct vertices. It records the entire induced orthogonality graph on these vertices,
 checking all 3,321 pairs and finding 1,066 edges. Each conditional anchor
 certificate has 42 vertices, 861 checked pairs and 425 edges. Removing
 fixed T-subspaces from the final omitted-color configuration gives 28
