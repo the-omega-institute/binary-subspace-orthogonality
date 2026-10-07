@@ -1,0 +1,217 @@
+{
+  "status": "written_deleted_line_lower_bound19_and_necessary_nineteen_color_deficit_constraints",
+  "dimension": 7,
+  "characteristic_vector": 127,
+  "deleted_line_graph_lower_bound": 19,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "full_n7_exact_chromatic_number": "open",
+  "nineteen_color_witness": false,
+  "deleted_eighteen_saturation_profiles": [
+    [
+      3,
+      7,
+      8
+    ],
+    [
+      9,
+      0,
+      9
+    ]
+  ],
+  "nineteen_characteristic_class_minimum": 2,
+  "nineteen_characteristic_class_maximum": 8,
+  "deficit_identity": "sum of 7-minus-size over eighteen non-characteristic classes equals characteristic-class-size minus one",
+  "deficit_rows": [
+    {
+      "characteristic_class_size": 1,
+      "outside_deficit": 0,
+      "capacity_only_defective_class_counts": [
+        0
+      ],
+      "singleton_excluded_by_deleted_graph_proof": true
+    },
+    {
+      "characteristic_class_size": 2,
+      "outside_deficit": 1,
+      "capacity_only_defective_class_counts": [
+        1
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 3,
+      "outside_deficit": 2,
+      "capacity_only_defective_class_counts": [
+        1,
+        2
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 4,
+      "outside_deficit": 3,
+      "capacity_only_defective_class_counts": [
+        1,
+        2,
+        3
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 5,
+      "outside_deficit": 4,
+      "capacity_only_defective_class_counts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 6,
+      "outside_deficit": 5,
+      "capacity_only_defective_class_counts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 7,
+      "outside_deficit": 6,
+      "capacity_only_defective_class_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    },
+    {
+      "characteristic_class_size": 8,
+      "outside_deficit": 7,
+      "capacity_only_defective_class_counts": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "singleton_excluded_by_deleted_graph_proof": false
+    }
+  ],
+  "six_vertex_even_counts": [
+    0,
+    2,
+    4,
+    5,
+    6
+  ],
+  "size_two_profiles": [
+    {
+      "defective_even": 0,
+      "defective_odd": 6,
+      "pure_even_heptads": 3,
+      "mixed_saturated": 7,
+      "pure_odd_heptads": 7,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 0,
+      "defective_odd": 6,
+      "pure_even_heptads": 9,
+      "mixed_saturated": 0,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_quadratic_parity"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 4,
+      "pure_even_heptads": 1,
+      "mixed_saturated": 9,
+      "pure_odd_heptads": 7,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 4,
+      "pure_even_heptads": 7,
+      "mixed_saturated": 2,
+      "pure_odd_heptads": 8,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 4,
+      "defective_odd": 2,
+      "pure_even_heptads": 5,
+      "mixed_saturated": 4,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 5
+    },
+    {
+      "defective_even": 5,
+      "defective_odd": 1,
+      "pure_even_heptads": 4,
+      "mixed_saturated": 5,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 4
+    },
+    {
+      "defective_even": 6,
+      "defective_odd": 0,
+      "pure_even_heptads": 3,
+      "mixed_saturated": 6,
+      "pure_odd_heptads": 8,
+      "status": "excluded_by_completed_hole_clique",
+      "available_pure_even_labels": 4
+    }
+  ],
+  "size_two_necessary_survivors": [
+    [
+      0,
+      3,
+      7,
+      7
+    ],
+    [
+      2,
+      1,
+      9,
+      7
+    ],
+    [
+      2,
+      7,
+      2,
+      8
+    ]
+  ],
+  "survivor_realizability": "open_all_three",
+  "lagrangians": 135,
+  "even_heptads": 288,
+  "even_hole_odd_hole_adjacencies_checked": 6615,
+  "heptad_lagrangian_intersections_checked": 38880,
+  "intersection_size_histogram": {
+    "0": 8640,
+    "1": 30240
+  },
+  "checked_UNSAT_proof": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "9ff44de1c03db2c0551252f03af72088269db7d355de18d7ee3a5391a9824ad6",
+  "proof_note_sha256": "1909654bf12117f756eece5d86b7ae3d29d8a822dcfa71bc2112ee3ea9e9ac65",
+  "prior_obstruction_note_sha256": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252",
+  "prior_capacity_report_sha256": "8947cd21741b54535df4be77986728b795693be037057f1269ae8d1826585aec",
+  "scope": "Exact count-profile enumeration and coordinate incidence controls support written parity/completion proofs; no coloring enumeration, certified solver exclusion or upper bound."
+}

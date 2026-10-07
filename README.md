@@ -180,6 +180,16 @@ This gives lower bound 19 for the line and full-subspace graphs, with
 exact quadratic/heptad and incidence checks. Their exact values remain
 open; no nineteen-color witness, native SAT or Lean result is claimed.
 
+The [nineteen-color deficit analysis](notes/dimension-seven-nineteen-deficits.md)
+now proves that deleting the characteristic line still leaves a graph
+requiring at least nineteen colors. Any hypothetical nineteen-coloring
+must put that line in a class of size two through eight; the other
+eighteen classes have total size deficit exactly one less than that
+class's size. If its size is two, only three necessary count profiles
+remain. Their realizability and a full-graph nineteen-coloring remain
+open. [Exact count and incidence checks](results/dimension-7-nineteen-deficits.json)
+support these written restrictions.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
