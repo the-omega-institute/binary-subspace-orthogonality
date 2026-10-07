@@ -1,0 +1,61 @@
+{
+  "status": "entire_size_four_single_four_point_defect_branch_excluded",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "single_four_entire_branch_excluded": true,
+  "newly_excluded_profile": [
+    2,
+    2,
+    7,
+    2,
+    8
+  ],
+  "single_four_remaining_profiles": [],
+  "five_six_branch": "open_46_raw_count_profiles_not_feasibility_checked",
+  "three_six_branch": "open_48_raw_count_profiles_not_feasibility_checked",
+  "fixed_hole_local_configurations": 1008,
+  "local_charge_location_histogram": {
+    "charge_in_defect": 672,
+    "charge_in_mixed": 336
+  },
+  "local_configuration_sha256": "bb2a848fa7541a1e43ce24a0bbd61db991fe7c339cb7397d53d5bfeaa4037e3a",
+  "basis_gram_pair_controls": 49392,
+  "even_six_cliques": 2016,
+  "even_heptads": 288,
+  "eligible_heptad_rows": 224,
+  "forced_six_choices": {
+    "15": 32,
+    "63": 32
+  },
+  "eligible_ordered_roots": 384,
+  "roots_equal_existing_certificate": true,
+  "failed_states_checked": 1784,
+  "branches_checked": 1400,
+  "leaf_states": 968,
+  "all_states_reachable": true,
+  "existing_finite_cover_certificate_reaudited": true,
+  "exact_cover_search": false,
+  "prior_spread_enumeration_rerun": false,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "submitted_manuscript_changed": false,
+  "dependency_sha256": {
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-hole-cover-check.json": "05ab46d375d01e692c75f50fd150b0879003b7e5db8fe51df7394ab48d99ae88",
+    "results/dimension-7-hole-cover-proof.json": "0a9ff1aa1cdb4a2ffb6ce9db5b89225fb81de63bb979c80c7b5046870742118e"
+  },
+  "checker_sha256": "be1f66b8b4b4878080c679dacee58e024ef3e38232cb04757f04e17ef04e7127",
+  "proof_note_sha256": "8c0b3c0b31adaf9befe1714ae671115a73daa709cfd121a0724f07c814cc4e21",
+  "scope": "Universal written covering-data normalization,1008fixed-hole local controls,and full reaudit of the existing384root failed-state certificate. Entire single4defect branch excluded;5+6/6+6+6raw46/48profiles and sizes4..8/exactn7open>=19. No full marked orbit classification,new cover search,Lean or independent Pro review."
+}

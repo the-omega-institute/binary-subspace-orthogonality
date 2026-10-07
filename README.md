@@ -302,6 +302,16 @@ Orthogonality Graphs over F_2*,
 The joint paper distinguishes those prior constructions from its new proofs
 and certificates.
 
+The [single-four-defect exclusion](notes/dimension-seven-single-four-exclusion.md)
+now closes that entire outside-defect pattern for characteristic size four.
+A universal symplectic normalization of the covering data, checked on all
+1,008 fixed-hole local configurations, reduces the last profile to the
+existing 384-root finite certificate. Its 1,784 failed states and 1,400
+branches are reaudited in the [report](results/dimension-7-single-four-exclusion.json).
+The size-four patterns 5+6 and 6+6+6 remain open with 46 and 48 raw
+count profiles; characteristic sizes four through eight and exact n=7
+remain open, with lower bound nineteen and no nineteen-color witness.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
