@@ -1,0 +1,273 @@
+{
+  "status": "written_quadratic_constraints_for_three_point_characteristic_classes",
+  "dimension": 7,
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "nineteen_color_witness": false,
+  "new_numerical_lower_bound": false,
+  "projection_pairing_pairs_checked": 16384,
+  "quadratic_polarization_pairs_checked": 4096,
+  "class_counts_by_size_and_odd_count": {
+    "5": {
+      "0": 8064,
+      "1": 40320,
+      "2": 60480,
+      "3": 60480,
+      "4": 7560,
+      "5": 2835
+    },
+    "6": {
+      "0": 2016,
+      "1": 12096,
+      "2": 30240,
+      "4": 15120,
+      "6": 945
+    }
+  },
+  "independent_class_set_sha256": {
+    "5": "b1cefb152f22ac361e746880ac87999fce34dd7b4b810e3c9634749538dc2035",
+    "6": "f2aed19b4d59ee923a7dd9f2a174edf4686ed006cf1a9e7d6b512faf42145ac3"
+  },
+  "independent_five_classes_checked": 179739,
+  "independent_six_classes_checked": 60417,
+  "one_five_defect_count_profiles": [
+    {
+      "defective_even": 0,
+      "defective_odd": 5,
+      "pure_even_heptads": 3,
+      "mixed_saturated": 7,
+      "pure_odd_heptads": 7,
+      "saturated_quadratic_parity": 0,
+      "defective_quadratic_parity": 0,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 0,
+      "defective_odd": 5,
+      "pure_even_heptads": 9,
+      "mixed_saturated": 0,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 0,
+      "status": "excluded_by_quadratic_class_parity"
+    },
+    {
+      "defective_even": 1,
+      "defective_odd": 4,
+      "pure_even_heptads": 2,
+      "mixed_saturated": 8,
+      "pure_odd_heptads": 7,
+      "saturated_quadratic_parity": 0,
+      "defective_quadratic_parity": 0,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 1,
+      "defective_odd": 4,
+      "pure_even_heptads": 8,
+      "mixed_saturated": 1,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 0,
+      "status": "excluded_by_quadratic_class_parity"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 3,
+      "pure_even_heptads": 1,
+      "mixed_saturated": 9,
+      "pure_odd_heptads": 7,
+      "saturated_quadratic_parity": 0,
+      "defective_quadratic_parity": 1,
+      "status": "excluded_by_quadratic_class_parity"
+    },
+    {
+      "defective_even": 2,
+      "defective_odd": 3,
+      "pure_even_heptads": 7,
+      "mixed_saturated": 2,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 1,
+      "status": "necessary_profile_only_realizability_open"
+    },
+    {
+      "defective_even": 3,
+      "defective_odd": 2,
+      "pure_even_heptads": 0,
+      "mixed_saturated": 10,
+      "pure_odd_heptads": 7,
+      "saturated_quadratic_parity": 0,
+      "defective_quadratic_parity": 1,
+      "status": "excluded_by_quadratic_class_parity"
+    },
+    {
+      "defective_even": 3,
+      "defective_odd": 2,
+      "pure_even_heptads": 6,
+      "mixed_saturated": 3,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 1,
+      "status": "excluded_by_completed_lagrangian_and_odd_even_count"
+    },
+    {
+      "defective_even": 4,
+      "defective_odd": 1,
+      "pure_even_heptads": 5,
+      "mixed_saturated": 4,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 0,
+      "status": "excluded_by_quadratic_class_parity"
+    },
+    {
+      "defective_even": 5,
+      "defective_odd": 0,
+      "pure_even_heptads": 4,
+      "mixed_saturated": 5,
+      "pure_odd_heptads": 8,
+      "saturated_quadratic_parity": 1,
+      "defective_quadratic_parity": 0,
+      "status": "excluded_by_quadratic_class_parity"
+    }
+  ],
+  "one_five_defect_necessary_survivors": [
+    [
+      0,
+      3,
+      7,
+      7
+    ],
+    [
+      1,
+      2,
+      8,
+      7
+    ],
+    [
+      2,
+      7,
+      2,
+      8
+    ]
+  ],
+  "survivor_realizability": "open_all_three",
+  "two_six_defect_pairing_condition": "w1 dot w2 = A+B+tau1+tau2 modulo2, w1+w2 equals characteristic charge",
+  "six_class_tau_by_even_count": {
+    "0": 0,
+    "2": 1,
+    "4": 0,
+    "5": 1,
+    "6": 1
+  },
+  "coupled_six_class_pairs_enumerated": false,
+  "local_characteristic_pair": [
+    3,
+    12
+  ],
+  "local_required_charge": 15,
+  "local_charge_five_class_counts_by_odd_count": {
+    "0": 96,
+    "1": 448,
+    "2": 960,
+    "3": 624,
+    "4": 120,
+    "5": 39
+  },
+  "local_charge_five_class_witnesses": {
+    "0": [
+      3,
+      5,
+      54,
+      86,
+      105
+    ],
+    "1": [
+      3,
+      5,
+      22,
+      54,
+      86
+    ],
+    "2": [
+      1,
+      3,
+      5,
+      49,
+      57
+    ],
+    "3": [
+      3,
+      5,
+      22,
+      25,
+      121
+    ],
+    "4": [
+      1,
+      7,
+      15,
+      49,
+      55
+    ],
+    "5": [
+      16,
+      19,
+      28,
+      31,
+      112
+    ]
+  },
+  "local_hole_compatible_counts_by_odd_count": {
+    "0": 96,
+    "1": 192,
+    "3": 48,
+    "5": 3
+  },
+  "local_hole_compatible_witnesses": {
+    "0": [
+      3,
+      5,
+      54,
+      86,
+      105
+    ],
+    "1": [
+      5,
+      6,
+      19,
+      51,
+      83
+    ],
+    "3": [
+      16,
+      19,
+      28,
+      48,
+      95
+    ],
+    "5": [
+      16,
+      19,
+      28,
+      31,
+      112
+    ]
+  },
+  "local_classes_are_colorings": false,
+  "native_SAT": false,
+  "checked_UNSAT_proof": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "b7f7d1ca47e30fb37e8104d43ef9730690308e9d0b286f0bc1b66b3811ab3ae1",
+  "proof_note_sha256": "84340461565bcf998fdcac24962e0c98771aee9c3932260b59e610dbadde5375",
+  "prior_characteristic_report_sha256": "ec80548a5e199be6b242a5f43a011ebf2c4048eaf241c4b2f20f444de1430b91",
+  "scope": "Universal quadratic identities and exact independent5/6class/count-profile checks; neither completecoloring enumeration nor coupled sixclass feasibility or nineteen-color upperbound."
+}

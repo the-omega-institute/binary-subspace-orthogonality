@@ -193,6 +193,16 @@ six-point classes and 2,439 independent seven-point classes avoiding the
 characteristic line; see the [certificate](results/dimension-7-characteristic-three.json).
 A nineteen-color witness and the full graph's exact value remain open.
 
+For a characteristic class of size three, the
+[quadratic defect analysis](notes/dimension-seven-three-point-defects.md)
+now restricts the one-five-point-defect branch to three necessary count
+profiles. Six of ten candidates fail quadratic parity and one fails
+Lagrangian completion. The two-six-point-defect branch has a prescribed
+pairing between its projected class sums and remains open. The
+[finite certificate](results/dimension-7-three-point-defects.json) checks
+the class identity on all independent five-point and six-point classes;
+none of the surviving profiles is a constructed coloring.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
