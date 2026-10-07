@@ -1,0 +1,2921 @@
+{
+  "status": "size_four_deficits_and_charges_derived_single_four_defect_profiles_reduce9to1",
+  "dimension": 7,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "characteristic_size_four_excluded": false,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "outside_deficit": 3,
+  "defect_size_patterns": [
+    [
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      6,
+      6
+    ]
+  ],
+  "raw_count_profiles_by_pattern": {
+    "4": 9,
+    "5+6": 46,
+    "6+6+6": 48
+  },
+  "count_profiles": {
+    "4": [
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          0
+        ],
+        "defect_odd_counts": [
+          4
+        ],
+        "saturated_counts": [
+          3,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": 13,
+        "status": "excluded_by_two_hole_even_point_capacity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          0
+        ],
+        "defect_odd_counts": [
+          4
+        ],
+        "saturated_counts": [
+          9,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_defect_quadratic_parity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          1
+        ],
+        "defect_odd_counts": [
+          3
+        ],
+        "saturated_counts": [
+          2,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_defect_quadratic_parity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          1
+        ],
+        "defect_odd_counts": [
+          3
+        ],
+        "saturated_counts": [
+          8,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_even_member_forced_into_hole_lagrangian"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          2
+        ],
+        "defect_odd_counts": [
+          2
+        ],
+        "saturated_counts": [
+          1,
+          9,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_defect_quadratic_parity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          2
+        ],
+        "defect_odd_counts": [
+          2
+        ],
+        "saturated_counts": [
+          7,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "necessary_single_four_defect_profile_realizability_open"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          3
+        ],
+        "defect_odd_counts": [
+          1
+        ],
+        "saturated_counts": [
+          0,
+          10,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": 11,
+        "status": "excluded_by_two_hole_even_point_capacity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          3
+        ],
+        "defect_odd_counts": [
+          1
+        ],
+        "saturated_counts": [
+          6,
+          3,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_defect_quadratic_parity"
+      },
+      {
+        "defect_sizes": [
+          4
+        ],
+        "defect_even_counts": [
+          4
+        ],
+        "defect_odd_counts": [
+          0
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "excluded_by_single_defect_quadratic_parity"
+      }
+    ],
+    "5+6": [
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0
+        ],
+        "defect_odd_counts": [
+          5,
+          6
+        ],
+        "saturated_counts": [
+          3,
+          7,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0
+        ],
+        "defect_odd_counts": [
+          5,
+          6
+        ],
+        "saturated_counts": [
+          9,
+          0,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2
+        ],
+        "defect_odd_counts": [
+          5,
+          4
+        ],
+        "saturated_counts": [
+          1,
+          9,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2
+        ],
+        "defect_odd_counts": [
+          5,
+          4
+        ],
+        "saturated_counts": [
+          7,
+          2,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4
+        ],
+        "defect_odd_counts": [
+          5,
+          2
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          5
+        ],
+        "defect_odd_counts": [
+          5,
+          1
+        ],
+        "saturated_counts": [
+          4,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          6
+        ],
+        "defect_odd_counts": [
+          5,
+          0
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          0
+        ],
+        "defect_odd_counts": [
+          4,
+          6
+        ],
+        "saturated_counts": [
+          2,
+          8,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          0
+        ],
+        "defect_odd_counts": [
+          4,
+          6
+        ],
+        "saturated_counts": [
+          8,
+          1,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          2
+        ],
+        "defect_odd_counts": [
+          4,
+          4
+        ],
+        "saturated_counts": [
+          0,
+          10,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          2
+        ],
+        "defect_odd_counts": [
+          4,
+          4
+        ],
+        "saturated_counts": [
+          6,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          4
+        ],
+        "defect_odd_counts": [
+          4,
+          2
+        ],
+        "saturated_counts": [
+          4,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          5
+        ],
+        "defect_odd_counts": [
+          4,
+          1
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          0
+        ],
+        "saturated_counts": [
+          2,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          1,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          0
+        ],
+        "saturated_counts": [
+          8,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          0
+        ],
+        "defect_odd_counts": [
+          3,
+          6
+        ],
+        "saturated_counts": [
+          1,
+          9,
+          6
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          0
+        ],
+        "defect_odd_counts": [
+          3,
+          6
+        ],
+        "saturated_counts": [
+          7,
+          2,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2
+        ],
+        "defect_odd_counts": [
+          3,
+          4
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          4
+        ],
+        "defect_odd_counts": [
+          3,
+          2
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          3,
+          1
+        ],
+        "saturated_counts": [
+          2,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          3,
+          1
+        ],
+        "saturated_counts": [
+          8,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          6
+        ],
+        "defect_odd_counts": [
+          3,
+          0
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          6
+        ],
+        "defect_odd_counts": [
+          3,
+          0
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          0
+        ],
+        "defect_odd_counts": [
+          2,
+          6
+        ],
+        "saturated_counts": [
+          0,
+          10,
+          6
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          0
+        ],
+        "defect_odd_counts": [
+          2,
+          6
+        ],
+        "saturated_counts": [
+          6,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          2
+        ],
+        "defect_odd_counts": [
+          2,
+          4
+        ],
+        "saturated_counts": [
+          4,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          4
+        ],
+        "defect_odd_counts": [
+          2,
+          2
+        ],
+        "saturated_counts": [
+          2,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          4
+        ],
+        "defect_odd_counts": [
+          2,
+          2
+        ],
+        "saturated_counts": [
+          8,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          5
+        ],
+        "defect_odd_counts": [
+          2,
+          1
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          5
+        ],
+        "defect_odd_counts": [
+          2,
+          1
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          0
+        ],
+        "saturated_counts": [
+          0,
+          9,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          3,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          0
+        ],
+        "saturated_counts": [
+          6,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          0
+        ],
+        "defect_odd_counts": [
+          1,
+          6
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          2
+        ],
+        "defect_odd_counts": [
+          1,
+          4
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          1,
+          2
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          1,
+          2
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          1,
+          1
+        ],
+        "saturated_counts": [
+          0,
+          9,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          1,
+          1
+        ],
+        "saturated_counts": [
+          6,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          6
+        ],
+        "defect_odd_counts": [
+          1,
+          0
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          0
+        ],
+        "defect_odd_counts": [
+          0,
+          6
+        ],
+        "saturated_counts": [
+          4,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          2
+        ],
+        "defect_odd_counts": [
+          0,
+          4
+        ],
+        "saturated_counts": [
+          2,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          2
+        ],
+        "defect_odd_counts": [
+          0,
+          4
+        ],
+        "saturated_counts": [
+          8,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          4
+        ],
+        "defect_odd_counts": [
+          0,
+          2
+        ],
+        "saturated_counts": [
+          0,
+          9,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          4
+        ],
+        "defect_odd_counts": [
+          0,
+          2
+        ],
+        "saturated_counts": [
+          6,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          0,
+          1
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          5,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          0,
+          0
+        ],
+        "saturated_counts": [
+          4,
+          4,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      }
+    ],
+    "6+6+6": [
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          0
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          6
+        ],
+        "saturated_counts": [
+          3,
+          7,
+          5
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          0
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          6
+        ],
+        "saturated_counts": [
+          9,
+          0,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          2
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          4
+        ],
+        "saturated_counts": [
+          1,
+          9,
+          5
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          2
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          4
+        ],
+        "saturated_counts": [
+          7,
+          2,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          4
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          2
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          1
+        ],
+        "saturated_counts": [
+          4,
+          5,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          0,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          6,
+          0
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          2
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          4
+        ],
+        "saturated_counts": [
+          5,
+          4,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          4
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          2
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          1
+        ],
+        "saturated_counts": [
+          2,
+          7,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          1
+        ],
+        "saturated_counts": [
+          8,
+          0,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          0
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          2,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          4,
+          0
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          6,
+          2,
+          2
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          6,
+          2,
+          2
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          2,
+          1
+        ],
+        "saturated_counts": [
+          0,
+          9,
+          6
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          2,
+          1
+        ],
+        "saturated_counts": [
+          6,
+          2,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          4,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          2,
+          0
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          6,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          1,
+          0
+        ],
+        "saturated_counts": [
+          4,
+          4,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          0,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          6,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          3,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          2
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          4
+        ],
+        "saturated_counts": [
+          3,
+          6,
+          6
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          4
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          2
+        ],
+        "saturated_counts": [
+          1,
+          8,
+          6
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          4
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          2
+        ],
+        "saturated_counts": [
+          7,
+          1,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          1
+        ],
+        "saturated_counts": [
+          0,
+          9,
+          6
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          5
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          1
+        ],
+        "saturated_counts": [
+          6,
+          2,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          2,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          4,
+          0
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          4,
+          2,
+          2
+        ],
+        "saturated_counts": [
+          5,
+          3,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          4,
+          2,
+          1
+        ],
+        "saturated_counts": [
+          4,
+          4,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          4,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          2,
+          0
+        ],
+        "saturated_counts": [
+          3,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          4,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          3,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          1,
+          0
+        ],
+        "saturated_counts": [
+          2,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          1,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          2,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          4,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          7,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4,
+          4
+        ],
+        "defect_odd_counts": [
+          2,
+          2,
+          2
+        ],
+        "saturated_counts": [
+          3,
+          5,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          0
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4,
+          5
+        ],
+        "defect_odd_counts": [
+          2,
+          2,
+          1
+        ],
+        "saturated_counts": [
+          2,
+          6,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          2,
+          0
+        ],
+        "saturated_counts": [
+          1,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          4,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          2,
+          0
+        ],
+        "saturated_counts": [
+          7,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          0,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          2,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          1,
+          7,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          2,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          7,
+          0,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          1,
+          0
+        ],
+        "saturated_counts": [
+          0,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          1,
+          0
+        ],
+        "saturated_counts": [
+          6,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          4,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          2,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          5,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          0,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          1,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          0,
+          8,
+          7
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 1,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          5,
+          5
+        ],
+        "defect_odd_counts": [
+          1,
+          1,
+          1
+        ],
+        "saturated_counts": [
+          6,
+          1,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          5,
+          6
+        ],
+        "defect_odd_counts": [
+          1,
+          1,
+          0
+        ],
+        "saturated_counts": [
+          5,
+          2,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          5,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          1,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          4,
+          3,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      },
+      {
+        "defect_sizes": [
+          6,
+          6,
+          6
+        ],
+        "defect_even_counts": [
+          6,
+          6,
+          6
+        ],
+        "defect_odd_counts": [
+          0,
+          0,
+          0
+        ],
+        "saturated_counts": [
+          3,
+          4,
+          8
+        ],
+        "defect_quadratic_taus": [
+          1,
+          1,
+          1
+        ],
+        "required_sum_of_pairwise_charge_products": 0,
+        "two_hole_even_point_capacity": null,
+        "status": "raw_count_profile_charge_and_common_coloring_feasibility_open"
+      }
+    ]
+  },
+  "direct_and_formula_profile_sets_equal": true,
+  "single_four_initial_profiles": 9,
+  "single_four_excluded_profiles": 8,
+  "single_four_remaining_profiles": [
+    [
+      2,
+      2,
+      7,
+      2,
+      8
+    ]
+  ],
+  "single_four_exclusions_by_reason": {
+    "excluded_by_two_hole_even_point_capacity": 2,
+    "excluded_by_single_defect_quadratic_parity": 5,
+    "excluded_by_single_even_member_forced_into_hole_lagrangian": 1
+  },
+  "five_six_branch": "open_46_raw_count_profiles_not_feasibility_checked",
+  "three_six_branch": "open_48_raw_count_profiles_not_feasibility_checked",
+  "projection_pair_controls": 16384,
+  "quadratic_pair_controls": 4096,
+  "three_charge_polarization_controls": 262144,
+  "fixed_hole_single_four_local_configurations": 1008,
+  "local_charge_location_histogram": {
+    "charge_in_defect": 672,
+    "charge_in_mixed": 336
+  },
+  "local_configuration_sha256": "bb2a848fa7541a1e43ce24a0bbd61db991fe7c339cb7397d53d5bfeaa4037e3a",
+  "local_array_and_bitmask_even_pair_catalogs_equal": true,
+  "prior_spread_enumeration_rerun": false,
+  "all_small_classes_reenumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "prior_report_sha256": {
+    "dimension-7-six-holes.json": "2c9e5d08ead02dde0d4e96efe8f691e2e51f65071f4fc58775ef96c15dfe2026",
+    "dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "dimension-7-three-point-defects.json": "2c6c78d0def379cf30619b1617fc69dd440afef448dcba4bbf8f185ed5f361f4"
+  },
+  "checker_sha256": "ccc4bbbe865dd55ce6716bdb96340df90a3781e9d43473cc3e7dabdc33b4663f",
+  "proof_note_sha256": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+  "scope": "Written size4deficit/count/generalcharge derivation, five quadratic single4exclusions, two finite-seven-spread-dependent capacity exclusions, and one written eight-spread isotropy exclusion. Only single4profile(2,2;7,2,8)remains necessary, unrealized; other46/48raw count profiles are not feasibility results. Fixed-hole1008local controls preserve characteristic/defect disjointness and charge constraints but do not construct common colorings. Size4through8/exactn7remainopen>=19."
+}

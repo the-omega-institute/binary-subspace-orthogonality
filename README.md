@@ -273,6 +273,19 @@ vector a class of size **four through eight**. Those sizes and the exact
 dimension-seven chromatic numbers remain open; the numerical lower bound
 stays nineteen. The preceding entries record the earlier intermediate bounds.
 
+The [size-four deficit and charge analysis](notes/dimension-seven-size-four.md)
+derives the outside defect-size patterns 4, 5+6 and 6+6+6, together
+with their common-partition projection and quadratic charge equations.
+For the single-four-point-defect branch, eight of nine count profiles
+are excluded; only defect type (2 even,2 odd) with saturated counts
+(7,2,8) remains necessary and unrealized. Its characteristic projections
+must form a basis of the completed hole Lagrangian. The
+[report](results/dimension-7-size-four.json) checks the counts and
+1,008 local charge configurations. The 5+6 and 6+6+6 branches have
+46 and 48 raw count profiles before their charge/common-coloring
+feasibility is examined. The full size-four branch, larger sizes,
+and exact n=7 values remain open with numerical lower bound nineteen.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
