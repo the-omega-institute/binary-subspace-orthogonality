@@ -1,0 +1,70 @@
+{
+  "status": "completed_hole_three_point_one_five_defect_profile_excluded_by_checked_exact_cover_certificate",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "nineteen_color_witness": false,
+  "new_numerical_lower_bound": false,
+  "excluded_profile": [
+    2,
+    3,
+    7,
+    2,
+    8
+  ],
+  "remaining_one_five_profiles": [
+    [
+      0,
+      5,
+      3,
+      7,
+      7
+    ],
+    [
+      1,
+      4,
+      2,
+      8,
+      7
+    ]
+  ],
+  "two_six_branch": "open_not_enumerated",
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "even_six_cliques": 2016,
+  "even_heptads": 288,
+  "eligible_heptad_rows": 224,
+  "forced_six_choices": {
+    "15": 32,
+    "63": 32
+  },
+  "eligible_ordered_roots": 384,
+  "distinct_root_states": 384,
+  "failed_states_checked": 1784,
+  "branches_checked": 1400,
+  "leaf_states": 968,
+  "state_sizes": {
+    "35": 448,
+    "42": 952,
+    "49": 384
+  },
+  "all_states_reachable": true,
+  "normalization_local_defect_controls": 48,
+  "normalization_dot_pairs_checked": 786432,
+  "normalization_scope": "Written symplectic basis/shear proof is universal; 48 local defect controls with a fixed characteristic pair are independently verified, not complete colorings.",
+  "checked_exact_cover_certificate": true,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "certificate_sha256": "0a9ff1aa1cdb4a2ffb6ce9db5b89225fb81de63bb979c80c7b5046870742118e",
+  "auditor_sha256": "89536d01ed3c2519ee9710728a213dfb119e1bd3d6552ebea0a6152cd2aedf8b",
+  "builder_sha256": "08c0c3d955e5c078041dc126bd6ff5c75bcd226eaf80ebbda31dba94f7d04a7a",
+  "proof_note_sha256": "be71bddb9c435c79de8b86e24ed51112a6440f82a8a132d8cd0bfa7d70abb371",
+  "prior_defect_report_sha256": "2c6c78d0def379cf30619b1617fc69dd440afef448dcba4bbf8f185ed5f361f4",
+  "scope": "Every normalized candidate root and every failed-state branch independently reconstructed and checked; excludes this one profile only, not all nineteen-colorings or the full s=3 branch."
+}

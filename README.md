@@ -195,13 +195,22 @@ A nineteen-color witness and the full graph's exact value remain open.
 
 For a characteristic class of size three, the
 [quadratic defect analysis](notes/dimension-seven-three-point-defects.md)
-now restricts the one-five-point-defect branch to three necessary count
+restricts the one-five-point-defect branch to three necessary count
 profiles. Six of ten candidates fail quadratic parity and one fails
 Lagrangian completion. The two-six-point-defect branch has a prescribed
 pairing between its projected class sums and remains open. The
 [finite certificate](results/dimension-7-three-point-defects.json) checks
 the class identity on all independent five-point and six-point classes;
 none of the surviving profiles is a constructed coloring.
+
+The [completed-hole exclusion](notes/dimension-seven-hole-cover.md) now
+rules out the profile (D even,odd; A,B,C)=(2,3;7,2,8). A written
+symplectic normalization reduces it to 384 even-point exact-cover
+instances, all excluded by an [independently audited finite certificate](results/dimension-7-hole-cover-check.json)
+with 1,784 failed states. Only (0,5;3,7,7) and (1,4;2,8,7) remain in
+the one-five-point-defect branch. The two-six-point-defect branch,
+larger characteristic classes, and exact dimension-seven values remain
+open; the numerical lower bound stays nineteen.
 
 ## Paper status
 
