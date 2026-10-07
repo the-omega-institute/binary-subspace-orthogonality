@@ -1,0 +1,508 @@
+{
+  "status": "two_six_defect_count_profiles_reduce_from21_to3_necessary_candidates",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "one_five_branch_excluded": true,
+  "size_three_entire_branch_excluded": false,
+  "two_six_branch": "open_three_necessary_profiles",
+  "count_profiles": [
+    {
+      "defect_even_counts": [
+        0,
+        0
+      ],
+      "defect_odd_counts": [
+        6,
+        6
+      ],
+      "saturated_counts": [
+        3,
+        7,
+        6
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "necessary_profile_realizability_open"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        0
+      ],
+      "defect_odd_counts": [
+        6,
+        6
+      ],
+      "saturated_counts": [
+        9,
+        0,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 18,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_existing_nine_even_heptad_quadratic_partition"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        2
+      ],
+      "defect_odd_counts": [
+        6,
+        4
+      ],
+      "saturated_counts": [
+        1,
+        9,
+        6
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "necessary_profile_realizability_open"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        2
+      ],
+      "defect_odd_counts": [
+        6,
+        4
+      ],
+      "saturated_counts": [
+        7,
+        2,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 17,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_pure_odd_charge_and_characteristic_collision"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        4
+      ],
+      "defect_odd_counts": [
+        6,
+        2
+      ],
+      "saturated_counts": [
+        5,
+        4,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 15,
+      "other_hole_label_bound_with_six_odd_defect": 6,
+      "status": "excluded_by_six_odd_points_and_other_hole_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        5
+      ],
+      "defect_odd_counts": [
+        6,
+        1
+      ],
+      "saturated_counts": [
+        4,
+        5,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 14,
+      "other_hole_label_bound_with_six_odd_defect": 5,
+      "status": "excluded_by_six_odd_points_and_other_hole_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        0,
+        6
+      ],
+      "defect_odd_counts": [
+        6,
+        0
+      ],
+      "saturated_counts": [
+        3,
+        6,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 14,
+      "other_hole_label_bound_with_six_odd_defect": 5,
+      "status": "excluded_by_six_odd_points_and_other_hole_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        2
+      ],
+      "defect_odd_counts": [
+        4,
+        4
+      ],
+      "saturated_counts": [
+        5,
+        4,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 16,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_affine_odd_plane_and_member_charge_overlap"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        4
+      ],
+      "defect_odd_counts": [
+        4,
+        2
+      ],
+      "saturated_counts": [
+        3,
+        6,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 14,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_affine_odd_plane_and_member_charge_overlap"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        5
+      ],
+      "defect_odd_counts": [
+        4,
+        1
+      ],
+      "saturated_counts": [
+        2,
+        7,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 13,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_two_hole_even_point_capacity"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        5
+      ],
+      "defect_odd_counts": [
+        4,
+        1
+      ],
+      "saturated_counts": [
+        8,
+        0,
+        8
+      ],
+      "hole_label_bound_when_C8": 8,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_charge_in_hole_lagrangian_and_odd_pairing"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        6
+      ],
+      "defect_odd_counts": [
+        4,
+        0
+      ],
+      "saturated_counts": [
+        1,
+        8,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 13,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_two_hole_even_point_capacity"
+    },
+    {
+      "defect_even_counts": [
+        2,
+        6
+      ],
+      "defect_odd_counts": [
+        4,
+        0
+      ],
+      "saturated_counts": [
+        7,
+        1,
+        8
+      ],
+      "hole_label_bound_when_C8": 8,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_conditional_transfer_to_one_five_branch"
+    },
+    {
+      "defect_even_counts": [
+        4,
+        4
+      ],
+      "defect_odd_counts": [
+        2,
+        2
+      ],
+      "saturated_counts": [
+        1,
+        8,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 12,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_two_hole_even_point_capacity"
+    },
+    {
+      "defect_even_counts": [
+        4,
+        4
+      ],
+      "defect_odd_counts": [
+        2,
+        2
+      ],
+      "saturated_counts": [
+        7,
+        1,
+        8
+      ],
+      "hole_label_bound_when_C8": 7,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "necessary_profile_realizability_open"
+    },
+    {
+      "defect_even_counts": [
+        4,
+        5
+      ],
+      "defect_odd_counts": [
+        2,
+        1
+      ],
+      "saturated_counts": [
+        0,
+        9,
+        7
+      ],
+      "hole_label_bound_when_C8": null,
+      "two_hole_even_point_capacity_when_C7": 11,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_two_hole_even_point_capacity"
+    },
+    {
+      "defect_even_counts": [
+        4,
+        5
+      ],
+      "defect_odd_counts": [
+        2,
+        1
+      ],
+      "saturated_counts": [
+        6,
+        2,
+        8
+      ],
+      "hole_label_bound_when_C8": 6,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_completed_hole_clique_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        4,
+        6
+      ],
+      "defect_odd_counts": [
+        2,
+        0
+      ],
+      "saturated_counts": [
+        5,
+        3,
+        8
+      ],
+      "hole_label_bound_when_C8": 6,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_completed_hole_clique_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        5,
+        5
+      ],
+      "defect_odd_counts": [
+        1,
+        1
+      ],
+      "saturated_counts": [
+        5,
+        3,
+        8
+      ],
+      "hole_label_bound_when_C8": 5,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_completed_hole_clique_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        5,
+        6
+      ],
+      "defect_odd_counts": [
+        1,
+        0
+      ],
+      "saturated_counts": [
+        4,
+        4,
+        8
+      ],
+      "hole_label_bound_when_C8": 5,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_completed_hole_clique_label_budget"
+    },
+    {
+      "defect_even_counts": [
+        6,
+        6
+      ],
+      "defect_odd_counts": [
+        0,
+        0
+      ],
+      "saturated_counts": [
+        3,
+        5,
+        8
+      ],
+      "hole_label_bound_when_C8": 5,
+      "two_hole_even_point_capacity_when_C7": null,
+      "other_hole_label_bound_with_six_odd_defect": null,
+      "status": "excluded_by_completed_hole_clique_label_budget"
+    }
+  ],
+  "initial_count_profile_count": 21,
+  "written_exclusion_count": 18,
+  "exclusions_by_reason": {
+    "excluded_by_existing_nine_even_heptad_quadratic_partition": 1,
+    "excluded_by_pure_odd_charge_and_characteristic_collision": 1,
+    "excluded_by_six_odd_points_and_other_hole_label_budget": 3,
+    "excluded_by_affine_odd_plane_and_member_charge_overlap": 2,
+    "excluded_by_two_hole_even_point_capacity": 4,
+    "excluded_by_charge_in_hole_lagrangian_and_odd_pairing": 1,
+    "excluded_by_conditional_transfer_to_one_five_branch": 1,
+    "excluded_by_completed_hole_clique_label_budget": 5
+  },
+  "remaining_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      4,
+      4,
+      7,
+      1,
+      8
+    ]
+  ],
+  "remaining_profile_histogram_by_C": {
+    "6": 2,
+    "8": 1
+  },
+  "eight_odd_heptad_survivor": [
+    4,
+    4,
+    7,
+    1,
+    8
+  ],
+  "direct_and_formula_profile_sets_equal": true,
+  "local_two_even_four_odd_classes_checked": 16,
+  "local_two_even_charge_histogram": {
+    "48": 4,
+    "51": 4,
+    "60": 4,
+    "63": 4
+  },
+  "local_four_even_two_odd_classes_checked": 32,
+  "local_four_even_charge_histogram": {
+    "3": 16,
+    "12": 16
+  },
+  "forced_even_six_choices_by_sum": {
+    "48": 32,
+    "51": 32,
+    "60": 32,
+    "63": 32
+  },
+  "disjoint_local_two_six_transfer_pairs_checked": 352,
+  "distinct_hole_charge_characteristic_quadruples_checked": 84,
+  "pure_odd_member_charge_collision_controls": 49,
+  "affine_plane_member_charge_overlap_controls": 40,
+  "six_odd_hole_subsets_checked": 14,
+  "mixed_four_odd_hole_subsets_checked": 14,
+  "even_vectors_compatible_with_mixed_four_odd_holes": 0,
+  "local_control_scope": "Fixed affine odd plane or fixed odd pair, four forced even-six sums, conditional recoloring of disjoint partial class pairs, and fixed-hole quadruples; not complete colorings or all coupled six-class pairs.",
+  "prior_spread_enumeration_rerun": false,
+  "all_six_classes_reenumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "prior_report_sha256": {
+    "dimension-7-nineteen-obstruction.json": "06edca5f0686921305ed543c38c30050bc87291e81be2e5b6e58742c9fe8ecfc",
+    "dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "dimension-7-one-five-exclusion.json": "88d24335c41f525a34ca4df2447fe76618d315dc199d5202b2d754b78c009c68",
+    "dimension-7-three-point-defects.json": "2c6c78d0def379cf30619b1617fc69dd440afef448dcba4bbf8f185ed5f361f4",
+    "dimension-7-characteristic-three.json": "ec80548a5e199be6b242a5f43a011ebf2c4048eaf241c4b2f20f444de1430b91"
+  },
+  "checker_sha256": "5649062ba6809459a7a07db499057a0a10c964f84719a819412bf3de5dff58bd",
+  "proof_note_sha256": "f44c9c7494354c462d89919e3863186a720715994f4921046352e0110dea5399",
+  "scope": "Written exclusion of eighteen count profiles, with retained eight-spread, finite seven-spread and one-five dependencies. Three necessary profiles remain unrealized; no six-spread completion claim, numerical bound change or entire s=3 exclusion."
+}

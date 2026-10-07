@@ -235,6 +235,18 @@ have two six-point defects and sixteen saturated outside classes.
 That coupled branch, larger characteristic classes, and exact n=7
 values remain open with numerical lower bound nineteen.
 
+The [coupled two-six analysis](notes/dimension-seven-two-six-profiles.md)
+reduces its 21 count profiles to three necessary candidates. All eleven
+profiles with seven pure odd heptads are excluded by the two-hole point
+capacity, charge membership, or clique label budget. With eight pure odd
+heptads, only defect even counts (4,4) and saturated counts (7,1,8)
+remain. The other candidates have six pure odd heptads: defect even
+counts (0,0) with saturated counts (3,7,6), or (0,2) with (1,9,6).
+The [coordinate report](results/dimension-7-two-six-profiles.json)
+checks the count formulas and local charge/conditional-transfer controls.
+Their joint realizability, larger characteristic classes, and exact n=7
+values remain open; the lower bound is still nineteen.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
