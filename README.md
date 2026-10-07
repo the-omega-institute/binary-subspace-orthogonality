@@ -493,6 +493,19 @@ per role; disjoint defect-pair counts are 96,96,72. No complete root
 family or cover search is performed: this row, 26/39 count totals and
 exact n7 remain open >=19. Both manuscript PDFs are preserved.
 
+The subsequent [three-form root reduction](notes/dimension-seven-three-six-roots.md)
+constructs every necessary remaining set with both mixed roles and
+the actual pure-six hole retained. Forms I/II/III have 7,424/12,688/8,160
+ordered roots and 7,408/12,688/8,112 distinct sets, reduced under their
+proved full marked groups to 248/474/557 representatives. Each form
+retains both actual-hole orbits; the actions are not free and no
+cross-form identification is assumed. The
+[checker](develop/check_dimension_seven_three_six_roots.py) and
+[complete representative report](results/dimension-7-three-six-roots.json)
+verify two independent catalog/root constructions, all group actions
+and every orbit. No cover search or exclusion is performed; the
+26/39 count totals and exact n7 remain open >=19. Both PDFs are preserved.
+
 The earlier [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
