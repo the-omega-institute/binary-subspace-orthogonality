@@ -456,6 +456,17 @@ the zero-five-even-sum form Z remains for this raw profile. The profile
 and 27/39 count totals remain open. This new finite proof is integrated
 into the extended working draft; exact n7 remains open >=19.
 
+The [Z-form root and marked stabilizer reduction](notes/dimension-seven-five-four-Z-roots.md)
+now constructs 1,284,736 ordered roots and 1,271,424 distinct remaining
+sets. Its written 128-element symplectic stabilizer includes exchange of
+the two mixed classes and transports the actual pure-five hole, reducing
+the family to 10,837 representatives. The
+[checker](develop/check_dimension_seven_five_four_Z_roots.py) and
+[complete report](results/dimension-7-five-four-Z-roots.json) independently
+reconstruct the catalogs and root multiset and verify the full orbit
+partition. No representative is solved in this step; Z, the raw profile
+and exact n7 remain open >=19. Both manuscript PDFs are preserved.
+
 The [profile-scope analysis](notes/dimension-seven-profile-scope.md)
 gives common deficit, count, charge and hole-capacity formulas across
 characteristic sizes. Its [accounting auditor](develop/check_dimension_seven_profile_scope.py)
