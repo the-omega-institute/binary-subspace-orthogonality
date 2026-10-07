@@ -1,0 +1,215 @@
+{
+  "status": "entire_one_five_defect_branch_excluded_for_three_point_characteristic_class",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "excluded_last_profile": [
+    1,
+    4,
+    2,
+    8,
+    7
+  ],
+  "remaining_one_five_profiles": [],
+  "one_five_branch_excluded": true,
+  "size_three_entire_branch_excluded": false,
+  "required_outside_defects_when_characteristic_size_three": [
+    6,
+    6
+  ],
+  "saturated_outside_classes_when_characteristic_size_three": 16,
+  "two_six_branch": "open_coupled_realizability_not_enumerated",
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "uniform_clique_size": 7,
+  "uniform_label_upper_bound": 6,
+  "linear_functional_weight_histogram": {
+    "0": 1,
+    "4": 7
+  },
+  "fixed_hole_pair_local_configurations_checked": 42,
+  "local_label_union_histogram": {
+    "4": 21,
+    "6": 21
+  },
+  "canonical_shadow_controls": [
+    {
+      "characteristic_projections": [
+        65,
+        71
+      ],
+      "even_defect": 6,
+      "odd_defect_projections": [
+        3,
+        12,
+        51,
+        60
+      ],
+      "mixed_odd_projections_in_first_hole": [
+        15,
+        48,
+        63
+      ],
+      "defect_label_available_at": [
+        6
+      ],
+      "clique": [
+        6,
+        24,
+        30,
+        65,
+        71,
+        89,
+        95
+      ],
+      "necessary_lists": {
+        "6": [
+          "defect",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "24": [
+          "mixed_15",
+          "mixed_48",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "30": [
+          "mixed_15",
+          "mixed_48",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "65": [
+          "mixed_15",
+          "mixed_63",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "71": [
+          "mixed_15",
+          "mixed_63",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "89": [
+          "mixed_48",
+          "mixed_63",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "95": [
+          "mixed_48",
+          "mixed_63",
+          "pure_even_0",
+          "pure_even_1"
+        ]
+      },
+      "label_union": [
+        "defect",
+        "mixed_15",
+        "mixed_48",
+        "mixed_63",
+        "pure_even_0",
+        "pure_even_1"
+      ],
+      "available_label_union_size": 6,
+      "maximum_shadow_matching": 6,
+      "seven_distinct_labels_possible": false
+    },
+    {
+      "characteristic_projections": [
+        3,
+        71
+      ],
+      "even_defect": 68,
+      "odd_defect_projections": [
+        12,
+        15,
+        60,
+        63
+      ],
+      "mixed_odd_projections_in_first_hole": [
+        48,
+        51
+      ],
+      "defect_label_available_at": [],
+      "clique": [
+        6,
+        24,
+        30,
+        65,
+        71,
+        89,
+        95
+      ],
+      "necessary_lists": {
+        "6": [
+          "mixed_51",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "24": [
+          "mixed_48",
+          "mixed_51",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "30": [
+          "mixed_48",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "65": [
+          "mixed_51",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "71": [
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "89": [
+          "mixed_48",
+          "pure_even_0",
+          "pure_even_1"
+        ],
+        "95": [
+          "mixed_48",
+          "mixed_51",
+          "pure_even_0",
+          "pure_even_1"
+        ]
+      },
+      "label_union": [
+        "mixed_48",
+        "mixed_51",
+        "pure_even_0",
+        "pure_even_1"
+      ],
+      "available_label_union_size": 4,
+      "maximum_shadow_matching": 4,
+      "seven_distinct_labels_possible": false
+    }
+  ],
+  "prior_completion_enumeration_reused": true,
+  "prior_completion_enumeration_rerun": false,
+  "complete_colorings_enumerated": false,
+  "native_SAT": false,
+  "exact_cover_search": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "0299213c422af741d329a2b7b67a07d6c1c62012bb63cb25104c6bf37cab94cf",
+  "proof_note_sha256": "0ac05f88c9df22756bbef85315b174dd24e547549f01c784050c0d8cf919ce00",
+  "prior_seven_holes_report_sha256": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+  "prior_completed_hole_report_sha256": "05ab46d375d01e692c75f50fd150b0879003b7e5db8fe51df7394ab48d99ae88",
+  "prior_quadratic_defects_report_sha256": "2c6c78d0def379cf30619b1617fc69dd440afef448dcba4bbf8f185ed5f361f4",
+  "scope": "Written seven-clique color budget excludes the final one-five profile using the previously finitely proved completion lemma; 42 local shadow-list controls do not enumerate complete colorings or exclude two-six defects."
+}

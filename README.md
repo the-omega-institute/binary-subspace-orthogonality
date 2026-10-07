@@ -218,11 +218,22 @@ containing a fixed Lagrangian match the deletion set of 64 independently
 enumerated complete spreads, proving that their fourteen holes split
 uniquely into two Lagrangians. The five odd defect points must lie in
 one hole Lagrangian; the other then needs seven distinct even labels
-but has only three. Only (1,4;2,8,7) remains in the one-five-defect
+but has only three. This left (1,4;2,8,7) in the one-five-defect
 branch, with two necessary local forms recorded in the
-[finite report](results/dimension-7-seven-holes.json). Their common
-coloring realizability, the two-six branch, and exact n=7 values
-remain open with numerical lower bound nineteen.
+[finite report](results/dimension-7-seven-holes.json).
+
+The [seven-clique color budget](notes/dimension-seven-one-five-exclusion.md)
+now excludes that final profile and closes the entire one-five-defect
+branch for a three-point characteristic class. The four odd defect
+projections occupy one hole Lagrangian; the other seven-point even
+clique has at most two pure even, three mixed, and one defect label:
+six labels for seven vertices. The two normalized local forms have
+only six and four labels respectively, checked in the
+[coordinate report](results/dimension-7-one-five-exclusion.json).
+A nineteen-coloring with characteristic class size three must therefore
+have two six-point defects and sixteen saturated outside classes.
+That coupled branch, larger characteristic classes, and exact n=7
+values remain open with numerical lower bound nineteen.
 
 ## Paper status
 
