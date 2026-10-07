@@ -212,6 +212,18 @@ the one-five-point-defect branch. The two-six-point-defect branch,
 larger characteristic classes, and exact dimension-seven values remain
 open; the numerical lower bound stays nineteen.
 
+The [seven-Lagrangian completion lemma](notes/dimension-seven-seven-holes.md)
+further excludes (0,5;3,7,7). All 1,792 seven-member partial spreads
+containing a fixed Lagrangian match the deletion set of 64 independently
+enumerated complete spreads, proving that their fourteen holes split
+uniquely into two Lagrangians. The five odd defect points must lie in
+one hole Lagrangian; the other then needs seven distinct even labels
+but has only three. Only (1,4;2,8,7) remains in the one-five-defect
+branch, with two necessary local forms recorded in the
+[finite report](results/dimension-7-seven-holes.json). Their common
+coloring realizability, the two-six branch, and exact n=7 values
+remain open with numerical lower bound nineteen.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.

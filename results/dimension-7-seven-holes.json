@@ -1,0 +1,155 @@
+{
+  "status": "seven_lagrangians_complete_uniquely_and_pure_odd_five_defect_profile_excluded",
+  "dimension": 7,
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open",
+  "nineteen_color_witness": false,
+  "new_numerical_lower_bound": false,
+  "excluded_profile": [
+    0,
+    5,
+    3,
+    7,
+    7
+  ],
+  "remaining_one_five_profiles": [
+    [
+      1,
+      4,
+      2,
+      8,
+      7
+    ]
+  ],
+  "two_six_branch": "open_not_enumerated",
+  "characteristic_class_size_range": [
+    3,
+    8
+  ],
+  "lagrangians": 135,
+  "rref_three_subspaces": 1395,
+  "independent_lagrangian_sets_equal": true,
+  "fixed_lagrangian": [
+    3,
+    12,
+    15,
+    48,
+    51,
+    60,
+    63
+  ],
+  "anchored_seven_partial_spreads": 1792,
+  "anchored_nine_complete_spreads": 64,
+  "all_anchored_seven_partial_spreads_enumerated": true,
+  "deletion_set_equals_partial_spread_set": true,
+  "completion_multiplicity": 1,
+  "hole_lagrangians_per_partial_spread": 2,
+  "lagrangian_set_sha256": "281052c907083241fb6bef8c268a488a599af58ffb6aa0d53bef221acb8ee7cb",
+  "rref_lagrangian_set_sha256": "281052c907083241fb6bef8c268a488a599af58ffb6aa0d53bef221acb8ee7cb",
+  "partial_spread_set_sha256": "049c99c9ce177abc7750cdd4948a3ed6d6cccf4d0d8528d229d585bcb8120361",
+  "deletion_set_sha256": "049c99c9ce177abc7750cdd4948a3ed6d6cccf4d0d8528d229d585bcb8120361",
+  "complete_spread_set_sha256": "8a6a409ff6c716b98c8022f08555dbb9cac38c62ae6189b6642d5b90236a8bea",
+  "hyperplane_hole_counts_checked": 112896,
+  "hyperplane_hole_count_histogram": {
+    "6": 87808,
+    "10": 25088
+  },
+  "transverse_lagrangian_pairs": 4320,
+  "five_point_single_side_isotropic_controls": 181440,
+  "four_point_single_side_isotropic_controls": 302400,
+  "four_point_mixed_side_isotropic_controls": 60480,
+  "five_point_mixed_side_isotropic_controls": 0,
+  "remaining_profile_local_forms": [
+    {
+      "characteristic_projections": [
+        65,
+        71
+      ],
+      "even_defect": 6,
+      "odd_defect_projections": [
+        3,
+        12,
+        51,
+        60
+      ],
+      "remaining_mixed_odd_projections": [
+        6,
+        15,
+        24,
+        30,
+        48,
+        63,
+        89,
+        95
+      ],
+      "characteristic_class": [
+        127,
+        62,
+        56
+      ],
+      "defect_class": [
+        6,
+        124,
+        115,
+        76,
+        67
+      ],
+      "complete_coloring": false
+    },
+    {
+      "characteristic_projections": [
+        3,
+        71
+      ],
+      "even_defect": 68,
+      "odd_defect_projections": [
+        12,
+        15,
+        60,
+        63
+      ],
+      "remaining_mixed_odd_projections": [
+        6,
+        24,
+        30,
+        48,
+        51,
+        65,
+        89,
+        95
+      ],
+      "characteristic_class": [
+        127,
+        124,
+        56
+      ],
+      "defect_class": [
+        68,
+        115,
+        112,
+        67,
+        64
+      ],
+      "complete_coloring": false
+    }
+  ],
+  "fixed_hole_pair_local_configurations": 42,
+  "local_form_orbit_sizes": [
+    21,
+    21
+  ],
+  "hole_pair_basis_changes_checked": 168,
+  "original_dot_basis_pairings_checked": 8232,
+  "remaining_profile_realizability": "open_both_local_forms_no_common_coloring_constructed",
+  "completion_proof_scope": "All seven-member partial spreads containing a fixed Lagrangian enumerated; independently generated full-spread deletion set agrees exactly. Written symplectic transitivity covers every seven-member partial spread.",
+  "coloring_exclusion_scope": "Written five-odd-defect exclusion uses the finitely proved completion lemma. Local remaining-profile controls are individual classes, not complete colorings.",
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "dad19132d6504e0d15a832869646c0e7803e9fd3cbc3ce6536969e6e6c4ab865",
+  "proof_note_sha256": "6fcdbf4463b9394bded17a3fefac882f73d80afc6d40738ba19e9146737a1939",
+  "prior_hole_cover_report_sha256": "05ab46d375d01e692c75f50fd150b0879003b7e5db8fe51df7394ab48d99ae88"
+}
