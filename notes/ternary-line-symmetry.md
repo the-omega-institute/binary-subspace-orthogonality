@@ -210,3 +210,19 @@ earlier base-formula unknown report is preserved. It supplies no upper
 bound or evidence of nonexistence. Further continuation should extract a
 specific branch restriction or resolve an independent review finding,
 rather than repeat this unchanged solve.
+
+The subsequent [all14 branch proof](all14-special-line-branch.md) isolates
+one retained orbit as an exact 434-vertex sixteen-color problem. It also
+derives the omitted-pair lists on its 56 odd lines and checks the branch
+formula by direct substitution; no new solve or branch exclusion is claimed.
+
+The next Pro review approved the complete formula and input identity,
+but found that an exception during timer startup could bypass cleanup,
+and an existing output directory could retain stale same-stem evidence.
+Both local runners now start the timer inside the cleanup-protected block,
+cancel even after startup failure, and join a launched timer. They reject
+pre-existing report, candidate or proof collisions before reading the
+input. Real-timer startup interruption tests and six collision controls
+verify these paths without native solver calls or deleting historical files.
+The recorded 120-second unknown report retains its original source hashes;
+there is no evidence that these exceptional-path defects affected it.

@@ -48,10 +48,12 @@ def main():
     args = parser.parse_args()
     if not 0 < args.seconds <= TIMEOUT_MAX:
         parser.error('--seconds must be positive and at most threading.TIMEOUT_MAX')
+    stem = 'dimension-7-ternary-line-symmetry'
+    if any((args.output_dir / (stem + suffix)).exists() for suffix in ('-search.json', '-candidate.json', '.drat')):
+        parser.error('output directory contains a previous same-stem attempt; use a fresh directory')
     contents = args.cnf.read_bytes()
     cnf, rows, adjacency, fixed, palettes, variables, construction, symmetry, audit = load_instance(contents)
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    stem = 'dimension-7-ternary-line-symmetry'
     report = {'dimension': 7, 'target_colors': 17, 'retained_vertices': 442,
               'variables': cnf.nv, 'clauses': len(cnf.clauses), 'added_symmetry_clauses': 2155,
               'cnf_sha256': hashlib.sha256(contents).hexdigest(),
@@ -66,12 +68,13 @@ def main():
     with Solver(name='g4', bootstrap_with=cnf.clauses, with_proof=True) as solver:
         started = time.monotonic()
         timer = Timer(args.seconds, solver.interrupt)
-        timer.start()
         try:
+            timer.start()
             solved = solver.solve_limited(expect_interrupt=True)
         finally:
             timer.cancel()
-            timer.join()
+            if timer.ident is not None:
+                timer.join()
         report.update(solver_seconds=time.monotonic() - started, stats=solver.accum_stats())
         if solved is True:
             model = {literal for literal in solver.get_model() if literal > 0}

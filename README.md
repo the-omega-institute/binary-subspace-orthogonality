@@ -147,6 +147,13 @@ restricted formula before solving. One new 120-second Glucose4 attempt
 returns [unknown](results/dimension-7-ternary-line-symmetry-search.json),
 with no coloring, UNSAT proof or full-graph upper bound.
 
+The [all14 branch reduction](notes/all14-special-line-branch.md) identifies
+an independent dominating class of eight lines. That single orbit is
+equivalent to sixteen-colorability of a 434-vertex induced graph, with
+an exact omitted-pair list criterion on its 56 odd lines. Its 193900-clause
+formula is checked against direct substitution in the base encoding.
+The branch remains open and all other 31 ternary orbits remain available.
+
 ## Paper status
 
 The manuscript has been submitted to the **Journal of Algebraic Combinatorics**.
