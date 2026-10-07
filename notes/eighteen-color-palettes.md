@@ -1,11 +1,13 @@
 # Exact odd-line lists for an eighteen-color construction
 
-The full dimension-seven graph has lower bound eighteen; its exact
+The full dimension-seven graph now has lower bound nineteen; its exact
 chromatic number remains open. The [nonradical retraction](nonradical-line-retraction.md)
 reduces the upper-bound problem to 577 vertices: 513 nonzero totally
 isotropic subspaces in the symplectic space E=127-perp and 64 odd lines.
 This note gives an exact conditional extension criterion and necessary
-constraints on a prospective eighteen-color construction.
+constraints for the earlier eighteen-color question. The later
+[nineteen-color obstruction](dimension-seven-nineteen-obstruction.md)
+excludes every eighteen-coloring; the conditional theorem remains valid.
 
 Put z=127 and write the odd lines as [z+e], e in E. Normalize [z] to color
 15, and use the other seventeen labels P={0,...,14,16,17} on the even

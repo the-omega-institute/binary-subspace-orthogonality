@@ -1,0 +1,291 @@
+{
+  "status": "written_nineteen_color_lower_bound_supported_by_exact_quadratic_and_incidence_checks",
+  "dimension": 7,
+  "characteristic_vector": 127,
+  "symplectic_basis": [
+    3,
+    12,
+    48,
+    65,
+    71,
+    95
+  ],
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "exact_n7_chromatic_number": "open_lower_bound19",
+  "nineteen_color_witness": false,
+  "prior_capacity_lemma_and_saturation": "Written proof at85639e4: class avoidingz<=7 and eighteen colors force types(9,0,8)/(3,7,7). Prior finite certificate unchanged.",
+  "quadratic_polarization_pairs_checked": 4096,
+  "quadratic_value_counts": {
+    "0": 36,
+    "1": 28
+  },
+  "even_heptads_checked": 288,
+  "even_heptad_quadratic_weight_histogram": {
+    "3": 280,
+    "7": 8
+  },
+  "all_even_heptad_vector_sums_zero": true,
+  "all_even_heptad_quadratic_sums_odd": true,
+  "even_six_cliques_and_unique_heptad_completions_checked": 2016,
+  "lagrangians": 135,
+  "point_hyperplane_lagrangian_intersections_checked": 8505,
+  "intersection_size_histogram": {
+    "7": 945,
+    "3": 7560
+  },
+  "written_partial_spread_completion_scope": "Every eight pairwise zero-intersecting Lagrangian three-spaces in symplectic E have seven holes forming the unique ninth Lagrangian, by31point hyperplane counts24/28. Not a finite enumeration of all partial spreads.",
+  "explicit_spread_completion_controls": [
+    {
+      "holes": [
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "completed_lagrangian": [
+        0,
+        3,
+        12,
+        15,
+        48,
+        51,
+        60,
+        63
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        6,
+        24,
+        30,
+        65,
+        71,
+        89,
+        95
+      ],
+      "completed_lagrangian": [
+        0,
+        6,
+        24,
+        30,
+        65,
+        71,
+        89,
+        95
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        17,
+        36,
+        53,
+        66,
+        83,
+        102,
+        119
+      ],
+      "completed_lagrangian": [
+        0,
+        17,
+        36,
+        53,
+        66,
+        83,
+        102,
+        119
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        29,
+        39,
+        58,
+        75,
+        86,
+        108,
+        113
+      ],
+      "completed_lagrangian": [
+        0,
+        29,
+        39,
+        58,
+        75,
+        86,
+        108,
+        113
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        9,
+        18,
+        27,
+        96,
+        105,
+        114,
+        123
+      ],
+      "completed_lagrangian": [
+        0,
+        9,
+        18,
+        27,
+        96,
+        105,
+        114,
+        123
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        23,
+        46,
+        57,
+        77,
+        90,
+        99,
+        116
+      ],
+      "completed_lagrangian": [
+        0,
+        23,
+        46,
+        57,
+        77,
+        90,
+        99,
+        116
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        10,
+        33,
+        43,
+        68,
+        78,
+        101,
+        111
+      ],
+      "completed_lagrangian": [
+        0,
+        10,
+        33,
+        43,
+        68,
+        78,
+        101,
+        111
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        5,
+        40,
+        45,
+        80,
+        85,
+        120,
+        125
+      ],
+      "completed_lagrangian": [
+        0,
+        5,
+        40,
+        45,
+        80,
+        85,
+        120,
+        125
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    },
+    {
+      "holes": [
+        20,
+        34,
+        54,
+        72,
+        92,
+        106,
+        126
+      ],
+      "completed_lagrangian": [
+        0,
+        20,
+        34,
+        54,
+        72,
+        92,
+        106,
+        126
+      ],
+      "even_hole_clique_vertices": 7,
+      "even_hole_clique_edges": 21,
+      "even_odd_hole_adjacencies": 49,
+      "available_all_even_labels_in_mixed_type": 3
+    }
+  ],
+  "finite_partial_spread_controls": 9,
+  "all_partial_spreads_enumerated": false,
+  "necessary_eighteen_color_types": [
+    [
+      3,
+      7,
+      7
+    ],
+    [
+      9,
+      0,
+      8
+    ]
+  ],
+  "type_9_0_8_exclusion": "Nine odd quadratic-sum heptads cannot partition63evenpoints whose quadratic-sum iseven.",
+  "type_3_7_7_exclusion": "Seven holes formLagrangianM; its7evenline clique cannot use7mixedlabels or pureoddlabels and has only3all-evenlabels.",
+  "auxiliary442_eighteen_colors_excluded": true,
+  "fresh_common_nineteenth_color_three_space_route_excluded": true,
+  "native_solver_run": false,
+  "DRAT_checked": false,
+  "lean_run": false,
+  "submitted_manuscript_changed": false,
+  "checker_sha256": "69d5e40018b61b40da37fd75746dd0c98a897d40f8beb73d70607d4e60b6b585",
+  "proof_note_sha256": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252",
+  "prior_capacity_report_sha256": "8947cd21741b54535df4be77986728b795693be037057f1269ae8d1826585aec",
+  "scope": "Written universal exclusion ofboth saturated18linecolor types yieldsline/fullsubspace lowerbound19. Exact finite checks ofquadratic/heptad andhyperplane ingredients plusnine explicitpartialspread controls. No independentPro/Lean/SAT/DRAT orupperwitness; exactn7open."
+}

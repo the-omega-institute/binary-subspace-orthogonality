@@ -1,5 +1,12 @@
 # The dimension-seven line graph already requires eighteen colors
 
+Current status: the [subsequent obstruction](dimension-seven-nineteen-obstruction.md)
+rules out both saturated eighteen-color structures below and raises the
+line and full-subspace lower bounds to nineteen. This note records the
+capacity and saturation step at 85639e4; its original
+[finite certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/85639e4bd3309b0e680bb2c1228736b264cdff3c/results/dimension-7-line-capacity.json)
+retains the source/note hashes at that revision.
+
 **Theorem.** Let Gamma_7 have the 127 nonzero vectors of F_2^7 as
 vertices, adjacent when distinct vectors have dot product zero.
 Every independent set avoiding z=(1,...,1)=127 has at most seven
@@ -9,8 +16,9 @@ with z deleted.
 This closes the auxiliary seventeen-color route on all 127 lines
 and 315 totally isotropic planes, including all 32 ternary orbits.
 In particular the all14 branch is impossible. The full-subspace
-n=7 chromatic number remains open with the same lower bound eighteen;
-no full-graph eighteen-color witness or stronger lower bound is claimed.
+chromatic number was left open with lower bound eighteen at that step.
+The later proof raises the lower bound to nineteen while leaving the
+exact value open.
 
 ## A color-class capacity proof
 
@@ -147,8 +155,9 @@ therefore already used on the lines. The isotropic three-spaces must
 share these labels; a fresh common label is unavailable. Determining
 whether either saturated line partition exists, and whether it extends
 over the other retained subspaces using the same eighteen labels,
-is the next structural problem. Neither existence nor nonexistence
-of those partitions is established here.
+was the next structural problem. The subsequent quadratic-parity and
+partial-spread completion proof excludes both partitions, yielding
+the nineteen-color lower bound.
 
 ## An exhaustive finite check of the capacity lemma
 

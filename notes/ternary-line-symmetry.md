@@ -4,7 +4,8 @@ The auxiliary graph on 127 lines and 315 totally isotropic planes admits
 an exact restriction to 32 patterns on its seven special odd lines.
 The restriction preserves seventeen-colorability of this 442-vertex graph.
 It supplies no coloring: the full dimension-seven chromatic number remains
-open with the written lower bound eighteen.
+open, with its lower bound now raised to
+[nineteen](dimension-seven-nineteen-obstruction.md).
 
 Current status: the subsequent [line-capacity theorem](dimension-seven-line-capacity.md)
 excludes seventeen colors on all the line vertices, hence rules out

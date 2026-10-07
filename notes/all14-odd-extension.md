@@ -148,7 +148,9 @@ python3 develop/check_all14_odd_extension.py --report /tmp/all14-odd-extension.j
 
 At the recorded revision, all14 and the other 31 orbits were open.
 The subsequent written line obstruction now excludes all of them.
-The full n=7 chromatic number remains open with lower bound eighteen.
+The full n=7 chromatic number remains open; the later
+[nineteen-color obstruction](dimension-seven-nineteen-obstruction.md)
+raises its lower bound to nineteen.
 The original finite report retains its source/note hashes at 716ab70;
 checkout that revision to reproduce the exact report bytes.
 No native solver or Lean was run for this result.

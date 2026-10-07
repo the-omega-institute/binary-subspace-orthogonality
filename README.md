@@ -33,7 +33,8 @@ Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 | For every `n >= 1`, `omega(O_n*) = max(n, N(floor(n/2)) + (n mod 2))` | [Radical/quotient proof](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/clique.tex) · [attributed Lean source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/NikandishClique.lean) |
 | The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
 | The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
-| The full dimension-seven graph requires **at least 18 colors**, exceeding its clique number 16 | [Anchor forcing and omitted-color proof](notes/dimension-seven-eighteen-obstruction.md) and [82-vertex certificate](results/dimension-7-eighteen-obstruction.json); exact full-graph chromatic number remains open |
+| The dimension-seven line graph and full-subspace graph require **at least 19 colors** | [Quadratic parity and partial-spread completion proof](notes/dimension-seven-nineteen-obstruction.md) and [exact finite checks](results/dimension-7-nineteen-obstruction.json); exact chromatic numbers remain open |
+| The earlier full dimension-seven lower bound was **18 colors**, exceeding its clique number 16 | [Anchor forcing and omitted-color proof](notes/dimension-seven-eighteen-obstruction.md) and [82-vertex certificate](results/dimension-7-eighteen-obstruction.json), retained as history |
 | Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
 The six-dimensional [chromatic Lean development](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/Chromatic/Verify.lean)
@@ -44,7 +45,7 @@ for the exact dependencies. A completed pure-kernel replacement is not claimed.
 The independent finite checks and the written mathematical proofs have their
 own stated scopes.
 
-**The dimension-seven chromatic number remains open, with lower bound 18.** A complete structural
+**The dimension-seven chromatic number remains open, with lower bound 19.** A complete structural
 15-color rule also remains open. Failed exploratory candidates are retained as
 research history; they are not proofs of upper bounds.
 
@@ -135,7 +136,8 @@ is now emitted and audited: 427 residual vertices, 14,994 edges, 5,789
 variables and 197,344 clauses. Its seven special lines retain three
 color choices. One 120-second Glucose4 attempt returns unknown, with no
 coloring or UNSAT proof. The subsequent written line obstruction excludes
-this sufficient route, while general eighteen-colorability remains open.
+this sufficient route. The later nineteen-color lower bound also excludes
+eighteen colors on the full graph.
 
 The [ternary special-line symmetry proof](notes/ternary-line-symmetry.md)
 reduces all 2,187 three-color assignments to 32 representatives under
@@ -163,13 +165,20 @@ extension test with at most 56 variables. These conditional statements
 remain valid; the line obstruction excludes the full branch.
 
 The [dimension-seven line-capacity proof](notes/dimension-seven-line-capacity.md)
-now gives the lower bound eighteen already on the line graph. Every
+first gave the lower bound eighteen already on the line graph. Every
 independent line set avoiding the characteristic vector has at most
 seven vertices, so the 126 lines with that vector deleted need at least
 eighteen colors. A coordinate-only exhaustive check verifies the capacity
 over all 26896 even color classes and 135 Lagrangians. This closes the
 entire auxiliary seventeen-color route without a SAT/UNSAT or Lean run.
-The full n=7 chromatic number remains open with the same lower bound 18.
+The [nineteen-color obstruction](notes/dimension-seven-nineteen-obstruction.md)
+now rules out both saturated eighteen-color line structures. Nine even
+heptads fail quadratic parity. The mixed structure leaves seven holes in
+an eight-member partial Lagrangian spread; those holes form the ninth
+Lagrangian, whose seven even points need seven labels but have only three.
+This gives lower bound 19 for the line and full-subspace graphs, with
+exact quadratic/heptad and incidence checks. Their exact values remain
+open; no nineteen-color witness, native SAT or Lean result is claimed.
 
 ## Paper status
 

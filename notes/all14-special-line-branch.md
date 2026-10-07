@@ -122,7 +122,8 @@ No solver or Lean was run on this branch. The later written
 that its 119 remaining lines already need seventeen colors, excluding
 the 434-vertex sixteen-color branch. The finite certificate here records
 the original reduction and formula; it is not an UNSAT solver report.
-The full n=7 chromatic number remains open with lower bound eighteen.
+The full n=7 chromatic number remains open, with its lower bound now
+[nineteen](dimension-seven-nineteen-obstruction.md).
 
 ```sh
 python3 develop/check_all14_branch.py --report /tmp/all14-branch.json --output-cnf /tmp/all14-branch.cnf

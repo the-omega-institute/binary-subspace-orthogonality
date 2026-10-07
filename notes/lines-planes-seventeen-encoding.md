@@ -12,6 +12,8 @@ Current status: the later [line-capacity proof](dimension-seven-line-capacity.md
 excludes this entire seventeen-color construction already on its
 line vertices. The encoding and earlier unknown solver reports are
 retained as history; no UNSAT solver or checked DRAT proof is claimed.
+The subsequent [nineteen-color lower bound](dimension-seven-nineteen-obstruction.md)
+also excludes eighteen colors on the full graph; its exact value remains open.
 
 ## Normalization and exact palettes
 
