@@ -394,6 +394,20 @@ recoloring dependency. Nineteen of 46 raw 5+6 and nine of 48 raw
 feasibility untested. Sizes four through eight and exact n7 remain
 open >=19, with no new Lean or numerical bound claim.
 
+The [pure-five/four-even charge reduction](notes/dimension-seven-five-four-charge.md)
+now reduces the still-open (5,4;6,2,8) profile to four necessary marked
+normal forms. Applying the existing charge-member lemma forces both
+even sums into the hole Lagrangian, including the apparent dependent-span
+exception. The pure-five sum may be zero; its hole point and the six
+pure even heptads occupy the seven holes once each. The
+[independent checker](develop/check_dimension_seven_five_four_charge.py)
+and [report](results/dimension-7-five-four-charge.json) verify all 420
+fixed-hole role normalizations and exact local defect catalogs. These
+are necessary partial classes; no six-heptad cover search, coloring or
+new profile exclusion is claimed. The totals remain 19/46 five-plus-six
+and 9/48 three-six profiles excluded, with 27/39 unexcluded and exact
+n7 open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

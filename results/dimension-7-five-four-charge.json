@@ -1,0 +1,699 @@
+{
+  "status": "specified_five_four_profile_reduced_to_four_necessary_marked_normal_forms",
+  "dimension": 7,
+  "profile": [
+    5,
+    4,
+    6,
+    2,
+    8
+  ],
+  "profile_columns": [
+    "k5",
+    "k6",
+    "A",
+    "B",
+    "C"
+  ],
+  "target_profile_excluded": false,
+  "target_profile_realized": false,
+  "normal_forms": [
+    {
+      "case": "Z",
+      "five_even_sum": 0,
+      "six_even_sum": 15,
+      "six_odd_projections": [
+        15,
+        48
+      ],
+      "mixed_odd_projections": [
+        3,
+        12
+      ],
+      "characteristic_projections": [
+        51,
+        60,
+        63
+      ],
+      "characteristic_charge": 48,
+      "anchored_five_blocks": 1120,
+      "six_four_even_blocks": 16,
+      "disjoint_defect_pairs": 13584,
+      "mixed_sextets_each": [
+        32,
+        32
+      ],
+      "full_coloring_feasibility": "untested"
+    },
+    {
+      "case": "H",
+      "five_even_sum": 12,
+      "six_even_sum": 3,
+      "six_odd_projections": [
+        3,
+        12
+      ],
+      "mixed_odd_projections": [
+        48,
+        63
+      ],
+      "characteristic_projections": [
+        15,
+        51,
+        60
+      ],
+      "characteristic_charge": 0,
+      "anchored_five_blocks": 96,
+      "six_four_even_blocks": 16,
+      "disjoint_defect_pairs": 1536,
+      "mixed_sextets_each": [
+        32,
+        32
+      ],
+      "full_coloring_feasibility": "untested"
+    },
+    {
+      "case": "D",
+      "five_even_sum": 63,
+      "six_even_sum": 48,
+      "six_odd_projections": [
+        48,
+        15
+      ],
+      "mixed_odd_projections": [
+        3,
+        12
+      ],
+      "characteristic_projections": [
+        51,
+        60,
+        63
+      ],
+      "characteristic_charge": 48,
+      "anchored_five_blocks": 96,
+      "six_four_even_blocks": 16,
+      "disjoint_defect_pairs": 784,
+      "mixed_sextets_each": [
+        32,
+        32
+      ],
+      "full_coloring_feasibility": "untested"
+    },
+    {
+      "case": "G",
+      "five_even_sum": 12,
+      "six_even_sum": 3,
+      "six_odd_projections": [
+        3,
+        48
+      ],
+      "mixed_odd_projections": [
+        51,
+        60
+      ],
+      "characteristic_projections": [
+        12,
+        15,
+        63
+      ],
+      "characteristic_charge": 60,
+      "anchored_five_blocks": 96,
+      "six_four_even_blocks": 16,
+      "disjoint_defect_pairs": 1088,
+      "mixed_sextets_each": [
+        32,
+        32
+      ],
+      "full_coloring_feasibility": "untested"
+    }
+  ],
+  "five_six_total_excluded_profiles": 19,
+  "five_six_remaining_unexcluded_count": 27,
+  "five_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      3,
+      7,
+      6
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      1,
+      9,
+      6
+    ],
+    [
+      0,
+      2,
+      7,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      4,
+      7
+    ],
+    [
+      0,
+      5,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      0,
+      2,
+      8,
+      6
+    ],
+    [
+      1,
+      0,
+      8,
+      1,
+      7
+    ],
+    [
+      1,
+      2,
+      0,
+      10,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      3,
+      7
+    ],
+    [
+      1,
+      4,
+      4,
+      5,
+      7
+    ],
+    [
+      1,
+      5,
+      3,
+      6,
+      7
+    ],
+    [
+      1,
+      6,
+      2,
+      7,
+      7
+    ],
+    [
+      2,
+      0,
+      1,
+      9,
+      6
+    ],
+    [
+      2,
+      0,
+      7,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      3,
+      6,
+      7
+    ],
+    [
+      3,
+      0,
+      0,
+      10,
+      6
+    ],
+    [
+      3,
+      0,
+      6,
+      3,
+      7
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      7
+    ],
+    [
+      3,
+      6,
+      6,
+      2,
+      8
+    ],
+    [
+      4,
+      0,
+      5,
+      4,
+      7
+    ],
+    [
+      4,
+      2,
+      3,
+      6,
+      7
+    ],
+    [
+      5,
+      0,
+      4,
+      5,
+      7
+    ],
+    [
+      5,
+      2,
+      2,
+      7,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      2,
+      8
+    ]
+  ],
+  "three_six_total_excluded_profiles": 9,
+  "three_six_remaining_unexcluded_count": 39,
+  "three_six_remaining_raw_profiles": [
+    [
+      0,
+      0,
+      0,
+      3,
+      7,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      9,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      2,
+      1,
+      9,
+      5
+    ],
+    [
+      0,
+      0,
+      2,
+      7,
+      2,
+      6
+    ],
+    [
+      0,
+      0,
+      4,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      0,
+      5,
+      4,
+      5,
+      6
+    ],
+    [
+      0,
+      0,
+      6,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      2,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      2,
+      4,
+      3,
+      6,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      2,
+      7,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      8,
+      0,
+      7
+    ],
+    [
+      0,
+      2,
+      6,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      2,
+      6,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      0,
+      4,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      0,
+      4,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      0,
+      4,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      5,
+      5,
+      3,
+      7
+    ],
+    [
+      0,
+      5,
+      6,
+      4,
+      4,
+      7
+    ],
+    [
+      0,
+      6,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      2,
+      2,
+      3,
+      6,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      1,
+      8,
+      6
+    ],
+    [
+      2,
+      2,
+      4,
+      7,
+      1,
+      7
+    ],
+    [
+      2,
+      2,
+      5,
+      0,
+      9,
+      6
+    ],
+    [
+      2,
+      2,
+      5,
+      6,
+      2,
+      7
+    ],
+    [
+      2,
+      2,
+      6,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      4,
+      5,
+      3,
+      7
+    ],
+    [
+      2,
+      4,
+      5,
+      4,
+      4,
+      7
+    ],
+    [
+      2,
+      4,
+      6,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      5,
+      3,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      6,
+      2,
+      6,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      1,
+      7,
+      7
+    ],
+    [
+      2,
+      6,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      4,
+      4,
+      3,
+      5,
+      7
+    ],
+    [
+      4,
+      4,
+      6,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      5,
+      7,
+      0,
+      8
+    ],
+    [
+      4,
+      5,
+      6,
+      6,
+      1,
+      8
+    ],
+    [
+      4,
+      6,
+      6,
+      5,
+      2,
+      8
+    ]
+  ],
+  "remaining_profiles_feasibility": "untested",
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "exact_n7_chromatic_number": "open",
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "existing_charge_member_lemma_applied": true,
+  "outside_hole_even_sums_excluded_for_this_profile": true,
+  "zero_five_even_sum_retained": true,
+  "five_defect_exactly_one_hole_point": true,
+  "remaining_even_cover_points": 42,
+  "remaining_heptads": 6,
+  "remaining_holes": 6,
+  "four_even_cliques": 10080,
+  "five_even_cliques": 8064,
+  "five_span_rank_histogram": {
+    "rank_five_nonzero_sum": 6048,
+    "rank_four_zero_sum": 2016
+  },
+  "anchored_five_sum_histogram": {
+    "hole": 672,
+    "outside": 2688,
+    "zero": 1120
+  },
+  "independent_array_and_bitmask_catalogs_equal": true,
+  "charge_member_local_controls": 672,
+  "marked_role_normalization_controls": {
+    "D": 84,
+    "G": 168,
+    "H": 84,
+    "Z": 84
+  },
+  "total_marked_role_controls": 420,
+  "normalization_Gram_entries_checked": 20580,
+  "inverse_source_class_controls": 159936,
+  "disjoint_defect_pair_counts_are_full_cover_roots": false,
+  "mixed_and_heptad_joint_feasibility_tested": false,
+  "new_exact_cover_search": false,
+  "new_finite_cover_certificate": false,
+  "prior_cover_certificate_used_for_new_reduction": false,
+  "prior_spread_enumeration_rerun": false,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_and_Zenodo_PDF_changed": false,
+  "checker_sha256": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+  "proof_note_sha256": "417b06b7c4a760b6148d83ce7c56f2b3b33ccb90dc4f2a2323688e2db6b051d7",
+  "dependency_sha256": {
+    "notes/dimension-seven-two-six-profiles.md": "f44c9c7494354c462d89919e3863186a720715994f4921046352e0110dea5399",
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-four-even-pairs-check.json": "b11138267957b322b82058363c8e6b5d7e650bbd9e7c9692f95658cc109dc472"
+  },
+  "scope": "Written application of the existing charge-member lemma removes the apparent rank-two exception,forces both sums into M,and reduces the specified profile to four marked forms. Local classes and isometries checked;no full cover search or new raw-profile exclusion.27five-six/39three-sixprofiles remain unexcluded;exactn7open>=19."
+}
