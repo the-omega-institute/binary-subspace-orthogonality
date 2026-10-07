@@ -417,9 +417,23 @@ and [independent auditor](develop/check_dimension_seven_five_four_D_cover.py)
 produce and check a new [six-heptad certificate](results/dimension-7-five-four-D-cover-proof.json).
 Its [report](results/dimension-7-five-four-D-cover-check.json) verifies
 72,576 reachable failed states and every branch. The earlier seven-heptad
-certificates are not inputs. D is excluded; Z,H,G remain open, so the
-raw profile and the 27/39 unexcluded-profile totals remain unchanged.
+certificates are not inputs. At that stage D was excluded and Z,H,G
+remained open, with unchanged raw-profile totals of 27/39 unexcluded.
 Exact n7 stays open >=19, with no new Lean or numerical bound claim.
+
+The new [H-form covering theorem](notes/dimension-seven-five-four-H-cover.md)
+excludes zero characteristic charge for this same (5,4;6,2,8) profile.
+Retaining both mixed classes and every actual pure-five hole gives
+127,680 ordered roots and 126,336 distinct 42-point sets. Its
+[bounded builder](develop/build_dimension_seven_five_four_H_cover.py)
+and [independent auditor](develop/check_dimension_seven_five_four_H_cover.py)
+produce and check a new [six-heptad certificate](results/dimension-7-five-four-H-cover-proof.json).
+The [report](results/dimension-7-five-four-H-cover-check.json) verifies
+186,584 reachable failed states, 60,904 branches and 128,880 leaves.
+Neither the D certificate nor earlier seven-heptad certificates are
+proof inputs to H. D and H are excluded; Z and G remain open, so
+the raw profile and totals of 27/39 unexcluded profiles remain unchanged.
+Exact n7 remains open >=19; no new Lean or numerical bound is claimed.
 
 ## Repository map
 

@@ -1,0 +1,117 @@
+{
+  "status": "five_four_H_normal_form_excluded_by_new_audited_six_heptad_cover",
+  "dimension": 7,
+  "profile": [
+    5,
+    4,
+    6,
+    2,
+    8
+  ],
+  "newly_excluded_normal_form": "H",
+  "remaining_normal_forms_for_this_profile": [
+    "Z",
+    "G"
+  ],
+  "target_raw_profile_excluded": false,
+  "target_raw_profile_realized": false,
+  "five_six_total_excluded_profiles": 19,
+  "five_six_remaining_unexcluded_count": 27,
+  "three_six_total_excluded_profiles": 9,
+  "three_six_remaining_unexcluded_count": 39,
+  "characteristic_class_size_range": [
+    4,
+    8
+  ],
+  "exact_n7_chromatic_number": "open",
+  "line_graph_lower_bound": 19,
+  "full_subspace_graph_lower_bound": 19,
+  "new_numerical_lower_bound": false,
+  "nineteen_color_witness": false,
+  "five_even_sum": 12,
+  "six_even_sum": 3,
+  "six_odd_projections": [
+    3,
+    12
+  ],
+  "mixed_odd_projections": [
+    48,
+    63
+  ],
+  "characteristic_projections": [
+    15,
+    51,
+    60
+  ],
+  "characteristic_charge": 0,
+  "five_blocks": 96,
+  "six_four_even_blocks": 16,
+  "mixed_sextets_each": [
+    32,
+    32
+  ],
+  "disjoint_defect_pairs": 1536,
+  "defect_pairs_by_pure_five_hole": {
+    "3": 256,
+    "15": 256,
+    "48": 256,
+    "51": 256,
+    "60": 256,
+    "63": 256
+  },
+  "ordered_roots_by_pure_five_hole": {
+    "3": 23872,
+    "15": 23808,
+    "48": 20544,
+    "51": 19456,
+    "60": 19456,
+    "63": 20544
+  },
+  "remaining_even_cover_points": 42,
+  "remaining_heptads": 6,
+  "remaining_holes": 6,
+  "even_heptads": 288,
+  "eligible_heptad_catalog": 224,
+  "eligible_rows_avoiding_each_pure_five_hole": 192,
+  "eligible_ordered_roots": 127680,
+  "distinct_root_states": 126336,
+  "failed_states_checked": 186584,
+  "branches_checked": 60904,
+  "leaf_states": 128880,
+  "state_sizes": {
+    "28": 1696,
+    "35": 58552,
+    "42": 126336
+  },
+  "all_states_reachable": true,
+  "hole_anchor_count_checked_at_every_state": true,
+  "normalization_frames": 84,
+  "normalization_Gram_entries_checked": 4116,
+  "inverse_source_class_controls": 14784,
+  "prior_four_form_local_report_fully_reaudited": true,
+  "written_eight_spread_completion_used": true,
+  "existing_charge_member_lemma_applied": true,
+  "new_checked_finite_cover_certificate": true,
+  "new_exact_cover_search": true,
+  "search_scope": "Only127680ordered roots for the universally normalized H form;250000states,1000000visits,30seconds.",
+  "prior_seven_heptad_cover_certificate_used": false,
+  "prior_D_cover_certificate_used_for_H_exclusion": false,
+  "prior_spread_enumeration_rerun": false,
+  "native_SAT": false,
+  "DRAT_checked": false,
+  "Lean_run": false,
+  "independent_Pro_review": false,
+  "manuscript_and_Zenodo_PDF_changed": false,
+  "certificate_sha256": "605f4d6a8331e315c19a4c4978c3db5f7ab01f6e1e0f4d6192e555abb2368000",
+  "builder_sha256": "bdb983612e7c1f0f016e2db882739fafc614ce1303c3eb689e04a78b56f5a725",
+  "checker_sha256": "361c051e4be5d6eeb21638ae136897b3825c3664cc97f423aecb101c04efd4ef",
+  "proof_note_sha256": "449b21782ebbe0aa42ec0f11cf631d4a098413825b192b52c8481b054fe921a1",
+  "dependency_sha256": {
+    "notes/dimension-seven-five-four-charge.md": "417b06b7c4a760b6148d83ce7c56f2b3b33ccb90dc4f2a2323688e2db6b051d7",
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+    "results/dimension-7-five-four-charge.json": "e21980c5385a07e14f7440ddf80ae715a07441d6ea25230657a4f0aa7a6b8d76",
+    "notes/dimension-seven-two-six-profiles.md": "f44c9c7494354c462d89919e3863186a720715994f4921046352e0110dea5399",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252"
+  },
+  "scope": "Written marked H reduction plus independently audited new six-heptad certificate excludes H only. All t values and both mixed classes retained. Z/G and the raw profile remain unexcluded;D excluded by the separate earlier certificate;27five-six/39three-sixrows and exactn7open>=19."
+}
