@@ -1,4 +1,4 @@
-"""Audit every saturated mask127 clause from geometric lists and full spans."""
+"""Audit every mask0 clause using geometric lists and full-span dot products."""
 from collections import Counter
 from itertools import combinations
 from pathlib import Path
@@ -14,25 +14,21 @@ def dot(left, right):
 
 
 def geometric_encoding():
+    if not __debug__:
+        raise RuntimeError('Run this auditor without -O or PYTHONOPTIMIZE.')
     rows = bases(7, 3)
     spaces = {vertex: frozenset(span(basis)) for vertex, basis in enumerate(rows)
               if len(basis) == 1 or all(dot(left, right) == 0 for left in span(basis) for right in span(basis))}
     isotropic = frozenset(span((3, 12, 48)))
     clique = [vertex for vertex, space in spaces.items() if space <= isotropic]
-    characteristic = next(vertex for vertex, space in spaces.items() if space == {0, 127})
-    special = {vertex for vertex, space in spaces.items() if len(space) == 2
-               and next(iter(space - {0})) ^ 127 in isotropic - {0}}
-    transverse = {vertex for vertex, space in spaces.items() if len(space) == 8 and space & isotropic == {0}}
-    fixed = set(clique) | {characteristic} | special | transverse
-    assert (len(clique), len(special), len(transverse), len(fixed)) == (15, 7, 64, 87)
-    core = sorted(spaces.keys() - fixed)
+    odd_class = {vertex for vertex, space in spaces.items() if len(space) == 2
+                 and next(iter(space - {0})) ^ 127 in isotropic}
+    core = sorted(spaces.keys() - set(clique) - odd_class)
+    assert len(clique) == 15 and len(odd_class) == 8
     palettes = {}
     for vertex in core:
         kernel = {vector for vector in isotropic if all(dot(vector, other) == 0 for other in spaces[vertex])}
-        palette = [color for color, neighbor in enumerate(clique) if not spaces[neighbor] <= kernel]
-        if any(vector.bit_count() % 2 for vector in spaces[vertex]):
-            palette.append(15)
-        palettes[vertex] = palette
+        palettes[vertex] = [color for color, neighbor in enumerate(clique) if not spaces[neighbor] <= kernel] + [16]
     variables = {(vertex, color): identifier + 1 for identifier, (vertex, color) in enumerate(
         (vertex, color) for vertex in core for color in palettes[vertex])}
     expected = set()
@@ -50,7 +46,7 @@ def geometric_encoding():
             edges += 1
             for color in set(palettes[vertex]) & set(palettes[neighbor]):
                 expected.add(tuple(sorted((-variables[vertex, color], -variables[neighbor, color]))))
-    assert (len(core), edges, len(variables), len(expected), vertex_clauses) == (490, 15386, 6286, 196350, 38136)
+    assert (len(core), edges, len(variables), len(expected), vertex_clauses) == (554, 16730, 7744, 241782, 51494)
     return variables, expected, {'core_vertices': len(core), 'core_edges': edges, 'variables': len(variables),
                                  'clauses': len(expected), 'vertex_clauses': vertex_clauses,
                                  'edge_clauses': len(expected) - vertex_clauses,
@@ -63,7 +59,7 @@ def audit_bytes(contents, variable_count, expected):
     remaining = set(expected)
     lines = contents.decode('ascii').splitlines()
     assert len(lines) >= 2
-    assert lines[0] == 'c full-seven-line-pattern-mask 127 saturated-color16-class 71'
+    assert lines[0] == 'c seven-line-pattern-mask 0 fixed-color15-class 8'
     assert lines[1].split() == ['p', 'cnf', str(variable_count), str(len(expected))]
     actual = 0
     for line in lines[2:]:
@@ -90,8 +86,10 @@ def check(path, controls=False):
         lines = contents.splitlines(keepends=True)
         variants = {'missing_clause': b''.join(lines[:-1]),
                     'duplicate_replaces_last_clause': b''.join(lines[:-1] + [lines[2]]),
-                    'wrong_branch_marker': contents.replace(b'pattern-mask 127', b'pattern-mask 126', 1),
-                    'illegal_color_variable': b''.join(lines[:-1]) + b'-6287 -1 0\n'}
+                    'wrong_branch_marker': contents.replace(b'pattern-mask 0', b'pattern-mask 127', 1),
+                    'illegal_color_variable': b''.join(lines[:-1]) + b'-7745 -1 0\n',
+                    'incomplete_positive_choice': b''.join(lines[:2]) + b'1 0\n' + b''.join(lines[3:]),
+                    'interior_zero': b''.join(lines[:-1]) + b'-1 0 -2 0\n'}
         for label, variant in variants.items():
             try:
                 audit_bytes(variant, len(variables), expected)
@@ -99,14 +97,15 @@ def check(path, controls=False):
                 control_results[label] = 'rejected'
             else:
                 raise AssertionError(('negative control accepted', label))
-    return {'status': 'every_mask127_clause_exactly_matches_independent_geometric_encoding',
-            'dimension': 7, 'pattern_mask': 127, 'fixed_clique_vertices': 16,
-            'independent_color16_class_size': 71, **counts,
+    return {'status': 'every_mask0_clause_exactly_matches_independent_geometric_encoding',
+            'dimension': 7, 'target_colors': 17, 'pattern_mask': 0,
+            'fixed_T_clique_vertices': 15, 'fixed_color15_class': 8, **counts,
+            'every_residual_vertex_allows16_and_forbids15': True,
             'cnf_sha256': hashlib.sha256(contents).hexdigest(),
             'checker_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             'basis_enumerator_sha256': hashlib.sha256(Path(__file__).with_name('dimension_seven_feasibility.py').read_bytes()).hexdigest(),
             'negative_controls': control_results, 'solver_run': False, 'lean_run': False,
-            'scope': 'Historical mask127 encoding audit only. Every clause checked exactly once against geometric lists and full-span orthogonality. Shares only canonical RREF/span helpers, not builder/adjacency. The later clique-triangle theorem excludes this branch. No solver or upper-bound conclusion from this audit.'}
+            'scope': 'Every clause checked exactly once using geometric lists and full-span orthogonality. Shares only canonical RREF/span helpers, not builder/adjacency. Extra16 retained everywhere. Forcing theorem excludes other masks, so mask0 preserves full17colorability. No SAT/UNSAT or upper bound.'}
 
 
 if __name__ == '__main__':

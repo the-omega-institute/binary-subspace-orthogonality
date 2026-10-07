@@ -1,0 +1,34 @@
+{
+  "status": "every_mask0_clause_exactly_matches_independent_geometric_encoding",
+  "dimension": 7,
+  "target_colors": 17,
+  "pattern_mask": 0,
+  "fixed_T_clique_vertices": 15,
+  "fixed_color15_class": 8,
+  "core_vertices": 554,
+  "core_edges": 16730,
+  "variables": 7744,
+  "clauses": 241782,
+  "vertex_clauses": 51494,
+  "edge_clauses": 190288,
+  "palette_sizes": {
+    "12": 210,
+    "15": 280,
+    "16": 64
+  },
+  "every_residual_vertex_allows16_and_forbids15": true,
+  "cnf_sha256": "e173aaef8a8c42e9d874f137fc06f60f8df86765834dfad57a4eb28df00ca49c",
+  "checker_sha256": "0852be2e6b6d8ff9b2649e2eece0a50b4913fae34e878740bfee0f352d53451b",
+  "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
+  "negative_controls": {
+    "missing_clause": "rejected",
+    "duplicate_replaces_last_clause": "rejected",
+    "wrong_branch_marker": "rejected",
+    "illegal_color_variable": "rejected",
+    "incomplete_positive_choice": "rejected",
+    "interior_zero": "rejected"
+  },
+  "solver_run": false,
+  "lean_run": false,
+  "scope": "Every clause checked exactly once using geometric lists and full-span orthogonality. Shares only canonical RREF/span helpers, not builder/adjacency. Extra16 retained everywhere. Forcing theorem excludes other masks, so mask0 preserves full17colorability. No SAT/UNSAT or upper bound."
+}

@@ -33,7 +33,7 @@ Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 | For every `n >= 1`, `omega(O_n*) = max(n, N(floor(n/2)) + (n mod 2))` | [Radical/quotient proof](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/clique.tex) · [attributed Lean source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/NikandishClique.lean) |
 | The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
 | The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
-| The full dimension-seven graph requires **at least 17 colors**, exceeding its clique number 16 | [Two-clique forcing proof](notes/dimension-seven-obstruction.md) and [29-vertex certificate](results/dimension-7-obstruction.json); exact full-graph chromatic number remains open |
+| The full dimension-seven graph requires **at least 18 colors**, exceeding its clique number 16 | [Anchor forcing and omitted-color proof](notes/dimension-seven-eighteen-obstruction.md) and [82-vertex certificate](results/dimension-7-eighteen-obstruction.json); exact full-graph chromatic number remains open |
 | Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
 The six-dimensional [chromatic Lean development](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/formal/Chromatic/Verify.lean)
@@ -44,11 +44,11 @@ for the exact dependencies. A completed pure-kernel replacement is not claimed.
 The independent finite checks and the written mathematical proofs have their
 own stated scopes.
 
-**The dimension-seven chromatic number remains open.** A complete structural
+**The dimension-seven chromatic number remains open, with lower bound 18.** A complete structural
 15-color rule also remains open. Failed exploratory candidates are retained as
 research history; they are not proofs of upper bounds.
 
-The [new 29-vertex obstruction](notes/dimension-seven-obstruction.md) proves
+The earlier [29-vertex obstruction](notes/dimension-seven-obstruction.md) proves
 that sixteen colors are impossible in dimension seven. Its lower bound is
 a written argument checked by exact integer computation, with no Lean or
 UNSAT-solver dependence. The obstruction itself has chromatic number 17;
@@ -96,16 +96,28 @@ leaves 490 uncolored vertices. Its deterministic CNF has 6,286 variables
 and 196,350 clauses, each independently audited from geometric lists and
 full-span orthogonality.
 
-The new [clique-triangle forcing proof](notes/forced-seven-line-color.md)
+The [clique-triangle forcing proof](notes/forced-seven-line-color.md)
 now shows that all seven special lines must receive color fifteen in
 every normalized seventeen-coloring. Thus mask0 is the only possible
 pattern; the other nine, including the previously audited mask127 branch,
 are excluded by a written graph argument. Seven 42-vertex certificates
 check the forcing mechanism. The equivalent residual problem has
-554 vertices, 16,730 edges, 7,744 variables and 241,782 prospective clauses.
+554 vertices, 16,730 edges, 7,744 variables and 241,782 clauses.
 Color sixteen remains available at every residual vertex, so this is
-a seventeen-color problem. Its colorability and the exact full n=7
-chromatic number remain open.
+a seventeen-color problem. Its [CNF is now emitted and independently
+audited](notes/zero-seven-line-branch.md); no solver was run on it.
+
+The new [omitted-color argument](notes/dimension-seven-eighteen-obstruction.md)
+excludes this final pattern and proves **chi(O_7*) >= 18**. Two forced
+color-fifteen anchors forbid that color at three odd lines. Each of two
+fifteen-cliques avoids fifteen and omits a unique color from the other
+sixteen colors; their shared odd neighbor forces two adjacent lines to
+receive the same omitted color. The combined certificate checks all 3,321
+pairs on 82 vertices, including 1,066 edges. This is a written graph proof
+with exact finite geometry verification, without SAT/DRAT or Lean. The
+submitted manuscript remains at its linked revision for coauthor review
+of this extension; no full-graph eighteen-coloring or chromatic equality
+is claimed.
 
 ## Paper status
 

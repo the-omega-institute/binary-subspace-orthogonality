@@ -16,7 +16,7 @@
     "14": 280
   },
   "cnf_sha256": "a19efd1880f1a9125ffca89280d290054599b5b6d3d7e8ab191cd1abf91c65d9",
-  "checker_sha256": "25cdad223b83f03e21140b9f585e86a2d4bffd3c25bd7124bcbb4a08d4a97b31",
+  "checker_sha256": "87d450c19553a8b5eb355431b15bcc4537f6b732bdc7ac14d55870ccccecfe6f",
   "basis_enumerator_sha256": "8baf99af0e033fe021c2c9bfc9d35c68d7a49834e12ac66ab5a5a6461c3efbf2",
   "negative_controls": {
     "missing_clause": "rejected",
@@ -26,5 +26,5 @@
   },
   "solver_run": false,
   "lean_run": false,
-  "scope": "Mask127 only. Every clause checked exactly once against geometric lists and full-span orthogonality. Shares only canonical RREF/span helpers, not the builder or adjacency. Other nine patterns remain; no SAT/UNSAT or upper bound."
+  "scope": "Historical mask127 encoding audit only. Every clause checked exactly once against geometric lists and full-span orthogonality. Shares only canonical RREF/span helpers, not builder/adjacency. The later clique-triangle theorem excludes this branch. No solver or upper-bound conclusion from this audit."
 }

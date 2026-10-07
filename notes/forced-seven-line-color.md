@@ -86,7 +86,8 @@ rejected by negative controls.
 The fixed assignments now consist of the fifteen T-subspaces and the
 independent eight-line color-fifteen class {span(z+t): t in T}.
 No other vertex receives a fixed color. For any residual U, put
-K_U=T intersect U-perp. The allowed colors are exactly
+K_U=T intersect U-perp. The colors not excluded by the fixed assignments
+are exactly
 
 ```text
 {i in 0,...,14: the fixed T-subspace of color i is not contained in K_U}
@@ -119,10 +120,12 @@ available at every residual vertex. The known sixteen-color obstruction
 therefore does not settle this new instance.
 
 These are a written forcing proof, seven finite certificates and exact
-list/count checks. No new CNF, SAT solver or Lean run is part of this
-step. Seventeen-colorability of mask0 and the exact full n=7 chromatic
-number remain open, with lower bound seventeen. The original n=6 formal
-theorem retains its three standard and four native-evaluation axioms.
+list/count checks. No CNF, SAT solver or Lean run was part of this
+forcing step. Subsequently the [mask0 CNF](zero-seven-line-branch.md)
+was emitted and audited, and the [omitted-color proof](dimension-seven-eighteen-obstruction.md)
+excluded seventeen-colorability without a solver. The current lower bound
+is eighteen; the exact full n=7 chromatic number remains open. The original
+n=6 formal theorem retains its three standard and four native-evaluation axioms.
 
 ```sh
 python3 develop/check_forced_seven_lines.py --report /tmp/dimension-7-forced-seven-line-color.json
