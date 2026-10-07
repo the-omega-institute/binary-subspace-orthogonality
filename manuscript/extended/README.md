@@ -118,3 +118,20 @@ Reproduce from the root:
 ```sh
 python3 develop/check_dimension_seven_four_five_five_charge.py --report /tmp/n7-four-five-five-charge.json
 ```
+
+The [transferred two-hole geometry](../../notes/dimension-seven-four-six-six-two-hole.md)
+now has three exhaustive marked forms, with full stabilizer orders
+8,16,16. The actual ordered hole pairs have 12,7,7 orbits. Each form
+has 16 four-even blocks, 18 pure sextets in each role and 6 mixed
+even sextets in each role; the 216 disjoint pure-defect pairs have
+72,38,38 local orbits. Those actions are not free. All 5,376 ordered
+markings have eight explicit normalization controls, and catalog
+actions, group closure and actual-hole transport are checked.
+Joint compatibility of all five even blocks and a complete necessary
+remaining-set family are the next step. No cover search or new raw
+exclusion is claimed; this normalization covers the transferred
+two-hole subbranch, with 25/37 candidates and exact n7 still open >=19.
+
+```sh
+python3 develop/check_dimension_seven_four_six_six_two_hole.py --report /tmp/n7-four-six-six-two-hole.json
+```

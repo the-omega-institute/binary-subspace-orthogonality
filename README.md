@@ -600,6 +600,18 @@ retaining all inherited finite covering premises. No raw row is
 excluded by this reduction: 25/37 candidates and exact n7 >=19 remain
 open. The extended draft includes the argument and its verification scope.
 
+The [transferred two-hole geometry](notes/dimension-seven-four-six-six-two-hole.md)
+has three exhaustive marked forms with full group orders 8,16,16.
+The [local auditor](develop/check_dimension_seven_four_six_six_two_hole.py)
+and [report](results/dimension-7-four-six-six-two-hole.json) verify
+all 5,376 ordered markings, group and component-catalog actions,
+and actual-hole transport. The 216 disjoint pure-defect pairs give
+72,38,38 local orbits; actual ordered hole pairs give 12,7,7 orbits.
+These actions are not free. Complete jointly compatible five-block
+remaining sets and their covering problem are not yet constructed.
+The extended draft includes this geometric reduction; the transferred
+subbranch, all 25/37 candidates and exact n7 >=19 remain open.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
