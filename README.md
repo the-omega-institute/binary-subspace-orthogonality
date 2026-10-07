@@ -370,12 +370,29 @@ cover has 400 roots, each requiring seven heptads anchored in the hole space.
 A new bounded search produces a [failed-state certificate](results/dimension-7-three-five-cover-proof.json),
 and its [independent audit](results/dimension-7-three-five-cover-check.json)
 checks every root and branch of all 2,004 states. This is a written reduction
-plus a checked finite cover proof, with no Lean claim. Eighteen of 46 raw 5+6
+plus a checked finite cover proof, with no Lean claim. At that stage eighteen of 46 raw 5+6
 and nine of 48 raw 6+6+6 profiles are excluded; the other 28 and 39 remain
 unexcluded with joint feasibility untested. Sizes four through eight and
 exact n7 remain open, with lower bound nineteen.
 Characteristic sizes four through eight and exact n=7 remain open,
 with numerical lower bound nineteen.
+
+The [four-even-pairs theorem](notes/dimension-seven-four-even-pairs.md)
+newly excludes (4,4;7,1,8). Written charge forces both four-even sums
+into the hole Lagrangian, and a nondegenerate-span argument makes one
+six-defect odd projection equal its even sum. Valid odd-point transfers
+reduce all cases to the earlier audited size-three two-six theorem or
+one universal size-four normal form with nonzero characteristic charge.
+Its new [bounded builder](develop/build_dimension_seven_four_even_pairs.py)
+and [independent auditor](develop/check_dimension_seven_four_even_pairs.py)
+check a [certificate](results/dimension-7-four-even-pairs-proof.json)
+with 18,752 ordered roots, 18,656 distinct root states and 72,384 failed
+states. The [report](results/dimension-7-four-even-pairs-check.json)
+retains the separately reaudited earlier certificate as an explicit
+recoloring dependency. Nineteen of 46 raw 5+6 and nine of 48 raw
+6+6+6 profiles are excluded; 27 and 39 remain unexcluded with joint
+feasibility untested. Sizes four through eight and exact n7 remain
+open >=19, with no new Lean or numerical bound claim.
 
 ## Repository map
 
