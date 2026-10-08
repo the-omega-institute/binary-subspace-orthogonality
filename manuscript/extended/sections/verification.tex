@@ -179,7 +179,7 @@ Their source, certificate and dependency bindings are checked
 without rerunning their audits or the older normalization/recoloring
 controls. The raw count audit removes exactly $(4,5,5;7,0,8)$,
 preserving the five-plus-six list and giving current totals $25$
-and $36$: $59$ candidates have $C=6,7,8$ and two have $C=5$.
+and $36$ at that stage: $59$ candidates have $C=6,7,8$ and two have $C=5$.
 The whole $(4,6,6;5,2,8)$ raw row remains open.
 For $(4,5,6;6,1,8)$, the local auditor
 \path{develop/check_dimension_seven_four_five_six_charge.py}
@@ -199,7 +199,7 @@ source exclusions retain five exact-profile theorems; all nine
 inherited covering reports and their source, certificate and
 dependency bindings are checked without historical covering
 audits. No new cover search or raw-row exclusion is claimed;
-the totals remain $25/36$ and the mixed/pure completion branch
+that audit retains $25/36$ and the mixed/pure completion branch
 is not covered by the earlier paired mixed/mixed certificate.
 The ordered normalization auditor
 \path{develop/check_dimension_seven_four_five_six_symmetry.py}
@@ -235,7 +235,24 @@ checked. Missing branches, dropped decompositions, incorrect actual
 holes and omitted orbit members are rejected by four invalid controls.
 The earlier source, normalization and nine inherited covering
 reports retain their source, certificate and dependency identities
-without rerunning those audits. No covering search for these roots
-or new raw-row exclusion is claimed.
+without rerunning those audits.
+The subsequent covering auditor
+\path{develop/check_dimension_seven_four_five_six_cover.py}
+reconstructs these complete roots and orbits afresh, including
+all decompositions, roles and actual holes. It independently
+enumerates all $288$ even heptads and selects the $224$ anchored
+rows justified by hole capacity. All $3258$ representatives,
+$3262$ reachable failed states, four required successors and
+$3258$ leaves are checked. State sizes $28$ and $35$ occur
+$2608$ and $654$ times. Every pivot and every admissible successor
+is checked; strict size decrease gives the finite induction.
+Four invalid controls reject missing representatives, absent pivots,
+false empty failures and omitted required successors. No historical
+certificate is used as a failed-state premise of this new proof;
+the source restrictions retain their nine inherited theorem bindings.
+Independent raw count reconstruction removes exactly
+$(4,5,6;6,1,8)$, giving current lists $25/35$, with $58$ candidates
+having $C=6,7,8$ and two having $C=5$. The entire $(4,6,6;5,2,8)$
+row remains open; exact $n=7$ still has lower bound $19$.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.

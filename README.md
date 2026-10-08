@@ -36,6 +36,7 @@ Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 | The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
 | The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
 | The dimension-seven line graph and full-subspace graph require **at least 19 colors** | [Quadratic parity and partial-spread completion proof](notes/dimension-seven-nineteen-obstruction.md) and [exact finite checks](results/dimension-7-nineteen-obstruction.json); exact chromatic numbers remain open |
+| The nineteen-color row `(4,5,6;6,1,8)` is excluded in all twelve completion-source branches | [Complete covering argument](notes/dimension-seven-four-five-six-cover.md) and [independent certificate audit](results/dimension-7-four-five-six-cover-check.json); current size-four lists contain **25/35** candidates |
 | The earlier full dimension-seven lower bound was **18 colors**, exceeding its clique number 16 | [Anchor forcing and omitted-color proof](notes/dimension-seven-eighteen-obstruction.md) and [82-vertex certificate](results/dimension-7-eighteen-obstruction.json), retained as history |
 | Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
@@ -634,7 +635,7 @@ verify 359 reachable failed states, both required branches and
 four invalid-certificate controls are rejected. The auditor
 independently reconstructs the complete roots and legal orbits.
 Exactly one raw three-six row is removed, preserving the entire
-five-plus-six list. Current totals are **25/36**, with two three-six
+five-plus-six list. At that stage the totals were **25/36**, with two three-six
 C=8 rows: `(4,5,6;6,1,8)` and `(4,6,6;5,2,8)`.
 The entire latter raw profile remains open. The source-row
 exclusion retains the earlier exact-profile covering premises
@@ -656,7 +657,7 @@ and [report](results/dimension-7-four-five-six-charge.json) verify
 10,752 markings, 1,344 mixed and 2,016 pure-six unique completions,
 224 completion pairs and modular source/hole controls, retaining
 nine inherited theorem bindings. No new raw row is excluded;
-totals stay 25/36. This source audit supplies modular local checks;
+that audit retains the prior 25/36 lists. It supplies modular local checks;
 the complete joint roots are constructed below.
 
 The [ordered normalization theorem](notes/dimension-seven-four-five-six-symmetry.md)
@@ -689,9 +690,29 @@ agree on every family, decomposition and orbit in the
 [root artifact](results/dimension-7-four-five-six-roots.json).
 The [report](results/dimension-7-four-five-six-roots-check.json)
 records full tuple actions and four rejected invalid controls.
-The next problem is to test these complete necessary remainders
-against the 224 anchored even heptads. No covering search or new
-exclusion is claimed here: counts stay 25/36 and exact n7 open >=19.
+These complete necessary remainders are tested by the new certificate below.
+
+The [complete twelve-branch covering theorem](notes/dimension-seven-four-five-six-cover.md)
+now excludes the **entire `(4,5,6;6,1,8)` raw row**. The
+[bounded builder](develop/build_dimension_seven_four_five_six_cover.py)
+records all 3,258 orbit representatives in a
+[failed-state certificate](results/dimension-7-four-five-six-cover-proof.json)
+with 3,262 reachable states, four required successor branches and
+3,258 leaves. The [independent auditor](develop/check_dimension_seven_four_five_six_cover.py)
+reconstructs all twelve root families and group orbits, all 288 even
+heptads and the 224 anchored rows. It checks every pivot and every
+admissible successor; induction on remaining size excludes each cover.
+Four invalid-certificate controls are rejected in the
+[report](results/dimension-7-four-five-six-cover-check.json).
+Independent count reconstruction removes exactly this row, leaving
+**25 five-plus-six and 35 three-six candidates**, 58 with C=6..8 and
+two with C=5. The sole remaining three-six C8 row is `(4,6,6;5,2,8)`;
+its earlier paired mixed/mixed exclusion does not exhaust it.
+The source restrictions retain nine inherited theorem bindings, while
+this new cover proof uses no historical certificate as a failed-state
+premise. Characteristic sizes four through eight and exact n7 remain
+open with lower bound 19. The extended working draft integrates the
+exclusion; no new Lean result is claimed.
 
 ## Repository map
 

@@ -147,10 +147,9 @@ two-hole subbranch and the original raw `(4,5,5;7,0,8)` row.
 The exact source transfer retains its three earlier exclusions
 and their historical finite premises; those covering audits and
 the older normalization/recoloring audits are not rerun.
-Exactly one raw row is removed, giving current totals 25/36.
-The whole raw `(4,6,6;5,2,8)` row remains open, as does
-`(4,5,6;6,1,8)`; these are the two remaining three-six C8 rows.
-Of 61 candidates, 59 have C=6..8 and two have C=5.
+That certificate removes one raw row, giving the intermediate totals
+25/36. The two three-six C8 rows at that stage were
+`(4,6,6;5,2,8)` and `(4,5,6;6,1,8)`; the latter is excluded below.
 Exact n7 remains open >=19; no new Lean result is claimed.
 
 ```sh
@@ -174,7 +173,7 @@ mixed/mixed certificate. Its 10,752 markings, 224 completion pairs,
 actual-hole controls are finite modular checks, not complete joint
 roots. All nine inherited theorem source/certificate/dependency
 bindings are checked without rerunning historical covering audits.
-No new raw row is excluded: 25/36 remain, exact n7 open >=19.
+That source audit excludes no raw row and retains the prior 25/36 lists.
 The exhaustive ordered forms and complete joint families follow below.
 
 ```sh
@@ -193,7 +192,7 @@ hole allocations; the actions are not free. The pure-source case
 requires a 28-point/four-hole remainder and four anchored heptads,
 the mixed-source case a 35-point/five-hole remainder and five.
 Complete jointly disjoint roots for these twelve source branches
-are now constructed below. Counts remain 25/36.
+are constructed below; this normalization audit retains the prior counts.
 
 ```sh
 python3 develop/check_dimension_seven_four_five_six_symmetry.py --report /tmp/n7-four-five-six-symmetry.json
@@ -209,10 +208,29 @@ holes. The full marked groups preserve the original roles and
 transport every saved decomposition; unique decomposition and
 free action are not assumed. Four invalid-root controls are rejected.
 The eligible later-cover catalog is the 224 anchored even heptads,
-filtered by containment. No covering search or new raw-row exclusion
-is claimed; 25/36 remain and exact n7 is open with lower bound 19.
+filtered by containment. The root audit retains the prior 25/36 lists;
+its complete necessary covering problem is settled below.
 
 ```sh
 python3 develop/build_dimension_seven_four_five_six_roots.py --roots /tmp/n7-four-five-six-roots.json
 python3 develop/check_dimension_seven_four_five_six_roots.py --roots /tmp/n7-four-five-six-roots.json --report /tmp/n7-four-five-six-roots-check.json
+```
+
+The [complete twelve-branch covering theorem](../../notes/dimension-seven-four-five-six-cover.md)
+excludes the entire `(4,5,6;6,1,8)` row. All 3,258 representatives
+have independently checked failed-state proofs: 3,262 reachable
+states, four required branches and 3,258 leaves. Every pivot and
+admissible anchored-heptad successor is checked after reconstructing
+the complete roots, all decompositions and group orbits. Four invalid
+certificate controls are rejected. Exact raw count reconstruction
+removes only this row, giving current totals **25/35**, with 58
+candidates having C=6..8 and two C=5. The entire `(4,6,6;5,2,8)` row
+remains open and is the sole remaining three-six C8 row.
+Historical finite premises of the source restrictions remain bound;
+no old certificate is used as a new failed-state premise.
+Exact n7 remains open with lower bound 19; no new Lean is claimed.
+
+```sh
+python3 develop/build_dimension_seven_four_five_six_cover.py --certificate /tmp/n7-four-five-six-cover-proof.json --max-states 30000 --max-visits 120000 --seconds 20
+python3 develop/check_dimension_seven_four_five_six_cover.py --certificate /tmp/n7-four-five-six-cover-proof.json --report /tmp/n7-four-five-six-cover-check.json
 ```

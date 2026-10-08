@@ -92,9 +92,9 @@ proof of Theorem~\ref{thm:seven-lower}.
 For $s=4$, the outside deficit is three, giving patterns $4$,
 $5+6$ and $6+6+6$. Their parity-count catalogs contain $9$, $46$
 and $48$ rows. The accompanying further analysis excludes the
-single-four pattern, twenty-one five-plus-six rows and twelve three-six
-rows, leaving $25$ and $36$ count candidates. They are necessary
-profiles, not realized partitions. Of the remaining $61$, $59$
+single-four pattern, twenty-one five-plus-six rows and thirteen three-six
+rows, leaving $25$ and $35$ count candidates. They are necessary
+profiles, not realized partitions. Of the remaining $60$, $58$
 have $C\in\{6,7,8\}$ and already satisfy
 \eqref{eq:seven-hole-capacity}; two have $C=5$. The profile
 $(m_5,m_6;A,B,C)=(5,4;6,2,8)$ is excluded: its four exhaustive
@@ -234,8 +234,8 @@ size proves that no representative has a cover. This excludes
 the transferred subbranch and, through the exact recoloring above,
 the entire source row $(4,5,5;7,0,8)$.
 The raw $(4,6,6;5,2,8)$ row retains other branches. It and
-$(4,5,6;6,1,8)$ are the two remaining three-six rows with $C=8$.
-For the remaining $(4,5,6;6,1,8)$ row, name the four-even
+$(4,5,6;6,1,8)$ are the two three-six rows with $C=8$ at this stage.
+To exclude $(4,5,6;6,1,8)$, name the four-even
 defect's odd projections $a,b$, with even sum $a$ and charge $b$;
 let the five-even defect have odd projection $c$ and even sum $r$,
 and let the existing mixed heptad have odd projection $d$.
@@ -276,9 +276,9 @@ The pure-source transfer for $t$ produces $(4,6,6;5,2,8)$
 with two distinct actual pure-six holes. One completion is in its
 paired mixed class; $q$ remains in the distinct pure heptad $H_q$.
 This differs from the paired mixed/mixed branch excluded above.
-Both functional values and the mixed-source alternative remain
-open. The new source restrictions retain the five exact-profile
-theorems' historical finite premises and do not remove a raw row.
+Both functional values and the mixed-source alternative must be
+retained in the subsequent covering analysis. These source restrictions
+retain the five exact-profile theorems' historical finite premises.
 
 This source geometry has eight exhaustive ordered marked forms.
 The original roles have distinct even/odd sizes $(4,2),(5,1),
@@ -328,17 +328,31 @@ of the image remainder. Thus the full marked group transports
 both roots and eligible anchored-heptad covers; one representative
 of each complete remaining-set orbit suffices for a later
 necessary cover test. This argument assumes neither unique
-decomposition nor a free action. A cover of a necessary remainder
-would still require the omitted odd-class compatibility to give
-a coloring. No cover test for these roots is claimed here, and
-the earlier paired mixed/mixed certificate does not apply.
+decomposition nor a free action. The earlier paired mixed/mixed
+certificate does not apply to these branches.
+
+The new finite covering certificate excludes all $3258$
+representatives. It has $3262$ reachable failed states, four
+required successor branches and $3258$ leaves. At each nonempty
+state $R$, it records a pivot $p\in R$. The independent auditor
+checks every anchored heptad $H\subseteq R$ containing $p$,
+and requires every successor $R\setminus H$ to be a recorded
+failure with seven fewer points. The empty set is never recorded
+as failed. A leaf has no possible heptad through its pivot;
+induction on remaining size therefore proves failure at every
+recorded state. Every representative occurs among these states,
+so no necessary four- or five-heptad cover exists. This excludes
+all twelve source branches and the entire $(4,5,6;6,1,8)$ row.
+Exactly one further raw row is removed, leaving $25$ five-plus-six
+and $35$ three-six candidates. The whole $(4,6,6;5,2,8)$ raw
+row remains open and is the sole remaining three-six row with $C=8$.
 This is a partial case analysis.
 The package records its written reductions and finite dependencies;
 it supplies no uniform exclusion of all remaining profiles.
 
 The further analysis also excludes $s<4$. Characteristic sizes
 $4$ through $8$ remain open, and larger $s$ introduce outside
-deficits $4$ through $7$. Closing the $61$ remaining size-four count candidates
+deficits $4$ through $7$. Closing the $60$ remaining size-four count candidates
 would therefore not finish the nineteen-color problem. Excluding
 every nineteen-color line coloring would improve the lower bound
 to twenty, without establishing a matching upper bound. Conversely,
