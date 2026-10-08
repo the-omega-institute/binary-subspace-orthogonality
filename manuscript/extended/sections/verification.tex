@@ -251,9 +251,9 @@ false empty failures and omitted required successors. No historical
 certificate is used as a failed-state premise of this new proof;
 the source restrictions retain their nine inherited theorem bindings.
 Independent raw count reconstruction removes exactly
-$(4,5,6;6,1,8)$, giving current lists $25/35$, with $58$ candidates
-having $C=6,7,8$ and two having $C=5$. The entire $(4,6,6;5,2,8)$
-row remains open; exact $n=7$ still has lower bound $19$.
+$(4,5,6;6,1,8)$, giving lists $25/35$ at that stage, with $58$
+candidates having $C=6,7,8$ and two having $C=5$.
+The remaining $(4,6,6;5,2,8)$ row is settled by the audit below.
 For its new pure-source restriction, the local auditor
 \path{develop/check_dimension_seven_four_six_six_pure_sources.py}
 compares independent array and bitmask catalogs of sizes four,
@@ -310,8 +310,28 @@ decompositions. Four invalid controls reject a missing form,
 missing decomposition, incorrect actual hole and missing orbit member.
 The normalization/source evidence and ten inherited finite theorem
 bindings are retained without rerunning historical audits.
-The complete necessary three-heptad covering problem is now
-specified, while its covering proof remains outstanding and the
-lists stay $25/35$.
+This supplies the complete necessary three-heptad covering input.
+The subsequent independent auditor
+\path{develop/check_dimension_seven_pure_source_cover.py}
+reconstructs those complete roots, decompositions, groups and orbits
+afresh, matching the roots report exactly. It independently enumerates
+all $288$ even heptads and selects $224$ one-$M$-hole anchored rows.
+For each of the four normalized kernels, filtering by containment
+in a remainder is equivalent to using its $96$ eligible anchored rows.
+The covering certificate has $1276$ reachable failed states, all of
+size $21$, zero required successors and $1276$ leaves. Each recorded
+pivot lies in no admissible contained heptad. Four invalid controls
+reject a missing representative, an absent pivot, a false empty failure
+and a false leaf on a coverable $14$-point union of two disjoint heptads.
+The last control tests successor completeness even though the actual
+proof has no successors. The exhaustive source theorem and full-group
+transport extend this exclusion to the entire $(4,6,6;5,2,8)$ raw row.
+Exact reconstruction of the original $46/48$ count catalogs removes
+exactly this row from $25/35$, leaving $25/34$, with $57$ candidates
+having $C=6$ or $7$, two having $C=5$ and none having $C=8$.
+Ten inherited theorem bindings remain checked; source, normalization
+and historical covering audits are not rerun. No old certificate is
+used as a new failed-state premise. Exact $n=7$ remains open with
+lower bound $19$.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.

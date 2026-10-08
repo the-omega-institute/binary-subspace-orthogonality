@@ -223,9 +223,9 @@ states, four required branches and 3,258 leaves. Every pivot and
 admissible anchored-heptad successor is checked after reconstructing
 the complete roots, all decompositions and group orbits. Four invalid
 certificate controls are rejected. Exact raw count reconstruction
-removes only this row, giving current totals **25/35**, with 58
-candidates having C=6..8 and two C=5. The entire `(4,6,6;5,2,8)` row
-remains open and is the sole remaining three-six C8 row.
+removes only this row, giving totals **25/35** at that stage, with 58
+candidates having C=6..8 and two C=5. The sole remaining three-six C8
+row, `(4,6,6;5,2,8)`, is excluded by the later pure-source proof below.
 Historical finite premises of the source restrictions remain bound;
 no old certificate is used as a new failed-state premise.
 Exact n7 remains open with lower bound 19; no new Lean is claimed.
@@ -247,8 +247,8 @@ necessary roots would leave 21 points for three heptads selected from
 96 kernel-anchored rows. Reversible swaps are recolorings, not assumed
 isometries. All 21,504 markings and local source/actual-hole controls
 are audited, with ten inherited finite theorem bindings. No complete
-joint roots or cover search for this branch is claimed. Counts stay
-25/35 and exact n7 remains open with lower bound 19.
+joint roots or cover search is claimed by this source audit. Its counts
+stay 25/35; the subsequent construction and covering proof follow below.
 
 ```sh
 python3 develop/check_dimension_seven_four_six_six_pure_sources.py --report /tmp/n7-four-six-six-pure-sources.json
@@ -264,7 +264,7 @@ Independent catalog, isometry, image-set, action and actual-hole controls
 verify these counts and the full groups. Reversible recoloring is not
 used as geometric role exchange. Complete joint compatibility with
 D0/J1/J2 remains to be imposed; no seven-component roots or new cover
-search is claimed. The lists remain 25/35 and exact n7 open >=19.
+search is claimed by this normalization audit. Its lists remain 25/35.
 
 ```sh
 python3 develop/check_dimension_seven_pure_source_normalization.py --report /tmp/n7-pure-source-normalization.json
@@ -279,10 +279,32 @@ matches the bitmask builder exactly; full group actions and four invalid
 controls are checked. Remainders have four or eight decompositions, and
 their actions have size-four or size-eight orbits. Three residual heptads
 must come from the complete 96-row kernel-anchored catalog. This is a
-complete necessary covering input, with no new cover search or exclusion;
-counts stay25/35 and exact n7 remains open>=19.
+complete necessary covering input, with counts 25/35 before the following
+covering proof.
 
 ```sh
 python3 develop/build_dimension_seven_pure_source_roots.py --roots /tmp/n7-pure-source-roots.json --max-visits 1000000 --seconds 20
 python3 develop/check_dimension_seven_pure_source_roots.py --roots /tmp/n7-pure-source-roots.json --report /tmp/n7-pure-source-roots-check.json
+```
+
+The [complete pure-source covering theorem](../../notes/dimension-seven-pure-source-cover.md)
+excludes the entire `(4,6,6;5,2,8)` raw row in all sixteen forms.
+Each of the 1,276 representative 21-point remainders has a pivot in
+no admissible contained anchored heptad: 1,276 failed states, zero
+required successors and 1,276 leaves. The independent auditor reruns
+complete root/group reconstruction and enumerates all 288 even heptads,
+selecting the 224 anchored rows and checking their containment equivalence
+to 96 eligible rows for each normalized kernel. Four invalid controls
+are rejected, including a false leaf on a coverable 14-point state.
+Ten inherited finite theorem bindings remain checked without rerunning
+source, normalization or historical cover audits. No old certificate
+is a new failed-state premise. Exact count reconstruction removes one
+row, leaving **25/34** candidates: **57 with C=6 or 7 and two with C=5**,
+with **no C=8 row in either list**. Characteristic sizes four through
+eight and exact n7 remain open with lower bound 19. No new Lean is
+claimed; the original n6 theorem retains its four native-evaluation axioms.
+
+```sh
+python3 develop/build_dimension_seven_pure_source_cover.py --certificate /tmp/n7-pure-source-cover-proof.json --max-states 15000 --max-visits 60000 --seconds 20
+python3 develop/check_dimension_seven_pure_source_cover.py --certificate /tmp/n7-pure-source-cover-proof.json --report /tmp/n7-pure-source-cover-check.json
 ```

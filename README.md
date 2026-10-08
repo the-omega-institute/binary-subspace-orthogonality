@@ -36,7 +36,8 @@ Write `N(r)` for the number of nonzero subspaces of `F_2^r`.
 | The full dimension-six graph has chromatic number **15** | A 15-clique and an explicit coloring of all 2,824 vertices; [independent check](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/full-15-check.json) covers all 3,986,076 pairs and 44,968 edges |
 | The dimension-six line graph has chromatic number **12** | [Written weighted lower bound](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/notes/line-coloring.md) and [checked 12-color certificate](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/results/line-coloring-12-check.json) |
 | The dimension-seven line graph and full-subspace graph require **at least 19 colors** | [Quadratic parity and partial-spread completion proof](notes/dimension-seven-nineteen-obstruction.md) and [exact finite checks](results/dimension-7-nineteen-obstruction.json); exact chromatic numbers remain open |
-| The nineteen-color row `(4,5,6;6,1,8)` is excluded in all twelve completion-source branches | [Complete covering argument](notes/dimension-seven-four-five-six-cover.md) and [independent certificate audit](results/dimension-7-four-five-six-cover-check.json); current size-four lists contain **25/35** candidates |
+| The nineteen-color row `(4,5,6;6,1,8)` is excluded in all twelve completion-source branches | [Complete covering argument](notes/dimension-seven-four-five-six-cover.md) and [independent certificate audit](results/dimension-7-four-five-six-cover-check.json) |
+| The entire nineteen-color row `(4,6,6;5,2,8)` is excluded in all sixteen pure-source forms | [Zero-option pivot proof](notes/dimension-seven-pure-source-cover.md) and [independent finite audit](results/dimension-7-pure-source-cover-check.json); current size-four lists contain **25/34** candidates and no C8 row |
 | The earlier full dimension-seven lower bound was **18 colors**, exceeding its clique number 16 | [Anchor forcing and omitted-color proof](notes/dimension-seven-eighteen-obstruction.md) and [82-vertex certificate](results/dimension-7-eighteen-obstruction.json), retained as history |
 | Specified geometric profiles and stabilizer-equivariant rules cannot explain a proper coloring with the prescribed clique labels | [Precise statements and proofs](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/sections/geometry.tex) |
 
@@ -707,7 +708,7 @@ Four invalid-certificate controls are rejected in the
 Independent count reconstruction removes exactly this row, leaving
 **25 five-plus-six and 35 three-six candidates**, 58 with C=6..8 and
 two with C=5. The sole remaining three-six C8 row is `(4,6,6;5,2,8)`;
-its earlier paired mixed/mixed exclusion does not exhaust it.
+its earlier paired mixed/mixed exclusion did not exhaust it at that stage.
 The source restrictions retain nine inherited theorem bindings, while
 this new cover proof uses no historical certificate as a failed-state
 premise. Characteristic sizes four through eight and exact n7 remain
@@ -732,8 +733,9 @@ The [independent local auditor](develop/check_dimension_seven_four_six_six_pure_
 and [report](results/dimension-7-four-six-six-pure-sources.json)
 check all 21,504 markings, 224 completion pairs, source transfers and
 actual-hole controls, retaining ten inherited theorem bindings.
-These are modular checks, not complete joint roots. The whole row
-remains open, counts stay 25/35 and exact n7 open >=19.
+These are modular checks, not complete joint roots. At this stage the
+whole row remained open and counts stayed 25/35; the cover proof below
+now excludes it.
 
 The [pure-source normalization](notes/dimension-seven-pure-source-normalization.md)
 now gives **sixteen exhaustive ordered marked forms**: four functional
@@ -765,8 +767,30 @@ remainder orbits have sizes four or eight, so tuple freeness does not
 justify dividing remainder counts by eight. Each representative leaves
 21 points and exactly three kernel holes for three pure heptads from
 the 96 eligible anchored rows. Four invalid controls are rejected.
-The complete necessary cover question is ready; no new covering search
-or raw-row exclusion is claimed. Lists remain 25/35 and exact n7 open >=19.
+This construction supplied the complete necessary cover question with
+lists 25/35; its covering proof follows below.
+
+The [complete pure-source covering proof](notes/dimension-seven-pure-source-cover.md)
+now excludes the **entire `(4,6,6;5,2,8)` raw row**. Each of the
+1,276 representative 21-point remainders has a recorded pivot lying
+in no contained kernel-anchored heptad. The
+[bounded builder](develop/build_dimension_seven_pure_source_cover.py),
+[certificate](results/dimension-7-pure-source-cover-proof.json),
+[independent auditor](develop/check_dimension_seven_pure_source_cover.py)
+and [report](results/dimension-7-pure-source-cover-check.json) establish
+1,276 failed states, zero required successors and 1,276 leaves.
+The auditor reconstructs the complete roots and groups afresh, then
+independently enumerates all 288 even heptads and the 224 anchored rows,
+equivalent by containment to 96 rows for each residual kernel. Four
+invalid certificate controls are rejected. The source theorem is
+exhaustive for the raw row, so this covers all sixteen forms and all
+42,496 joint configurations. Exact count reconstruction removes one row,
+leaving **25/34** candidates: **57 with C=6 or 7 and two with C=5**,
+with **no C=8 row in either list**. Ten inherited finite theorem bindings
+remain checked; their historical audits are not rerun and their
+certificates are not new failed-state premises. Exact n7 and characteristic
+sizes four through eight remain open with lower bound 19. No new Lean
+is claimed; the extended working draft integrates this result.
 
 ## Repository map
 
