@@ -253,3 +253,19 @@ joint roots or cover search for this branch is claimed. Counts stay
 ```sh
 python3 develop/check_dimension_seven_four_six_six_pure_sources.py --report /tmp/n7-four-six-six-pure-sources.json
 ```
+
+The [ordered pure-source normalization](../../notes/dimension-seven-pure-source-normalization.md)
+gives sixteen exhaustive marked forms, retaining all four functional
+patterns and four b positions. Every full ordered stabilizer has order
+eight and fixes M pointwise; all 24 ordered positive-hole allocations
+remain represented. Each form has 1,152 disjoint local P1/P2/H1/H2
+quartets, 48 per actual-hole allocation, giving 144 orbits of size eight.
+Independent catalog, isometry, image-set, action and actual-hole controls
+verify these counts and the full groups. Reversible recoloring is not
+used as geometric role exchange. Complete joint compatibility with
+D0/J1/J2 remains to be imposed; no seven-component roots or new cover
+search is claimed. The lists remain 25/35 and exact n7 open >=19.
+
+```sh
+python3 develop/check_dimension_seven_pure_source_normalization.py --report /tmp/n7-pure-source-normalization.json
+```

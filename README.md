@@ -735,6 +735,21 @@ actual-hole controls, retaining ten inherited theorem bindings.
 These are modular checks, not complete joint roots. The whole row
 remains open, counts stay 25/35 and exact n7 open >=19.
 
+The [pure-source normalization](notes/dimension-seven-pure-source-normalization.md)
+now gives **sixteen exhaustive ordered marked forms**: four functional
+patterns and four b positions. Each full ordered marked stabilizer has
+order eight and fixes M pointwise, so all **24 ordered allocations**
+of the four actual positive holes remain distinct. The
+[local auditor](develop/check_dimension_seven_pure_source_normalization.py)
+and [report](results/dimension-7-pure-source-normalization.json)
+match the sixteen disjoint image sets to all 21,504 charge markings.
+Each form has **1,152 disjoint local pure target/source quartets**,
+48 per hole allocation and 144 full-group orbits of size eight.
+Their compatibility with the four-even block and both mixed blocks
+remains to be imposed. The proved groups and complete local catalogs
+specify the next seven-component root construction; they give no new
+raw-row exclusion or covering search. Counts remain 25/35.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
