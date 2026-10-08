@@ -642,6 +642,23 @@ used in the forced transfer; those historical audits are not rerun.
 The extended draft integrates this partial exclusion. Exact n7
 remains open with lower bound 19, and no new Lean result is claimed.
 
+The [completion-source theorem for `(4,5,6;6,1,8)`](notes/dimension-seven-four-five-six-charge.md)
+forces its pure-six completion q into an anchored pure even heptad
+avoiding the mixed completion t. Partition and quadratic charge give
+t+q=a+c+d in M, t dot q=1 and a common functional with
+ell(c)=1, ell(a)=ell(d)=eta in {0,1}. The eta=0 branch forces t
+into a different pure heptad; eta=1 also permits a reversible
+exchange with the existing mixed heptad. The pure-source transfer
+reaches a different `(4,6,6;5,2,8)` branch with completion locations
+mixed/pure, so the earlier paired mixed/mixed certificate does not apply.
+The [local auditor](develop/check_dimension_seven_four_five_six_charge.py)
+and [report](results/dimension-7-four-five-six-charge.json) verify
+10,752 markings, 1,344 mixed and 2,016 pure-six unique completions,
+224 completion pairs and modular source/hole controls, retaining
+nine inherited theorem bindings. No new raw row is excluded;
+totals stay 25/36. No complete joint roots or new covering search
+is claimed. The extended draft includes this source restriction.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

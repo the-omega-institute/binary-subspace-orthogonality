@@ -160,3 +160,24 @@ python3 develop/check_dimension_seven_four_six_six_roots.py --roots /tmp/n7-four
 python3 develop/build_dimension_seven_four_six_six_cover.py --certificate /tmp/n7-four-six-six-cover-proof.json --max-states 20000 --max-visits 80000 --seconds 20
 python3 develop/check_dimension_seven_four_six_six_cover.py --certificate /tmp/n7-four-six-six-cover-proof.json --report /tmp/n7-four-six-six-cover-check.json
 ```
+
+The [completion-source theorem](../../notes/dimension-seven-four-five-six-charge.md)
+for `(4,5,6;6,1,8)` forces q into an anchored pure even heptad
+avoiding t. The common functional has ell(c)=1 and
+ell(a)=ell(d)=eta, with both eta=0 and eta=1 retained. The mixed
+completion t has a distinct pure source, or for eta=1 a source in
+the existing mixed heptad giving a reversible role exchange.
+The pure-source transfer gives a `(4,6,6;5,2,8)` branch with
+mixed/pure completion locations, outside the earlier paired
+mixed/mixed certificate. Its 10,752 markings, 224 completion pairs,
+1,344 mixed and 2,016 pure unique completions, source-removal and
+actual-hole controls are finite modular checks, not complete joint
+roots. All nine inherited theorem source/certificate/dependency
+bindings are checked without rerunning historical covering audits.
+No new raw row is excluded: 25/36 remain, exact n7 open >=19.
+Next: exhaustive marked forms and full symmetry groups for both
+functional patterns and source alternatives, preserving actual holes.
+
+```sh
+python3 develop/check_dimension_seven_four_five_six_charge.py --report /tmp/n7-four-five-six-charge.json
+```
