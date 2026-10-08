@@ -1,0 +1,2471 @@
+{
+  "status": "complete_twelve_branch_roots_and_orbits_independently_checked",
+  "dimension": 7,
+  "profile": [
+    4,
+    5,
+    6,
+    6,
+    1,
+    8
+  ],
+  "forms": [
+    {
+      "eta": 0,
+      "b": 15,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        32,
+        18,
+        18
+      ],
+      "complete_joint_families": 6560,
+      "distinct_remaining_sets": 3020,
+      "decomposition_multiplicity_histogram": {
+        "2": 2768,
+        "4": 248,
+        "8": 4
+      },
+      "remaining_set_orbits": 381,
+      "orbit_size_histogram": {
+        "4": 7,
+        "8": 374
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 2992,
+        "2": 28
+      },
+      "family_stabilizer_histogram": {
+        "1": 6560
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            12,
+            15,
+            60
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            15,
+            63
+          ],
+          "families": 616
+        },
+        {
+          "holes": [
+            12,
+            60,
+            15
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            60,
+            63
+          ],
+          "families": 440
+        },
+        {
+          "holes": [
+            12,
+            63,
+            15
+          ],
+          "families": 616
+        },
+        {
+          "holes": [
+            12,
+            63,
+            60
+          ],
+          "families": 440
+        },
+        {
+          "holes": [
+            15,
+            12,
+            60
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            15,
+            12,
+            63
+          ],
+          "families": 616
+        },
+        {
+          "holes": [
+            15,
+            60,
+            63
+          ],
+          "families": 264
+        },
+        {
+          "holes": [
+            15,
+            63,
+            60
+          ],
+          "families": 424
+        },
+        {
+          "holes": [
+            60,
+            12,
+            15
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            60,
+            12,
+            63
+          ],
+          "families": 440
+        },
+        {
+          "holes": [
+            60,
+            15,
+            63
+          ],
+          "families": 264
+        },
+        {
+          "holes": [
+            60,
+            63,
+            15
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            63,
+            12,
+            15
+          ],
+          "families": 616
+        },
+        {
+          "holes": [
+            63,
+            12,
+            60
+          ],
+          "families": 440
+        },
+        {
+          "holes": [
+            63,
+            15,
+            60
+          ],
+          "families": 424
+        },
+        {
+          "holes": [
+            63,
+            60,
+            15
+          ],
+          "families": 288
+        }
+      ]
+    },
+    {
+      "eta": 0,
+      "b": 51,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        32,
+        18,
+        18
+      ],
+      "complete_joint_families": 6208,
+      "distinct_remaining_sets": 3072,
+      "decomposition_multiplicity_histogram": {
+        "2": 3040,
+        "4": 32
+      },
+      "remaining_set_orbits": 384,
+      "orbit_size_histogram": {
+        "8": 384
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 3072
+      },
+      "family_stabilizer_histogram": {
+        "1": 6208
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            12,
+            15,
+            60
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            12,
+            15,
+            63
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            12,
+            60,
+            15
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            12,
+            60,
+            63
+          ],
+          "families": 608
+        },
+        {
+          "holes": [
+            12,
+            63,
+            15
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            12,
+            63,
+            60
+          ],
+          "families": 608
+        },
+        {
+          "holes": [
+            15,
+            12,
+            60
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            15,
+            12,
+            63
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            15,
+            60,
+            63
+          ],
+          "families": 336
+        },
+        {
+          "holes": [
+            15,
+            63,
+            60
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            60,
+            12,
+            15
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            60,
+            12,
+            63
+          ],
+          "families": 608
+        },
+        {
+          "holes": [
+            60,
+            15,
+            63
+          ],
+          "families": 336
+        },
+        {
+          "holes": [
+            60,
+            63,
+            15
+          ],
+          "families": 336
+        },
+        {
+          "holes": [
+            63,
+            12,
+            15
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            63,
+            12,
+            60
+          ],
+          "families": 608
+        },
+        {
+          "holes": [
+            63,
+            15,
+            60
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            63,
+            60,
+            15
+          ],
+          "families": 336
+        }
+      ]
+    },
+    {
+      "eta": 0,
+      "b": 60,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        32,
+        18,
+        18
+      ],
+      "complete_joint_families": 7136,
+      "distinct_remaining_sets": 3528,
+      "decomposition_multiplicity_histogram": {
+        "2": 3488,
+        "4": 40
+      },
+      "remaining_set_orbits": 441,
+      "orbit_size_histogram": {
+        "8": 441
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 3528
+      },
+      "family_stabilizer_histogram": {
+        "1": 7136
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            12,
+            15,
+            60
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            12,
+            15,
+            63
+          ],
+          "families": 760
+        },
+        {
+          "holes": [
+            12,
+            60,
+            15
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            12,
+            60,
+            63
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            12,
+            63,
+            15
+          ],
+          "families": 760
+        },
+        {
+          "holes": [
+            12,
+            63,
+            60
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            15,
+            12,
+            60
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            15,
+            12,
+            63
+          ],
+          "families": 760
+        },
+        {
+          "holes": [
+            15,
+            60,
+            63
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            15,
+            63,
+            60
+          ],
+          "families": 376
+        },
+        {
+          "holes": [
+            60,
+            12,
+            15
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            60,
+            12,
+            63
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            60,
+            15,
+            63
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            60,
+            63,
+            15
+          ],
+          "families": 352
+        },
+        {
+          "holes": [
+            63,
+            12,
+            15
+          ],
+          "families": 760
+        },
+        {
+          "holes": [
+            63,
+            12,
+            60
+          ],
+          "families": 384
+        },
+        {
+          "holes": [
+            63,
+            15,
+            60
+          ],
+          "families": 376
+        },
+        {
+          "holes": [
+            63,
+            60,
+            15
+          ],
+          "families": 352
+        }
+      ]
+    },
+    {
+      "eta": 0,
+      "b": 63,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        32,
+        18,
+        18
+      ],
+      "complete_joint_families": 2784,
+      "distinct_remaining_sets": 1360,
+      "decomposition_multiplicity_histogram": {
+        "2": 1328,
+        "4": 32
+      },
+      "remaining_set_orbits": 170,
+      "orbit_size_histogram": {
+        "8": 170
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 1360
+      },
+      "family_stabilizer_histogram": {
+        "1": 2784
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            12,
+            15,
+            60
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            12,
+            15,
+            63
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            12,
+            60,
+            15
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            12,
+            60,
+            63
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            12,
+            63,
+            15
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            12,
+            63,
+            60
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            15,
+            12,
+            60
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            15,
+            12,
+            63
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            15,
+            60,
+            63
+          ],
+          "families": 144
+        },
+        {
+          "holes": [
+            15,
+            63,
+            60
+          ],
+          "families": 120
+        },
+        {
+          "holes": [
+            60,
+            12,
+            15
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            60,
+            12,
+            63
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            60,
+            15,
+            63
+          ],
+          "families": 144
+        },
+        {
+          "holes": [
+            60,
+            63,
+            15
+          ],
+          "families": 200
+        },
+        {
+          "holes": [
+            63,
+            12,
+            15
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            63,
+            12,
+            60
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            63,
+            15,
+            60
+          ],
+          "families": 120
+        },
+        {
+          "holes": [
+            63,
+            60,
+            15
+          ],
+          "families": 200
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 15,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        22,
+        18,
+        18
+      ],
+      "complete_joint_families": 5392,
+      "distinct_remaining_sets": 2680,
+      "decomposition_multiplicity_histogram": {
+        "2": 2664,
+        "4": 16
+      },
+      "remaining_set_orbits": 354,
+      "orbit_size_histogram": {
+        "4": 38,
+        "8": 316
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 2528,
+        "2": 152
+      },
+      "family_stabilizer_histogram": {
+        "1": 5056,
+        "2": 336
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12,
+            48
+          ],
+          "families": 128
+        },
+        {
+          "holes": [
+            3,
+            12,
+            63
+          ],
+          "families": 412
+        },
+        {
+          "holes": [
+            3,
+            48,
+            63
+          ],
+          "families": 88
+        },
+        {
+          "holes": [
+            3,
+            63,
+            48
+          ],
+          "families": 248
+        },
+        {
+          "holes": [
+            12,
+            3,
+            48
+          ],
+          "families": 128
+        },
+        {
+          "holes": [
+            12,
+            3,
+            63
+          ],
+          "families": 412
+        },
+        {
+          "holes": [
+            12,
+            48,
+            3
+          ],
+          "families": 128
+        },
+        {
+          "holes": [
+            12,
+            48,
+            63
+          ],
+          "families": 536
+        },
+        {
+          "holes": [
+            12,
+            63,
+            3
+          ],
+          "families": 412
+        },
+        {
+          "holes": [
+            12,
+            63,
+            48
+          ],
+          "families": 536
+        },
+        {
+          "holes": [
+            48,
+            3,
+            63
+          ],
+          "families": 88
+        },
+        {
+          "holes": [
+            48,
+            12,
+            3
+          ],
+          "families": 128
+        },
+        {
+          "holes": [
+            48,
+            12,
+            63
+          ],
+          "families": 536
+        },
+        {
+          "holes": [
+            48,
+            63,
+            3
+          ],
+          "families": 208
+        },
+        {
+          "holes": [
+            63,
+            3,
+            48
+          ],
+          "families": 248
+        },
+        {
+          "holes": [
+            63,
+            12,
+            3
+          ],
+          "families": 412
+        },
+        {
+          "holes": [
+            63,
+            12,
+            48
+          ],
+          "families": 536
+        },
+        {
+          "holes": [
+            63,
+            48,
+            3
+          ],
+          "families": 208
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 15,
+      "t_source": "mixed",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        4,
+        18
+      ],
+      "complete_joint_families": 3192,
+      "distinct_remaining_sets": 1596,
+      "decomposition_multiplicity_histogram": {
+        "2": 1596
+      },
+      "remaining_set_orbits": 210,
+      "orbit_size_histogram": {
+        "4": 21,
+        "8": 189
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 1512,
+        "2": 84
+      },
+      "family_stabilizer_histogram": {
+        "1": 3024,
+        "2": 168
+      },
+      "remaining_points": 35,
+      "remaining_holes": 5,
+      "residual_pure_heptads_required": 5,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "families": 476
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 432
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "families": 476
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 432
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 51,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        22,
+        18,
+        18
+      ],
+      "complete_joint_families": 7200,
+      "distinct_remaining_sets": 3568,
+      "decomposition_multiplicity_histogram": {
+        "2": 3536,
+        "4": 32
+      },
+      "remaining_set_orbits": 468,
+      "orbit_size_histogram": {
+        "4": 44,
+        "8": 424
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 3392,
+        "2": 176
+      },
+      "family_stabilizer_histogram": {
+        "1": 6816,
+        "2": 384
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12,
+            48
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            3,
+            12,
+            63
+          ],
+          "families": 400
+        },
+        {
+          "holes": [
+            3,
+            48,
+            63
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            3,
+            63,
+            48
+          ],
+          "families": 304
+        },
+        {
+          "holes": [
+            12,
+            3,
+            48
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            12,
+            3,
+            63
+          ],
+          "families": 400
+        },
+        {
+          "holes": [
+            12,
+            48,
+            3
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            12,
+            48,
+            63
+          ],
+          "families": 784
+        },
+        {
+          "holes": [
+            12,
+            63,
+            3
+          ],
+          "families": 400
+        },
+        {
+          "holes": [
+            12,
+            63,
+            48
+          ],
+          "families": 784
+        },
+        {
+          "holes": [
+            48,
+            3,
+            63
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            48,
+            12,
+            3
+          ],
+          "families": 160
+        },
+        {
+          "holes": [
+            48,
+            12,
+            63
+          ],
+          "families": 784
+        },
+        {
+          "holes": [
+            48,
+            63,
+            3
+          ],
+          "families": 320
+        },
+        {
+          "holes": [
+            63,
+            3,
+            48
+          ],
+          "families": 304
+        },
+        {
+          "holes": [
+            63,
+            12,
+            3
+          ],
+          "families": 400
+        },
+        {
+          "holes": [
+            63,
+            12,
+            48
+          ],
+          "families": 784
+        },
+        {
+          "holes": [
+            63,
+            48,
+            3
+          ],
+          "families": 320
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 51,
+      "t_source": "mixed",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        4,
+        18
+      ],
+      "complete_joint_families": 3192,
+      "distinct_remaining_sets": 1596,
+      "decomposition_multiplicity_histogram": {
+        "2": 1596
+      },
+      "remaining_set_orbits": 210,
+      "orbit_size_histogram": {
+        "4": 21,
+        "8": 189
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 1512,
+        "2": 84
+      },
+      "family_stabilizer_histogram": {
+        "1": 3024,
+        "2": 168
+      },
+      "remaining_points": 35,
+      "remaining_holes": 5,
+      "residual_pure_heptads_required": 5,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "families": 432
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "families": 288
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 476
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "families": 224
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "families": 432
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 476
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 60,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        22,
+        18,
+        18
+      ],
+      "complete_joint_families": 5568,
+      "distinct_remaining_sets": 2752,
+      "decomposition_multiplicity_histogram": {
+        "2": 2720,
+        "4": 32
+      },
+      "remaining_set_orbits": 344,
+      "orbit_size_histogram": {
+        "8": 344
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 2752
+      },
+      "family_stabilizer_histogram": {
+        "1": 5568
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12,
+            48
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            3,
+            12,
+            63
+          ],
+          "families": 512
+        },
+        {
+          "holes": [
+            3,
+            48,
+            63
+          ],
+          "families": 184
+        },
+        {
+          "holes": [
+            3,
+            63,
+            48
+          ],
+          "families": 208
+        },
+        {
+          "holes": [
+            12,
+            3,
+            48
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            3,
+            63
+          ],
+          "families": 512
+        },
+        {
+          "holes": [
+            12,
+            48,
+            3
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            48,
+            63
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            12,
+            63,
+            3
+          ],
+          "families": 512
+        },
+        {
+          "holes": [
+            12,
+            63,
+            48
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            48,
+            3,
+            63
+          ],
+          "families": 184
+        },
+        {
+          "holes": [
+            48,
+            12,
+            3
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            48,
+            12,
+            63
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            48,
+            63,
+            3
+          ],
+          "families": 264
+        },
+        {
+          "holes": [
+            63,
+            3,
+            48
+          ],
+          "families": 208
+        },
+        {
+          "holes": [
+            63,
+            12,
+            3
+          ],
+          "families": 512
+        },
+        {
+          "holes": [
+            63,
+            12,
+            48
+          ],
+          "families": 456
+        },
+        {
+          "holes": [
+            63,
+            48,
+            3
+          ],
+          "families": 264
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 60,
+      "t_source": "mixed",
+      "component_catalog_sizes": [
+        16,
+        4,
+        18,
+        4,
+        18
+      ],
+      "complete_joint_families": 2816,
+      "distinct_remaining_sets": 1408,
+      "decomposition_multiplicity_histogram": {
+        "2": 1408
+      },
+      "remaining_set_orbits": 194,
+      "orbit_size_histogram": {
+        "4": 36,
+        "8": 158
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 1264,
+        "2": 144
+      },
+      "family_stabilizer_histogram": {
+        "1": 2528,
+        "2": 288
+      },
+      "remaining_points": 35,
+      "remaining_holes": 5,
+      "residual_pure_heptads_required": 5,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "families": 240
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "families": 480
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "families": 56
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "families": 96
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 480
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "families": 240
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "families": 480
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 480
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 63,
+      "t_source": "pure",
+      "component_catalog_sizes": [
+        8,
+        4,
+        18,
+        22,
+        18,
+        18
+      ],
+      "complete_joint_families": 992,
+      "distinct_remaining_sets": 496,
+      "decomposition_multiplicity_histogram": {
+        "2": 496
+      },
+      "remaining_set_orbits": 62,
+      "orbit_size_histogram": {
+        "8": 62
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 496
+      },
+      "family_stabilizer_histogram": {
+        "1": 992
+      },
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "residual_pure_heptads_required": 4,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12,
+            48
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            3,
+            12,
+            63
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            3,
+            48,
+            63
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            3,
+            63,
+            48
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            12,
+            3,
+            48
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            12,
+            3,
+            63
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            12,
+            48,
+            3
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            12,
+            48,
+            63
+          ],
+          "families": 112
+        },
+        {
+          "holes": [
+            12,
+            63,
+            3
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            12,
+            63,
+            48
+          ],
+          "families": 112
+        },
+        {
+          "holes": [
+            48,
+            3,
+            63
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            48,
+            12,
+            3
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            48,
+            12,
+            63
+          ],
+          "families": 112
+        },
+        {
+          "holes": [
+            48,
+            63,
+            3
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            63,
+            3,
+            48
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            63,
+            12,
+            3
+          ],
+          "families": 48
+        },
+        {
+          "holes": [
+            63,
+            12,
+            48
+          ],
+          "families": 112
+        },
+        {
+          "holes": [
+            63,
+            48,
+            3
+          ],
+          "families": 32
+        }
+      ]
+    },
+    {
+      "eta": 1,
+      "b": 63,
+      "t_source": "mixed",
+      "component_catalog_sizes": [
+        8,
+        4,
+        18,
+        4,
+        18
+      ],
+      "complete_joint_families": 576,
+      "distinct_remaining_sets": 288,
+      "decomposition_multiplicity_histogram": {
+        "2": 288
+      },
+      "remaining_set_orbits": 40,
+      "orbit_size_histogram": {
+        "4": 8,
+        "8": 32
+      },
+      "remaining_set_stabilizer_histogram": {
+        "1": 256,
+        "2": 32
+      },
+      "family_stabilizer_histogram": {
+        "1": 512,
+        "2": 64
+      },
+      "remaining_points": 35,
+      "remaining_holes": 5,
+      "residual_pure_heptads_required": 5,
+      "full_marked_group_order": 8,
+      "families_by_ordered_actual_holes": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "families": 64
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "families": 16
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "families": 64
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "families": 32
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "families": 80
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "families": 80
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "full_group_dot_product_pairs": 262144,
+    "composition_points": 16384,
+    "original_graph_component_pairs": 19032,
+    "recipient_mixed_completions": 48,
+    "recipient_pure_completions": 216,
+    "complete_family_partition_and_hole_checks": 51616,
+    "family_group_actions_with_roles_and_actual_holes": 412928
+  },
+  "all_twelve_source_branches_complete": true,
+  "all_component_decompositions_retained": true,
+  "remaining_set_decomposition_unique": false,
+  "all_roles_and_actual_holes_transported": true,
+  "free_group_action_assumed": false,
+  "array_reconstruction_matches_bitmask_builder": true,
+  "rejected_invalid_controls": [
+    "missing_branch",
+    "missing_decomposition",
+    "wrong_actual_hole",
+    "missing_orbit_member"
+  ],
+  "complete_joint_families": 51616,
+  "distinct_form_labelled_remaining_sets": 25364,
+  "complete_remaining_set_orbits": 3258,
+  "anchored_even_heptads_for_later_cover": 224,
+  "new_raw_profile_exclusions": 0,
+  "target_raw_profile_excluded": false,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 36
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ],
+      [
+        4,
+        5,
+        6,
+        6,
+        1,
+        8
+      ],
+      [
+        4,
+        6,
+        6,
+        5,
+        2,
+        8
+      ]
+    ]
+  },
+  "remaining_three_six_C8_count": 2,
+  "remaining_C6_through_C8_count": 59,
+  "remaining_C5_count": 2,
+  "inherited_theorem_report_sha256": {
+    "results/dimension-7-three-five-cover-check.json": "379ddfc87540b2e8ea3c8d6d7809c0dbea49fe45d856e7c3e14564b15af4ba9d",
+    "results/dimension-7-four-even-pairs-check.json": "b11138267957b322b82058363c8e6b5d7e650bbd9e7c9692f95658cc109dc472",
+    "results/dimension-7-five-four-D-cover-check.json": "efa32490cb34f681212125a4ab67b926ae1cb5ae89ae9ffaed94ee15e09eee42",
+    "results/dimension-7-five-four-H-cover-check.json": "85d2d73ce268ed4a8e3fcb8dff93a9f023405569c71790d94ed2671eeb80fd3f",
+    "results/dimension-7-five-four-G-cover-check.json": "d7756f5c9502bd4c70191a5adb08f54890a37fe8b0d9d3e4b74e9a1a15817e48",
+    "results/dimension-7-five-four-Z-cover-check.json": "85930da140bf64f2b875e3d4c2809be92f275c57e7765a96df30e588a6d92908",
+    "results/dimension-7-four-four-hole-cover.json": "e1a43630408e1ece5c8efbf9a084e8ca67746082a5d8f1e02327f2c58c056a7a",
+    "results/dimension-7-three-six-cover-check.json": "08386e743a2e00889eff55fc2dd35a14f93e17c3bcf3a9411dfa9ef9dda7d1b3",
+    "results/dimension-7-four-six-six-cover-check.json": "e2151db56b8abccbc60cfdc7ee18c5a1fc4a0a9729dde0476141368d673ec6cc"
+  },
+  "historical_cover_audits_rerun": false,
+  "previous_normalization_and_source_audits_rerun": false,
+  "new_cover_search": false,
+  "new_cover_certificate": false,
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "exact_n7": "open_lower_bound19",
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "construction_limits": {
+    "max_visits": 1000000,
+    "seconds": 20.0
+  },
+  "visited_partial_families": 107542,
+  "roots_sha256": "44c63602b9ef5ffcffed98d228c8e199c4b99b74e80c638ce0f137545120dc7d",
+  "builder_sha256": "369723fd905eeddf1fba4e53224a88f80c51253b91d2db2a933286a329c00c22",
+  "checker_sha256": "e29c781c54e14a2e3ba6fd5582c4721a96682aa0ef138c88d992aa82cea27d78",
+  "proof_note_sha256": "79d9dfe3b7ec2fdc337176127c976fc5e2803bbde2c8d04afb96ac3a482ceb3b",
+  "dependency_sha256": {
+    "develop/check_dimension_seven_four_five_six_symmetry.py": "57fd7b464bdfcfff6041db60da92a5db824404e5e466e9d6e7b8ab54bcef47f0",
+    "notes/dimension-seven-four-five-six-symmetry.md": "e13970ae0669107029d956450a187a149e8a3364e9597cdb96cd379073bb2c8f",
+    "results/dimension-7-four-five-six-symmetry.json": "27900deb7d614d678026d82010c32033d32e752062e6a0642bd2cb9cc7f27d11",
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5"
+  }
+}

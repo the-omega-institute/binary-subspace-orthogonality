@@ -220,8 +220,22 @@ are checked. Each form's $144$ disjoint local $(P,H_q)$ pairs
 have $48$ full-group orbits, $24$ of size two and $24$ of size
 four, distributed over twelve distinct ordered hole allocations.
 Orbit--stabilizer identities are checked; the actions are not free.
-These are complete local catalogs and pair orbits, not complete
-joint roots. The earlier source and covering evidence is bound
-without rerunning its audits. No new raw row is excluded.
+These are complete local catalogs and pair orbits. The subsequent
+\path{develop/check_dimension_seven_four_five_six_roots.py}
+independently constructs all jointly disjoint tuples by array
+catalogs and a different component order from the bitmask builder.
+It agrees on all $51\,616$ families, $25\,364$ form-labelled
+remainders and $3258$ full-group orbits. It retains every ordered
+decomposition, checks the partition, zero remainder sum and
+actual holes, and reconstructs the full groups from symplectic
+dual-basis choices. All $412\,928$ family actions preserve the
+original roles and actual holes, and every destination decomposition
+is present. Tuple and remainder orbit--stabilizer identities are
+checked. Missing branches, dropped decompositions, incorrect actual
+holes and omitted orbit members are rejected by four invalid controls.
+The earlier source, normalization and nine inherited covering
+reports retain their source, certificate and dependency identities
+without rerunning those audits. No covering search for these roots
+or new raw-row exclusion is claimed.
 None of these dimension-seven results is covered by the archived
 six-dimensional Lean theorem.

@@ -175,8 +175,7 @@ actual-hole controls are finite modular checks, not complete joint
 roots. All nine inherited theorem source/certificate/dependency
 bindings are checked without rerunning historical covering audits.
 No new raw row is excluded: 25/36 remain, exact n7 open >=19.
-Next: exhaustive marked forms and full symmetry groups for both
-functional patterns and source alternatives, preserving actual holes.
+The exhaustive ordered forms and complete joint families follow below.
 
 ```sh
 python3 develop/check_dimension_seven_four_five_six_charge.py --report /tmp/n7-four-five-six-charge.json
@@ -193,9 +192,27 @@ has 144 disjoint local P/Hq pairs, 48 orbits and twelve ordered
 hole allocations; the actions are not free. The pure-source case
 requires a 28-point/four-hole remainder and four anchored heptads,
 the mixed-source case a 35-point/five-hole remainder and five.
-Next construct all jointly disjoint roots for the twelve source
-branches before any covering search. Counts remain 25/36.
+Complete jointly disjoint roots for these twelve source branches
+are now constructed below. Counts remain 25/36.
 
 ```sh
 python3 develop/check_dimension_seven_four_five_six_symmetry.py --report /tmp/n7-four-five-six-symmetry.json
+```
+
+The [complete joint-root theorem](../../notes/dimension-seven-four-five-six-roots.md)
+and independent audit retain all 51,616 ordered disjoint component
+families and 25,364 form-labelled remainders in 3,258 full-group
+orbits. Pure sources give 2,604 necessary four-heptad problems;
+mixed sources give 654 five-heptad problems. Every remainder has
+two, four or eight ordered decompositions, all saved with actual
+holes. The full marked groups preserve the original roles and
+transport every saved decomposition; unique decomposition and
+free action are not assumed. Four invalid-root controls are rejected.
+The eligible later-cover catalog is the 224 anchored even heptads,
+filtered by containment. No covering search or new raw-row exclusion
+is claimed; 25/36 remain and exact n7 is open with lower bound 19.
+
+```sh
+python3 develop/build_dimension_seven_four_five_six_roots.py --roots /tmp/n7-four-five-six-roots.json
+python3 develop/check_dimension_seven_four_five_six_roots.py --roots /tmp/n7-four-five-six-roots.json --report /tmp/n7-four-five-six-roots-check.json
 ```

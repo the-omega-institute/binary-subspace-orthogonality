@@ -656,8 +656,8 @@ and [report](results/dimension-7-four-five-six-charge.json) verify
 10,752 markings, 1,344 mixed and 2,016 pure-six unique completions,
 224 completion pairs and modular source/hole controls, retaining
 nine inherited theorem bindings. No new raw row is excluded;
-totals stay 25/36. No complete joint roots or new covering search
-is claimed. The extended draft includes this source restriction.
+totals stay 25/36. This source audit supplies modular local checks;
+the complete joint roots are constructed below.
 
 The [ordered normalization theorem](notes/dimension-seven-four-five-six-symmetry.md)
 now gives eight exhaustive marked forms for this row: eta=0,1
@@ -671,10 +671,27 @@ match all 10,752 markings with 86,016 normalization images,
 check full group and local component actions, and preserve all
 actual holes. Each form's 144 disjoint P/Hq local pairs have
 48 orbits, with twelve distinct ordered hole allocations.
-Pure-source complete roots would leave 28 points/four holes;
-mixed-source roots would leave 35 points/five holes, requiring
-four or five anchored heptads respectively. Complete joint roots
-remain to be constructed. Counts stay 25/36 and exact n7 open >=19.
+Pure-source complete roots leave 28 points/four holes;
+mixed-source roots leave 35 points/five holes, requiring
+four or five anchored heptads respectively.
+
+The [complete joint-root reduction](notes/dimension-seven-four-five-six-roots.md)
+constructs all twelve branches: **51,616** ordered disjoint component
+families, **25,364** form-labelled remaining sets and **3,258** full-group
+orbits. The pure-source cases give 2,604 necessary four-heptad problems;
+the mixed-source cases give 654 five-heptad problems. Each remainder
+has two, four or eight component decompositions, all retained with
+their actual holes. Full group actions preserve the original roles;
+no unique decomposition or free action is assumed.
+The [bitmask builder](develop/build_dimension_seven_four_five_six_roots.py)
+and [independent array auditor](develop/check_dimension_seven_four_five_six_roots.py)
+agree on every family, decomposition and orbit in the
+[root artifact](results/dimension-7-four-five-six-roots.json).
+The [report](results/dimension-7-four-five-six-roots-check.json)
+records full tuple actions and four rejected invalid controls.
+The next problem is to test these complete necessary remainders
+against the 224 anchored even heptads. No covering search or new
+exclusion is claimed here: counts stay 25/36 and exact n7 open >=19.
 
 ## Repository map
 
