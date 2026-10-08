@@ -1,0 +1,2086 @@
+{
+  "status": "eight_exhaustive_ordered_marked_forms_and_full_groups",
+  "dimension": 7,
+  "profile": [
+    4,
+    5,
+    6,
+    6,
+    1,
+    8
+  ],
+  "written_exhaustive_normalization": true,
+  "full_ordered_marked_groups_proved": true,
+  "source_case_branches": 12,
+  "recoloring_role_exchange_is_not_an_ordered_marked_isometry": true,
+  "forms": [
+    {
+      "eta": 0,
+      "a": 3,
+      "b": 15,
+      "c": 12,
+      "d": 48,
+      "t": 71,
+      "q": 120,
+      "characteristic_projections": [
+        51,
+        60,
+        63
+      ],
+      "characteristic_charge": 48,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 5,
+          "orbit_size_counts": {
+            "2": 4,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 32,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "4": 8
+          },
+          "stabilizer_order_counts": {
+            "2": 8
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            12,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            60
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 0,
+      "a": 3,
+      "b": 51,
+      "c": 12,
+      "d": 48,
+      "t": 71,
+      "q": 120,
+      "characteristic_projections": [
+        15,
+        60,
+        63
+      ],
+      "characteristic_charge": 12,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 4,
+          "orbit_size_counts": {
+            "4": 4
+          },
+          "stabilizer_order_counts": {
+            "2": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 32,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "4": 8
+          },
+          "stabilizer_order_counts": {
+            "2": 8
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            12,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            60
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 0,
+      "a": 3,
+      "b": 60,
+      "c": 12,
+      "d": 48,
+      "t": 71,
+      "q": 120,
+      "characteristic_projections": [
+        15,
+        51,
+        63
+      ],
+      "characteristic_charge": 3,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 5,
+          "orbit_size_counts": {
+            "2": 4,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 32,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "4": 8
+          },
+          "stabilizer_order_counts": {
+            "2": 8
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            12,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            60
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 0,
+      "a": 3,
+      "b": 63,
+      "c": 12,
+      "d": 48,
+      "t": 71,
+      "q": 120,
+      "characteristic_projections": [
+        15,
+        51,
+        60
+      ],
+      "characteristic_charge": 0,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 5,
+          "orbit_size_counts": {
+            "2": 4,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 32,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "4": 8
+          },
+          "stabilizer_order_counts": {
+            "2": 8
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            12,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            60
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            15,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            60,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            15
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            60
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 1,
+      "a": 3,
+      "b": 15,
+      "c": 12,
+      "d": 48,
+      "t": 89,
+      "q": 102,
+      "characteristic_projections": [
+        51,
+        60,
+        63
+      ],
+      "characteristic_charge": 48,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure",
+        "mixed"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 4,
+          "orbit_size_counts": {
+            "4": 4
+          },
+          "stabilizer_order_counts": {
+            "2": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 22,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "2": 7,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 7
+          }
+        },
+        "J_mixed_source": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 1,
+      "a": 3,
+      "b": 51,
+      "c": 12,
+      "d": 48,
+      "t": 89,
+      "q": 102,
+      "characteristic_projections": [
+        15,
+        60,
+        63
+      ],
+      "characteristic_charge": 12,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure",
+        "mixed"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 4,
+          "orbit_size_counts": {
+            "4": 4
+          },
+          "stabilizer_order_counts": {
+            "2": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 22,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "2": 7,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 7
+          }
+        },
+        "J_mixed_source": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 1,
+      "a": 3,
+      "b": 60,
+      "c": 12,
+      "d": 48,
+      "t": 89,
+      "q": 102,
+      "characteristic_projections": [
+        15,
+        51,
+        63
+      ],
+      "characteristic_charge": 3,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure",
+        "mixed"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 16,
+          "orbits": 4,
+          "orbit_size_counts": {
+            "4": 4
+          },
+          "stabilizer_order_counts": {
+            "2": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 22,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "2": 7,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 7
+          }
+        },
+        "J_mixed_source": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    },
+    {
+      "eta": 1,
+      "a": 3,
+      "b": 63,
+      "c": 12,
+      "d": 48,
+      "t": 89,
+      "q": 102,
+      "characteristic_projections": [
+        15,
+        51,
+        60
+      ],
+      "characteristic_charge": 0,
+      "ordered_markings_in_orbit": 1344,
+      "full_ordered_marked_stabilizer_order": 8,
+      "all_M_points_fixed": true,
+      "role_exchange_symmetries": 0,
+      "completion_source_cases": [
+        "pure",
+        "mixed"
+      ],
+      "component_catalogs_and_orbits": {
+        "D0": {
+          "objects": 8,
+          "orbits": 4,
+          "orbit_size_counts": {
+            "2": 4
+          },
+          "stabilizer_order_counts": {
+            "4": 4
+          }
+        },
+        "D1": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        },
+        "P": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Hq": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "Ht": {
+          "objects": 18,
+          "orbits": 9,
+          "orbit_size_counts": {
+            "2": 9
+          },
+          "stabilizer_order_counts": {
+            "4": 9
+          }
+        },
+        "J_pure_source": {
+          "objects": 22,
+          "orbits": 8,
+          "orbit_size_counts": {
+            "2": 7,
+            "8": 1
+          },
+          "stabilizer_order_counts": {
+            "1": 1,
+            "4": 7
+          }
+        },
+        "J_mixed_source": {
+          "objects": 4,
+          "orbits": 2,
+          "orbit_size_counts": {
+            "2": 2
+          },
+          "stabilizer_order_counts": {
+            "4": 2
+          }
+        }
+      },
+      "disjoint_P_Hq_pair_orbits": {
+        "objects": 144,
+        "orbits": 48,
+        "orbit_size_counts": {
+          "2": 24,
+          "4": 24
+        },
+        "stabilizer_order_counts": {
+          "2": 24,
+          "4": 24
+        }
+      },
+      "ordered_actual_P_Hq_hole_allocations": [
+        {
+          "holes": [
+            3,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            3,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            48
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            12,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            48,
+            63
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            3
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            12
+          ],
+          "pairs": 12
+        },
+        {
+          "holes": [
+            63,
+            48
+          ],
+          "pairs": 12
+        }
+      ],
+      "complete_joint_roots_constructed": false
+    }
+  ],
+  "fixed_M_ordered_markings": 10752,
+  "normalizing_image_controls": 86016,
+  "normalizing_images_per_ordered_marking": 8,
+  "source_Gram_entries_checked": 526848,
+  "stabilizer_dot_product_pairs_checked": 262144,
+  "stabilizer_composition_points_checked": 16384,
+  "component_catalog_actions_checked": 6528,
+  "actual_hole_transports_checked": 3456,
+  "necessary_cover_specification": {
+    "pure_t_source": {
+      "fixed_even_component_sizes": [
+        4,
+        5,
+        6,
+        6,
+        7,
+        7
+      ],
+      "remaining_points": 28,
+      "remaining_holes": 4,
+      "remaining_pure_heptads": 4
+    },
+    "mixed_t_source": {
+      "fixed_even_component_sizes": [
+        4,
+        5,
+        6,
+        6,
+        7
+      ],
+      "remaining_points": 35,
+      "remaining_holes": 5,
+      "remaining_pure_heptads": 5
+    },
+    "eligible_even_heptads": 224,
+    "all_eligible_heptads_anchored_by_hole_capacity": true
+  },
+  "all_component_catalogs_compared_by_array_and_bitmask": true,
+  "new_raw_profile_exclusions": 0,
+  "target_raw_profile_excluded": false,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 36
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ],
+      [
+        4,
+        5,
+        6,
+        6,
+        1,
+        8
+      ],
+      [
+        4,
+        6,
+        6,
+        5,
+        2,
+        8
+      ]
+    ]
+  },
+  "remaining_three_six_C8_count": 2,
+  "remaining_C6_through_C8_count": 59,
+  "remaining_C5_count": 2,
+  "inherited_theorem_report_sha256": {
+    "results/dimension-7-three-five-cover-check.json": "379ddfc87540b2e8ea3c8d6d7809c0dbea49fe45d856e7c3e14564b15af4ba9d",
+    "results/dimension-7-four-even-pairs-check.json": "b11138267957b322b82058363c8e6b5d7e650bbd9e7c9692f95658cc109dc472",
+    "results/dimension-7-five-four-D-cover-check.json": "efa32490cb34f681212125a4ab67b926ae1cb5ae89ae9ffaed94ee15e09eee42",
+    "results/dimension-7-five-four-H-cover-check.json": "85d2d73ce268ed4a8e3fcb8dff93a9f023405569c71790d94ed2671eeb80fd3f",
+    "results/dimension-7-five-four-G-cover-check.json": "d7756f5c9502bd4c70191a5adb08f54890a37fe8b0d9d3e4b74e9a1a15817e48",
+    "results/dimension-7-five-four-Z-cover-check.json": "85930da140bf64f2b875e3d4c2809be92f275c57e7765a96df30e588a6d92908",
+    "results/dimension-7-four-four-hole-cover.json": "e1a43630408e1ece5c8efbf9a084e8ca67746082a5d8f1e02327f2c58c056a7a",
+    "results/dimension-7-three-six-cover-check.json": "08386e743a2e00889eff55fc2dd35a14f93e17c3bcf3a9411dfa9ef9dda7d1b3",
+    "results/dimension-7-four-six-six-cover-check.json": "e2151db56b8abccbc60cfdc7ee18c5a1fc4a0a9729dde0476141368d673ec6cc"
+  },
+  "complete_joint_roots_constructed": false,
+  "new_cover_search": false,
+  "new_cover_certificate": false,
+  "historical_cover_audits_rerun": false,
+  "previous_local_control_audit_rerun": false,
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "exact_n7": "open_lower_bound19",
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "checker_sha256": "57fd7b464bdfcfff6041db60da92a5db824404e5e466e9d6e7b8ab54bcef47f0",
+  "proof_note_sha256": "e13970ae0669107029d956450a187a149e8a3364e9597cdb96cd379073bb2c8f",
+  "dependency_sha256": {
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+    "develop/check_dimension_seven_three_six_charge.py": "c16fa55aee66de38348124dac37a663186d478116d2f29439d0752bb86f7234e",
+    "develop/check_dimension_seven_four_five_six_charge.py": "5cf7482f73bc3644b5896dbaf03ca1f4d039ad8ba089abac6bb3e4ad88fc1d95",
+    "notes/dimension-seven-four-five-six-charge.md": "167d3f67bf85ffdfe4de30529a25416506a6f36d3eb86cab6524a77915b37734",
+    "results/dimension-7-four-five-six-charge.json": "7497e638ccfbc235ef8ed413ed81e2ebafc315ae9d009a26cb951fd76d0e3373",
+    "notes/dimension-seven-nineteen-obstruction.md": "029d4474b99d2f68ce50aad9ea9c2bbe806111e63a9fa1a36b56e1a552060252"
+  }
+}

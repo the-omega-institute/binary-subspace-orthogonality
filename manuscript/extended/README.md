@@ -181,3 +181,21 @@ functional patterns and source alternatives, preserving actual holes.
 ```sh
 python3 develop/check_dimension_seven_four_five_six_charge.py --report /tmp/n7-four-five-six-charge.json
 ```
+
+The [ordered normalization theorem](../../notes/dimension-seven-four-five-six-symmetry.md)
+gives eight exhaustive forms, eta=0,1 and b=a+c,a+d,c+d,a+c+d.
+Every full ordered marked group has order eight and fixes every M
+point. The mixed-role transfer is a recoloring, not a symmetry
+exchanging the original D1 and J roles. All 10,752 ordered markings
+are covered by 86,016 normalization images, eight per marking.
+All local catalog actions and actual holes are checked. Each form
+has 144 disjoint local P/Hq pairs, 48 orbits and twelve ordered
+hole allocations; the actions are not free. The pure-source case
+requires a 28-point/four-hole remainder and four anchored heptads,
+the mixed-source case a 35-point/five-hole remainder and five.
+Next construct all jointly disjoint roots for the twelve source
+branches before any covering search. Counts remain 25/36.
+
+```sh
+python3 develop/check_dimension_seven_four_five_six_symmetry.py --report /tmp/n7-four-five-six-symmetry.json
+```

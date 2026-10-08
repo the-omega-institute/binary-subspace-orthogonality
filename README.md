@@ -659,6 +659,23 @@ nine inherited theorem bindings. No new raw row is excluded;
 totals stay 25/36. No complete joint roots or new covering search
 is claimed. The extended draft includes this source restriction.
 
+The [ordered normalization theorem](notes/dimension-seven-four-five-six-symmetry.md)
+now gives eight exhaustive marked forms for this row: eta=0,1
+and four positions of b relative to the ordered basis a,c,d.
+Every full ordered stabilizer has order eight and fixes all M
+points. The reversible mixed-role recoloring is not an ordered
+isometry; no role exchange is used. There are twelve source-case
+branches. The [auditor](develop/check_dimension_seven_four_five_six_symmetry.py)
+and [report](results/dimension-7-four-five-six-symmetry.json)
+match all 10,752 markings with 86,016 normalization images,
+check full group and local component actions, and preserve all
+actual holes. Each form's 144 disjoint P/Hq local pairs have
+48 orbits, with twelve distinct ordered hole allocations.
+Pure-source complete roots would leave 28 points/four holes;
+mixed-source roots would leave 35 points/five holes, requiring
+four or five anchored heptads respectively. Complete joint roots
+remain to be constructed. Counts stay 25/36 and exact n7 open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
