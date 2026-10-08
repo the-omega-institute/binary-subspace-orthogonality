@@ -750,6 +750,24 @@ remains to be imposed. The proved groups and complete local catalogs
 specify the next seven-component root construction; they give no new
 raw-row exclusion or covering search. Counts remain 25/35.
 
+The [complete pure-source joint construction](notes/dimension-seven-pure-source-roots.md)
+now retains **42,496 ordered seven-component configurations**, all
+their decompositions, **10,032 form-labelled remainders** and **1,276
+full marked-group remainder orbits**. The
+[builder](develop/build_dimension_seven_pure_source_roots.py),
+[independent auditor](develop/check_dimension_seven_pure_source_roots.py),
+[complete artifact](results/dimension-7-pure-source-roots.json) and
+[report](results/dimension-7-pure-source-roots-check.json) agree exactly
+using bitmask versus array/set reconstruction and different traversal
+orders. All sixteen ordered forms and actual-hole allocations remain
+represented. Every remainder has four or eight component decompositions;
+remainder orbits have sizes four or eight, so tuple freeness does not
+justify dividing remainder counts by eight. Each representative leaves
+21 points and exactly three kernel holes for three pure heptads from
+the 96 eligible anchored rows. Four invalid controls are rejected.
+The complete necessary cover question is ready; no new covering search
+or raw-row exclusion is claimed. Lists remain 25/35 and exact n7 open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

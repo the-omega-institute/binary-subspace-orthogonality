@@ -269,3 +269,20 @@ search is claimed. The lists remain 25/35 and exact n7 open >=19.
 ```sh
 python3 develop/check_dimension_seven_pure_source_normalization.py --report /tmp/n7-pure-source-normalization.json
 ```
+
+The [complete seven-component construction](../../notes/dimension-seven-pure-source-roots.md)
+gives 42,496 ordered joint configurations in all sixteen forms, retaining
+all component decompositions and actual holes. There are 10,032
+form-labelled 21-point/three-kernel-hole remainders and 1,276 full
+ordered marked-group remainder orbits. Independent array/set reconstruction
+matches the bitmask builder exactly; full group actions and four invalid
+controls are checked. Remainders have four or eight decompositions, and
+their actions have size-four or size-eight orbits. Three residual heptads
+must come from the complete 96-row kernel-anchored catalog. This is a
+complete necessary covering input, with no new cover search or exclusion;
+counts stay25/35 and exact n7 remains open>=19.
+
+```sh
+python3 develop/build_dimension_seven_pure_source_roots.py --roots /tmp/n7-pure-source-roots.json --max-visits 1000000 --seconds 20
+python3 develop/check_dimension_seven_pure_source_roots.py --roots /tmp/n7-pure-source-roots.json --report /tmp/n7-pure-source-roots-check.json
+```
