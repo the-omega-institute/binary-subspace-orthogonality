@@ -714,6 +714,27 @@ premise. Characteristic sizes four through eight and exact n7 remain
 open with lower bound 19. The extended working draft integrates the
 exclusion; no new Lean result is claimed.
 
+For the remaining `(4,6,6;5,2,8)` row, the
+[new exhaustive source theorem](notes/dimension-seven-four-six-six-pure-sources.md)
+forces both pure-six completions into **distinct pure even heptads**.
+Sources in the four-even defect, the other pure sextet or either
+mixed class would transfer to excluded exact profiles, including
+the newly excluded entire four-five-six row. A shared pure source
+would give the excluded `(5,4;6,2,8)` profile.
+The common functional retains all four ordered patterns 100,010,001,111.
+The two pure defects and their two sources occupy all four functional-one
+holes; the three remaining holes form the nonzero kernel plane.
+Complete necessary roots would leave **21 points/three holes**, requiring
+three pure heptads from the **96 kernel-anchored rows**, filtered by
+containment. Reversible pure-source recolorings preserve the profile;
+they are not assumed geometric role symmetries.
+The [independent local auditor](develop/check_dimension_seven_four_six_six_pure_sources.py)
+and [report](results/dimension-7-four-six-six-pure-sources.json)
+check all 21,504 markings, 224 completion pairs, source transfers and
+actual-hole controls, retaining ten inherited theorem bindings.
+These are modular checks, not complete joint roots. The whole row
+remains open, counts stay 25/35 and exact n7 open >=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.

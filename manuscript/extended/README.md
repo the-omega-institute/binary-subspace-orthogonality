@@ -234,3 +234,22 @@ Exact n7 remains open with lower bound 19; no new Lean is claimed.
 python3 develop/build_dimension_seven_four_five_six_cover.py --certificate /tmp/n7-four-five-six-cover-proof.json --max-states 30000 --max-visits 120000 --seconds 20
 python3 develop/check_dimension_seven_four_five_six_cover.py --certificate /tmp/n7-four-five-six-cover-proof.json --report /tmp/n7-four-five-six-cover-check.json
 ```
+
+The [remaining-row source theorem](../../notes/dimension-seven-four-six-six-pure-sources.md)
+forces both completions in `(4,6,6;5,2,8)` into distinct pure heptads,
+each avoiding the other completion. Transfers from either mixed class
+would give the newly excluded entire `(4,5,6;6,1,8)` row; transfers
+from D0, the other pure sextet or a shared pure source give the other
+specified excluded profiles. Four functional patterns 100,010,001,111
+remain. The four pure defect/source holes exhaust the functional-one
+points, leaving the three nonzero kernel points as holes. Complete
+necessary roots would leave 21 points for three heptads selected from
+96 kernel-anchored rows. Reversible swaps are recolorings, not assumed
+isometries. All 21,504 markings and local source/actual-hole controls
+are audited, with ten inherited finite theorem bindings. No complete
+joint roots or cover search for this branch is claimed. Counts stay
+25/35 and exact n7 remains open with lower bound 19.
+
+```sh
+python3 develop/check_dimension_seven_four_six_six_pure_sources.py --report /tmp/n7-four-six-six-pure-sources.json
+```
