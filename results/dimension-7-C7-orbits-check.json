@@ -1,0 +1,548 @@
+{
+  "status": "complete_C7_odd_marking_and_actual_defect_hole_orbits_independently_checked",
+  "dimension": 7,
+  "profile": [
+    4,
+    4,
+    4,
+    3,
+    5,
+    7
+  ],
+  "full_ordered_hole_pair_group_order": 168,
+  "independent_group_construction": "all dual bases from N images versus builder M images",
+  "full_original_dot_product_controls": 2752512,
+  "full_group_composition_controls": 28224,
+  "local_defect_actions_with_actual_holes": 112896,
+  "complete_odd_markings": 4200,
+  "markings_with_distinct_actual_defect_holes": 29232,
+  "complete_marked_orbits": 176,
+  "cases": [
+    {
+      "case": 0,
+      "augmented_markings": 7056,
+      "orbits": 44,
+      "orbit_stabilizer_histogram": [
+        {
+          "orbit_size": 56,
+          "stabilizer_order": 3,
+          "orbits": 3
+        },
+        {
+          "orbit_size": 168,
+          "stabilizer_order": 1,
+          "orbits": 41
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "augmented_markings": 22176,
+      "orbits": 132,
+      "orbit_stabilizer_histogram": [
+        {
+          "orbit_size": 168,
+          "stabilizer_order": 1,
+          "orbits": 132
+        }
+      ]
+    }
+  ],
+  "all_markings_and_actual_holes_retained": true,
+  "free_group_action_assumed": false,
+  "defect_charge_partner_roles_preserved": true,
+  "equal_defect_role_permutations_only": true,
+  "rejected_invalid_controls": [
+    "missing_orbit",
+    "wrong_actual_hole",
+    "missing_group_map",
+    "false_stabilizer_order"
+  ],
+  "equality_local_audit_rerun": true,
+  "inherited_report_sha256": {
+    "results/dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "results/dimension-7-two-six-profiles.json": "77384d6b27fa78c4665848df2895871b58d6c73fd7f938659e9da9ce0540db5b",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-hole-capacity.json": "73954383ce335203ec6cab09c958b3a09ae6b84b3a5b804360a8f0be1cf65ec9",
+    "results/dimension-7-pure-source-cover-check.json": "c5aaa659e47240842d1d99f5bdfd18156cad9df6b07cbf8d74286df2418063f6"
+  },
+  "new_raw_profile_exclusions": 0,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 34
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ]
+    ]
+  },
+  "remaining_C6_through_C8_count": 57,
+  "remaining_C5_count": 2,
+  "remaining_size_four_C8_count": 0,
+  "complete_joint_roots_constructed": false,
+  "new_cover_search": false,
+  "new_cover_certificate": false,
+  "historical_completion_and_cover_audits_rerun": false,
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "exact_n7": "open_lower_bound19",
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "artifact_sha256": "a00dd44ca58aafedfd216db5eba1cc80bbe80132ad2837f8bc5b748ff8f0b2e7",
+  "builder_sha256": "b7f690b64294b7f38c404bd0c22659eea2e67bdb0b72c74e93f2c2e18f0aeffa",
+  "checker_sha256": "cb0506af99179b8cf2dbe0727e4555afe70bd6e1148468c6168b4f6d296db751",
+  "proof_note_sha256": "2e1ca5f173275a5f504305be0cfbf2daa5782c0d5fd592e73d6e05a95210435f",
+  "dependency_sha256": {
+    "develop/check_dimension_seven_C7_equality.py": "ac958c344178b48d68b31315bb9b480f6f71cf15bc05e97b645c60c35ab38bfa",
+    "notes/dimension-seven-C7-equality.md": "7726d7bc0c7ac56ee7ed9d8924b8292a359a19b48bfdeea43bbad19ef20c8dd2",
+    "results/dimension-7-C7-equality.json": "e0ca75a26b008df79be33bd8b575f16c46e0e6eada9fa63d712b963c05da2d19",
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5"
+  }
+}

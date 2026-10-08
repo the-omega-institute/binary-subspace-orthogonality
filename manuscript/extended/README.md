@@ -328,3 +328,24 @@ lists stay25/34 and exact n7 remains open>=19. No new Lean is claimed.
 ```sh
 python3 develop/check_dimension_seven_C7_equality.py --report /tmp/n7-C7-equality.json
 ```
+
+The [complete C7 marked orbit construction](../../notes/dimension-seven-C7-orbits.md)
+adds all distinct actual defect-hole allocations. The full ordered-pair
+group is GL(3,2) of order168, acting by inverse dual maps on the two
+hole sides and fixing z in the original dot space. Its29,232augmented
+markings have176orbits:44case0 and132case1. Three case0orbits have
+size56/stabilizer3; all173other orbits have size168/stabilizer1.
+The artifact retains every member, representative and stabilizer order.
+Independent reconstruction from the opposite dual-basis direction
+matches all maps; complete original-dot/group-composition/local-defect
+action controls and marking coverage pass. Four invalid controls are
+rejected. The equality/local audit is rerun; historical completion and
+covering audits are not. This is complete necessary marked normalization
+for the joint three-defect/five-mixed-component construction, which
+remains open. No new row excluded or cover search;25/34and exactn7>=19
+remain unchanged. No new Lean is claimed.
+
+```sh
+python3 develop/build_dimension_seven_C7_orbits.py --orbits /tmp/n7-C7-orbits.json --seconds 20
+python3 develop/check_dimension_seven_C7_orbits.py --orbits /tmp/n7-C7-orbits.json --report /tmp/n7-C7-orbits-check.json
+```

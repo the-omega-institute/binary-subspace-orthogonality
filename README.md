@@ -811,6 +811,23 @@ Every marking has a distinct local three-defect hole allocation; joint
 compatibility and covering remain open. No new raw row is excluded:
 lists stay **25/34**, and exact n7 remains open with lower bound19.
 
+The [complete C7 marked normalization](notes/dimension-seven-C7-orbits.md)
+retains all actual defect holes. The full ordered-hole-pair isometry
+group is **GL(3,2), of order168**: its action on M determines the
+inverse dual action on N. The **29,232 augmented markings** have
+**176 orbits**, with44 in case0 and132 in case1. Three case0 orbits
+have size56 and stabilizer order3; every other orbit has size168.
+The [builder](develop/build_dimension_seven_C7_orbits.py),
+[artifact](results/dimension-7-C7-orbits.json),
+[independent auditor](develop/check_dimension_seven_C7_orbits.py) and
+[report](results/dimension-7-C7-orbits-check.json) reconstruct groups
+from opposite dual-basis directions, match complete marking coverage,
+check original dot preservation, all group compositions and all112,896
+local defect actions retaining actual holes. Four invalid controls
+are rejected. This supplies complete legal representatives for the
+next joint eight-component construction; no raw row is excluded or
+covering search run. Lists stay25/34 and exact n7 remains open>=19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
