@@ -1,0 +1,537 @@
+{
+  "status": "C7_four_four_four_capacity_equality_reduced_to_two_side_distributions",
+  "dimension": 7,
+  "profile": [
+    4,
+    4,
+    4,
+    3,
+    5,
+    7
+  ],
+  "complete_odd_markings_for_fixed_ordered_hole_pair": 4200,
+  "independent_marking_constructions_match": true,
+  "side_distributions": [
+    {
+      "defects_on_first_side": 0,
+      "mixed_on_first_side": 4,
+      "characteristic_on_first_side": 3,
+      "odd_markings": 1176,
+      "characteristic_charge_zero": true,
+      "distinct_defect_hole_assignment_histogram": {
+        "2": 196,
+        "6": 588,
+        "8": 392
+      }
+    },
+    {
+      "defects_on_first_side": 1,
+      "mixed_on_first_side": 3,
+      "characteristic_on_first_side": 2,
+      "odd_markings": 3024,
+      "characteristic_charge_zero": false,
+      "distinct_defect_hole_assignment_histogram": {
+        "6": 1008,
+        "8": 2016
+      }
+    }
+  ],
+  "all_even_four_cliques": 10080,
+  "ordered_charge_partner_catalogs": 84,
+  "local_one_hole_defect_catalog_size_histogram": {
+    "8": 84
+  },
+  "actual_hole_options_per_defect": 2,
+  "even_blocks_per_actual_hole": 4,
+  "complete_local_defect_classes_with_one_actual_hole": 672,
+  "markings_sha256": "b8fa7ac44505322e97ebbab8ffd7fb7de0d8a4f1260a9d807f1d055eeba9e34d",
+  "new_raw_profile_exclusions": 0,
+  "remaining_raw_profiles": {
+    "five_six": 25,
+    "three_six": 34
+  },
+  "remaining_raw_profile_lists": {
+    "five_six": [
+      [
+        0,
+        0,
+        3,
+        7,
+        6
+      ],
+      [
+        0,
+        0,
+        9,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        9,
+        6
+      ],
+      [
+        0,
+        2,
+        7,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        4,
+        7
+      ],
+      [
+        0,
+        5,
+        4,
+        5,
+        7
+      ],
+      [
+        0,
+        6,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        8,
+        6
+      ],
+      [
+        1,
+        0,
+        8,
+        1,
+        7
+      ],
+      [
+        1,
+        2,
+        0,
+        10,
+        6
+      ],
+      [
+        1,
+        2,
+        6,
+        3,
+        7
+      ],
+      [
+        1,
+        4,
+        4,
+        5,
+        7
+      ],
+      [
+        1,
+        5,
+        3,
+        6,
+        7
+      ],
+      [
+        1,
+        6,
+        2,
+        7,
+        7
+      ],
+      [
+        2,
+        0,
+        1,
+        9,
+        6
+      ],
+      [
+        2,
+        0,
+        7,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        0,
+        0,
+        10,
+        6
+      ],
+      [
+        3,
+        0,
+        6,
+        3,
+        7
+      ],
+      [
+        3,
+        2,
+        4,
+        5,
+        7
+      ],
+      [
+        4,
+        0,
+        5,
+        4,
+        7
+      ],
+      [
+        4,
+        2,
+        3,
+        6,
+        7
+      ],
+      [
+        5,
+        0,
+        4,
+        5,
+        7
+      ],
+      [
+        5,
+        2,
+        2,
+        7,
+        7
+      ]
+    ],
+    "three_six": [
+      [
+        0,
+        0,
+        0,
+        3,
+        7,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        9,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        7,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        4,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        0,
+        5,
+        4,
+        5,
+        6
+      ],
+      [
+        0,
+        0,
+        6,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        2,
+        5,
+        4,
+        6
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        6,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        2,
+        7,
+        6
+      ],
+      [
+        0,
+        2,
+        5,
+        8,
+        0,
+        7
+      ],
+      [
+        0,
+        2,
+        6,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        2,
+        6,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        0,
+        4,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        5,
+        5,
+        3,
+        7
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        4,
+        7
+      ],
+      [
+        0,
+        6,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        2,
+        2,
+        3,
+        6,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        1,
+        8,
+        6
+      ],
+      [
+        2,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      [
+        2,
+        2,
+        5,
+        0,
+        9,
+        6
+      ],
+      [
+        2,
+        2,
+        5,
+        6,
+        2,
+        7
+      ],
+      [
+        2,
+        2,
+        6,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        4,
+        5,
+        3,
+        7
+      ],
+      [
+        2,
+        4,
+        5,
+        4,
+        4,
+        7
+      ],
+      [
+        2,
+        4,
+        6,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        5,
+        3,
+        5,
+        7
+      ],
+      [
+        2,
+        5,
+        6,
+        2,
+        6,
+        7
+      ],
+      [
+        2,
+        6,
+        6,
+        1,
+        7,
+        7
+      ],
+      [
+        4,
+        4,
+        4,
+        3,
+        5,
+        7
+      ]
+    ]
+  },
+  "remaining_C6_through_C8_count": 57,
+  "remaining_C5_count": 2,
+  "remaining_size_four_C8_count": 0,
+  "exact_n7": "open_lower_bound19",
+  "complete_joint_roots_constructed": false,
+  "new_cover_search": false,
+  "new_cover_certificate": false,
+  "seven_spread_completion_audit_rerun": false,
+  "historical_cover_audits_rerun": false,
+  "new_Lean": false,
+  "new_independent_Pro_review": false,
+  "old_n6_formal_scope": "three standard plus four native-evaluation axioms",
+  "checker_sha256": "ac958c344178b48d68b31315bb9b480f6f71cf15bc05e97b645c60c35ab38bfa",
+  "proof_note_sha256": "7726d7bc0c7ac56ee7ed9d8924b8292a359a19b48bfdeea43bbad19ef20c8dd2",
+  "inherited_report_sha256": {
+    "results/dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "results/dimension-7-two-six-profiles.json": "77384d6b27fa78c4665848df2895871b58d6c73fd7f938659e9da9ce0540db5b",
+    "results/dimension-7-size-four.json": "521ac541ef86bc8d838041f490f637f0f607b68e943f1704e60fcf3746b43af0",
+    "results/dimension-7-hole-capacity.json": "73954383ce335203ec6cab09c958b3a09ae6b84b3a5b804360a8f0be1cf65ec9",
+    "results/dimension-7-pure-source-cover-check.json": "c5aaa659e47240842d1d99f5bdfd18156cad9df6b07cbf8d74286df2418063f6"
+  },
+  "dependency_sha256": {
+    "develop/check_dimension_seven_five_four_charge.py": "cdf5917292c2c5e0091845418d35f144893c362d8637e1e431aa23aff86e3fa5",
+    "notes/dimension-seven-two-six-profiles.md": "f44c9c7494354c462d89919e3863186a720715994f4921046352e0110dea5399",
+    "notes/dimension-seven-size-four.md": "6093d77b2da99debb9d97d1c1e12fa0bf45aab9f5645401a365d629240fbee0f",
+    "notes/dimension-seven-hole-capacity.md": "991925c660490a5d500692cdc4c76fbb40c7fd80ddefe738a3c5ab3bc65dd238",
+    "results/dimension-7-seven-holes.json": "6fae4b1d6d60a27f4049a40210981661af36163d98b1980d33345abe63fea0a0",
+    "develop/check_dimension_seven_seven_holes.py": "dad19132d6504e0d15a832869646c0e7803e9fd3cbc3ce6536969e6e6c4ab865",
+    "notes/dimension-seven-seven-holes.md": "6fcdbf4463b9394bded17a3fefac882f73d80afc6d40738ba19e9146737a1939",
+    "results/dimension-7-pure-source-cover-check.json": "c5aaa659e47240842d1d99f5bdfd18156cad9df6b07cbf8d74286df2418063f6"
+  }
+}

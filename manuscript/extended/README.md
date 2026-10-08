@@ -308,3 +308,23 @@ claimed; the original n6 theorem retains its four native-evaluation axioms.
 python3 develop/build_dimension_seven_pure_source_cover.py --certificate /tmp/n7-pure-source-cover-proof.json --max-states 15000 --max-visits 60000 --seconds 20
 python3 develop/check_dimension_seven_pure_source_cover.py --certificate /tmp/n7-pure-source-cover-proof.json --report /tmp/n7-pure-source-cover-check.json
 ```
+
+The [C7 capacity-equality reduction](../../notes/dimension-seven-C7-equality.md)
+for `(4,4,4;3,5,7)` leaves two exhaustive side distributions. Up to
+exchanging hole sides, the defects split 0/3 or1/2, the mixed odd
+projections split 4/1 or3/2 and the characteristic projections split
+3/0 or2/1. The characteristic charge is respectively zero or nonzero;
+the triples have rank two or three. Each defect's charge is one odd
+projection and its even sum is the other. Two complete odd-marking
+constructions agree on 1,176 and3,024 markings for a fixed ordered
+hole pair. Independent even four-clique catalogs give672local one-hole
+defects, with two actual-hole choices and four blocks per choice for
+each of84ordered charge/partner pairs. Every marking has a distinct
+local defect-hole allocation. Five inherited report/source/dependency
+bindings are checked without rerunning historical completion or covering
+audits. Joint roots and covering remain open; no new row is excluded,
+lists stay25/34 and exact n7 remains open>=19. No new Lean is claimed.
+
+```sh
+python3 develop/check_dimension_seven_C7_equality.py --report /tmp/n7-C7-equality.json
+```

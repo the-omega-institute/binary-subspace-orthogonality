@@ -792,6 +792,25 @@ certificates are not new failed-state premises. Exact n7 and characteristic
 sizes four through eight remain open with lower bound 19. No new Lean
 is claimed; the extended working draft integrates this result.
 
+For the remaining C7 row `(4,4,4;3,5,7)`, the
+[capacity-equality reduction](notes/dimension-seven-C7-equality.md)
+gives two exhaustive side distributions, up to exchanging the two
+hole Lagrangians M,N. Each pure even heptad uses one hole on each side;
+each mixed class and each defect uses one on the side opposite its odd
+projections. With y defects, x mixed odd projections and k characteristic
+projections on M, equality gives x+y=4 and k=3-y. Take y=0 or1.
+For y=0 the characteristic and defect-charge triples are lines on
+opposite sides, with characteristic charge zero. For y=1 the
+characteristic triple splits two/one and has rank three and nonzero charge.
+The [checker](develop/check_dimension_seven_C7_equality.py) and
+[report](results/dimension-7-C7-equality.json) match two complete
+odd-marking constructions: **1,176/3,024 markings**. Independent even
+four-clique catalogs give **672 local one-hole defects**, two actual-hole
+choices and four blocks per choice for every ordered charge/partner pair.
+Every marking has a distinct local three-defect hole allocation; joint
+compatibility and covering remain open. No new raw row is excluded:
+lists stay **25/34**, and exact n7 remains open with lower bound19.
+
 ## Repository map
 
 - [Manuscript](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex): the complete joint paper.
