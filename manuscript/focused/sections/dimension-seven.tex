@@ -1,0 +1,121 @@
+\section{A nineteen-color lower bound in dimension seven}
+\label{sec:seven}
+
+The clique formula gives $\omega(\OG_7^*)=16$. We prove that its
+line subgraph already requires at least nineteen colors. Put
+$z=(1,\ldots,1)\in\F^7$ and $E=z^\perp$. Since $z\cdot z=1$,
+the restriction of the dot product to $E$ is a nondegenerate
+alternating form on a six-dimensional space. We call vectors
+in $E$ even and those outside $E$ odd. A Lagrangian in $E$ is
+a three-dimensional totally isotropic subspace.
+
+\begin{lemma}\label{lem:seven-capacity}
+An independent set in $\Gamma_7$ avoiding $z$ has at most seven
+vertices. An independent set with eight vertices is $z+L$ for
+a Lagrangian $L\leq E$. An independent set of size seven avoiding
+$z$ has parity counts $(7,0)$, $(6,1)$ or $(0,7)$.
+\end{lemma}
+\begin{proof}
+Distinct vectors in an independent set have dot product one.
+Let $m$ be its number of even vectors and $o$ its number of odd
+vectors. If $o=0$, the Gram matrix is $J_m+I_m$. Its rank is $m$
+for even $m$ and $m-1$ for odd $m$, so $m\leq7$.
+
+If $o>0$, fix a selected odd vector $a$. For each selected even
+vector $u$, put $b_u=u+a$. These vectors form an orthonormal set
+in the nondegenerate six-space $a^\perp$ and span a nondegenerate
+$m$-space $B$. The span $D$ of $w+a$, over selected odd vectors
+$w$, is totally isotropic in $B^\perp\cap a^\perp$. Hence
+$2\dim D\leq6-m$, and the selected odd vectors lie in $a+D$.
+Thus
+\[
+o\leq2^{\lfloor(6-m)/2\rfloor}.
+\]
+For $m=1,\ldots,6$ the bounds on $o$ are $4,4,2,2,1,1$,
+respectively. A class containing an even vector therefore has
+at most seven members, and size seven requires $(m,o)=(6,1)$.
+
+If $m=0$, write each member as $z+e$ with $e\in E$. The selected
+$e$ are pairwise orthogonal, so their span is isotropic and has
+dimension at most three. Eight distinct projections must fill a
+Lagrangian, including zero; their class is $z+L$ and contains $z$.
+If $z$ is excluded, there are at most seven members. Seven such
+projections fill $L\setminus\{0\}$ for a Lagrangian $L$.
+\end{proof}
+
+The following completion lemma holds for every eight-member
+partial spread; no classification of partial spreads is needed.
+
+\begin{lemma}\label{lem:eight-completion}
+Let $L_1,\ldots,L_8$ be Lagrangians in $E$ with pairwise
+intersection $\{0\}$. The seven nonzero points outside their union
+are $M\setminus\{0\}$ for a uniquely determined Lagrangian $M$.
+\end{lemma}
+\begin{proof}
+For nonzero $e\in E$, the hyperplane $e^\perp$ has $31$ nonzero
+points. Its intersection with $L_i$ has seven nonzero points if
+$e\in L_i$ and three otherwise, since $L_i=L_i^\perp$.
+If $e$ is covered, $e^\perp$ contains $7+7\cdot3=28$ covered
+points and three holes. If $e$ is a hole, it contains
+$8\cdot3=24$ covered points and all seven holes. In particular,
+the holes are pairwise orthogonal. Their span is isotropic and
+has dimension at most three; seven distinct nonzero points force
+dimension three. This span is the required $M$.
+\end{proof}
+
+\begin{theorem}\label{thm:seven-lower}
+$\chi(\Gamma_7)\geq19$ and $\chi(\OG_7^*)\geq19$.
+In particular, $\chi(\OG_7^*)-\omega(\OG_7^*)\geq3$.
+\end{theorem}
+\begin{proof}
+Deleting $z$ leaves $126$ vertices. Lemma~\ref{lem:seven-capacity}
+gives $\chi(\Gamma_7-z)\geq18$. Suppose that $\Gamma_7$ has an
+eighteen-coloring. Since $18\cdot7<127$, one class has eight
+members. It is $z+T$ for a Lagrangian $T$, and all other seventeen
+classes have size seven. If $A,B,C$ count their pure even,
+mixed $(6,1)$ and pure odd classes, respectively, then
+\[
+7A+6B=63,\qquad B+7C=56,\qquad A+B+C=17.
+\]
+The nonnegative solutions are $(A,B,C)=(9,0,8)$ and $(3,7,7)$.
+
+To exclude the first, choose a symplectic basis of $E$ and write
+$q(x,y)=x\cdot y$ for $x,y\in\F^3$. This quadratic refinement
+takes the value one at $7\cdot4=28$ points, so its sum over all
+nonzero points of $E$ is zero in $\F$.
+For an even heptad $H=\{u_1,\ldots,u_7\}$, its Gram matrix
+$J_7+I_7$ has rank six and kernel spanned by the all-ones vector.
+The seven vectors in $E$ have a nonzero linear relation; pairing
+it with the $u_i$ shows that $\sum_i u_i=0$. Polarization gives
+\[
+0=q\Bigl(\sum_i u_i\Bigr)
+ =\sum_i q(u_i)+\binom72,
+\]
+so each even heptad has odd quadratic sum. Nine disjoint heptads
+cannot partition all $63$ nonzero points of $E$, whose total
+quadratic sum is even. This excludes $(9,0,8)$.
+
+In the second pattern, $T$ and the seven pure odd heptads supply
+eight pairwise disjoint Lagrangians: each pure odd heptad is
+$z+(L\setminus\{0\})$. Lemma~\ref{lem:eight-completion} identifies
+the remaining odd projections as $M\setminus\{0\}$. These are
+exactly the projections of the seven mixed odd members.
+Every even point $u\in M\setminus\{0\}$ is orthogonal to every
+such odd vector $z+e$, so it cannot use a mixed label. It cannot
+use the label containing $z$. Nor can it share a pure odd label:
+a linear functional on its Lagrangian cannot take value one
+at every nonzero point, since its values on $e,f,e+f$ sum to zero.
+Only the three pure even labels remain. But the seven nonzero points of
+$M$ form a clique and need seven labels, a contradiction.
+
+Both patterns are impossible, so $\chi(\Gamma_7)\geq19$.
+The induced-subgraph inclusion $\Gamma_7\subseteq\OG_7^*$ gives
+the full-graph inequality. The clique formula supplies the final
+comparison with $16$.
+\end{proof}
+
+This proof leaves the exact chromatic numbers open. It needs neither
+a nineteen-color witness nor the further profile exclusions retained
+in the supporting research collection.
+The quadratic and incidence calculations have exact coordinate
+checks described in Section~\ref{sec:verification}.

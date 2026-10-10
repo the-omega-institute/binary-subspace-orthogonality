@@ -1,0 +1,158 @@
+\section{Introduction}
+\label{sec:intro}
+
+Let \(V_n=\F^n\) denote the \(n\)-dimensional vector space over the
+field with two elements, equipped with the standard nondegenerate
+bilinear form
+\[
+\langle x,y\rangle=\sum_{i=1}^n x_i y_i .
+\]
+The \emph{orthogonality graph} \(\OG_n^*\) has as its vertices the
+nonzero linear subspaces of \(V_n\).  Two distinct vertices \(U,W\)
+are adjacent when every vector of \(U\) is orthogonal to every vector
+of \(W\), that is, \(U\subseteq W^\perp\).  Its induced subgraph on
+the one-dimensional subspaces is denoted by \(\Gamma_n\).  Since each
+line of \(V_n\) contains a unique nonzero vector, \(\Gamma_n\) can
+equivalently be described as the graph on the \(2^n-1\) nonzero
+vectors of \(V_n\) with two distinct vectors adjacent when their dot
+product is zero.
+
+The graph \(\OG_n^*\) belongs to a natural family of graphs arising
+from finite classical polar spaces.  Its line subgraph \(\Gamma_n\) is
+a finite-field analogue of the Kneser graph: two lines are adjacent
+when their representative vectors are orthogonal, rather than when
+their supports are disjoint.  The chromatic number of the Kneser
+graph was determined by Lov\'asz \cite{Lovasz1978} using topological
+methods; the clique and chromatic numbers of polarity graphs and
+their relatives have been studied extensively in finite geometry and
+algebraic graph theory
+\cite{BrouwerCohenNeumaier1989,GodsilRoyle2001,BrouwerHaemers2012}.
+The subspace graph \(\OG_n^*\) refines the line graph by admitting
+higher-dimensional subspaces as additional vertices, and it is this
+enlargement that makes the chromatic problem substantially different.
+
+\subsection*{Motivation and background}
+
+The graph \(\OG_n^*\) arises naturally in two independent contexts.
+On the combinatorial side, it is the graph of pairwise orthogonal
+subspaces of a finite vector space, a natural object in the theory of
+polar spaces \cite{Cameron1991}.  On the algebraic side, it is
+isomorphic to the annihilating-ideal graph of a family of finite
+local rings introduced by Nikandish \cite{Nikandish2026}, and thus
+provides a bridge between the theory of graphs over finite fields
+and the study of graphs associated with commutative rings
+\cite{Beck1988,AndersonNaseer1993,AndersonLivingston1999,
+BehboodiRakeei2011a,BehboodiRakeei2011b}.
+
+The bridge is as follows.  For
+\[
+R_n=\frac{\F[x_1,\dots,x_n,z]}{(z^2,\ zx_i,\ x_ix_j\,(i\ne j),\
+x_i^2-z)},
+\]
+the map \(U\mapsto (z)+U\) is a bijection between the subspaces of
+\(V_n\) and the nonzero proper ideals of \(R_n\), and
+\(I_UI_W=0\) if and only if \(U\perp W\) \cite{Nikandish2026}.  The
+zero subspace corresponds to the ideal \((z)\), which is a universal
+vertex, so
+\[
+\chi(\AG(R_n))=\chi(\OG_n^*)+1,\qquad
+\omega(\AG(R_n))=\omega(\OG_n^*)+1 .
+\]
+In particular, any statement about \(\OG_n^*\) translates directly
+into a statement about \(\AG(R_n)\), and conversely.
+
+\begin{problem}\label{prob:clique}
+Determine the exact value of \(\omega(\OG_n^*)\) for every \(n\).
+\end{problem}
+
+\begin{problem}\label{prob:chromatic}
+Determine \(\chi(\OG_n^*)\) for \(n\ge6\) and investigate the relation
+between \(\chi(\OG_n^*)\) and \(\omega(\OG_n^*)\).
+\end{problem}
+
+\begin{problem}\label{prob:infinite}
+Determine whether there exist infinitely many \(n\ge1\) with
+\(\chi(\OG_n^*)>\omega(\OG_n^*)\).
+\end{problem}
+
+\subsection*{Results}
+
+Put
+\[
+N(r)=\sum_{d=1}^{r}\genfrac{[}{]}{0pt}{}{r}{d}_2,
+\]
+where \(\genfrac{[}{]}{0pt}{}{r}{d}_2\) is the Gaussian binomial coefficient, and set
+\(N(0)=0\).  Our results are
+\begin{equation}\label{eq:clique-formula}
+\omega(\OG_n^*)=\max\bigl\{n,\ N(\lfloor n/2\rfloor)+(n\bmod 2)\bigr\}
+\qquad(n\ge1),
+\end{equation}
+and
+\begin{equation}\label{eq:chromatic-six}
+\chi(\OG_6^*)=15,\qquad \chi(\Gamma_6)=12 .
+\end{equation}
+In dimension seven we prove
+\begin{equation}\label{eq:chromatic-seven}
+\chi(\Gamma_7)\geq19,\qquad \chi(\OG_7^*)\geq19,
+\end{equation}
+whereas \eqref{eq:clique-formula} gives $\omega(\OG_7^*)=16$.
+The first formula answers Problem~\ref{prob:clique} in all
+dimensions.  The second answers the dimension-six case of
+Problem~\ref{prob:chromatic} and quantifies the separation between
+coloring the line graph and coloring the full subspace graph: in
+dimension six, passing from lines to all nonzero subspaces increases
+the chromatic number by exactly three.
+
+The clique argument is algebraic: it sums the radicals of an arbitrary
+clique and passes to the resulting orthogonal quotient.  The
+full-graph chromatic upper bound uses an explicit finite certificate,
+while the line-graph equality follows from a weighted independent-set
+bound and a checked \(12\)-coloring.  For dimension seven, a sharp capacity bound on line color classes
+reduces a hypothetical eighteen-coloring to two saturated patterns.
+Quadratic parity excludes one, and a Lagrangian completion and
+hole-capacity argument excludes the other. This proof is independent
+of the subsequent analysis of possible nineteen-colorings.
+The verification details and the scope of the Lean formalization are collected in
+Section~\ref{sec:verification}.
+
+Table~\ref{tab:small-values} records the known small-dimensional values.
+The full subspace graphs satisfy \(\chi>\omega\) for \(n=4,5\), whereas
+\(\chi(\OG_6^*)=\omega(\OG_6^*)=15\). In dimension six, the
+three-color separation in \eqref{eq:chromatic-six} is between the full
+subspace graph and its line subgraph.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|r|r}
+\toprule
+\(n\) & \(\omega(\OG_n^*)\) & \(\chi(\OG_n^*)\) \\
+\midrule
+\(1\) & \(1\)  & \(1\)  \\
+\(2\) & \(2\)  & \(2\)  \\
+\(3\) & \(3\)  & \(3\)  \\
+\(4\) & \(4\)  & \(5\)  \\
+\(5\) & \(5\)  & \(8\)  \\
+\(6\) & \(15\) & \(15\) \\
+\(7\) & \(16\) & \(\geq19\) \\
+\bottomrule
+\end{tabular}
+\caption{Clique and chromatic numbers of \(\OG_n^*\) for small \(n\).
+The values for \(n\le5\) were computed in \cite{Nikandish2026}; the
+value \(\chi(\OG_6^*)=15\) and the bound
+\(\chi(\OG_7^*)\geq19\) are established here.  For general \(n\),
+the clique number is given by \eqref{eq:clique-formula}; the chromatic
+number for \(n\ge7\) remains open.}
+\label{tab:small-values}
+\end{table}
+
+The paper is organized as follows.  Section~\ref{sec:clique} contains
+the proof of \eqref{eq:clique-formula}.
+Section~\ref{sec:line} treats the line graph \(\Gamma_6\) and
+establishes \(\chi(\Gamma_6)=12\).
+Section~\ref{sec:chromatic} proves \(\chi(\OG_6^*)=15\).
+Section~\ref{sec:seven} proves \eqref{eq:chromatic-seven}.
+Section~\ref{sec:higher} states the remaining chromatic and structural
+questions. Appendix~\ref{sec:geometry} describes the geometry of the
+precoloring and retains the obstructions to a structural formula.
+Section~\ref{sec:verification} collects the computational
+certificates and the Lean formalization.

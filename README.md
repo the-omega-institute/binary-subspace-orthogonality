@@ -13,6 +13,7 @@ of the other. Its line subgraph has only the one-dimensional subspaces.
 | What you want | Where to go |
 | --- | --- |
 | Read the complete paper | [Paper PDF](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.pdf) |
+| Review the focused consolidation of established results | [Focused draft](manuscript/focused/README.md), with clique formula, exact six-dimensional values and seven-dimensional lower bound 19; submitted and extended drafts are preserved |
 | Review the extended working draft, including the dimension-seven lower bound 19 | [Extended PDF](manuscript/extended/paper.pdf) · [draft source and evidence guide](manuscript/extended/README.md); publication and submission remain joint decisions |
 | Cite the public preprint | [Zenodo record: 10.5281/zenodo.23210092](https://doi.org/10.5281/zenodo.23210092) |
 | Read or edit the manuscript source | [LaTeX source](https://github.com/the-omega-institute/binary-subspace-orthogonality/blob/28e27a82068a2f9129fdb5d168bd0fc179cf3e48/manuscript/paper.tex) · [current collaboration PR](https://github.com/the-omega-institute/binary-subspace-orthogonality/pull/1) |
